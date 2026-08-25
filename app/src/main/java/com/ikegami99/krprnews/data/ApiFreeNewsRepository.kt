@@ -19,15 +19,11 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 /**
- * APIキー不要のニュースRepository。
- *
- * v0.2.3では、まずGitHub Actionsが生成する軽量JSONを短時間で取得する。
- * JSONが使えない場合だけ公開RSS/HTMLへ直接フォールバックする。
- * 遅いソースはタイムアウトで切り離し、1ソースの障害で画面全体を待たせない。
+ * 公開RSS/HTML + GitHub Actionsキャッシュを使うニュースRepository。
+ * v0.2.4ではGitHub Actions側の高品質翻訳があれば最優先し、
+ * 無い場合だけML Kitオンデバイス翻訳へフォールバックする。
  */
 object ApiFreeNewsRepository : NewsRepository {
-    private const val AGGREGATED_FEED_URL =
-        "https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json"
     private const val AGGREGATED_TIMEOUT_MS = 4_000L
     private const val SOURCE_TIMEOUT_MS = 5_500L
     private const val TRANSLATION_TIMEOUT_MS = 2_500L
@@ -96,12 +92,15 @@ object ApiFreeNewsRepository : NewsRepository {
         raw.map { item ->
             async {
                 val originalBody = item.body.ifBlank { item.title }
-                val translatedTitle = safeTranslate(item.region, item.title)
-                val translatedBody = if (originalBody == item.title) {
-                    translatedTitle
-                } else {
-                    safeTranslate(item.region, originalBody)
-                }
+                val translatedTitle = item.translatedTitle?.takeIf { it.isNotBlank() }
+                    ?: safeTranslate(item.region, item.title)
+                val translatedBody = item.translatedBody?.takeIf { it.isNotBlank() }
+                    ?: if (originalBody == item.title) {
+                        translatedTitle
+                    } else {
+                        safeTranslate(item.region, originalBody)
+                    }
+
                 NewsItem(
                     id = item.id,
                     region = item.region,
@@ -113,7 +112,7 @@ object ApiFreeNewsRepository : NewsRepository {
                     originalText = originalBody,
                     sourceUrl = item.sourceUrl,
                     category = categoryFor(item.title, item.region),
-                    imageUrl = item.imageUrl
+                    imageUrl = normalizeImage(item.imageUrl, item.region)
                 )
             }
         }.awaitAll()
@@ -152,7 +151,9 @@ private data class RawNews(
     val sourceUrl: String,
     val publishedLabel: String,
     val publishedAtEpoch: Long,
-    val imageUrl: String? = null
+    val imageUrl: String? = null,
+    val translatedTitle: String? = null,
+    val translatedBody: String? = null
 )
 
 private interface PublicNewsSource {
@@ -190,7 +191,9 @@ private object GitHubJsonSource : PublicNewsSource {
                         sourceUrl = url,
                         publishedLabel = item.optString("publishedLabel").ifBlank { friendlyDate(epoch, "") },
                         publishedAtEpoch = epoch,
-                        imageUrl = item.optString("imageUrl").takeIf { it.isNotBlank() }
+                        imageUrl = item.optString("imageUrl").takeIf { it.isNotBlank() },
+                        translatedTitle = item.optString("translatedTitle").takeIf { it.isNotBlank() },
+                        translatedBody = item.optString("translatedBody").takeIf { it.isNotBlank() }
                     )
                 )
             }
@@ -327,18 +330,19 @@ private fun parseFeed(xml: String, region: Region, platform: String): List<RawNe
                     if (image == null && videoId.isNotBlank()) image = "https://i.ytimg.com/vi/$videoId/hqdefault.jpg"
                     if (image == null) image = extractImageFromHtml(body)
                     if (title.isNotBlank() && link.isNotBlank()) {
-                        val cleanedBody = stripHtml(body).ifBlank { title }
+                        val cleanedTitle = compactTitle(title, region)
+                        val cleanedBody = cleanSocialText(stripHtml(body).ifBlank { title }, region)
                         val epoch = parseEpoch(published)
                         out += RawNews(
                             id = (videoId.ifBlank { link }).hashCode().toString(),
                             region = region,
                             platform = platform,
-                            title = stripHtml(title),
+                            title = cleanedTitle,
                             body = cleanedBody.take(1800),
                             sourceUrl = link,
                             publishedLabel = friendlyDate(epoch, published),
                             publishedAtEpoch = epoch,
-                            imageUrl = image
+                            imageUrl = normalizeImage(image, region)
                         )
                     }
                     inside = false
@@ -349,6 +353,50 @@ private fun parseFeed(xml: String, region: Region, platform: String): List<RawNe
         event = parser.next()
     }
     return out.take(16)
+}
+
+private fun cleanSocialText(value: String, region: Region): String {
+    var text = stripHtml(value)
+    if (region == Region.CHINA) {
+        text = text
+            .replace(Regex("#[^#\\n]{1,80}#"), " ")
+            .replace(Regex("^\\s*(以闪亮之名\\s*)+"), "")
+            .replace("网页链接", "")
+        text = text.lineSequence()
+            .map(String::trim)
+            .filter { it.isNotBlank() }
+            .filterNot { it.contains("下载传送门") || it.contains("活动传送门") }
+            .joinToString("\n")
+    }
+    return text
+        .replace(Regex("[ \\t]{2,}"), " ")
+        .replace(Regex("\\n{3,}"), "\n\n")
+        .trim()
+}
+
+private fun compactTitle(value: String, region: Region): String {
+    val cleaned = cleanSocialText(value, region)
+    if (cleaned.isBlank()) return "新着ニュース"
+    val first = cleaned.split(Regex("[\\n。！？!?]"), limit = 2).firstOrNull().orEmpty().trim()
+    val candidate = if (first.length >= 8) first else cleaned.replace("\n", " ")
+    return candidate.take(100).trimEnd(' ', ',', '，', '、', '-', '｜', '|')
+}
+
+private fun normalizeImage(url: String?, region: Region): String? {
+    val low = url.orEmpty().lowercase()
+    val invalid = url.isNullOrBlank() || listOf(
+        "timeline_card_small_super_default",
+        "timeline_card_small_web_default",
+        "timeline_card_small_default"
+    ).any(low::contains)
+
+    if (!invalid) return url
+    return when (region) {
+        Region.JAPAN -> "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png"
+        Region.CHINA -> "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg"
+        Region.KOREA -> "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png"
+        Region.GLOBAL -> null
+    }
 }
 
 private fun looksLikeImage(url: String): Boolean =
@@ -371,7 +419,7 @@ private fun httpGet(url: String, timeoutMs: Int = 4_500): String {
         connection.instanceFollowRedirects = true
         connection.setRequestProperty(
             "User-Agent",
-            "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.3"
+            "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.4"
         )
         connection.setRequestProperty("Accept-Language", "ja,en-US;q=0.9,en;q=0.8,ko;q=0.7,zh-CN;q=0.6")
         connection.setRequestProperty("Accept", "application/rss+xml, application/atom+xml, application/json, text/xml, text/html;q=0.9, */*;q=0.8")
