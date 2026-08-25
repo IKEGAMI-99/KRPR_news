@@ -113,4 +113,28 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
+# Upstream Android sample currently calls an API introduced in Android 30.
+# Preserve app minSdk 26 by using a simple priority fallback on older devices.
+python3 - "$LIB_DIR/src/main/cpp/logging.h" <<'PY'
+from pathlib import Path
+import sys
+
+p = Path(sys.argv[1])
+s = p.read_text()
+old = '''static inline int ai_should_log(int prio) {
+    return __android_log_is_loggable(prio, LOG_TAG, LOG_MIN_LEVEL);
+}'''
+new = '''static inline int ai_should_log(int prio) {
+#if __ANDROID_API__ >= 30
+    return __android_log_is_loggable(prio, LOG_TAG, LOG_MIN_LEVEL);
+#else
+    return prio >= LOG_MIN_LEVEL;
+#endif
+}'''
+if old not in s:
+    raise SystemExit('Could not patch Android < 30 logging compatibility')
+s = s.replace(old, new, 1)
+p.write_text(s)
+PY
+
 echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT"
