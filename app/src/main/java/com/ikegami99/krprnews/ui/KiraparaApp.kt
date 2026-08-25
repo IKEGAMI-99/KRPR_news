@@ -1,10 +1,7 @@
 package com.ikegami99.krprnews.ui
 
-import android.app.DownloadManager
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -17,12 +14,14 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.AutoAwesome
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.FolderOpen
 import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.OpenInNew
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
@@ -38,19 +37,21 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.core.content.ContextCompat
 import coil.compose.AsyncImage
 import com.ikegami99.krprnews.BuildConfig
 import com.ikegami99.krprnews.ai.LocalAiSummary
 import com.ikegami99.krprnews.ai.LocalAiTranslation
 import com.ikegami99.krprnews.ai.LocalGemmaManager
 import com.ikegami99.krprnews.data.*
+import com.ikegami99.krprnews.diagnostics.AppLog
 import com.ikegami99.krprnews.prefs.AppPreferences
 import com.ikegami99.krprnews.prefs.ThemeMode
 import com.ikegami99.krprnews.ui.theme.KiraparaTheme
 import com.ikegami99.krprnews.update.GitHubUpdateManager
 import com.ikegami99.krprnews.update.ReleaseInfo
 import kotlinx.coroutines.launch
+import java.io.File
+import java.util.Locale
 
 enum class AppPage { HOME, SETTINGS }
 private enum class AiTask { TRANSLATE, SUMMARY }
@@ -75,32 +76,35 @@ fun KiraparaApp(repository: NewsRepository = ApiFreeNewsRepository) {
                     if (release != null && GitHubUpdateManager.isNewer(BuildConfig.VERSION_NAME, release.tagName)) {
                         releaseInfo = release
                         updateMessage = "${release.tagName} が利用できます"
+                        AppLog.i(context, "Updater", "update available current=${BuildConfig.VERSION_NAME} remote=${release.tagName}")
                     } else {
                         releaseInfo = null
                         updateMessage = "最新版です"
                     }
                 }
-                .onFailure { updateMessage = "更新確認に失敗しました" }
+                .onFailure {
+                    updateMessage = "更新確認に失敗しました: ${it.message ?: "unknown"}"
+                    AppLog.e(context, "Updater", "update check failed", it)
+                }
         }
     }
 
     LaunchedEffect(autoUpdate) {
+        AppLog.i(context, "App", "start version=${BuildConfig.VERSION_NAME}")
         if (autoUpdate) checkUpdates()
     }
 
     KiraparaTheme(themeMode) {
         Box(
-            Modifier
-                .fillMaxSize()
-                .background(
-                    Brush.verticalGradient(
-                        listOf(
-                            MaterialTheme.colorScheme.background,
-                            MaterialTheme.colorScheme.primary.copy(alpha = 0.08f),
-                            MaterialTheme.colorScheme.secondary.copy(alpha = 0.07f)
-                        )
+            Modifier.fillMaxSize().background(
+                Brush.verticalGradient(
+                    listOf(
+                        MaterialTheme.colorScheme.background,
+                        MaterialTheme.colorScheme.primary.copy(alpha = 0.08f),
+                        MaterialTheme.colorScheme.secondary.copy(alpha = 0.07f)
                     )
                 )
+            )
         ) {
             when (page) {
                 AppPage.HOME -> HomeScreen(
@@ -109,7 +113,6 @@ fun KiraparaApp(repository: NewsRepository = ApiFreeNewsRepository) {
                     onOpenSettings = { page = AppPage.SETTINGS },
                     onRefreshUpdate = ::checkUpdates
                 )
-
                 AppPage.SETTINGS -> SettingsScreen(
                     themeMode = themeMode,
                     autoUpdate = autoUpdate,
@@ -144,6 +147,7 @@ private fun HomeScreen(
     onOpenSettings: () -> Unit,
     onRefreshUpdate: () -> Unit
 ) {
+    val context = LocalContext.current
     var newsItems by remember { mutableStateOf<List<NewsItem>>(emptyList()) }
     var region by remember { mutableStateOf<Region?>(null) }
     var refreshing by remember { mutableStateOf(false) }
@@ -155,8 +159,14 @@ private fun HomeScreen(
         loadError = false
         scope.launch {
             runCatching { repository.loadNews() }
-                .onSuccess { newsItems = it }
-                .onFailure { loadError = true }
+                .onSuccess {
+                    newsItems = it
+                    AppLog.i(context, "News", "loaded ${it.size} items")
+                }
+                .onFailure {
+                    loadError = true
+                    AppLog.e(context, "News", "news load failed", it)
+                }
             refreshing = false
         }
     }
@@ -178,9 +188,7 @@ private fun HomeScreen(
                     IconButton(onClick = { reload(); onRefreshUpdate() }) {
                         Icon(Icons.Default.Refresh, if (refreshing) "更新中" else "更新")
                     }
-                    IconButton(onClick = onOpenSettings) {
-                        Icon(Icons.Default.Settings, "設定")
-                    }
+                    IconButton(onClick = onOpenSettings) { Icon(Icons.Default.Settings, "設定") }
                 }
             )
         }
@@ -203,7 +211,7 @@ private fun HomeScreen(
                             Spacer(Modifier.width(10.dp))
                             Column(Modifier.weight(1f)) {
                                 Text("${releaseInfo.tagName} が利用できます", fontWeight = FontWeight.Bold)
-                                Text("設定 → アップデートから更新できます", fontSize = 12.sp)
+                                Text("設定からアプリ内で更新できます", fontSize = 12.sp)
                             }
                         }
                     }
@@ -216,11 +224,7 @@ private fun HomeScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     item {
-                        FilterChip(
-                            selected = region == null,
-                            onClick = { region = null },
-                            label = { Text("✨ すべて") }
-                        )
+                        FilterChip(selected = region == null, onClick = { region = null }, label = { Text("✨ すべて") })
                     }
                     items(Region.entries) { r ->
                         FilterChip(
@@ -238,10 +242,7 @@ private fun HomeScreen(
                 item { EmptyNewsState(onRetry = ::reload) }
             }
 
-            items(
-                newsItems.filter { region == null || it.region == region },
-                key = { it.id }
-            ) { news ->
+            items(newsItems.filter { region == null || it.region == region }, key = { it.id }) { news ->
                 NewsCard(news, Modifier.padding(horizontal = 16.dp))
             }
 
@@ -285,10 +286,7 @@ private fun EmptyNewsState(onRetry: () -> Unit) {
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Text("ニュースを取得できませんでした", fontWeight = FontWeight.Bold)
-            Text(
-                "通信または取得元が一時的に利用できない可能性があります。",
-                style = MaterialTheme.typography.bodySmall
-            )
+            Text("通信または取得元が一時的に利用できない可能性があります。", style = MaterialTheme.typography.bodySmall)
             Button(onClick = onRetry) {
                 Icon(Icons.Default.Refresh, null)
                 Spacer(Modifier.width(8.dp))
@@ -351,19 +349,13 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                         modifier = Modifier.weight(1f),
                         color = textColor
                     )
-                    Text(
-                        news.publishedLabel,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = textColor.copy(alpha = 0.72f)
-                    )
+                    Text(news.publishedLabel, style = MaterialTheme.typography.labelSmall, color = textColor.copy(alpha = 0.72f))
                 }
 
                 AssistChip(
                     onClick = { },
                     enabled = false,
-                    label = {
-                        Text(if (visibleTranslation != null) "🇯🇵 Gemma 4 翻訳" else "${news.region.flag} ${news.region.originalLabel} 原文")
-                    }
+                    label = { Text(if (visibleTranslation != null) "🇯🇵 Gemma 4 翻訳" else "${news.region.flag} ${news.region.originalLabel} 原文") }
                 )
 
                 Text(
@@ -374,7 +366,6 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                     maxLines = if (expanded) Int.MAX_VALUE else 2,
                     overflow = TextOverflow.Ellipsis
                 )
-
                 Text(
                     body,
                     style = MaterialTheme.typography.bodyMedium,
@@ -396,18 +387,9 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                     }
                 }
 
-                aiError?.let {
-                    Text(
-                        it,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.error
-                    )
-                }
+                aiError?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error) }
 
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     if (news.region != Region.JAPAN) {
                         FilledTonalButton(
                             onClick = {
@@ -427,7 +409,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                                                 showTranslation = true
                                                 expanded = true
                                             }
-                                            .onFailure { aiError = it.message ?: "翻訳に失敗しました。" }
+                                            .onFailure { aiError = it.message ?: "翻訳に失敗しました。設定からログを書き出せます。" }
                                         aiTask = null
                                     }
                                 }
@@ -465,7 +447,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                                             showSummary = true
                                             expanded = true
                                         }
-                                        .onFailure { aiError = it.message ?: "要約に失敗しました。" }
+                                        .onFailure { aiError = it.message ?: "要約に失敗しました。設定からログを書き出せます。" }
                                     aiTask = null
                                 }
                             }
@@ -486,26 +468,17 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                 }
 
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                    if (translation?.tokensPerSecond?.let { it > 0f } == true && showTranslation) {
-                        Text(
-                            String.format("%.1f tok/s", translation!!.tokensPerSecond),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = textColor.copy(alpha = 0.58f)
-                        )
-                    } else if (summary?.tokensPerSecond?.let { it > 0f } == true && showSummary) {
-                        Text(
-                            String.format("%.1f tok/s", summary!!.tokensPerSecond),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = textColor.copy(alpha = 0.58f)
-                        )
+                    val tps = when {
+                        showTranslation -> translation?.tokensPerSecond
+                        showSummary -> summary?.tokensPerSecond
+                        else -> null
+                    }
+                    if (tps != null && tps > 0f) {
+                        Text(String.format(Locale.US, "%.1f tok/s", tps), style = MaterialTheme.typography.labelSmall, color = textColor.copy(alpha = 0.58f))
                     }
                     Spacer(Modifier.weight(1f))
                     TextButton(onClick = { expanded = !expanded }) {
-                        Icon(
-                            if (expanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
+                        Icon(if (expanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore, null, Modifier.size(18.dp))
                         Spacer(Modifier.width(3.dp))
                         Text(if (expanded) "閉じる" else "続きを読む")
                     }
@@ -514,9 +487,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                 if (expanded) {
                     HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.25f))
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-                        TextButton(onClick = {
-                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(news.sourceUrl)))
-                        }) {
+                        TextButton(onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(news.sourceUrl))) }) {
                             Icon(Icons.Default.OpenInNew, null, Modifier.size(18.dp))
                             Spacer(Modifier.width(5.dp))
                             Text("公式投稿")
@@ -534,15 +505,10 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                                 appendLine()
                                 append(news.sourceUrl)
                             }
-                            context.startActivity(
-                                Intent.createChooser(
-                                    Intent(Intent.ACTION_SEND).apply {
-                                        type = "text/plain"
-                                        putExtra(Intent.EXTRA_TEXT, shareBody)
-                                    },
-                                    "ニュースを共有"
-                                )
-                            )
+                            context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
+                                type = "text/plain"
+                                putExtra(Intent.EXTRA_TEXT, shareBody)
+                            }, "ニュースを共有"))
                         }) {
                             Icon(Icons.Default.Share, null, Modifier.size(18.dp))
                             Spacer(Modifier.width(5.dp))
@@ -558,18 +524,15 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
 @Composable
 private fun NewsThumbnail(news: NewsItem) {
     Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(180.dp)
-            .background(
-                Brush.linearGradient(
-                    listOf(
-                        MaterialTheme.colorScheme.primary.copy(alpha = 0.72f),
-                        MaterialTheme.colorScheme.secondary.copy(alpha = 0.58f),
-                        MaterialTheme.colorScheme.tertiary.copy(alpha = 0.62f)
-                    )
+        modifier = Modifier.fillMaxWidth().height(180.dp).background(
+            Brush.linearGradient(
+                listOf(
+                    MaterialTheme.colorScheme.primary.copy(alpha = 0.72f),
+                    MaterialTheme.colorScheme.secondary.copy(alpha = 0.58f),
+                    MaterialTheme.colorScheme.tertiary.copy(alpha = 0.62f)
                 )
             )
+        )
     ) {
         if (!news.imageUrl.isNullOrBlank()) {
             AsyncImage(
@@ -578,30 +541,12 @@ private fun NewsThumbnail(news: NewsItem) {
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Crop
             )
-            Box(
-                Modifier
-                    .fillMaxSize()
-                    .background(
-                        Brush.verticalGradient(
-                            listOf(
-                                Color.Transparent,
-                                Color.Black.copy(alpha = 0.06f),
-                                Color.Black.copy(alpha = 0.65f)
-                            )
-                        )
-                    )
-            )
+            Box(Modifier.fillMaxSize().background(
+                Brush.verticalGradient(listOf(Color.Transparent, Color.Black.copy(alpha = 0.06f), Color.Black.copy(alpha = 0.65f)))
+            ))
         }
-
-        Column(
-            modifier = Modifier.align(Alignment.BottomStart).padding(16.dp)
-        ) {
-            Text(
-                "${news.region.flag} ${news.category}",
-                color = Color.White,
-                fontWeight = FontWeight.Bold,
-                fontSize = 17.sp
-            )
+        Column(modifier = Modifier.align(Alignment.BottomStart).padding(16.dp)) {
+            Text("${news.region.flag} ${news.category}", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 17.sp)
             Text("✦ ･ﾟ: *✧･ﾟ:*", color = Color.White.copy(alpha = 0.82f))
         }
     }
@@ -624,9 +569,11 @@ private fun SettingsScreen(
     val context = LocalContext.current
     val prefs = remember { AppPreferences(context) }
     val scope = rememberCoroutineScope()
-    var downloadId by remember { mutableStateOf<Long?>(null) }
     var installStatus by remember { mutableStateOf<String?>(null) }
+    var updateProgress by remember { mutableStateOf<Int?>(null) }
+    var pendingUpdateApk by remember { mutableStateOf<File?>(null) }
     var modelStatus by remember { mutableStateOf<String?>(null) }
+    var logStatus by remember { mutableStateOf<String?>(null) }
     var modelUri by remember { mutableStateOf(prefs.ggufModelUri) }
     var modelName by remember {
         mutableStateOf(prefs.ggufModelName ?: LocalGemmaManager.displayName(context, prefs.ggufModelUri))
@@ -634,62 +581,46 @@ private fun SettingsScreen(
 
     val modelPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) {
-            runCatching {
-                context.contentResolver.takePersistableUriPermission(
-                    uri,
-                    Intent.FLAG_GRANT_READ_URI_PERMISSION
-                )
-            }
-            val name = LocalGemmaManager.displayName(context, uri.toString())
-                ?: uri.lastPathSegment
-                ?: "選択したGGUF"
+            val permissionOk = runCatching {
+                context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                true
+            }.getOrDefault(false)
+            val name = LocalGemmaManager.displayName(context, uri.toString()) ?: uri.lastPathSegment ?: "選択したGGUF"
             modelUri = uri.toString()
             modelName = name
             prefs.ggufModelUri = modelUri
             prefs.ggufModelName = modelName
-            modelStatus = "モデルを選択しました。最初の翻訳 / 要約時に読み込みます。"
+            modelStatus = if (permissionOk) {
+                "モデルを選択しました。読み込みテストを実行できます。"
+            } else {
+                "モデルを選択しましたが永続アクセス権を保存できませんでした。再起動後は再選択が必要な場合があります。"
+            }
+            AppLog.i(context, "LocalGemma", "model selected name=$name persistable=$permissionOk uri=$uri")
             scope.launch { LocalGemmaManager.release() }
         }
     }
 
-    DisposableEffect(downloadId, releaseInfo) {
-        val id = downloadId
-        val release = releaseInfo
-        if (id == null || release == null) return@DisposableEffect onDispose { }
-        val receiver = object : BroadcastReceiver() {
-            override fun onReceive(receiverContext: Context?, intent: Intent?) {
-                if (intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1L) != id) return
-                scope.launch {
-                    installStatus = "SHA-256を検証しています…"
-                    val expected = runCatching {
-                        GitHubUpdateManager.fetchChecksum(release.checksumUrl)
-                    }.getOrNull()
-                    if (expected.isNullOrBlank()) {
-                        installStatus = "チェックサムが見つからないためインストールを中止しました"
-                        return@launch
-                    }
-                    val verified = runCatching {
-                        GitHubUpdateManager.verifyDownloadedApk(context, id, expected)
-                    }.getOrDefault(false)
-                    if (!verified) {
-                        installStatus = "APKの検証に失敗しました。インストールしません"
-                        return@launch
-                    }
-                    installStatus = if (GitHubUpdateManager.installDownloadedApk(context, id)) {
-                        "Androidのインストール画面を開きました"
-                    } else {
-                        "「この提供元を許可」を有効にしてから、もう一度アップデートしてください"
-                    }
-                }
-            }
+    val logExporter = rememberLauncherForActivityResult(
+        ActivityResultContracts.CreateDocument("text/plain")
+    ) { uri ->
+        if (uri != null) {
+            runCatching { AppLog.export(context, uri, modelName) }
+                .onSuccess { logStatus = "診断ログを書き出しました。" }
+                .onFailure { logStatus = "ログ書き出しに失敗しました: ${it.message}" }
         }
-        ContextCompat.registerReceiver(
-            context,
-            receiver,
-            IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE),
-            ContextCompat.RECEIVER_NOT_EXPORTED
-        )
-        onDispose { runCatching { context.unregisterReceiver(receiver) } }
+    }
+
+    val installPermissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        val apk = pendingUpdateApk
+        if (apk != null && GitHubUpdateManager.canInstallPackages(context)) {
+            runCatching { GitHubUpdateManager.installVerifiedApk(context, apk) }
+                .onSuccess { installStatus = "Androidのインストール確認を開きました。" }
+                .onFailure { installStatus = "インストーラーを開けませんでした: ${it.message}" }
+        } else if (apk != null) {
+            installStatus = "このアプリからのインストール許可がまだ有効ではありません。"
+        }
     }
 
     Scaffold(
@@ -698,11 +629,7 @@ private fun SettingsScreen(
             TopAppBar(
                 title = { Text("設定", fontWeight = FontWeight.Bold) },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Transparent),
-                navigationIcon = {
-                    IconButton(onClick = onBack) {
-                        Icon(Icons.Default.ArrowBack, "戻る")
-                    }
-                }
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, "戻る") } }
             )
         }
     ) { padding ->
@@ -719,46 +646,42 @@ private fun SettingsScreen(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             RadioButton(selected = themeMode == mode, onClick = { onThemeChanged(mode) })
-                            Text(
-                                when (mode) {
-                                    ThemeMode.SYSTEM -> "端末設定に合わせる"
-                                    ThemeMode.LIGHT -> "ライト"
-                                    ThemeMode.DARK -> "ダーク"
-                                }
-                            )
+                            Text(when (mode) {
+                                ThemeMode.SYSTEM -> "端末設定に合わせる"
+                                ThemeMode.LIGHT -> "ライト"
+                                ThemeMode.DARK -> "ダーク"
+                            })
                         }
                     }
                 }
             }
 
             item {
-                SettingsCard("🧠 ローカルGemma 4", "端末内のGGUFを翻訳と日本語要約に使います") {
+                SettingsCard("🧠 ローカルGemma 4", "選択したGGUFを翻訳と日本語要約に使います") {
                     Text(
-                        "ニュースは通常は各国の原文で表示します。記事の「日本語に翻訳」または「日本語要約」を押した時だけ選択したGGUFを実行します。本文は外部へ送信しません。",
+                        "ニュースは各国の原文で表示し、「日本語に翻訳」「日本語要約」を押した時だけGGUFを実行します。本文は外部へ送信しません。",
                         style = MaterialTheme.typography.bodyMedium
                     )
                     Spacer(Modifier.height(12.dp))
-
                     Surface(
                         shape = RoundedCornerShape(16.dp),
                         color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.72f)
                     ) {
                         Column(Modifier.fillMaxWidth().padding(14.dp)) {
                             Text("選択中のモデル", style = MaterialTheme.typography.labelMedium)
+                            Text(modelName ?: "未選択", fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 3.dp))
+                            val size = LocalGemmaManager.modelSizeBytes(context, modelUri)
+                            if (size != null && size > 0) {
+                                Text(String.format(Locale.US, "%.2f GB", size / 1024.0 / 1024.0 / 1024.0), style = MaterialTheme.typography.bodySmall)
+                            }
                             Text(
-                                modelName ?: "未選択",
-                                fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(top = 3.dp)
-                            )
-                            Text(
-                                "GGUF / llama.cpp · Context 4096 · CPU/NEON",
+                                "GGUF / llama.cpp · Scoped Storage FD · Context 4096 · CPU/NEON",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.72f),
                                 modifier = Modifier.padding(top = 4.dp)
                             )
                         }
                     }
-
                     Button(
                         onClick = { modelPicker.launch(arrayOf("application/octet-stream", "*/*")) },
                         modifier = Modifier.fillMaxWidth().padding(top = 12.dp)
@@ -767,7 +690,6 @@ private fun SettingsScreen(
                         Spacer(Modifier.width(8.dp))
                         Text("GGUFを選択")
                     }
-
                     OutlinedButton(
                         onClick = {
                             val uri = modelUri
@@ -789,15 +711,19 @@ private fun SettingsScreen(
                         Spacer(Modifier.width(8.dp))
                         Text("モデル読み込みテスト")
                     }
-
-                    modelStatus?.let {
-                        Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall)
-                    }
+                    modelStatus?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
+                    HorizontalDivider(Modifier.padding(vertical = 12.dp))
+                    Text("Hexagon NPU", fontWeight = FontWeight.SemiBold)
+                    Text(
+                        "llama.cpp本家ではHexagon/HTPバックエンドが実験対応していますが、このAPKにはまだHTPネイティブライブラリを同梱していません。現在はCPU/NEONを使用します。",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.72f)
+                    )
                 }
             }
 
             item {
-                SettingsCard("🔄 アップデート", "GitHub Releasesから安全に更新します") {
+                SettingsCard("🔄 アップデート", "APK取得と検証をアプリ内で完結します") {
                     Text("現在のバージョン  v${BuildConfig.VERSION_NAME}", fontWeight = FontWeight.SemiBold)
                     Spacer(Modifier.height(8.dp))
                     SettingSwitch("起動時に更新を確認", autoUpdate, onAutoUpdateChanged)
@@ -808,9 +734,8 @@ private fun SettingsScreen(
                         Spacer(Modifier.width(8.dp))
                         Text("アップデートを確認")
                     }
-                    updateMessage?.let {
-                        Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall)
-                    }
+                    updateMessage?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
+
                     releaseInfo?.let { release ->
                         Spacer(Modifier.height(12.dp))
                         Surface(
@@ -820,20 +745,33 @@ private fun SettingsScreen(
                         ) {
                             Column(Modifier.padding(14.dp)) {
                                 Text("最新版 ${release.tagName}", fontWeight = FontWeight.Bold)
-                                Text(
-                                    release.notes.ifBlank { "更新内容はGitHub Releasesで確認できます。" },
-                                    maxLines = 6,
-                                    style = MaterialTheme.typography.bodySmall
-                                )
+                                Text(release.notes.ifBlank { "更新内容はGitHub Releasesで確認できます。" }, maxLines = 6, style = MaterialTheme.typography.bodySmall)
                             }
                         }
                         Button(
                             onClick = {
-                                if (release.checksumUrl == null) {
-                                    installStatus = "ReleaseにSHA-256ファイルがありません。安全のため更新を中止しました"
-                                } else {
-                                    downloadId = GitHubUpdateManager.enqueueDownload(context, release, wifiOnly)
-                                    installStatus = "APKをダウンロードしています…"
+                                updateProgress = 0
+                                installStatus = "APKをアプリ内でダウンロードしています…"
+                                scope.launch {
+                                    runCatching {
+                                        GitHubUpdateManager.downloadAndVerify(context, release, wifiOnly) { progress ->
+                                            scope.launch { updateProgress = progress }
+                                        }
+                                    }.onSuccess { apk ->
+                                        pendingUpdateApk = apk
+                                        updateProgress = 100
+                                        if (GitHubUpdateManager.canInstallPackages(context)) {
+                                            runCatching { GitHubUpdateManager.installVerifiedApk(context, apk) }
+                                                .onSuccess { installStatus = "検証完了。Androidのインストール確認を開きました。" }
+                                                .onFailure { installStatus = "インストーラーを開けませんでした: ${it.message}" }
+                                        } else {
+                                            installStatus = "APK検証完了。このアプリからのインストールを許可してください。許可後、自動で続行します。"
+                                            installPermissionLauncher.launch(GitHubUpdateManager.unknownSourcesIntent(context))
+                                        }
+                                    }.onFailure {
+                                        installStatus = it.message ?: "アップデートに失敗しました。"
+                                        updateProgress = null
+                                    }
                                 }
                             },
                             modifier = Modifier.fillMaxWidth().padding(top = 10.dp)
@@ -841,23 +779,64 @@ private fun SettingsScreen(
                             Text("${release.tagName} にアップデート")
                         }
                     }
-                    installStatus?.let {
-                        Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall)
+
+                    updateProgress?.let { progress ->
+                        LinearProgressIndicator(progress = { progress / 100f }, modifier = Modifier.fillMaxWidth().padding(top = 10.dp))
+                        Text("$progress%", style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(top = 4.dp))
                     }
+                    installStatus?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
+                    Text(
+                        "※ 通常のAndroidアプリでは最後のOSインストール確認だけは省略できません。ダウンロード・SHA-256検証・インストーラー起動はアプリ内で行います。",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.62f),
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+
+            item {
+                SettingsCard("🧾 診断ログ", "モデル読み込み・AI推論・ニュース取得・更新エラーを記録します") {
+                    Text(
+                        "不具合調査用です。端末情報、アプリ版、選択モデル名、処理結果とエラーを保存します。ニュース本文そのものを大量に記録する設計にはしていません。",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    Text(
+                        "現在のログ: ${AppLog.sizeBytes(context) / 1024} KB",
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
+                    Button(
+                        onClick = { logExporter.launch("krpr-news-log-v${BuildConfig.VERSION_NAME}.txt") },
+                        modifier = Modifier.fillMaxWidth().padding(top = 10.dp)
+                    ) {
+                        Icon(Icons.Default.Save, null)
+                        Spacer(Modifier.width(8.dp))
+                        Text("ログを書き出す")
+                    }
+                    OutlinedButton(
+                        onClick = {
+                            AppLog.clear(context)
+                            logStatus = "ログをクリアしました。"
+                        },
+                        modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+                    ) {
+                        Icon(Icons.Default.Delete, null)
+                        Spacer(Modifier.width(8.dp))
+                        Text("ログをクリア")
+                    }
+                    logStatus?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
                 }
             }
 
             item {
                 SettingsCard("🛡️ このアプリについて", "非公式ファンアプリ") {
                     Text(
-                        "Google Playでは配布しません。APKは必ず IKEGAMI-99/KRPR_news のGitHub Releasesから取得してください。",
+                        "Google Playでは配布しません。APKは IKEGAMI-99/KRPR_news のGitHub Releasesからのみ取得してください。",
                         style = MaterialTheme.typography.bodyMedium
                     )
                     Spacer(Modifier.height(8.dp))
                     TextButton(onClick = {
-                        context.startActivity(
-                            Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/IKEGAMI-99/KRPR_news"))
-                        )
+                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/IKEGAMI-99/KRPR_news")))
                     }) {
                         Icon(Icons.Default.OpenInNew, null)
                         Spacer(Modifier.width(6.dp))
@@ -883,17 +862,8 @@ private fun SettingsCard(
         )
     ) {
         Column(Modifier.fillMaxWidth().padding(18.dp)) {
-            Text(
-                title,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurface
-            )
-            Text(
-                subtitle,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.68f)
-            )
+            Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface)
+            Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.68f))
             Spacer(Modifier.height(12.dp))
             content()
         }
