@@ -3,6 +3,7 @@ package com.ikegami99.krprnews.ai
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
+import android.os.Debug
 import android.os.SystemClock
 import android.provider.OpenableColumns
 import com.arm.aichat.AiChat
@@ -34,16 +35,16 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
- * v0.3.4ではSAFのcontent:// URIをnative側へ疑似パスとして渡さず、
- * 初回だけアプリ専用モデル領域へGGUFをコピーして通常ファイルパスから読み込む。
- * AndroidのScoped Storageとllama.cppのfopen/mmapを明確に分離する。
+ * SAFのcontent:// URIは初回だけアプリ専用モデル領域へコピーし、
+ * llama.cppには通常ファイルパスを渡す。
  */
 object LocalGemmaManager {
     private const val CACHE_PREFS = "krpr_local_ai_cache_v3"
-    private const val CONTEXT_LENGTH = 4096
+    private const val CONTEXT_LENGTH = 2048
     private const val LOAD_TIMEOUT_MS = 300_000L
     private const val GENERATE_TIMEOUT_MS = 300_000L
-    private const val MAX_PREDICT_TOKENS = 1024
+    private const val TRANSLATION_MAX_PREDICT_TOKENS = 384
+    private const val SUMMARY_MAX_PREDICT_TOKENS = 192
 
     private val inferenceMutex = Mutex()
     private var loadedUri: String? = null
@@ -69,8 +70,9 @@ object LocalGemmaManager {
             }
             AppLog.i(context, "LocalGemma", "translation start region=${news.region} id=${news.id}")
             val result = completeLocked(
-                llama,
-                """
+                context = context,
+                llama = llama,
+                prompt = """
                 You are a professional Japanese game-localization translator.
                 Translate the following $sourceLanguage official game news into natural Japanese.
                 Preserve proper nouns, outfit/item names, dates, times, numbers, emoji, prices and event conditions accurately.
@@ -82,7 +84,9 @@ object LocalGemmaManager {
 
                 BODY:
                 ${news.originalText}
-                """.trimIndent()
+                """.trimIndent(),
+                maxPredictTokens = TRANSLATION_MAX_PREDICT_TOKENS,
+                mode = "translation"
             )
             val translation = parseTranslation(result.text, news).copy(tokensPerSecond = result.tokensPerSecond)
             writeTranslationCache(context, modelUri, news, translation)
@@ -97,8 +101,9 @@ object LocalGemmaManager {
             val llama = ensureModelLocked(context.applicationContext, modelUri)
             AppLog.i(context, "LocalGemma", "summary start region=${news.region} id=${news.id}")
             val result = completeLocked(
-                llama,
-                """
+                context = context,
+                llama = llama,
+                prompt = """
                 以下の公式ゲームニュースを日本語で簡潔に要約してください。
                 日付、時間、イベント期間、報酬、衣装名、アイテム名、価格、参加条件など重要情報は落とさないでください。
                 原文にない情報を推測・追加しないでください。
@@ -109,7 +114,9 @@ object LocalGemmaManager {
 
                 本文:
                 ${news.originalText}
-                """.trimIndent()
+                """.trimIndent(),
+                maxPredictTokens = SUMMARY_MAX_PREDICT_TOKENS,
+                mode = "summary"
             )
             val summary = LocalAiSummary(
                 text = cleanModelText(result.text).ifBlank { "要約を生成できませんでした。" },
@@ -256,26 +263,51 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load success name=$name context=$CONTEXT_LENGTH backend=official llama.cpp CPU variants"
+            "model load success name=$name context=$CONTEXT_LENGTH backend=official llama.cpp CPU variants pssMb=${Debug.getPss() / 1024}"
         )
         return llama
     }
 
-    private suspend fun completeLocked(llama: InferenceEngine, prompt: String): GenerationResult {
+    private suspend fun completeLocked(
+        context: Context,
+        llama: InferenceEngine,
+        prompt: String,
+        maxPredictTokens: Int,
+        mode: String
+    ): GenerationResult {
         check(llama.state.value is InferenceEngine.State.ModelReady) { "AIモデルが推論可能な状態ではありません。" }
         val started = SystemClock.elapsedRealtime()
         val output = StringBuilder()
         var emittedPieces = 0
 
+        AppLog.i(
+            context,
+            "LocalGemma",
+            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens pssMb=${Debug.getPss() / 1024}"
+        )
+
         withTimeout(GENERATE_TIMEOUT_MS) {
-            llama.sendUserPrompt(prompt, predictLength = MAX_PREDICT_TOKENS).collect { piece ->
+            llama.sendUserPrompt(prompt, predictLength = maxPredictTokens).collect { piece ->
                 output.append(piece)
                 emittedPieces++
+                if (emittedPieces == 1 || emittedPieces % 16 == 0) {
+                    val elapsedMs = SystemClock.elapsedRealtime() - started
+                    AppLog.i(
+                        context,
+                        "LocalGemma",
+                        "generation progress mode=$mode pieces=$emittedPieces elapsedMs=$elapsedMs pssMb=${Debug.getPss() / 1024}"
+                    )
+                }
             }
         }
 
         val seconds = ((SystemClock.elapsedRealtime() - started).coerceAtLeast(1L) / 1000.0)
         val tps = (emittedPieces / seconds).toFloat()
+        AppLog.i(
+            context,
+            "LocalGemma",
+            "generation complete mode=$mode pieces=$emittedPieces elapsedSec=$seconds pssMb=${Debug.getPss() / 1024}"
+        )
         return GenerationResult(output.toString(), tps)
     }
 
