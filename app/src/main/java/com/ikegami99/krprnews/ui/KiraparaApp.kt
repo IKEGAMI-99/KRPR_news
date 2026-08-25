@@ -27,11 +27,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
+import coil.compose.AsyncImage
 import com.ikegami99.krprnews.BuildConfig
 import com.ikegami99.krprnews.data.*
 import com.ikegami99.krprnews.prefs.AppPreferences
@@ -176,7 +178,8 @@ private fun HomeScreen(
                     Surface(
                         modifier = Modifier.padding(horizontal = 16.dp).fillMaxWidth(),
                         shape = RoundedCornerShape(22.dp),
-                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.78f)
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.78f),
+                        contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                     ) {
                         Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Default.AutoAwesome, null)
@@ -207,10 +210,10 @@ private fun HomeScreen(
             }
             item {
                 Text(
-                    "v0.2 · 公開RSS / 公開ページからAPIキーなしで取得し、中国語・英語・韓国語は端末内モデルで日本語へ翻訳します。取得できない場合は安全にフォールバックします。",
+                    "v0.2.1 · APIキーなしの複数ソース取得 + 端末内翻訳。中国はWeibo/Bilibili、Global/韓国はYouTubeを複数経路で取得します。",
                     modifier = Modifier.padding(horizontal = 22.dp, vertical = 8.dp),
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f)
                 )
             }
         }
@@ -221,37 +224,40 @@ private fun HomeScreen(
 private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     var original by remember(news.id) { mutableStateOf(false) }
+    val textColor = MaterialTheme.colorScheme.onSurface
+
     Card(
         modifier = modifier.fillMaxWidth(),
         shape = RoundedCornerShape(28.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.92f)),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.92f),
+            contentColor = textColor
+        ),
         elevation = CardDefaults.cardElevation(defaultElevation = 5.dp)
     ) {
         Column {
-            Box(
-                Modifier.fillMaxWidth().height(150.dp).background(
-                    Brush.linearGradient(
-                        listOf(
-                            MaterialTheme.colorScheme.primary.copy(alpha = 0.44f),
-                            MaterialTheme.colorScheme.secondary.copy(alpha = 0.32f),
-                            MaterialTheme.colorScheme.tertiary.copy(alpha = 0.34f)
-                        )
-                    )
-                ), contentAlignment = Alignment.Center
-            ) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(news.region.flag, fontSize = 40.sp)
-                    Text(news.category, color = Color.White, fontWeight = FontWeight.Bold)
-                    Text("✦ ･ﾟ: *✧･ﾟ:*", color = Color.White.copy(alpha = 0.75f))
-                }
-            }
+            NewsThumbnail(news)
             Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text("${news.region.flag} ${news.region.label} · ${news.platform}", fontWeight = FontWeight.SemiBold, modifier = Modifier.weight(1f))
-                    Text(news.publishedLabel, style = MaterialTheme.typography.labelSmall)
+                    Text(
+                        "${news.region.flag} ${news.region.label} · ${news.platform}",
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.weight(1f),
+                        color = textColor
+                    )
+                    Text(news.publishedLabel, style = MaterialTheme.typography.labelSmall, color = textColor.copy(alpha = 0.72f))
                 }
-                Text(if (original) news.originalTitle else news.translatedTitle, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
-                Text(if (original) news.originalText else news.translatedText, style = MaterialTheme.typography.bodyMedium)
+                Text(
+                    if (original) news.originalTitle else news.translatedTitle,
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold,
+                    color = textColor
+                )
+                Text(
+                    if (original) news.originalText else news.translatedText,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = textColor
+                )
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     FilterChip(
                         selected = !original,
@@ -265,7 +271,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                         label = { Text(news.region.originalLabel) }
                     )
                 }
-                HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.15f))
+                HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.25f))
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
                     TextButton(onClick = {
                         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(news.sourceUrl)))
@@ -288,6 +294,60 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                         Icon(Icons.Default.Share, null, Modifier.size(18.dp)); Spacer(Modifier.width(5.dp)); Text("共有")
                     }
                 }
+            }
+        }
+    }
+}
+
+@Composable
+private fun NewsThumbnail(news: NewsItem) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(190.dp)
+            .background(
+                Brush.linearGradient(
+                    listOf(
+                        MaterialTheme.colorScheme.primary.copy(alpha = 0.72f),
+                        MaterialTheme.colorScheme.secondary.copy(alpha = 0.58f),
+                        MaterialTheme.colorScheme.tertiary.copy(alpha = 0.62f)
+                    )
+                )
+            )
+    ) {
+        if (!news.imageUrl.isNullOrBlank()) {
+            AsyncImage(
+                model = news.imageUrl,
+                contentDescription = news.originalTitle,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop
+            )
+            Box(
+                Modifier
+                    .fillMaxSize()
+                    .background(
+                        Brush.verticalGradient(
+                            listOf(
+                                Color.Transparent,
+                                Color.Black.copy(alpha = 0.08f),
+                                Color.Black.copy(alpha = 0.68f)
+                            )
+                        )
+                    )
+            )
+            Column(
+                modifier = Modifier
+                    .align(Alignment.BottomStart)
+                    .padding(16.dp)
+            ) {
+                Text("${news.region.flag} ${news.category}", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 17.sp)
+                Text("✦ ･ﾟ: *✧･ﾟ:*", color = Color.White.copy(alpha = 0.82f))
+            }
+        } else {
+            Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(news.region.flag, fontSize = 40.sp)
+                Text(news.category, color = Color.White, fontWeight = FontWeight.Bold)
+                Text("✦ ･ﾟ: *✧･ﾟ:*", color = Color.White.copy(alpha = 0.82f))
             }
         }
     }
@@ -404,7 +464,11 @@ private fun SettingsScreen(
                     updateMessage?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
                     releaseInfo?.let { release ->
                         Spacer(Modifier.height(12.dp))
-                        Surface(shape = RoundedCornerShape(18.dp), color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f)) {
+                        Surface(
+                            shape = RoundedCornerShape(18.dp),
+                            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f),
+                            contentColor = MaterialTheme.colorScheme.onPrimaryContainer
+                        ) {
                             Column(Modifier.padding(14.dp)) {
                                 Text("最新版 ${release.tagName}", fontWeight = FontWeight.Bold)
                                 Text(release.notes.ifBlank { "更新内容はGitHub Releasesで確認できます。" }, maxLines = 6, style = MaterialTheme.typography.bodySmall)
@@ -440,10 +504,16 @@ private fun SettingsScreen(
 
 @Composable
 private fun SettingsCard(title: String, subtitle: String, content: @Composable ColumnScope.() -> Unit) {
-    Card(shape = RoundedCornerShape(26.dp), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.94f))) {
+    Card(
+        shape = RoundedCornerShape(26.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.94f),
+            contentColor = MaterialTheme.colorScheme.onSurface
+        )
+    ) {
         Column(Modifier.fillMaxWidth().padding(18.dp)) {
-            Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-            Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
+            Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onSurface)
+            Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.68f))
             Spacer(Modifier.height(12.dp))
             content()
         }
@@ -453,7 +523,7 @@ private fun SettingsCard(title: String, subtitle: String, content: @Composable C
 @Composable
 private fun SettingSwitch(label: String, checked: Boolean, onChange: (Boolean) -> Unit) {
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        Text(label, Modifier.weight(1f))
+        Text(label, Modifier.weight(1f), color = MaterialTheme.colorScheme.onSurface)
         Switch(checked = checked, onCheckedChange = onChange)
     }
 }
