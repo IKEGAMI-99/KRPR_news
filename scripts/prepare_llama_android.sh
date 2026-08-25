@@ -47,10 +47,11 @@ android {
                 arguments += "-DLLAMA_OPENSSL=OFF"
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
-                // Stability-first build for Android. v0.3.6 died during Gemma 4
-                // prompt prefill before the first generated token. Avoid runtime
-                // CPU-variant selection until that path is proven stable.
+                // Stability-first Android build. Keep one conservative generic
+                // arm64 CPU backend and keep Q4_0 in its original layout.
                 arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
+                arguments += "-DGGML_CPU_REPACK=OFF"
+                arguments += "-DGGML_CPU_KLEIDIAI=OFF"
                 arguments += "-DGGML_LLAMAFILE=OFF"
             }
         }
@@ -87,15 +88,42 @@ import sys
 
 p = Path(sys.argv[1])
 s = p.read_text()
-s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
-              'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
-s = s.replace('constexpr int   BATCH_SIZE              = 512;',
-              'constexpr int   BATCH_SIZE              = 8;')
 
-if 'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;' not in s:
-    raise SystemExit('Could not patch mobile context size in ai_chat.cpp')
-if 'constexpr int   BATCH_SIZE              = 8;' not in s:
-    raise SystemExit('Could not patch stability batch size in ai_chat.cpp')
+# v0.3.7 proves Gemma 4 dies inside the first llama_decode even with batch/ubatch=8.
+# Use deliberately tiny settings in v0.3.8 to distinguish a memory/graph-size issue
+# from a model/backend correctness crash. Speed is secondary until one token survives.
+s = s.replace('constexpr int   N_THREADS_MIN           = 2;',
+              'constexpr int   N_THREADS_MIN           = 1;')
+s = s.replace('constexpr int   N_THREADS_MAX           = 4;',
+              'constexpr int   N_THREADS_MAX           = 1;')
+s = s.replace('constexpr int   N_THREADS_HEADROOM      = 2;',
+              'constexpr int   N_THREADS_HEADROOM      = 0;')
+s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
+              'constexpr int   DEFAULT_CONTEXT_SIZE    = 1024;')
+s = s.replace('constexpr int   BATCH_SIZE              = 512;',
+              'constexpr int   BATCH_SIZE              = 1;')
+
+checks = [
+    'constexpr int   N_THREADS_MIN           = 1;',
+    'constexpr int   N_THREADS_MAX           = 1;',
+    'constexpr int   N_THREADS_HEADROOM      = 0;',
+    'constexpr int   DEFAULT_CONTEXT_SIZE    = 1024;',
+    'constexpr int   BATCH_SIZE              = 1;',
+]
+for check in checks:
+    if check not in s:
+        raise SystemExit(f'Could not patch stability setting: {check}')
+
+# Gemma 4 has unusual attention shapes. Force the ordinary attention path for this
+# diagnostic/stability build instead of letting llama.cpp AUTO-select Flash Attention.
+needle = '''    ctx_params.n_threads = n_threads;
+    ctx_params.n_threads_batch = n_threads;'''
+replacement = '''    ctx_params.n_threads = n_threads;
+    ctx_params.n_threads_batch = n_threads;
+    ctx_params.flash_attn_type = LLAMA_FLASH_ATTN_TYPE_DISABLED;'''
+if needle not in s:
+    raise SystemExit('Could not patch Flash Attention setting in ai_chat.cpp')
+s = s.replace(needle, replacement, 1)
 
 # Translation/summary requests are independent jobs, not a chat conversation.
 # Clear chat/KV history before every user prompt while keeping model weights loaded.
@@ -176,4 +204,4 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=2048 batch=8 generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=1024 batch=1 threads=1 flash-attn=off q4-repack=off generic-cpu)"

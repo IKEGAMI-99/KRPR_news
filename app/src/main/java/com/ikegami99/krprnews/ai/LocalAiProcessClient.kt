@@ -1,9 +1,12 @@
 package com.ikegami99.krprnews.ai
 
+import android.app.ActivityManager
+import android.app.ApplicationExitInfo
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
+import android.os.Build
 import android.os.Bundle
 import android.os.DeadObjectException
 import android.os.Handler
@@ -11,32 +14,41 @@ import android.os.IBinder
 import android.os.Looper
 import android.os.Message
 import android.os.Messenger
+import android.os.SystemClock
 import com.ikegami99.krprnews.data.NewsItem
 import com.ikegami99.krprnews.diagnostics.AppLog
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.withTimeout
+import java.io.ByteArrayOutputStream
+import java.io.InputStream
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicLong
 
 /**
  * Main-process facade for [LocalAiService].
  *
- * The Messenger boundary is deliberate: if llama.cpp aborts or Android kills the
- * heavy AI process, the UI process survives and receives a normal error instead.
+ * llama.cpp runs in a dedicated :ai process. If native inference aborts or Android
+ * kills the heavy process, Kirapara News itself survives. v0.3.8 also asks Android
+ * for ApplicationExitInfo so the next diagnostic log records WHY the AI process died.
  */
 object LocalAiProcessClient {
     private const val CONNECT_TIMEOUT_MS = 15_000L
     private const val REQUEST_TIMEOUT_MS = 300_000L
+    private const val EXIT_LOOKBACK_MS = 90_000L
+    private const val MAX_TRACE_BYTES = 2 * 1024 * 1024
 
     private val lock = Any()
     private val nextRequestId = AtomicLong(1L)
     private val pending = ConcurrentHashMap<Long, CompletableDeferred<Bundle>>()
+    private val mainHandler = Handler(Looper.getMainLooper())
 
     @Volatile
     private var service: Messenger? = null
     private var connecting: CompletableDeferred<Messenger>? = null
     private var bound = false
     private var applicationContext: Context? = null
+    private var lastDeathDiagnosticScheduleMs = 0L
+    private var lastLoggedExitTimestamp = 0L
 
     private val replies = Messenger(
         Handler(Looper.getMainLooper()) { message ->
@@ -176,7 +188,7 @@ object LocalAiProcessClient {
                     val ok = context.bindService(
                         Intent(context, LocalAiService::class.java),
                         connection,
-                        Context.BIND_AUTO_CREATE
+                        Context.BIND_AUTO_CREATE or Context.BIND_IMPORTANT
                     )
                     bound = ok
                     if (!ok) {
@@ -220,7 +232,126 @@ object LocalAiProcessClient {
         failPending(error)
         context?.let {
             AppLog.e(it, "LocalAiClient", "AI process died; UI process kept alive", error)
+            scheduleExitDiagnostics(it)
         }
+    }
+
+    /**
+     * Binder death can arrive a little before ActivityManager publishes the exit record,
+     * so retry a few times. Duplicate binder/service callbacks are de-duplicated here.
+     */
+    private fun scheduleExitDiagnostics(context: Context) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) return
+
+        val now = SystemClock.elapsedRealtime()
+        synchronized(lock) {
+            if (now - lastDeathDiagnosticScheduleMs < 2_000L) return
+            lastDeathDiagnosticScheduleMs = now
+        }
+
+        val app = context.applicationContext
+        val delays = longArrayOf(350L, 1_500L, 4_000L)
+        delays.forEachIndexed { index, delay ->
+            mainHandler.postDelayed({
+                val found = runCatching { captureLatestAiExit(app) }
+                    .onFailure { AppLog.e(app, "ExitInfo", "failed to read AI process exit info", it) }
+                    .getOrDefault(false)
+                if (!found && index == delays.lastIndex) {
+                    AppLog.w(app, "ExitInfo", "no recent :ai ApplicationExitInfo record was available")
+                }
+            }, delay)
+        }
+    }
+
+    private fun captureLatestAiExit(context: Context): Boolean {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) return false
+
+        val activityManager = context.getSystemService(ActivityManager::class.java) ?: return false
+        val aiProcessName = "${context.packageName}:ai"
+        val nowWall = System.currentTimeMillis()
+        val exit = activityManager
+            .getHistoricalProcessExitReasons(context.packageName, 0, 16)
+            .asSequence()
+            .filter { it.processName == aiProcessName }
+            .filter { nowWall - it.timestamp in 0..EXIT_LOOKBACK_MS }
+            .filter { it.timestamp > lastLoggedExitTimestamp }
+            .maxByOrNull { it.timestamp }
+            ?: return false
+
+        lastLoggedExitTimestamp = exit.timestamp
+        val summary = buildString {
+            append("process=")
+            append(exit.processName)
+            append(" reason=")
+            append(exitReasonName(exit.reason))
+            append('(')
+            append(exit.reason)
+            append(')')
+            append(" status=")
+            append(exit.status)
+            append(" importance=")
+            append(exit.importance)
+            append(" pssMb=")
+            append(exit.pss / 1024)
+            append(" rssMb=")
+            append(exit.rss / 1024)
+            append(" timestamp=")
+            append(exit.timestamp)
+            val description = exit.description
+            if (!description.isNullOrBlank()) {
+                append(" description=")
+                append(description.replace('\n', ' '))
+            }
+        }
+        AppLog.e(context, "ExitInfo", "AI process exit captured: $summary")
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && exit.reason == ApplicationExitInfo.REASON_CRASH_NATIVE) {
+            runCatching {
+                exit.traceInputStream?.use { input ->
+                    val bytes = readAtMost(input, MAX_TRACE_BYTES)
+                    if (bytes.isNotEmpty()) AppLog.saveAiExitTrace(context, bytes)
+                }
+            }.onFailure {
+                AppLog.e(context, "ExitInfo", "failed to read native tombstone trace", it)
+            }
+        }
+        return true
+    }
+
+    private fun exitReasonName(reason: Int): String = when (reason) {
+        0 -> "UNKNOWN"
+        1 -> "EXIT_SELF"
+        2 -> "SIGNALED"
+        3 -> "LOW_MEMORY"
+        4 -> "CRASH_JAVA"
+        5 -> "CRASH_NATIVE"
+        6 -> "ANR"
+        7 -> "INITIALIZATION_FAILURE"
+        8 -> "PERMISSION_CHANGE"
+        9 -> "EXCESSIVE_RESOURCE_USAGE"
+        10 -> "USER_REQUESTED"
+        11 -> "USER_STOPPED"
+        12 -> "DEPENDENCY_DIED"
+        13 -> "OTHER"
+        14 -> "FREEZER"
+        15 -> "PACKAGE_STATE_CHANGE"
+        16 -> "PACKAGE_UPDATED"
+        17 -> "MEMORY_LIMITER"
+        18 -> "ANOMALY"
+        else -> "REASON_$reason"
+    }
+
+    private fun readAtMost(input: InputStream, maxBytes: Int): ByteArray {
+        val out = ByteArrayOutputStream(minOf(maxBytes, 64 * 1024))
+        val buffer = ByteArray(16 * 1024)
+        var remaining = maxBytes
+        while (remaining > 0) {
+            val count = input.read(buffer, 0, minOf(buffer.size, remaining))
+            if (count <= 0) break
+            out.write(buffer, 0, count)
+            remaining -= count
+        }
+        return out.toByteArray()
     }
 
     private fun failPending(error: Throwable) {

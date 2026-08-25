@@ -36,20 +36,20 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
- * v0.3.7ではUIプロセスからの重い処理を :ai サービスへ転送する。
- * llama.cpp/ggmlのnative abortやOSによるAIプロセス終了が発生しても、
- * Kirapara News本体を巻き込まない。
+ * v0.3.7以降、重いllama.cpp処理は :ai サービスへ隔離する。
+ * v0.3.8は最初のllama_decodeで落ちる原因を切り分けるため、context 1024、
+ * batch/ubatch 1、1 thread、Flash Attention OFFの最小CPU構成を使う。
  *
  * SAFのcontent:// URIは初回だけアプリ専用モデル領域へコピーし、
  * llama.cppには通常ファイルパスを渡す。
  */
 object LocalGemmaManager {
     private const val CACHE_PREFS = "krpr_local_ai_cache_v3"
-    private const val CONTEXT_LENGTH = 2048
+    private const val CONTEXT_LENGTH = 1024
     private const val LOAD_TIMEOUT_MS = 300_000L
     private const val GENERATE_TIMEOUT_MS = 300_000L
-    private const val TRANSLATION_MAX_PREDICT_TOKENS = 384
-    private const val SUMMARY_MAX_PREDICT_TOKENS = 192
+    private const val TRANSLATION_MAX_PREDICT_TOKENS = 192
+    private const val SUMMARY_MAX_PREDICT_TOKENS = 96
 
     private val inferenceMutex = Mutex()
     private var loadedUri: String? = null
@@ -259,7 +259,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH pssMb=${Debug.getPss() / 1024}"
+            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
         )
 
         try {
@@ -291,7 +291,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=8 pssMb=${Debug.getPss() / 1024}"
+            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
         )
         return llama
     }
@@ -311,7 +311,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens batch=8 pssMb=${Debug.getPss() / 1024}"
+            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens context=$CONTEXT_LENGTH batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
         )
 
         withTimeout(GENERATE_TIMEOUT_MS) {
