@@ -3,24 +3,19 @@ package com.ikegami99.krprnews.ai
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
+import android.os.SystemClock
 import android.provider.OpenableColumns
+import com.arm.aichat.AiChat
+import com.arm.aichat.InferenceEngine
 import com.ikegami99.krprnews.data.NewsItem
 import com.ikegami99.krprnews.data.Region
 import com.ikegami99.krprnews.diagnostics.AppLog
-import kotlinx.coroutines.CompletableDeferred
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.CoroutineStart
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withTimeout
-import kotlinx.coroutines.channels.BufferOverflow
 import org.json.JSONObject
-import org.nehuatl.llamacpp.LlamaHelper
 import java.security.MessageDigest
 
 data class LocalAiTranslation(
@@ -39,21 +34,21 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
- * v0.3.1からScoped Storage対応のFile Descriptor経路を使う。
- * content:// URIを実ファイルパスへ偽装せずContentResolverから直接開くため、
- * Download等に置いた巨大GGUFをアプリ領域へ複製しない。
+ * v0.3.2では第三者rnllama AARを廃止し、Gemma 4のwide/MoE graph crash修正を含む
+ * 公式llama.cpp Android実装を固定コミットでビルドする。
+ * SAFのcontent:// URIは開いたFDを /proc/self/fd/<fd> として公式llama.cppへ渡すため、
+ * 数GBのGGUFをアプリ領域へ複製しない。
  */
 object LocalGemmaManager {
-    private const val CACHE_PREFS = "krpr_local_ai_cache_v2"
+    private const val CACHE_PREFS = "krpr_local_ai_cache_v3"
     private const val CONTEXT_LENGTH = 4096
     private const val LOAD_TIMEOUT_MS = 300_000L
     private const val GENERATE_TIMEOUT_MS = 300_000L
+    private const val MAX_PREDICT_TOKENS = 1024
 
     private val inferenceMutex = Mutex()
     private var loadedUri: String? = null
-    private var helper: LlamaHelper? = null
-    private var eventFlow: MutableSharedFlow<LlamaHelper.LLMEvent>? = null
-    private var engineScope: CoroutineScope? = null
+    private var engine: InferenceEngine? = null
 
     suspend fun warmUp(context: Context, modelUri: String) {
         inferenceMutex.withLock {
@@ -170,8 +165,11 @@ object LocalGemmaManager {
         }.getOrNull()
     }
 
-    private suspend fun ensureModelLocked(context: Context, modelUri: String): LlamaHelper {
-        helper?.takeIf { loadedUri == modelUri }?.let { return it }
+    private suspend fun ensureModelLocked(context: Context, modelUri: String): InferenceEngine {
+        engine?.takeIf {
+            loadedUri == modelUri && it.state.value is InferenceEngine.State.ModelReady
+        }?.let { return it }
+
         releaseLocked()
 
         val uri = Uri.parse(modelUri)
@@ -180,92 +178,105 @@ object LocalGemmaManager {
                 if (pfd.statSize == 0L) error("GGUFファイルが空です")
             } ?: error("GGUFファイルを開けません")
         }.getOrElse { cause ->
-            AppLog.e(context, "LocalGemma", "selected GGUF is not readable uri=$modelUri", cause)
+            AppLog.e(context, "LocalGemma", "selected GGUF is not readable", cause)
             throw IllegalStateException("選択したGGUFを読み取れません。もう一度GGUFを選択してください。", cause)
         }
 
-        val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-        val flow = MutableSharedFlow<LlamaHelper.LLMEvent>(
-            extraBufferCapacity = 512,
-            onBufferOverflow = BufferOverflow.DROP_OLDEST
-        )
-        val newHelper = LlamaHelper(context.contentResolver, scope, flow)
-        val ready = CompletableDeferred<Unit>()
-        val collector = scope.launch(start = CoroutineStart.UNDISPATCHED) {
-            flow.collect { event ->
-                when (event) {
-                    is LlamaHelper.LLMEvent.Loaded -> if (!ready.isCompleted) ready.complete(Unit)
-                    is LlamaHelper.LLMEvent.Error -> if (!ready.isCompleted) {
-                        ready.completeExceptionally(IllegalStateException(event.message))
-                    }
-                    else -> Unit
-                }
+        val llama = AiChat.getInferenceEngine(context)
+        var state = withTimeout(60_000L) {
+            llama.state.first {
+                it is InferenceEngine.State.Initialized ||
+                    it is InferenceEngine.State.ModelReady ||
+                    it is InferenceEngine.State.Error
             }
         }
 
-        val name = displayName(context, modelUri) ?: modelUri
+        if (state is InferenceEngine.State.ModelReady || state is InferenceEngine.State.Error) {
+            runCatching { llama.cleanUp() }
+                .onFailure { AppLog.e(context, "LocalGemma", "engine reset failed", it) }
+            state = llama.state.value
+        }
+        if (state !is InferenceEngine.State.Initialized) {
+            val cause = (state as? InferenceEngine.State.Error)?.exception
+            throw IllegalStateException("llama.cppエンジンを初期化できませんでした。", cause)
+        }
+
+        val name = displayName(context, modelUri) ?: "selected.gguf"
         val size = modelSizeBytes(context, modelUri)
-        AppLog.i(context, "LocalGemma", "model load start name=$name size=${size ?: -1} uri=$modelUri")
+        AppLog.i(
+            context,
+            "LocalGemma",
+            "model load start name=$name size=${size ?: -1} backend=official-llama-cpu context=$CONTEXT_LENGTH"
+        )
+
         try {
-            newHelper.load(path = modelUri, contextLength = CONTEXT_LENGTH) {
-                if (!ready.isCompleted) ready.complete(Unit)
-            }
-            withTimeout(LOAD_TIMEOUT_MS) { ready.await() }
+            context.contentResolver.openFileDescriptor(uri, "r")?.use { pfd ->
+                if (pfd.fd < 0) error("GGUFのFile Descriptorを取得できません")
+                val procPath = "/proc/self/fd/${pfd.fd}"
+                AppLog.i(context, "LocalGemma", "opening model through SAF fd=${pfd.fd}")
+                withTimeout(LOAD_TIMEOUT_MS) {
+                    llama.loadModel(procPath)
+                }
+            } ?: error("GGUFファイルを開けません")
         } catch (t: Throwable) {
-            collector.cancel()
-            runCatching { newHelper.abort() }
-            runCatching { newHelper.release() }
-            scope.cancel()
-            AppLog.e(context, "LocalGemma", "model load failed name=$name", t)
+            runCatching {
+                if (llama.state.value is InferenceEngine.State.Error ||
+                    llama.state.value is InferenceEngine.State.ModelReady
+                ) {
+                    llama.cleanUp()
+                }
+            }
+            AppLog.e(context, "LocalGemma", "model load failed name=$name state=${llama.state.value.javaClass.simpleName}", t)
             throw IllegalStateException(
-                "GGUFの読み込みに失敗しました。ログを書き出して確認できます。モデル形式と空きRAMも確認してください。",
+                "GGUFの読み込みに失敗しました。設定から診断ログを書き出してください。",
                 t
             )
         }
-        collector.cancel()
+
+        if (llama.state.value !is InferenceEngine.State.ModelReady) {
+            throw IllegalStateException("GGUFを読み込みましたが推論準備状態になりませんでした。")
+        }
 
         loadedUri = modelUri
-        helper = newHelper
-        eventFlow = flow
-        engineScope = scope
-        AppLog.i(context, "LocalGemma", "model load success name=$name context=$CONTEXT_LENGTH backend=CPU/NEON")
-        return newHelper
+        engine = llama
+        AppLog.i(
+            context,
+            "LocalGemma",
+            "model load success name=$name context=$CONTEXT_LENGTH backend=official llama.cpp CPU variants"
+        )
+        return llama
     }
 
-    private suspend fun completeLocked(llama: LlamaHelper, prompt: String): GenerationResult {
-        val flow = eventFlow ?: error("AIイベントストリームがありません")
-        val scope = engineScope ?: error("AIエンジンがありません")
-        val done = CompletableDeferred<GenerationResult>()
-        val collector = scope.launch(start = CoroutineStart.UNDISPATCHED) {
-            flow.collect { event ->
-                when (event) {
-                    is LlamaHelper.LLMEvent.Done -> {
-                        val seconds = (event.duration.coerceAtLeast(1L) / 1000.0)
-                        val tps = (event.tokenCount / seconds).toFloat()
-                        if (!done.isCompleted) done.complete(GenerationResult(event.fullText, tps))
-                    }
-                    is LlamaHelper.LLMEvent.Error -> if (!done.isCompleted) {
-                        done.completeExceptionally(IllegalStateException(event.message))
-                    }
+    private suspend fun completeLocked(llama: InferenceEngine, prompt: String): GenerationResult {
+        check(llama.state.value is InferenceEngine.State.ModelReady) { "AIモデルが推論可能な状態ではありません。" }
+        val started = SystemClock.elapsedRealtime()
+        val output = StringBuilder()
+        var emittedPieces = 0
+
+        withTimeout(GENERATE_TIMEOUT_MS) {
+            llama.sendUserPrompt(prompt, predictLength = MAX_PREDICT_TOKENS).collect { piece ->
+                output.append(piece)
+                emittedPieces++
+            }
+        }
+
+        val seconds = ((SystemClock.elapsedRealtime() - started).coerceAtLeast(1L) / 1000.0)
+        val tps = (emittedPieces / seconds).toFloat()
+        return GenerationResult(output.toString(), tps)
+    }
+
+    private fun releaseLocked() {
+        val current = engine
+        if (current != null) {
+            runCatching {
+                when (current.state.value) {
+                    is InferenceEngine.State.ModelReady,
+                    is InferenceEngine.State.Error -> current.cleanUp()
                     else -> Unit
                 }
             }
         }
-        try {
-            llama.predict(prompt, partialCompletion = true)
-            return withTimeout(GENERATE_TIMEOUT_MS) { done.await() }
-        } finally {
-            collector.cancel()
-        }
-    }
-
-    private fun releaseLocked() {
-        runCatching { helper?.abort() }
-        runCatching { helper?.release() }
-        runCatching { engineScope?.cancel() }
-        helper = null
-        eventFlow = null
-        engineScope = null
+        engine = null
         loadedUri = null
     }
 
