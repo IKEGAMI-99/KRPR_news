@@ -12,8 +12,12 @@ android {
         applicationId = "com.ikegami99.krprnews"
         minSdk = 26
         targetSdk = 35
-        versionCode = 6
-        versionName = "0.2.4"
+        versionCode = 7
+        versionName = "0.3.0"
+
+        ndk {
+            abiFilters += "arm64-v8a"
+        }
     }
 
     signingConfigs {
@@ -68,8 +72,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    // サーバー翻訳が無い記事だけ、端末内ML Kitをフォールバックとして利用する。
-    implementation("com.google.mlkit:translate:17.0.3")
+    // llama.cpp b9878を内包したarm64 Android AAR。Gemma 4 GGUFを端末内で直接実行する。
+    implementation("dev.ffmpegkit-maintained:llama-android:0.1.1")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
