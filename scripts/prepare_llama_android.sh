@@ -137,4 +137,35 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
+# java.io.File.canRead()/access() can reject /proc/self/fd/<n> on Android scoped storage
+# even while the ContentResolver ParcelFileDescriptor is valid and open. For that path,
+# let llama.cpp open the already-authorized descriptor via procfs instead of rejecting it first.
+python3 - "$LIB_DIR/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt" <<'PY'
+from pathlib import Path
+import sys
+
+p = Path(sys.argv[1])
+s = p.read_text()
+old = '''                File(pathToModel).let {
+                    require(it.exists()) { "File not found" }
+                    require(it.isFile) { "Not a valid file" }
+                    require(it.canRead()) { "Cannot read file" }
+                }
+'''
+new = '''                if (pathToModel.startsWith("/proc/self/fd/")) {
+                    Log.i(TAG, "Using open SAF file descriptor; skipping java.io.File access checks")
+                } else {
+                    File(pathToModel).let {
+                        require(it.exists()) { "File not found" }
+                        require(it.isFile) { "Not a valid file" }
+                        require(it.canRead()) { "Cannot read file" }
+                    }
+                }
+'''
+if old not in s:
+    raise SystemExit('Could not patch SAF /proc/self/fd access check')
+s = s.replace(old, new, 1)
+p.write_text(s)
+PY
+
 echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT"
