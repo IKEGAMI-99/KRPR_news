@@ -48,8 +48,10 @@ android {
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
                 // Stability-first Android build. Keep one conservative generic
-                // arm64 CPU backend instead of runtime CPU-variant selection.
+                // arm64 CPU backend and keep Q4_0 in its original layout.
                 arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
+                arguments += "-DGGML_CPU_REPACK=OFF"
+                arguments += "-DGGML_CPU_KLEIDIAI=OFF"
                 arguments += "-DGGML_LLAMAFILE=OFF"
             }
         }
@@ -202,4 +204,4 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=1024 batch=1 threads=1 flash-attn=off generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=1024 batch=1 threads=1 flash-attn=off q4-repack=off generic-cpu)"
