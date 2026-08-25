@@ -12,8 +12,8 @@ android {
         applicationId = "com.ikegami99.krprnews"
         minSdk = 26
         targetSdk = 35
-        versionCode = 7
-        versionName = "0.3.0"
+        versionCode = 8
+        versionName = "0.3.1"
 
         ndk {
             abiFilters += "arm64-v8a"
@@ -72,8 +72,9 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    // v0.3: llama.cpp b9878を内包したarm64 Android AAR。Gemma 4 GGUFを端末内で直接実行する。
-    implementation("dev.ffmpegkit-maintained:llama-android:0.1.1")
+    // Scoped Storageのcontent:// URIをFile Descriptor経由で直接開けるllama.cpp Android binding。
+    // 大容量GGUFをアプリ領域へ複製せず、その場で読み込む。
+    implementation("io.github.ljcamargo:llamacpp-kotlin:0.4.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
