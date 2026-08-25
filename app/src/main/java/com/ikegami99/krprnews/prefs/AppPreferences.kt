@@ -18,4 +18,12 @@ class AppPreferences(context: Context) {
     var wifiOnly: Boolean
         get() = prefs.getBoolean("wifi_only", true)
         set(value) { prefs.edit().putBoolean("wifi_only", value).apply() }
+
+    var ggufModelUri: String?
+        get() = prefs.getString("gguf_model_uri", null)
+        set(value) { prefs.edit().putString("gguf_model_uri", value).apply() }
+
+    var ggufModelName: String?
+        get() = prefs.getString("gguf_model_name", null)
+        set(value) { prefs.edit().putString("gguf_model_name", value).apply() }
 }
