@@ -2,24 +2,45 @@ name: Release APK
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
+    paths:
+      - 'app/build.gradle.kts'
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: kirapara-release
+  cancel-in-progress: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
+
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
+
+      - name: Read app version
+        id: version
+        shell: bash
+        run: |
+          VERSION=$(grep -oP 'versionName\s*=\s*"\K[^"]+' app/build.gradle.kts | head -1)
+          if [ -z "$VERSION" ]; then
+            echo "Could not read versionName"
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Validate signing secrets
         env:
@@ -28,7 +49,7 @@ jobs:
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
-          test -n "$KEYSTORE_BASE64" || (echo "KEYSTORE_BASE64 is missing" && exit 1)
+          test -n "$KEYSTORE_BASE64" || (echo "KEYSTORE_BASE64 is missing. Configure repository signing secrets before publishing." && exit 1)
           test -n "$KEYSTORE_PASSWORD" || (echo "KEYSTORE_PASSWORD is missing" && exit 1)
           test -n "$KEY_ALIAS" || (echo "KEY_ALIAS is missing" && exit 1)
           test -n "$KEY_PASSWORD" || (echo "KEY_PASSWORD is missing" && exit 1)
@@ -43,14 +64,19 @@ jobs:
         run: gradle assembleRelease --stacktrace
 
       - name: Prepare release assets
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
         run: |
-          cp app/build/outputs/apk/release/app-release.apk "Kirapara-News-${GITHUB_REF_NAME}.apk"
-          sha256sum "Kirapara-News-${GITHUB_REF_NAME}.apk" > "Kirapara-News-${GITHUB_REF_NAME}.apk.sha256"
+          cp app/build/outputs/apk/release/app-release.apk "Kirapara-News-${TAG}.apk"
+          sha256sum "Kirapara-News-${TAG}.apk" > "Kirapara-News-${TAG}.apk.sha256"
 
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          target_commitish: main
+          name: Kirapara News ${{ steps.version.outputs.tag }}
           generate_release_notes: true
           files: |
-            Kirapara-News-${{ github.ref_name }}.apk
-            Kirapara-News-${{ github.ref_name }}.apk.sha256
+            Kirapara-News-${{ steps.version.outputs.tag }}.apk
+            Kirapara-News-${{ steps.version.outputs.tag }}.apk.sha256
