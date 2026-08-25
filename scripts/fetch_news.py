@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import html
 import json
-import os
 import re
 import time
 import urllib.parse
@@ -11,8 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
-UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.2.4"
-GOOGLE_TRANSLATE_API_KEY = os.environ.get("GOOGLE_TRANSLATE_API_KEY", "").strip()
+UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.3.0"
 
 RSSHUB_HOSTS = [
     "https://rsshub.app",
@@ -31,12 +29,6 @@ STATIC_FALLBACK_IMAGES = {
     "JAPAN": "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png",
     "CHINA": "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg",
     "KOREA": "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png",
-}
-
-LANGUAGE_BY_REGION = {
-    "CHINA": "zh-CN",
-    "GLOBAL": "en",
-    "KOREA": "ko",
 }
 
 _official_image_cache = {}
@@ -307,73 +299,6 @@ def load_existing():
         return []
 
 
-def google_translate(texts: list[str], source: str) -> list[str]:
-    if not texts or not GOOGLE_TRANSLATE_API_KEY:
-        return texts
-    endpoint = "https://translation.googleapis.com/language/translate/v2?" + urllib.parse.urlencode(
-        {"key": GOOGLE_TRANSLATE_API_KEY}
-    )
-    payload = json.dumps({"q": texts, "source": source, "target": "ja", "format": "text"}).encode("utf-8")
-    req = urllib.request.Request(
-        endpoint,
-        data=payload,
-        method="POST",
-        headers={"Content-Type": "application/json", "User-Agent": UA},
-    )
-    with urllib.request.urlopen(req, timeout=30) as response:
-        data = json.loads(response.read().decode("utf-8"))
-    translations = data.get("data", {}).get("translations", [])
-    if len(translations) != len(texts):
-        raise RuntimeError("Google Translation response size mismatch")
-    return [html.unescape(x.get("translatedText", "")) for x in translations]
-
-
-def apply_translations(rows: list[dict], existing: list[dict]):
-    existing_by_url = {x.get("sourceUrl"): x for x in existing if x.get("sourceUrl")}
-    pending_by_lang: dict[str, list[tuple[dict, str, str]]] = {}
-
-    for row in rows:
-        if row.get("region") == "JAPAN":
-            row["translatedTitle"] = row.get("title", "")
-            row["translatedBody"] = row.get("body", "")
-            continue
-
-        previous = existing_by_url.get(row.get("sourceUrl"))
-        if (
-            previous
-            and previous.get("title") == row.get("title")
-            and previous.get("body") == row.get("body")
-            and previous.get("translatedTitle")
-            and previous.get("translatedBody")
-        ):
-            row["translatedTitle"] = previous["translatedTitle"]
-            row["translatedBody"] = previous["translatedBody"]
-            continue
-
-        lang = LANGUAGE_BY_REGION.get(row.get("region"))
-        if not lang:
-            continue
-        pending_by_lang.setdefault(lang, []).extend([
-            (row, "translatedTitle", row.get("title", "")),
-            (row, "translatedBody", row.get("body", "")),
-        ])
-
-    if not GOOGLE_TRANSLATE_API_KEY:
-        print("GOOGLE_TRANSLATE_API_KEY is not set; app will use on-device ML Kit fallback")
-        return
-
-    for lang, pending in pending_by_lang.items():
-        for start in range(0, len(pending), 40):
-            chunk = pending[start:start + 40]
-            texts = [x[2] for x in chunk]
-            try:
-                translated = google_translate(texts, lang)
-                for (row, field, _), value in zip(chunk, translated):
-                    row[field] = value
-            except Exception as e:
-                print(f"google translate failed ({lang}): {e}")
-
-
 def main():
     existing = load_existing()
     fresh = []
@@ -406,6 +331,8 @@ def main():
         url = row.get("sourceUrl")
         if not url:
             continue
+        row.pop("translatedTitle", None)
+        row.pop("translatedBody", None)
         if is_placeholder_image(row.get("imageUrl")):
             row["imageUrl"] = official_fallback_image(row.get("region"))
         dedup[url] = row
@@ -415,11 +342,10 @@ def main():
         key=lambda x: int(x.get("publishedAtEpoch") or 0),
         reverse=True,
     )[:60]
-    apply_translations(rows, existing)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"wrote {len(rows)} items")
+    print(f"wrote {len(rows)} original-language items")
 
 
 if __name__ == "__main__":
