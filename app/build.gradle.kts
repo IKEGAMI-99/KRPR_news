@@ -72,7 +72,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    // llama.cpp b9878を内包したarm64 Android AAR。Gemma 4 GGUFを端末内で直接実行する。
+    // v0.3: llama.cpp b9878を内包したarm64 Android AAR。Gemma 4 GGUFを端末内で直接実行する。
     implementation("dev.ffmpegkit-maintained:llama-android:0.1.1")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
