@@ -5,40 +5,71 @@
 > [!IMPORTANT]
 > 本アプリは非公式ファンアプリです。Archosaur Games、VVANNA GIRLS、各地域の運営会社・SNS事業者とは関係ありません。
 
-## 📥 最新版APKをダウンロード
+## 📥 最新版APK
 
-**現在の正式版: v0.2.4**
+**現在の開発版: v0.3.0**
 
-### [⬇️ Kirapara News v0.2.4 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.2.4/Kirapara-News-v0.2.4.apk)
+正式APKはGitHub Releasesから配布します。
 
 - [最新のGitHub Releaseを開く](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
 - [すべてのReleasesを見る](https://github.com/IKEGAMI-99/KRPR_news/releases)
-- SHA-256: `695e435cd99aaccc31dc3fe771299e51bee03325aeadac685a76e882e4d876b2`
 
-> [!WARNING]
-> APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
+## ✨ v0.3.0
 
-## ✨ v0.2.4
+翻訳方式を全面的に変更しました。
 
-v0.2.4では翻訳、サムネイル、ニュースカードの読みやすさを改善しました。
+- ニュースは**各国の原文を標準表示**
+- サーバー翻訳を廃止
+- Google Cloud Translationを廃止
+- ML Kit翻訳を廃止
+- 設定から端末内の **GGUFモデルを選択**
+- llama.cppでGemma 4などのGGUFを端末内実行
+- 海外記事に「日本語に翻訳」ボタンを追加
+- 全記事に「日本語要約」ボタンを追加
+- 翻訳後は「原文に戻す」で即切り替え
+- 翻訳・要約はユーザーが押した記事だけ実行
+- モデルは一度ロードしたらメモリ上で再利用
+- 翻訳・要約結果を記事単位で端末キャッシュ
+- GGUF自体はアプリ領域へコピーせず、Androidのファイル選択権限から直接読み込み
+- `versionCode 7` / `versionName 0.3.0`
 
-- ニュースカードを折りたたみ式へ変更
-- 閉じた状態ではタイトル最大2行 + 本文最大3行を表示
-- 「続きを読む」で全文を展開し、「閉じる」で元に戻せる
-- 日本語 / 原文の切り替えは折りたたみ時でも利用可能
-- Weiboのハッシュタグ、定型ダウンロード文などを翻訳前に除去
-- Google Cloud Translationによるサーバー側日本語翻訳に対応
-- Google翻訳済みキャッシュが無い記事だけML Kit On-Device Translationへフォールバック
-- Weibo等の汎用プレースホルダー画像を記事サムネイルとして扱わないよう修正
-- 記事画像を取得できない場合、日本・中国・韓国は各地域の公式サイト画像をフォールバック表示
-- YouTubeは実際の動画サムネイルを優先
-- 読み込み中インジケータと取得失敗時の再読み込み画面を追加
-- 画面下のバージョン表記を自動取得へ変更
-- `versionCode 6` / `versionName 0.2.4`
+## 🧠 ローカルGemma 4
 
-## 🌐 ニュース取得と翻訳
+設定 → **ローカルGemma 4** → **GGUFを選択** から、端末に保存済みのGGUFを指定します。
 
-ニュース取得そのものは、X APIやYouTube Data APIなどの有料・認証APIに依存しない構成です。
+```text
+端末内の model.gguf
+        ↓
+Android ファイル選択
+        ↓
+永続読み取り権限
+        ↓
+llama.cpp
+        ↓
+翻訳 / 日本語要約
+        ↓
+端末内キャッシュ
+```
+
+モデルやニュース本文を翻訳APIへ送信しません。ニュースを見るだけならモデルはロードされず、「日本語に翻訳」または「日本語要約」を押した時に初めてロードします。
+
+### 推論設定
+
+- GGUF / llama.cpp
+- Context: 4096 tokens
+- CPU/NEON
+- Threads: 端末CPU数に応じて4〜8
+- arm64-v8a
+- Gemma 4対応llama.cppを使用
+
+v0.3.0で使用するAARは `dev.ffmpegkit-maintained:llama-android:0.1.1` で、llama.cpp b9878を内包しています。
+
+> [!NOTE]
+> モデルサイズと量子化によって必要RAM・生成速度は大きく変わります。大きなGemma 4では初回ロードや生成に時間がかかる場合があります。
+
+## 🌐 ニュース取得
+
+GitHub Actionsは**原文ニュースを集めるだけ**です。翻訳処理は行いません。
 
 ```text
 公式公開ページ / 公開RSS / RSSHub
@@ -47,43 +78,12 @@ GitHub Actions 定期収集
         ↓
 SNS本文の不要部分を整理
         ↓
-Google Cloud Translation（設定時）
-        ↓
-data/news.json
+data/news.json（原文）
         ↓
 Androidアプリ
-        ↓
-未翻訳記事のみML Kitで端末内翻訳
 ```
 
-GitHub Actionsが1時間ごとにニュースを取得し、`data/news.json` を更新します。アプリはまずこの軽量キャッシュを読み、キャッシュが利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
-
-### Google Cloud Translationを使う場合
-
-Google Cloud TranslationのAPIキーは**APKやソースコードへ直接書きません**。GitHub Repository Secretとして保存します。
-
-Secret名:
-
-```text
-GOOGLE_TRANSLATE_API_KEY
-```
-
-設定場所:
-
-```text
-Repository
-→ Settings
-→ Secrets and variables
-→ Actions
-→ New repository secret
-```
-
-設定後、GitHub Actionsの **Refresh News Cache** を実行すると、新規・変更された海外記事をGoogle Cloud Translationで日本語化してキャッシュへ保存します。
-
-APIキーが設定されていない場合でもアプリは動作します。その場合は中国語 / 英語 / 韓国語をML Kit On-Device Translationで端末内翻訳します。
-
-> [!CAUTION]
-> `GOOGLE_TRANSLATE_API_KEY` をREADME、ソースコード、Issue、スクリーンショット等へ掲載しないでください。
+GitHub Actionsが1時間ごとにニュースを取得し、`data/news.json` を更新します。アプリはまずこの軽量キャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
 
 ## 📰 接続しているニュースソース
 
@@ -95,29 +95,31 @@ APIキーが設定されていない場合でもアプリは動作します。�
 | 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
 | 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
 
-公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。ソース単位でエラーを分離し、一つの取得先が失敗しても他の地域を表示できる構成にしています。
+公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。一つの取得先が失敗しても他の地域は表示できるようにしています。
 
 ## 🖼️ サムネイル
 
-優先順位は以下です。
+優先順位:
 
 1. 記事または動画固有の画像
 2. YouTube動画サムネイル
-3. 地域公式サイトのフォールバック画像
+3. 各地域公式サイトの画像
 4. アプリ内グラデーション背景
 
-Weiboが返す `timeline_card_small_*_default` 等の汎用画像は記事画像として使用しません。
+Weiboの `timeline_card_small_*_default` などの汎用プレースホルダー画像は記事画像として使用しません。
 
 ## 📱 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国の統合タイムライン
-- 日本語 / 原文のワンタップ切替
+- 各国原文を標準表示
+- ローカルGGUFによるオンデマンド日本語翻訳
+- ローカルGGUFによる日本語要約
+- 翻訳 / 要約キャッシュ
 - 折りたたみ式ニュースカード
 - 地域フィルター
 - 記事画像・YouTubeサムネイル表示
 - Android標準共有シート
 - 公式投稿を開くボタン
-- パール・ピンク・ラベンダーを基調にした独自UI
 - ライト / ダーク / 端末設定連動テーマ
 - GitHub Releasesの最新版チェック
 - アプリ内APKダウンロード
@@ -126,28 +128,20 @@ Weiboが返す `timeline_card_small_*_default` 等の汎用画像は記事画像
 ## 📱 対応環境
 
 - Android 8.0 (API 26) 以上
+- arm64-v8a
+- GGUFファイルはユーザーが用意
 - Google Playでは配布しません
-- 正式APKはこのリポジトリのGitHub Releasesから配布します
 
-## 📥 APKのインストール
+## 🔒 プライバシー
 
-1. README上部の **「Kirapara News v0.2.4 APKをダウンロード」** または **Releases** を開く
-2. `Kirapara-News-vX.X.X.apk` をダウンロード
-3. APKを開く
-4. Androidから求められた場合は、利用中のブラウザまたはファイルアプリについて「この提供元からのアプリを許可」を有効にする
-5. Androidの確認画面でインストールする
+- 翻訳・要約は端末内
+- GGUFを外部へ送信しない
+- ニュース本文を翻訳APIへ送信しない
+- ユーザー登録不要
+- 位置情報、連絡先、写真ライブラリ不要
+- 選択したGGUFへの読み取り権限のみ保持
 
-GitHub ActionsのDebug APKは開発確認用です。継続利用・アプリ内アップデートにはReleasesの正式署名APKを使用してください。
-
-## ⚠️ セキュリティ警告
-
-Google Play以外からAPKをインストールするため、Androidから「提供元不明のアプリ」等の警告が表示される場合があります。これはサイドロードAPKに対するAndroidの標準的な保護機能です。
-
-- APKは `IKEGAMI-99/KRPR_news` のGitHub Releasesからのみ取得してください
-- 第三者サイト、SNS、ファイル共有サービス等で再配布されたAPKをインストールしないでください
-- 各正式ReleaseにはAPKと `.sha256` を掲載します
-- アプリ内更新もSHA-256が確認できないReleaseはインストールしません
-- Androidが署名不一致を警告した場合はインストールを中止してください
+ネットワーク通信は公開ニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認に使用します。
 
 ## 🔄 アプリ内アップデート
 
@@ -155,8 +149,6 @@ Google Play以外からAPKをインストールするため、Androidから「�
 
 ```text
 GitHub Releases
-      ↓
-最新版を確認
       ↓
 versionNameを比較
       ↓
@@ -167,28 +159,18 @@ SHA-256検証
 Android標準インストーラー
 ```
 
-Androidの仕様上、ユーザー確認なしにAPKを自動インストールすることはありません。
-
-## 🎨 デザイン
-
-ライトモードはパールホワイト、淡いピンク、ラベンダー、水色。ダークモードはダークパープル、ネイビー、ピンクを基調にしています。
-
-記事はコンパクトなカードとして一覧表示し、必要な記事だけ展開して全文を確認できます。
-
 ## 🧱 技術構成
 
 - Kotlin
 - Jetpack Compose / Material 3
 - Coroutines
-- Android XmlPullParser
-- HttpURLConnection
-- ML Kit On-Device Translation
-- Google Cloud Translation（任意）
+- llama.cpp / GGUF
+- `dev.ffmpegkit-maintained:llama-android:0.1.1`
+- Android Storage Access Framework
 - Coil
 - SharedPreferences
 - Android DownloadManager
-- GitHub REST API
-- GitHub Actionsによる定期ニュース収集
+- GitHub Actions
 
 ## 🛠️ ビルド
 
@@ -204,8 +186,6 @@ gradle assembleDebug
 app/build/outputs/apk/debug/app-debug.apk
 ```
 
-mainへのpushではGitHub ActionsもDebug APKをビルドし、Workflow Artifactとして保存します。
-
 ## 🚀 署名済みRelease
 
 GitHub Repository Secretsへ以下を登録します。
@@ -215,19 +195,9 @@ GitHub Repository Secretsへ以下を登録します。
 - `KEY_ALIAS`
 - `KEY_PASSWORD`
 
-翻訳をGoogle Cloud Translationで行う場合は追加で:
-
-- `GOOGLE_TRANSLATE_API_KEY`
+翻訳API用Secretは不要です。
 
 `versionName` を更新してmainへpushすると、固定署名済みAPKとSHA-256ファイルをGitHub Releaseへ自動公開します。
-
-署名鍵は絶対にリポジトリへコミットしないでください。全バージョンで同じ署名鍵を使わないとAndroidの上書きアップデートができなくなります。
-
-## 🛡️ プライバシー
-
-ユーザー登録、位置情報、連絡先、写真ライブラリ等を必要としません。ネットワーク通信は公開ニュース取得、必要時の翻訳モデル取得、ニュースキャッシュ取得、GitHub Releasesの更新確認に使用します。
-
-Google Cloud Translationを有効にした場合、GitHub Actions上で海外ニュース本文をGoogle Cloud Translationへ送信して日本語訳を生成します。ユーザーがアプリへ入力した個人情報を送信する機能はありません。
 
 ## ⚖️ コンテンツと免責
 
@@ -235,4 +205,4 @@ Google Cloud Translationを有効にした場合、GitHub Actions上で海外ニ
 
 ## Version
 
-Current development version: **v0.2.4**
+Current development version: **v0.3.0**
