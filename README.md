@@ -5,20 +5,30 @@
 > [!IMPORTANT]
 > 本アプリは非公式ファンアプリです。Archosaur Games、VVANNA GIRLS、各地域の運営会社・SNS事業者とは関係ありません。
 
-## ✨ v0.2.1
+## 📥 最新版APKをダウンロード
 
-v0.2.1では実機確認をもとにニュース取得と表示を改善しました。
+**現在の正式版: v0.2.3**
 
-- 🇯🇵 日本公式YouTubeは公式RSSを直接取得
-- 🇨🇳 中国は公式Weiboに加え、公式Bilibili（UID `676200579`）を追加
-- 🌎 Global公式YouTubeは `/c/LifeMakeover` と `@LifeMakeover` の複数URLからchannel IDを解決
-- 🇰🇷 Stylight公式YouTubeは `@stylight_official` の公開ページとRSSHubをフォールバック利用
-- RSSHubは複数の公開ホストを順番に試し、1サービス障害で地域全体が消えにくい構成へ変更
-- YouTube HTMLからのchannel ID抽出パターンを複数用意
-- ニュースカード上部に取得できた画像・YouTubeサムネイルを表示
-- RSS/RSSHub本文中の画像URLも可能な範囲で抽出
-- ダークモード時のカード本文・見出し・設定画面文字色を明示的に白系へ修正
-- `versionCode 3` / `versionName 0.2.1`
+### [⬇️ Kirapara News v0.2.3 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.2.3/Kirapara-News-v0.2.3.apk)
+
+- [最新のGitHub Releaseを開く](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
+- [すべてのReleasesを見る](https://github.com/IKEGAMI-99/KRPR_news/releases)
+- SHA-256: `07251ab50632ff047fbd6147b22d501f78860b61cb0d5b836a77dfb5bf20e139`
+
+> [!WARNING]
+> APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
+
+## ✨ v0.2.3
+
+v0.2.3ではニュース取得の安定性を改善しました。
+
+- GitHub ActionsがAPIキーなしで公開ニュースを定期収集し、`data/news.json` を生成
+- アプリはまず軽量なニュースキャッシュを読み、SNS/RSSの遅延で画面全体が待たされにくい構成へ変更
+- キャッシュ取得に失敗した場合のみ従来の公開RSS / RSSHub直接取得へフォールバック
+- 中国Weibo、韓国YouTubeなど複数地域の実ニュースをキャッシュへ統合
+- 翻訳失敗時も原文ニュースを表示
+- 正式Release APKは固定署名鍵で署名し、SHA-256を添付
+- `versionCode 5` / `versionName 0.2.3`
 
 ## 🌐 APIキー不要 + ローカル翻訳
 
@@ -31,16 +41,18 @@ v0.2.1では実機確認をもとにニュース取得と表示を改善しま�
 ```text
 公式公開ページ / 公開RSS
         ↓
-YouTube RSS / RSSHub
+GitHub Actions 定期収集
         ↓
-ApiFreeNewsRepository
+data/news.json
         ↓
-重複除去・日時順ソート
+アプリ
         ↓
 ML Kit On-Device Translation
         ↓
 Kirapara News タイムライン
 ```
+
+キャッシュ取得に失敗した場合は、アプリがYouTube RSS / RSSHub等へ直接アクセスするフォールバックも残しています。
 
 X APIキー、YouTube Data APIキー、翻訳APIキーは使用していません。
 
@@ -78,7 +90,7 @@ X APIキー、YouTube Data APIキー、翻訳APIキーは使用していませ�
 
 ## 📥 APKのインストール
 
-1. このリポジトリの **Releases** を開く
+1. README上部の **「Kirapara News APKをダウンロード」** または **Releases** を開く
 2. 最新版の `Kirapara-News-vX.X.X.apk` をダウンロード
 3. APKを開く
 4. Androidから求められた場合は、利用中のブラウザまたはファイルアプリについて「この提供元からのアプリを許可」を有効にする
@@ -134,6 +146,7 @@ Androidの仕様上、ユーザー確認なしに勝手にAPKをインストー�
 - SharedPreferences
 - Android DownloadManager
 - GitHub REST API
+- GitHub Actionsによる定期ニュース収集
 
 ## 🛠️ ビルド
 
@@ -160,7 +173,7 @@ GitHub Repository Secretsへ以下を登録します。
 - `KEY_ALIAS`
 - `KEY_PASSWORD`
 
-`v0.2.1` のようなタグをpushすると、署名済みAPKとSHA-256ファイルをGitHub Releaseへ公開するワークフローを用意しています。
+`versionName` を更新してmainへpushすると、署名済みAPKとSHA-256ファイルをGitHub Releaseへ公開するワークフローを用意しています。
 
 署名鍵は絶対にリポジトリへコミットしないでください。全バージョンで同じ署名鍵を使わないとAndroidの上書きアップデートができなくなります。
 
@@ -174,4 +187,4 @@ GitHub Repository Secretsへ以下を登録します。
 
 ## Version
 
-Current development version: **v0.2.1**
+Current development version: **v0.2.3**
