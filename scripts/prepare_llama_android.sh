@@ -47,7 +47,10 @@ android {
                 arguments += "-DLLAMA_OPENSSL=OFF"
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
-                arguments += "-DGGML_CPU_ALL_VARIANTS=ON"
+                // Stability-first build for Android. v0.3.6 died during Gemma 4
+                // prompt prefill before the first generated token. Avoid runtime
+                // CPU-variant selection until that path is proven stable.
+                arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
                 arguments += "-DGGML_LLAMAFILE=OFF"
             }
         }
@@ -87,12 +90,12 @@ s = p.read_text()
 s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
               'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
-              'constexpr int   BATCH_SIZE              = 64;')
+              'constexpr int   BATCH_SIZE              = 8;')
 
 if 'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;' not in s:
     raise SystemExit('Could not patch mobile context size in ai_chat.cpp')
-if 'constexpr int   BATCH_SIZE              = 64;' not in s:
-    raise SystemExit('Could not patch mobile batch size in ai_chat.cpp')
+if 'constexpr int   BATCH_SIZE              = 8;' not in s:
+    raise SystemExit('Could not patch stability batch size in ai_chat.cpp')
 
 # Translation/summary requests are independent jobs, not a chat conversation.
 # Clear chat/KV history before every user prompt while keeping model weights loaded.
@@ -173,4 +176,4 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=2048 batch=64)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=2048 batch=8 generic-cpu)"

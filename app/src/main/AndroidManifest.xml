@@ -22,6 +22,12 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <service
+            android:name=".ai.LocalAiService"
+            android:exported="false"
+            android:process=":ai"
+            android:stopWithTask="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
