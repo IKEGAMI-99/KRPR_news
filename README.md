@@ -7,71 +7,112 @@
 
 ## 📥 最新版APKをダウンロード
 
-**現在の正式版: v0.2.3**
+**現在の正式版: v0.2.4**
 
-### [⬇️ Kirapara News v0.2.3 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.2.3/Kirapara-News-v0.2.3.apk)
+### [⬇️ Kirapara News v0.2.4 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.2.4/Kirapara-News-v0.2.4.apk)
 
 - [最新のGitHub Releaseを開く](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
 - [すべてのReleasesを見る](https://github.com/IKEGAMI-99/KRPR_news/releases)
-- SHA-256: `07251ab50632ff047fbd6147b22d501f78860b61cb0d5b836a77dfb5bf20e139`
+- SHA-256: `695e435cd99aaccc31dc3fe771299e51bee03325aeadac685a76e882e4d876b2`
 
 > [!WARNING]
 > APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
 
-## ✨ v0.2.3
+## ✨ v0.2.4
 
-v0.2.3ではニュース取得の安定性を改善しました。
+v0.2.4では翻訳、サムネイル、ニュースカードの読みやすさを改善しました。
 
-- GitHub ActionsがAPIキーなしで公開ニュースを定期収集し、`data/news.json` を生成
-- アプリはまず軽量なニュースキャッシュを読み、SNS/RSSの遅延で画面全体が待たされにくい構成へ変更
-- キャッシュ取得に失敗した場合のみ従来の公開RSS / RSSHub直接取得へフォールバック
-- 中国Weibo、韓国YouTubeなど複数地域の実ニュースをキャッシュへ統合
-- 翻訳失敗時も原文ニュースを表示
-- 正式Release APKは固定署名鍵で署名し、SHA-256を添付
-- `versionCode 5` / `versionName 0.2.3`
+- ニュースカードを折りたたみ式へ変更
+- 閉じた状態ではタイトル最大2行 + 本文最大3行を表示
+- 「続きを読む」で全文を展開し、「閉じる」で元に戻せる
+- 日本語 / 原文の切り替えは折りたたみ時でも利用可能
+- Weiboのハッシュタグ、定型ダウンロード文などを翻訳前に除去
+- Google Cloud Translationによるサーバー側日本語翻訳に対応
+- Google翻訳済みキャッシュが無い記事だけML Kit On-Device Translationへフォールバック
+- Weibo等の汎用プレースホルダー画像を記事サムネイルとして扱わないよう修正
+- 記事画像を取得できない場合、日本・中国・韓国は各地域の公式サイト画像をフォールバック表示
+- YouTubeは実際の動画サムネイルを優先
+- 読み込み中インジケータと取得失敗時の再読み込み画面を追加
+- 画面下のバージョン表記を自動取得へ変更
+- `versionCode 6` / `versionName 0.2.4`
 
-## 🌐 APIキー不要 + ローカル翻訳
+## 🌐 ニュース取得と翻訳
 
-外部の有料SNS APIや翻訳APIを使わずに動かす方向で開発しています。
-
-中国語 / 英語 / 韓国語 → 日本語は **ML Kit On-Device Translation** を利用します。初回だけ対応言語モデルを端末へダウンロードするため通信が必要ですが、モデル取得後の翻訳処理は端末内で行われます。
-
-翻訳モデルの取得に失敗した場合もニュース自体を消さず、原文を表示します。
+ニュース取得そのものは、X APIやYouTube Data APIなどの有料・認証APIに依存しない構成です。
 
 ```text
-公式公開ページ / 公開RSS
+公式公開ページ / 公開RSS / RSSHub
         ↓
 GitHub Actions 定期収集
         ↓
+SNS本文の不要部分を整理
+        ↓
+Google Cloud Translation（設定時）
+        ↓
 data/news.json
         ↓
-アプリ
+Androidアプリ
         ↓
-ML Kit On-Device Translation
-        ↓
-Kirapara News タイムライン
+未翻訳記事のみML Kitで端末内翻訳
 ```
 
-キャッシュ取得に失敗した場合は、アプリがYouTube RSS / RSSHub等へ直接アクセスするフォールバックも残しています。
+GitHub Actionsが1時間ごとにニュースを取得し、`data/news.json` を更新します。アプリはまずこの軽量キャッシュを読み、キャッシュが利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
 
-X APIキー、YouTube Data APIキー、翻訳APIキーは使用していません。
+### Google Cloud Translationを使う場合
+
+Google Cloud TranslationのAPIキーは**APKやソースコードへ直接書きません**。GitHub Repository Secretとして保存します。
+
+Secret名:
+
+```text
+GOOGLE_TRANSLATE_API_KEY
+```
+
+設定場所:
+
+```text
+Repository
+→ Settings
+→ Secrets and variables
+→ Actions
+→ New repository secret
+```
+
+設定後、GitHub Actionsの **Refresh News Cache** を実行すると、新規・変更された海外記事をGoogle Cloud Translationで日本語化してキャッシュへ保存します。
+
+APIキーが設定されていない場合でもアプリは動作します。その場合は中国語 / 英語 / 韓国語をML Kit On-Device Translationで端末内翻訳します。
+
+> [!CAUTION]
+> `GOOGLE_TRANSLATE_API_KEY` をREADME、ソースコード、Issue、スクリーンショット等へ掲載しないでください。
 
 ## 📰 接続しているニュースソース
 
-| 地域 | ソース | 方法 | APIキー |
+| 地域 | ソース | 方法 | SNS APIキー |
 | --- | --- | --- | --- |
 | 🇯🇵 日本 | きらめきパラダイス公式YouTube | YouTube公開RSS | 不要 |
 | 🇨🇳 中国 | 以闪亮之名 公式Weibo | RSSHub 複数ホスト | 不要 |
-| 🇨🇳 中国 | 以闪亮之名 公式Bilibili | RSSHub `/bilibili/user/video/676200579` | 不要 |
-| 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS + RSSHub | 不要 |
-| 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS + RSSHub | 不要 |
+| 🇨🇳 中国 | 以闪亮之名 公式Bilibili | RSSHub | 不要 |
+| 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
+| 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
 
-公開HTML・RSS・RSSHubの仕様変更で一部ソースが取得できなくなる可能性があります。そのためソース単位でエラーを分離し、一つ失敗しても他のニュース取得を続けます。
+公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。ソース単位でエラーを分離し、一つの取得先が失敗しても他の地域を表示できる構成にしています。
+
+## 🖼️ サムネイル
+
+優先順位は以下です。
+
+1. 記事または動画固有の画像
+2. YouTube動画サムネイル
+3. 地域公式サイトのフォールバック画像
+4. アプリ内グラデーション背景
+
+Weiboが返す `timeline_card_small_*_default` 等の汎用画像は記事画像として使用しません。
 
 ## 📱 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国の統合タイムライン
 - 日本語 / 原文のワンタップ切替
+- 折りたたみ式ニュースカード
 - 地域フィルター
 - 記事画像・YouTubeサムネイル表示
 - Android標準共有シート
@@ -90,13 +131,13 @@ X APIキー、YouTube Data APIキー、翻訳APIキーは使用していませ�
 
 ## 📥 APKのインストール
 
-1. README上部の **「Kirapara News APKをダウンロード」** または **Releases** を開く
-2. 最新版の `Kirapara-News-vX.X.X.apk` をダウンロード
+1. README上部の **「Kirapara News v0.2.4 APKをダウンロード」** または **Releases** を開く
+2. `Kirapara-News-vX.X.X.apk` をダウンロード
 3. APKを開く
 4. Androidから求められた場合は、利用中のブラウザまたはファイルアプリについて「この提供元からのアプリを許可」を有効にする
 5. Androidの確認画面でインストールする
 
-GitHub Actionsの `Kirapara-News-debug` は開発確認用です。継続利用・上書き更新には同じ署名鍵で作られたReleasesのAPKを使ってください。
+GitHub ActionsのDebug APKは開発確認用です。継続利用・アプリ内アップデートにはReleasesの正式署名APKを使用してください。
 
 ## ⚠️ セキュリティ警告
 
@@ -110,7 +151,7 @@ Google Play以外からAPKをインストールするため、Androidから「�
 
 ## 🔄 アプリ内アップデート
 
-設定 → アップデートから `releases/latest` を確認します。
+設定 → アップデートからGitHub Releasesの最新版を確認できます。
 
 ```text
 GitHub Releases
@@ -126,13 +167,13 @@ SHA-256検証
 Android標準インストーラー
 ```
 
-Androidの仕様上、ユーザー確認なしに勝手にAPKをインストールすることはありません。
+Androidの仕様上、ユーザー確認なしにAPKを自動インストールすることはありません。
 
 ## 🎨 デザイン
 
 ライトモードはパールホワイト、淡いピンク、ラベンダー、水色。ダークモードはダークパープル、ネイビー、ピンクを基調にしています。
 
-記事に画像がある場合はカード上部へ大きく表示し、下側にカテゴリを重ねます。画像がない場合は従来のグラデーション表示へフォールバックします。
+記事はコンパクトなカードとして一覧表示し、必要な記事だけ展開して全文を確認できます。
 
 ## 🧱 技術構成
 
@@ -142,6 +183,7 @@ Androidの仕様上、ユーザー確認なしに勝手にAPKをインストー�
 - Android XmlPullParser
 - HttpURLConnection
 - ML Kit On-Device Translation
+- Google Cloud Translation（任意）
 - Coil
 - SharedPreferences
 - Android DownloadManager
@@ -173,13 +215,19 @@ GitHub Repository Secretsへ以下を登録します。
 - `KEY_ALIAS`
 - `KEY_PASSWORD`
 
-`versionName` を更新してmainへpushすると、署名済みAPKとSHA-256ファイルをGitHub Releaseへ公開するワークフローを用意しています。
+翻訳をGoogle Cloud Translationで行う場合は追加で:
+
+- `GOOGLE_TRANSLATE_API_KEY`
+
+`versionName` を更新してmainへpushすると、固定署名済みAPKとSHA-256ファイルをGitHub Releaseへ自動公開します。
 
 署名鍵は絶対にリポジトリへコミットしないでください。全バージョンで同じ署名鍵を使わないとAndroidの上書きアップデートができなくなります。
 
 ## 🛡️ プライバシー
 
-ユーザー登録、位置情報、連絡先、写真ライブラリ等を必要としません。ネットワーク通信は公開ニュース取得、翻訳モデルの初回取得、GitHub Releasesの更新確認に使用します。
+ユーザー登録、位置情報、連絡先、写真ライブラリ等を必要としません。ネットワーク通信は公開ニュース取得、必要時の翻訳モデル取得、ニュースキャッシュ取得、GitHub Releasesの更新確認に使用します。
+
+Google Cloud Translationを有効にした場合、GitHub Actions上で海外ニュース本文をGoogle Cloud Translationへ送信して日本語訳を生成します。ユーザーがアプリへ入力した個人情報を送信する機能はありません。
 
 ## ⚖️ コンテンツと免責
 
@@ -187,4 +235,4 @@ GitHub Repository Secretsへ以下を登録します。
 
 ## Version
 
-Current development version: **v0.2.3**
+Current development version: **v0.2.4**
