@@ -6,6 +6,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -17,6 +19,7 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.FolderOpen
 import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.OpenInNew
 import androidx.compose.material.icons.filled.Refresh
@@ -38,16 +41,19 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import coil.compose.AsyncImage
 import com.ikegami99.krprnews.BuildConfig
+import com.ikegami99.krprnews.ai.LocalAiSummary
+import com.ikegami99.krprnews.ai.LocalAiTranslation
+import com.ikegami99.krprnews.ai.LocalGemmaManager
 import com.ikegami99.krprnews.data.*
 import com.ikegami99.krprnews.prefs.AppPreferences
 import com.ikegami99.krprnews.prefs.ThemeMode
-import com.ikegami99.krprnews.translation.LocalTranslationManager
 import com.ikegami99.krprnews.ui.theme.KiraparaTheme
 import com.ikegami99.krprnews.update.GitHubUpdateManager
 import com.ikegami99.krprnews.update.ReleaseInfo
 import kotlinx.coroutines.launch
 
 enum class AppPage { HOME, SETTINGS }
+private enum class AiTask { TRANSLATE, SUMMARY }
 
 @Composable
 fun KiraparaApp(repository: NewsRepository = ApiFreeNewsRepository) {
@@ -164,7 +170,7 @@ private fun HomeScreen(
                 title = {
                     Column {
                         Text("Kirapara News ✨", fontWeight = FontWeight.Bold)
-                        Text("世界のきらめきを、日本語でひとつに", fontSize = 11.sp)
+                        Text("原文で追って、必要な時だけローカルAI", fontSize = 11.sp)
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Transparent),
@@ -241,7 +247,7 @@ private fun HomeScreen(
 
             item {
                 Text(
-                    "v${BuildConfig.VERSION_NAME} · GitHubニュースキャッシュ + サーバー翻訳対応 + 端末内翻訳フォールバック",
+                    "v${BuildConfig.VERSION_NAME} · 原文タイムライン + ローカルGGUF翻訳 / 日本語要約",
                     modifier = Modifier.padding(horizontal = 22.dp, vertical = 8.dp),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.65f)
@@ -295,11 +301,36 @@ private fun EmptyNewsState(onRetry: () -> Unit) {
 @Composable
 private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
     val context = LocalContext.current
-    var original by remember(news.id) { mutableStateOf(false) }
+    val prefs = remember { AppPreferences(context) }
+    val modelUri = prefs.ggufModelUri
+    val scope = rememberCoroutineScope()
+
     var expanded by remember(news.id) { mutableStateOf(false) }
+    var translation by remember(news.id, modelUri) {
+        mutableStateOf<LocalAiTranslation?>(LocalGemmaManager.cachedTranslation(context, modelUri, news))
+    }
+    var showTranslation by remember(news.id, modelUri) { mutableStateOf(false) }
+    var summary by remember(news.id, modelUri) {
+        mutableStateOf<LocalAiSummary?>(LocalGemmaManager.cachedSummary(context, modelUri, news))
+    }
+    var showSummary by remember(news.id, modelUri) { mutableStateOf(false) }
+    var aiTask by remember(news.id) { mutableStateOf<AiTask?>(null) }
+    var aiError by remember(news.id) { mutableStateOf<String?>(null) }
+
     val textColor = MaterialTheme.colorScheme.onSurface
-    val title = if (original) news.originalTitle else news.translatedTitle
-    val body = if (original) news.originalText else news.translatedText
+    val visibleTranslation = translation.takeIf { showTranslation }
+    val title = visibleTranslation?.title ?: news.originalTitle
+    val body = visibleTranslation?.body ?: news.originalText
+    val busy = aiTask != null
+
+    fun requireModel(): String? {
+        if (modelUri.isNullOrBlank()) {
+            aiError = "設定 → ローカルGemma 4 からGGUFを選択してください。"
+            expanded = true
+            return null
+        }
+        return modelUri
+    }
 
     Card(
         modifier = modifier.fillMaxWidth(),
@@ -327,6 +358,14 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                     )
                 }
 
+                AssistChip(
+                    onClick = { },
+                    enabled = false,
+                    label = {
+                        Text(if (visibleTranslation != null) "🇯🇵 Gemma 4 翻訳" else "${news.region.flag} ${news.region.originalLabel} 原文")
+                    }
+                )
+
                 Text(
                     title,
                     style = MaterialTheme.typography.titleLarge,
@@ -344,22 +383,122 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                     overflow = TextOverflow.Ellipsis
                 )
 
+                if (showSummary && summary != null) {
+                    Surface(
+                        shape = RoundedCornerShape(18.dp),
+                        color = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.72f),
+                        contentColor = MaterialTheme.colorScheme.onSecondaryContainer
+                    ) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                            Text("✨ Gemma 4 日本語要約", fontWeight = FontWeight.Bold)
+                            Text(summary!!.text, style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+                }
+
+                aiError?.let {
+                    Text(
+                        it,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.error
+                    )
+                }
+
                 Row(
                     modifier = Modifier.fillMaxWidth(),
-                    verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    FilterChip(
-                        selected = !original,
-                        onClick = { original = false },
-                        leadingIcon = { Icon(Icons.Default.Language, null, Modifier.size(16.dp)) },
-                        label = { Text("🇯🇵 日本語") }
-                    )
-                    FilterChip(
-                        selected = original,
-                        onClick = { original = true },
-                        label = { Text(news.region.originalLabel) }
-                    )
+                    if (news.region != Region.JAPAN) {
+                        FilledTonalButton(
+                            onClick = {
+                                aiError = null
+                                if (showTranslation) {
+                                    showTranslation = false
+                                } else if (translation != null) {
+                                    showTranslation = true
+                                    expanded = true
+                                } else {
+                                    val uri = requireModel() ?: return@FilledTonalButton
+                                    aiTask = AiTask.TRANSLATE
+                                    scope.launch {
+                                        runCatching { LocalGemmaManager.translate(context, uri, news) }
+                                            .onSuccess {
+                                                translation = it
+                                                showTranslation = true
+                                                expanded = true
+                                            }
+                                            .onFailure { aiError = it.message ?: "翻訳に失敗しました。" }
+                                        aiTask = null
+                                    }
+                                }
+                            },
+                            enabled = !busy,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            if (aiTask == AiTask.TRANSLATE) {
+                                CircularProgressIndicator(Modifier.size(17.dp), strokeWidth = 2.dp)
+                                Spacer(Modifier.width(7.dp))
+                                Text("翻訳中")
+                            } else {
+                                Icon(Icons.Default.Language, null, Modifier.size(18.dp))
+                                Spacer(Modifier.width(6.dp))
+                                Text(if (showTranslation) "原文に戻す" else "日本語に翻訳")
+                            }
+                        }
+                    }
+
+                    FilledTonalButton(
+                        onClick = {
+                            aiError = null
+                            if (showSummary) {
+                                showSummary = false
+                            } else if (summary != null) {
+                                showSummary = true
+                                expanded = true
+                            } else {
+                                val uri = requireModel() ?: return@FilledTonalButton
+                                aiTask = AiTask.SUMMARY
+                                scope.launch {
+                                    runCatching { LocalGemmaManager.summarize(context, uri, news) }
+                                        .onSuccess {
+                                            summary = it
+                                            showSummary = true
+                                            expanded = true
+                                        }
+                                        .onFailure { aiError = it.message ?: "要約に失敗しました。" }
+                                    aiTask = null
+                                }
+                            }
+                        },
+                        enabled = !busy,
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        if (aiTask == AiTask.SUMMARY) {
+                            CircularProgressIndicator(Modifier.size(17.dp), strokeWidth = 2.dp)
+                            Spacer(Modifier.width(7.dp))
+                            Text("要約中")
+                        } else {
+                            Icon(Icons.Default.AutoAwesome, null, Modifier.size(18.dp))
+                            Spacer(Modifier.width(6.dp))
+                            Text(if (showSummary) "要約を閉じる" else "日本語要約")
+                        }
+                    }
+                }
+
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    if (translation?.tokensPerSecond?.let { it > 0f } == true && showTranslation) {
+                        Text(
+                            String.format("%.1f tok/s", translation!!.tokensPerSecond),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = textColor.copy(alpha = 0.58f)
+                        )
+                    } else if (summary?.tokensPerSecond?.let { it > 0f } == true && showSummary) {
+                        Text(
+                            String.format("%.1f tok/s", summary!!.tokensPerSecond),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = textColor.copy(alpha = 0.58f)
+                        )
+                    }
                     Spacer(Modifier.weight(1f))
                     TextButton(onClick = { expanded = !expanded }) {
                         Icon(
@@ -384,9 +523,14 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                         }
                         TextButton(onClick = {
                             val shareBody = buildString {
-                                appendLine("【${news.region.label}版】${news.translatedTitle}")
+                                appendLine("【${news.region.label}版】$title")
                                 appendLine()
-                                appendLine(news.translatedText)
+                                appendLine(body)
+                                if (showSummary && summary != null) {
+                                    appendLine()
+                                    appendLine("【日本語要約】")
+                                    appendLine(summary!!.text)
+                                }
                                 appendLine()
                                 append(news.sourceUrl)
                             }
@@ -478,10 +622,35 @@ private fun SettingsScreen(
     onCheckUpdate: () -> Unit
 ) {
     val context = LocalContext.current
+    val prefs = remember { AppPreferences(context) }
     val scope = rememberCoroutineScope()
     var downloadId by remember { mutableStateOf<Long?>(null) }
     var installStatus by remember { mutableStateOf<String?>(null) }
     var modelStatus by remember { mutableStateOf<String?>(null) }
+    var modelUri by remember { mutableStateOf(prefs.ggufModelUri) }
+    var modelName by remember {
+        mutableStateOf(prefs.ggufModelName ?: LocalGemmaManager.displayName(context, prefs.ggufModelUri))
+    }
+
+    val modelPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) {
+            runCatching {
+                context.contentResolver.takePersistableUriPermission(
+                    uri,
+                    Intent.FLAG_GRANT_READ_URI_PERMISSION
+                )
+            }
+            val name = LocalGemmaManager.displayName(context, uri.toString())
+                ?: uri.lastPathSegment
+                ?: "選択したGGUF"
+            modelUri = uri.toString()
+            modelName = name
+            prefs.ggufModelUri = modelUri
+            prefs.ggufModelName = modelName
+            modelStatus = "モデルを選択しました。最初の翻訳 / 要約時に読み込みます。"
+            scope.launch { LocalGemmaManager.release() }
+        }
+    }
 
     DisposableEffect(downloadId, releaseInfo) {
         val id = downloadId
@@ -563,36 +732,64 @@ private fun SettingsScreen(
             }
 
             item {
-                SettingsCard("🌐 翻訳", "サーバー翻訳を優先し、端末内翻訳を予備として使います") {
+                SettingsCard("🧠 ローカルGemma 4", "端末内のGGUFを翻訳と日本語要約に使います") {
                     Text(
-                        "GitHubニュースキャッシュに日本語訳がある場合はそれを表示します。未翻訳の記事だけML Kitで端末内翻訳します。",
+                        "ニュースは通常は各国の原文で表示します。記事の「日本語に翻訳」または「日本語要約」を押した時だけ選択したGGUFを実行します。本文は外部へ送信しません。",
                         style = MaterialTheme.typography.bodyMedium
                     )
-                    Spacer(Modifier.height(10.dp))
-                    Text(
-                        "端末内モデル準備済み: ${listOf(Region.CHINA, Region.GLOBAL, Region.KOREA).count { LocalTranslationManager.isReady(it) }}/3",
-                        style = MaterialTheme.typography.bodySmall
-                    )
+                    Spacer(Modifier.height(12.dp))
+
+                    Surface(
+                        shape = RoundedCornerShape(16.dp),
+                        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.72f)
+                    ) {
+                        Column(Modifier.fillMaxWidth().padding(14.dp)) {
+                            Text("選択中のモデル", style = MaterialTheme.typography.labelMedium)
+                            Text(
+                                modelName ?: "未選択",
+                                fontWeight = FontWeight.Bold,
+                                modifier = Modifier.padding(top = 3.dp)
+                            )
+                            Text(
+                                "GGUF / llama.cpp · Context 4096 · CPU/NEON",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.72f),
+                                modifier = Modifier.padding(top = 4.dp)
+                            )
+                        }
+                    }
+
                     Button(
+                        onClick = { modelPicker.launch(arrayOf("application/octet-stream", "*/*")) },
+                        modifier = Modifier.fillMaxWidth().padding(top = 12.dp)
+                    ) {
+                        Icon(Icons.Default.FolderOpen, null)
+                        Spacer(Modifier.width(8.dp))
+                        Text("GGUFを選択")
+                    }
+
+                    OutlinedButton(
                         onClick = {
-                            modelStatus = "翻訳モデルを準備しています…"
-                            scope.launch {
-                                val ok = listOf(Region.CHINA, Region.GLOBAL, Region.KOREA)
-                                    .map { LocalTranslationManager.warmUp(it) }
-                                    .all { it }
-                                modelStatus = if (ok) {
-                                    "3言語の翻訳モデルを準備しました"
-                                } else {
-                                    "一部モデルの取得に失敗しました。必要時に再試行します"
+                            val uri = modelUri
+                            if (uri.isNullOrBlank()) {
+                                modelStatus = "先にGGUFを選択してください。"
+                            } else {
+                                modelStatus = "GGUFを読み込んでいます…"
+                                scope.launch {
+                                    runCatching { LocalGemmaManager.warmUp(context, uri) }
+                                        .onSuccess { modelStatus = "モデルを読み込みました。翻訳 / 要約できます。" }
+                                        .onFailure { modelStatus = it.message ?: "モデル読み込みに失敗しました。" }
                                 }
                             }
                         },
+                        enabled = !modelUri.isNullOrBlank(),
                         modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
                     ) {
-                        Icon(Icons.Default.Language, null)
+                        Icon(Icons.Default.AutoAwesome, null)
                         Spacer(Modifier.width(8.dp))
-                        Text("端末内翻訳モデルを準備")
+                        Text("モデル読み込みテスト")
                     }
+
                     modelStatus?.let {
                         Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall)
                     }
