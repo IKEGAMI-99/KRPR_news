@@ -36,6 +36,7 @@ import com.ikegami99.krprnews.BuildConfig
 import com.ikegami99.krprnews.data.*
 import com.ikegami99.krprnews.prefs.AppPreferences
 import com.ikegami99.krprnews.prefs.ThemeMode
+import com.ikegami99.krprnews.translation.LocalTranslationManager
 import com.ikegami99.krprnews.ui.theme.KiraparaTheme
 import com.ikegami99.krprnews.update.GitHubUpdateManager
 import com.ikegami99.krprnews.update.ReleaseInfo
@@ -44,7 +45,7 @@ import kotlinx.coroutines.launch
 enum class AppPage { HOME, SETTINGS }
 
 @Composable
-fun KiraparaApp(repository: NewsRepository = DemoNewsRepository) {
+fun KiraparaApp(repository: NewsRepository = ApiFreeNewsRepository) {
     val context = LocalContext.current
     val prefs = remember { AppPreferences(context) }
     var themeMode by remember { mutableStateOf(prefs.themeMode) }
@@ -206,7 +207,7 @@ private fun HomeScreen(
             }
             item {
                 Text(
-                    "現在はUI確認用のデモニュースです。NewsRepositoryをバックエンドAPI実装へ差し替えると実データへ移行できます。",
+                    "v0.2 · 公開RSS / 公開ページからAPIキーなしで取得し、中国語・英語・韓国語は端末内モデルで日本語へ翻訳します。取得できない場合は安全にフォールバックします。",
                     modifier = Modifier.padding(horizontal = 22.dp, vertical = 8.dp),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
@@ -310,6 +311,7 @@ private fun SettingsScreen(
     val scope = rememberCoroutineScope()
     var downloadId by remember { mutableStateOf<Long?>(null) }
     var installStatus by remember { mutableStateOf<String?>(null) }
+    var modelStatus by remember { mutableStateOf<String?>(null) }
 
     DisposableEffect(downloadId, releaseInfo) {
         val id = downloadId
@@ -365,6 +367,28 @@ private fun SettingsScreen(
                             Text(when (mode) { ThemeMode.SYSTEM -> "端末設定に合わせる"; ThemeMode.LIGHT -> "ライト"; ThemeMode.DARK -> "ダーク" })
                         }
                     }
+                }
+            }
+            item {
+                SettingsCard("🌐 ローカル翻訳", "中国語・英語・韓国語を端末内で日本語へ翻訳します") {
+                    Text("ニュース本文を外部の翻訳APIへ送信しません。初回のみ各言語モデルのダウンロードに通信を使います。", style = MaterialTheme.typography.bodyMedium)
+                    Spacer(Modifier.height(10.dp))
+                    Text("準備済みモデル: ${listOf(Region.CHINA, Region.GLOBAL, Region.KOREA).count { LocalTranslationManager.isReady(it) }}/3", style = MaterialTheme.typography.bodySmall)
+                    Button(
+                        onClick = {
+                            modelStatus = "翻訳モデルを準備しています…"
+                            scope.launch {
+                                val ok = listOf(Region.CHINA, Region.GLOBAL, Region.KOREA)
+                                    .map { LocalTranslationManager.warmUp(it) }
+                                    .all { it }
+                                modelStatus = if (ok) "3言語の翻訳モデルを準備しました" else "一部モデルの取得に失敗しました。ニュース表示時に再試行します"
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+                    ) {
+                        Icon(Icons.Default.Language, null); Spacer(Modifier.width(8.dp)); Text("翻訳モデルを準備")
+                    }
+                    modelStatus?.let { Text(it, Modifier.padding(top = 8.dp), style = MaterialTheme.typography.bodySmall) }
                 }
             }
             item {
