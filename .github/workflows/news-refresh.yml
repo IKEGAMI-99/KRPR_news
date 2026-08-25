@@ -22,9 +22,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch and translate public news
-        env:
-          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+      - name: Fetch public news in original languages
         run: python scripts/fetch_news.py
 
       - name: Commit cache when changed
