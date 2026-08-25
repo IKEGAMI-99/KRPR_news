@@ -7,12 +7,16 @@
 
 ## 📥 最新版APK
 
-**現在の開発版: v0.3.0**
+**現在の正式版: v0.3.0**
 
-正式APKはGitHub Releasesから配布します。
+### [⬇️ Kirapara News v0.3.0 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.0/Kirapara-News-v0.3.0.apk)
 
 - [最新のGitHub Releaseを開く](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
 - [すべてのReleasesを見る](https://github.com/IKEGAMI-99/KRPR_news/releases)
+- SHA-256: `056d2e6513ebd80dd17320dc6e0064efbdcdc75783e05e0cdb23f2ae641fb968`
+
+> [!WARNING]
+> APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
 
 ## ✨ v0.3.0
 
@@ -205,4 +209,4 @@ GitHub Repository Secretsへ以下を登録します。
 
 ## Version
 
-Current development version: **v0.3.0**
+Current version: **v0.3.0**
