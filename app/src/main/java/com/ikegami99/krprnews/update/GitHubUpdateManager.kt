@@ -25,6 +25,8 @@ data class ReleaseInfo(
     val checksumUrl: String?
 )
 
+class UpdateCheckException(message: String) : Exception(message)
+
 object GitHubUpdateManager {
     suspend fun checkLatest(): ReleaseInfo? = withContext(Dispatchers.IO) {
         val connection = URL(API_URL).openConnection() as HttpURLConnection
@@ -33,7 +35,15 @@ object GitHubUpdateManager {
             connection.readTimeout = 10_000
             connection.setRequestProperty("Accept", "application/vnd.github+json")
             connection.setRequestProperty("User-Agent", "Kirapara-News-Android")
-            if (connection.responseCode != 200) return@withContext null
+
+            val responseCode = connection.responseCode
+            if (responseCode == 404) {
+                throw UpdateCheckException("GitHub Releaseがまだ公開されていません")
+            }
+            if (responseCode !in 200..299) {
+                throw UpdateCheckException("GitHubの更新確認に失敗しました (HTTP $responseCode)")
+            }
+
             val json = JSONObject(connection.inputStream.bufferedReader().use { it.readText() })
             val assets = json.getJSONArray("assets")
             var apkUrl: String? = null
@@ -51,7 +61,11 @@ object GitHubUpdateManager {
                     name.endsWith(".sha256", ignoreCase = true) -> checksumUrl = url
                 }
             }
-            if (apkUrl.isNullOrBlank() || apkName.isNullOrBlank()) return@withContext null
+
+            if (apkUrl.isNullOrBlank() || apkName.isNullOrBlank()) {
+                throw UpdateCheckException("最新ReleaseにAPKがありません")
+            }
+
             ReleaseInfo(
                 tagName = json.optString("tag_name"),
                 notes = json.optString("body", "更新内容はGitHub Releasesで確認できます。"),
