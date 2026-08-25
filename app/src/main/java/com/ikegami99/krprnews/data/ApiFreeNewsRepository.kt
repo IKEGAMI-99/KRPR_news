@@ -1,7 +1,6 @@
 package com.ikegami99.krprnews.data
 
 import android.util.Xml
-import com.ikegami99.krprnews.translation.LocalTranslationManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -20,13 +19,12 @@ import java.time.format.DateTimeFormatter
 
 /**
  * 公開RSS/HTML + GitHub Actionsキャッシュを使うニュースRepository。
- * v0.2.4ではGitHub Actions側の高品質翻訳があれば最優先し、
- * 無い場合だけML Kitオンデバイス翻訳へフォールバックする。
+ * ニュースは各地域の原文のまま読み込み、翻訳や要約はユーザー操作時だけ
+ * LocalGemmaManager が端末内GGUFで行う。
  */
 object ApiFreeNewsRepository : NewsRepository {
     private const val AGGREGATED_TIMEOUT_MS = 4_000L
     private const val SOURCE_TIMEOUT_MS = 5_500L
-    private const val TRANSLATION_TIMEOUT_MS = 2_500L
 
     private val rssHubHosts = listOf(
         "https://rsshub.app",
@@ -90,39 +88,19 @@ object ApiFreeNewsRepository : NewsRepository {
         if (raw.isEmpty()) return@supervisorScope DemoNewsRepository.loadNews()
 
         raw.map { item ->
-            async {
-                val originalBody = item.body.ifBlank { item.title }
-                val translatedTitle = item.translatedTitle?.takeIf { it.isNotBlank() }
-                    ?: safeTranslate(item.region, item.title)
-                val translatedBody = item.translatedBody?.takeIf { it.isNotBlank() }
-                    ?: if (originalBody == item.title) {
-                        translatedTitle
-                    } else {
-                        safeTranslate(item.region, originalBody)
-                    }
-
-                NewsItem(
-                    id = item.id,
-                    region = item.region,
-                    platform = item.platform,
-                    publishedLabel = item.publishedLabel,
-                    translatedTitle = translatedTitle,
-                    originalTitle = item.title,
-                    translatedText = translatedBody,
-                    originalText = originalBody,
-                    sourceUrl = item.sourceUrl,
-                    category = categoryFor(item.title, item.region),
-                    imageUrl = normalizeImage(item.imageUrl, item.region)
-                )
-            }
-        }.awaitAll()
-    }
-
-    private suspend fun safeTranslate(region: Region, text: String): String {
-        if (region == Region.JAPAN || text.isBlank()) return text
-        return withTimeoutOrNull(TRANSLATION_TIMEOUT_MS) {
-            LocalTranslationManager.translate(region, text)
-        } ?: text
+            val originalBody = item.body.ifBlank { item.title }
+            NewsItem(
+                id = item.id,
+                region = item.region,
+                platform = item.platform,
+                publishedLabel = item.publishedLabel,
+                originalTitle = item.title,
+                originalText = originalBody,
+                sourceUrl = item.sourceUrl,
+                category = categoryFor(item.title, item.region),
+                imageUrl = normalizeImage(item.imageUrl, item.region)
+            )
+        }
     }
 
     private fun categoryFor(text: String, region: Region): String {
@@ -151,9 +129,7 @@ private data class RawNews(
     val sourceUrl: String,
     val publishedLabel: String,
     val publishedAtEpoch: Long,
-    val imageUrl: String? = null,
-    val translatedTitle: String? = null,
-    val translatedBody: String? = null
+    val imageUrl: String? = null
 )
 
 private interface PublicNewsSource {
@@ -191,9 +167,7 @@ private object GitHubJsonSource : PublicNewsSource {
                         sourceUrl = url,
                         publishedLabel = item.optString("publishedLabel").ifBlank { friendlyDate(epoch, "") },
                         publishedAtEpoch = epoch,
-                        imageUrl = item.optString("imageUrl").takeIf { it.isNotBlank() },
-                        translatedTitle = item.optString("translatedTitle").takeIf { it.isNotBlank() },
-                        translatedBody = item.optString("translatedBody").takeIf { it.isNotBlank() }
+                        imageUrl = item.optString("imageUrl").takeIf { it.isNotBlank() }
                     )
                 )
             }
@@ -393,7 +367,7 @@ private fun normalizeImage(url: String?, region: Region): String? {
     if (!invalid) return url
     return when (region) {
         Region.JAPAN -> "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png"
-        Region.CHINA -> "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg"
+        Region.CHINA -> "https://mystyle.archosaur.com/assets/260811/pc/images/p3/slider1.jpg"
         Region.KOREA -> "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png"
         Region.GLOBAL -> null
     }
@@ -419,7 +393,7 @@ private fun httpGet(url: String, timeoutMs: Int = 4_500): String {
         connection.instanceFollowRedirects = true
         connection.setRequestProperty(
             "User-Agent",
-            "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.4"
+            "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.3.0"
         )
         connection.setRequestProperty("Accept-Language", "ja,en-US;q=0.9,en;q=0.8,ko;q=0.7,zh-CN;q=0.6")
         connection.setRequestProperty("Accept", "application/rss+xml, application/atom+xml, application/json, text/xml, text/html;q=0.9, */*;q=0.8")
