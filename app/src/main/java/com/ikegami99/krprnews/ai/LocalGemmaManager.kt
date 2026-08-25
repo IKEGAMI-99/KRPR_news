@@ -34,10 +34,9 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
- * v0.3.2では第三者rnllama AARを廃止し、Gemma 4のwide/MoE graph crash修正を含む
- * 公式llama.cpp Android実装を固定コミットでビルドする。
- * SAFのcontent:// URIは開いたFDを /proc/self/fd/<fd> として公式llama.cppへ渡すため、
- * 数GBのGGUFをアプリ領域へ複製しない。
+ * v0.3.4ではSAFのcontent:// URIをnative側へ疑似パスとして渡さず、
+ * 初回だけアプリ専用モデル領域へGGUFをコピーして通常ファイルパスから読み込む。
+ * AndroidのScoped Storageとllama.cppのfopen/mmapを明確に分離する。
  */
 object LocalGemmaManager {
     private const val CACHE_PREFS = "krpr_local_ai_cache_v3"
@@ -136,6 +135,15 @@ object LocalGemmaManager {
         inferenceMutex.withLock { releaseLocked() }
     }
 
+    suspend fun clearPreparedModels(context: Context) {
+        inferenceMutex.withLock {
+            releaseLocked()
+            PreparedModelStore.clear(context.applicationContext)
+        }
+    }
+
+    fun preparedModelBytes(context: Context): Long = PreparedModelStore.preparedBytes(context.applicationContext)
+
     fun displayName(context: Context, uriString: String?): String? {
         if (uriString.isNullOrBlank()) return null
         val uri = runCatching { Uri.parse(uriString) }.getOrNull() ?: return null
@@ -182,6 +190,18 @@ object LocalGemmaManager {
             throw IllegalStateException("選択したGGUFを読み取れません。もう一度GGUFを選択してください。", cause)
         }
 
+        val name = displayName(context, modelUri) ?: "selected.gguf"
+        val sourceSize = modelSizeBytes(context, modelUri)
+        val preparedFile = runCatching {
+            PreparedModelStore.prepare(context, modelUri)
+        }.getOrElse { cause ->
+            AppLog.e(context, "LocalGemma", "model prepare failed name=$name", cause)
+            throw IllegalStateException(
+                "GGUFの準備に失敗しました。空き容量を確認して、もう一度モデル読み込みテストを実行してください。",
+                cause
+            )
+        }
+
         val llama = AiChat.getInferenceEngine(context)
         var state = withTimeout(60_000L) {
             llama.state.first {
@@ -201,23 +221,17 @@ object LocalGemmaManager {
             throw IllegalStateException("llama.cppエンジンを初期化できませんでした。", cause)
         }
 
-        val name = displayName(context, modelUri) ?: "selected.gguf"
-        val size = modelSizeBytes(context, modelUri)
         AppLog.i(
             context,
             "LocalGemma",
-            "model load start name=$name size=${size ?: -1} backend=official-llama-cpu context=$CONTEXT_LENGTH"
+            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-cpu context=$CONTEXT_LENGTH"
         )
 
         try {
-            context.contentResolver.openFileDescriptor(uri, "r")?.use { pfd ->
-                if (pfd.fd < 0) error("GGUFのFile Descriptorを取得できません")
-                val procPath = "/proc/self/fd/${pfd.fd}"
-                AppLog.i(context, "LocalGemma", "opening model through SAF fd=${pfd.fd}")
-                withTimeout(LOAD_TIMEOUT_MS) {
-                    llama.loadModel(procPath)
-                }
-            } ?: error("GGUFファイルを開けません")
+            AppLog.i(context, "LocalGemma", "opening prepared model path=${preparedFile.absolutePath}")
+            withTimeout(LOAD_TIMEOUT_MS) {
+                llama.loadModel(preparedFile.absolutePath)
+            }
         } catch (t: Throwable) {
             runCatching {
                 if (llama.state.value is InferenceEngine.State.Error ||
