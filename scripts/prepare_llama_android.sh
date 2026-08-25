@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENDOR_DIR="$ROOT_DIR/vendor/llama.cpp"
+# Includes ggml PR #22789: dynamic split inputs for wide MoE models such as Gemma 4 E4B.
 LLAMA_COMMIT="dbadb68eecdfb3ab0e86872d011738fc937f0364"
 
 if [[ -d "$VENDOR_DIR/.git" ]] && [[ "$(git -C "$VENDOR_DIR" rev-parse HEAD 2>/dev/null || true)" == "$LLAMA_COMMIT" ]]; then
@@ -79,12 +80,36 @@ EOF
 python3 - "$LIB_DIR/src/main/cpp/ai_chat.cpp" <<'PY'
 from pathlib import Path
 import sys
+
 p = Path(sys.argv[1])
 s = p.read_text()
 s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
               'constexpr int   DEFAULT_CONTEXT_SIZE    = 4096;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
               'constexpr int   BATCH_SIZE              = 256;')
+
+# Translation/summary requests are independent jobs, not a chat conversation.
+# Clear chat/KV history before every user prompt while keeping model weights loaded.
+old = '''Java_com_arm_aichat_internal_InferenceEngineImpl_processUserPrompt(
+        JNIEnv *env,
+        jobject /*unused*/,
+        jstring juser_prompt,
+        jint n_predict
+) {
+    // Reset short-term states
+    reset_short_term_states();'''
+new = '''Java_com_arm_aichat_internal_InferenceEngineImpl_processUserPrompt(
+        JNIEnv *env,
+        jobject /*unused*/,
+        jstring juser_prompt,
+        jint n_predict
+) {
+    // Kirapara News runs independent translation/summary jobs.
+    reset_long_term_states();
+    reset_short_term_states();'''
+if old not in s:
+    raise SystemExit('Could not patch independent prompt reset in ai_chat.cpp')
+s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
