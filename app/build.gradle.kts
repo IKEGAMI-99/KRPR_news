@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.ikegami99.krprnews"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.ikegami99.krprnews"
@@ -61,7 +61,7 @@ dependencies {
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
-    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     implementation("androidx.activity:activity-compose:1.10.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
@@ -72,8 +72,6 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    // Scoped Storageのcontent:// URIをFile Descriptor経由で直接開けるllama.cpp Android binding。
-    // 大容量GGUFをアプリ領域へ複製せず、その場で読み込む。
     implementation("io.github.ljcamargo:llamacpp-kotlin:0.4.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
