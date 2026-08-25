@@ -20,8 +20,15 @@ RSSHUB_HOSTS = [
     "https://rsshub.yfi.moe",
 ]
 
-# 記事固有画像が取れない時だけ使う公式サイト上の画像。
-REGION_FALLBACK_IMAGES = {
+REGION_HOME_PAGES = {
+    "JAPAN": "https://kirapara.archosaur.com/",
+    "CHINA": "https://mystyle.archosaur.com/",
+    "GLOBAL": "https://lifemakeover.archosaur.com/",
+    "KOREA": "https://stylight.nex2fun.com/",
+}
+
+# 公式サイトのOG画像取得に失敗した場合だけ使う最終フォールバック。
+STATIC_FALLBACK_IMAGES = {
     "JAPAN": "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png",
     "CHINA": "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg",
     "KOREA": "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png",
@@ -32,6 +39,8 @@ LANGUAGE_BY_REGION = {
     "GLOBAL": "en",
     "KOREA": "ko",
 }
+
+_official_image_cache = {}
 
 
 def get(url: str, timeout: int = 15) -> str:
@@ -58,19 +67,23 @@ def strip_tags(s: str) -> str:
 def clean_social_text(s: str, region: str) -> str:
     s = strip_tags(s)
     if region == "CHINA":
-        # Weiboのハッシュタグや定型リンク文は翻訳品質を大きく落とすため除外。
-        s = re.sub(r"#[^#\n]{1,80}#", " ", s)
-        s = re.sub(r"^\s*(以闪亮之名\s*)+", "", s)
+        # Weiboのハッシュタグ・アカウント名・定型リンクは機械翻訳を壊しやすい。
+        s = re.sub(r"#[^#\n]{1,100}#", " ", s)
+        s = re.sub(r"^\s*(?:以闪亮之名\s*)+", "", s)
+        s = re.sub(r"@[^\s:：]+", "", s)
         s = s.replace("网页链接", "")
         lines = []
         for line in s.splitlines():
             line = line.strip()
             if not line:
                 continue
-            if any(marker in line for marker in ("下载传送门", "活动传送门")):
+            if any(marker in line for marker in ("下载传送门", "活动传送门", "转发微博")):
                 continue
             lines.append(line)
         s = "\n".join(lines)
+
+    # URLとSNS由来の冗長な空白を翻訳前に整理。
+    s = re.sub(r"https?://\S+", "", s)
     s = re.sub(r"[ \t]{2,}", " ", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s.strip()
@@ -81,8 +94,8 @@ def compact_title(s: str, region: str) -> str:
     if not s:
         return "新着ニュース"
     first = re.split(r"[\n。！？!?]", s, maxsplit=1)[0].strip()
-    candidate = first if len(first) >= 8 else s.replace("\n", " ")
-    return candidate[:100].rstrip(" ,，、-｜|")
+    candidate = first if len(first) >= 6 else s.replace("\n", " ")
+    return candidate[:90].rstrip(" ,，、-｜|")
 
 
 def image_from_html(s: str):
@@ -100,8 +113,52 @@ def is_placeholder_image(url: str | None) -> bool:
             "timeline_card_small_super_default",
             "timeline_card_small_web_default",
             "timeline_card_small_default",
+            "default_avatar",
+            "default.png",
         )
     )
+
+
+def official_fallback_image(region: str):
+    if region in _official_image_cache:
+        return _official_image_cache[region]
+
+    home = REGION_HOME_PAGES.get(region)
+    discovered = None
+    if home:
+        try:
+            page = get(home, timeout=10)
+            patterns = [
+                r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\']',
+            ]
+            for pattern in patterns:
+                m = re.search(pattern, page, re.I)
+                if m:
+                    discovered = urllib.parse.urljoin(home, html.unescape(m.group(1)))
+                    break
+
+            if not discovered:
+                candidates = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', page, re.I)
+                scored = []
+                for src in candidates:
+                    full = urllib.parse.urljoin(home, html.unescape(src))
+                    low = full.lower()
+                    if full.startswith("data:"):
+                        continue
+                    score = sum(token in low for token in ("kv", "keyvisual", "banner", "main", "top", "page1", "visual"))
+                    if "logo" in low:
+                        score -= 1
+                    scored.append((score, full))
+                if scored:
+                    scored.sort(key=lambda x: x[0], reverse=True)
+                    discovered = scored[0][1]
+        except Exception as e:
+            print(f"official image discovery failed {region}: {e}")
+
+    result = discovered or STATIC_FALLBACK_IMAGES.get(region)
+    _official_image_cache[region] = result
+    return result
 
 
 def parse_date_epoch(value: str) -> int:
@@ -180,7 +237,7 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
         body = clean_social_text(body_raw, region) or clean_social_text(raw_title, region)
         epoch = parse_date_epoch(published)
         if is_placeholder_image(image):
-            image = REGION_FALLBACK_IMAGES.get(region)
+            image = official_fallback_image(region)
 
         items.append({
             "id": str(hash(link)),
@@ -247,7 +304,9 @@ def load_existing():
 def google_translate(texts: list[str], source: str) -> list[str]:
     if not texts or not GOOGLE_TRANSLATE_API_KEY:
         return texts
-    endpoint = "https://translation.googleapis.com/language/translate/v2?" + urllib.parse.urlencode({"key": GOOGLE_TRANSLATE_API_KEY})
+    endpoint = "https://translation.googleapis.com/language/translate/v2?" + urllib.parse.urlencode(
+        {"key": GOOGLE_TRANSLATE_API_KEY}
+    )
     payload = json.dumps({"q": texts, "source": source, "target": "ja", "format": "text"}).encode("utf-8")
     req = urllib.request.Request(
         endpoint,
@@ -265,8 +324,8 @@ def google_translate(texts: list[str], source: str) -> list[str]:
 
 def apply_translations(rows: list[dict], existing: list[dict]):
     existing_by_url = {x.get("sourceUrl"): x for x in existing if x.get("sourceUrl")}
-
     pending_by_lang: dict[str, list[tuple[dict, str, str]]] = {}
+
     for row in rows:
         if row.get("region") == "JAPAN":
             row["translatedTitle"] = row.get("title", "")
@@ -315,7 +374,11 @@ def main():
 
     sources = [
         lambda: youtube_channel("JAPAN", "公式YouTube", channel_id="UC9MO21fNvt0F4-UK28kc_VQ"),
-        lambda: youtube_channel("GLOBAL", "公式YouTube", page_urls=["https://www.youtube.com/c/LifeMakeover/", "https://www.youtube.com/@LifeMakeover"]),
+        lambda: youtube_channel(
+            "GLOBAL",
+            "公式YouTube",
+            page_urls=["https://www.youtube.com/c/LifeMakeover/", "https://www.youtube.com/@LifeMakeover"],
+        ),
         lambda: youtube_channel("KOREA", "公式YouTube", page_urls=["https://www.youtube.com/@stylight_official"]),
         lambda: rsshub("CHINA", "公式Weibo · RSSHub", "/weibo/user/7521830234"),
         lambda: rsshub("CHINA", "公式Bilibili · RSSHub", "/bilibili/user/video/676200579"),
@@ -335,12 +398,17 @@ def main():
     dedup = {}
     for row in fresh:
         url = row.get("sourceUrl")
-        if url:
-            if is_placeholder_image(row.get("imageUrl")):
-                row["imageUrl"] = REGION_FALLBACK_IMAGES.get(row.get("region"))
-            dedup[url] = row
+        if not url:
+            continue
+        if is_placeholder_image(row.get("imageUrl")):
+            row["imageUrl"] = official_fallback_image(row.get("region"))
+        dedup[url] = row
 
-    rows = sorted(dedup.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:60]
+    rows = sorted(
+        dedup.values(),
+        key=lambda x: int(x.get("publishedAtEpoch") or 0),
+        reverse=True,
+    )[:60]
     apply_translations(rows, existing)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
