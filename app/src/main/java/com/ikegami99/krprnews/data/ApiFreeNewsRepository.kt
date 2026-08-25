@@ -16,33 +16,63 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 /**
- * APIキーを使わず公開RSS/公開HTMLのみからニュースを集める v0.2 repository。
- * 取得失敗はソース単位で握りつぶし、全ソースが落ちた場合だけデモデータへ戻す。
+ * APIキーを使わず公開RSS/公開HTMLのみからニュースを集める repository。
+ * 取得失敗はソース単位で無視し、複数の取得経路をフォールバックとして使う。
  */
 object ApiFreeNewsRepository : NewsRepository {
+    private val rssHubHosts = listOf(
+        "https://rsshub.yfi.moe",
+        "https://rsshub.rssforever.com",
+        "https://rsshub.app"
+    )
+
+    private fun hubRoutes(path: String) = rssHubHosts.map { "$it$path" }
+
     private val sources: List<PublicNewsSource> = listOf(
+        // 日本版。公式チャンネルIDが分かっているのでYouTube公式RSSを直接利用。
         YouTubeChannelSource(
             region = Region.JAPAN,
             channelId = "UC9MO21fNvt0F4-UK28kc_VQ",
             label = "公式YouTube"
         ),
-        YouTubeHandleSource(
+
+        // Global。公式の /c/LifeMakeover と handle の両方から channel ID を解決する。
+        YouTubePageSource(
             region = Region.GLOBAL,
-            handle = "LifeMakeover",
-            label = "公式YouTube"
-        ),
-        YouTubeHandleSource(
-            region = Region.KOREA,
-            handle = "stylight_official",
+            pageUrls = listOf(
+                "https://www.youtube.com/c/LifeMakeover/",
+                "https://www.youtube.com/@LifeMakeover"
+            ),
             label = "公式YouTube"
         ),
         RssSource(
+            region = Region.GLOBAL,
+            urls = hubRoutes("/youtube/c/LifeMakeover"),
+            label = "公式YouTube · RSSHub"
+        ),
+
+        // 韓国版 Stylight。handle直読みとRSSHubを併用。
+        YouTubePageSource(
+            region = Region.KOREA,
+            pageUrls = listOf("https://www.youtube.com/@stylight_official"),
+            label = "公式YouTube"
+        ),
+        RssSource(
+            region = Region.KOREA,
+            urls = hubRoutes("/youtube/user/@stylight_official"),
+            label = "公式YouTube · RSSHub"
+        ),
+
+        // 中国版。Weiboだけに依存せず、公式Bilibili投稿も取得する。
+        RssSource(
             region = Region.CHINA,
-            urls = listOf(
-                "https://rsshub.app/weibo/user/7521830234",
-                "https://rsshub.rssforever.com/weibo/user/7521830234"
-            ),
+            urls = hubRoutes("/weibo/user/7521830234"),
             label = "公式Weibo · RSSHub"
+        ),
+        RssSource(
+            region = Region.CHINA,
+            urls = hubRoutes("/bilibili/user/video/676200579"),
+            label = "公式Bilibili · RSSHub"
         )
     )
 
@@ -55,7 +85,7 @@ object ApiFreeNewsRepository : NewsRepository {
             .flatten()
             .distinctBy { it.sourceUrl }
             .sortedByDescending { it.publishedAtEpoch }
-            .take(20)
+            .take(40)
 
         if (raw.isEmpty()) return@coroutineScope DemoNewsRepository.loadNews()
 
@@ -86,7 +116,7 @@ object ApiFreeNewsRepository : NewsRepository {
     private fun categoryFor(text: String, region: Region): String {
         val t = text.lowercase()
         return when {
-            listOf("6星", "星6", "outfit", "set", "세트", "衣装", "套装").any(t::contains) -> "👗 新衣装"
+            listOf("6星", "星6", "outfit", "set", "세트", "衣装", "套装", "五星", "六星").any(t::contains) -> "👗 新衣装"
             listOf("event", "イベント", "活动", "이벤트").any(t::contains) -> "🎉 イベント"
             listOf("update", "アップデート", "版本", "업데이트").any(t::contains) -> "📢 アップデート"
             listOf("maintenance", "メンテ", "维护", "점검").any(t::contains) -> "🔧 メンテナンス"
@@ -130,24 +160,39 @@ private class YouTubeChannelSource(
     }
 }
 
-private class YouTubeHandleSource(
+/**
+ * YouTubeの公開チャンネルページから channel ID を解決する。
+ * YouTube側のHTML差分に備え、複数の既知パターンを順番に試す。
+ */
+private class YouTubePageSource(
     private val region: Region,
-    private val handle: String,
+    private val pageUrls: List<String>,
     private val label: String
 ) : PublicNewsSource {
     override suspend fun fetch(): List<RawNews> = withContext(Dispatchers.IO) {
-        val html = httpGet("https://www.youtube.com/@$handle")
-        val channelId = Regex("\\\"channelId\\\":\\\"(UC[a-zA-Z0-9_-]{22})\\\"")
-            .find(html)?.groupValues?.getOrNull(1)
-            ?: Regex("channelId[^A-Za-z0-9_-]+(UC[a-zA-Z0-9_-]{22})")
-                .find(html)?.groupValues?.getOrNull(1)
-            ?: return@withContext emptyList()
-        parseFeed(
-            xml = httpGet("https://www.youtube.com/feeds/videos.xml?channel_id=$channelId"),
-            region = region,
-            platform = label
-        )
+        for (pageUrl in pageUrls) {
+            val html = runCatching { httpGet(pageUrl) }.getOrNull() ?: continue
+            val channelId = resolveChannelId(html) ?: continue
+            val feed = runCatching {
+                httpGet("https://www.youtube.com/feeds/videos.xml?channel_id=$channelId")
+            }.getOrNull() ?: continue
+            val parsed = runCatching { parseFeed(feed, region, label) }.getOrNull()
+            if (!parsed.isNullOrEmpty()) return@withContext parsed
+        }
+        emptyList()
     }
+}
+
+private fun resolveChannelId(html: String): String? {
+    val patterns = listOf(
+        Regex("\\\"channelId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
+        Regex("\\\"browseId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
+        Regex("\\\"externalId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
+        Regex("itemprop=[\\\"'](?:channelId|identifier)[\\\"'][^>]*content=[\\\"'](UC[a-zA-Z0-9_-]{22})[\\\"']", RegexOption.IGNORE_CASE),
+        Regex("youtube\\.com/channel/(UC[a-zA-Z0-9_-]{22})", RegexOption.IGNORE_CASE),
+        Regex("channelId[^A-Za-z0-9_-]+(UC[a-zA-Z0-9_-]{22})")
+    )
+    return patterns.firstNotNullOfOrNull { it.find(html)?.groupValues?.getOrNull(1) }
 }
 
 private class RssSource(
@@ -204,13 +249,21 @@ private fun parseFeed(xml: String, region: Region, platform: String): List<RawNe
                     if (name == "thumbnail") {
                         image = parser.getAttributeValue(null, "url") ?: image
                     }
+                    if (name == "enclosure" || name == "content") {
+                        val url = parser.getAttributeValue(null, "url")
+                        val type = parser.getAttributeValue(null, "type").orEmpty()
+                        val medium = parser.getAttributeValue(null, "medium").orEmpty()
+                        if (!url.isNullOrBlank() && (type.startsWith("image") || medium == "image" || looksLikeImage(url))) {
+                            image = url
+                        }
+                    }
                 }
             }
             XmlPullParser.TEXT -> if (inside) {
                 val text = parser.text.orEmpty().trim()
                 if (text.isNotEmpty()) when (activeTag) {
                     "title" -> title += text
-                    "description", "content", "encoded" -> if (body.length < 2400) body += text
+                    "description", "content", "encoded", "summary" -> if (body.length < 3000) body += text
                     "link" -> if (link.isBlank() && text.startsWith("http")) link = text
                     "published", "updated", "pubDate" -> if (published.isBlank()) published = text
                     "videoId" -> videoId = text
@@ -223,6 +276,7 @@ private fun parseFeed(xml: String, region: Region, platform: String): List<RawNe
                 if (name == "entry" || name == "item") {
                     if (link.isBlank() && videoId.isNotBlank()) link = "https://www.youtube.com/watch?v=$videoId"
                     if (image == null && videoId.isNotBlank()) image = "https://i.ytimg.com/vi/$videoId/hqdefault.jpg"
+                    if (image == null) image = extractImageFromHtml(body)
                     if (title.isNotBlank() && link.isNotBlank()) {
                         val cleanedBody = stripHtml(body).ifBlank { title }
                         val epoch = parseEpoch(published)
@@ -245,7 +299,19 @@ private fun parseFeed(xml: String, region: Region, platform: String): List<RawNe
         }
         event = parser.next()
     }
-    return out.take(12)
+    return out.take(16)
+}
+
+private fun looksLikeImage(url: String): Boolean =
+    Regex("\\.(?:jpg|jpeg|png|webp)(?:\\?|$)", RegexOption.IGNORE_CASE).containsMatchIn(url)
+
+private fun extractImageFromHtml(value: String): String? {
+    val imgTag = Regex("<img[^>]+src=[\\\"']([^\\\"']+)[\\\"']", RegexOption.IGNORE_CASE)
+        .find(value)?.groupValues?.getOrNull(1)
+    if (!imgTag.isNullOrBlank()) return decodeEntities(imgTag)
+    return Regex("https?://[^\\s\\\"'<>]+\\.(?:jpg|jpeg|png|webp)(?:\\?[^\\s\\\"'<>]*)?", RegexOption.IGNORE_CASE)
+        .find(value)?.value
+        ?.let(::decodeEntities)
 }
 
 private fun httpGet(url: String): String {
@@ -254,22 +320,27 @@ private fun httpGet(url: String): String {
         connection.connectTimeout = 12_000
         connection.readTimeout = 12_000
         connection.instanceFollowRedirects = true
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Android) KiraparaNews/0.2")
+        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.1")
+        connection.setRequestProperty("Accept-Language", "ja,en-US;q=0.9,en;q=0.8,ko;q=0.7,zh-CN;q=0.6")
         connection.setRequestProperty("Accept", "application/rss+xml, application/atom+xml, text/xml, text/html;q=0.9, */*;q=0.8")
+        val code = connection.responseCode
+        if (code !in 200..299) error("HTTP $code for $url")
         connection.inputStream.bufferedReader().use { it.readText() }
     } finally {
         connection.disconnect()
     }
 }
 
-private fun stripHtml(value: String): String = value
-    .replace(Regex("<br\\s*/?>", RegexOption.IGNORE_CASE), "\n")
-    .replace(Regex("<[^>]+>"), " ")
+private fun decodeEntities(value: String): String = value
     .replace("&amp;", "&")
-    .replace("&lt;", "<")
-    .replace("&gt;", ">")
     .replace("&quot;", "\"")
     .replace("&#39;", "'")
+
+private fun stripHtml(value: String): String = decodeEntities(value)
+    .replace(Regex("<br\\s*/?>", RegexOption.IGNORE_CASE), "\n")
+    .replace(Regex("<[^>]+>"), " ")
+    .replace("&lt;", "<")
+    .replace("&gt;", ">")
     .replace(Regex("[ \\t]+"), " ")
     .replace(Regex("\\n{3,}"), "\n\n")
     .trim()
