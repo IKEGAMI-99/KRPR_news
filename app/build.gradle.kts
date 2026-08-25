@@ -12,8 +12,8 @@ android {
         applicationId = "com.ikegami99.krprnews"
         minSdk = 26
         targetSdk = 35
-        versionCode = 11
-        versionName = "0.3.4"
+        versionCode = 12
+        versionName = "0.3.5"
 
         ndk {
             abiFilters += "arm64-v8a"
@@ -54,8 +54,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    // Official llama.cpp dynamically loads CPU backend variants from nativeLibraryDir.
-    // Extract the shared libraries so those backend .so files are real filesystem entries.
     packaging {
         jniLibs {
             useLegacyPackaging = true
