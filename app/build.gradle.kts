@@ -12,8 +12,8 @@ android {
         applicationId = "com.ikegami99.krprnews"
         minSdk = 26
         targetSdk = 35
-        versionCode = 8
-        versionName = "0.3.1"
+        versionCode = 9
+        versionName = "0.3.2"
 
         ndk {
             abiFilters += "arm64-v8a"
@@ -53,6 +53,14 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    // Official llama.cpp dynamically loads CPU backend variants from nativeLibraryDir.
+    // Extract the shared libraries so those backend .so files are real filesystem entries.
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
 }
 
 kotlin {
@@ -77,7 +85,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    implementation("io.github.ljcamargo:llamacpp-kotlin:0.4.0")
+    implementation(project(":llamaAndroid"))
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
