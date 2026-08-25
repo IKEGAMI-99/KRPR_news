@@ -17,6 +17,7 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withTimeout
 import org.json.JSONObject
+import java.io.File
 import java.security.MessageDigest
 
 data class LocalAiTranslation(
@@ -35,6 +36,10 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
+ * v0.3.7ではUIプロセスからの重い処理を :ai サービスへ転送する。
+ * llama.cpp/ggmlのnative abortやOSによるAIプロセス終了が発生しても、
+ * Kirapara News本体を巻き込まない。
+ *
  * SAFのcontent:// URIは初回だけアプリ専用モデル領域へコピーし、
  * llama.cppには通常ファイルパスを渡す。
  */
@@ -50,7 +55,17 @@ object LocalGemmaManager {
     private var loadedUri: String? = null
     private var engine: InferenceEngine? = null
 
+    private fun isAiProcess(): Boolean = runCatching {
+        File("/proc/self/cmdline").inputStream().bufferedReader().use { reader ->
+            reader.readText().trim('\u0000', ' ', '\n', '\r', '\t').endsWith(":ai")
+        }
+    }.getOrDefault(false)
+
     suspend fun warmUp(context: Context, modelUri: String) {
+        if (!isAiProcess()) {
+            LocalAiProcessClient.warmUp(context.applicationContext, modelUri)
+            return
+        }
         inferenceMutex.withLock {
             ensureModelLocked(context.applicationContext, modelUri)
         }
@@ -58,6 +73,9 @@ object LocalGemmaManager {
 
     suspend fun translate(context: Context, modelUri: String, news: NewsItem): LocalAiTranslation {
         if (news.region == Region.JAPAN) return LocalAiTranslation(news.originalTitle, news.originalText)
+        if (!isAiProcess()) {
+            return LocalAiProcessClient.translate(context.applicationContext, modelUri, news)
+        }
 
         return inferenceMutex.withLock {
             readTranslationCache(context, modelUri, news)?.let { return@withLock it }
@@ -96,6 +114,10 @@ object LocalGemmaManager {
     }
 
     suspend fun summarize(context: Context, modelUri: String, news: NewsItem): LocalAiSummary {
+        if (!isAiProcess()) {
+            return LocalAiProcessClient.summarize(context.applicationContext, modelUri, news)
+        }
+
         return inferenceMutex.withLock {
             readSummaryCache(context, modelUri, news)?.let { return@withLock it }
             val llama = ensureModelLocked(context.applicationContext, modelUri)
@@ -139,10 +161,16 @@ object LocalGemmaManager {
     }
 
     suspend fun release() {
+        if (!isAiProcess()) return
         inferenceMutex.withLock { releaseLocked() }
     }
 
     suspend fun clearPreparedModels(context: Context) {
+        if (!isAiProcess()) {
+            LocalAiProcessClient.release(context.applicationContext)
+            PreparedModelStore.clear(context.applicationContext)
+            return
+        }
         inferenceMutex.withLock {
             releaseLocked()
             PreparedModelStore.clear(context.applicationContext)
@@ -231,7 +259,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-cpu context=$CONTEXT_LENGTH"
+            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH pssMb=${Debug.getPss() / 1024}"
         )
 
         try {
@@ -263,7 +291,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load success name=$name context=$CONTEXT_LENGTH backend=official llama.cpp CPU variants pssMb=${Debug.getPss() / 1024}"
+            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=8 pssMb=${Debug.getPss() / 1024}"
         )
         return llama
     }
@@ -283,7 +311,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens pssMb=${Debug.getPss() / 1024}"
+            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens batch=8 pssMb=${Debug.getPss() / 1024}"
         )
 
         withTimeout(GENERATE_TIMEOUT_MS) {
