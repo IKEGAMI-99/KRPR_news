@@ -62,13 +62,17 @@ object AppLog {
     /** Store the newest native tombstone/trace returned by ApplicationExitInfo. */
     fun saveAiExitTrace(context: Context, bytes: ByteArray) {
         if (bytes.isEmpty()) return
+        var savedBytes = 0
+        var truncated = false
         runCatching {
             synchronized(lock) {
                 val target = aiExitTraceFile(context.applicationContext)
                 val capped = if (bytes.size <= MAX_EXIT_TRACE_BYTES) bytes else bytes.copyOf(MAX_EXIT_TRACE_BYTES)
                 target.writeBytes(capped)
-                i(context, "ExitInfo", "saved AI native exit trace bytes=${capped.size} truncated=${bytes.size > capped.size}")
+                savedBytes = capped.size
+                truncated = bytes.size > capped.size
             }
+            i(context, "ExitInfo", "saved AI native exit trace bytes=$savedBytes truncated=$truncated")
         }
     }
 
@@ -85,7 +89,9 @@ object AppLog {
 
     fun export(context: Context, destination: Uri, modelName: String?) {
         val app = context.applicationContext
-        val trace = runCatching { aiExitTraceFile(app).takeIf { it.isFile }?.readBytes() }.getOrNull()
+        val trace: ByteArray? = runCatching {
+            aiExitTraceFile(app).takeIf { it.isFile }?.readBytes()
+        }.getOrNull()
         val body = buildString {
             appendLine("Kirapara News diagnostics")
             appendLine("========================")
@@ -94,13 +100,13 @@ object AppLog {
             appendLine("Android: ${Build.VERSION.RELEASE} / API ${Build.VERSION.SDK_INT}")
             appendLine("ABI: ${Build.SUPPORTED_ABIS.joinToString()}")
             appendLine("Model: ${modelName ?: "not selected"}")
-            appendLine("AI backend: llama.cpp generic CPU/NEON · ctx=1024 · batch/ubatch=1 · threads=1 · flash-attn=off")
+            appendLine("AI backend: llama.cpp generic CPU/NEON · ctx=1024 · batch/ubatch=1 · threads=1 · flash-attn=off · q4-repack=off")
             appendLine()
             appendLine("Log")
             appendLine("---")
             append(runCatching { file(app).readText() }.getOrDefault("(no log entries)"))
 
-            if (!trace.isNullOrEmpty()) {
+            if (trace != null && trace.isNotEmpty()) {
                 appendLine()
                 appendLine("AI native exit trace")
                 appendLine("---")
