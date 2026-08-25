@@ -47,9 +47,9 @@ android {
                 arguments += "-DLLAMA_OPENSSL=OFF"
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
-                # Stability-first build for Android. v0.3.6 died during Gemma 4
-                # prompt prefill before the first generated token. Avoid runtime
-                # CPU-variant selection until that path is proven stable.
+                // Stability-first build for Android. v0.3.6 died during Gemma 4
+                // prompt prefill before the first generated token. Avoid runtime
+                // CPU-variant selection until that path is proven stable.
                 arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
                 arguments += "-DGGML_LLAMAFILE=OFF"
             }
