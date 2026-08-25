@@ -31,7 +31,18 @@ jobs:
         run: bash scripts/prepare_llama_android.sh
 
       - name: Build debug APK
-        run: gradle assembleDebug --stacktrace
+        shell: bash
+        run: |
+          set +e
+          gradle assembleDebug --stacktrace --console=plain > build.log 2>&1
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            echo "========== Android build failure (tail) =========="
+            tail -n 240 build.log
+            echo "========== Extracted errors =========="
+            grep -Ei "(^|[[:space:]])(error:|fatal error:|CMake Error|ninja:|FAILURE:|What went wrong|Execution failed|Unresolved reference|e: )" build.log | tail -n 120 || true
+          fi
+          exit "$status"
 
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
