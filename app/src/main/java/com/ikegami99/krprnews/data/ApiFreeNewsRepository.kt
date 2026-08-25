@@ -6,7 +6,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.supervisorScope
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeoutOrNull
+import org.json.JSONArray
 import org.xmlpull.v1.XmlPullParser
 import java.net.HttpURLConnection
 import java.net.URL
@@ -16,27 +19,33 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 /**
- * APIキーを使わず公開RSS/公開HTMLのみからニュースを集める repository。
- * 取得失敗はソース単位で無視し、複数の取得経路をフォールバックとして使う。
+ * APIキー不要のニュースRepository。
+ *
+ * v0.2.3では、まずGitHub Actionsが生成する軽量JSONを短時間で取得する。
+ * JSONが使えない場合だけ公開RSS/HTMLへ直接フォールバックする。
+ * 遅いソースはタイムアウトで切り離し、1ソースの障害で画面全体を待たせない。
  */
 object ApiFreeNewsRepository : NewsRepository {
+    private const val AGGREGATED_FEED_URL =
+        "https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json"
+    private const val AGGREGATED_TIMEOUT_MS = 4_000L
+    private const val SOURCE_TIMEOUT_MS = 5_500L
+    private const val TRANSLATION_TIMEOUT_MS = 2_500L
+
     private val rssHubHosts = listOf(
-        "https://rsshub.yfi.moe",
+        "https://rsshub.app",
         "https://rsshub.rssforever.com",
-        "https://rsshub.app"
+        "https://rsshub.yfi.moe"
     )
 
     private fun hubRoutes(path: String) = rssHubHosts.map { "$it$path" }
 
-    private val sources: List<PublicNewsSource> = listOf(
-        // 日本版。公式チャンネルIDが分かっているのでYouTube公式RSSを直接利用。
+    private val directSources: List<PublicNewsSource> = listOf(
         YouTubeChannelSource(
             region = Region.JAPAN,
             channelId = "UC9MO21fNvt0F4-UK28kc_VQ",
             label = "公式YouTube"
         ),
-
-        // Global。公式の /c/LifeMakeover と handle の両方から channel ID を解決する。
         YouTubePageSource(
             region = Region.GLOBAL,
             pageUrls = listOf(
@@ -45,25 +54,11 @@ object ApiFreeNewsRepository : NewsRepository {
             ),
             label = "公式YouTube"
         ),
-        RssSource(
-            region = Region.GLOBAL,
-            urls = hubRoutes("/youtube/c/LifeMakeover"),
-            label = "公式YouTube · RSSHub"
-        ),
-
-        // 韓国版 Stylight。handle直読みとRSSHubを併用。
         YouTubePageSource(
             region = Region.KOREA,
             pageUrls = listOf("https://www.youtube.com/@stylight_official"),
             label = "公式YouTube"
         ),
-        RssSource(
-            region = Region.KOREA,
-            urls = hubRoutes("/youtube/user/@stylight_official"),
-            label = "公式YouTube · RSSHub"
-        ),
-
-        // 中国版。Weiboだけに依存せず、公式Bilibili投稿も取得する。
         RssSource(
             region = Region.CHINA,
             urls = hubRoutes("/weibo/user/7521830234"),
@@ -76,41 +71,59 @@ object ApiFreeNewsRepository : NewsRepository {
         )
     )
 
-    override suspend fun loadNews(): List<NewsItem> = coroutineScope {
-        val raw = sources.map { source ->
-            async(Dispatchers.IO) {
-                runCatching { source.fetch() }.getOrDefault(emptyList())
-            }
-        }.awaitAll()
-            .flatten()
+    override suspend fun loadNews(): List<NewsItem> = supervisorScope {
+        val aggregated = withTimeoutOrNull(AGGREGATED_TIMEOUT_MS) {
+            runCatching { GitHubJsonSource.fetch() }.getOrDefault(emptyList())
+        }.orEmpty()
+
+        val raw = if (aggregated.isNotEmpty()) {
+            aggregated
+        } else {
+            directSources.map { source ->
+                async(Dispatchers.IO) {
+                    withTimeoutOrNull(SOURCE_TIMEOUT_MS) {
+                        runCatching { source.fetch() }.getOrDefault(emptyList())
+                    }.orEmpty()
+                }
+            }.awaitAll().flatten()
+        }
             .distinctBy { it.sourceUrl }
             .sortedByDescending { it.publishedAtEpoch }
-            .take(40)
+            .take(30)
 
-        if (raw.isEmpty()) return@coroutineScope DemoNewsRepository.loadNews()
+        if (raw.isEmpty()) return@supervisorScope DemoNewsRepository.loadNews()
 
         raw.map { item ->
-            val translatedTitle = LocalTranslationManager.translate(item.region, item.title)
-            val originalBody = item.body.ifBlank { item.title }
-            val translatedBody = if (originalBody == item.title) {
-                translatedTitle
-            } else {
-                LocalTranslationManager.translate(item.region, originalBody)
+            async {
+                val originalBody = item.body.ifBlank { item.title }
+                val translatedTitle = safeTranslate(item.region, item.title)
+                val translatedBody = if (originalBody == item.title) {
+                    translatedTitle
+                } else {
+                    safeTranslate(item.region, originalBody)
+                }
+                NewsItem(
+                    id = item.id,
+                    region = item.region,
+                    platform = item.platform,
+                    publishedLabel = item.publishedLabel,
+                    translatedTitle = translatedTitle,
+                    originalTitle = item.title,
+                    translatedText = translatedBody,
+                    originalText = originalBody,
+                    sourceUrl = item.sourceUrl,
+                    category = categoryFor(item.title, item.region),
+                    imageUrl = item.imageUrl
+                )
             }
-            NewsItem(
-                id = item.id,
-                region = item.region,
-                platform = item.platform,
-                publishedLabel = item.publishedLabel,
-                translatedTitle = translatedTitle,
-                originalTitle = item.title,
-                translatedText = translatedBody,
-                originalText = originalBody,
-                sourceUrl = item.sourceUrl,
-                category = categoryFor(item.title, item.region),
-                imageUrl = item.imageUrl
-            )
-        }
+        }.awaitAll()
+    }
+
+    private suspend fun safeTranslate(region: Region, text: String): String {
+        if (region == Region.JAPAN || text.isBlank()) return text
+        return withTimeoutOrNull(TRANSLATION_TIMEOUT_MS) {
+            LocalTranslationManager.translate(region, text)
+        } ?: text
     }
 
     private fun categoryFor(text: String, region: Region): String {
@@ -146,6 +159,45 @@ private interface PublicNewsSource {
     suspend fun fetch(): List<RawNews>
 }
 
+private object GitHubJsonSource : PublicNewsSource {
+    override suspend fun fetch(): List<RawNews> = withContext(Dispatchers.IO) {
+        val json = httpGet(
+            "https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json",
+            timeoutMs = 3_500
+        )
+        val array = JSONArray(json)
+        buildList {
+            for (i in 0 until array.length()) {
+                val item = array.optJSONObject(i) ?: continue
+                val region = when (item.optString("region").uppercase()) {
+                    "JAPAN" -> Region.JAPAN
+                    "CHINA" -> Region.CHINA
+                    "GLOBAL" -> Region.GLOBAL
+                    "KOREA" -> Region.KOREA
+                    else -> continue
+                }
+                val title = item.optString("title").trim()
+                val url = item.optString("sourceUrl").trim()
+                if (title.isBlank() || url.isBlank()) continue
+                val epoch = item.optLong("publishedAtEpoch", 0L)
+                add(
+                    RawNews(
+                        id = item.optString("id").ifBlank { url.hashCode().toString() },
+                        region = region,
+                        platform = item.optString("platform").ifBlank { "公式情報" },
+                        title = title,
+                        body = item.optString("body").ifBlank { title },
+                        sourceUrl = url,
+                        publishedLabel = item.optString("publishedLabel").ifBlank { friendlyDate(epoch, "") },
+                        publishedAtEpoch = epoch,
+                        imageUrl = item.optString("imageUrl").takeIf { it.isNotBlank() }
+                    )
+                )
+            }
+        }
+    }
+}
+
 private class YouTubeChannelSource(
     private val region: Region,
     private val channelId: String,
@@ -160,10 +212,6 @@ private class YouTubeChannelSource(
     }
 }
 
-/**
- * YouTubeの公開チャンネルページから channel ID を解決する。
- * YouTube側のHTML差分に備え、複数の既知パターンを順番に試す。
- */
 private class YouTubePageSource(
     private val region: Region,
     private val pageUrls: List<String>,
@@ -171,10 +219,10 @@ private class YouTubePageSource(
 ) : PublicNewsSource {
     override suspend fun fetch(): List<RawNews> = withContext(Dispatchers.IO) {
         for (pageUrl in pageUrls) {
-            val html = runCatching { httpGet(pageUrl) }.getOrNull() ?: continue
+            val html = runCatching { httpGet(pageUrl, timeoutMs = 4_000) }.getOrNull() ?: continue
             val channelId = resolveChannelId(html) ?: continue
             val feed = runCatching {
-                httpGet("https://www.youtube.com/feeds/videos.xml?channel_id=$channelId")
+                httpGet("https://www.youtube.com/feeds/videos.xml?channel_id=$channelId", timeoutMs = 4_000)
             }.getOrNull() ?: continue
             val parsed = runCatching { parseFeed(feed, region, label) }.getOrNull()
             if (!parsed.isNullOrEmpty()) return@withContext parsed
@@ -188,7 +236,6 @@ private fun resolveChannelId(html: String): String? {
         Regex("\\\"channelId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
         Regex("\\\"browseId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
         Regex("\\\"externalId\\\"\\s*:\\s*\\\"(UC[a-zA-Z0-9_-]{22})\\\""),
-        Regex("itemprop=[\\\"'](?:channelId|identifier)[\\\"'][^>]*content=[\\\"'](UC[a-zA-Z0-9_-]{22})[\\\"']", RegexOption.IGNORE_CASE),
         Regex("youtube\\.com/channel/(UC[a-zA-Z0-9_-]{22})", RegexOption.IGNORE_CASE),
         Regex("channelId[^A-Za-z0-9_-]+(UC[a-zA-Z0-9_-]{22})")
     )
@@ -200,12 +247,14 @@ private class RssSource(
     private val urls: List<String>,
     private val label: String
 ) : PublicNewsSource {
-    override suspend fun fetch(): List<RawNews> = withContext(Dispatchers.IO) {
-        for (url in urls) {
-            val result = runCatching { parseFeed(httpGet(url), region, label) }.getOrNull()
-            if (!result.isNullOrEmpty()) return@withContext result
-        }
-        emptyList()
+    override suspend fun fetch(): List<RawNews> = coroutineScope {
+        urls.map { url ->
+            async(Dispatchers.IO) {
+                runCatching {
+                    parseFeed(httpGet(url, timeoutMs = 4_000), region, label)
+                }.getOrDefault(emptyList())
+            }
+        }.awaitAll().firstOrNull { it.isNotEmpty() }.orEmpty()
     }
 }
 
@@ -314,15 +363,18 @@ private fun extractImageFromHtml(value: String): String? {
         ?.let(::decodeEntities)
 }
 
-private fun httpGet(url: String): String {
+private fun httpGet(url: String, timeoutMs: Int = 4_500): String {
     val connection = URL(url).openConnection() as HttpURLConnection
     return try {
-        connection.connectTimeout = 12_000
-        connection.readTimeout = 12_000
+        connection.connectTimeout = timeoutMs
+        connection.readTimeout = timeoutMs
         connection.instanceFollowRedirects = true
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.1")
+        connection.setRequestProperty(
+            "User-Agent",
+            "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/139 Mobile Safari/537.36 KiraparaNews/0.2.3"
+        )
         connection.setRequestProperty("Accept-Language", "ja,en-US;q=0.9,en;q=0.8,ko;q=0.7,zh-CN;q=0.6")
-        connection.setRequestProperty("Accept", "application/rss+xml, application/atom+xml, text/xml, text/html;q=0.9, */*;q=0.8")
+        connection.setRequestProperty("Accept", "application/rss+xml, application/atom+xml, application/json, text/xml, text/html;q=0.9, */*;q=0.8")
         val code = connection.responseCode
         if (code !in 200..299) error("HTTP $code for $url")
         connection.inputStream.bufferedReader().use { it.readText() }
