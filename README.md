@@ -7,73 +7,82 @@
 
 ## 📥 最新版APK
 
-**現在の正式版: v0.3.1**
+**現在の正式版: v0.3.4**
 
-### [⬇️ Kirapara News v0.3.1 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.1/Kirapara-News-v0.3.1.apk)
+### [⬇️ Kirapara News v0.3.4 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.4/Kirapara-News-v0.3.4.apk)
 
+- [SHA-256ファイル](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.4/Kirapara-News-v0.3.4.apk.sha256)
 - [最新のGitHub Release](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
 - [すべてのReleases](https://github.com/IKEGAMI-99/KRPR_news/releases)
-- SHA-256: `0aa2473aa2be488c68c4a18725f881c7a7a426d0e77c2259abb9e0b9f5ca3ceb`
 
 > [!WARNING]
-> APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
+> APKは必ず `IKEGAMI-99/KRPR_news` のGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
 
-## ✨ v0.3.1
+## ✨ v0.3.4
 
-v0.3.1ではローカルGGUFの読み込みとアップデート、診断機能を大きく修正しました。
+v0.3.4では、AndroidのScoped Storageとnative llama.cppのファイルアクセス問題を避けるため、GGUFの読み込み方式を変更しました。
 
-- Androidの `content://` URIをFile Descriptor経由で直接開く方式へ変更
-- 大容量GGUFをアプリ領域へコピーせず、その場で読み込み
-- `GGUFを選択` で取得した永続読み取り権限を利用
-- モデル読み込み失敗を診断ログへ記録
-- 設定に **診断ログを書き出す / クリア** を追加
-- アプリ内でAPKを直接ダウンロード
-- ダウンロード中の進捗表示
-- アプリ内でSHA-256を検証
-- 検証成功後にAndroid標準インストーラーを自動で起動
-- 「この提供元から許可」が必要な場合は設定画面へ移動し、戻った後にインストールを続行
-- llama.cpp Android bindingを `io.github.ljcamargo:llamacpp-kotlin:0.4.0` へ変更
-- `compileSdk 36` / `AGP 8.9.1` / `Kotlin 2.3.20` / `Gradle 8.11.1`
-- `versionCode 8` / `versionName 0.3.1`
+```text
+ユーザーが選択したGGUF
+        ↓
+Android Storage Access Framework
+        ↓
+初回だけアプリ専用モデル領域へコピー
+        ↓
+通常のファイルパス
+        ↓
+公式 llama.cpp
+        ↓
+翻訳 / 日本語要約
+```
+
+### 重要: 初回だけモデルを準備します
+
+GGUFを初めて読み込む時は、選択したモデルをアプリ専用領域へ一度コピーします。
+
+- 元のGGUFは削除しません
+- 2回目以降はコピー済みモデルを再利用します
+- コピー中は診断ログへ10%刻みで進捗を記録します
+- モデル本体と同程度の追加空き容量が必要です
+- 空き容量不足の場合はモデル読み込み前にエラーを表示します
+
+例: 約5.15GBのGGUFなら、余裕分を含めて約5.4GB以上の空き容量を推奨します。
+
+この方式は5GB前後のストレージを追加で使いますが、`content://` や `/proc/self/fd/...` をnative側で再オープンする端末依存問題を避け、llama.cppには通常ファイルだけを渡します。
 
 ## 🧠 ローカルGemma 4 / GGUF
 
 設定 → **ローカルGemma 4** → **GGUFを選択** から、端末に保存済みのGGUFを指定します。
 
-```text
-端末内の model.gguf
-        ↓
-Android Storage Access Framework
-        ↓
-content:// URI + File Descriptor
-        ↓
-llama.cpp
-        ↓
-翻訳 / 日本語要約
-        ↓
-端末内キャッシュ
-```
+ニュースは通常、各地域の**原文**で表示します。
 
-ニュースは通常、各地域の**原文**で表示します。海外記事の **「日本語に翻訳」** または全記事の **「日本語要約」** を押した時だけローカルGGUFを実行します。
+- 海外記事: **日本語に翻訳**
+- 全記事: **日本語要約**
 
-モデルやニュース本文を翻訳APIへ送信しません。翻訳・要約結果は記事とモデルごとに端末へキャッシュします。
+を押した時だけ端末内のGGUFを実行します。
+
+モデルや記事本文をGoogle翻訳、DeepL、外部LLM API等へ送信しません。翻訳・要約結果は記事とモデルごとに端末へキャッシュします。
 
 ### 現在の推論バックエンド
 
-- GGUF / llama.cpp
-- Context: 4096 tokens
+- 公式 `llama.cpp` Android runtime
+- GGUF
 - arm64-v8a
-- **CPU / NEON**
+- Context: 4096 tokens
+- CPU / NEON
+- CPU backend variantsを端末に応じて選択
+
+Gemma 4のwide/MoEモデルで発生していたllama.cpp側のsplit-input問題の修正を含む固定コミットを使用しています。
 
 ### Hexagon NPUについて
 
-llama.cpp本家にはSnapdragonのHexagon / HTP NPUバックエンドがありますが、現時点では実験的な実装です。
+llama.cpp本家にはSnapdragon Hexagon / HTPバックエンドがありますが、まだ実験的な実装です。
 
-v0.3.1のAPKにはHexagon用 `libggml-hexagon` / `libggml-htp-vNN` を同梱していないため、現在はCPU/NEONを使用します。UI上だけNPU対応を装うことはせず、専用ネイティブビルドと実機検証ができた段階で追加する方針です。
+現在のAPKにはHexagon用HTPライブラリを同梱していないためCPU/NEONを使用します。NPU対応をUI上だけ装うことはせず、専用nativeビルドと実機検証後に追加する方針です。
 
 ## 🌐 ニュース取得
 
-GitHub Actionsは**原文ニュースを集めるだけ**で、翻訳は行いません。
+翻訳サーバーは使用しません。GitHub Actionsは**原文ニュースを集めるだけ**です。
 
 ```text
 公式公開ページ / 公開RSS / RSSHub
@@ -85,9 +94,11 @@ SNS本文の不要部分を整理
 data/news.json（原文）
         ↓
 Androidアプリ
+        ↓
+必要な記事だけ端末内Gemmaで処理
 ```
 
-GitHub Actionsが定期的にニュースを取得します。アプリはまずGitHubの軽量キャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
+アプリはまずGitHub上の軽量ニュースキャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
 
 ## 📰 接続中のニュースソース
 
@@ -98,8 +109,6 @@ GitHub Actionsが定期的にニュースを取得します。アプリはまず
 | 🇨🇳 中国 | 以闪亮之名 公式Bilibili | RSSHub | 不要 |
 | 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
 | 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
-
-公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。一つの取得先が失敗しても他の地域まで巻き込まない構成にしています。
 
 ## 📱 主な機能
 
@@ -115,24 +124,25 @@ GitHub Actionsが定期的にニュースを取得します。アプリはまず
 - Android共有
 - ライト / ダーク / 端末設定連動テーマ
 - GitHub Releasesからのアプリ内アップデート
-- SHA-256検証
+- APKのSHA-256検証
 - 診断ログの書き出し
 
 ## 🧾 診断ログ
 
 設定 → **診断ログ** から `.txt` ファイルとして書き出せます。
 
-ログには主に以下を記録します。
+主な記録内容:
 
 - アプリバージョン
-- Android / 端末 / ABI情報
-- 選択中モデル名
+- Android / 端末 / ABI
+- 選択モデル名
+- モデル準備（コピー）開始 / 10%刻みの進捗 / 完了
 - GGUF読み込み開始 / 成功 / 失敗
 - AI翻訳 / 要約の開始・完了・エラー
 - ニュース取得エラー
 - アップデート確認 / ダウンロード / SHA-256検証エラー
 
-ニュース本文そのものを大量に記録する用途にはしていません。ログは約1MBでローテーションします。
+記事本文そのものを大量にログ保存する用途にはしていません。
 
 ## 🔄 アプリ内アップデート
 
@@ -141,35 +151,31 @@ GitHub Actionsが定期的にニュースを取得します。アプリはまず
 ```text
 GitHub Releases
       ↓
-アプリ内ダウンロード
+アプリ内でAPKダウンロード
       ↓
 SHA-256検証
       ↓
-検証済みAPKをFileProviderで共有
-      ↓
-Android標準インストーラー
+Android標準インストーラー起動
 ```
 
-APK取得と検証はアプリ内で完結します。
+ダウンロードと検証はアプリ内で完結します。
 
 > [!NOTE]
-> 通常のAndroidアプリでは、最後のOSによる「インストール」確認そのものを無人化することはできません。これはAndroidのセキュリティ仕様です。
-
-初回など「この提供元からのアプリを許可」が必要な場合は、アプリから該当設定へ移動し、許可後にインストール処理を続行します。
+> 通常のAndroidアプリでは、最後のOSによる「インストール」確認だけは省略できません。
 
 ## 📥 初回インストール
 
-1. README上部の **v0.3.1 APKをダウンロード** を開く
-2. `Kirapara-News-v0.3.1.apk` をダウンロード
+1. README上部の **v0.3.4 APKをダウンロード** を開く
+2. `Kirapara-News-v0.3.4.apk` をダウンロード
 3. APKを開く
-4. 必要な場合はAndroidの「この提供元からのアプリを許可」を有効にする
+4. 必要な場合は「この提供元からのアプリを許可」を有効にする
 5. インストールする
 
-一度正式署名版を導入した後は、以降のバージョンをアプリ内アップデートできます。
+正式署名版を導入した後は、以降のバージョンをアプリ内アップデートできます。
 
 ## ⚠️ セキュリティ
 
-- APKは `IKEGAMI-99/KRPR_news` のGitHub Releasesからのみ取得してください
+- APKはこのGitHubリポジトリのReleasesからのみ取得してください
 - 第三者サイトやファイル共有サービスのAPKは使用しないでください
 - 正式ReleaseにはAPKと `.sha256` を掲載します
 - アプリ内更新でもSHA-256不一致ならインストールを中止します
@@ -177,13 +183,13 @@ APK取得と検証はアプリ内で完結します。
 
 ## 🔒 プライバシー
 
-- ローカル翻訳 / 要約の本文を外部AI APIへ送信しません
+- 翻訳 / 要約本文を外部AI APIへ送信しません
 - GGUFを外部へ送信しません
 - ユーザー登録不要
-- 位置情報・連絡先・写真ライブラリ不要
+- 位置情報・連絡先不要
 - 選択したGGUFへの読み取り権限のみ保持
 
-ネットワーク通信は公開ニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認とAPK取得に使用します。
+ネットワーク通信はニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認とAPK取得に使用します。
 
 ## 📱 対応環境
 
@@ -199,26 +205,21 @@ APK取得と検証はアプリ内で完結します。
 - Android Gradle Plugin 8.9.1
 - Gradle 8.11.1
 - compileSdk 36 / targetSdk 35
-- llama.cpp / GGUF
-- `io.github.ljcamargo:llamacpp-kotlin:0.4.0`
+- 公式 llama.cpp / GGUF
+- Android NDK 29 / CMake 3.31.6
 - Android Storage Access Framework
+- app-specific model storage
 - FileProvider
 - Coil
-- SharedPreferences
 - GitHub Actions
 
 ## 🛠️ ビルド
 
-JDK 17を使用します。
+JDK 17を使用します。公式llama.cpp Android runtimeの準備にはAndroid NDK / CMakeが必要です。
 
 ```bash
+bash scripts/prepare_llama_android.sh
 gradle assembleDebug
-```
-
-生成先:
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
 ```
 
 ## 🚀 署名済みRelease
@@ -230,9 +231,7 @@ GitHub Repository Secrets:
 - `KEY_ALIAS`
 - `KEY_PASSWORD`
 
-翻訳API用Secretは不要です。
-
-同じ署名鍵を全リリースで使います。署名鍵を失うと既存アプリへ上書き更新できなくなります。
+翻訳API用Secretは不要です。同じ署名鍵を全リリースで使用します。
 
 ## ⚖️ コンテンツと免責
 
@@ -240,4 +239,4 @@ GitHub Repository Secrets:
 
 ## Version
 
-Current version: **v0.3.1**
+Current version: **v0.3.4**
