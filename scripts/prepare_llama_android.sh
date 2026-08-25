@@ -3,8 +3,9 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENDOR_DIR="$ROOT_DIR/vendor/llama.cpp"
-# Includes ggml PR #22789: dynamic split inputs for wide MoE models such as Gemma 4 E4B.
-LLAMA_COMMIT="dbadb68eecdfb3ab0e86872d011738fc937f0364"
+# 2026-08-25 upstream llama.cpp. Includes the dynamic split-input fix for wide
+# models plus the Gemma 4/runtime fixes merged after the previous 2026-08-03 pin.
+LLAMA_COMMIT="d222767c7a6516559a3f49e7721b6c6b1acc87b4"
 
 if [[ -d "$VENDOR_DIR/.git" ]] && [[ "$(git -C "$VENDOR_DIR" rev-parse HEAD 2>/dev/null || true)" == "$LLAMA_COMMIT" ]]; then
   echo "Pinned llama.cpp already prepared: $LLAMA_COMMIT"
@@ -84,9 +85,14 @@ import sys
 p = Path(sys.argv[1])
 s = p.read_text()
 s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
-              'constexpr int   DEFAULT_CONTEXT_SIZE    = 4096;')
+              'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
-              'constexpr int   BATCH_SIZE              = 256;')
+              'constexpr int   BATCH_SIZE              = 64;')
+
+if 'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;' not in s:
+    raise SystemExit('Could not patch mobile context size in ai_chat.cpp')
+if 'constexpr int   BATCH_SIZE              = 64;' not in s:
+    raise SystemExit('Could not patch mobile batch size in ai_chat.cpp')
 
 # Translation/summary requests are independent jobs, not a chat conversation.
 # Clear chat/KV history before every user prompt while keeping model weights loaded.
@@ -137,9 +143,8 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-# java.io.File.canRead()/access() can reject /proc/self/fd/<n> on Android scoped storage
-# even while the ContentResolver ParcelFileDescriptor is valid and open. For that path,
-# let llama.cpp open the already-authorized descriptor via procfs instead of rejecting it first.
+# Keep compatibility with a previously selected SAF descriptor if it reaches the
+# upstream wrapper. v0.3.4+ normally uses an app-private prepared model path.
 python3 - "$LIB_DIR/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt" <<'PY'
 from pathlib import Path
 import sys
@@ -168,4 +173,4 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=2048 batch=64)"
