@@ -32,8 +32,9 @@ jobs:
 
       - name: Install Android native toolchain
         run: |
-          yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager "ndk;29.0.13113456" "cmake;3.31.6"
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" "ndk;29.0.13113456" "cmake;3.31.6"
 
       - name: Prepare official llama.cpp
         run: bash scripts/prepare_llama_android.sh
