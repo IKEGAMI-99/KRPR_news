@@ -27,7 +27,6 @@ REGION_HOME_PAGES = {
     "KOREA": "https://stylight.nex2fun.com/",
 }
 
-# 公式サイトのOG画像取得に失敗した場合だけ使う最終フォールバック。
 STATIC_FALLBACK_IMAGES = {
     "JAPAN": "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png",
     "CHINA": "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg",
@@ -67,7 +66,6 @@ def strip_tags(s: str) -> str:
 def clean_social_text(s: str, region: str) -> str:
     s = strip_tags(s)
     if region == "CHINA":
-        # Weiboのハッシュタグ・アカウント名・定型リンクは機械翻訳を壊しやすい。
         s = re.sub(r"#[^#\n]{1,100}#", " ", s)
         s = re.sub(r"^\s*(?:以闪亮之名\s*)+", "", s)
         s = re.sub(r"@[^\s:：]+", "", s)
@@ -82,7 +80,6 @@ def clean_social_text(s: str, region: str) -> str:
             lines.append(line)
         s = "\n".join(lines)
 
-    # URLとSNS由来の冗長な空白を翻訳前に整理。
     s = re.sub(r"https?://\S+", "", s)
     s = re.sub(r"[ \t]{2,}", " ", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
@@ -135,8 +132,11 @@ def official_fallback_image(region: str):
             for pattern in patterns:
                 m = re.search(pattern, page, re.I)
                 if m:
-                    discovered = urllib.parse.urljoin(home, html.unescape(m.group(1)))
-                    break
+                    candidate = urllib.parse.urljoin(home, html.unescape(m.group(1)))
+                    low = candidate.lower()
+                    if not any(x in low for x in ("qrcode", "qr_", "ewm", "favicon", "icon", "logo")):
+                        discovered = candidate
+                        break
 
             if not discovered:
                 candidates = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', page, re.I)
@@ -146,10 +146,16 @@ def official_fallback_image(region: str):
                     low = full.lower()
                     if full.startswith("data:"):
                         continue
-                    score = sum(token in low for token in ("kv", "keyvisual", "banner", "main", "top", "page1", "visual"))
-                    if "logo" in low:
-                        score -= 1
-                    scored.append((score, full))
+                    if any(token in low for token in ("ewm", "qrcode", "qr_", "qr-", "favicon", "icon", "logo", "download", "store")):
+                        continue
+                    score = sum(
+                        token in low
+                        for token in (
+                            "keyvisual", "mainvisual", "visual", "banner", "slider", "slide", "kv", "hero", "top_bg", "top-bg"
+                        )
+                    )
+                    if score > 0:
+                        scored.append((score, full))
                 if scored:
                     scored.sort(key=lambda x: x[0], reverse=True)
                     discovered = scored[0][1]
