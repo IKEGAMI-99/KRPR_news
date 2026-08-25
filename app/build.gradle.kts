@@ -12,8 +12,8 @@ android {
         applicationId = "com.ikegami99.krprnews"
         minSdk = 26
         targetSdk = 35
-        versionCode = 5
-        versionName = "0.2.3"
+        versionCode = 6
+        versionName = "0.2.4"
     }
 
     signingConfigs {
@@ -68,7 +68,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("io.coil-kt:coil-compose:2.7.0")
 
-    // APIキー不要。初回だけ言語モデルを取得し、翻訳処理は端末内で行う。
+    // サーバー翻訳が無い記事だけ、端末内ML Kitをフォールバックとして利用する。
     implementation("com.google.mlkit:translate:17.0.3")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
