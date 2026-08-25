@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 import html
 import json
+import os
 import re
 import time
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
-UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.2.3"
+UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.2.4"
+GOOGLE_TRANSLATE_API_KEY = os.environ.get("GOOGLE_TRANSLATE_API_KEY", "").strip()
 
 RSSHUB_HOSTS = [
     "https://rsshub.app",
@@ -17,9 +20,28 @@ RSSHUB_HOSTS = [
     "https://rsshub.yfi.moe",
 ]
 
+# 記事固有画像が取れない時だけ使う公式サイト上の画像。
+REGION_FALLBACK_IMAGES = {
+    "JAPAN": "https://kirapara.archosaur.com/new_script/img/pc/top_logo.png",
+    "CHINA": "https://mystyle.archosaur.com/assets/260721/pc/images/p3/slider1.jpg",
+    "KOREA": "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png",
+}
+
+LANGUAGE_BY_REGION = {
+    "CHINA": "zh-CN",
+    "GLOBAL": "en",
+    "KOREA": "ko",
+}
+
 
 def get(url: str, timeout: int = 15) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ja,en-US;q=0.9,en;q=0.8"})
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": UA,
+            "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+        },
+    )
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
 
@@ -33,9 +55,53 @@ def strip_tags(s: str) -> str:
     return s.strip()
 
 
+def clean_social_text(s: str, region: str) -> str:
+    s = strip_tags(s)
+    if region == "CHINA":
+        # Weiboのハッシュタグや定型リンク文は翻訳品質を大きく落とすため除外。
+        s = re.sub(r"#[^#\n]{1,80}#", " ", s)
+        s = re.sub(r"^\s*(以闪亮之名\s*)+", "", s)
+        s = s.replace("网页链接", "")
+        lines = []
+        for line in s.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if any(marker in line for marker in ("下载传送门", "活动传送门")):
+                continue
+            lines.append(line)
+        s = "\n".join(lines)
+    s = re.sub(r"[ \t]{2,}", " ", s)
+    s = re.sub(r"\n{3,}", "\n\n", s)
+    return s.strip()
+
+
+def compact_title(s: str, region: str) -> str:
+    s = clean_social_text(s, region)
+    if not s:
+        return "新着ニュース"
+    first = re.split(r"[\n。！？!?]", s, maxsplit=1)[0].strip()
+    candidate = first if len(first) >= 8 else s.replace("\n", " ")
+    return candidate[:100].rstrip(" ,，、-｜|")
+
+
 def image_from_html(s: str):
     m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', s or "", re.I)
     return html.unescape(m.group(1)) if m else None
+
+
+def is_placeholder_image(url: str | None) -> bool:
+    if not url:
+        return True
+    low = url.lower()
+    return any(
+        token in low
+        for token in (
+            "timeline_card_small_super_default",
+            "timeline_card_small_web_default",
+            "timeline_card_small_default",
+        )
+    )
 
 
 def parse_date_epoch(value: str) -> int:
@@ -43,14 +109,12 @@ def parse_date_epoch(value: str) -> int:
         return 0
     try:
         from email.utils import parsedate_to_datetime
-        dt = parsedate_to_datetime(value)
-        return int(dt.timestamp())
+        return int(parsedate_to_datetime(value).timestamp())
     except Exception:
         pass
     try:
         from datetime import datetime
-        v = value.replace("Z", "+00:00")
-        return int(datetime.fromisoformat(v).timestamp())
+        return int(datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp())
     except Exception:
         return 0
 
@@ -70,13 +134,8 @@ def rel_label(epoch: int) -> str:
 
 def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
     root = ET.fromstring(xml_text)
+    entries = [e for e in root if e.tag.endswith("entry")] if root.tag.endswith("feed") else root.findall(".//item")
     items = []
-
-    entries = []
-    if root.tag.endswith("feed"):
-        entries = [e for e in root if e.tag.endswith("entry")]
-    else:
-        entries = root.findall(".//item")
 
     for e in entries[:limit]:
         def first_text(names):
@@ -86,15 +145,14 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
                     return child.text.strip()
             return ""
 
-        title = first_text({"title"})
+        raw_title = first_text({"title"})
         body_raw = first_text({"description", "summary", "content", "encoded"})
         published = first_text({"published", "updated", "pubDate"})
         video_id = first_text({"videoId"})
 
         link = ""
         for child in e.iter():
-            local = child.tag.split("}")[-1]
-            if local == "link":
+            if child.tag.split("}")[-1] == "link":
                 link = child.attrib.get("href") or (child.text or "").strip()
                 if link:
                     break
@@ -107,8 +165,7 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
 
         image = None
         for child in e.iter():
-            local = child.tag.split("}")[-1]
-            if local == "thumbnail" and child.attrib.get("url"):
+            if child.tag.split("}")[-1] == "thumbnail" and child.attrib.get("url"):
                 image = child.attrib["url"]
                 break
         if not image and video_id:
@@ -116,16 +173,21 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
         if not image:
             image = image_from_html(body_raw)
 
-        if not title or not link:
+        if not raw_title or not link:
             continue
 
+        title = compact_title(raw_title, region)
+        body = clean_social_text(body_raw, region) or clean_social_text(raw_title, region)
         epoch = parse_date_epoch(published)
+        if is_placeholder_image(image):
+            image = REGION_FALLBACK_IMAGES.get(region)
+
         items.append({
             "id": str(hash(link)),
             "region": region,
             "platform": platform,
-            "title": strip_tags(title),
-            "body": strip_tags(body_raw) or strip_tags(title),
+            "title": title,
+            "body": body[:1800],
             "sourceUrl": link,
             "publishedLabel": rel_label(epoch),
             "publishedAtEpoch": epoch,
@@ -182,6 +244,71 @@ def load_existing():
         return []
 
 
+def google_translate(texts: list[str], source: str) -> list[str]:
+    if not texts or not GOOGLE_TRANSLATE_API_KEY:
+        return texts
+    endpoint = "https://translation.googleapis.com/language/translate/v2?" + urllib.parse.urlencode({"key": GOOGLE_TRANSLATE_API_KEY})
+    payload = json.dumps({"q": texts, "source": source, "target": "ja", "format": "text"}).encode("utf-8")
+    req = urllib.request.Request(
+        endpoint,
+        data=payload,
+        method="POST",
+        headers={"Content-Type": "application/json", "User-Agent": UA},
+    )
+    with urllib.request.urlopen(req, timeout=30) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    translations = data.get("data", {}).get("translations", [])
+    if len(translations) != len(texts):
+        raise RuntimeError("Google Translation response size mismatch")
+    return [html.unescape(x.get("translatedText", "")) for x in translations]
+
+
+def apply_translations(rows: list[dict], existing: list[dict]):
+    existing_by_url = {x.get("sourceUrl"): x for x in existing if x.get("sourceUrl")}
+
+    pending_by_lang: dict[str, list[tuple[dict, str, str]]] = {}
+    for row in rows:
+        if row.get("region") == "JAPAN":
+            row["translatedTitle"] = row.get("title", "")
+            row["translatedBody"] = row.get("body", "")
+            continue
+
+        previous = existing_by_url.get(row.get("sourceUrl"))
+        if (
+            previous
+            and previous.get("title") == row.get("title")
+            and previous.get("body") == row.get("body")
+            and previous.get("translatedTitle")
+            and previous.get("translatedBody")
+        ):
+            row["translatedTitle"] = previous["translatedTitle"]
+            row["translatedBody"] = previous["translatedBody"]
+            continue
+
+        lang = LANGUAGE_BY_REGION.get(row.get("region"))
+        if not lang:
+            continue
+        pending_by_lang.setdefault(lang, []).extend([
+            (row, "translatedTitle", row.get("title", "")),
+            (row, "translatedBody", row.get("body", "")),
+        ])
+
+    if not GOOGLE_TRANSLATE_API_KEY:
+        print("GOOGLE_TRANSLATE_API_KEY is not set; app will use on-device ML Kit fallback")
+        return
+
+    for lang, pending in pending_by_lang.items():
+        for start in range(0, len(pending), 40):
+            chunk = pending[start:start + 40]
+            texts = [x[2] for x in chunk]
+            try:
+                translated = google_translate(texts, lang)
+                for (row, field, _), value in zip(chunk, translated):
+                    row[field] = value
+            except Exception as e:
+                print(f"google translate failed ({lang}): {e}")
+
+
 def main():
     existing = load_existing()
     fresh = []
@@ -200,7 +327,6 @@ def main():
         except Exception as e:
             print(f"source failed: {e}")
 
-    # その地域の新規取得が0件なら、前回キャッシュを残す。
     fresh_regions = {x.get("region") for x in fresh}
     for region in {"JAPAN", "CHINA", "GLOBAL", "KOREA"}:
         if region not in fresh_regions:
@@ -210,9 +336,13 @@ def main():
     for row in fresh:
         url = row.get("sourceUrl")
         if url:
+            if is_placeholder_image(row.get("imageUrl")):
+                row["imageUrl"] = REGION_FALLBACK_IMAGES.get(row.get("region"))
             dedup[url] = row
 
     rows = sorted(dedup.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:60]
+    apply_translations(rows, existing)
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {len(rows)} items")
