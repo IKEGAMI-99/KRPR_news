@@ -7,46 +7,45 @@
 
 ## 📥 最新版APK
 
-**現在の正式版: v0.3.0**
+**現在の正式版: v0.3.1**
 
-### [⬇️ Kirapara News v0.3.0 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.0/Kirapara-News-v0.3.0.apk)
+### [⬇️ Kirapara News v0.3.1 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.1/Kirapara-News-v0.3.1.apk)
 
-- [最新のGitHub Releaseを開く](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
-- [すべてのReleasesを見る](https://github.com/IKEGAMI-99/KRPR_news/releases)
-- SHA-256: `056d2e6513ebd80dd17320dc6e0064efbdcdc75783e05e0cdb23f2ae641fb968`
+- [最新のGitHub Release](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
+- [すべてのReleases](https://github.com/IKEGAMI-99/KRPR_news/releases)
+- SHA-256: `0aa2473aa2be488c68c4a18725f881c7a7a426d0e77c2259abb9e0b9f5ca3ceb`
 
 > [!WARNING]
 > APKは必ずこのリポジトリのGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
 
-## ✨ v0.3.0
+## ✨ v0.3.1
 
-翻訳方式を全面的に変更しました。
+v0.3.1ではローカルGGUFの読み込みとアップデート、診断機能を大きく修正しました。
 
-- ニュースは**各国の原文を標準表示**
-- サーバー翻訳を廃止
-- Google Cloud Translationを廃止
-- ML Kit翻訳を廃止
-- 設定から端末内の **GGUFモデルを選択**
-- llama.cppでGemma 4などのGGUFを端末内実行
-- 海外記事に「日本語に翻訳」ボタンを追加
-- 全記事に「日本語要約」ボタンを追加
-- 翻訳後は「原文に戻す」で即切り替え
-- 翻訳・要約はユーザーが押した記事だけ実行
-- モデルは一度ロードしたらメモリ上で再利用
-- 翻訳・要約結果を記事単位で端末キャッシュ
-- GGUF自体はアプリ領域へコピーせず、Androidのファイル選択権限から直接読み込み
-- `versionCode 7` / `versionName 0.3.0`
+- Androidの `content://` URIをFile Descriptor経由で直接開く方式へ変更
+- 大容量GGUFをアプリ領域へコピーせず、その場で読み込み
+- `GGUFを選択` で取得した永続読み取り権限を利用
+- モデル読み込み失敗を診断ログへ記録
+- 設定に **診断ログを書き出す / クリア** を追加
+- アプリ内でAPKを直接ダウンロード
+- ダウンロード中の進捗表示
+- アプリ内でSHA-256を検証
+- 検証成功後にAndroid標準インストーラーを自動で起動
+- 「この提供元から許可」が必要な場合は設定画面へ移動し、戻った後にインストールを続行
+- llama.cpp Android bindingを `io.github.ljcamargo:llamacpp-kotlin:0.4.0` へ変更
+- `compileSdk 36` / `AGP 8.9.1` / `Kotlin 2.3.20` / `Gradle 8.11.1`
+- `versionCode 8` / `versionName 0.3.1`
 
-## 🧠 ローカルGemma 4
+## 🧠 ローカルGemma 4 / GGUF
 
 設定 → **ローカルGemma 4** → **GGUFを選択** から、端末に保存済みのGGUFを指定します。
 
 ```text
 端末内の model.gguf
         ↓
-Android ファイル選択
+Android Storage Access Framework
         ↓
-永続読み取り権限
+content:// URI + File Descriptor
         ↓
 llama.cpp
         ↓
@@ -55,25 +54,26 @@ llama.cpp
 端末内キャッシュ
 ```
 
-モデルやニュース本文を翻訳APIへ送信しません。ニュースを見るだけならモデルはロードされず、「日本語に翻訳」または「日本語要約」を押した時に初めてロードします。
+ニュースは通常、各地域の**原文**で表示します。海外記事の **「日本語に翻訳」** または全記事の **「日本語要約」** を押した時だけローカルGGUFを実行します。
 
-### 推論設定
+モデルやニュース本文を翻訳APIへ送信しません。翻訳・要約結果は記事とモデルごとに端末へキャッシュします。
+
+### 現在の推論バックエンド
 
 - GGUF / llama.cpp
 - Context: 4096 tokens
-- CPU/NEON
-- Threads: 端末CPU数に応じて4〜8
 - arm64-v8a
-- Gemma 4対応llama.cppを使用
+- **CPU / NEON**
 
-v0.3.0で使用するAARは `dev.ffmpegkit-maintained:llama-android:0.1.1` で、llama.cpp b9878を内包しています。
+### Hexagon NPUについて
 
-> [!NOTE]
-> モデルサイズと量子化によって必要RAM・生成速度は大きく変わります。大きなGemma 4では初回ロードや生成に時間がかかる場合があります。
+llama.cpp本家にはSnapdragonのHexagon / HTP NPUバックエンドがありますが、現時点では実験的な実装です。
+
+v0.3.1のAPKにはHexagon用 `libggml-hexagon` / `libggml-htp-vNN` を同梱していないため、現在はCPU/NEONを使用します。UI上だけNPU対応を装うことはせず、専用ネイティブビルドと実機検証ができた段階で追加する方針です。
 
 ## 🌐 ニュース取得
 
-GitHub Actionsは**原文ニュースを集めるだけ**です。翻訳処理は行いません。
+GitHub Actionsは**原文ニュースを集めるだけ**で、翻訳は行いません。
 
 ```text
 公式公開ページ / 公開RSS / RSSHub
@@ -87,11 +87,11 @@ data/news.json（原文）
 Androidアプリ
 ```
 
-GitHub Actionsが1時間ごとにニュースを取得し、`data/news.json` を更新します。アプリはまずこの軽量キャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
+GitHub Actionsが定期的にニュースを取得します。アプリはまずGitHubの軽量キャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
 
-## 📰 接続しているニュースソース
+## 📰 接続中のニュースソース
 
-| 地域 | ソース | 方法 | SNS APIキー |
+| 地域 | ソース | 方法 | APIキー |
 | --- | --- | --- | --- |
 | 🇯🇵 日本 | きらめきパラダイス公式YouTube | YouTube公開RSS | 不要 |
 | 🇨🇳 中国 | 以闪亮之名 公式Weibo | RSSHub 複数ホスト | 不要 |
@@ -99,86 +99,117 @@ GitHub Actionsが1時間ごとにニュースを取得し、`data/news.json` を
 | 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
 | 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
 
-公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。一つの取得先が失敗しても他の地域は表示できるようにしています。
-
-## 🖼️ サムネイル
-
-優先順位:
-
-1. 記事または動画固有の画像
-2. YouTube動画サムネイル
-3. 各地域公式サイトの画像
-4. アプリ内グラデーション背景
-
-Weiboの `timeline_card_small_*_default` などの汎用プレースホルダー画像は記事画像として使用しません。
+公開HTML・RSS・RSSHubは提供側の仕様変更で取得できなくなる場合があります。一つの取得先が失敗しても他の地域まで巻き込まない構成にしています。
 
 ## 📱 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国の統合タイムライン
-- 各国原文を標準表示
-- ローカルGGUFによるオンデマンド日本語翻訳
+- 各地域の原文を標準表示
+- ローカルGGUFによる日本語翻訳
 - ローカルGGUFによる日本語要約
-- 翻訳 / 要約キャッシュ
+- 翻訳 / 要約結果の端末キャッシュ
 - 折りたたみ式ニュースカード
 - 地域フィルター
-- 記事画像・YouTubeサムネイル表示
-- Android標準共有シート
-- 公式投稿を開くボタン
+- 記事画像 / YouTubeサムネイル
+- 公式投稿リンク
+- Android共有
 - ライト / ダーク / 端末設定連動テーマ
-- GitHub Releasesの最新版チェック
-- アプリ内APKダウンロード
-- SHA-256検証後にAndroid標準インストーラーへ引き渡す更新フロー
+- GitHub Releasesからのアプリ内アップデート
+- SHA-256検証
+- 診断ログの書き出し
+
+## 🧾 診断ログ
+
+設定 → **診断ログ** から `.txt` ファイルとして書き出せます。
+
+ログには主に以下を記録します。
+
+- アプリバージョン
+- Android / 端末 / ABI情報
+- 選択中モデル名
+- GGUF読み込み開始 / 成功 / 失敗
+- AI翻訳 / 要約の開始・完了・エラー
+- ニュース取得エラー
+- アップデート確認 / ダウンロード / SHA-256検証エラー
+
+ニュース本文そのものを大量に記録する用途にはしていません。ログは約1MBでローテーションします。
+
+## 🔄 アプリ内アップデート
+
+設定 → **アップデート** から最新版を確認できます。
+
+```text
+GitHub Releases
+      ↓
+アプリ内ダウンロード
+      ↓
+SHA-256検証
+      ↓
+検証済みAPKをFileProviderで共有
+      ↓
+Android標準インストーラー
+```
+
+APK取得と検証はアプリ内で完結します。
+
+> [!NOTE]
+> 通常のAndroidアプリでは、最後のOSによる「インストール」確認そのものを無人化することはできません。これはAndroidのセキュリティ仕様です。
+
+初回など「この提供元からのアプリを許可」が必要な場合は、アプリから該当設定へ移動し、許可後にインストール処理を続行します。
+
+## 📥 初回インストール
+
+1. README上部の **v0.3.1 APKをダウンロード** を開く
+2. `Kirapara-News-v0.3.1.apk` をダウンロード
+3. APKを開く
+4. 必要な場合はAndroidの「この提供元からのアプリを許可」を有効にする
+5. インストールする
+
+一度正式署名版を導入した後は、以降のバージョンをアプリ内アップデートできます。
+
+## ⚠️ セキュリティ
+
+- APKは `IKEGAMI-99/KRPR_news` のGitHub Releasesからのみ取得してください
+- 第三者サイトやファイル共有サービスのAPKは使用しないでください
+- 正式ReleaseにはAPKと `.sha256` を掲載します
+- アプリ内更新でもSHA-256不一致ならインストールを中止します
+- Androidが署名不一致を警告した場合はインストールを中止してください
+
+## 🔒 プライバシー
+
+- ローカル翻訳 / 要約の本文を外部AI APIへ送信しません
+- GGUFを外部へ送信しません
+- ユーザー登録不要
+- 位置情報・連絡先・写真ライブラリ不要
+- 選択したGGUFへの読み取り権限のみ保持
+
+ネットワーク通信は公開ニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認とAPK取得に使用します。
 
 ## 📱 対応環境
 
 - Android 8.0 (API 26) 以上
 - arm64-v8a
-- GGUFファイルはユーザーが用意
+- GGUFはユーザー側で用意
 - Google Playでは配布しません
-
-## 🔒 プライバシー
-
-- 翻訳・要約は端末内
-- GGUFを外部へ送信しない
-- ニュース本文を翻訳APIへ送信しない
-- ユーザー登録不要
-- 位置情報、連絡先、写真ライブラリ不要
-- 選択したGGUFへの読み取り権限のみ保持
-
-ネットワーク通信は公開ニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認に使用します。
-
-## 🔄 アプリ内アップデート
-
-設定 → アップデートからGitHub Releasesの最新版を確認できます。
-
-```text
-GitHub Releases
-      ↓
-versionNameを比較
-      ↓
-APK + SHA-256を取得
-      ↓
-SHA-256検証
-      ↓
-Android標準インストーラー
-```
 
 ## 🧱 技術構成
 
-- Kotlin
+- Kotlin 2.3.20
 - Jetpack Compose / Material 3
-- Coroutines
+- Android Gradle Plugin 8.9.1
+- Gradle 8.11.1
+- compileSdk 36 / targetSdk 35
 - llama.cpp / GGUF
-- `dev.ffmpegkit-maintained:llama-android:0.1.1`
+- `io.github.ljcamargo:llamacpp-kotlin:0.4.0`
 - Android Storage Access Framework
+- FileProvider
 - Coil
 - SharedPreferences
-- Android DownloadManager
 - GitHub Actions
 
 ## 🛠️ ビルド
 
-JDK 17とGradle 8.9を使用します。
+JDK 17を使用します。
 
 ```bash
 gradle assembleDebug
@@ -192,7 +223,7 @@ app/build/outputs/apk/debug/app-debug.apk
 
 ## 🚀 署名済みRelease
 
-GitHub Repository Secretsへ以下を登録します。
+GitHub Repository Secrets:
 
 - `KEYSTORE_BASE64`
 - `KEYSTORE_PASSWORD`
@@ -201,12 +232,12 @@ GitHub Repository Secretsへ以下を登録します。
 
 翻訳API用Secretは不要です。
 
-`versionName` を更新してmainへpushすると、固定署名済みAPKとSHA-256ファイルをGitHub Releaseへ自動公開します。
+同じ署名鍵を全リリースで使います。署名鍵を失うと既存アプリへ上書き更新できなくなります。
 
 ## ⚖️ コンテンツと免責
 
-ニュースでは投稿元と公式URLを明示し、原文へ戻れる設計です。公開RSS・公開ページ・各サービスの規約や仕様変更に応じて取得方法を調整します。
+ニュースでは投稿元と公式URLを明示します。公開RSS・公開ページ・各サービスの規約や仕様変更に応じて取得方法を調整します。
 
 ## Version
 
-Current version: **v0.3.0**
+Current version: **v0.3.1**
