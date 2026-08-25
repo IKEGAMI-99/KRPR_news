@@ -5,33 +5,28 @@
 > [!IMPORTANT]
 > 本アプリは非公式ファンアプリです。Archosaur Games、VVANNA GIRLS、各地域の運営会社・SNS事業者とは関係ありません。
 
-## ✨ v0.2.0
+## ✨ v0.2.1
 
-v0.2では、外部の有料SNS APIや翻訳APIを使わずに動かす方向へ変更しました。
+v0.2.1では実機確認をもとにニュース取得と表示を改善しました。
 
-- 🇯🇵 日本公式YouTubeの公開RSSを取得
-- 🌎 Global公式YouTube `@LifeMakeover` の公開ページからchannel IDを解決してRSSを取得
-- 🇰🇷 Stylight公式YouTube `@stylight_official` を同様に取得
-- 🇨🇳 中国公式WeiboをRSSHub経由で取得
-- 複数ソースを同時取得し、1つ落ちても他のニュースは表示
-- URL単位の簡易重複除去
-- 公開日時順に統合
-- 中国語 / 英語 / 韓国語 → 日本語を **ML Kitのオンデバイス翻訳** で処理
-- 翻訳本文を外部の翻訳APIへ送信しない
-- 原文はそのまま保持し、従来通りカードから日本語 / 原文を切替可能
-- `versionCode 2` / `versionName 0.2.0`
+- 🇯🇵 日本公式YouTubeは公式RSSを直接取得
+- 🇨🇳 中国は公式Weiboに加え、公式Bilibili（UID `676200579`）を追加
+- 🌎 Global公式YouTubeは `/c/LifeMakeover` と `@LifeMakeover` の複数URLからchannel IDを解決
+- 🇰🇷 Stylight公式YouTubeは `@stylight_official` の公開ページとRSSHubをフォールバック利用
+- RSSHubは複数の公開ホストを順番に試し、1サービス障害で地域全体が消えにくい構成へ変更
+- YouTube HTMLからのchannel ID抽出パターンを複数用意
+- ニュースカード上部に取得できた画像・YouTubeサムネイルを表示
+- RSS/RSSHub本文中の画像URLも可能な範囲で抽出
+- ダークモード時のカード本文・見出し・設定画面文字色を明示的に白系へ修正
+- `versionCode 3` / `versionName 0.2.1`
 
-### ローカル翻訳について
+## 🌐 APIキー不要 + ローカル翻訳
 
-翻訳には `com.google.mlkit:translate:17.0.3` を使用しています。
+外部の有料SNS APIや翻訳APIを使わずに動かす方向で開発しています。
 
-初めて中国語・英語・韓国語の記事を翻訳するときは、対応する翻訳モデルを端末へダウンロードするため通信が必要です。モデル取得後の翻訳処理は端末内で行われ、ニュース本文を外部の翻訳APIへ送る構成ではありません。
+中国語 / 英語 / 韓国語 → 日本語は **ML Kit On-Device Translation** を利用します。初回だけ対応言語モデルを端末へダウンロードするため通信が必要ですが、モデル取得後の翻訳処理は端末内で行われます。
 
-翻訳モデルの取得に失敗した場合は、ニュース自体を消さず原文を表示するフォールバック動作にしています。
-
-> ML Kit On-Device Translationを使用するため、Googleの適用される帰属・利用ガイドラインに従います。
-
-### API不要ニュース取得の考え方
+翻訳モデルの取得に失敗した場合もニュース自体を消さず、原文を表示します。
 
 ```text
 公式公開ページ / 公開RSS
@@ -47,15 +42,26 @@ ML Kit On-Device Translation
 Kirapara News タイムライン
 ```
 
-SNSの非公開APIキー、X APIキー、YouTube Data APIキー、翻訳APIキーは使用しません。
+X APIキー、YouTube Data APIキー、翻訳APIキーは使用していません。
 
-公開HTML・RSSの仕様変更やRSSHub側の障害で一部ソースが取得できなくなる可能性はあります。そのため取得処理はソースごとに分離し、1ソースの失敗でアプリ全体が止まらない構成です。
+## 📰 接続しているニュースソース
 
-## v0.1から継続している機能
+| 地域 | ソース | 方法 | APIキー |
+| --- | --- | --- | --- |
+| 🇯🇵 日本 | きらめきパラダイス公式YouTube | YouTube公開RSS | 不要 |
+| 🇨🇳 中国 | 以闪亮之名 公式Weibo | RSSHub 複数ホスト | 不要 |
+| 🇨🇳 中国 | 以闪亮之名 公式Bilibili | RSSHub `/bilibili/user/video/676200579` | 不要 |
+| 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS + RSSHub | 不要 |
+| 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS + RSSHub | 不要 |
 
-- 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国 の統合タイムラインUI
-- 各記事の **日本語 / 原文** ワンタップ切替
+公開HTML・RSS・RSSHubの仕様変更で一部ソースが取得できなくなる可能性があります。そのためソース単位でエラーを分離し、一つ失敗しても他のニュース取得を続けます。
+
+## 📱 主な機能
+
+- 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国の統合タイムライン
+- 日本語 / 原文のワンタップ切替
 - 地域フィルター
+- 記事画像・YouTubeサムネイル表示
 - Android標準共有シート
 - 公式投稿を開くボタン
 - パール・ピンク・ラベンダーを基調にした独自UI
@@ -63,8 +69,6 @@ SNSの非公開APIキー、X APIキー、YouTube Data APIキー、翻訳APIキ�
 - GitHub Releasesの最新版チェック
 - アプリ内APKダウンロード
 - SHA-256検証後にAndroid標準インストーラーへ引き渡す更新フロー
-- GitHub ActionsによるDebug APKビルド
-- タグpushによる署名済みRelease APK + SHA-256公開ワークフロー
 
 ## 📱 対応環境
 
@@ -86,17 +90,15 @@ GitHub Actionsの `Kirapara-News-debug` は開発確認用です。継続利用�
 
 Google Play以外からAPKをインストールするため、Androidから「提供元不明のアプリ」等の警告が表示される場合があります。これはサイドロードAPKに対するAndroidの標準的な保護機能です。
 
-**必ず守ってください。**
-
-- APKは `IKEGAMI-99/KRPR_news` のGitHub Releasesからのみ取得する
-- 第三者サイト、SNS、ファイル共有サービス等で再配布されたAPKをインストールしない
-- 各ReleaseにはAPKと `.sha256` を掲載する
-- アプリ内更新もSHA-256が確認できないReleaseはインストールしない
-- Androidが署名不一致を警告した場合はインストールを中止する
+- APKは `IKEGAMI-99/KRPR_news` のGitHub Releasesからのみ取得してください
+- 第三者サイト、SNS、ファイル共有サービス等で再配布されたAPKをインストールしないでください
+- 各正式ReleaseにはAPKと `.sha256` を掲載します
+- アプリ内更新もSHA-256が確認できないReleaseはインストールしません
+- Androidが署名不一致を警告した場合はインストールを中止してください
 
 ## 🔄 アプリ内アップデート
 
-設定 → アップデートから `releases/latest` を確認します。新しいバージョンがある場合、Release Notesを表示し、APKをAndroidのDownloadManagerで取得します。
+設定 → アップデートから `releases/latest` を確認します。
 
 ```text
 GitHub Releases
@@ -114,26 +116,11 @@ Android標準インストーラー
 
 Androidの仕様上、ユーザー確認なしに勝手にAPKをインストールすることはありません。
 
-## 🔐 初回だけ必要な設定
-
-アプリ自身からアップデートAPKをインストールする場合、Android 8以降ではKirapara Newsに対して「この提供元からのアプリを許可」を有効にする必要があります。アプリは必要なときだけAndroidの該当設定画面を開きます。
-
-## 📰 v0.2で接続しているニュースソース
-
-| 地域 | ソース | 方法 | APIキー |
-| --- | --- | --- | --- |
-| 🇯🇵 日本 | きらめきパラダイス公式YouTube | YouTube公開RSS | 不要 |
-| 🇨🇳 中国 | 以闪亮之名 公式Weibo | RSSHub | 不要 |
-| 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
-| 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
-
-今後、公式Webサイト、Bilibili、Naverなども同じ `PublicNewsSource` 境界へ追加していきます。
-
 ## 🎨 デザイン
 
-ライトモードはパールホワイト、淡いピンク、ラベンダー、水色。ダークモードは黒一色ではなく、ダークパープル、ネイビー、ピンクを基調にしています。
+ライトモードはパールホワイト、淡いピンク、ラベンダー、水色。ダークモードはダークパープル、ネイビー、ピンクを基調にしています。
 
-公式ゲームUIや公式素材をそのまま複製せず、「きらめきパラダイス」の華やかさを意識した独自デザインです。
+記事に画像がある場合はカード上部へ大きく表示し、下側にカテゴリを重ねます。画像がない場合は従来のグラデーション表示へフォールバックします。
 
 ## 🧱 技術構成
 
@@ -143,30 +130,10 @@ Androidの仕様上、ユーザー確認なしに勝手にAPKをインストー�
 - Android XmlPullParser
 - HttpURLConnection
 - ML Kit On-Device Translation
-- SharedPreferences（テーマ・更新設定）
+- Coil
+- SharedPreferences
 - Android DownloadManager
 - GitHub REST API
-- Coil
-
-## 🗂️ 構成
-
-```text
-app/src/main/java/com/ikegami99/krprnews/
-├ MainActivity.kt
-├ data/
-│  ├ News.kt
-│  ├ DemoNewsRepository.kt
-│  └ ApiFreeNewsRepository.kt
-├ translation/
-│  └ LocalTranslationManager.kt
-├ prefs/
-│  └ AppPreferences.kt
-├ ui/
-│  ├ KiraparaApp.kt
-│  └ theme/KiraparaTheme.kt
-└ update/
-   └ GitHubUpdateManager.kt
-```
 
 ## 🛠️ ビルド
 
@@ -184,21 +151,16 @@ app/build/outputs/apk/debug/app-debug.apk
 
 mainへのpushではGitHub ActionsもDebug APKをビルドし、Workflow Artifactとして保存します。
 
-## 🚀 署名済みReleaseの作り方
+## 🚀 署名済みRelease
 
 GitHub Repository Secretsへ以下を登録します。
 
-- `KEYSTORE_BASE64` : release keystoreをBase64化した文字列
+- `KEYSTORE_BASE64`
 - `KEYSTORE_PASSWORD`
 - `KEY_ALIAS`
 - `KEY_PASSWORD`
 
-その後、`v0.2.0` のようなタグをpushすると `.github/workflows/release.yml` が以下を生成します。
-
-```text
-Kirapara-News-v0.2.0.apk
-Kirapara-News-v0.2.0.apk.sha256
-```
+`v0.2.1` のようなタグをpushすると、署名済みAPKとSHA-256ファイルをGitHub Releaseへ公開するワークフローを用意しています。
 
 署名鍵は絶対にリポジトリへコミットしないでください。全バージョンで同じ署名鍵を使わないとAndroidの上書きアップデートができなくなります。
 
@@ -212,4 +174,4 @@ Kirapara-News-v0.2.0.apk.sha256
 
 ## Version
 
-Current development version: **v0.2.0**
+Current development version: **v0.2.1**
