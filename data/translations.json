@@ -1,43 +1,47 @@
 {
-  "version": 1,
+  "version": 2,
   "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-  "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+  "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
   "items": {
     "https://x.com/LifeMakeover510/status/2092567745489502482": {
       "contentHash": "2b33250f37bd4f9d545fd5bc",
-      "titleJa": "Tide Treasure",
-      "bodyJa": "Tide Treasureの収集ポイントをためて、4星セット[夕暮れ砂丘]、写真フレーム[甘夏]、色調チャートx13、輝き招待、そして様々な素材の報酬を獲得できます。",
-      "summaryJa": "Tide Treasureの収集ポイントをためて、4星セット[夕暮れ砂丘]、写真フレーム[甘夏]、色調チャートx13、輝き招待、そして様々な素材の報酬を獲得できます。",
+      "titleJa": "Tide Treasure [報酬受取期間: 8月27日9:00〜9月3日5:00 UTC] [イベント報酬期間: 8月27日9:00〜9月4日5:00 UTC]",
+      "bodyJa": "潮の宝物\n\n⏰8月27日9:00〜9月3日5:00 UTC\n\n[報酬受取]\n8月27日9:00〜9月4日5:00 UTC\n\n[イベント報酬]\nポイントを積み重ねて4星セット[夕日砂丘]、写真フレーム[甘夏]、色目チャートx13、輝き招待、そして様々な素材報酬を獲得できます！",
+      "summaryJa": "・追加: 4星セット[夕日砂丘]、写真フレーム[甘夏]、色目チャートx13、輝き招待、各種素材報酬\n・期間: 8月27日9:00〜9月4日5:00 UTC",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747104
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787782501
     },
     "https://x.com/kirapara_JP/status/2092552642140533220": {
       "contentHash": "f60e421a308cfedfbd964c63",
       "titleJa": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
       "bodyJa": "📢メンテナンスのお知らせ\n\n更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします。\n\nメンテナンス時間\n8月27日 午前3:25～10:00前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "全サーバーの定期メンテナンスが8月27日午前3時25分から10時前後に行われ、詳細はゲーム内「お知らせ」をご覧ください。",
+      "summaryJa": "・メンテナンス時間: 8月27日 午前3:25～10:00前後",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747116
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787782513
     },
     "https://x.com/kirapara_JP/status/2092545084713799935": {
       "contentHash": "3f0b74046f4a084bea19ec61",
       "titleJa": "明日より『ファンタイム』開催👀 イベント期間⏰ 8月27日10:30-9月17日05:00 毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景...",
       "bodyJa": "明日より『ファンタイム』開催👀\n\nイベント期間⏰\n8月27日10:30-9月17日05:00\n\n毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景などの豪華報酬を獲得できます！\n詳細はゲーム内でチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "明日から『きらめきパラダイス』が開催されます。イベント期間は8月27日10:30から9月17日05:00までです。毎日ログインすると、星5ファッションやフォト背景などの豪華報酬が得られます。",
+      "summaryJa": "・期間: 8月27日10:30〜9月17日05:00\n・入手: 毎日ログインしてカレンダーにスタンプを押す\n・報酬: 星5ファッションやフォト背景",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747129
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787782525
     },
     "https://x.com/kirapara_JP/status/2092541309416337867": {
       "contentHash": "c24cdbcfc5c43ccae1a436f2",
       "titleJa": "🔔【復刻】トレンドコードが再登場🔔 『時間の反響』イベントで、2つのトレンドコードが復刻",
       "bodyJa": "🔔【復刻】トレンドコードが再登場🔔\n\n『時間の反響』イベントで、2つのトレンドコードが復刻！\n前回見逃してしまった場合は、この機会をお見逃しなく👀\n\nイベント期間⏰\n8月27日10:30～9月25日23:59\n\n※詳細はゲーム内からご確認ください。\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "『時間の反響』イベントで、2つのトレンドコードが復刻。前回見逃してしまった場合は、この機会をお見逃しなく。イベント期間は8月27日10:30～9月25日23:59。",
+      "summaryJa": "・追加: 異なるイベントで2つのトレンドコードが復刻\n・期間: 8月27日10:30〜9月25日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747141
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787782535
     },
     "https://x.com/kirapara_JP/status/2092537548589449433": {
       "contentHash": "80baa7808aa26c6c9bf940f2",

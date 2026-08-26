@@ -6,17 +6,18 @@
     "title": "Tide Treasure ⏰Aug. 27, 09:00 - Sep. 3, 05:00 UTC [Reward Claim] Aug. 27, 09:00 - Sep. 4, 05:00 UTC [Event Rewards] Accu",
     "body": "Tide Treasure\n\n⏰Aug. 27, 09:00 - Sep. 3, 05:00 UTC\n\n[Reward Claim]\nAug. 27, 09:00 - Sep. 4, 05:00 UTC\n\n[Event Rewards]\nAccumulate Points to claim the 4-Star Set [Sunset Dunes], Photo Frame [Sweet Summer], Trend Color Chart x13, Luster Invitation, and various material rewards!",
     "sourceUrl": "https://x.com/LifeMakeover510/status/2092567745489502482",
-    "publishedLabel": "10時間前",
+    "publishedLabel": "11時間前",
     "publishedAtEpoch": 1787742003,
     "imageUrl": "https://pbs.twimg.com/media/HQoaE3mbQAExEmb?format=jpg&name=orig",
     "imageUrls": [
       "https://pbs.twimg.com/media/HQoaE3mbQAExEmb?format=jpg&name=orig"
     ],
-    "titleJa": "Tide Treasure",
-    "bodyJa": "Tide Treasureの収集ポイントをためて、4星セット[夕暮れ砂丘]、写真フレーム[甘夏]、色調チャートx13、輝き招待、そして様々な素材の報酬を獲得できます。",
-    "summaryJa": "Tide Treasureの収集ポイントをためて、4星セット[夕暮れ砂丘]、写真フレーム[甘夏]、色調チャートx13、輝き招待、そして様々な素材の報酬を獲得できます。",
+    "titleJa": "Tide Treasure [報酬受取期間: 8月27日9:00〜9月3日5:00 UTC] [イベント報酬期間: 8月27日9:00〜9月4日5:00 UTC]",
+    "bodyJa": "潮の宝物\n\n⏰8月27日9:00〜9月3日5:00 UTC\n\n[報酬受取]\n8月27日9:00〜9月4日5:00 UTC\n\n[イベント報酬]\nポイントを積み重ねて4星セット[夕日砂丘]、写真フレーム[甘夏]、色目チャートx13、輝き招待、そして様々な素材報酬を獲得できます！",
+    "summaryJa": "・追加: 4星セット[夕日砂丘]、写真フレーム[甘夏]、色目チャートx13、輝き招待、各種素材報酬\n・期間: 8月27日9:00〜9月4日5:00 UTC",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "283dc40c34ec15a748435cb7",
@@ -25,7 +26,7 @@
     "title": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
     "body": "📢メンテナンスのお知らせ\n\n更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします。\n\nメンテナンス時間\n8月27日 午前3:25～10:00前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
     "sourceUrl": "https://x.com/kirapara_JP/status/2092552642140533220",
-    "publishedLabel": "11時間前",
+    "publishedLabel": "12時間前",
     "publishedAtEpoch": 1787738402,
     "imageUrl": "https://pbs.twimg.com/media/HQjQtjFa8AEN3KZ?format=jpg&name=orig",
     "imageUrls": [
@@ -33,9 +34,10 @@
     ],
     "titleJa": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
     "bodyJa": "📢メンテナンスのお知らせ\n\n更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします。\n\nメンテナンス時間\n8月27日 午前3:25～10:00前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
-    "summaryJa": "全サーバーの定期メンテナンスが8月27日午前3時25分から10時前後に行われ、詳細はゲーム内「お知らせ」をご覧ください。",
+    "summaryJa": "・メンテナンス時間: 8月27日 午前3:25～10:00前後",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "da0de0f7e0c9ffbd7cb8dba1",
@@ -52,9 +54,10 @@
     ],
     "titleJa": "明日より『ファンタイム』開催👀 イベント期間⏰ 8月27日10:30-9月17日05:00 毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景...",
     "bodyJa": "明日より『ファンタイム』開催👀\n\nイベント期間⏰\n8月27日10:30-9月17日05:00\n\n毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景などの豪華報酬を獲得できます！\n詳細はゲーム内でチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
-    "summaryJa": "明日から『きらめきパラダイス』が開催されます。イベント期間は8月27日10:30から9月17日05:00までです。毎日ログインすると、星5ファッションやフォト背景などの豪華報酬が得られます。",
+    "summaryJa": "・期間: 8月27日10:30〜9月17日05:00\n・入手: 毎日ログインしてカレンダーにスタンプを押す\n・報酬: 星5ファッションやフォト背景",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e6116f80c1e29168c3c2ad28",
@@ -71,9 +74,10 @@
     ],
     "titleJa": "🔔【復刻】トレンドコードが再登場🔔 『時間の反響』イベントで、2つのトレンドコードが復刻",
     "bodyJa": "🔔【復刻】トレンドコードが再登場🔔\n\n『時間の反響』イベントで、2つのトレンドコードが復刻！\n前回見逃してしまった場合は、この機会をお見逃しなく👀\n\nイベント期間⏰\n8月27日10:30～9月25日23:59\n\n※詳細はゲーム内からご確認ください。\n\n#キラパラ\n#着せ替えゲーム",
-    "summaryJa": "『時間の反響』イベントで、2つのトレンドコードが復刻。前回見逃してしまった場合は、この機会をお見逃しなく。イベント期間は8月27日10:30～9月25日23:59。",
+    "summaryJa": "・追加: 異なるイベントで2つのトレンドコードが復刻\n・期間: 8月27日10:30〜9月25日23:59",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "748536cbb7e0dd364deb0e10",
@@ -82,7 +86,7 @@
     "title": "明日登場するセットコーデをお届け✨ 星6セット·修羅帰鞘 ——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる",
     "body": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
     "sourceUrl": "https://x.com/kirapara_JP/status/2092537548589449433",
-    "publishedLabel": "12時間前",
+    "publishedLabel": "13時間前",
     "publishedAtEpoch": 1787734803,
     "imageUrl": "https://pbs.twimg.com/media/HP6tN3VawAExQEv?format=jpg&name=orig",
     "imageUrls": [
@@ -93,7 +97,8 @@
     "bodyJa": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "明日登場のセットコーデを紹介。星6セット·修羅帰鞘は、長き夢は鞘に帰り千壑を鎮める、百戦の修羅は塵煙に隠れるというフレーズで、星5セット·占心の誓いは心中を占うとは答えを求める必要のない慰めを探し求めるというフレーズで登場する。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "a1b1c65b055644269df5c9eb",
@@ -102,7 +107,7 @@
     "title": "[이벤트] 『메이크오버 스토리』 친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 『메이크오버 스토리』가 내일 오픈됩니다",
     "body": "[이벤트] 『메이크오버 스토리』\n\n친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 \n『메이크오버 스토리』가 내일 오픈됩니다!\n\n🎁 메인 보상:\n5★ 세트 '댓잎의 연서'\n\n🕙 8/27 10:30 ~ 9/10 5:00\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드: \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
     "sourceUrl": "https://x.com/stylight_kr/status/2092537547641454873",
-    "publishedLabel": "12時間前",
+    "publishedLabel": "13時間前",
     "publishedAtEpoch": 1787734803,
     "imageUrl": "https://pbs.twimg.com/media/HQoFv93bYAASY0s?format=jpg&name=orig",
     "imageUrls": [
@@ -112,7 +117,8 @@
     "bodyJa": "[イベント] 『ライフマーヴォ』\n\nスタイルパートナーと親友、協会メンバーなどと特別なイベント『ライフマーヴォ』が明日オープンします!\n\n🎁 メイン賞品:\n5★セット 'レーブの連書'\n\n🕙 8/27 10:30 ~ 9/10 5:00\n\n※ 詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #ライフマーヴォ #スタイルライトアップデート",
     "summaryJa": "『ライフマーヴォ』が明日オープンし、スタイルパートナーと親友、協会メンバーと特別なイベントが開催されます。5★セット 'レーブの連書' がメインタワレです。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "1f89e97338819657af3919e4",
@@ -121,7 +127,7 @@
     "title": "＼イベントファッション復刻／ イベント制作復刻『孤刃帰鞘』が期間限定開放",
     "body": "＼イベントファッション復刻／\n\nイベント制作復刻『孤刃帰鞘』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
     "sourceUrl": "https://x.com/kirapara_JP/status/2092533759073456435",
-    "publishedLabel": "12時間前",
+    "publishedLabel": "13時間前",
     "publishedAtEpoch": 1787733900,
     "imageUrl": "https://pbs.twimg.com/media/HP6s-RmbEAEFHqM?format=jpg&name=orig",
     "imageUrls": [
@@ -131,7 +137,8 @@
     "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『孤刃帰鞘』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "イベント制作復刻『孤刃帰鞘』が期間限定で開放され、見逃したイベントファッションや外観が制作可能になった。この機会にイベントファッションや外観をゲットしよう。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "b6a1e7c1e9c6f468dbc4877b",
@@ -150,7 +157,8 @@
     "bodyJa": "＼パックがサプライズ復刻💃／ \n\n6つのパックが期間限定で復刻します！\nこの他にも、流行カラーカードやスタミナなど、用途に応じたお得なパックを多数販売！\nモールの『割引セット』からご確認くださいね！👀\n\n復刻期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "6つのパックが期間限定で復刻します。モールの『割引セット』からご確認ください。復刻期間は8月27日10:30～9月16日23:59です。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "de58e7b2ea974a1158eaf617",
@@ -170,7 +178,8 @@
     "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "指定されたクエストを完了すると、最大78%OFFで星の交響楽パックを購入できます。星5背中アクセ『契りの浮星』には専属のメイン画面ポーズがあります。販売期間は8月27日10:30～9月9日23:59です。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "b8fc1d7cf3d898f7d4c9dc7f",
@@ -179,7 +188,7 @@
     "title": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
     "body": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
     "sourceUrl": "https://x.com/kirapara_JP/status/2092522435669069995",
-    "publishedLabel": "13時間前",
+    "publishedLabel": "14時間前",
     "publishedAtEpoch": 1787731200,
     "imageUrl": "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig",
     "imageUrls": [
@@ -189,7 +198,8 @@
     "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "アプリ内課金で『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れる。イベント期間中は8月27日10:30～9月16日23:59。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "f633a0ef6cab4734e0c34311",
@@ -208,7 +218,8 @@
     "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "5つの無料イベントを開催し、星5セットと星4セットを獲得できるチャンスがあります。#きらめきパラダイス #着せ替えゲーム",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "41b53014c26c05314b2bcdde",
@@ -217,7 +228,7 @@
     "title": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
     "body": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
     "sourceUrl": "https://x.com/kirapara_JP/status/2092507341736268068",
-    "publishedLabel": "14時間前",
+    "publishedLabel": "15時間前",
     "publishedAtEpoch": 1787727601,
     "imageUrl": "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig",
     "imageUrls": [
@@ -227,7 +238,8 @@
     "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "立ち姿勢固定モードとデイリー任務のお任せ派遣機能が追加される。また新テーマ曲と交換ショップに新たなファッションと報酬が登場する。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "7086bf07ea0a37018778896d",
@@ -236,7 +248,7 @@
     "title": "Oddly Pretty | A Brief Introduction of Fashion Art 🔮 Whether it is the opulent and intricate Rococo style, 🔮 Or the bree",
     "body": "Oddly Pretty | A Brief Introduction of Fashion Art\n\n🔮 Whether it is the opulent and intricate Rococo style,\n🔮 Or the breezy and mysterious White Gothic style,\n🔮 Both record vividly their era’s aesthetics and express emotions in a palpable way.",
     "sourceUrl": "https://x.com/LifeMakeover510/status/2092462040459932131",
-    "publishedLabel": "17時間前",
+    "publishedLabel": "18時間前",
     "publishedAtEpoch": 1787716801,
     "imageUrl": "https://pbs.twimg.com/media/HQnf4UGbgAAmG1l?format=jpg&name=orig",
     "imageUrls": [
@@ -249,7 +261,8 @@
     "bodyJa": "以闪亮之名 | ファッションアートの簡易紹介\n\n🔮 ロココ様式やホワイトゴシック様式など、\n🔮 絢爛で複雑なロココ様式や\n🔮 軽やかで神秘的なホワイトゴシック様式など、\n🔮 それぞれ時代の美意識を鮮やかに記録し、感情を palpably に表現しています。",
     "summaryJa": "ロココ様式やホワイトゴシック様式など、それぞれ時代の美意識を鮮やかに記録し、感情を palpably に表現しています。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "1e51fd9c9da7a84018bd2dc2",
@@ -258,7 +271,7 @@
     "title": "以闪亮之名 #以闪亮之名# 关于游戏内配音调整情况说明亲爱的合伙人：感谢您长久以来对《以闪亮之名》的喜爱和支持",
     "body": "以闪亮之名 #以闪亮之名# \n\n关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
     "sourceUrl": "https://weibo.com/7521830234/Rf9BhoCFS",
-    "publishedLabel": "18時間前",
+    "publishedLabel": "19時間前",
     "publishedAtEpoch": 1787713200,
     "imageUrl": "https://tvax2.sinaimg.cn/mw2000/008d2PEugy1iggzozj7enj32yo1o0h5q.jpg",
     "imageUrls": [
@@ -268,7 +281,8 @@
     "bodyJa": "以闪亮之名 #以闪亮之名#\n\n亲爱的合伙人：\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。\n游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
     "summaryJa": "プロジェクト組は、顧蘇澄の声優を引き続き担当する予定ではなく、新任の声優を試音する準備を進めています。顧蘇澄の過去の声優の内容は、永久に保存され、ゲーム内に再度楽しむことができます。新任の声優の選択結果に基づいて、パートナーは平滑で連続的なストーリー体験を享受できます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "5f80c1040580753eac3c4d02",
@@ -277,7 +291,7 @@
     "title": "关于游戏内配音调整情况说明 亲爱的合伙人： 感谢您长久以来对《以闪亮之名》的喜爱和支持",
     "body": "关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
     "sourceUrl": "https://www.bilibili.com/opus/1240707820837404690",
-    "publishedLabel": "18時間前",
+    "publishedLabel": "19時間前",
     "publishedAtEpoch": 1787713200,
     "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
     "imageUrls": [
@@ -289,7 +303,8 @@
     "bodyJa": "关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手筹备顾苏澄后续相关语音内容，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组 收起 查看大图 向左旋转 向右旋转\n きらめきパラダイス\n\nゲーム\n\nキャラクターパロディ/ハイクオリティ/シミュレート経営\n\nすべての女性が愛するAAA級シミュレート生活ゲーム\n\n入る",
     "summaryJa": "プロジェクト組は顧苏澄の新CV選考を開始し、新任の声優が選ばれるまで、顧苏澄の過去の声優の内容は永久に保存されます。新バージョンでは、選ばれた新声優の声が使用され、パートナーの平滑なストーリー体験を確保します。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "5bf87acffdfa3c58786a3616",
@@ -308,7 +323,8 @@
     "bodyJa": "以闪亮之名 Life Makeover スタイルライト\n\n⏰2022年8月26日 09:00 - 2022年9月8日 23:59 UTC\n\nイベント期間中、月明かりの藤のパックは54%の割引で購入できます。パックには動的なカメラポーズ[藤の影], スcené[水辺の藤], ポーズ[密着視線], カメラの動きなど、多数のアイテムが含まれています!",
     "summaryJa": "以闪亮之名 Life Makeover スタイルライトのイベント期間中に、月明かりの藤のパックが54%の割引で購入できます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "f577891891573f5ecba926ef",
@@ -335,7 +351,8 @@
     "bodyJa": "全方位展示合伙人绝美之作\n\n全网征集我的OOTD搭子「午夜篇」\n\n合伙人绝美作品展示\n\n你觉得这些作品怎么样？\n\n全世界，感受美神降临\n\n简直小蛋糕来的\n\n路过被萌晕\n\n❤️本期展示作品来自以下合伙人：\nWildest\n沐沐想星星\n炸鱼狂奔\nPenguin💠\n胡云zhen\nfoooooliao_\n吃鱼丸不（气愤版）\n哇叽吧唧呱啦哈\n南漪(限限限~流中)\n\n💎下载传送门： 网页链接 \n\n💎闪亮作品上映季活动传送门： 网页链接",
     "summaryJa": "以闪亮之名 #以闪亮之名# #闪亮喵语屋# #全网征集我的OOTD搭子# 全方位展示合伙人绝美之作。全网征集我的OOTD搭子「午夜篇」。合伙人绝美作品展示。你觉得这些作品怎么样？全世界，感受美神降临。简直小蛋糕来的。路过被萌晕。本期展示作品来自以下合伙人：Wildest、沐沐想星星、炸鱼狂奔、Penguin💠、胡云zhen、foooooliao_、吃鱼丸不（气愤版）、哇叽吧唧呱啦哈、南漪(限限限~流中)。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "c0c03c393caa180519b416ad",
@@ -354,7 +371,8 @@
     "bodyJa": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️\nぜひGETしてみてください🥰\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "SSR絆💞レイ『揺るがぬ錨』の動画がいち早く公開され、#キラパラの公式Twitterで公開されました。着せ替えゲーム#キラめきパラダイスの最新情報として、ファンは動画を楽しみにしています。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "8c458012d4af3868e192eb95",
@@ -375,7 +393,8 @@
     "bodyJa": "🔔分解ショップアイテム公開🔔\n\n最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放！\n星5浮遊やワンピースなどを手に入れよう✨\n\n詳細はゲーム内をチェックしてね👀\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "最新のガチャイベントに合わせて、分解ショップ『孤刃分解』がオープン。星5の浮遊やワンピースなど、限定アイテムが手に入ります。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "d963a7c8282657ca290babaa",
@@ -397,7 +416,8 @@
     "bodyJa": "✍️紹介コーナー\n星5セットコーデ「占心の誓い」\n\n時を刻む時計の針、そして星々が描く軌跡。まるで星々の運行を記録しているかのような幻想的なドレスを広げると、それぞれ異なる星図がドラマチックに咲き誇ります。\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "星5セットコーデ「占心の誓い」は、時計の針と星の軌跡が描く幻想的なドレスを紹介。それぞれ異なる星図がドラマチックに咲き誇ります。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ea04242ae6df643ae7e7a4ab",
@@ -418,7 +438,8 @@
     "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」3⃣\n\n腰甲やボトムス、片袖は自由に取り外し可能。戦地に立つ勇姿も、軽やかな装いも、思いのままに楽しめます。\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "星6セットコーデ「修羅帰鞘」3⃣は、腰甲やボトムス、片袖が自由に取り外し可能で、様々な装いを楽しむことができます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "39dfb3c89a24d82691d90b32",
@@ -439,7 +460,8 @@
     "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」2️⃣\n\n明光鎧に着想を得た牡丹の胸甲と、山文甲を落とし込んだ肩甲。揺らめく炎を纏う片袖が、絶え間なき生命の火を打ち出します。\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "星6セットコーデ「修羅帰鞘」2は、明光鎧に着想を得た牡丹の胸甲と、山文甲を落とし込んだ肩甲を装備。揺らめく炎を纏う片袖が、絶え間なき生命の火を打ち出します。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "974577206e6534a531c69d44",
@@ -461,7 +483,8 @@
     "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」1️⃣\n\n重甲を纏い刃を握る勇姿から、鎧を脱ぎ捨てる柔和な佇まいまで。変幻自在なスタイルが、幾重にも重なる運命の物語を紡ぎ出します。\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "重甲を纏い刃を握る勇姿から、鎧を脱ぎ捨てる柔和な佇まいまで。変幻自在なスタイルが、幾重にも重なる運命の物語を紡ぎ出します。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "c80453468c860161b120b9fc",
@@ -480,7 +503,8 @@
     "bodyJa": "全新4.3版本·花庭绮宴8月11日-8月31日限时登陆！\n🎁关注+卷发，Summer将随机抽10位幸运合伙人每人送出【200元购物卡*1】\n\n以闪亮之名的微博视频 视频无法显示，请前往 微博视频 观看。",
     "summaryJa": "以闪亮之名等10名用户获得200元购物卡，全新4.3版本·花庭绮宴8月11日-8月31日限时登陆。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "a1107e593f6caac576da28cf",
@@ -502,6 +526,7 @@
     "summaryJa": "雪城夜话外观礼包即将上架，限时礼包售卖期间，合伙人可以4.6折的价格直接购买，礼包内含多种道具，永久限购1次。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -527,6 +552,7 @@
     "summaryJa": "雪城夜话外观礼包即将上架，限时售卖期间合伙人可以4.6折购买，礼包内含多种道具，永久限购1次。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -548,7 +574,8 @@
     "bodyJa": "「一歩踏み入れると、平穏だった森が不思議な姿に変わります。\n巨大な花と名前を知らぬ草木の間で不思議な旅を始めてみませんか。」\n\n🕙 8/25 10:30 ~ 9/7 23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散策』など様々なアイテムが含まれた美しいパック\n※詳細は発売後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強림",
     "summaryJa": "『以闪亮之名』の背景パックが明日発売。巨大な花と不思議な草木の間で不思議な旅を始める。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "132042eff2ae70db3359c969",
@@ -568,9 +595,10 @@
     "summaryJa": "『きらめきの森』背景パックが明日発売。一歩踏み入れると平穏だった森が不思議な姿に変わり、巨大な花と名前のわからない草木の間で不思議な冒険を始める。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.71
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "53d1396780c3df96ef30f989",
@@ -589,7 +617,8 @@
     "bodyJa": "[イベント] 『バニー・トレブ』\n\nバニーと様々な地域と特別な場所を旅行し、\n旅の途中で突然の報酬を得てください。\n\n🎁 主な報酬: \n- 5★セット 'ピッチ・シャレロット'\n\n⏰ 8/25 10:30 ~ 9/8 5:00\n\n※ 詳細はゲームで確認してください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
     "summaryJa": "バニーと様々な地域と特別な場所を旅行し、旅の途中で突然の報酬を得られるイベントが開催されます。主な報酬は5★セット 'ピッチ・シャレロット'です。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "2094879d77a4163b5f949ce8",
@@ -608,7 +637,8 @@
     "bodyJa": "以闪亮之名 #以闪亮之名# \n\n参加山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够的园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够的神奇种子，还可以在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！\n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，每天都有可能不一样哦~三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。\n\n💎下载传送门： 网页链接\n💎闪亮作品上映季活动传送门： 网页链接",
     "summaryJa": "参加山神的园林，获取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具。获得足够的神奇种子，还可以在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励。活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格。售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "8b0a9b074bb4d57d8b52e52e",
@@ -629,7 +659,8 @@
     "bodyJa": "参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！ \n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。 收起 查看大图 向左旋转 向右旋转",
     "summaryJa": "参与山神的园林，可以获取五星限定套装、拍照道具等，活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ee4669a11810ba349b1fe89d",
@@ -652,9 +683,10 @@
     "summaryJa": "復刻追光活動が8月25日10:00–9月14日23:59に開催され、限定特典品が公開されました。分解した限定追光活動内の服で、限定着せ替えや動画撮影動作、頭像框、素材アイテムなどが獲得できます。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.71
+    "earlyInfoConfidence": 0.73
   },
   {
     "id": "d3ac88cabd861324ccae9ad8",
@@ -676,6 +708,7 @@
     "summaryJa": "きらめきパラダイスの復刻追光活動が8月25日から9月14日まで開催されます。このイベントでは、SR羁绊「顧蘇澄·長夜歸途」がプレビューされます。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -700,6 +733,7 @@
     "summaryJa": "四星セット「暖雾绒心」が復刻追光活動でプレビューされ、8月25日から9月14日まで限定で開催されます。柔らかでぬくもりのある触感と安心感のある暖かさが特徴です。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -724,7 +758,8 @@
     "bodyJa": "复刻追光活动｜五星套装「枫露晨祷」预览！棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？",
     "summaryJa": "五星套装「枫露晨祷」复刻追光活动开启，带来极致视觉体验的华美帝政裙，珍珠百合披帛可独立拆分外套，超真实面料升级，带来柔滑垂坠的物理效果。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "0d70275263631fb5a5e3c489",
@@ -747,6 +782,7 @@
     "summaryJa": "复刻追光活动中的五星套装「芯璃絮语」预览，展示了无机水晶与永生花的异质共生美学，以及超大双马尾和超柔软可拆分水袖外套的极致物理表现。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -771,6 +807,7 @@
     "summaryJa": "以闪亮之名 #以闪亮之名# 复刻追光活动开启，通过分解限时追光活动内的服饰，可获得限定时装部件及道具。活动时间为8月25日10:00–9月14日23:59。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -793,7 +830,8 @@
     "bodyJa": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n「我们曾经亲密无间，我身体的每一处你都无比熟悉」\n那夜之后，你再也没见过顾先生，关于他的传闻也逐渐散去。\n直到你再次迷失在雪夜，恍惚中听到他的声音，正一遍遍呼唤着你……\n\n💎下载传送门： 网页链接\n💎闪亮作品上映季活动传送门： 网页链接",
     "summaryJa": "复刻追光活动开启，SR羁绊「顾苏澄·长夜归途」预览。8月25日10:00–9月14日23:59限时开启。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "78ac4a814a5fe91f78857fec",
@@ -813,6 +851,7 @@
     "summaryJa": "きらめきパラダイスの追光復刻企画で、四星セット「暖雾绒心」が公開されます。8月25日から9月14日まで限定で開催され、ダウンロード用のリンクと作品上映季のリンクが提供されます。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -836,7 +875,8 @@
     "bodyJa": "以闪亮之名 #以闪亮之名#\n\n复刻追光活动｜五星套装「枫露晨祷」预览！棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！\n珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！\n超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！\n在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？\n\n------时尚设计手札📓------\n【艺术灵感来源经典】\n裙身版型参考欧式帝政长裙以及奥黛丽赫本出演的《战争与和平》，帝政裙的设计深受古希腊与古罗马文化影响，体现了对古典美的追求，并反映了对简约、纯粹与和谐的乌托邦理想。\n在19世纪，这种服装成为上层社会女性的象征，其精致面料与细腻工艺彰显了财富与地位。穿着帝政裙的女性往往备受尊重与欢迎。其流动轮廓与轻盈材质使穿着者显得优雅自如，传递出浪漫与自由的气息，同时也反映了当时社会对女性解放与个性自由的期待。\n【面料材质物理效果新升级】\n面料的呈现是本次面料材质升级的重大表现，以柔滑垂坠的真丝缎为主体面料，极致细腻的光泽感，增加刺绣点缀，烘托细节高贵优雅。裙子上加入立体百合和珍珠等元素，保留了帝政长裙的典雅风范，又融入了现代设计的精致与细腻。\n【致美版型打造】\n为了完美呈现帝政裙，我们采取了高腰线的长裙版型设计，袖子肩部、下摆缀上层层的荷叶边装饰，丰富视觉层次与细节。大量的金色刺绣和珍珠镶边让裙子整体风格雅致确不失高贵；\n【细节亮点呼应】\n独立拆分的百合珍珠链外套代替传统披帛，百合花散发出粒子特效，更加烘托主题。\n手持扇子可开合，扇面与裙身使用繁复的百合蕾丝花纹相呼应，同时扇子带有蝴蝶飞舞的特效，丰富帝政裙的氛围感。\n\n💎ダウンロード： ページリンク\n💎きらめきパラダイス作品上映季： ページリンク",
     "summaryJa": "《战争与和平》经典美学再现！华美帝政裙带来极致视觉体验。面料升级，极致柔滑垂坠，真丝缎面光泽感十足。独立拆分的百合珍珠链外套和手持扇子，丰富帝政裙的氛围感。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "a2af0500cead382c299d529a",
@@ -856,6 +896,7 @@
     "summaryJa": "全新版本の五星セット「枫露晨祷」が3月25日から4月14日まで限定で登場します。帝政裙は華美で不畏繁複で、極致の視覚体験を提供します。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -877,7 +918,8 @@
     "bodyJa": "新イベント『孤刃帰鞘』が8月27日にスタート！\n『きらめきパラダイス』の新星6イベントのPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
     "summaryJa": "新イベント『孤刃帰鞘』が8月27日に始まり、『きらめきパラダイス』の新星6イベントのPVが公開されました。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "f42c7812a5b1140d904642a4",
@@ -896,7 +938,8 @@
     "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
     "summaryJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画が公開されました。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "e783169fbd012bb83be18745",
@@ -916,7 +959,8 @@
     "bodyJa": "Lone Lotus Packは、2022年8月24日 09:00 UTCから2022年9月6日 23:59 UTCまで限定で販売されています。\nイベント中、パックのタスクを達成することで割引が適用されます。\n4つのタスクを全て達成することで、最低価格に到達できます。\n\n#LifeMakeover",
     "summaryJa": "Lone Lotus Packは2022年8月24日から9月6日まで限定販売。達成したタスク数によって割引が適用されます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "0291e17b7a26869b7fe59963",
@@ -935,7 +979,8 @@
     "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星6セット「修羅帰鞘」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
     "summaryJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星6セット「修羅帰鞘」の動画が公開されました。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "e422454339a78b4ae14e9d5c",
@@ -954,7 +999,8 @@
     "bodyJa": "[イベント] 『以闪亮之名 ストーリー』\n\n『以闪亮之名 ストーリー』に参加し、\n5★限定アイテムを獲得しよう。 \n\n🎁 主な報酬：\n- 5★限定品 '星の源'\n \n🕙 8/24 10:30 ~ 8/28 5:00\n\n※ 詳細はゲームで確認してください。\n\n▶ ゲームダウンロード：\n\n#以闪亮之名 #以闪亮之名強림 #以闪亮之名アップデート",
     "summaryJa": "『以闪亮之名 ストーリー』に参加し、5★限定アイテムを獲得できます。主な報酬は5★限定品 '星の源'です。8/24 10:30から8/28 5:00まで。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "f1647055082087a092ea7b38",
@@ -975,7 +1021,8 @@
     "bodyJa": "处暑时节，蝉鸣渐淡。「画檐不碍迎霜叶，玉宇频来处暑风」，夏去秋来，秋色渐浓。\n愿合伙人在新秋时节，耕耘均能有收获。",
     "summaryJa": "处暑时节，蝉鸣渐淡，秋色渐浓。愿合伙人在新秋时节，耕耘均能有收获。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ae5513e19368d22be0c7dbe0",
@@ -996,7 +1043,8 @@
     "bodyJa": "全新パーソナルなプレイスタイル——【きらめきパラダイス】楽しく開始！\n\nここでは、各カードの表が暗に機会を秘め、各争奪主権はスタイルの静かな対決となります。午後の休憩角を運筹帷幄のカードテーブルに変えることができます、友人とカード運と胆力の間で笑い合える；また、夜の暇を华丽な対局に醸成し、順子と王炸が指先で光を放つことができます。不安定な心配は不要です、我々は每一位パートナーに経典で簡潔なルールを準備し、あなたは几分の玩心を持ち、残りは直感に任せることができます。\nあなたは优雅なプレイヤーであり、この闪光対局の主役です。一手の好牌で稳固に步步を進むことができます、また、膠着の中から破綻を見逃し、絶地翻盤の雀躍を楽しむことができます。一人の隨性消遣から、一群の欢乐交锋まで、各種のリズムはあなたが主宰します。\n倒計時の光がカードテーブルの端を巡り、最後の王牌が指先で清脆に落とされるとき、真正的な勝敗が浮上します——決断の果敢、爆弾のタイミング、カード型の千変万化、全ての局が暗に謎、全ての出牌が局势を動かします。あなたは对手が尽くした前に、手の光を全て出すことができますか？全ての勝利は智慧と運の共演の闪光瞬間です。\n牌局商店に加入するための精美なカードバック、カード面、カードテーブル背景が美しく加入する予定です、パートナーは王心を使用して獲得することができます、あなたの牌局が独特になります！\n追加、勝利を祝うための精緻なカードバック、カード面、カードテーブル背景が加入する予定です、パートナーは王心を使用して獲得することができます、あなたの牌局が独特になります！\n収束、拡大",
     "summaryJa": "【きらめきパラダイス】は、各カードの表が暗に機会を秘め、各争奪主権はスタイルの静かな対決となります。パートナーは几分の玩心を持ち、残りは直感に任せることができます。全ての勝利は智慧と運の共演の闪光瞬間です。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "9c0ce009faaaed3904c60b52",
@@ -1015,7 +1063,8 @@
     "bodyJa": "以闪亮之名 Life Makeover Fashion Guide - 永恒的和平版\n\n以闪亮之名 Life Makeover Fashion Guide - 永恒的和平版の勝者を祝います!\n2026年8月24日までに賞品受領フォームを提出してください:\n\n#以闪亮之名",
     "summaryJa": "以闪亮之名 Life Makeover Fashion Guide - 永恒的和平版の勝者を祝いました。2026年8月24日までに賞品受領フォームを提出してください。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "46f2afdb95ec9be8d8f22d06",
@@ -1034,7 +1083,8 @@
     "bodyJa": "⏰8月22日 09:00 - 8月29日 05:00 UTC\n[Reward Claim]⏰8月22日 09:00 - 8月30日 05:00 UTC\n[イベント報酬]\nイベント中取得したポイントは、4星セット[秘め咲花]、可愛い効果[輝く冠]など多数のアイテムに交換できます。",
     "summaryJa": "Dessert Partyイベントは8月22日から29日まで。イベント中取得したポイントは4星セットや可愛い効果など多数のアイテムに交換できます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "6793db3b6a9f069b04fd5e53",
@@ -1053,7 +1103,8 @@
     "bodyJa": "以闪亮之名でファッションインスピレーションパックの解锁に成功しました!\n\n⏰報酬领取时间：8月21日 00:00 - 11月21日 23:59 (UTC+0)\n📌如何领取：领取时间期间内，登录游戏即可通过邮件领取奖励。\n\n#LifeMakeover",
     "summaryJa": "以闪亮之名でファッションインスピレーションパックの解锁に成功しました。8月21日 00:00 - 11月21日 23:59 (UTC+0)に報酬を领取できます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "813510a89d6267dfa842d08c",
@@ -1072,7 +1123,8 @@
     "bodyJa": "“神秘的な紫のスープ、魔界の秘密スープの秘方を知りたいですか？\n試してみてください。味を知った人だけが知っているレシピです。”\n\n🕙 8/22 10:30 ~ 9/4 23:59\n\n[イベント詳細]\n- マ녀の密会のクエストを完了することで、マ녀の密会が特別な割引価格で手に入ります。\n\n※詳細は発売後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライトアップデート",
     "summaryJa": "『マ녀の密会』がフライトで明日発売、クエスト完了で特別割引で手に入ります。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "99e0ae2f9541bbd58a22cbdd",
@@ -1092,9 +1144,10 @@
     "summaryJa": "『マ녀の密会』フラotingが明日リリース。神秘的な紫のスープとマ界の秘密スープの秘密は知りたいですか？試してみてください。味を知った人だけが知るレシピです。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.74
+    "earlyInfoConfidence": 0.75
   },
   {
     "id": "f7f00f148efa33ef8e1d49c0",
@@ -1115,7 +1168,8 @@
     "bodyJa": "参与小丑鱼之家，有机会获得五星限定饰品【若花缠水】、钻石*30、潮流色卡*9及多种材料道具！活动期间，完成每日任务可获得培育次数，每天最多获得3次。使用照顾次数可获得亲密度及照顾附加奖励。",
     "summaryJa": "参与小丑鱼之家活动，有机会获得五星限定饰品【若花缠水】、钻石及潮流色卡，完成每日任务可获得培育次数。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ae93aa4f2e7300bb35a5b1c4",
@@ -1140,7 +1194,8 @@
     "bodyJa": "时尚潮流总有循环，不妨将衣柜里的闲置时装单品重新搭配一番，穿出属于自己的流行趋势！即日起，欢迎合伙人带 #以闪亮之名怪美的# 话题，发布你挖掘出的游戏内璞玉单品，并展示你的搭配成果~ 收起 查看大图 向左旋转 向右旋转\n\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/ハイクオリティ/シミュレート経営\n\nすべての女性が愛用するAAA級シミュレート生活ゲーム\n\n入る",
     "summaryJa": "以闪亮之名のゲーム内で見つけた「璞玉」アイテムを再利用し、ファッションを組み立てる。即日起、パートナーが#以闪亮之名怪美的#タグで投稿し、自分の流行を表現。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "88a3e879ea9a0fcdd9033e62",
@@ -1163,7 +1218,8 @@
     "bodyJa": "月光摇曳轻盈光影，沁甜糖霜缭绕味蕾。\n❤️本期展示作品来自以下合伙人：\n红茶栗\n杏仁芋圆卷\n归零zero.\n椒盐海豹（以闪版） 收起 查看大图 向左旋转 向右旋转\n以闪亮之名\n游戏\n角色扮演/高画质/模拟经营\n所有女生都爱玩的3A级模拟生活游戏\n进入",
     "summaryJa": "本期展示作品包括以闪亮之名、Life Makeover、Stylight等游戏的合伙人作品，其中包含甜品和角色扮演元素。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "cec7bda2c22bc5866588a5ad",
@@ -1182,7 +1238,8 @@
     "bodyJa": "「青い願い瓶」\n\n保物釣り具で深海の宝を引き出し、\n限定衣装を獲得できます!\n\n🎁 主な報酬:\n- 4★限定セット「モノエティ켓」\n\n⏰ 8/21 10:30 ~ 8/28 5:00\n\n※ 詳細はゲームでご確認ください。\n\n▶ ゲームダウンロード\n- \n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
     "summaryJa": "「青い願い瓶」を保物釣り具で深海の宝を引き出し、4★限定セット「モノエティ켓」を獲得できます。8月21日から28日まで限定イベントです。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "5f626d57519044e246ad3385",
@@ -1201,7 +1258,8 @@
     "bodyJa": "以闪亮之名『森林的旋律』創作大賽開幕！\n\n本大賽將在圖片/影片部門進行，\n誰也都可以參加，喜歡stylight的你！💖\n\n🗓 參與期間\n8.20 ~ 9.9\n\n🎨 主題\n- 『森林的旋律』版本相關創作\n※ 主題沒有限制，自由創作！\n\n🎁 優待\n💰 現金 + 葉幣發放\n💡 多個作品參賽可\n\n📌 參與方式\n#以闪亮之名 #以闪亮之名創作大賽 #森林的旋律\n使用 hashtags 在 SNS 上上傳後\n並在咖啡廳公告板上確認連結！\n\n📍 詳細內容請參閱官方咖啡廳公告！\n👉",
     "summaryJa": "以闪亮之名『森林的旋律』創作大賽開幕、8月20日至9月9日、自由創作主題、現金及葉幣獎勵、需在SNS上傳並確認連結。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "004b59b3258c4777476c4013",
@@ -1221,6 +1279,7 @@
     "summaryJa": "8月20日(木)のアップデートで『森の旋律』がリリースされ、精霊が春の到来を示します。選ばれた願いは既に決まった運命の流れを変える可能性があります。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -1243,7 +1302,8 @@
     "bodyJa": "以闪亮之名 Midnight Tea Party招待状 - Stylight Garden Soiree\n招待は8月19日から9月8日まで！\n✨ Midnight Tea Partyの招待状が届きました。\n✨ ご多用中ですが、お洒落な衣装でお越しください。\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
     "summaryJa": "以闪亮之名のMidnight Tea Party招待状が8月19日から9月8日まで届いている。招待にはお洒落な衣装を着用してほしい。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "e7198cbc048370ec4c4f1f8a",
@@ -1262,7 +1322,8 @@
     "bodyJa": "以闪亮之名 × 管大洲：新主題歌\n\n以闪亮之名再次携手管大洲，张思 Yun 的美丽歌声将为您带来一首新主題歌：故乡之歌。\n\n点击Tap Panel Music聆听并感受将军重返故乡的旅程。",
     "summaryJa": "以闪亮之名与管大洲合作推出新主题歌《故乡之歌》，张思 Yun 的歌声将为您带来这首歌曲。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "aa5ee0a3a212b47e1ab447bd",
@@ -1281,7 +1342,8 @@
     "bodyJa": "以闪亮之名 Stylightの新トレンドコード明日発売\n\n🏞️古代王国の廃墟で信托の歌が響き渡り、\n無限に広がる黄金色の砂漠を横断します。\n\nStylightの新トレンドコード発売！\n\n⏰8/20 10:30 - 9/30 23:59\n\n[イベント詳細]\n-様々なデイリーミッションを達成すると無料ボーナス獲得\n-ハイグレードパスを購入すると2,000個のダイアと限定の衣装「信托」、そして特別な専用ボーナスなど豊富なボーナスを追加獲得\n\n※詳細はゲームで確認してください。\n\n#Stylight #Stylight更新",
     "summaryJa": "古代王国の廃墟で信托の歌が響き、無限の砂漠を横断。Stylightの新トレンドコード明日発売。デイリーミッション達成で無料ボーナス、ハイグレードパス購入で限定衣装と特別ボーナスを獲得。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "364d0d3f32c21d47c3a3c078",
@@ -1300,7 +1362,8 @@
     "bodyJa": "[イベント] 『レッドパティ』\n\n毎日ログインして限定報酬を受取ってください。\n\n🎁 主な報酬:\n- 5★ アクセサリー 'レッド ルベレター'\n- ソーシングポーズ 'ハイパービート'\n- ソーシングフレーム 'クリーマンコード'\n- ソーシングステッカー 'ピラヨウ パティ'\n- テンダー カラー カード ×10\n\n⏰ 8/20 10:30 ~ 8/26 5:00\n\n※ 詳細はゲームで確認してください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
     "summaryJa": "『レッドパティ』イベントで毎日ログインすると限定報酬が受け取れます。主な報酬は5★アクセサリー 'レッド ルベレター'、ソーシングポーズ 'ハイパービート'、ソーシングフレーム 'クリーマンコード'、ソーシングステッカー 'ピラヨウ パティ'、テンダー カラー カード ×10です。8/20 10:30 ~ 8/26 5:00の期間中に限定報酬を受け取ることができます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "41a72538f75e6da07df3ade2",
@@ -1319,7 +1382,8 @@
     "bodyJa": "以闪亮之名 オフィスで便利な機能追加\n\n👗 NEW スタンディングポーズ固定モード\n\nコスチューム変更時に専用スタンディングポーズが初期化する不便を解消するため、新しい『固定ポーズモード』が明日更新されます。\n\n'衣類' → 'ポーズ変更' → 'モード変更'から選択してください。\n\n- 通常ポーズモード\n- 固定ポーズモード\n\n固定ポーズモードではポーズを保存すると、コスチュームやアクセサリーを変更しても保存したポーズがそのまま維持されます。 \n今後はコスチュームとポーズを自由に組み合わせて、個性的なスタイルを表現できます。\n\n📋 NEW デイリーレポート『一括派遣』機能\n\n明日更新でデイリーレポートに『一括派遣』機能が追加されます。\nボタン一つで事件に結びつきを設置し、一括派遣も行えます！\n\nさらに速やかで便利な新機能を楽しんでください。\n\n※詳細は更新後ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強化 #スタイルライト更新",
     "summaryJa": "以闪亮之名 オフィスで便利な機能追加\n\n新機能『固定ポーズモード』で、コスチューム変更時に専用ポーズが初期化する不便を解消。\n新機能『一括派遣』で、ボタン一つで事件に結びつきを設置し、一括派遣も行えます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "90393fe0a79a2d93f41b50e3",
@@ -1338,7 +1402,8 @@
     "bodyJa": "「そうなら.静かにいてほしいんだ。」\n地下牢獄が暗転し、\n炎が燃える中、シイアンの怒りに満ちた目が現れます。\n\n互いに警戒しながら見つめ合うその瞬間、\n二人の運命が初めて交差しました。\n\n未熟な狼と、彼の唯一の主。\n炎よりも熱い二人の物語を\n新しい SSR 連携で出会ってみませんか。\n\n#スタイルライト #スタイルライトアップデート",
     "summaryJa": "地下牢獄で炎が燃える中、シイアンの怒りに満ちた目が現れ、互いに警戒しながら見つめ合う二人の運命が初めて交差。未熟な狼と彼の唯一の主の物語を新しい SSR 連携で楽しむことができる。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ba6cfd89446f86f6df096202",
@@ -1358,7 +1423,8 @@
     "bodyJa": "SSR しわいあん『狼の夜』明日リリース\n\n「そうすれば静かにいてほしい」\n\n暗闇に沈む地下牢獄、炎が燃える中でしわいあんの怒りに満ちた目が現れます\n\n互いに警戒しながら見つめ合う瞬間\n\n二人の運命が初めて交差しました\n\n未熟な狼と彼の唯一の主\n\n炎よりも熱い二人の物語を\n新しい SSR 連携で体験してください\n\n#スタイルライト #スタイルライトアップデート",
     "summaryJa": "SSR しわいあんの新作『狼の夜』が明日リリース。互いに警戒しながら見つめ合う瞬間から始まる未熟な狼と彼の唯一の主の物語が新SSR連携で楽しめます。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "b044b4486e3c3e453f1dbc11",
@@ -1377,7 +1443,8 @@
     "bodyJa": "以闪亮之名の素晴らしいバージョンは進行中...❤️\n\n#以闪亮之名 #桜の晩 #花茶タイム # phantomcandle",
     "summaryJa": "以闪亮之名の新バージョン4.2が実施中。8月19日から9月8日まで利用可能。Life Makeoverのイベントが開催中。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "ecbe910ea2f2a2baee138cd2",
@@ -1398,7 +1465,8 @@
     "bodyJa": "参与秘藏传说，领取五星限定时装、拍照动作等多重免费福利！\n\n【活动时间】\n8月20日10:00 - 8月31日05:00\n【活动说明】\n古老水道中的藏宝图揭开夏日冒险的序幕，海风已吹响集结的号角，暂时逃离烦闷的日常，这一次，我们的征途是星辰大海！和山神一起即刻起航，不要畏惧凶猛的飞鱼阵，不要害怕岛屿的艰险陷阱，握紧手中的指南针，去解锁那片被时光遗忘的蔚蓝，让每一寸甲板都写满传奇！活动持续时间内，每完成一天的故事，都可以免费领取一份奖励，合伙人们要记得每日登录参与活动哦~\n【活动奖励】\n全部奖励包含5星耳饰【小熊蜜糖】、静态拍照动作【抓星星啦】、家具【玛格丽特公园】、拍照相框【海盐蜜桃】、拍照萌拍【学霸小猫】、聊天背景【沁甜微光】、潮流色卡*10等多重好礼！ 收起 查看大图 向左旋转 向右旋转",
     "summaryJa": "秘藏传说活动期间，每日登录可免费领取奖励，包含5星耳饰、拍照动作、家具等多重好礼。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "8714676139d39ccc1938817c",
@@ -1417,7 +1485,8 @@
     "bodyJa": "新狐「新版本：園夕会」が登場！\n新版本「園夕会」は8月19日から9月8日まで販売中です！\n\n火球狐をリードする新狐ファミリーが、あなた方を向いています！7種類の個性的な新狐が集まり、オリジナルのカスタマイズ、繁殖、インタラクティブな特徴と共に発売されます！",
     "summaryJa": "新狐「新版本：園夕会」が8月19日から9月8日まで販売されます。7種類の個性的な新狐が新狐ファミリーとして登場します。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "2f95b4d1f2a59f0ae457fee6",
@@ -1441,7 +1510,8 @@
     "bodyJa": "荔枝喵珍藏的四款神秘猫罐头，今天正式邀请合伙人们一起来拆罐！\n共四款哦~分别是：顾苏澄款猫罐头、蓝殊款猫罐头、落言款猫罐头、苏黎款猫罐头。\n每罐内含：亚克力透卡挂件1个、马口铁罐头徽章1枚、亚克力三插立牌1个、挂绳1条。\n全套都是荔枝喵的珍藏，呈献给各位合伙人～",
     "summaryJa": "荔枝喵的四款神秘猫罐头今天正式邀请合伙人们拆罐，每罐内含挂件、徽章、立牌和挂绳，均为荔枝喵的珍藏。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "d4749e8c6a70b2caf6c8191a",
@@ -1464,7 +1534,8 @@
     "bodyJa": "怪美的 | 时装艺术小述\n\n不论是华丽繁复的洛可可风，还是轻盈神秘的白哥特风，都是时代审美的缩影与内心情绪的外化表达。\n这一次，让荔枝喵和你一起，走进历史中的时装。\n\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/高画質/シミュレーション経営\n\n全ての女性が愛用するAAA級シミュレーション生活ゲーム\n\n入る",
     "summaryJa": "怪美的时装艺术小述：洛可可风和白哥特风都是时代审美的缩影与内心情绪的外化表达。游戏以闪亮之名，是一款角色扮演/高画质/模拟经营的游戏。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "be299545a7d8067a3341b0ac",
@@ -1483,7 +1554,8 @@
     "bodyJa": "🎁 愛が満ち溢れた特別な日! 特別な贈り物!\n\n별빛が愛に染まった特別な日を記念して、\nスタイラー同伴のための突然の贈り物を準備しました ✨\n\n🕙 8/19 00:00 ~ 8/21 23:59\n\nイベント期間中、ゲームにログインすると\n郵便受けから以下の報酬を受領できます。\n\n🎁 特別な贈り物\nダイア ×200 \nトレンドカラーカード ×77 \nゴールド ×30,000\n\n大切な人との心を分かち合い、\n今日もスタイライトと輝く一日を過ごしましょう!\n\n#スタイライト #スタイライトイベント",
     "summaryJa": "スタイラー同伴のための突然の贈り物が8/19から8/21まで開催。ダイア×200、トレンドカラーカード×77、ゴールド×30,000の報酬が受け取れる。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "d19fb72bb19a8612161bb7bc",
@@ -1502,7 +1574,8 @@
     "bodyJa": "以闪亮之名 Midnight Tea Party - 一般規約\n以闪亮之名のこの季の Midnight Tea Partyにようこそ。\nあなたの経験が安全で楽しいものになるように、以下のルールを厳格に遵守してください。\n......",
     "summaryJa": "以闪亮之名のこの季の Midnight Tea Partyに参加するためには、以下のルールを厳格に遵守することが重要です。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "c6bdef77b8f2ec9cddd21dd3",
@@ -1522,6 +1595,7 @@
     "summaryJa": "以闪亮之名のタイムイベントが開催された後、タイムアライブーストパックが販売されます。専用染色パックは8月19日から8月8日まで販売されます。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.73
@@ -1544,6 +1618,7 @@
     "summaryJa": "以闪亮之名 限定出現パックエンドレーサーが8月19日から9月8日まで限定で登場します。過去の庭パック、希望の像パック、虚構のシーンパック、失った奇跡パック、夜の願いパック、冰の薔薇の夢幻パックの6種類が登場します。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -1565,7 +1640,8 @@
     "bodyJa": "以闪亮之名 スcanted Mortals アピアランス パック\n\n⏰8月19日 09:00 - 9月1日 23:59 UTC\n\nイベント期間中、パックを54%の割引で購入できます。パックにはダイナミックカメラポーズ [フラワーウイング]、シーン [ペタルガーデン]、ポーズ [ playful春 ]、カメラモーションなど、多数のアイテムが含まれています。",
     "summaryJa": "以闪亮之名 スcanted Mortals アピアランス パックが8月19日から9月1日まで購入可能。割引で54%、ダイナミックカメラポーズやシーン、ポーズなど多数のアイテムが含まれています。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "62e3989bc8552413437a7564",
@@ -1584,7 +1660,8 @@
     "bodyJa": "Cosmos Return Nail Pack\n\n⏰8月19日 09:00 - 9月1日 23:59 UTC\n\nイベント期間中、パックを54%の割引で購入できます。パックには5スターのネイルセット[Loyal Return]、ネイルダイナミックポーズ[Universe Command]、トレンドカラー表紙x260、ゴールドx52888が含まれています。\n\n#LifeMakeover",
     "summaryJa": "Cosmos Return Nail Packは8月19日から9月1日まで購入可能で、54%の割引で5スターのネイルセット、ネイルダイナミックポーズ、トレンドカラー表紙、ゴールドが含まれています。",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M"
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "dd4b3cc7b2c84f02d525a7b4",
@@ -1595,15 +1672,16 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136304",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787023138,
-    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
     "imageUrls": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
     ],
     "titleJa": "バージョン更新",
     "bodyJa": "8月19日のアップデート後の新コンテンツと最適化：1. 日常ミッションでQuick Deploy機能が追加されました。日常ミッションを行う際、Quick Deploy機能を使用することで、ミッションごとに Ally キャラクターを割り当てることで、より効率化が可能になります！2. Life Makeover x Guan Dazhou：新テーマソング砂嵐と山道を経由して、旅の途中のすべての障害は、家への遠くの光がより愛着をもって望むものとなります。Life MakeoverはGuan Dazhouと再び手を組み、張希雲の美しい歌声を提供することで、あなたに新しいバージョンのテーマソング Homeland Odeを提供します。パネルミュージックをタップして、将軍の故郷への旅を体験してください。3. 新しいストーリークエスト第42章：血痕の音 - 言葉を超えて8月31日から開催。 cageの外はもっと大きなもので、古い弦は上昇と下降を繰り返します。 おなじみの「Flora」さん、霧の中を闘う魂を救ってください。開催章が開いた後、新しい4星セット \\[Champagne Ballet]、4星セット \\[Sunset Tangerine]、4星セット \\[Daydream Walk]はファッショスタジオで crafting できます。第42章 Vvannaチャレンジも開催！5星アクセサリー \\[Heart Piercer]、ポーズ \\[Sealed In Time]、写真フレーム \\[Wind's Graffiti]が利用可能になります。新しい4星トップ \\[Wild Code]はVvannaショップに追加されます。4. ストアで新ファッションと他の報酬新4星ネックレス \\[Fruity Signal]と新4星腕時計 \\[Glaze Sky]がコンビニに追加されました。また、コンビニ、 Ally キャラクターのショップ、リバートショップ、Wonder Connect交換ショップで新アイテムが利用可能になります。ポーズ、チャットバブル、チャット背景のカバー、家具、写真フレーム、愛らしい効果なども含まれます。お気に入りを選びましょう！5. リバートショップで新ネイルセット、ファッショイン、他々新静止ネイルポーズ \\[Faint Sigh]が価値リバートに追加されます。",
     "summaryJa": "日常ミッションのQuick Deploy機能が追加され、Life Makeover x Guan Dazhouの新テーマソングが提供されました。第42章のストーリークエストが開催され、新4星セットと新4星トップが追加されました。コンビニやリバートショップで新ファッションと新アイテムが提供されました。",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "legacy",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -1617,9 +1695,8 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136302",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022698,
-    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
+    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
     "imageUrls": [
-      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
       "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
     ]
   },
@@ -1632,9 +1709,8 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136300",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022504,
-    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
+    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
     "imageUrls": [
-      "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
       "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
     ]
   },
@@ -2209,10 +2285,10 @@
       "https://kotaku.com/app/uploads/2024/10/9e237efb29857f2246e0428f3be9d316.jpg",
       "https://kotaku.com/app/uploads/2026/02/image-5-1.jpg",
       "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif",
-      "https://kotaku.com/app/uploads/2026/08/eternity-vessel2.jpg",
-      "https://kotaku.com/app/uploads/2026/08/volvy.jpg",
-      "https://kotaku.com/app/uploads/2026/07/2x2.jpg",
-      "https://kotaku.com/app/uploads/2026/08/GoT-WfW-.jpg",
+      "https://kotaku.com/app/uploads/2026/08/Tineco-iFLOOR-5-Breeze-Complete-Wet-Dry-Vacuum-Cordless-Floor-Washer.jpg",
+      "https://kotaku.com/app/uploads/2026/08/coudxtifa2.jpg",
+      "https://kotaku.com/app/uploads/2026/08/ai-gamescom-games.jpg",
+      "https://kotaku.com/app/uploads/2026/08/sora1.jpg",
       "https://kotaku.com/app/uploads/2026/08/Resonance_-A-Plague-Tale-Legacy_20260823125546-1.jpg",
       "https://kotaku.com/app/uploads/2026/08/Screenshots_01.jpg",
       "https://kotaku.com/app/uploads/2026/08/fields-of-mistria-review.jpg",
