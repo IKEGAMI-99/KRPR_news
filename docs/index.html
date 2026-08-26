@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./layout-fixes.css">
   <link rel="stylesheet" href="./gallery-strip.css">
   <link rel="stylesheet" href="./month-sections.css">
+  <link rel="stylesheet" href="./early-info.css">
   <link rel="stylesheet" href="./menu.css">
   <link rel="stylesheet" href="./regenerate.css">
 </head>
@@ -23,10 +24,7 @@
     <header class="topbar">
       <div class="brand-row">
         <div class="brand-mark brand-mark-logo" aria-hidden="true"><img src="./icon.svg" alt=""></div>
-        <div class="brand-copy">
-          <h1>Kirapara News</h1>
-          <p id="statusText">ニュースを読み込み中…</p>
-        </div>
+        <div class="brand-copy"><h1>Kirapara News</h1><p id="statusText">ニュースを読み込み中…</p></div>
         <div class="header-actions">
           <button id="installButton" class="icon-button install-button" type="button" hidden aria-label="ホーム画面に追加" title="ホーム画面に追加">＋</button>
           <button id="menuButton" class="icon-button" type="button" aria-label="リンクメニュー" title="リンクメニュー">☰</button>
@@ -34,13 +32,7 @@
           <button id="refreshButton" class="icon-button" type="button" aria-label="更新" title="更新">↻</button>
         </div>
       </div>
-
-      <div class="search-wrap" hidden aria-hidden="true">
-        <span class="search-icon" aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" autocomplete="off" tabindex="-1">
-        <button id="clearSearchButton" type="button" hidden tabindex="-1">×</button>
-      </div>
-
+      <div class="search-wrap" hidden aria-hidden="true"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" autocomplete="off" tabindex="-1"><button id="clearSearchButton" type="button" hidden tabindex="-1">×</button></div>
       <nav id="regionTabs" class="region-tabs" aria-label="地域フィルター">
         <button class="region-tab is-active" type="button" data-region="ALL">すべて <span data-count="ALL">0</span></button>
         <button class="region-tab" type="button" data-region="JAPAN">🇯🇵 日本 <span data-count="JAPAN">0</span></button>
@@ -49,32 +41,21 @@
         <button class="region-tab" type="button" data-region="GLOBAL">🌐 Global <span data-count="GLOBAL">0</span></button>
       </nav>
     </header>
-
     <main>
-      <section class="hero" aria-labelledby="feedTitle">
-        <div><span class="eyebrow">MULTI-REGION FEED</span><h2 id="feedTitle">最新ニュース</h2></div>
-        <span id="visibleCount" class="visible-count">0件</span>
-      </section>
+      <section class="hero" aria-labelledby="feedTitle"><div><span class="eyebrow">MULTI-REGION FEED</span><h2 id="feedTitle">最新ニュース</h2></div><span id="visibleCount" class="visible-count">0件</span></section>
       <section id="newsGrid" class="news-grid" aria-live="polite" aria-busy="true"></section>
       <div id="emptyState" class="empty-state" hidden><div class="empty-mark">◇</div><h2>ニュースが見つかりません</h2><p>地域タブを変えてみてください。</p></div>
       <div id="errorState" class="error-state" hidden><div class="empty-mark">!</div><h2>読み込みに失敗しました</h2><p id="errorMessage">通信状態を確認して、もう一度更新してください。</p><button id="retryButton" class="primary-button" type="button">再読み込み</button></div>
     </main>
-
     <footer><p>非公式ファンツール。AI翻訳・要約には誤りが含まれる場合があります。「先行情報」は海外版の予告内容と日本版フィードを自動比較した参考タグです。</p></footer>
   </div>
-
-  <template id="newsCardTemplate">
-    <article class="news-card">
-      <a class="card-image-link" target="_blank" rel="noopener noreferrer"><div class="card-image-wrap"><img class="card-image" alt="" loading="lazy" decoding="async"><div class="image-fallback" aria-hidden="true">✦</div><span class="region-badge"></span></div></a>
-      <div class="card-content"><div class="card-meta"><span class="platform"></span><time class="published"></time></div><h3 class="card-title"></h3><p class="card-body"></p><div class="card-actions"><button class="more-button" type="button">続きを読む</button><a class="source-button" target="_blank" rel="noopener noreferrer">元記事を開く ↗</a></div></div>
-    </article>
-  </template>
-
+  <template id="newsCardTemplate"><article class="news-card"><a class="card-image-link" target="_blank" rel="noopener noreferrer"><div class="card-image-wrap"><img class="card-image" alt="" loading="lazy" decoding="async"><div class="image-fallback" aria-hidden="true">✦</div><span class="region-badge"></span></div></a><div class="card-content"><div class="card-meta"><span class="platform"></span><time class="published"></time></div><h3 class="card-title"></h3><p class="card-body"></p><div class="card-actions"><button class="more-button" type="button">続きを読む</button><a class="source-button" target="_blank" rel="noopener noreferrer">元記事を開く ↗</a></div></div></article></template>
   <script src="./app.js" defer></script>
   <script src="./x-image-fix.js" defer></script>
   <script src="./ui_fixes.js" defer></script>
   <script src="./gallery-strip.js" defer></script>
   <script src="./month-sections.js" defer></script>
+  <script src="./early-info.js" defer></script>
   <script src="./share.js" defer></script>
   <script src="./regenerate.js" defer></script>
   <script src="./menu.js" defer></script>
