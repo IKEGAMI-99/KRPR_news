@@ -35,16 +35,11 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
 
 /**
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
- *
  * v0.3.7以降、重いllama.cpp処理は :ai サービスへ隔離する。
  * v0.3.10ではJinjaクラッシュの原因が解消したため、診断用の超低速設定から
  * context 2048 / batch 64 / 4 threadsへ戻し、最終回答だけをUIへ返す。
- *
- * SAFのcontent:// URIは初回だけアプリ専用モデル領域へコピーし、
- * llama.cppには通常ファイルパスを渡す。
  */
 object LocalGemmaManager {
-    // v4 intentionally invalidates v0.3.9 caches that may contain raw analysis text.
     private const val CACHE_PREFS = "krpr_local_ai_cache_v4"
     private const val CONTEXT_LENGTH = 2048
     private const val BATCH_SIZE = 64
@@ -69,16 +64,12 @@ object LocalGemmaManager {
             LocalAiProcessClient.warmUp(context.applicationContext, modelUri)
             return
         }
-        inferenceMutex.withLock {
-            ensureModelLocked(context.applicationContext, modelUri)
-        }
+        inferenceMutex.withLock { ensureModelLocked(context.applicationContext, modelUri) }
     }
 
     suspend fun translate(context: Context, modelUri: String, news: NewsItem): LocalAiTranslation {
         if (news.region == Region.JAPAN) return LocalAiTranslation(news.originalTitle, news.originalText)
-        if (!isAiProcess()) {
-            return LocalAiProcessClient.translate(context.applicationContext, modelUri, news)
-        }
+        if (!isAiProcess()) return LocalAiProcessClient.translate(context.applicationContext, modelUri, news)
 
         return inferenceMutex.withLock {
             readTranslationCache(context, modelUri, news)?.let { return@withLock it }
@@ -94,7 +85,7 @@ object LocalGemmaManager {
                 context = context,
                 llama = llama,
                 prompt = """
-                これは翻訳だけを行うタスクです。以下の$sourceLanguageの公式ゲームニュースを、情報を省略せず自然な日本語へ翻訳してください。
+                これは翻訳だけを行うタスクです。以下の${sourceLanguage}の公式ゲームニュースを、情報を省略せず自然な日本語へ翻訳してください。
                 内部の思考、分析、手順、説明、前置き、原文の解説は回答に書かないでください。
                 固有名詞、衣装名、アイテム名、日付、時刻、数値、絵文字、価格、イベント条件は正確に保持してください。
                 Markdownは使わず、最後の回答は必ず次の形式だけにしてください。
@@ -117,9 +108,7 @@ object LocalGemmaManager {
     }
 
     suspend fun summarize(context: Context, modelUri: String, news: NewsItem): LocalAiSummary {
-        if (!isAiProcess()) {
-            return LocalAiProcessClient.summarize(context.applicationContext, modelUri, news)
-        }
+        if (!isAiProcess()) return LocalAiProcessClient.summarize(context.applicationContext, modelUri, news)
 
         return inferenceMutex.withLock {
             readSummaryCache(context, modelUri, news)?.let { return@withLock it }
@@ -144,10 +133,7 @@ object LocalGemmaManager {
                 maxPredictTokens = SUMMARY_MAX_PREDICT_TOKENS,
                 mode = "summary"
             )
-            val summary = LocalAiSummary(
-                text = parseSummary(result.text),
-                tokensPerSecond = result.tokensPerSecond
-            )
+            val summary = LocalAiSummary(parseSummary(result.text), result.tokensPerSecond)
             writeSummaryCache(context, modelUri, news, summary)
             AppLog.i(context, "LocalGemma", "summary done id=${news.id} tps=${result.tokensPerSecond}")
             summary
@@ -213,10 +199,7 @@ object LocalGemmaManager {
     }
 
     private suspend fun ensureModelLocked(context: Context, modelUri: String): InferenceEngine {
-        engine?.takeIf {
-            loadedUri == modelUri && it.state.value is InferenceEngine.State.ModelReady
-        }?.let { return it }
-
+        engine?.takeIf { loadedUri == modelUri && it.state.value is InferenceEngine.State.ModelReady }?.let { return it }
         releaseLocked()
 
         val uri = Uri.parse(modelUri)
@@ -231,28 +214,19 @@ object LocalGemmaManager {
 
         val name = displayName(context, modelUri) ?: "selected.gguf"
         val sourceSize = modelSizeBytes(context, modelUri)
-        val preparedFile = runCatching {
-            PreparedModelStore.prepare(context, modelUri)
-        }.getOrElse { cause ->
+        val preparedFile = runCatching { PreparedModelStore.prepare(context, modelUri) }.getOrElse { cause ->
             AppLog.e(context, "LocalGemma", "model prepare failed name=$name", cause)
-            throw IllegalStateException(
-                "GGUFの準備に失敗しました。空き容量を確認して、もう一度モデル読み込みテストを実行してください。",
-                cause
-            )
+            throw IllegalStateException("GGUFの準備に失敗しました。空き容量を確認して、もう一度モデル読み込みテストを実行してください。", cause)
         }
 
         val llama = AiChat.getInferenceEngine(context)
         var state = withTimeout(60_000L) {
             llama.state.first {
-                it is InferenceEngine.State.Initialized ||
-                    it is InferenceEngine.State.ModelReady ||
-                    it is InferenceEngine.State.Error
+                it is InferenceEngine.State.Initialized || it is InferenceEngine.State.ModelReady || it is InferenceEngine.State.Error
             }
         }
-
         if (state is InferenceEngine.State.ModelReady || state is InferenceEngine.State.Error) {
-            runCatching { llama.cleanUp() }
-                .onFailure { AppLog.e(context, "LocalGemma", "engine reset failed", it) }
+            runCatching { llama.cleanUp() }.onFailure { AppLog.e(context, "LocalGemma", "engine reset failed", it) }
             state = llama.state.value
         }
         if (state !is InferenceEngine.State.Initialized) {
@@ -260,63 +234,33 @@ object LocalGemmaManager {
             throw IllegalStateException("llama.cppエンジンを初期化できませんでした。", cause)
         }
 
-        AppLog.i(
-            context,
-            "LocalGemma",
-            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
-        )
-
+        AppLog.i(context, "LocalGemma", "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}")
         try {
             AppLog.i(context, "LocalGemma", "opening prepared model path=${preparedFile.absolutePath}")
-            withTimeout(LOAD_TIMEOUT_MS) {
-                llama.loadModel(preparedFile.absolutePath)
-            }
+            withTimeout(LOAD_TIMEOUT_MS) { llama.loadModel(preparedFile.absolutePath) }
         } catch (t: Throwable) {
             runCatching {
-                if (llama.state.value is InferenceEngine.State.Error ||
-                    llama.state.value is InferenceEngine.State.ModelReady
-                ) {
-                    llama.cleanUp()
-                }
+                if (llama.state.value is InferenceEngine.State.Error || llama.state.value is InferenceEngine.State.ModelReady) llama.cleanUp()
             }
             AppLog.e(context, "LocalGemma", "model load failed name=$name state=${llama.state.value.javaClass.simpleName}", t)
-            throw IllegalStateException(
-                "GGUFの読み込みに失敗しました。設定から診断ログを書き出してください。",
-                t
-            )
+            throw IllegalStateException("GGUFの読み込みに失敗しました。設定から診断ログを書き出してください。", t)
         }
-
         if (llama.state.value !is InferenceEngine.State.ModelReady) {
             throw IllegalStateException("GGUFを読み込みましたが推論準備状態になりませんでした。")
         }
 
         loadedUri = modelUri
         engine = llama
-        AppLog.i(
-            context,
-            "LocalGemma",
-            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
-        )
+        AppLog.i(context, "LocalGemma", "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}")
         return llama
     }
 
-    private suspend fun completeLocked(
-        context: Context,
-        llama: InferenceEngine,
-        prompt: String,
-        maxPredictTokens: Int,
-        mode: String
-    ): GenerationResult {
+    private suspend fun completeLocked(context: Context, llama: InferenceEngine, prompt: String, maxPredictTokens: Int, mode: String): GenerationResult {
         check(llama.state.value is InferenceEngine.State.ModelReady) { "AIモデルが推論可能な状態ではありません。" }
         val started = SystemClock.elapsedRealtime()
         val output = StringBuilder()
         var emittedPieces = 0
-
-        AppLog.i(
-            context,
-            "LocalGemma",
-            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
-        )
+        AppLog.i(context, "LocalGemma", "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}")
 
         withTimeout(GENERATE_TIMEOUT_MS) {
             llama.sendUserPrompt(prompt, predictLength = maxPredictTokens).collect { piece ->
@@ -324,32 +268,21 @@ object LocalGemmaManager {
                 emittedPieces++
                 if (emittedPieces == 1 || emittedPieces % 16 == 0) {
                     val elapsedMs = SystemClock.elapsedRealtime() - started
-                    AppLog.i(
-                        context,
-                        "LocalGemma",
-                        "generation progress mode=$mode pieces=$emittedPieces elapsedMs=$elapsedMs pssMb=${Debug.getPss() / 1024}"
-                    )
+                    AppLog.i(context, "LocalGemma", "generation progress mode=$mode pieces=$emittedPieces elapsedMs=$elapsedMs pssMb=${Debug.getPss() / 1024}")
                 }
             }
         }
-
-        val seconds = ((SystemClock.elapsedRealtime() - started).coerceAtLeast(1L) / 1000.0)
+        val seconds = (SystemClock.elapsedRealtime() - started).coerceAtLeast(1L) / 1000.0
         val tps = (emittedPieces / seconds).toFloat()
-        AppLog.i(
-            context,
-            "LocalGemma",
-            "generation complete mode=$mode pieces=$emittedPieces elapsedSec=$seconds pssMb=${Debug.getPss() / 1024}"
-        )
+        AppLog.i(context, "LocalGemma", "generation complete mode=$mode pieces=$emittedPieces elapsedSec=$seconds pssMb=${Debug.getPss() / 1024}")
         return GenerationResult(output.toString(), tps)
     }
 
     private fun releaseLocked() {
-        val current = engine
-        if (current != null) {
+        engine?.let { current ->
             runCatching {
                 when (current.state.value) {
-                    is InferenceEngine.State.ModelReady,
-                    is InferenceEngine.State.Error -> current.cleanUp()
+                    is InferenceEngine.State.ModelReady, is InferenceEngine.State.Error -> current.cleanUp()
                     else -> Unit
                 }
             }
@@ -373,36 +306,25 @@ object LocalGemmaManager {
             if (firstBrace >= 0 && lastBrace > firstBrace) text.substring(firstBrace, lastBrace + 1) else ""
         }
         if (candidate.isBlank()) return null
-        val cleaned = candidate.trim()
-            .removePrefix("```json")
-            .removePrefix("```")
-            .removeSuffix("```")
-            .trim()
+        val cleaned = candidate.trim().removePrefix("```json").removePrefix("```").removeSuffix("```").trim()
         return runCatching { JSONObject(cleaned) }.getOrNull()
     }
 
     private fun parseTranslation(raw: String): LocalAiTranslation {
-        val json = extractFinalJson(raw)
-            ?: throw IllegalStateException("翻訳の最終結果を取得できませんでした。もう一度実行してください。")
+        val json = extractFinalJson(raw) ?: throw IllegalStateException("翻訳の最終結果を取得できませんでした。もう一度実行してください。")
         val title = json.optString("title").trim()
         val body = json.optString("body").trim()
-        if (title.isBlank() || body.isBlank()) {
-            throw IllegalStateException("翻訳結果の形式が不完全でした。もう一度実行してください。")
-        }
-        return LocalAiTranslation(title = title, body = body)
+        if (title.isBlank() || body.isBlank()) throw IllegalStateException("翻訳結果の形式が不完全でした。もう一度実行してください。")
+        return LocalAiTranslation(title, body)
     }
 
     private fun parseSummary(raw: String): String {
-        val json = extractFinalJson(raw)
-            ?: throw IllegalStateException("要約の最終結果を取得できませんでした。もう一度実行してください。")
-        return json.optString("summary").trim().ifBlank {
-            throw IllegalStateException("要約結果の形式が不完全でした。もう一度実行してください。")
-        }
+        val json = extractFinalJson(raw) ?: throw IllegalStateException("要約の最終結果を取得できませんでした。もう一度実行してください。")
+        return json.optString("summary").trim().ifBlank { throw IllegalStateException("要約結果の形式が不完全でした。もう一度実行してください。") }
     }
 
     private fun readTranslationCache(context: Context, modelUri: String, news: NewsItem): LocalAiTranslation? {
-        val raw = context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE)
-            .getString(cacheKey(modelUri, news, "translation"), null) ?: return null
+        val raw = context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE).getString(cacheKey(modelUri, news, "translation"), null) ?: return null
         return runCatching {
             val json = JSONObject(raw)
             LocalAiTranslation(json.getString("title"), json.getString("body"))
@@ -411,19 +333,16 @@ object LocalGemmaManager {
 
     private fun writeTranslationCache(context: Context, modelUri: String, news: NewsItem, value: LocalAiTranslation) {
         val json = JSONObject().put("title", value.title).put("body", value.body).toString()
-        context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE)
-            .edit().putString(cacheKey(modelUri, news, "translation"), json).apply()
+        context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE).edit().putString(cacheKey(modelUri, news, "translation"), json).apply()
     }
 
     private fun readSummaryCache(context: Context, modelUri: String, news: NewsItem): LocalAiSummary? {
-        val raw = context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE)
-            .getString(cacheKey(modelUri, news, "summary"), null) ?: return null
+        val raw = context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE).getString(cacheKey(modelUri, news, "summary"), null) ?: return null
         return LocalAiSummary(raw)
     }
 
     private fun writeSummaryCache(context: Context, modelUri: String, news: NewsItem, value: LocalAiSummary) {
-        context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE)
-            .edit().putString(cacheKey(modelUri, news, "summary"), value.text).apply()
+        context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE).edit().putString(cacheKey(modelUri, news, "summary"), value.text).apply()
     }
 
     private fun cacheKey(modelUri: String, news: NewsItem, mode: String): String {
