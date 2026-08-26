@@ -605,6 +605,42 @@
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787764124
+    },
+    "https://www.bilibili.com/opus/1240024921038389251": {
+      "contentHash": "496f9e25978914ceb236f0ba",
+      "titleJa": "五星套装「枫露晨祷」の復刻追光活動",
+      "bodyJa": "复刻追光活动｜五星套装「枫露晨祷」预览！棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？",
+      "summaryJa": "五星套装「枫露晨祷」复刻追光活动开启，带来极致视觉体验的华美帝政裙，珍珠百合披帛可独立拆分外套，超真实面料升级，带来柔滑垂坠的物理效果。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787776732
+    },
+    "https://www.bilibili.com/opus/1238929704335966217": {
+      "contentHash": "6ef88a9ee00bfb59f91a21a1",
+      "titleJa": "参与小丑鱼之家，获取五星限定饰品",
+      "bodyJa": "参与小丑鱼之家，有机会获得五星限定饰品【若花缠水】、钻石*30、潮流色卡*9及多种材料道具！活动期间，完成每日任务可获得培育次数，每天最多获得3次。使用照顾次数可获得亲密度及照顾附加奖励。",
+      "summaryJa": "参与小丑鱼之家活动，有机会获得五星限定饰品【若花缠水】、钻石及潮流色卡，完成每日任务可获得培育次数。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787776755
+    },
+    "https://www.bilibili.com/opus/1238883318686023731": {
+      "contentHash": "71e808bd44fdda562012c298",
+      "titleJa": "怪美的 | 衣柜考古 🔎璞玉单品再就业， 🔎衣柜考古大挖掘",
+      "bodyJa": "时尚潮流总有循环，不妨将衣柜里的闲置时装单品重新搭配一番，穿出属于自己的流行趋势！即日起，欢迎合伙人带 #以闪亮之名怪美的# 话题，发布你挖掘出的游戏内璞玉单品，并展示你的搭配成果~ 收起 查看大图 向左旋转 向右旋转\n\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/ハイクオリティ/シミュレート経営\n\nすべての女性が愛用するAAA級シミュレート生活ゲーム\n\n入る",
+      "summaryJa": "以闪亮之名のゲーム内で見つけた「璞玉」アイテムを再利用し、ファッションを組み立てる。即日起、パートナーが#以闪亮之名怪美的#タグで投稿し、自分の流行を表現。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787776785
+    },
+    "https://www.bilibili.com/opus/1238589542920880131": {
+      "contentHash": "50659b526a6f6815d7348ef1",
+      "titleJa": "探索茶会秘境奇遇",
+      "bodyJa": "月光摇曳轻盈光影，沁甜糖霜缭绕味蕾。\n❤️本期展示作品来自以下合伙人：\n红茶栗\n杏仁芋圆卷\n归零zero.\n椒盐海豹（以闪版） 收起 查看大图 向左旋转 向右旋转\n以闪亮之名\n游戏\n角色扮演/高画质/模拟经营\n所有女生都爱玩的3A级模拟生活游戏\n进入",
+      "summaryJa": "本期展示作品包括以闪亮之名、Life Makeover、Stylight等游戏的合伙人作品，其中包含甜品和角色扮演元素。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787776816
     }
   }
 }
