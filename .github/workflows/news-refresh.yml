@@ -3,6 +3,7 @@ name: Refresh News Cache
 on:
   schedule:
     - cron: '17 * * * *'
+    - cron: '43 20 * * *'
   workflow_dispatch:
   push:
     paths:
@@ -15,6 +16,7 @@ on:
       - 'scripts/enrich_images.py'
       - 'scripts/filter_small_images.py'
       - 'scripts/normalize_news.py'
+      - 'scripts/audit_translations.py'
       - 'scripts/translate_news_llm.py'
       - 'data/translation_glossary.json'
       - '.github/workflows/news-refresh.yml'
@@ -50,6 +52,10 @@ jobs:
           python scripts/enrich_images.py
           python scripts/filter_small_images.py
           python scripts/normalize_news.py
+
+      - name: Audit Japanese translations for foreign-language residue
+        if: github.event_name == 'schedule' && github.event.schedule == '43 20 * * *'
+        run: python scripts/audit_translations.py --github-output "$GITHUB_OUTPUT"
 
       - name: Apply cached translations and plan LLM work
         id: llm_plan
@@ -99,7 +105,7 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         continue-on-error: true
         env:
-          LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && '10' || github.event_name == 'workflow_dispatch' && '24' || '4' }}
+          LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && github.event.schedule == '43 20 * * *' && '160' || github.event_name == 'schedule' && '10' || github.event_name == 'workflow_dispatch' && '24' || '4' }}
         run: |
           python scripts/translate_news_llm.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
