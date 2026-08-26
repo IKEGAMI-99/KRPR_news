@@ -12,6 +12,8 @@ on:
       - 'scripts/discover_web_news.py'
       - 'scripts/discover_web_news_v2.py'
       - 'scripts/enrich_images.py'
+      - 'scripts/translate_news_llm.py'
+      - 'data/translation_glossary.json'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -40,15 +42,67 @@ jobs:
           python scripts/discover_web_news_v2.py
           python scripts/enrich_images.py
 
+      - name: Apply cached translations and plan LLM work
+        id: llm_plan
+        run: python scripts/translate_news_llm.py prepare --github-output "$GITHUB_OUTPUT"
+
+      - name: Cache Qwen 3B GGUF
+        if: steps.llm_plan.outputs.pending != '0'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/kirapara-models
+          key: kirapara-qwen2.5-3b-instruct-q4-k-m-v1
+
+      - name: Download Qwen 3B GGUF
+        if: steps.llm_plan.outputs.pending != '0'
+        continue-on-error: true
+        run: |
+          set -e
+          MODEL_DIR="$HOME/.cache/kirapara-models"
+          MODEL="$MODEL_DIR/qwen2.5-3b-instruct-q4_k_m.gguf"
+          SHA256="626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d"
+          mkdir -p "$MODEL_DIR"
+          if [ -f "$MODEL" ] && ! echo "$SHA256  $MODEL" | sha256sum -c - >/dev/null 2>&1; then
+            rm -f "$MODEL"
+          fi
+          if [ ! -f "$MODEL" ]; then
+            if ! curl -fL --retry 4 --retry-delay 5 \
+              -o "$MODEL" \
+              "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf?download=true"; then
+              rm -f "$MODEL"
+              exit 1
+            fi
+          fi
+          if ! echo "$SHA256  $MODEL" | sha256sum -c -; then
+            rm -f "$MODEL"
+            exit 1
+          fi
+
+      - name: Install local llama.cpp runtime
+        if: steps.llm_plan.outputs.pending != '0'
+        continue-on-error: true
+        run: |
+          python -m pip install --disable-pip-version-check --prefer-binary \
+            "llama-cpp-python==0.3.16" \
+            --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+
+      - name: Translate and summarize new articles locally
+        if: steps.llm_plan.outputs.pending != '0'
+        continue-on-error: true
+        env:
+          LLM_MODEL_PATH: ${{ env.HOME }}/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf
+          LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && '10' || '24' }}
+        run: python scripts/translate_news_llm.py translate
+
       - name: Commit cache when changed
         run: |
-          if git diff --quiet -- data/news.json; then
-            echo "No news changes"
+          if git diff --quiet -- data/news.json data/translations.json; then
+            echo "No news or translation changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
-          git commit -m "chore: refresh news cache"
+          git add data/news.json data/translations.json
+          git commit -m "chore: refresh news and AI translations"
           git pull --rebase origin main
           git push
