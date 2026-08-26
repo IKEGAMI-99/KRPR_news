@@ -1,0 +1,84 @@
+/* Always-visible, swipeable article images. The source artwork is shown whole,
+   without the old cover-style crop. */
+.card-image-link {
+  display: none !important;
+}
+
+.article-gallery,
+.gallery-button {
+  display: none !important;
+}
+
+.inline-image-strip {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 1px 2px 6px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 2px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+}
+.inline-image-strip::-webkit-scrollbar { display: none; }
+
+.inline-image-slide {
+  position: relative;
+  flex: 0 0 min(270px, 72vw);
+  height: 220px;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-snap-align: start;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 30% 18%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
+    var(--surface-2);
+  cursor: zoom-in;
+}
+
+.inline-image-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.inline-image-slide:focus { outline: none; }
+.inline-image-slide:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 65%, white 15%);
+  outline-offset: 2px;
+}
+
+.inline-image-count {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  min-width: 34px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(8, 9, 13, .62);
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .inline-image-strip {
+    margin-left: -2px;
+    margin-right: -2px;
+    gap: 9px;
+  }
+  .inline-image-slide {
+    flex-basis: min(310px, 72vw);
+    height: clamp(190px, 52vw, 250px);
+    border-radius: 15px;
+  }
+}
