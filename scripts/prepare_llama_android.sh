@@ -89,9 +89,9 @@ import sys
 p = Path(sys.argv[1])
 s = p.read_text()
 
-# v0.3.7 proves Gemma 4 dies inside the first llama_decode even with batch/ubatch=8.
-# Use deliberately tiny settings in v0.3.8 to distinguish a memory/graph-size issue
-# from a model/backend correctness crash. Speed is secondary until one token survives.
+# Keep the deliberately tiny v0.3.8 inference profile while verifying the real
+# native crash fix. Once Gemma 4 generates reliably, performance can be restored
+# independently without mixing correctness and optimization changes.
 s = s.replace('constexpr int   N_THREADS_MIN           = 2;',
               'constexpr int   N_THREADS_MIN           = 1;')
 s = s.replace('constexpr int   N_THREADS_MAX           = 4;',
@@ -114,8 +114,8 @@ for check in checks:
     if check not in s:
         raise SystemExit(f'Could not patch stability setting: {check}')
 
-# Gemma 4 has unusual attention shapes. Force the ordinary attention path for this
-# diagnostic/stability build instead of letting llama.cpp AUTO-select Flash Attention.
+# Gemma 4 has unusual attention shapes. Keep the ordinary attention path until
+# the first complete translation/summary succeeds on-device.
 needle = '''    ctx_params.n_threads = n_threads;
     ctx_params.n_threads_batch = n_threads;'''
 replacement = '''    ctx_params.n_threads = n_threads;
@@ -124,6 +124,55 @@ replacement = '''    ctx_params.n_threads = n_threads;
 if needle not in s:
     raise SystemExit('Could not patch Flash Attention setting in ai_chat.cpp')
 s = s.replace(needle, replacement, 1)
+
+# The Gemma 4 GGUF carries a custom Jinja chat template. The upstream Android
+# sample hard-codes use_jinja=false, which throws std::runtime_error before the
+# first llama_decode and aborts the :ai process. Use llama.cpp's Jinja/minja path.
+old_template = '''    auto formatted = common_chat_format_single(
+            g_chat_templates.get(), chat_msgs, new_msg, role == ROLE_USER, /* use_jinja */ false);'''
+new_template = '''    auto formatted = common_chat_format_single(
+            g_chat_templates.get(), chat_msgs, new_msg, role == ROLE_USER, /* use_jinja */ true);'''
+if old_template not in s:
+    raise SystemExit('Could not enable Jinja chat template formatting in ai_chat.cpp')
+s = s.replace(old_template, new_template, 1)
+
+# Never allow a C++ template exception to unwind across JNI and terminate the
+# Android process. Convert it into a normal native error code instead.
+old_system = '''    if (has_chat_template) {
+        formatted_system_prompt = chat_add_and_format(ROLE_SYSTEM, system_prompt);
+    }
+    env->ReleaseStringUTFChars(jsystem_prompt, system_prompt);'''
+new_system = '''    if (has_chat_template) {
+        try {
+            formatted_system_prompt = chat_add_and_format(ROLE_SYSTEM, system_prompt);
+        } catch (const std::exception &e) {
+            LOGe("%s: chat template failed: %s", __func__, e.what());
+            env->ReleaseStringUTFChars(jsystem_prompt, system_prompt);
+            return 3;
+        }
+    }
+    env->ReleaseStringUTFChars(jsystem_prompt, system_prompt);'''
+if old_system not in s:
+    raise SystemExit('Could not add system prompt template exception guard')
+s = s.replace(old_system, new_system, 1)
+
+old_user = '''    if (has_chat_template) {
+        formatted_user_prompt = chat_add_and_format(ROLE_USER, user_prompt);
+    }
+    env->ReleaseStringUTFChars(juser_prompt, user_prompt);'''
+new_user = '''    if (has_chat_template) {
+        try {
+            formatted_user_prompt = chat_add_and_format(ROLE_USER, user_prompt);
+        } catch (const std::exception &e) {
+            LOGe("%s: chat template failed: %s", __func__, e.what());
+            env->ReleaseStringUTFChars(juser_prompt, user_prompt);
+            return 3;
+        }
+    }
+    env->ReleaseStringUTFChars(juser_prompt, user_prompt);'''
+if old_user not in s:
+    raise SystemExit('Could not add user prompt template exception guard')
+s = s.replace(old_user, new_user, 1)
 
 # Translation/summary requests are independent jobs, not a chat conversation.
 # Clear chat/KV history before every user prompt while keeping model weights loaded.
@@ -174,8 +223,8 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-# Keep compatibility with a previously selected SAF descriptor if it reaches the
-# upstream wrapper. v0.3.4+ normally uses an app-private prepared model path.
+# Patch the Android wrapper: keep SAF compatibility and propagate native prompt
+# formatting failures as normal Kotlin exceptions instead of silently ending a Flow.
 python3 - "$LIB_DIR/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt" <<'PY'
 from pathlib import Path
 import sys
@@ -201,7 +250,28 @@ new = '''                if (pathToModel.startsWith("/proc/self/fd/")) {
 if old not in s:
     raise SystemExit('Could not patch SAF /proc/self/fd access check')
 s = s.replace(old, new, 1)
+
+old_prompt_error = '''            processUserPrompt(message, predictLength).let { result ->
+                if (result != 0) {
+                    Log.e(TAG, "Failed to process user prompt: $result")
+                    return@flow
+                }
+            }
+'''
+new_prompt_error = '''            processUserPrompt(message, predictLength).let { result ->
+                if (result != 0) {
+                    RuntimeException("Failed to process user prompt: $result").also { error ->
+                        Log.e(TAG, error.message, error)
+                        _state.value = InferenceEngine.State.Error(error)
+                        throw error
+                    }
+                }
+            }
+'''
+if old_prompt_error not in s:
+    raise SystemExit('Could not patch prompt error propagation')
+s = s.replace(old_prompt_error, new_prompt_error, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (ctx=1024 batch=1 threads=1 flash-attn=off q4-repack=off generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on ctx=1024 batch=1 threads=1 flash-attn=off q4-repack=off generic-cpu)"
