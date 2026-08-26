@@ -10,6 +10,7 @@ on:
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
       - 'scripts/enrich_social_images.py'
+      - 'scripts/fetch_wechat_official.py'
       - 'scripts/discover_web_news.py'
       - 'scripts/enrich_images.py'
       - 'scripts/filter_small_images.py'
@@ -44,6 +45,7 @@ jobs:
           python scripts/merge_direct_official.py
           python scripts/enrich_sources.py
           python scripts/enrich_social_images.py
+          python scripts/fetch_wechat_official.py
           python scripts/discover_web_news.py
           python scripts/enrich_images.py
           python scripts/filter_small_images.py
