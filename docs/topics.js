@@ -4,45 +4,42 @@
   const grid = document.querySelector('#newsGrid');
   if (!section || !list || !grid) return;
 
-  const TOPICS_URL = 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/weekly_topics.json';
   const regionLabel = { JAPAN:'日本', CHINA:'中国', KOREA:'韓国', GLOBAL:'Global' };
 
-  function currentItems() {
+  function allItems() {
+    try {
+      return typeof state !== 'undefined' && Array.isArray(state.items) ? state.items : [];
+    } catch { return []; }
+  }
+
+  function visibleItems() {
     try {
       if (typeof state === 'undefined' || !Array.isArray(state.items)) return [];
       return state.items.filter((item) => state.region === 'ALL' || item.region === state.region);
     } catch { return []; }
   }
 
-  function levelClass(score) {
-    if (score >= 85) return 'is-hot';
-    if (score >= 70) return 'is-high';
-    return 'is-normal';
-  }
-
   function markCards() {
-    const items = currentItems();
+    const items = visibleItems();
     const cards = [...grid.querySelectorAll('.news-card')];
     cards.forEach((card, index) => {
       const item = items[index];
       if (!item?.id) return;
       card.id = `article-${item.id}`;
       card.dataset.articleId = item.id;
-
-      const meta = card.querySelector('.card-meta');
-      if (!meta) return;
-      const existing = meta.querySelector('.importance-badge');
-      const score = Number(item.importanceScore || 0);
-      if (score <= 0) {
-        existing?.remove();
-        return;
-      }
-      const badge = existing || document.createElement('span');
-      badge.className = `importance-badge ${levelClass(score)}`;
-      badge.textContent = `注目 ${score}`;
-      badge.title = 'AI選定用の注目度スコア';
-      if (!existing) meta.appendChild(badge);
+      card.querySelector('.importance-badge')?.remove();
     });
+  }
+
+  function advanceItems() {
+    return allItems()
+      .filter((item) => item?.earlyInfo === true)
+      .sort((a, b) => {
+        const dateDiff = Number(b?.publishedAtEpoch || 0) - Number(a?.publishedAtEpoch || 0);
+        if (dateDiff) return dateDiff;
+        return Number(b?.earlyInfoConfidence || 0) - Number(a?.earlyInfoConfidence || 0);
+      })
+      .slice(0, 3);
   }
 
   async function goToArticle(id) {
@@ -62,47 +59,48 @@
     setTimeout(() => target.classList.remove('topic-target'), 1800);
   }
 
-  function render(payload) {
-    const topics = Array.isArray(payload?.topics) ? payload.topics.slice(0, 3) : [];
+  function render() {
+    const topics = advanceItems();
     if (!topics.length) {
-      list.innerHTML = '<div class="weekly-topic-empty">AIが今週のトピックを選定中…</div>';
+      list.innerHTML = '<div class="weekly-topic-empty">現在、表示できる先行情報はありません</div>';
       return;
     }
+
     list.replaceChildren();
-    topics.forEach((topic, index) => {
+    topics.forEach((item, index) => {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'weekly-topic';
-      button.innerHTML = `
-        <span class="weekly-topic-rank">${index + 1}</span>
-        <span class="weekly-topic-copy">
-          <strong>${escapeHtml(topic.title || '注目トピック')}</strong>
-          <small>${escapeHtml(regionLabel[topic.region] || topic.region || '')} · 注目度 ${Number(topic.score || 0)}</small>
-        </span>
-        <span class="weekly-topic-arrow">↓</span>`;
-      button.addEventListener('click', () => goToArticle(String(topic.id || '')));
+
+      const rank = document.createElement('span');
+      rank.className = 'weekly-topic-rank';
+      rank.textContent = String(index + 1);
+
+      const copy = document.createElement('span');
+      copy.className = 'weekly-topic-copy';
+      const title = document.createElement('strong');
+      title.textContent = String(item.titleJa || item.title || '先行情報');
+      const meta = document.createElement('small');
+      const source = String(item.platform || '海外公式');
+      meta.textContent = `${regionLabel[item.region] || item.region || '海外'} · ${source}`;
+      copy.append(title, meta);
+
+      const arrow = document.createElement('span');
+      arrow.className = 'weekly-topic-arrow';
+      arrow.textContent = '↓';
+
+      button.append(rank, copy, arrow);
+      button.addEventListener('click', () => goToArticle(String(item.id || '')));
       list.appendChild(button);
     });
   }
 
-  function escapeHtml(value) {
-    return String(value ?? '').replace(/[&<>'"]/g, (char) => ({
-      '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;'
-    })[char]);
+  function refresh() {
+    markCards();
+    render();
   }
 
-  async function loadTopics() {
-    try {
-      const response = await fetch(`${TOPICS_URL}?t=${Date.now()}`, { cache:'no-store' });
-      if (!response.ok) throw new Error(String(response.status));
-      render(await response.json());
-    } catch {
-      render(null);
-    }
-  }
-
-  new MutationObserver(markCards).observe(grid, { childList:true });
-  document.querySelector('#regionTabs')?.addEventListener('click', () => setTimeout(markCards, 0));
-  markCards();
-  loadTopics();
+  new MutationObserver(refresh).observe(grid, { childList:true });
+  document.querySelector('#regionTabs')?.addEventListener('click', () => setTimeout(refresh, 0));
+  refresh();
 })();
