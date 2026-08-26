@@ -9,6 +9,7 @@ on:
       - 'scripts/fetch_news.py'
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
+      - 'scripts/discover_web_news.py'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -29,6 +30,7 @@ jobs:
           python scripts/fetch_news.py
           python scripts/merge_direct_official.py
           python scripts/enrich_sources.py
+          python scripts/discover_web_news.py
 
       - name: Commit cache when changed
         run: |
