@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -303,15 +304,15 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
     val modelUri = prefs.ggufModelUri
     val scope = rememberCoroutineScope()
 
-    var expanded by remember(news.id) { mutableStateOf(false) }
+    var expanded by rememberSaveable(news.id) { mutableStateOf(false) }
     var translation by remember(news.id, modelUri) {
         mutableStateOf<LocalAiTranslation?>(LocalGemmaManager.cachedTranslation(context, modelUri, news))
     }
-    var showTranslation by remember(news.id, modelUri) { mutableStateOf(false) }
+    var showTranslation by rememberSaveable(news.id, modelUri) { mutableStateOf(false) }
     var summary by remember(news.id, modelUri) {
         mutableStateOf<LocalAiSummary?>(LocalGemmaManager.cachedSummary(context, modelUri, news))
     }
-    var showSummary by remember(news.id, modelUri) { mutableStateOf(false) }
+    var showSummary by rememberSaveable(news.id, modelUri) { mutableStateOf(false) }
     var aiTask by remember(news.id) { mutableStateOf<AiTask?>(null) }
     var aiError by remember(news.id) { mutableStateOf<String?>(null) }
 
@@ -456,7 +457,6 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                                 showSummary = false
                             } else if (summary != null) {
                                 showSummary = true
-                                expanded = true
                             } else {
                                 val uri = requireModel() ?: return@FilledTonalButton
                                 aiTask = AiTask.SUMMARY
@@ -465,7 +465,6 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                                         .onSuccess {
                                             summary = it
                                             showSummary = true
-                                            expanded = true
                                         }
                                         .onFailure { aiError = it.message ?: "要約に失敗しました。設定からログを書き出せます。" }
                                     aiTask = null
