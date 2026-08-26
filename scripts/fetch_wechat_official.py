@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import concurrent.futures
 import hashlib
 import html
 import json
@@ -13,13 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
 ACCOUNT = "以闪亮之名"
-UA = "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/140 Mobile Safari/537.36 MicroMessenger/8.0 KiraparaNews-WeChat/0.2"
+UA = "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/140 Mobile Safari/537.36 MicroMessenger/8.0 KiraparaNews-WeChat/0.3"
 RSSHUB_HOSTS = [
     "https://rsshub.akr.moe",
     "https://rsshub.chn.moe",
     "https://rsshub.ethanliunyaa.com",
-    "https://rsshub.stsecurity.moe",
-    "https://rsshub.yfi.moe",
 ]
 
 
@@ -27,7 +26,7 @@ def stable_id(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()[:24]
 
 
-def request(url: str, timeout: int = 12, referer: str | None = None):
+def request(url: str, timeout: int = 9, referer: str | None = None):
     headers = {
         "User-Agent": UA,
         "Accept": "text/html,application/xhtml+xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8",
@@ -155,7 +154,7 @@ def article_images(page: str, url: str) -> list[str]:
 
 def parse_article(url: str):
     try:
-        page, final_url = request(url, timeout=12, referer="https://mp.weixin.qq.com/")
+        page, final_url = request(url, timeout=9, referer="https://mp.weixin.qq.com/")
     except Exception as exc:
         print(f"WeChat article failed {url}: {exc}")
         return None
@@ -168,7 +167,7 @@ def parse_article(url: str):
             m = re.search(pattern, page, re.I)
             if m:
                 try:
-                    page, final_url = request(html.unescape(m.group(1)), timeout=12, referer=url)
+                    page, final_url = request(html.unescape(m.group(1)), timeout=9, referer=url)
                 except Exception:
                     return None
                 break
@@ -214,7 +213,7 @@ def parse_article(url: str):
     }
 
 
-def feed_links(xml_text: str, limit: int = 16) -> list[str]:
+def feed_links(xml_text: str, limit: int = 12) -> list[str]:
     try:
         root = ET.fromstring(xml_text)
     except Exception:
@@ -239,11 +238,11 @@ def feed_links(xml_text: str, limit: int = 16) -> list[str]:
     return found
 
 
-def discover_rsshub(limit: int = 16) -> list[str]:
+def discover_rsshub(limit: int = 12) -> list[str]:
     route = "/wechat/sogou/" + urllib.parse.quote(ACCOUNT, safe="")
     for host in RSSHUB_HOSTS:
         try:
-            xml_text, _ = request(host.rstrip("/") + route, timeout=14)
+            xml_text, _ = request(host.rstrip("/") + route, timeout=8)
             links = feed_links(xml_text, limit=limit)
             if links:
                 print(f"RSSHub WeChat candidates: {len(links)} via {host}")
@@ -253,11 +252,11 @@ def discover_rsshub(limit: int = 16) -> list[str]:
     return []
 
 
-def discover_sogou(limit: int = 16) -> list[str]:
+def discover_sogou(limit: int = 12) -> list[str]:
     params = urllib.parse.urlencode({"type": "2", "query": ACCOUNT, "page": "1", "ie": "utf8"})
     url = "https://weixin.sogou.com/weixin?" + params
     try:
-        page, _ = request(url, timeout=12, referer="https://weixin.sogou.com/")
+        page, _ = request(url, timeout=8, referer="https://weixin.sogou.com/")
     except Exception as exc:
         print(f"Sogou WeChat search failed: {exc}")
         return []
@@ -283,12 +282,12 @@ def discover_sogou(limit: int = 16) -> list[str]:
     return found
 
 
-def discover_bing(limit: int = 12) -> list[str]:
+def discover_bing(limit: int = 10) -> list[str]:
     query = f'site:mp.weixin.qq.com/s "{ACCOUNT}"'
     params = urllib.parse.urlencode({"q": query, "format": "rss", "setlang": "zh-hans"})
     url = "https://www.bing.com/search?" + params
     try:
-        xml_text, _ = request(url, timeout=12)
+        xml_text, _ = request(url, timeout=8)
         root = ET.fromstring(xml_text)
     except Exception as exc:
         print(f"Bing WeChat discovery failed: {exc}")
@@ -314,16 +313,27 @@ def main():
     if not isinstance(rows, list):
         rows = []
 
+    discovered = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        futures = [pool.submit(fn) for fn in (discover_rsshub, discover_sogou, discover_bing)]
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                discovered.extend(future.result())
+            except Exception as exc:
+                print(f"WeChat discovery task failed: {exc}")
+
     candidates = []
-    for url in discover_rsshub() + discover_sogou() + discover_bing():
+    for url in discovered:
         if url not in candidates:
             candidates.append(url)
+        if len(candidates) >= 12:
+            break
 
     added = []
-    for candidate in candidates[:24]:
-        row = parse_article(candidate)
-        if row:
-            added.append(row)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(6, len(candidates) or 1)) as pool:
+        for row in pool.map(parse_article, candidates):
+            if row:
+                added.append(row)
 
     merged = {str(row.get("sourceUrl")): row for row in rows if row.get("sourceUrl")}
     for row in added:
