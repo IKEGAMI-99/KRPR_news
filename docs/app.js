@@ -1,5 +1,5 @@
 const DATA_URL = 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json';
-const CACHE_KEY = 'kirapara-news-cache-v1';
+const CACHE_KEY = 'kirapara-news-cache-v2';
 const THEME_KEY = 'kirapara-news-theme';
 
 const state = {
@@ -33,8 +33,38 @@ const regionNames = {
   GLOBAL: '🌐 Global',
 };
 
+const BAD_IMAGE_TOKENS = [
+  'favicon', 'apple-touch-icon', 'siteicon', 'site-icon', 'logo', 'brandmark',
+  'avatar', 'profile', 'author', 'qrcode', 'qr-code', 'qr_code', '/qr/', '_qr.',
+  'sprite', 'emoji', 'emoticon', 'badge', 'button', 'loading', 'spinner',
+  'placeholder', 'noimage', 'no-image', 'blank.', 'spacer.', 'pixel.', 'tracking',
+  'googleplay', 'google-play', 'appstore', 'app-store', '/icon/', '/icons/', 'icon_'
+];
+
+let viewerImages = [];
+let viewerIndex = 0;
+
 function normalizeText(value) {
   return String(value ?? '').toLocaleLowerCase('ja');
+}
+
+function looksLikeBadImage(url) {
+  const value = String(url || '').toLowerCase();
+  if (!/^https?:\/\//.test(value)) return true;
+  if (/\.(svg|ico)(?:\?|$)/.test(value)) return true;
+  return BAD_IMAGE_TOKENS.some((token) => value.includes(token));
+}
+
+function imageList(item) {
+  const values = [];
+  if (Array.isArray(item.imageUrls)) values.push(...item.imageUrls);
+  if (item.imageUrl) values.push(item.imageUrl);
+  const seen = new Set();
+  return values.filter((url) => {
+    if (!url || looksLikeBadImage(url) || seen.has(url)) return false;
+    seen.add(url);
+    return true;
+  });
 }
 
 function formatDate(epoch, fallback) {
@@ -73,6 +103,135 @@ function updateCounts() {
   }
 }
 
+function setImageWithFallback(image, wrap, urls, startIndex = 0) {
+  let index = startIndex;
+
+  const tryNext = () => {
+    if (index >= urls.length) {
+      image.removeAttribute('src');
+      wrap.classList.add('is-fallback');
+      return;
+    }
+    wrap.classList.remove('is-fallback');
+    image.src = urls[index];
+    index += 1;
+  };
+
+  image.referrerPolicy = 'no-referrer';
+  image.addEventListener('error', tryNext);
+  image.addEventListener('load', () => {
+    const tooSmall = image.naturalWidth > 0 && image.naturalHeight > 0 &&
+      (image.naturalWidth < 220 || image.naturalHeight < 120);
+    if (tooSmall) tryNext();
+  });
+  tryNext();
+}
+
+function ensureViewer() {
+  let viewer = document.querySelector('#imageViewer');
+  if (viewer) return viewer;
+
+  viewer = document.createElement('div');
+  viewer.id = 'imageViewer';
+  viewer.className = 'image-viewer';
+  viewer.hidden = true;
+  viewer.setAttribute('role', 'dialog');
+  viewer.setAttribute('aria-modal', 'true');
+  viewer.setAttribute('aria-label', '記事画像ビューア');
+  viewer.innerHTML = `
+    <button class="viewer-close" type="button" aria-label="閉じる">×</button>
+    <button class="viewer-nav viewer-prev" type="button" aria-label="前の画像">‹</button>
+    <figure class="viewer-figure">
+      <img class="viewer-image" alt="記事画像" referrerpolicy="no-referrer">
+      <figcaption class="viewer-count"></figcaption>
+    </figure>
+    <button class="viewer-nav viewer-next" type="button" aria-label="次の画像">›</button>
+  `;
+  document.body.appendChild(viewer);
+
+  viewer.querySelector('.viewer-close').addEventListener('click', closeViewer);
+  viewer.querySelector('.viewer-prev').addEventListener('click', () => moveViewer(-1));
+  viewer.querySelector('.viewer-next').addEventListener('click', () => moveViewer(1));
+  viewer.addEventListener('click', (event) => {
+    if (event.target === viewer) closeViewer();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (viewer.hidden) return;
+    if (event.key === 'Escape') closeViewer();
+    if (event.key === 'ArrowLeft') moveViewer(-1);
+    if (event.key === 'ArrowRight') moveViewer(1);
+  });
+  return viewer;
+}
+
+function updateViewer() {
+  const viewer = ensureViewer();
+  const image = viewer.querySelector('.viewer-image');
+  const count = viewer.querySelector('.viewer-count');
+  const prev = viewer.querySelector('.viewer-prev');
+  const next = viewer.querySelector('.viewer-next');
+
+  image.src = viewerImages[viewerIndex] || '';
+  count.textContent = viewerImages.length ? `${viewerIndex + 1} / ${viewerImages.length}` : '';
+  const single = viewerImages.length <= 1;
+  prev.hidden = single;
+  next.hidden = single;
+}
+
+function openViewer(images, index = 0) {
+  if (!images.length) return;
+  viewerImages = images;
+  viewerIndex = Math.max(0, Math.min(index, images.length - 1));
+  const viewer = ensureViewer();
+  updateViewer();
+  viewer.hidden = false;
+  document.body.classList.add('viewer-open');
+}
+
+function closeViewer() {
+  const viewer = ensureViewer();
+  viewer.hidden = true;
+  viewer.querySelector('.viewer-image').removeAttribute('src');
+  document.body.classList.remove('viewer-open');
+}
+
+function moveViewer(delta) {
+  if (viewerImages.length <= 1) return;
+  viewerIndex = (viewerIndex + delta + viewerImages.length) % viewerImages.length;
+  updateViewer();
+}
+
+function buildGallery(article, body, images, titleText) {
+  if (!images.length) return null;
+
+  const gallery = document.createElement('div');
+  gallery.className = 'article-gallery';
+  gallery.hidden = true;
+
+  images.forEach((url, index) => {
+    const button = document.createElement('button');
+    button.className = 'gallery-item';
+    button.type = 'button';
+    button.setAttribute('aria-label', `画像 ${index + 1} を拡大`);
+
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = titleText ? `${titleText} の画像 ${index + 1}` : `記事画像 ${index + 1}`;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.referrerPolicy = 'no-referrer';
+    img.addEventListener('error', () => button.remove(), { once: true });
+
+    button.appendChild(img);
+    button.addEventListener('click', () => openViewer(images, index));
+    gallery.appendChild(button);
+  });
+
+  body.insertAdjacentElement('afterend', gallery);
+  article.classList.add('has-gallery');
+  return gallery;
+}
+
 function createCard(item) {
   const fragment = els.template.content.cloneNode(true);
   const article = fragment.querySelector('.news-card');
@@ -85,9 +244,11 @@ function createCard(item) {
   const title = fragment.querySelector('.card-title');
   const body = fragment.querySelector('.card-body');
   const more = fragment.querySelector('.more-button');
+  const actions = fragment.querySelector('.card-actions');
   const source = fragment.querySelector('.source-button');
 
   const sourceUrl = item.sourceUrl || '#';
+  const images = imageList(item);
   imageLink.href = sourceUrl;
   source.href = sourceUrl;
   badge.textContent = regionNames[item.region] || item.region || 'NEWS';
@@ -99,12 +260,25 @@ function createCard(item) {
   title.textContent = item.title || 'タイトルなし';
   body.textContent = item.body || item.title || '';
 
-  if (item.imageUrl) {
-    image.src = item.imageUrl;
+  if (images.length) {
     image.alt = item.title ? `${item.title} の画像` : 'ニュース画像';
-    image.addEventListener('error', () => imageWrap.classList.add('is-fallback'), { once: true });
+    setImageWithFallback(image, imageWrap, images);
   } else {
     imageWrap.classList.add('is-fallback');
+  }
+
+  const gallery = buildGallery(article, body, images, item.title || '');
+  if (gallery && images.length > 1) {
+    const galleryButton = document.createElement('button');
+    galleryButton.className = 'gallery-button';
+    galleryButton.type = 'button';
+    galleryButton.textContent = `画像 ${images.length}枚`;
+    galleryButton.addEventListener('click', () => {
+      gallery.hidden = !gallery.hidden;
+      galleryButton.classList.toggle('is-active', !gallery.hidden);
+      galleryButton.textContent = gallery.hidden ? `画像 ${images.length}枚` : '画像を閉じる';
+    });
+    actions.insertBefore(galleryButton, source);
   }
 
   const canExpand = (item.body || '').length > 150;
@@ -163,8 +337,8 @@ async function loadNews({ force = false } = {}) {
   if (!state.items.length) renderSkeletons();
 
   try {
-    const url = force ? `${DATA_URL}?t=${Date.now()}` : DATA_URL;
-    const response = await fetch(url, { cache: force ? 'no-store' : 'default' });
+    const url = force ? `${DATA_URL}?t=${Date.now()}` : `${DATA_URL}?v=2`;
+    const response = await fetch(url, { cache: force ? 'no-store' : 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const json = await response.json();
     if (!Array.isArray(json)) throw new Error('ニュースデータの形式が不正です');
@@ -278,5 +452,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+ensureViewer();
 initTheme();
 loadNews();
