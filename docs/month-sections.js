@@ -23,7 +23,7 @@
     grid.querySelectorAll('.month-divider').forEach((node) => node.remove());
 
     let previous = null;
-    const cards = [...grid.querySelectorAll(':scope > .news-card')];
+    const cards = [...grid.querySelectorAll(':scope > .news-card')].filter((card) => !card.hidden);
     for (const card of cards) {
       const key = monthKeyFromCard(card);
       if (key === previous) continue;
@@ -53,5 +53,6 @@
 
   const observer = new MutationObserver(scheduleDecorate);
   observer.observe(grid, { childList: true });
+  window.addEventListener('kirapara:filters-changed', () => scheduleDecorate());
   scheduleDecorate();
 })();
