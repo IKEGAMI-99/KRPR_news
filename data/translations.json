@@ -47,37 +47,41 @@
       "contentHash": "80baa7808aa26c6c9bf940f2",
       "titleJa": "明日登場するセットコーデをお届け✨ 星6セット·修羅帰鞘 ——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる",
       "bodyJa": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "明日登場のセットコーデを紹介。星6セット·修羅帰鞘は、長き夢は鞘に帰り千壑を鎮める、百戦の修羅は塵煙に隠れるというフレーズで、星5セット·占心の誓いは心中を占うとは答えを求める必要のない慰めを探し求めるというフレーズで登場する。",
+      "summaryJa": "・追加: 星6セット「修羅帰鞘」\n・期間: 未記載",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747155
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787787182
     },
     "https://x.com/stylight_kr/status/2092537547641454873": {
       "contentHash": "5c22202dbb85eaca88fa4700",
-      "titleJa": "[イベント] 『ライフマーヴォ』 スタイルパートナーと特別なイベント『ライフマーヴォ』が明日オープン",
-      "bodyJa": "[イベント] 『ライフマーヴォ』\n\nスタイルパートナーと親友、協会メンバーなどと特別なイベント『ライフマーヴォ』が明日オープンします!\n\n🎁 メイン賞品:\n5★セット 'レーブの連書'\n\n🕙 8/27 10:30 ~ 9/10 5:00\n\n※ 詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #ライフマーヴォ #スタイルライトアップデート",
-      "summaryJa": "『ライフマーヴォ』が明日オープンし、スタイルパートナーと親友、協会メンバーと特別なイベントが開催されます。5★セット 'レーブの連書' がメインタワレです。",
+      "titleJa": "[イベント] 『Life Makeover』 スタイルパートナーと友人、協会メンバーと共に楽しむ特別な『Life Makeover』イベントが明日オープン",
+      "bodyJa": "[イベント] 『Life Makeover』\n\n親友や協会メンバーなど、スタイルパートナーと一緒にお楽しみいただける特別なイベント『Life Makeover』が明日オープンです!\n\n🎁 主な報酬:\n5★セット '댓잎의 연서'\n\n📅 8月27日10:30〜9月10日5:00\n\n※ 詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
+      "summaryJa": "・追加: 5★セット '댓잎의 연서'\n・期間: 8月27日10:30〜9月10日5:00",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747184
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787787170
     },
     "https://x.com/kirapara_JP/status/2092533759073456435": {
       "contentHash": "f0a1215bdb1ffe59a51718fd",
       "titleJa": "＼イベントファッション復刻／ イベント制作復刻『孤刃帰鞘』が期間限定開放",
       "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『孤刃帰鞘』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "イベント制作復刻『孤刃帰鞘』が期間限定で開放され、見逃したイベントファッションや外観が制作可能になった。この機会にイベントファッションや外観をゲットしよう。",
+      "summaryJa": "・追加: なし\n・期間: 未指定",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747194
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787787193
     },
     "https://x.com/kirapara_JP/status/2092529984489541762": {
       "contentHash": "f2413aa4a016e41965c8f7e9",
       "titleJa": "＼パックがサプライズ復刻💃／ 6つのパックが期間限定で復刻します",
       "bodyJa": "＼パックがサプライズ復刻💃／ \n\n6つのパックが期間限定で復刻します！\nこの他にも、流行カラーカードやスタミナなど、用途に応じたお得なパックを多数販売！\nモールの『割引セット』からご確認くださいね！👀\n\n復刻期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "6つのパックが期間限定で復刻します。モールの『割引セット』からご確認ください。復刻期間は8月27日10:30～9月16日23:59です。",
+      "summaryJa": "・追加: 6つのパックが期間限定で復刻\n・期間: 8月27日10:30〜9月16日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747206
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787787203
     },
     "https://x.com/kirapara_JP/status/2092526209351696684": {
       "contentHash": "0265cda0f89340d12497216e",
