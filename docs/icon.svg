@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Kirapara News">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7c9ff"/>
+      <stop offset="1" stop-color="#9bdfff"/>
+    </linearGradient>
+    <radialGradient id="r" cx="0.28" cy="0.18" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".65"/>
+      <stop offset=".45" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="132" fill="#111218"/>
+  <rect x="34" y="34" width="444" height="444" rx="112" fill="url(#g)"/>
+  <rect x="34" y="34" width="444" height="444" rx="112" fill="url(#r)"/>
+  <path d="M256 104c15 68 28 103 52 126 23 24 58 37 126 52-68 15-103 28-126 52-24 23-37 58-52 126-15-68-28-103-52-126-23-24-58-37-126-52 68-15 103-28 126-52 24-23 37-58 52-126Z" fill="#15131b"/>
+  <circle cx="390" cy="128" r="24" fill="#15131b" opacity=".82"/>
+  <circle cx="132" cy="390" r="18" fill="#15131b" opacity=".68"/>
+</svg>
