@@ -97,7 +97,7 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         continue-on-error: true
         env:
-          LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && '10' || '24' }}
+          LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && '10' || github.event_name == 'workflow_dispatch' && '24' || '4' }}
         run: |
           python scripts/translate_news_llm.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
