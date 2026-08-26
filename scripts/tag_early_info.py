@@ -65,7 +65,6 @@ def preview_signal(row):
     if marker:
         return marker
 
-    # Explicit future dates/relative wording in otherwise translated text.
     if re.search(r"(?:明日|来週|来月|\d{1,2}月\d{1,2}日).{0,14}(?:登場|公開|開催|実装|配信|開始|アップデート)", text):
         return "future announcement"
     return ""
@@ -73,6 +72,13 @@ def preview_signal(row):
 
 def main():
     rows = read_rows()
+
+    # The old weekly importance-ranking experiment is gone. Strip its fields as
+    # part of the normal refresh so stale scores cannot leak back into the UI.
+    for row in rows:
+        row.pop("importanceScore", None)
+        row.pop("weeklyTopic", None)
+
     japan = [r for r in rows if r.get("region") == "JAPAN"]
     japan_texts = [(r, searchable(r)) for r in japan]
 
@@ -96,15 +102,11 @@ def main():
 
         candidate_text = searchable(row)
         best_score = 0.0
-        best_jp = None
-        for jp, jp_text in japan_texts:
+        for _, jp_text in japan_texts:
             score = similarity(candidate_text, jp_text)
             if score > best_score:
                 best_score = score
-                best_jp = jp
 
-        # If a reasonably similar Japanese announcement already exists, this is
-        # no longer treated as advance information in the current feed.
         if best_score >= 0.42:
             if old:
                 cleared += 1
