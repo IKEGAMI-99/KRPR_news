@@ -679,6 +679,42 @@
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787778556
+    },
+    "https://x.com/stylight_kr/status/2089910230876389435": {
+      "contentHash": "dd2f445335e388744bb70d51",
+      "titleJa": "🎁 愛が満ち溢れた特別な日",
+      "bodyJa": "🎁 愛が満ち溢れた特別な日! 特別な贈り物!\n\n별빛が愛に染まった特別な日を記念して、\nスタイラー同伴のための突然の贈り物を準備しました ✨\n\n🕙 8/19 00:00 ~ 8/21 23:59\n\nイベント期間中、ゲームにログインすると\n郵便受けから以下の報酬を受領できます。\n\n🎁 特別な贈り物\nダイア ×200 \nトレンドカラーカード ×77 \nゴールド ×30,000\n\n大切な人との心を分かち合い、\n今日もスタイライトと輝く一日を過ごしましょう!\n\n#スタイライト #スタイライトイベント",
+      "summaryJa": "スタイラー同伴のための突然の贈り物が8/19から8/21まで開催。ダイア×200、トレンドカラーカード×77、ゴールド×30,000の報酬が受け取れる。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787779667
+    },
+    "https://x.com/LifeMakeover510/status/2089849828943483109": {
+      "contentHash": "6446401a511f2e227b0cc7aa",
+      "titleJa": "以闪亮之名 Midnight Tea Party - 一般規約",
+      "bodyJa": "以闪亮之名 Midnight Tea Party - 一般規約\n以闪亮之名のこの季の Midnight Tea Partyにようこそ。\nあなたの経験が安全で楽しいものになるように、以下のルールを厳格に遵守してください。\n......",
+      "summaryJa": "以闪亮之名のこの季の Midnight Tea Partyに参加するためには、以下のルールを厳格に遵守することが重要です。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787779679
+    },
+    "https://x.com/LifeMakeover510/status/2089691280976609394": {
+      "contentHash": "88f705c4662cba9a6ca0732f",
+      "titleJa": "以闪亮之名のタイムアライブーストパックが期間限定で販売開始",
+      "bodyJa": "以闪亮之名のタイムアライブーストパック\n以闪亮之名のタイムイベントが開催された後、タイムアライブーストパックは14日間販売されます! \n⏰2022年8月19日 09:00 - 2022年9月1日 23:59 UTC\n\n-\n\n専用染色パック\n⏰2022年8月19日 09:00 - 2022年8月8日 23:59 UTC\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
+      "summaryJa": "以闪亮之名のタイムイベントが開催された後、タイムアライブーストパックが販売されます。専用染色パックは8月19日から8月8日まで販売されます。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787779703
+    },
+    "https://x.com/LifeMakeover510/status/2089683735084196234": {
+      "contentHash": "5c20aff716c2d9c9a9387794",
+      "titleJa": "以闪亮之名 限定出現パックエンドレーサー",
+      "bodyJa": "以闪亮之名 限定出現パックエンドレーサー\n\n⏰8月19日 09:00 - 9月8日 23:59 UTC\n\n[以闪亮之名 限定出現パックエンドレーサー]\n1. 过去の庭パック\n2. 希望の像パック\n3. 虚構のシーンパック\n4. 失った奇跡パック\n5. 夜の願いパック\n6. 冰の薔薇の夢幻パック\n\n#LifeMakeover",
+      "summaryJa": "以闪亮之名 限定出現パックエンドレーサーが8月19日から9月8日まで限定で登場します。過去の庭パック、希望の像パック、虚構のシーンパック、失った奇跡パック、夜の願いパック、冰の薔薇の夢幻パックの6種類が登場します。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787779728
     }
   }
 }
