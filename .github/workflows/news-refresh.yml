@@ -90,9 +90,10 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         continue-on-error: true
         env:
-          LLM_MODEL_PATH: ${{ env.HOME }}/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf
           LLM_MAX_ITEMS: ${{ github.event_name == 'schedule' && '10' || '24' }}
-        run: python scripts/translate_news_llm.py translate
+        run: |
+          python scripts/translate_news_llm.py translate \
+            --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
       - name: Commit cache when changed
         run: |
