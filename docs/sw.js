@@ -1,10 +1,11 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v3';
+const CACHE_NAME = 'kirapara-pwa-shell-v4';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './ai.css',
   './app.js',
+  './ui_fixes.js',
   './manifest.webmanifest',
   './icon.svg'
 ];
