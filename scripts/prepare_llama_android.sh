@@ -204,6 +204,31 @@ s = s.replace(old_stop, new_stop, 1)
 p.write_text(s)
 PY
 
+# common_chat_format_single() creates common_chat_templates_inputs whose default
+# enable_thinking is true. Disable it explicitly so Gemma 4 does not inject the
+# thinking channel for translation/summary jobs. This is the real template-level
+# switch; merely omitting <|think|> from our own system prompt is not sufficient.
+python3 - "$VENDOR_DIR/common/chat.cpp" <<'PY'
+from pathlib import Path
+import sys
+
+p = Path(sys.argv[1])
+s = p.read_text()
+old = '''    common_chat_templates_inputs inputs;
+    inputs.use_jinja = use_jinja;
+    inputs.add_bos   = tmpls->add_bos;
+    inputs.add_eos   = tmpls->add_eos;'''
+new = '''    common_chat_templates_inputs inputs;
+    inputs.use_jinja        = use_jinja;
+    inputs.enable_thinking  = false;
+    inputs.add_bos          = tmpls->add_bos;
+    inputs.add_eos          = tmpls->add_eos;'''
+if old not in s:
+    raise SystemExit('Could not disable thinking in common_chat_format_single')
+s = s.replace(old, new, 1)
+p.write_text(s)
+PY
+
 # Upstream Android sample currently calls an API introduced in Android 30.
 # Preserve app minSdk 26 by using a simple priority fallback on older devices.
 python3 - "$LIB_DIR/src/main/cpp/logging.h" <<'PY'
@@ -292,4 +317,4 @@ s = s.replace(old_prompt_error, new_prompt_error, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on thinking=off-per-system ctx=2048 batch=64 threads=4 temp=1 top-p=0.95 top-k=64 flash-attn=off q4-repack=on generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on thinking=off ctx=2048 batch=64 threads=4 temp=1 top-p=0.95 top-k=64 flash-attn=off q4-repack=on generic-cpu)"
