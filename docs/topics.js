@@ -6,6 +6,12 @@
 
   const regionLabel = { JAPAN:'日本', CHINA:'中国', KOREA:'韓国', GLOBAL:'Global' };
 
+  function resetHorizontalScroll() {
+    document.documentElement.scrollLeft = 0;
+    document.body.scrollLeft = 0;
+    if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+  }
+
   function allItems() {
     try {
       return typeof state !== 'undefined' && Array.isArray(state.items) ? state.items : [];
@@ -52,7 +58,8 @@
       target = document.querySelector(`#article-${CSS.escape(id)}`);
     }
     if (!target) return;
-    target.scrollIntoView({ behavior:'smooth', block:'center' });
+    target.scrollIntoView({ behavior:'smooth', block:'center', inline:'nearest' });
+    resetHorizontalScroll();
     target.classList.remove('topic-target');
     void target.offsetWidth;
     target.classList.add('topic-target');
@@ -63,6 +70,7 @@
     const topics = advanceItems();
     if (!topics.length) {
       list.innerHTML = '<div class="weekly-topic-empty">現在、表示できる先行情報はありません</div>';
+      resetHorizontalScroll();
       return;
     }
 
@@ -93,6 +101,7 @@
       button.addEventListener('click', () => goToArticle(String(item.id || '')));
       list.appendChild(button);
     });
+    resetHorizontalScroll();
   }
 
   function refresh() {
@@ -102,5 +111,9 @@
 
   new MutationObserver(refresh).observe(grid, { childList:true });
   document.querySelector('#regionTabs')?.addEventListener('click', () => setTimeout(refresh, 0));
+  window.addEventListener('pageshow', () => setTimeout(resetHorizontalScroll, 0));
+  window.addEventListener('resize', () => setTimeout(resetHorizontalScroll, 0));
+  resetHorizontalScroll();
+  setTimeout(resetHorizontalScroll, 60);
   refresh();
 })();
