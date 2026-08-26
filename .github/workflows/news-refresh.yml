@@ -20,7 +20,6 @@ on:
       - 'scripts/audit_translations.py'
       - 'scripts/translate_news_llm.py'
       - 'scripts/tag_early_info.py'
-      - 'scripts/select_weekly_topics.py'
       - 'data/translation_glossary.json'
       - '.github/workflows/news-refresh.yml'
 
@@ -117,21 +116,15 @@ jobs:
       - name: Compare overseas previews with Japan feed
         run: python scripts/tag_early_info.py
 
-      - name: Select weekly topics
-        continue-on-error: true
-        run: |
-          python scripts/select_weekly_topics.py \
-            --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
-
       - name: Commit cache when changed
         run: |
-          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json data/weekly_topics.json)" ]; then
-            echo "No news, date, image-quality, translation, topic or advance-info changes"
+          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json)" ]; then
+            echo "No news, date, image-quality, translation or advance-info changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/translations.json data/article_dates.json data/image_quality.json data/weekly_topics.json
+          git add data/news.json data/translations.json data/article_dates.json data/image_quality.json
           git commit -m "chore: refresh normalized news and AI translations"
           git pull --rebase origin main
           git push
