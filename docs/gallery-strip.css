@@ -1,7 +1,7 @@
 /* Image layout:
    - 1 image: keep the large cover thumbnail at the top.
-   - 2+ images: keep the cover thumbnail and show an always-visible swipe strip
-     below the article text. Slider artwork is never cropped. */
+   - 2+ images: keep the cover thumbnail and show a compact swipe strip
+     directly underneath it. Slider artwork is shown whole and aligned by height. */
 
 .card-image-link {
   display: block !important;
@@ -14,13 +14,13 @@
 
 .inline-image-strip {
   display: flex;
-  gap: 10px;
-  margin-top: 14px;
-  padding: 1px 2px 7px;
+  align-items: stretch;
+  gap: 4px;
+  margin: 4px 0 0;
+  padding: 0 0 2px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 2px;
+  scroll-snap-type: x proximity;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x pan-y;
@@ -29,44 +29,47 @@
 
 .inline-image-slide {
   position: relative;
-  flex: 0 0 min(250px, 68vw);
-  height: 210px;
-  min-width: 0;
+  flex: 0 0 auto;
+  height: 196px;
+  width: auto;
+  min-width: 108px;
+  max-width: min(300px, 72vw);
   padding: 0;
   overflow: hidden;
   scroll-snap-align: start;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background:
-    radial-gradient(circle at 30% 18%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%),
-    var(--surface-2);
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  box-shadow: none;
   cursor: zoom-in;
 }
 
 .inline-image-slide img {
-  width: 100%;
+  width: auto;
+  max-width: min(300px, 72vw);
   height: 100%;
   display: block;
   object-fit: contain;
   object-position: center;
+  border-radius: inherit;
 }
 
 .inline-image-slide:focus { outline: none; }
 .inline-image-slide:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--accent) 65%, white 15%);
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .inline-image-count {
   position: absolute;
-  right: 8px;
-  bottom: 8px;
-  min-width: 34px;
-  padding: 4px 7px;
+  right: 6px;
+  bottom: 6px;
+  min-width: 31px;
+  padding: 4px 6px;
   border-radius: 999px;
   color: #fff;
-  background: rgba(8, 9, 13, .62);
-  backdrop-filter: blur(10px);
+  background: rgba(8, 9, 13, .58);
+  backdrop-filter: blur(9px);
   font-size: 10px;
   font-weight: 750;
   line-height: 1;
@@ -75,13 +78,15 @@
 
 @media (max-width: 700px) {
   .inline-image-strip {
-    margin-left: -2px;
-    margin-right: -2px;
-    gap: 9px;
+    gap: 3px;
   }
   .inline-image-slide {
-    flex-basis: min(280px, 68vw);
-    height: clamp(180px, 46vw, 230px);
-    border-radius: 15px;
+    height: clamp(164px, 43vw, 205px);
+    min-width: 96px;
+    max-width: 70vw;
+    border-radius: 8px;
+  }
+  .inline-image-slide img {
+    max-width: 70vw;
   }
 }
