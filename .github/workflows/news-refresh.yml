@@ -11,6 +11,7 @@ on:
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
       - 'scripts/enrich_social_images.py'
+      - 'scripts/upgrade_x_images.py'
       - 'scripts/fetch_wechat_official.py'
       - 'scripts/discover_web_news.py'
       - 'scripts/enrich_images.py'
@@ -18,6 +19,7 @@ on:
       - 'scripts/normalize_news.py'
       - 'scripts/audit_translations.py'
       - 'scripts/translate_news_llm.py'
+      - 'scripts/tag_early_info.py'
       - 'data/translation_glossary.json'
       - '.github/workflows/news-refresh.yml'
 
@@ -47,6 +49,7 @@ jobs:
           python scripts/merge_direct_official.py
           python scripts/enrich_sources.py
           python scripts/enrich_social_images.py
+          python scripts/upgrade_x_images.py
           python scripts/fetch_wechat_official.py
           python scripts/discover_web_news.py
           python scripts/enrich_images.py
@@ -110,10 +113,13 @@ jobs:
           python scripts/translate_news_llm.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
+      - name: Compare overseas previews with Japan feed
+        run: python scripts/tag_early_info.py
+
       - name: Commit cache when changed
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json)" ]; then
-            echo "No news, date, image-quality or translation changes"
+            echo "No news, date, image-quality, translation or advance-info changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
