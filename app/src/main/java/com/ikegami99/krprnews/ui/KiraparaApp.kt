@@ -387,6 +387,26 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                     }
                 }
 
+                if (busy) {
+                    Surface(
+                        shape = RoundedCornerShape(18.dp),
+                        color = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.78f),
+                        contentColor = MaterialTheme.colorScheme.onTertiaryContainer
+                    ) {
+                        Row(
+                            Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 12.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp)
+                            Spacer(Modifier.width(9.dp))
+                            Column {
+                                Text("シンキング中…", fontWeight = FontWeight.SemiBold)
+                                Text("最終結果だけを表示します", style = MaterialTheme.typography.labelSmall)
+                            }
+                        }
+                    }
+                }
+
                 aiError?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error) }
 
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -420,7 +440,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                             if (aiTask == AiTask.TRANSLATE) {
                                 CircularProgressIndicator(Modifier.size(17.dp), strokeWidth = 2.dp)
                                 Spacer(Modifier.width(7.dp))
-                                Text("翻訳中")
+                                Text("シンキング中…")
                             } else {
                                 Icon(Icons.Default.Language, null, Modifier.size(18.dp))
                                 Spacer(Modifier.width(6.dp))
@@ -458,7 +478,7 @@ private fun NewsCard(news: NewsItem, modifier: Modifier = Modifier) {
                         if (aiTask == AiTask.SUMMARY) {
                             CircularProgressIndicator(Modifier.size(17.dp), strokeWidth = 2.dp)
                             Spacer(Modifier.width(7.dp))
-                            Text("要約中")
+                            Text("シンキング中…")
                         } else {
                             Icon(Icons.Default.AutoAwesome, null, Modifier.size(18.dp))
                             Spacer(Modifier.width(6.dp))
@@ -675,7 +695,7 @@ private fun SettingsScreen(
                                 Text(String.format(Locale.US, "%.2f GB", size / 1024.0 / 1024.0 / 1024.0), style = MaterialTheme.typography.bodySmall)
                             }
                             Text(
-                                "GGUF / llama.cpp · Scoped Storage FD · Context 4096 · CPU/NEON",
+                                "GGUF / llama.cpp · Context 2048 · CPU/NEON · 4 threads · batch 64",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.72f),
                                 modifier = Modifier.padding(top = 4.dp)
