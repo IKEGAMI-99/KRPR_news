@@ -21,13 +21,17 @@
     const item = findItem(card);
     const actions = card.querySelector('.card-actions');
     const source = card.querySelector('.source-button');
-    if (!item || !actions || !source || !item.aiProcessed || !item.id) return;
+
+    // Japanese articles only needed the old "re-summarize" button. That control
+    // is intentionally removed; overseas articles keep the useful retranslation
+    // request in case a translation or summary is clearly wrong.
+    if (!item || item.region === 'JAPAN' || !actions || !source || !item.aiProcessed || !item.id) return;
 
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'regenerate-button';
-    button.textContent = item.region === 'JAPAN' ? '↻ 再要約' : '↻ 再翻訳・要約';
-    button.title = '現在のAI結果を破棄して、GitHub Actionsで再生成を依頼します';
+    button.textContent = '↻ 再翻訳・要約';
+    button.title = '現在のAI翻訳・要約を破棄して、GitHub Actionsで再生成を依頼します';
     button.addEventListener('click', () => {
       const title = `[AI再生成] ${item.id}`;
       const body = [
