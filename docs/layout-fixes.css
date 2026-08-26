@@ -29,3 +29,28 @@
 .card-image-link:focus-visible .card-image-wrap {
   box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--accent) 58%, transparent);
 }
+
+/* Give the viewer a large canvas even when the source image has small intrinsic
+   CSS dimensions. Low-resolution files are filtered separately. */
+.viewer-figure {
+  width: min(92vw, 1080px) !important;
+  max-width: min(92vw, 1080px) !important;
+}
+.viewer-image {
+  width: min(92vw, 1080px) !important;
+  height: min(82vh, 1080px) !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 700px) {
+  .viewer-figure {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .viewer-image {
+    width: 100% !important;
+    height: 78vh !important;
+  }
+}
