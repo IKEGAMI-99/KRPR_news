@@ -47,10 +47,10 @@ android {
                 arguments += "-DLLAMA_OPENSSL=OFF"
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
-                // Stability-first Android build. Keep one conservative generic
-                // arm64 CPU backend and keep Q4_0 in its original layout.
+                // Keep the conservative generic arm64 backend, but restore Q4_0
+                // repacking now that the v0.3.8 crash was proven to be Jinja-related.
                 arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
-                arguments += "-DGGML_CPU_REPACK=OFF"
+                arguments += "-DGGML_CPU_REPACK=ON"
                 arguments += "-DGGML_CPU_KLEIDIAI=OFF"
                 arguments += "-DGGML_LLAMAFILE=OFF"
             }
@@ -89,33 +89,35 @@ import sys
 p = Path(sys.argv[1])
 s = p.read_text()
 
-# Keep the deliberately tiny v0.3.8 inference profile while verifying the real
-# native crash fix. Once Gemma 4 generates reliably, performance can be restored
-# independently without mixing correctness and optimization changes.
+# v0.3.9 proved the model and Jinja path are stable. Restore a practical mobile
+# CPU profile while keeping the generic backend and Flash Attention disabled.
 s = s.replace('constexpr int   N_THREADS_MIN           = 2;',
-              'constexpr int   N_THREADS_MIN           = 1;')
+              'constexpr int   N_THREADS_MIN           = 4;')
 s = s.replace('constexpr int   N_THREADS_MAX           = 4;',
-              'constexpr int   N_THREADS_MAX           = 1;')
+              'constexpr int   N_THREADS_MAX           = 4;')
 s = s.replace('constexpr int   N_THREADS_HEADROOM      = 2;',
               'constexpr int   N_THREADS_HEADROOM      = 0;')
 s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
-              'constexpr int   DEFAULT_CONTEXT_SIZE    = 1024;')
+              'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
-              'constexpr int   BATCH_SIZE              = 1;')
+              'constexpr int   BATCH_SIZE              = 64;')
+s = s.replace('constexpr float DEFAULT_SAMPLER_TEMP    = 0.3f;',
+              'constexpr float DEFAULT_SAMPLER_TEMP    = 0.0f;')
 
 checks = [
-    'constexpr int   N_THREADS_MIN           = 1;',
-    'constexpr int   N_THREADS_MAX           = 1;',
+    'constexpr int   N_THREADS_MIN           = 4;',
+    'constexpr int   N_THREADS_MAX           = 4;',
     'constexpr int   N_THREADS_HEADROOM      = 0;',
-    'constexpr int   DEFAULT_CONTEXT_SIZE    = 1024;',
-    'constexpr int   BATCH_SIZE              = 1;',
+    'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;',
+    'constexpr int   BATCH_SIZE              = 64;',
+    'constexpr float DEFAULT_SAMPLER_TEMP    = 0.0f;',
 ]
 for check in checks:
     if check not in s:
-        raise SystemExit(f'Could not patch stability setting: {check}')
+        raise SystemExit(f'Could not patch performance setting: {check}')
 
-# Gemma 4 has unusual attention shapes. Keep the ordinary attention path until
-# the first complete translation/summary succeeds on-device.
+# Keep the ordinary attention path for now. The main speed recovery comes from
+# batching, four CPU threads and Q4_0 repacking without mixing in another backend.
 needle = '''    ctx_params.n_threads = n_threads;
     ctx_params.n_threads_batch = n_threads;'''
 replacement = '''    ctx_params.n_threads = n_threads;
@@ -196,6 +198,20 @@ new = '''Java_com_arm_aichat_internal_InferenceEngineImpl_processUserPrompt(
 if old not in s:
     raise SystemExit('Could not patch independent prompt reset in ai_chat.cpp')
 s = s.replace(old, new, 1)
+
+# Upstream Android sample double-counts the user prompt when calculating the stop
+# position. That made maxPredict=96 generate hundreds of pieces and hit the 5 min
+# app timeout. Count only tokens actually decoded, then add n_predict once.
+old_stop = '''    // Update position
+    current_position += user_prompt_size;
+    stop_generation_position = current_position + user_prompt_size + n_predict;'''
+new_stop = '''    // Update position using only the tokens that were actually decoded.
+    current_position += (int) user_tokens.size();
+    stop_generation_position = current_position + n_predict;'''
+if old_stop not in s:
+    raise SystemExit('Could not patch Android sample generation stop-position bug')
+s = s.replace(old_stop, new_stop, 1)
+
 p.write_text(s)
 PY
 
@@ -274,4 +290,4 @@ s = s.replace(old_prompt_error, new_prompt_error, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on ctx=1024 batch=1 threads=1 flash-attn=off q4-repack=off generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on ctx=2048 batch=64 threads=4 temp=0 flash-attn=off q4-repack=on generic-cpu)"
