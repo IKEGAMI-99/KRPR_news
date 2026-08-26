@@ -91,7 +91,8 @@ def bad_image(url: str | None) -> bool:
         for marker in (
             "qrcode", "qr_", "qr-", "ewm", "favicon", "icon", "logo",
             "avatar", "download", "appstore", "googleplay", "blank.gif",
-            "spacer.gif", "default.png",
+            "spacer.gif", "default.png", "/r/cms/", "page3_title",
+            "page_title",
         )
     )
 
@@ -223,6 +224,14 @@ def main() -> None:
             existing = []
     except Exception:
         existing = []
+
+    # Strip known QR codes, CMS chrome and placeholder artwork from all source
+    # types. A clean gradient is less insulting than a giant QR code masquerading
+    # as a news thumbnail.
+    for row in existing:
+        image = row.get("imageUrl")
+        if image and bad_image(image):
+            row["imageUrl"] = None
 
     merged = {row.get("sourceUrl"): row for row in existing if row.get("sourceUrl")}
     added = 0
