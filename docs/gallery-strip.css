@@ -1,7 +1,10 @@
-/* Always-visible, swipeable article images. The source artwork is shown whole,
-   without the old cover-style crop. */
+/* Image layout:
+   - 1 image: keep the large cover thumbnail at the top.
+   - 2+ images: keep the cover thumbnail and show an always-visible swipe strip
+     below the article text. Slider artwork is never cropped. */
+
 .card-image-link {
-  display: none !important;
+  display: block !important;
 }
 
 .article-gallery,
@@ -13,7 +16,7 @@
   display: flex;
   gap: 10px;
   margin-top: 14px;
-  padding: 1px 2px 6px;
+  padding: 1px 2px 7px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: x mandatory;
@@ -26,8 +29,8 @@
 
 .inline-image-slide {
   position: relative;
-  flex: 0 0 min(270px, 72vw);
-  height: 220px;
+  flex: 0 0 min(250px, 68vw);
+  height: 210px;
   min-width: 0;
   padding: 0;
   overflow: hidden;
@@ -77,8 +80,8 @@
     gap: 9px;
   }
   .inline-image-slide {
-    flex-basis: min(310px, 72vw);
-    height: clamp(190px, 52vw, 250px);
+    flex-basis: min(280px, 68vw);
+    height: clamp(180px, 46vw, 230px);
     border-radius: 15px;
   }
 }
