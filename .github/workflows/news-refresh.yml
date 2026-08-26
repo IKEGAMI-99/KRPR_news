@@ -11,6 +11,7 @@ on:
       - 'scripts/enrich_sources.py'
       - 'scripts/discover_web_news.py'
       - 'scripts/discover_web_news_v2.py'
+      - 'scripts/enrich_images.py'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -33,6 +34,7 @@ jobs:
           python scripts/enrich_sources.py
           python scripts/discover_web_news.py
           python scripts/discover_web_news_v2.py
+          python scripts/enrich_images.py
 
       - name: Commit cache when changed
         run: |
