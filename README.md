@@ -10,16 +10,16 @@
 ## ✨ できること
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムライン
-- 公式サイト、SNS、動画、ゲームメディア、プレス記事を横断収集
+- 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、Steam、プレス記事、Webニュースを横断収集
 - APIキー不要の公開ページ / RSS / RSSHub 等を利用した収集
-- 画像付きニュースカード
-- 記事内画像の複数画像ギャラリー
-- 地域フィルター / 検索
-- ライト / ダークテーマ
+- 画像付きニュースカード / 複数画像ギャラリー / 全画面画像ビューア
+- 小さすぎる画像、アイコン、ロゴ、QRなどの除外
+- 地域フィルター / 検索 / SNS共有
+- キラキラ系ライトテーマ / 病みカワ系ダークテーマ
 - ホーム画面追加に対応したPWA
-- オフライン用のアプリシェルキャッシュ
 - GitHub Actions 上のローカルLLMによる日本語翻訳 / 要約
-- 原文を保持したまま日本語表示へ切り替え
+- 原文表示への切り替え
+- AI結果がおかしい記事の再翻訳 / 再要約依頼
 
 ## 📱 インストール
 
@@ -42,7 +42,9 @@ PR TIMES / ゲームメディア / 一般ニュース
                 ↓
          GitHub Actions
                 ↓
-     本文・日時・画像を整理
+   本文・元記事日時・画像を整理
+                ↓
+  小さい画像 / 重複 / 不正候補を除外
                 ↓
           data/news.json
                 ↓
@@ -58,18 +60,17 @@ PR TIMES / ゲームメディア / 一般ニュース
 | 🇰🇷 韓国 | 公式X / 公式TikTok / 公式YouTube / 韓国Webニュース |
 | 🌐 Global | 公式サイト / 公式X / 公式TikTok / 公式YouTube / Steam / 海外Webニュース |
 
-SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。取得経路は複数用意し、失敗したソースがあっても他のソースからニュースを継続できる構成にしています。
+Webニュースの発見には公開RSS等を利用しますが、**Google Newsのプロキシ記事はタイムラインへ保存しません**。元記事URLと元記事側の公開日時を優先し、日時は `data/article_dates.json` に保持して後の収集で不自然に前後しないようにします。
+
+SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。
 
 ## 🖼️ 画像
 
-記事ページやフィードから以下を候補として収集します。
+記事ページやフィードから `og:image`、`twitter:image`、RSS/Atom media/enclosure、記事本文画像などを候補として収集します。
 
-- `og:image`
-- `twitter:image`
-- RSS / Atom の media / enclosure
-- 記事本文中の画像
+URL上のfavicon、ロゴ、QR、アバター等の除外に加え、画像本体を取得できる場合は実寸を検査します。現在は短辺260px未満、または約15万画素未満の画像を低解像度候補として除外します。検査結果は `data/image_quality.json` にキャッシュし、毎時すべてを再取得しません。
 
-favicon、ロゴ、QRコード、アバター、小さすぎる画像などは可能な範囲で除外します。記事に複数の有効画像がある場合は `imageUrls` に保存し、PWA内のギャラリーから閲覧できます。
+PWA側でも画像の実寸を確認するため、サーバー側で寸法を判定できなかった小画像が混ざってもカードや全画面ビューアから除外します。
 
 ## 🤖 AI翻訳・要約
 
@@ -94,6 +95,12 @@ data/news.json へ反映
 
 固有名詞は `data/translation_glossary.json` の辞書を優先し、辞書にない名称は無理に日本語公式名へ変換しない方針です。
 
+### AI結果の再生成
+
+AI処理済みの記事には「再要約」または「再翻訳・要約」ボタンが表示されます。静的なGitHub Pagesへ書き込み用トークンを埋め込まないため、ボタンは記事ID入りのGitHub Issue作成画面を開きます。
+
+リポジトリ所有者がそのIssueを投稿すると `regenerate-ai.yml` が起動し、対象記事だけQwenで再生成して `data/translations.json` / `data/news.json` を更新します。第三者が同じ形式のIssueを作ってもAIジョブは起動しません。
+
 > [!NOTE]
 > 小型ローカルLLMによる翻訳・要約のため、誤訳や不自然な表現が発生する可能性があります。重要な内容は必ず元記事も確認してください。
 
@@ -102,17 +109,25 @@ data/news.json へ反映
 ```text
 KRPR_news/
 ├─ .github/workflows/
-│  ├─ news-refresh.yml   # ニュース収集 + LLM翻訳/要約
-│  └─ pages.yml          # GitHub PagesへPWAを公開
+│  ├─ news-refresh.yml       # ニュース収集 + 整理 + LLM翻訳/要約
+│  ├─ regenerate-ai.yml      # 指定記事のAI結果を再生成
+│  └─ pages.yml              # GitHub PagesへPWAを公開
 ├─ data/
 │  ├─ news.json
 │  ├─ translations.json
-│  └─ translation_glossary.json
+│  ├─ translation_glossary.json
+│  ├─ article_dates.json
+│  └─ image_quality.json
 ├─ docs/
 │  ├─ index.html
 │  ├─ app.js
+│  ├─ ui_fixes.js
+│  ├─ share.js
+│  ├─ regenerate.js
 │  ├─ styles.css
-│  ├─ ai.css
+│  ├─ theme-kawaii.css
+│  ├─ layout-fixes.css
+│  ├─ regenerate.css
 │  ├─ manifest.webmanifest
 │  ├─ sw.js
 │  └─ icon.svg
@@ -120,23 +135,22 @@ KRPR_news/
    ├─ fetch_news.py
    ├─ merge_direct_official.py
    ├─ enrich_sources.py
+   ├─ enrich_social_images.py
    ├─ discover_web_news.py
-   ├─ discover_web_news_v2.py
    ├─ enrich_images.py
-   └─ translate_news_llm.py
+   ├─ filter_small_images.py
+   ├─ normalize_news.py
+   ├─ translate_news_llm.py
+   └─ regenerate_ai.py
 ```
 
 ## 🔄 自動更新
 
-`news-refresh.yml` がニュースデータを更新し、変更がmainへ反映されるとGitHub Pages側も更新されます。
-
-PWAのService Workerはアプリシェルをキャッシュしつつ、ニュースデータは新しい内容を取得できるよう更新します。
+`news-refresh.yml` がニュースデータを更新し、変更をmainへ保存します。PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
 
 ## 💰 運用コスト
 
-現在の構成は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料APIを前提にしていません。
-
-GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
+現在の構成は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料APIを前提にしていません。GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
 
 ## 🔒 プライバシー
 
@@ -147,6 +161,4 @@ GitHubや外部サービスの料金・利用条件は将来変更される可�
 
 ## ⚖️ コンテンツと免責
 
-各記事は元の公開ページへリンクします。記事本文・画像等の権利は各権利者に帰属します。
-
-公開ページ、RSS、RSSHub、検索結果などの仕様や各サービスの規約変更により、取得方法や取得可能なソースは変わることがあります。
+各記事は元の公開ページへリンクします。記事本文・画像等の権利は各権利者に帰属します。公開ページ、RSS、RSSHub、検索結果などの仕様や各サービスの規約変更により、取得方法や取得可能なソースは変わることがあります。
