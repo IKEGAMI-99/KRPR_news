@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/fetch_news.py'
       - 'scripts/merge_direct_official.py'
+      - 'scripts/enrich_sources.py'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -27,6 +28,7 @@ jobs:
         run: |
           python scripts/fetch_news.py
           python scripts/merge_direct_official.py
+          python scripts/enrich_sources.py
 
       - name: Commit cache when changed
         run: |
