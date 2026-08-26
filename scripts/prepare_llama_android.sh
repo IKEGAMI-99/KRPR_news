@@ -47,8 +47,7 @@ android {
                 arguments += "-DLLAMA_OPENSSL=OFF"
                 arguments += "-DGGML_NATIVE=OFF"
                 arguments += "-DGGML_BACKEND_DL=ON"
-                // Keep the conservative generic arm64 backend, but restore Q4_0
-                // repacking now that the v0.3.8 crash was proven to be Jinja-related.
+                // Keep the conservative generic arm64 backend and stable Q4_0 repack path.
                 arguments += "-DGGML_CPU_ALL_VARIANTS=OFF"
                 arguments += "-DGGML_CPU_REPACK=ON"
                 arguments += "-DGGML_CPU_KLEIDIAI=OFF"
@@ -89,8 +88,7 @@ import sys
 p = Path(sys.argv[1])
 s = p.read_text()
 
-# v0.3.9 proved the model and Jinja path are stable. Restore a practical mobile
-# CPU profile while keeping the generic backend and Flash Attention disabled.
+# Keep the stable v0.3.10 mobile performance profile.
 s = s.replace('constexpr int   N_THREADS_MIN           = 2;',
               'constexpr int   N_THREADS_MIN           = 4;')
 s = s.replace('constexpr int   N_THREADS_MAX           = 4;',
@@ -101,8 +99,9 @@ s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
               'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
               'constexpr int   BATCH_SIZE              = 64;')
+# Gemma 4's model card recommends temperature=1.0, top_p=0.95, top_k=64.
 s = s.replace('constexpr float DEFAULT_SAMPLER_TEMP    = 0.3f;',
-              'constexpr float DEFAULT_SAMPLER_TEMP    = 0.0f;')
+              'constexpr float DEFAULT_SAMPLER_TEMP    = 1.0f;')
 
 checks = [
     'constexpr int   N_THREADS_MIN           = 4;',
@@ -110,13 +109,30 @@ checks = [
     'constexpr int   N_THREADS_HEADROOM      = 0;',
     'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;',
     'constexpr int   BATCH_SIZE              = 64;',
-    'constexpr float DEFAULT_SAMPLER_TEMP    = 0.0f;',
+    'constexpr float DEFAULT_SAMPLER_TEMP    = 1.0f;',
 ]
 for check in checks:
     if check not in s:
-        raise SystemExit(f'Could not patch performance setting: {check}')
+        raise SystemExit(f'Could not patch performance/sampling setting: {check}')
 
-# Keep the ordinary attention path for now. The main speed recovery comes from
+old_sampler = '''static common_sampler *new_sampler(float temp) {
+    common_params_sampling sparams;
+    sparams.temp = temp;
+    return common_sampler_init(g_model, sparams);
+}'''
+new_sampler = '''static common_sampler *new_sampler(float temp) {
+    common_params_sampling sparams;
+    sparams.temp = temp;
+    sparams.top_k = 64;
+    sparams.top_p = 0.95f;
+    sparams.min_p = 0.0f;
+    return common_sampler_init(g_model, sparams);
+}'''
+if old_sampler not in s:
+    raise SystemExit('Could not patch Gemma 4 sampler settings')
+s = s.replace(old_sampler, new_sampler, 1)
+
+# Keep the ordinary attention path for now. The performance recovery comes from
 # batching, four CPU threads and Q4_0 repacking without mixing in another backend.
 needle = '''    ctx_params.n_threads = n_threads;
     ctx_params.n_threads_batch = n_threads;'''
@@ -127,9 +143,7 @@ if needle not in s:
     raise SystemExit('Could not patch Flash Attention setting in ai_chat.cpp')
 s = s.replace(needle, replacement, 1)
 
-# The Gemma 4 GGUF carries a custom Jinja chat template. The upstream Android
-# sample hard-codes use_jinja=false, which throws std::runtime_error before the
-# first llama_decode and aborts the :ai process. Use llama.cpp's Jinja/minja path.
+# The Gemma 4 GGUF carries a custom Jinja chat template. Use llama.cpp's Jinja/minja path.
 old_template = '''    auto formatted = common_chat_format_single(
             g_chat_templates.get(), chat_msgs, new_msg, role == ROLE_USER, /* use_jinja */ false);'''
 new_template = '''    auto formatted = common_chat_format_single(
@@ -138,8 +152,7 @@ if old_template not in s:
     raise SystemExit('Could not enable Jinja chat template formatting in ai_chat.cpp')
 s = s.replace(old_template, new_template, 1)
 
-# Never allow a C++ template exception to unwind across JNI and terminate the
-# Android process. Convert it into a normal native error code instead.
+# Never allow a C++ template exception to unwind across JNI and terminate Android.
 old_system = '''    if (has_chat_template) {
         formatted_system_prompt = chat_add_and_format(ROLE_SYSTEM, system_prompt);
     }
@@ -176,32 +189,8 @@ if old_user not in s:
     raise SystemExit('Could not add user prompt template exception guard')
 s = s.replace(old_user, new_user, 1)
 
-# Translation/summary requests are independent jobs, not a chat conversation.
-# Clear chat/KV history before every user prompt while keeping model weights loaded.
-old = '''Java_com_arm_aichat_internal_InferenceEngineImpl_processUserPrompt(
-        JNIEnv *env,
-        jobject /*unused*/,
-        jstring juser_prompt,
-        jint n_predict
-) {
-    // Reset short-term states
-    reset_short_term_states();'''
-new = '''Java_com_arm_aichat_internal_InferenceEngineImpl_processUserPrompt(
-        JNIEnv *env,
-        jobject /*unused*/,
-        jstring juser_prompt,
-        jint n_predict
-) {
-    // Kirapara News runs independent translation/summary jobs.
-    reset_long_term_states();
-    reset_short_term_states();'''
-if old not in s:
-    raise SystemExit('Could not patch independent prompt reset in ai_chat.cpp')
-s = s.replace(old, new, 1)
-
 # Upstream Android sample double-counts the user prompt when calculating the stop
-# position. That made maxPredict=96 generate hundreds of pieces and hit the 5 min
-# app timeout. Count only tokens actually decoded, then add n_predict once.
+# position. Count only tokens actually decoded, then add n_predict once.
 old_stop = '''    // Update position
     current_position += user_prompt_size;
     stop_generation_position = current_position + user_prompt_size + n_predict;'''
@@ -212,6 +201,31 @@ if old_stop not in s:
     raise SystemExit('Could not patch Android sample generation stop-position bug')
 s = s.replace(old_stop, new_stop, 1)
 
+p.write_text(s)
+PY
+
+# common_chat_format_single() creates common_chat_templates_inputs whose default
+# enable_thinking is true. Disable it explicitly so Gemma 4 does not inject the
+# thinking channel for translation/summary jobs. This is the real template-level
+# switch; merely omitting <|think|> from our own system prompt is not sufficient.
+python3 - "$VENDOR_DIR/common/chat.cpp" <<'PY'
+from pathlib import Path
+import sys
+
+p = Path(sys.argv[1])
+s = p.read_text()
+old = '''    common_chat_templates_inputs inputs;
+    inputs.use_jinja = use_jinja;
+    inputs.add_bos   = tmpls->add_bos;
+    inputs.add_eos   = tmpls->add_eos;'''
+new = '''    common_chat_templates_inputs inputs;
+    inputs.use_jinja        = use_jinja;
+    inputs.enable_thinking  = false;
+    inputs.add_bos          = tmpls->add_bos;
+    inputs.add_eos          = tmpls->add_eos;'''
+if old not in s:
+    raise SystemExit('Could not disable thinking in common_chat_format_single')
+s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
@@ -239,8 +253,8 @@ s = s.replace(old, new, 1)
 p.write_text(s)
 PY
 
-# Patch the Android wrapper: keep SAF compatibility and propagate native prompt
-# formatting failures as normal Kotlin exceptions instead of silently ending a Flow.
+# Patch the Android wrapper: keep SAF compatibility, allow a fresh system prompt
+# before every independent translation/summary job, and propagate native errors.
 python3 - "$LIB_DIR/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt" <<'PY'
 from pathlib import Path
 import sys
@@ -267,6 +281,19 @@ if old not in s:
     raise SystemExit('Could not patch SAF /proc/self/fd access check')
 s = s.replace(old, new, 1)
 
+old_system_ready = '''            check(_readyForSystemPrompt) { "System prompt must be set ** RIGHT AFTER ** model loaded!" }
+            check(_state.value is InferenceEngine.State.ModelReady) {
+                "Cannot process system prompt in ${_state.value.javaClass.simpleName}!"
+            }
+'''
+new_system_ready = '''            check(_state.value is InferenceEngine.State.ModelReady) {
+                "Cannot process system prompt in ${_state.value.javaClass.simpleName}!"
+            }
+'''
+if old_system_ready not in s:
+    raise SystemExit('Could not allow per-request system prompt reset')
+s = s.replace(old_system_ready, new_system_ready, 1)
+
 old_prompt_error = '''            processUserPrompt(message, predictLength).let { result ->
                 if (result != 0) {
                     Log.e(TAG, "Failed to process user prompt: $result")
@@ -290,4 +317,4 @@ s = s.replace(old_prompt_error, new_prompt_error, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on ctx=2048 batch=64 threads=4 temp=0 flash-attn=off q4-repack=on generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on thinking=off ctx=2048 batch=64 threads=4 temp=1 top-p=0.95 top-k=64 flash-attn=off q4-repack=on generic-cpu)"
