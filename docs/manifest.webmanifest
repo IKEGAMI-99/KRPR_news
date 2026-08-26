@@ -1,0 +1,20 @@
+{
+  "name": "Kirapara News",
+  "short_name": "Kirapara",
+  "description": "きらめきパラダイス / 以闪亮之名 / Life Makeover / 스타일라잇 の公式ニュースまとめ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b0c10",
+  "theme_color": "#101116",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
