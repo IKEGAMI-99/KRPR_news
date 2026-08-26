@@ -15,8 +15,9 @@ GLOSSARY_PATH = ROOT / "data" / "translation_glossary.json"
 
 MODEL_ID = "Qwen/Qwen2.5-3B-Instruct-GGUF"
 MODEL_VARIANT = "Q4_K_M"
-MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-v1"
-CACHE_VERSION = 1
+MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2"
+CACHE_VERSION = 2
+SUMMARY_FORMAT_VERSION = 2
 
 TRANSLATION_FIELDS = ("titleJa", "bodyJa", "summaryJa")
 
@@ -57,12 +58,12 @@ def normalized_cache(raw) -> dict:
     return {
         "version": CACHE_VERSION,
         "model": raw.get("model") or f"{MODEL_ID}:{MODEL_VARIANT}",
-        "modelRevision": raw.get("modelRevision") or MODEL_REVISION,
+        "modelRevision": MODEL_REVISION,
         "items": items,
     }
 
 
-def valid_entry(row: dict, entry) -> bool:
+def content_entry_valid(row: dict, entry) -> bool:
     if not isinstance(entry, dict):
         return False
     if entry.get("contentHash") != source_hash(row):
@@ -70,22 +71,32 @@ def valid_entry(row: dict, entry) -> bool:
     return all(isinstance(entry.get(field), str) and entry.get(field).strip() for field in TRANSLATION_FIELDS)
 
 
+def valid_entry(row: dict, entry) -> bool:
+    if not content_entry_valid(row, entry):
+        return False
+    return int(entry.get("summaryFormatVersion") or 0) == SUMMARY_FORMAT_VERSION
+
+
 def apply_cache(rows: list, cache: dict) -> int:
     applied = 0
     items = cache.get("items", {})
     for row in rows:
         entry = items.get(cache_key(row))
-        if valid_entry(row, entry):
+        # Keep existing translations visible while an old prose summary waits for
+        # the new bullet-point format to be regenerated.
+        if content_entry_valid(row, entry):
             for field in TRANSLATION_FIELDS:
                 row[field] = entry[field]
             row["aiProcessed"] = True
             row["aiModel"] = entry.get("model") or cache.get("model")
+            row["aiSummaryFormat"] = "facts-v2" if int(entry.get("summaryFormatVersion") or 0) == SUMMARY_FORMAT_VERSION else "legacy"
             applied += 1
         else:
             for field in TRANSLATION_FIELDS:
                 row.pop(field, None)
             row.pop("aiProcessed", None)
             row.pop("aiModel", None)
+            row.pop("aiSummaryFormat", None)
     return applied
 
 
@@ -131,6 +142,36 @@ def clean_output(value, max_len: int) -> str:
     return value[:max_len].strip()
 
 
+def normalize_bullet_summary(value) -> str:
+    value = clean_output(value, 900)
+    if not value:
+        return ""
+
+    raw_lines = [line.strip() for line in value.splitlines() if line.strip()]
+    if len(raw_lines) == 1:
+        one = re.sub(r"^[・●▪︎◦*\-]+\s*", "", raw_lines[0]).strip()
+        # If the model ignored the requested line breaks, split ordinary Japanese
+        # sentences so the UI still remains a compact fact list.
+        parts = [p.strip() for p in re.split(r"(?<=。)\s*", one) if p.strip()]
+        raw_lines = parts if len(parts) > 1 else [one]
+
+    bullets = []
+    seen = set()
+    for line in raw_lines:
+        line = re.sub(r"^[・●▪︎◦*\-]+\s*", "", line).strip()
+        if not line:
+            continue
+        line = line.rstrip("。 ")
+        if not line or line in seen:
+            continue
+        seen.add(line)
+        bullets.append("・" + line[:170])
+        if len(bullets) >= 5:
+            break
+
+    return "\n".join(bullets)
+
+
 def parse_json_object(text: str):
     text = (text or "").strip()
     try:
@@ -153,23 +194,41 @@ def build_messages(row: dict, retry_note: str = ""):
     body = str(row.get("body") or "").strip()[:1800]
     glossary = glossary_text()
 
-    common = """あなたは『きらめきパラダイス / 以闪亮之名 / Life Makeover / Stylight』専用のニュース翻訳・要約エンジンです。
+    common = """あなたは『きらめきパラダイス / 以闪亮之名 / Life Makeover / Stylight』専用のニュース翻訳・情報抽出エンジンです。
 必ず原文だけを根拠にしてください。原文にない情報、推測、補足、感想を追加してはいけません。
 日付、時刻、数値、星の数、報酬数、イベント期間は落とさず正確に保持してください。
 人物名・衣装名・イベント名・アイテム名などの固有名詞は、下の用語集に公式対応がある場合だけ置換してください。
 用語集にない固有名詞は、公式日本語名を創作せず、必要なら原語を残してください。
 宣伝文句は自然な日本語に整えて構いませんが、意味を強めたり弱めたりしないでください。
-要約は日本語で最大3文、重要情報を優先し、原文にない断定をしないでください。
+
+summaryJaは文章要約にしてはいけません。ニュースを見た人が事実だけを一瞬で把握できる、2〜5個の箇条書きにしてください。
+各行は必ず「・」から始め、1行につき1情報だけにしてください。
+原文に存在する項目だけを書き、存在しない項目を推測して埋めてはいけません。
+優先して抽出する情報は次の通りです。
+- 何が追加・公開・変更・復刻されたか
+- 開始日時、終了日時、開催期間、公開日
+- 入手方法、参加条件、解放条件
+- 衣装の星数、報酬、価格、回数など重要な数値
+- メンテナンスや仕様変更なら変更点
+
+例:
+・追加: 星6セット「○○」が登場
+・期間: 8月27日10:00〜9月16日23:59
+・入手: 限定ガチャ「○○」から獲得
+・報酬: ログイン7日でダイヤ×200
+
+「イベントが開催されます」「様々な報酬を獲得できます」のような曖昧な説明だけの行は禁止です。
+同じ情報の言い換えを重複させないでください。
 Markdown、コードブロック、前置き、説明文は禁止です。JSONオブジェクトだけを返してください。"""
 
     if region == "JAPAN":
-        task = """入力はすでに日本語です。翻訳はせず、summaryJaだけを作ってください。
+        task = """入力はすでに日本語です。翻訳はせず、summaryJaだけを事実の箇条書きで作ってください。
 出力形式:
-{\"summaryJa\":\"...\"}"""
+{\"summaryJa\":\"・追加: ...\\n・期間: ...\"}"""
     else:
-        task = """自然で読みやすい日本語に翻訳してください。
+        task = """titleJaとbodyJaは自然で読みやすい日本語に翻訳してください。summaryJaは翻訳文の作文要約ではなく、原文にある事実だけを箇条書きで抽出してください。
 出力形式:
-{\"titleJa\":\"...\",\"bodyJa\":\"...\",\"summaryJa\":\"...\"}"""
+{\"titleJa\":\"...\",\"bodyJa\":\"...\",\"summaryJa\":\"・追加: ...\\n・期間: ...\"}"""
 
     user_payload = {
         "region": region,
@@ -203,7 +262,7 @@ def validate_result(row: dict, obj) -> dict | None:
         if not title_ja or not body_ja:
             return None
 
-    summary_ja = clean_output(obj.get("summaryJa"), 700)
+    summary_ja = normalize_bullet_summary(obj.get("summaryJa"))
     if not summary_ja:
         return None
 
@@ -222,7 +281,7 @@ def validate_result(row: dict, obj) -> dict | None:
 def infer_one(llm, row: dict) -> dict | None:
     attempts = [
         "",
-        "前回の出力はJSONとして不正か、必須フィールドが欠けていました。指定したJSON形式だけを返し、内容を短くしすぎないでください。",
+        "前回の出力はJSONとして不正か、必須フィールドが欠けていました。指定したJSON形式だけを返し、summaryJaは必ず「・」で始まる事実の箇条書きにしてください。",
     ]
     for retry_note in attempts:
         try:
@@ -326,6 +385,7 @@ def cmd_translate(args) -> int:
             **result,
             "model": f"{MODEL_ID}:{MODEL_VARIANT}",
             "modelRevision": MODEL_REVISION,
+            "summaryFormatVersion": SUMMARY_FORMAT_VERSION,
             "updatedAtEpoch": int(time.time()),
         }
         cache["items"][key] = entry
