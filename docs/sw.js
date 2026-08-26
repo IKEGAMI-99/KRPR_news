@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v7';
+const CACHE_NAME = 'kirapara-pwa-shell-v8';
 const APP_SHELL = [
   './',
   './index.html',
@@ -7,9 +7,11 @@ const APP_SHELL = [
   './share.css',
   './theme-kawaii.css',
   './layout-fixes.css',
+  './regenerate.css',
   './app.js',
   './ui_fixes.js',
   './share.js',
+  './regenerate.js',
   './theme-kawaii.js',
   './manifest.webmanifest',
   './icon.svg'
@@ -35,7 +37,6 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // News data is network-first in app.js and backed by localStorage.
   if (url.hostname === 'raw.githubusercontent.com') return;
 
   event.respondWith(
