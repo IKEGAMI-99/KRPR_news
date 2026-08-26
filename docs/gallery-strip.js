@@ -39,8 +39,7 @@
     slides.forEach((slide, index) => {
       const count = slide.querySelector('.inline-image-count');
       if (!count) return;
-      count.textContent = slides.length > 1 ? `${index + 1}/${slides.length}` : '';
-      count.hidden = slides.length <= 1;
+      count.textContent = `${index + 1}/${slides.length}`;
     });
   }
 
@@ -48,17 +47,25 @@
     if (card.dataset.inlineGallery === '1') return;
     card.dataset.inlineGallery = '1';
 
-    // The old cover thumbnail duplicates the same artwork and crops it. Hide it
-    // even when no usable image exists, so text-only posts stay compact.
     const oldHero = card.querySelector('.card-image-link');
-    if (oldHero) oldHero.hidden = true;
-
     const oldGallery = card.querySelector('.article-gallery');
     if (oldGallery) oldGallery.hidden = true;
     card.querySelector('.gallery-button')?.setAttribute('hidden', '');
 
     const urls = sourceUrls(card);
+
+    // No usable image: keep the normal fallback hero.
     if (!urls.length) return;
+
+    // One image: use the original large hero only, just like before.
+    if (urls.length === 1) {
+      if (oldHero) oldHero.hidden = false;
+      return;
+    }
+
+    // Multiple images: keep a representative hero at the top and add the
+    // always-visible swipe strip below the article body.
+    if (oldHero) oldHero.hidden = false;
 
     const body = card.querySelector('.card-body');
     if (!body) return;
@@ -66,7 +73,7 @@
     const strip = document.createElement('div');
     strip.className = 'inline-image-strip';
     strip.setAttribute('role', 'group');
-    strip.setAttribute('aria-label', '記事画像。横にスワイプできます');
+    strip.setAttribute('aria-label', `${urls.length}枚の記事画像。横にスワイプできます`);
 
     urls.forEach((url) => {
       const button = document.createElement('button');
@@ -89,19 +96,23 @@
         if (goodImage(img)) return;
         button.remove();
         updateCounts(strip);
-        if (!strip.querySelector('.inline-image-slide')) strip.remove();
+        const remaining = strip.querySelectorAll('.inline-image-slide').length;
+        if (remaining < 2) strip.remove();
       });
       img.addEventListener('error', () => {
         button.remove();
         updateCounts(strip);
-        if (!strip.querySelector('.inline-image-slide')) strip.remove();
+        const remaining = strip.querySelectorAll('.inline-image-slide').length;
+        if (remaining < 2) strip.remove();
       }, { once: true });
 
       button.addEventListener('click', () => {
         const slides = [...strip.querySelectorAll('.inline-image-slide')];
         const currentIndex = Math.max(0, slides.indexOf(button));
         const images = viewerUrls(strip);
-        if (images.length && typeof openViewer === 'function') openViewer(images, Math.min(currentIndex, images.length - 1));
+        if (images.length && typeof openViewer === 'function') {
+          openViewer(images, Math.min(currentIndex, images.length - 1));
+        }
       });
 
       button.append(img, count);
