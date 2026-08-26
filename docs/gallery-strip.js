@@ -53,22 +53,17 @@
     card.querySelector('.gallery-button')?.setAttribute('hidden', '');
 
     const urls = sourceUrls(card);
-
-    // No usable image: keep the normal fallback hero.
     if (!urls.length) return;
 
-    // One image: use the original large hero only, just like before.
+    // One image: original large cover only.
     if (urls.length === 1) {
       if (oldHero) oldHero.hidden = false;
       return;
     }
 
-    // Multiple images: keep a representative hero at the top and add the
-    // always-visible swipe strip below the article body.
+    // Two or more: large representative cover + compact swipe strip directly
+    // below it, then the article text.
     if (oldHero) oldHero.hidden = false;
-
-    const body = card.querySelector('.card-body');
-    if (!body) return;
 
     const strip = document.createElement('div');
     strip.className = 'inline-image-strip';
@@ -96,14 +91,12 @@
         if (goodImage(img)) return;
         button.remove();
         updateCounts(strip);
-        const remaining = strip.querySelectorAll('.inline-image-slide').length;
-        if (remaining < 2) strip.remove();
+        if (strip.querySelectorAll('.inline-image-slide').length < 2) strip.remove();
       });
       img.addEventListener('error', () => {
         button.remove();
         updateCounts(strip);
-        const remaining = strip.querySelectorAll('.inline-image-slide').length;
-        if (remaining < 2) strip.remove();
+        if (strip.querySelectorAll('.inline-image-slide').length < 2) strip.remove();
       }, { once: true });
 
       button.addEventListener('click', () => {
@@ -119,7 +112,8 @@
       strip.appendChild(button);
     });
 
-    body.insertAdjacentElement('afterend', strip);
+    if (oldHero) oldHero.insertAdjacentElement('afterend', strip);
+    else card.prepend(strip);
     updateCounts(strip);
   }
 
