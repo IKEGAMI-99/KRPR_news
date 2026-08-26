@@ -100,7 +100,7 @@ object AppLog {
             appendLine("Android: ${Build.VERSION.RELEASE} / API ${Build.VERSION.SDK_INT}")
             appendLine("ABI: ${Build.SUPPORTED_ABIS.joinToString()}")
             appendLine("Model: ${modelName ?: "not selected"}")
-            appendLine("AI backend: llama.cpp generic CPU/NEON · ctx=1024 · batch/ubatch=1 · threads=1 · flash-attn=off · q4-repack=off")
+            appendLine("AI backend: llama.cpp generic CPU/NEON · ctx=2048 · batch/ubatch=64 · threads=4 · temp=0 · flash-attn=off · q4-repack=on")
             appendLine()
             appendLine("Log")
             appendLine("---")
