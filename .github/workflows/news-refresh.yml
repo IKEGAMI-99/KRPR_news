@@ -28,6 +28,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Push-triggered runs can sit in the concurrency queue with an old
+          # event SHA. Always start from the current branch tip so a previous
+          # refresh commit cannot conflict with this run at the final rebase.
+          ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
