@@ -624,16 +624,6 @@
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787776816
     },
-    "https://weibo.com/7521830234/Rf2Vgm2pk": {
-      "contentHash": "cbe95f39f6cd719a99dbecde",
-      "titleJa": "以闪亮之名 #以闪亮之名# #闪亮喵语屋# #全网征集我的OOTD搭子#",
-      "bodyJa": "全方位展示合伙人绝美之作\n\n全网征集我的OOTD搭子「午夜篇」\n\n合伙人绝美作品展示\n\n你觉得这些作品怎么样？\n\n全世界，感受美神降临\n\n简直小蛋糕来的\n\n路过被萌晕\n\n❤️本期展示作品来自以下合伙人：\nWildest\n沐沐想星星\n炸鱼狂奔\nPenguin💠\n胡云zhen\nfoooooliao_\n吃鱼丸不（气愤版）\n哇叽吧唧呱啦哈\n南漪(限限限~流中)\n\n💎下载传送门： 网页链接 \n\n💎闪亮作品上映季活动传送门： 网页链接",
-      "summaryJa": "全方位展示合伙人绝美之作。全网征集我的OOTD搭子「午夜篇」。合伙人绝美作品展示。你觉得这些作品怎么样？全世界，感受美神降临。",
-      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787777241,
-      "regenerated": true
-    },
     "https://www.bilibili.com/opus/1240028786514198552": {
       "contentHash": "f360f32481d652afd8af4db6",
       "titleJa": "復刻追光活動｜棱彩分解商店限定特典品情報公開 棱彩幻夢 | 晶芯解体、時茧再生",
@@ -642,6 +632,16 @@
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787777436,
+      "regenerated": true
+    },
+    "https://weibo.com/7521830234/Rf2Vgm2pk": {
+      "contentHash": "cbe95f39f6cd719a99dbecde",
+      "titleJa": "以闪亮之名 #以闪亮之名# #闪亮喵语屋# #全网征集我的OOTD搭子#",
+      "bodyJa": "全方位展示合伙人绝美之作\n\n全网征集我的OOTD搭子「午夜篇」\n\n合伙人绝美作品展示\n\n你觉得这些作品怎么样？\n\n全世界，感受美神降临\n\n简直小蛋糕来的\n\n路过被萌晕\n\n❤️本期展示作品来自以下合伙人：\nWildest\n沐沐想星星\n炸鱼狂奔\nPenguin💠\n胡云zhen\nfoooooliao_\n吃鱼丸不（气愤版）\n哇叽吧唧呱啦哈\n南漪(限限限~流中)\n\n💎下载传送门： 网页链接 \n\n💎闪亮作品上映季活动传送门： 网页链接",
+      "summaryJa": "以闪亮之名 #以闪亮之名# #闪亮喵语屋# #全网征集我的OOTD搭子# 全方位展示合伙人绝美之作。全网征集我的OOTD搭子「午夜篇」。合伙人绝美作品展示。你觉得这些作品怎么样？全世界，感受美神降临。简直小蛋糕来的。路过被萌晕。本期展示作品来自以下合伙人：Wildest、沐沐想星星、炸鱼狂奔、Penguin💠、胡云zhen、foooooliao_、吃鱼丸不（气愤版）、哇叽吧唧呱啦哈、南漪(限限限~流中)。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787778000,
       "regenerated": true
     }
   }
