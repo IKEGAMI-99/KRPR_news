@@ -539,12 +539,6 @@
     "height": 1080,
     "checkedAt": 1787776438
   },
-  "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
-    "ok": false,
-    "width": 244,
-    "height": 212,
-    "checkedAt": 1787776438
-  },
   "https://pbs.twimg.com/media/HP_imFCakAAwZB7?format=jpg&name=orig": {
     "ok": true,
     "width": 945,
@@ -573,12 +567,6 @@
     "ok": false,
     "width": 264,
     "height": 264,
-    "checkedAt": 1787776438
-  },
-  "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
-    "ok": true,
-    "width": 616,
-    "height": 353,
     "checkedAt": 1787776438
   },
   "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig": {
@@ -1462,5 +1450,29 @@
     "width": 675,
     "height": 1200,
     "checkedAt": 1787778327
+  },
+  "https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
+    "ok": false,
+    "width": 244,
+    "height": 212,
+    "checkedAt": 1787780196
+  },
+  "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
+    "ok": true,
+    "width": 616,
+    "height": 353,
+    "checkedAt": 1787780196
+  },
+  "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1787780196
+  },
+  "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1787780196
   }
 }

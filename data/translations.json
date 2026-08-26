@@ -715,6 +715,33 @@
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787779728
+    },
+    "https://x.com/LifeMakeover510/status/2089676181297614855": {
+      "contentHash": "e6e0d09cf52b46fa899fb113",
+      "titleJa": "以闪亮之名 スcanted Mortals アピアランス パック",
+      "bodyJa": "以闪亮之名 スcanted Mortals アピアランス パック\n\n⏰8月19日 09:00 - 9月1日 23:59 UTC\n\nイベント期間中、パックを54%の割引で購入できます。パックにはダイナミックカメラポーズ [フラワーウイング]、シーン [ペタルガーデン]、ポーズ [ playful春 ]、カメラモーションなど、多数のアイテムが含まれています。",
+      "summaryJa": "以闪亮之名 スcanted Mortals アピアランス パックが8月19日から9月1日まで購入可能。割引で54%、ダイナミックカメラポーズやシーン、ポーズなど多数のアイテムが含まれています。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787780331
+    },
+    "https://x.com/LifeMakeover510/status/2089668630598615244": {
+      "contentHash": "f9b5a4661e1a6d8144c575e9",
+      "titleJa": "Cosmos Return Nail Pack",
+      "bodyJa": "Cosmos Return Nail Pack\n\n⏰8月19日 09:00 - 9月1日 23:59 UTC\n\nイベント期間中、パックを54%の割引で購入できます。パックには5スターのネイルセット[Loyal Return]、ネイルダイナミックポーズ[Universe Command]、トレンドカラー表紙x260、ゴールドx52888が含まれています。\n\n#LifeMakeover",
+      "summaryJa": "Cosmos Return Nail Packは8月19日から9月1日まで購入可能で、54%の割引で5スターのネイルセット、ネイルダイナミックポーズ、トレンドカラー表紙、ゴールドが含まれています。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787780351
+    },
+    "https://store.steampowered.com/news/app/2626940/view/681884487904136304": {
+      "contentHash": "1c8154454332682f43a3218b",
+      "titleJa": "バージョン更新",
+      "bodyJa": "8月19日のアップデート後の新コンテンツと最適化：1. 日常ミッションでQuick Deploy機能が追加されました。日常ミッションを行う際、Quick Deploy機能を使用することで、ミッションごとに Ally キャラクターを割り当てることで、より効率化が可能になります！2. Life Makeover x Guan Dazhou：新テーマソング砂嵐と山道を経由して、旅の途中のすべての障害は、家への遠くの光がより愛着をもって望むものとなります。Life MakeoverはGuan Dazhouと再び手を組み、張希雲の美しい歌声を提供することで、あなたに新しいバージョンのテーマソング Homeland Odeを提供します。パネルミュージックをタップして、将軍の故郷への旅を体験してください。3. 新しいストーリークエスト第42章：血痕の音 - 言葉を超えて8月31日から開催。 cageの外はもっと大きなもので、古い弦は上昇と下降を繰り返します。 おなじみの「Flora」さん、霧の中を闘う魂を救ってください。開催章が開いた後、新しい4星セット \\[Champagne Ballet]、4星セット \\[Sunset Tangerine]、4星セット \\[Daydream Walk]はファッショスタジオで crafting できます。第42章 Vvannaチャレンジも開催！5星アクセサリー \\[Heart Piercer]、ポーズ \\[Sealed In Time]、写真フレーム \\[Wind's Graffiti]が利用可能になります。新しい4星トップ \\[Wild Code]はVvannaショップに追加されます。4. ストアで新ファッションと他の報酬新4星ネックレス \\[Fruity Signal]と新4星腕時計 \\[Glaze Sky]がコンビニに追加されました。また、コンビニ、 Ally キャラクターのショップ、リバートショップ、Wonder Connect交換ショップで新アイテムが利用可能になります。ポーズ、チャットバブル、チャット背景のカバー、家具、写真フレーム、愛らしい効果なども含まれます。お気に入りを選びましょう！5. リバートショップで新ネイルセット、ファッショイン、他々新静止ネイルポーズ \\[Faint Sigh]が価値リバートに追加されます。",
+      "summaryJa": "日常ミッションのQuick Deploy機能が追加され、Life Makeover x Guan Dazhouの新テーマソングが提供されました。第42章のストーリークエストが開催され、新4星セットと新4星トップが追加されました。コンビニやリバートショップで新ファッションと新アイテムが提供されました。",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+      "updatedAtEpoch": 1787780424
     }
   }
 }
