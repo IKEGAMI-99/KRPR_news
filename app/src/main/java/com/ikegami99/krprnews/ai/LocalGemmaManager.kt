@@ -37,19 +37,22 @@ private data class GenerationResult(val text: String, val tokensPerSecond: Float
  * ユーザーが選択したGGUFをAndroid端末内で直接実行する。
  *
  * v0.3.7以降、重いllama.cpp処理は :ai サービスへ隔離する。
- * v0.3.8は最初のllama_decodeで落ちる原因を切り分けるため、context 1024、
- * batch/ubatch 1、1 thread、Flash Attention OFFの最小CPU構成を使う。
+ * v0.3.10ではJinjaクラッシュの原因が解消したため、診断用の超低速設定から
+ * context 2048 / batch 64 / 4 threadsへ戻し、最終回答だけをUIへ返す。
  *
  * SAFのcontent:// URIは初回だけアプリ専用モデル領域へコピーし、
  * llama.cppには通常ファイルパスを渡す。
  */
 object LocalGemmaManager {
-    private const val CACHE_PREFS = "krpr_local_ai_cache_v3"
-    private const val CONTEXT_LENGTH = 1024
+    // v4 intentionally invalidates v0.3.9 caches that may contain raw analysis text.
+    private const val CACHE_PREFS = "krpr_local_ai_cache_v4"
+    private const val CONTEXT_LENGTH = 2048
+    private const val BATCH_SIZE = 64
+    private const val THREADS = 4
     private const val LOAD_TIMEOUT_MS = 300_000L
-    private const val GENERATE_TIMEOUT_MS = 300_000L
-    private const val TRANSLATION_MAX_PREDICT_TOKENS = 192
-    private const val SUMMARY_MAX_PREDICT_TOKENS = 96
+    private const val GENERATE_TIMEOUT_MS = 180_000L
+    private const val TRANSLATION_MAX_PREDICT_TOKENS = 320
+    private const val SUMMARY_MAX_PREDICT_TOKENS = 128
 
     private val inferenceMutex = Mutex()
     private var loadedUri: String? = null
@@ -81,32 +84,32 @@ object LocalGemmaManager {
             readTranslationCache(context, modelUri, news)?.let { return@withLock it }
             val llama = ensureModelLocked(context.applicationContext, modelUri)
             val sourceLanguage = when (news.region) {
-                Region.CHINA -> "Chinese"
-                Region.GLOBAL -> "English"
-                Region.KOREA -> "Korean"
-                Region.JAPAN -> "Japanese"
+                Region.CHINA -> "中国語"
+                Region.GLOBAL -> "英語"
+                Region.KOREA -> "韓国語"
+                Region.JAPAN -> "日本語"
             }
             AppLog.i(context, "LocalGemma", "translation start region=${news.region} id=${news.id}")
             val result = completeLocked(
                 context = context,
                 llama = llama,
                 prompt = """
-                You are a professional Japanese game-localization translator.
-                Translate the following $sourceLanguage official game news into natural Japanese.
-                Preserve proper nouns, outfit/item names, dates, times, numbers, emoji, prices and event conditions accurately.
-                Do not summarize, omit details, explain, add commentary, or invent information.
-                Return ONLY a valid JSON object with exactly two string keys: "title" and "body".
+                これは翻訳だけを行うタスクです。以下の$sourceLanguageの公式ゲームニュースを、情報を省略せず自然な日本語へ翻訳してください。
+                内部の思考、分析、手順、説明、前置き、原文の解説は回答に書かないでください。
+                固有名詞、衣装名、アイテム名、日付、時刻、数値、絵文字、価格、イベント条件は正確に保持してください。
+                Markdownは使わず、最後の回答は必ず次の形式だけにしてください。
+                <FINAL_JSON>{"title":"日本語タイトル","body":"日本語本文"}</FINAL_JSON>
 
-                TITLE:
+                原文タイトル:
                 ${news.originalTitle}
 
-                BODY:
+                原文本文:
                 ${news.originalText}
                 """.trimIndent(),
                 maxPredictTokens = TRANSLATION_MAX_PREDICT_TOKENS,
                 mode = "translation"
             )
-            val translation = parseTranslation(result.text, news).copy(tokensPerSecond = result.tokensPerSecond)
+            val translation = parseTranslation(result.text).copy(tokensPerSecond = result.tokensPerSecond)
             writeTranslationCache(context, modelUri, news, translation)
             AppLog.i(context, "LocalGemma", "translation done id=${news.id} tps=${result.tokensPerSecond}")
             translation
@@ -126,22 +129,23 @@ object LocalGemmaManager {
                 context = context,
                 llama = llama,
                 prompt = """
-                以下の公式ゲームニュースを日本語で簡潔に要約してください。
-                日付、時間、イベント期間、報酬、衣装名、アイテム名、価格、参加条件など重要情報は落とさないでください。
-                原文にない情報を推測・追加しないでください。
-                見出しは付けず、自然な日本語2〜5文だけを返してください。
+                これは日本語要約だけを行うタスクです。以下の公式ゲームニュースを自然な日本語2〜5文で簡潔に要約してください。
+                内部の思考、分析、手順、説明、前置きは回答に書かないでください。
+                日付、時刻、イベント期間、報酬、衣装名、アイテム名、価格、参加条件など重要情報は残し、原文にない情報は追加しないでください。
+                Markdownや見出しは使わず、最後の回答は必ず次の形式だけにしてください。
+                <FINAL_JSON>{"summary":"日本語要約"}</FINAL_JSON>
 
-                タイトル:
+                原文タイトル:
                 ${news.originalTitle}
 
-                本文:
+                原文本文:
                 ${news.originalText}
                 """.trimIndent(),
                 maxPredictTokens = SUMMARY_MAX_PREDICT_TOKENS,
                 mode = "summary"
             )
             val summary = LocalAiSummary(
-                text = cleanModelText(result.text).ifBlank { "要約を生成できませんでした。" },
+                text = parseSummary(result.text),
                 tokensPerSecond = result.tokensPerSecond
             )
             writeSummaryCache(context, modelUri, news, summary)
@@ -259,7 +263,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
+            "model load start name=$name sourceSize=${sourceSize ?: -1} preparedSize=${preparedFile.length()} backend=official-llama-generic-cpu context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
         )
 
         try {
@@ -291,7 +295,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
+            "model load success name=$name context=$CONTEXT_LENGTH backend=generic CPU/NEON batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
         )
         return llama
     }
@@ -311,7 +315,7 @@ object LocalGemmaManager {
         AppLog.i(
             context,
             "LocalGemma",
-            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens context=$CONTEXT_LENGTH batch=1 threads=1 flashAttn=off pssMb=${Debug.getPss() / 1024}"
+            "generation dispatch mode=$mode promptChars=${prompt.length} maxPredict=$maxPredictTokens context=$CONTEXT_LENGTH batch=$BATCH_SIZE threads=$THREADS flashAttn=off q4Repack=on pssMb=${Debug.getPss() / 1024}"
         )
 
         withTimeout(GENERATE_TIMEOUT_MS) {
@@ -354,33 +358,47 @@ object LocalGemmaManager {
         loadedUri = null
     }
 
-    private fun parseTranslation(raw: String, news: NewsItem): LocalAiTranslation {
-        val cleaned = cleanModelText(raw)
-        val jsonPart = cleaned.substringAfter('{', "").let { inner ->
-            if (inner.isBlank()) null else "{" + inner.substringBeforeLast('}', inner) + "}"
+    private fun extractFinalJson(raw: String): JSONObject? {
+        val text = raw.trim()
+        val marker = "<FINAL_JSON>"
+        val markerEnd = "</FINAL_JSON>"
+        val start = text.lastIndexOf(marker)
+        val candidate = if (start >= 0) {
+            val contentStart = start + marker.length
+            val end = text.indexOf(markerEnd, contentStart).takeIf { it >= 0 } ?: text.length
+            text.substring(contentStart, end)
+        } else {
+            val firstBrace = text.indexOf('{')
+            val lastBrace = text.lastIndexOf('}')
+            if (firstBrace >= 0 && lastBrace > firstBrace) text.substring(firstBrace, lastBrace + 1) else ""
         }
-        if (!jsonPart.isNullOrBlank()) {
-            runCatching {
-                val json = JSONObject(jsonPart)
-                val title = json.optString("title").trim()
-                val body = json.optString("body").trim()
-                if (title.isNotBlank() || body.isNotBlank()) {
-                    return LocalAiTranslation(
-                        title = title.ifBlank { news.originalTitle },
-                        body = body.ifBlank { cleaned }
-                    )
-                }
-            }
-        }
-        return LocalAiTranslation(news.originalTitle, cleaned.ifBlank { news.originalText })
+        if (candidate.isBlank()) return null
+        val cleaned = candidate.trim()
+            .removePrefix("```json")
+            .removePrefix("```")
+            .removeSuffix("```")
+            .trim()
+        return runCatching { JSONObject(cleaned) }.getOrNull()
     }
 
-    private fun cleanModelText(value: String): String = value
-        .trim()
-        .removePrefix("```json")
-        .removePrefix("```")
-        .removeSuffix("```")
-        .trim()
+    private fun parseTranslation(raw: String): LocalAiTranslation {
+        val json = extractFinalJson(raw)
+            ?: throw IllegalStateException("翻訳の最終結果を取得できませんでした。もう一度実行してください。")
+        val title = json.optString("title").trim()
+        val body = json.optString("body").trim()
+        if (title.isBlank() || body.isBlank()) {
+            throw IllegalStateException("翻訳結果の形式が不完全でした。もう一度実行してください。")
+        }
+        return LocalAiTranslation(title = title, body = body)
+    }
+
+    private fun parseSummary(raw: String): String {
+        val json = extractFinalJson(raw)
+            ?: throw IllegalStateException("要約の最終結果を取得できませんでした。もう一度実行してください。")
+        return json.optString("summary").trim().ifBlank {
+            throw IllegalStateException("要約結果の形式が不完全でした。もう一度実行してください。")
+        }
+    }
 
     private fun readTranslationCache(context: Context, modelUri: String, news: NewsItem): LocalAiTranslation? {
         val raw = context.getSharedPreferences(CACHE_PREFS, Context.MODE_PRIVATE)
