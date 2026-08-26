@@ -1,6 +1,6 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v24';
+const CACHE_NAME = 'kirapara-pwa-shell-v25';
 const APP_SHELL = [
-  './','./index.html','./styles.css','./ai.css','./share.css','./theme-kawaii.css','./layout-fixes.css','./gallery-strip.css','./month-sections.css','./early-info.css','./topics.css','./menu.css','./menu-install.css','./regenerate.css','./app.js','./feed-status.js','./topics.js','./x-image-fix.js','./ui_fixes.js','./gallery-strip.js','./month-sections.js','./early-info.js','./share.js','./regenerate.js','./menu.js','./menu-install.js','./theme-kawaii.js','./manifest.webmanifest','./icon.svg'
+  './','./index.html','./styles.css','./ai.css','./share.css','./theme-kawaii.css','./layout-fixes.css','./gallery-strip.css','./month-sections.css','./early-info.css','./topics.css','./menu.css','./menu-install.css','./app.js','./feed-status.js','./topics.js','./x-image-fix.js','./ui_fixes.js','./gallery-strip.js','./month-sections.js','./early-info.js','./share.js','./menu.js','./menu-install.js','./theme-kawaii.js','./manifest.webmanifest','./icon.svg'
 ];
 self.addEventListener('install',(event)=>{event.waitUntil(caches.open(CACHE_NAME).then((cache)=>cache.addAll(APP_SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',(event)=>{event.waitUntil(caches.keys().then((keys)=>Promise.all(keys.filter((key)=>key!==CACHE_NAME).map((key)=>caches.delete(key)))).then(()=>self.clients.claim()));});
