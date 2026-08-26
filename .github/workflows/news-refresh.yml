@@ -11,8 +11,9 @@ on:
       - 'scripts/enrich_sources.py'
       - 'scripts/enrich_social_images.py'
       - 'scripts/discover_web_news.py'
-      - 'scripts/discover_web_news_v2.py'
       - 'scripts/enrich_images.py'
+      - 'scripts/filter_small_images.py'
+      - 'scripts/normalize_news.py'
       - 'scripts/translate_news_llm.py'
       - 'data/translation_glossary.json'
       - '.github/workflows/news-refresh.yml'
@@ -30,9 +31,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Push-triggered runs can sit in the concurrency queue with an old
-          # event SHA. Always start from the current branch tip so a previous
-          # refresh commit cannot conflict with this run at the final rebase.
           ref: main
           fetch-depth: 0
 
@@ -47,8 +45,9 @@ jobs:
           python scripts/enrich_sources.py
           python scripts/enrich_social_images.py
           python scripts/discover_web_news.py
-          python scripts/discover_web_news_v2.py
           python scripts/enrich_images.py
+          python scripts/filter_small_images.py
+          python scripts/normalize_news.py
 
       - name: Apply cached translations and plan LLM work
         id: llm_plan
@@ -105,13 +104,13 @@ jobs:
 
       - name: Commit cache when changed
         run: |
-          if git diff --quiet -- data/news.json data/translations.json; then
-            echo "No news or translation changes"
+          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json)" ]; then
+            echo "No news, date or translation changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/translations.json
-          git commit -m "chore: refresh news and AI translations"
+          git add data/news.json data/translations.json data/article_dates.json
+          git commit -m "chore: refresh normalized news and AI translations"
           git pull --rebase origin main
           git push
