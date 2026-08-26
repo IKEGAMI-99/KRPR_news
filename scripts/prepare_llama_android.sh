@@ -88,27 +88,29 @@ import sys
 p = Path(sys.argv[1])
 s = p.read_text()
 
-# Keep the stable v0.3.10 mobile performance profile.
+# Fast-but-conservative mobile profile. Keep four threads as the floor on older
+# arm64 devices, but allow modern 8-core Snapdragon-class SoCs to use up to six.
+# Batch 128 improves prompt/prefill throughput without the memory jump of 256/512.
 s = s.replace('constexpr int   N_THREADS_MIN           = 2;',
               'constexpr int   N_THREADS_MIN           = 4;')
 s = s.replace('constexpr int   N_THREADS_MAX           = 4;',
-              'constexpr int   N_THREADS_MAX           = 4;')
+              'constexpr int   N_THREADS_MAX           = 6;')
 s = s.replace('constexpr int   N_THREADS_HEADROOM      = 2;',
-              'constexpr int   N_THREADS_HEADROOM      = 0;')
+              'constexpr int   N_THREADS_HEADROOM      = 1;')
 s = s.replace('constexpr int   DEFAULT_CONTEXT_SIZE    = 8192;',
               'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;')
 s = s.replace('constexpr int   BATCH_SIZE              = 512;',
-              'constexpr int   BATCH_SIZE              = 64;')
+              'constexpr int   BATCH_SIZE              = 128;')
 # Gemma 4's model card recommends temperature=1.0, top_p=0.95, top_k=64.
 s = s.replace('constexpr float DEFAULT_SAMPLER_TEMP    = 0.3f;',
               'constexpr float DEFAULT_SAMPLER_TEMP    = 1.0f;')
 
 checks = [
     'constexpr int   N_THREADS_MIN           = 4;',
-    'constexpr int   N_THREADS_MAX           = 4;',
-    'constexpr int   N_THREADS_HEADROOM      = 0;',
+    'constexpr int   N_THREADS_MAX           = 6;',
+    'constexpr int   N_THREADS_HEADROOM      = 1;',
     'constexpr int   DEFAULT_CONTEXT_SIZE    = 2048;',
-    'constexpr int   BATCH_SIZE              = 64;',
+    'constexpr int   BATCH_SIZE              = 128;',
     'constexpr float DEFAULT_SAMPLER_TEMP    = 1.0f;',
 ]
 for check in checks:
@@ -133,7 +135,7 @@ if old_sampler not in s:
 s = s.replace(old_sampler, new_sampler, 1)
 
 # Keep the ordinary attention path for now. The performance recovery comes from
-# batching, four CPU threads and Q4_0 repacking without mixing in another backend.
+# batching, up to six CPU threads and Q4_0 repacking without mixing in another backend.
 needle = '''    ctx_params.n_threads = n_threads;
     ctx_params.n_threads_batch = n_threads;'''
 replacement = '''    ctx_params.n_threads = n_threads;
@@ -317,4 +319,4 @@ s = s.replace(old_prompt_error, new_prompt_error, 1)
 p.write_text(s)
 PY
 
-echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on thinking=off ctx=2048 batch=64 threads=4 temp=1 top-p=0.95 top-k=64 flash-attn=off q4-repack=on generic-cpu)"
+echo "Prepared official llama.cpp Android runtime at $LLAMA_COMMIT (Gemma4 Jinja=on thinking=off ctx=2048 batch=128 threads=4-6 temp=1 top-p=0.95 top-k=64 flash-attn=off q4-repack=on generic-cpu)"
