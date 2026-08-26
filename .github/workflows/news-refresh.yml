@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - 'scripts/fetch_news.py'
+      - 'scripts/merge_direct_official.py'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -23,7 +24,9 @@ jobs:
           python-version: '3.12'
 
       - name: Fetch public news in original languages
-        run: python scripts/fetch_news.py
+        run: |
+          python scripts/fetch_news.py
+          python scripts/merge_direct_official.py
 
       - name: Commit cache when changed
         run: |
