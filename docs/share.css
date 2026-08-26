@@ -1,0 +1,40 @@
+.share-button {
+  min-height: 38px;
+  padding: 9px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--surface-2);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .16s ease, background .16s ease, opacity .16s ease;
+}
+
+.share-button:hover { background: var(--surface-3); }
+.share-button:active { transform: scale(.96); }
+.share-button:disabled { cursor: wait; opacity: .6; }
+.share-button.is-sharing .share-button-icon { animation: share-pulse .8s ease-in-out infinite alternate; }
+
+.share-button-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+@keyframes share-pulse {
+  from { transform: scale(.9); opacity: .6; }
+  to { transform: scale(1.08); opacity: 1; }
+}
+
+@media (max-width: 520px) {
+  .share-button { padding-inline: 11px; }
+}
