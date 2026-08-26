@@ -1,0 +1,86 @@
+.month-divider {
+  grid-column: 1 / -1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 4px;
+  min-height: 46px;
+}
+
+.month-divider::before,
+.month-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 42%, transparent));
+}
+.month-divider::after {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent-2) 42%, transparent), transparent);
+}
+
+.month-ribbon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 118px;
+  padding: 8px 18px 9px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  border-radius: 999px;
+  color: var(--text);
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb, #ffd9ef 68%, var(--surface)),
+      color-mix(in srgb, #d9c8ff 62%, var(--surface)) 52%,
+      color-mix(in srgb, #bfe7ff 62%, var(--surface)));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.55),
+    0 7px 22px color-mix(in srgb, var(--accent) 13%, transparent);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+.month-sparkle {
+  flex: none;
+  color: var(--accent);
+  font-size: 14px;
+  text-shadow: 0 0 13px color-mix(in srgb, var(--accent) 55%, transparent);
+  animation: monthTwinkle 2.8s ease-in-out infinite;
+}
+.month-sparkle-right {
+  color: var(--accent-2);
+  animation-delay: -1.2s;
+}
+
+:root:not([data-theme="light"]) .month-ribbon {
+  color: #fff1fa;
+  background:
+    linear-gradient(135deg,
+      rgba(104, 35, 82, .92),
+      rgba(69, 45, 113, .94) 52%,
+      rgba(34, 64, 102, .92));
+  border-color: rgba(255, 137, 210, .18);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    0 0 20px rgba(255, 110, 194, .13),
+    0 7px 24px rgba(0,0,0,.18);
+}
+
+@keyframes monthTwinkle {
+  0%, 100% { transform: scale(.88) rotate(-4deg); opacity: .46; }
+  50% { transform: scale(1.14) rotate(5deg); opacity: 1; }
+}
+
+@media (max-width: 700px) {
+  .month-divider { margin: 16px 0 2px; gap: 7px; }
+  .month-ribbon { min-width: 108px; padding: 7px 15px 8px; font-size: 12px; }
+  .month-sparkle { font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .month-sparkle { animation: none; }
+}
