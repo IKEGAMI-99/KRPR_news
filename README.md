@@ -1,242 +1,152 @@
 # Kirapara News ✨
 
-日本版「きらめきパラダイス」、中国版「以闪亮之名」、グローバル版「Life Makeover」、韓国版「Stylight」の公式ニュースを1つのタイムラインで追うための**非公式Androidファンアプリ**です。
+日本版「きらめきパラダイス」、中国版「以闪亮之名」、グローバル版「Life Makeover」、韓国版「Stylight」のニュースを1つのタイムラインで追うための**非公式PWAニュースアプリ**です。
+
+🌐 **PWA:** https://ikegami-99.github.io/KRPR_news/
 
 > [!IMPORTANT]
-> 本アプリは非公式ファンアプリです。Archosaur Games、VVANNA GIRLS、各地域の運営会社・SNS事業者とは関係ありません。
+> Kirapara News は非公式ファンプロジェクトです。Archosaur Games、VVANNA GIRLS、各地域の運営会社、SNS・ニュース各社とは関係ありません。
 
-## 📥 最新版APK
+## ✨ できること
 
-**現在の正式版: v0.3.4**
+- 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムライン
+- 公式サイト、SNS、動画、ゲームメディア、プレス記事を横断収集
+- APIキー不要の公開ページ / RSS / RSSHub 等を利用した収集
+- 画像付きニュースカード
+- 記事内画像の複数画像ギャラリー
+- 地域フィルター / 検索
+- ライト / ダークテーマ
+- ホーム画面追加に対応したPWA
+- オフライン用のアプリシェルキャッシュ
+- GitHub Actions 上のローカルLLMによる日本語翻訳 / 要約
+- 原文を保持したまま日本語表示へ切り替え
 
-### [⬇️ Kirapara News v0.3.4 APKをダウンロード](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.4/Kirapara-News-v0.3.4.apk)
+## 📱 インストール
 
-- [SHA-256ファイル](https://github.com/IKEGAMI-99/KRPR_news/releases/download/v0.3.4/Kirapara-News-v0.3.4.apk.sha256)
-- [最新のGitHub Release](https://github.com/IKEGAMI-99/KRPR_news/releases/latest)
-- [すべてのReleases](https://github.com/IKEGAMI-99/KRPR_news/releases)
+APKは使用しません。ブラウザからPWAを開いてホーム画面へ追加します。
 
-> [!WARNING]
-> APKは必ず `IKEGAMI-99/KRPR_news` のGitHub Releasesから取得してください。第三者が再配布したAPKは使用しないでください。
+1. https://ikegami-99.github.io/KRPR_news/ を開く
+2. ブラウザの「ホーム画面に追加」または「アプリをインストール」を選ぶ
+3. Kirapara News のアイコンから起動する
 
-## ✨ v0.3.4
+サイト側を更新すれば新しいUIが配信されるため、APKの再インストールやPlay Storeは不要です。
 
-v0.3.4では、AndroidのScoped Storageとnative llama.cppのファイルアクセス問題を避けるため、GGUFの読み込み方式を変更しました。
+## 📰 ニュース収集
 
-```text
-ユーザーが選択したGGUF
-        ↓
-Android Storage Access Framework
-        ↓
-初回だけアプリ専用モデル領域へコピー
-        ↓
-通常のファイルパス
-        ↓
-公式 llama.cpp
-        ↓
-翻訳 / 日本語要約
-```
-
-### 重要: 初回だけモデルを準備します
-
-GGUFを初めて読み込む時は、選択したモデルをアプリ専用領域へ一度コピーします。
-
-- 元のGGUFは削除しません
-- 2回目以降はコピー済みモデルを再利用します
-- コピー中は診断ログへ10%刻みで進捗を記録します
-- モデル本体と同程度の追加空き容量が必要です
-- 空き容量不足の場合はモデル読み込み前にエラーを表示します
-
-例: 約5.15GBのGGUFなら、余裕分を含めて約5.4GB以上の空き容量を推奨します。
-
-この方式は5GB前後のストレージを追加で使いますが、`content://` や `/proc/self/fd/...` をnative側で再オープンする端末依存問題を避け、llama.cppには通常ファイルだけを渡します。
-
-## 🧠 ローカルGemma 4 / GGUF
-
-設定 → **ローカルGemma 4** → **GGUFを選択** から、端末に保存済みのGGUFを指定します。
-
-ニュースは通常、各地域の**原文**で表示します。
-
-- 海外記事: **日本語に翻訳**
-- 全記事: **日本語要約**
-
-を押した時だけ端末内のGGUFを実行します。
-
-モデルや記事本文をGoogle翻訳、DeepL、外部LLM API等へ送信しません。翻訳・要約結果は記事とモデルごとに端末へキャッシュします。
-
-### 現在の推論バックエンド
-
-- 公式 `llama.cpp` Android runtime
-- GGUF
-- arm64-v8a
-- Context: 4096 tokens
-- CPU / NEON
-- CPU backend variantsを端末に応じて選択
-
-Gemma 4のwide/MoEモデルで発生していたllama.cpp側のsplit-input問題の修正を含む固定コミットを使用しています。
-
-### Hexagon NPUについて
-
-llama.cpp本家にはSnapdragon Hexagon / HTPバックエンドがありますが、まだ実験的な実装です。
-
-現在のAPKにはHexagon用HTPライブラリを同梱していないためCPU/NEONを使用します。NPU対応をUI上だけ装うことはせず、専用nativeビルドと実機検証後に追加する方針です。
-
-## 🌐 ニュース取得
-
-翻訳サーバーは使用しません。GitHub Actionsは**原文ニュースを集めるだけ**です。
+GitHub Actions が毎時17分にニュース収集を実行します。
 
 ```text
-公式公開ページ / 公開RSS / RSSHub
-        ↓
-GitHub Actions 定期収集
-        ↓
-SNS本文の不要部分を整理
-        ↓
-data/news.json（原文）
-        ↓
-Androidアプリ
-        ↓
-必要な記事だけ端末内Gemmaで処理
+公式サイト / X / TikTok / YouTube
+Weibo / Bilibili / Steam
+PR TIMES / ゲームメディア / 一般ニュース
+                ↓
+         GitHub Actions
+                ↓
+     本文・日時・画像を整理
+                ↓
+          data/news.json
+                ↓
+        Kirapara News PWA
 ```
 
-アプリはまずGitHub上の軽量ニュースキャッシュを読み、利用できない場合のみ公開RSS / RSSHub等へ直接アクセスします。
+現在の主な取得対象:
 
-## 📰 接続中のニュースソース
+| 地域 | 主なソース |
+| --- | --- |
+| 🇯🇵 日本 | 公式サイト / 公式X / 公式TikTok / 公式YouTube / PR TIMES / 国内Webニュース |
+| 🇨🇳 中国 | 公式サイト / 公式Weibo / 公式Bilibili記事 / 中国Webニュース |
+| 🇰🇷 韓国 | 公式X / 公式TikTok / 公式YouTube / 韓国Webニュース |
+| 🌐 Global | 公式サイト / 公式X / 公式TikTok / 公式YouTube / Steam / 海外Webニュース |
 
-| 地域 | ソース | 方法 | APIキー |
-| --- | --- | --- | --- |
-| 🇯🇵 日本 | きらめきパラダイス公式YouTube | YouTube公開RSS | 不要 |
-| 🇨🇳 中国 | 以闪亮之名 公式Weibo | RSSHub 複数ホスト | 不要 |
-| 🇨🇳 中国 | 以闪亮之名 公式Bilibili | RSSHub | 不要 |
-| 🌎 Global | Life Makeover公式YouTube | 公開ページ + YouTube RSS | 不要 |
-| 🇰🇷 韓国 | Stylight公式YouTube | 公開ページ + YouTube RSS | 不要 |
+SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。取得経路は複数用意し、失敗したソースがあっても他のソースからニュースを継続できる構成にしています。
 
-## 📱 主な機能
+## 🖼️ 画像
 
-- 🇯🇵 日本 / 🇨🇳 中国 / 🌎 Global / 🇰🇷 韓国の統合タイムライン
-- 各地域の原文を標準表示
-- ローカルGGUFによる日本語翻訳
-- ローカルGGUFによる日本語要約
-- 翻訳 / 要約結果の端末キャッシュ
-- 折りたたみ式ニュースカード
-- 地域フィルター
-- 記事画像 / YouTubeサムネイル
-- 公式投稿リンク
-- Android共有
-- ライト / ダーク / 端末設定連動テーマ
-- GitHub Releasesからのアプリ内アップデート
-- APKのSHA-256検証
-- 診断ログの書き出し
+記事ページやフィードから以下を候補として収集します。
 
-## 🧾 診断ログ
+- `og:image`
+- `twitter:image`
+- RSS / Atom の media / enclosure
+- 記事本文中の画像
 
-設定 → **診断ログ** から `.txt` ファイルとして書き出せます。
+favicon、ロゴ、QRコード、アバター、小さすぎる画像などは可能な範囲で除外します。記事に複数の有効画像がある場合は `imageUrls` に保存し、PWA内のギャラリーから閲覧できます。
 
-主な記録内容:
+## 🤖 AI翻訳・要約
 
-- アプリバージョン
-- Android / 端末 / ABI
-- 選択モデル名
-- モデル準備（コピー）開始 / 10%刻みの進捗 / 完了
-- GGUF読み込み開始 / 成功 / 失敗
-- AI翻訳 / 要約の開始・完了・エラー
-- ニュース取得エラー
-- アップデート確認 / ダウンロード / SHA-256検証エラー
-
-記事本文そのものを大量にログ保存する用途にはしていません。
-
-## 🔄 アプリ内アップデート
-
-設定 → **アップデート** から最新版を確認できます。
+有料AI APIは使用しません。GitHub Actions のCPU上で **Qwen2.5-3B-Instruct Q4_K_M** を `llama.cpp` 経由で実行します。
 
 ```text
-GitHub Releases
-      ↓
-アプリ内でAPKダウンロード
-      ↓
-SHA-256検証
-      ↓
-Android標準インストーラー起動
+新着ニュース
+    ↓
+翻訳キャッシュ確認
+    ↓
+未処理の記事だけLLMへ
+    ↓
+海外記事: 日本語翻訳 + 日本語要約
+日本語記事: 日本語要約
+    ↓
+data/translations.json にキャッシュ
+    ↓
+data/news.json へ反映
 ```
 
-ダウンロードと検証はアプリ内で完結します。
+同じ記事を毎回推論せず、記事ID / 内容に対応した翻訳結果を再利用します。原文の `title` / `body` は保持し、日本語結果は `titleJa` / `bodyJa` / `summaryJa` として追加します。
+
+固有名詞は `data/translation_glossary.json` の辞書を優先し、辞書にない名称は無理に日本語公式名へ変換しない方針です。
 
 > [!NOTE]
-> 通常のAndroidアプリでは、最後のOSによる「インストール」確認だけは省略できません。
+> 小型ローカルLLMによる翻訳・要約のため、誤訳や不自然な表現が発生する可能性があります。重要な内容は必ず元記事も確認してください。
 
-## 📥 初回インストール
+## 🧱 構成
 
-1. README上部の **v0.3.4 APKをダウンロード** を開く
-2. `Kirapara-News-v0.3.4.apk` をダウンロード
-3. APKを開く
-4. 必要な場合は「この提供元からのアプリを許可」を有効にする
-5. インストールする
+```text
+KRPR_news/
+├─ .github/workflows/
+│  ├─ news-refresh.yml   # ニュース収集 + LLM翻訳/要約
+│  └─ pages.yml          # GitHub PagesへPWAを公開
+├─ data/
+│  ├─ news.json
+│  ├─ translations.json
+│  └─ translation_glossary.json
+├─ docs/
+│  ├─ index.html
+│  ├─ app.js
+│  ├─ styles.css
+│  ├─ ai.css
+│  ├─ manifest.webmanifest
+│  ├─ sw.js
+│  └─ icon.svg
+└─ scripts/
+   ├─ fetch_news.py
+   ├─ merge_direct_official.py
+   ├─ enrich_sources.py
+   ├─ discover_web_news.py
+   ├─ discover_web_news_v2.py
+   ├─ enrich_images.py
+   └─ translate_news_llm.py
+```
 
-正式署名版を導入した後は、以降のバージョンをアプリ内アップデートできます。
+## 🔄 自動更新
 
-## ⚠️ セキュリティ
+`news-refresh.yml` がニュースデータを更新し、変更がmainへ反映されるとGitHub Pages側も更新されます。
 
-- APKはこのGitHubリポジトリのReleasesからのみ取得してください
-- 第三者サイトやファイル共有サービスのAPKは使用しないでください
-- 正式ReleaseにはAPKと `.sha256` を掲載します
-- アプリ内更新でもSHA-256不一致ならインストールを中止します
-- Androidが署名不一致を警告した場合はインストールを中止してください
+PWAのService Workerはアプリシェルをキャッシュしつつ、ニュースデータは新しい内容を取得できるよう更新します。
+
+## 💰 運用コスト
+
+現在の構成は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料APIを前提にしていません。
+
+GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
 
 ## 🔒 プライバシー
 
-- 翻訳 / 要約本文を外部AI APIへ送信しません
-- GGUFを外部へ送信しません
 - ユーザー登録不要
 - 位置情報・連絡先不要
-- 選択したGGUFへの読み取り権限のみ保持
-
-ネットワーク通信はニュース取得、ニュースキャッシュ取得、GitHub Releasesの更新確認とAPK取得に使用します。
-
-## 📱 対応環境
-
-- Android 8.0 (API 26) 以上
-- arm64-v8a
-- GGUFはユーザー側で用意
-- Google Playでは配布しません
-
-## 🧱 技術構成
-
-- Kotlin 2.3.20
-- Jetpack Compose / Material 3
-- Android Gradle Plugin 8.9.1
-- Gradle 8.11.1
-- compileSdk 36 / targetSdk 35
-- 公式 llama.cpp / GGUF
-- Android NDK 29 / CMake 3.31.6
-- Android Storage Access Framework
-- app-specific model storage
-- FileProvider
-- Coil
-- GitHub Actions
-
-## 🛠️ ビルド
-
-JDK 17を使用します。公式llama.cpp Android runtimeの準備にはAndroid NDK / CMakeが必要です。
-
-```bash
-bash scripts/prepare_llama_android.sh
-gradle assembleDebug
-```
-
-## 🚀 署名済みRelease
-
-GitHub Repository Secrets:
-
-- `KEYSTORE_BASE64`
-- `KEYSTORE_PASSWORD`
-- `KEY_ALIAS`
-- `KEY_PASSWORD`
-
-翻訳API用Secretは不要です。同じ署名鍵を全リリースで使用します。
+- OpenAI / DeepL / Google翻訳等の有料AI APIへ記事本文を送信しない
+- 翻訳・要約はGitHub Actions上のローカルLLMで処理
 
 ## ⚖️ コンテンツと免責
 
-ニュースでは投稿元と公式URLを明示します。公開RSS・公開ページ・各サービスの規約や仕様変更に応じて取得方法を調整します。
+各記事は元の公開ページへリンクします。記事本文・画像等の権利は各権利者に帰属します。
 
-## Version
-
-Current version: **v0.3.4**
+公開ページ、RSS、RSSHub、検索結果などの仕様や各サービスの規約変更により、取得方法や取得可能なソースは変わることがあります。
