@@ -38,7 +38,7 @@
 
   const API = 'https://api.github.com/repos/IKEGAMI-99/KRPR_news';
   const WORKFLOW_RUNS = `${API}/actions/workflows/news-refresh.yml/runs?per_page=5`;
-  const DEV_CACHE_KEY = 'kirapara-dev-status-v1';
+  const DEV_CACHE_KEY = 'kirapara-dev-status-v2';
   const DEV_CACHE_MS = 3 * 60 * 1000;
 
   const backdrop = document.createElement('div');
@@ -47,35 +47,15 @@
   menu.className = 'link-menu';
   menu.setAttribute('role','dialog');
   menu.setAttribute('aria-modal','true');
-  menu.setAttribute('aria-label','公式リンクメニュー');
-  menu.innerHTML = `<div class="link-menu-header"><div class="link-menu-title">リンク集 ✦</div><button class="link-menu-close" type="button" aria-label="閉じる">×</button></div><div class="link-menu-body"></div>`;
+  menu.setAttribute('aria-label','メニュー');
+  menu.innerHTML = `<div class="link-menu-header"><div class="link-menu-title">メニュー ✦</div><button class="link-menu-close" type="button" aria-label="閉じる">×</button></div><div class="link-menu-body"></div>`;
   const body = menu.querySelector('.link-menu-body');
 
-  for (const group of groups) {
-    const section = document.createElement('section');
-    section.className = 'menu-region';
-    const heading = document.createElement('h3');
-    heading.textContent = group.title;
-    const links = document.createElement('div');
-    links.className = 'menu-links';
-    for (const [label,url] of group.links) {
-      const a = document.createElement('a');
-      a.className = 'menu-link';
-      a.href = url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.textContent = label;
-      links.appendChild(a);
-    }
-    section.append(heading,links);
-    body.appendChild(section);
-  }
-
   const devSection = document.createElement('section');
-  devSection.className = 'menu-region developer-section';
+  devSection.className = 'menu-region developer-section developer-section-featured';
   devSection.innerHTML = `
     <button class="developer-toggle" type="button" aria-expanded="false">
-      <span><span class="developer-toggle-icon">⚙</span> 開発者メニュー</span>
+      <span><span class="developer-toggle-icon">⚙</span><span><strong>開発者メニュー</strong><small>AI / GitHub Actions の状態</small></span></span>
       <span class="developer-chevron">›</span>
     </button>
     <div class="developer-panel" hidden>
@@ -96,6 +76,31 @@
       <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions/workflows/news-refresh.yml" target="_blank" rel="noopener noreferrer">GitHub Actionsで詳細を見る ↗</a>
     </div>`;
   body.appendChild(devSection);
+
+  const linksHeading = document.createElement('div');
+  linksHeading.className = 'menu-section-heading';
+  linksHeading.textContent = '公式リンク';
+  body.appendChild(linksHeading);
+
+  for (const group of groups) {
+    const section = document.createElement('section');
+    section.className = 'menu-region';
+    const heading = document.createElement('h3');
+    heading.textContent = group.title;
+    const links = document.createElement('div');
+    links.className = 'menu-links';
+    for (const [label,url] of group.links) {
+      const a = document.createElement('a');
+      a.className = 'menu-link';
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = label;
+      links.appendChild(a);
+    }
+    section.append(heading,links);
+    body.appendChild(section);
+  }
 
   const note = document.createElement('p');
   note.className = 'menu-note';
@@ -142,7 +147,8 @@
       if (typeof state === 'undefined' || !Array.isArray(state.items)) return null;
       const total = state.items.length;
       const ai = state.items.filter((item) => item?.aiProcessed && item?.summaryJa).length;
-      return { ai, total };
+      const facts = state.items.filter((item) => item?.aiSummaryFormat === 'facts-v2').length;
+      return { ai, facts, total };
     } catch { return null; }
   }
 
@@ -205,7 +211,8 @@
     metrics.innerHTML = `
       <div class="dev-metric"><span>最新Run</span><strong>#${latest?.run_number ?? '—'}</strong></div>
       <div class="dev-metric"><span>開始</span><strong>${formatTime(latest?.run_started_at || latest?.created_at)}</strong></div>
-      <div class="dev-metric"><span>AI処理済み</span><strong>${counts ? `${counts.ai} / ${counts.total}` : '—'}</strong></div>`;
+      <div class="dev-metric"><span>AI処理済み</span><strong>${counts ? `${counts.ai} / ${counts.total}` : '—'}</strong></div>
+      <div class="dev-metric"><span>箇条書き要約</span><strong>${counts ? `${counts.facts} / ${counts.total}` : '—'}</strong></div>`;
 
     const steps = [
       ['翻訳計画', planStep],
@@ -259,7 +266,6 @@
     backdrop.classList.add('is-open');
     document.body.classList.add('menu-open');
     trigger.setAttribute('aria-expanded','true');
-    menu.querySelector('.link-menu-close')?.focus();
   };
   trigger.setAttribute('aria-expanded','false');
   trigger.addEventListener('click', () => menu.classList.contains('is-open') ? close() : open());
