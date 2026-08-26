@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 DATE_CACHE_PATH = ROOT / "data" / "article_dates.json"
-UA = "Mozilla/5.0 KiraparaNews-DateNormalizer/1.0"
+UA = "Mozilla/5.0 KiraparaNews-DateNormalizer/1.1"
 GOOGLE_NAMES = ("google news", "googleニュース", "google ニュース")
 
 
@@ -62,11 +62,12 @@ def explicit_published(url: str) -> int:
     except Exception:
         return 0
 
+    # Only publication-specific metadata is trusted here. Generic <time> or
+    # meta[name=date] often describes an update, event date or navigation block.
     patterns = [
-        r'<meta[^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate|date)["\'][^>]+content=["\']([^"\']+)',
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate|date)["\']',
+        r'<meta[^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate)["\'][^>]+content=["\']([^"\']+)',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate)["\']',
         r'["\']datePublished["\']\s*:\s*["\']([^"\']+)',
-        r'<time[^>]+datetime=["\']([^"\']+)',
     ]
     now = int(time.time())
     for pattern in patterns:
@@ -110,10 +111,17 @@ def main():
             continue
         kept.append(row)
 
-    web_rows = [r for r in kept if str(r.get("platform") or "").startswith(("Webニュース", "プレスリリース")) and str(r.get("sourceUrl") or "").startswith("http")]
+    web_rows = [
+        r for r in kept
+        if str(r.get("platform") or "").startswith(("Webニュース", "プレスリリース"))
+        and str(r.get("sourceUrl") or "").startswith("http")
+    ]
     published = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
-        futures = {pool.submit(explicit_published, str(r.get("sourceUrl"))): canonical(str(r.get("sourceUrl"))) for r in web_rows[:100]}
+        futures = {
+            pool.submit(explicit_published, str(r.get("sourceUrl"))): canonical(str(r.get("sourceUrl")))
+            for r in web_rows[:100]
+        }
         for future in concurrent.futures.as_completed(futures):
             try:
                 published[futures[future]] = future.result()
@@ -133,8 +141,11 @@ def main():
         current = int(row.get("publishedAtEpoch") or 0)
         page_epoch = int(published.get(key) or 0)
         stored = int(cache.get(key) or 0)
-        candidates = [x for x in (current, page_epoch, stored) if x > 0]
-        stable = min(candidates) if candidates else 0
+
+        # Once a publisher date has been stored, keep it stable. On the first
+        # encounter prefer the publisher's explicit publication metadata, then
+        # fall back to the discovery feed timestamp.
+        stable = stored or page_epoch or current
         if stable and stable != current:
             corrected += 1
         if stable:
