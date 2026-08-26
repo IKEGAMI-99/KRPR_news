@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import concurrent.futures
+import hashlib
 import html
 import json
 import re
@@ -10,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
-UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.3.0"
+UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.3.12"
 
 RSSHUB_HOSTS = [
     "https://rsshub.app",
@@ -31,6 +33,41 @@ STATIC_FALLBACK_IMAGES = {
     "KOREA": "https://stylight.nex2fun.com/assets/pc/img/page1/page1_slogan.png",
 }
 
+# Official web pages are intentionally included in addition to social feeds. Some
+# CMS list URLs change over time, so every source has multiple public entry points.
+CMS_SOURCES = [
+    (
+        "JAPAN",
+        "公式サイト",
+        [
+            "https://cms.archosaur.com/jeecms/smhwjpnews/index.jhtml",
+            "https://cms.archosaur.com/jeecms/smhwjpevent/index.jhtml",
+            "https://kirapara.archosaur.com/",
+        ],
+        ("/smhwjpnews/", "/smhwjpevent/"),
+    ),
+    (
+        "CHINA",
+        "公式サイト",
+        [
+            "https://cms.zulong.com/jeecms/yslzm/index.jhtml?type=pc",
+            "https://mystyle.archosaur.com/home/index.html",
+        ],
+        ("/yslzm", "/smhw", "/yx"),
+    ),
+    (
+        "GLOBAL",
+        "公式サイト",
+        [
+            "https://cms.archosaur.com/jeecms/smhwpcinhd/index.jhtml",
+            "https://cms.archosaur.com/jeecms/smhwpenzx/index.jhtml",
+            "https://cms.archosaur.com/jeecms/smhwpengg/index.jhtml",
+            "https://lifemakeover.archosaur.com/",
+        ],
+        ("/smhwpcinhd/", "/smhwpenzx/", "/smhwpengg/", "/smsmhw"),
+    ),
+]
+
 _official_image_cache = {}
 
 
@@ -39,11 +76,21 @@ def get(url: str, timeout: int = 15) -> str:
         url,
         headers={
             "User-Agent": UA,
-            "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+            "Accept-Language": "ja,en-US;q=0.9,en;q=0.8,ko;q=0.7,zh-CN;q=0.6",
+            "Accept": "text/html,application/xhtml+xml,application/rss+xml,application/atom+xml,application/xml;q=0.9,*/*;q=0.8",
         },
     )
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", errors="replace")
+        raw = r.read()
+        charset = r.headers.get_content_charset() or "utf-8"
+        try:
+            return raw.decode(charset, errors="replace")
+        except LookupError:
+            return raw.decode("utf-8", errors="replace")
+
+
+def stable_id(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:24]
 
 
 def strip_tags(s: str) -> str:
@@ -84,12 +131,40 @@ def compact_title(s: str, region: str) -> str:
         return "新着ニュース"
     first = re.split(r"[\n。！？!?]", s, maxsplit=1)[0].strip()
     candidate = first if len(first) >= 6 else s.replace("\n", " ")
-    return candidate[:90].rstrip(" ,，、-｜|")
+    return candidate[:100].rstrip(" ,，、-｜|")
 
 
-def image_from_html(s: str):
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', s or "", re.I)
-    return html.unescape(m.group(1)) if m else None
+def normalize_url(base: str, value: str | None):
+    if not value:
+        return None
+    value = html.unescape(value.strip())
+    if value.startswith("//"):
+        return "https:" + value
+    return urllib.parse.urljoin(base, value)
+
+
+def image_from_html(s: str, base_url: str = ""):
+    patterns = [
+        r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\']',
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, s or "", re.I)
+        if m:
+            candidate = normalize_url(base_url, m.group(1))
+            if candidate and not is_placeholder_image(candidate):
+                return candidate
+
+    for m in re.finditer(r'<img[^>]+(?:src|data-src|data-original)=["\']([^"\']+)["\']', s or "", re.I):
+        candidate = normalize_url(base_url, m.group(1))
+        if not candidate or candidate.startswith("data:"):
+            continue
+        low = candidate.lower()
+        if any(token in low for token in ("qrcode", "qr_", "qr-", "favicon", "icon", "logo", "avatar", "download", "store")):
+            continue
+        if not is_placeholder_image(candidate):
+            return candidate
+    return None
 
 
 def is_placeholder_image(url: str | None) -> bool:
@@ -104,6 +179,8 @@ def is_placeholder_image(url: str | None) -> bool:
             "timeline_card_small_default",
             "default_avatar",
             "default.png",
+            "blank.gif",
+            "spacer.gif",
         )
     )
 
@@ -117,27 +194,15 @@ def official_fallback_image(region: str):
     if home:
         try:
             page = get(home, timeout=10)
-            patterns = [
-                r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\'][^>]+content=["\']([^"\']+)',
-                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image)["\']',
-            ]
-            for pattern in patterns:
-                m = re.search(pattern, page, re.I)
-                if m:
-                    candidate = urllib.parse.urljoin(home, html.unescape(m.group(1)))
-                    low = candidate.lower()
-                    if not any(x in low for x in ("qrcode", "qr_", "ewm", "favicon", "icon", "logo")):
-                        discovered = candidate
-                        break
-
+            discovered = image_from_html(page, home)
             if not discovered:
-                candidates = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', page, re.I)
+                candidates = re.findall(r'<img[^>]+(?:src|data-src)=["\']([^"\']+)["\']', page, re.I)
                 scored = []
                 for src in candidates:
-                    full = urllib.parse.urljoin(home, html.unescape(src))
-                    low = full.lower()
-                    if full.startswith("data:"):
+                    full = normalize_url(home, src)
+                    if not full or full.startswith("data:"):
                         continue
+                    low = full.lower()
                     if any(token in low for token in ("ewm", "qrcode", "qr_", "qr-", "favicon", "icon", "logo", "download", "store")):
                         continue
                     score = sum(
@@ -162,6 +227,7 @@ def official_fallback_image(region: str):
 def parse_date_epoch(value: str) -> int:
     if not value:
         return 0
+    value = value.strip()
     try:
         from email.utils import parsedate_to_datetime
         return int(parsedate_to_datetime(value).timestamp())
@@ -169,7 +235,11 @@ def parse_date_epoch(value: str) -> int:
         pass
     try:
         from datetime import datetime
-        return int(datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp())
+        normalized = value.replace("/", "-").replace("年", "-").replace("月", "-").replace("日", " ")
+        normalized = re.sub(r"\s+", " ", normalized).strip()
+        if re.fullmatch(r"\d{4}-\d{1,2}-\d{1,2}", normalized):
+            normalized += " 00:00:00"
+        return int(datetime.fromisoformat(normalized.replace("Z", "+00:00")).timestamp())
     except Exception:
         return 0
 
@@ -185,6 +255,20 @@ def rel_label(epoch: int) -> str:
     if diff < 86400 * 7:
         return f"{diff // 86400}日前"
     return time.strftime("%Y-%m-%d", time.localtime(epoch))
+
+
+def feed_image(entry, body_raw: str, link: str):
+    for child in entry.iter():
+        local = child.tag.split("}")[-1].lower()
+        if local == "thumbnail" and child.attrib.get("url"):
+            return normalize_url(link, child.attrib.get("url"))
+        if local in {"content", "enclosure"}:
+            candidate = child.attrib.get("url")
+            media_type = (child.attrib.get("type") or "").lower()
+            medium = (child.attrib.get("medium") or "").lower()
+            if candidate and (media_type.startswith("image") or medium == "image" or re.search(r"\.(?:jpe?g|png|webp)(?:\?|$)", candidate, re.I)):
+                return normalize_url(link, candidate)
+    return image_from_html(body_raw, link)
 
 
 def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
@@ -218,18 +302,12 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
         if not link and video_id:
             link = f"https://www.youtube.com/watch?v={video_id}"
 
-        image = None
-        for child in e.iter():
-            if child.tag.split("}")[-1] == "thumbnail" and child.attrib.get("url"):
-                image = child.attrib["url"]
-                break
-        if not image and video_id:
-            image = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
-        if not image:
-            image = image_from_html(body_raw)
-
         if not raw_title or not link:
             continue
+
+        image = feed_image(e, body_raw, link)
+        if not image and video_id:
+            image = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
 
         title = compact_title(raw_title, region)
         body = clean_social_text(body_raw, region) or clean_social_text(raw_title, region)
@@ -238,7 +316,7 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
             image = official_fallback_image(region)
 
         items.append({
-            "id": str(hash(link)),
+            "id": stable_id(link),
             "region": region,
             "platform": platform,
             "title": title,
@@ -281,14 +359,139 @@ def youtube_channel(region: str, platform: str, channel_id=None, page_urls=None)
 
 
 def rsshub(region: str, platform: str, path: str):
-    for host in RSSHUB_HOSTS:
+    # Try mirrors concurrently instead of waiting for dead public instances one by one.
+    def fetch_host(host):
         try:
-            rows = parse_feed(get(host + path), region, platform)
-            if rows:
-                return rows
+            return parse_feed(get(host + path, timeout=10), region, platform)
         except Exception as e:
             print(f"rsshub failed {host}{path}: {e}")
+            return []
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(RSSHUB_HOSTS)) as pool:
+        futures = [pool.submit(fetch_host, host) for host in RSSHUB_HOSTS]
+        for future in concurrent.futures.as_completed(futures):
+            rows = future.result()
+            if rows:
+                for other in futures:
+                    other.cancel()
+                return rows
     return []
+
+
+def extract_article_title(page: str, region: str):
+    patterns = [
+        r'<h1[^>]*>(.*?)</h1>',
+        r'<meta[^>]+(?:property|name)=["\']og:title["\'][^>]+content=["\']([^"\']+)',
+        r'<title[^>]*>(.*?)</title>',
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, page, re.I | re.S)
+        if m:
+            value = compact_title(strip_tags(m.group(1)), region)
+            if value and value != "新着ニュース":
+                return value
+    return "新着ニュース"
+
+
+def extract_article_epoch(page: str):
+    patterns = [
+        r'(20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?)',
+        r'content=["\'](20\d{2}-\d{2}-\d{2}T[^"\']+)["\']',
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, page, re.I)
+        if m:
+            epoch = parse_date_epoch(m.group(1))
+            if epoch:
+                return epoch
+    return 0
+
+
+def extract_article_body(page: str, region: str):
+    cleaned = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", " ", page, flags=re.I | re.S)
+    paragraphs = []
+    seen = set()
+    for raw in re.findall(r"<(?:p|li)[^>]*>(.*?)</(?:p|li)>", cleaned, flags=re.I | re.S):
+        text = clean_social_text(raw, region)
+        if len(text) < 4:
+            continue
+        low = text.lower()
+        if any(marker in low for marker in ("copyright", "all rights reserved", "follow us", "扫码下载", "google play", "app store")):
+            continue
+        if text in seen:
+            continue
+        seen.add(text)
+        paragraphs.append(text)
+        if sum(len(x) for x in paragraphs) >= 2400:
+            break
+    body = "\n".join(paragraphs).strip()
+    if body:
+        return body[:1800]
+
+    meta = re.search(r'<meta[^>]+(?:name|property)=["\'](?:description|og:description)["\'][^>]+content=["\']([^"\']+)', page, re.I)
+    return clean_social_text(meta.group(1), region)[:1800] if meta else ""
+
+
+def article_links(index_html: str, index_url: str, path_tokens):
+    out = []
+    seen = set()
+    for href in re.findall(r'href\s*=\s*["\']([^"\']+)["\']', index_html, re.I):
+        full = normalize_url(index_url, href)
+        if not full or ".jhtml" not in full.lower():
+            continue
+        if "index.jhtml" in full.lower():
+            continue
+        if path_tokens and not any(token.lower() in full.lower() for token in path_tokens):
+            continue
+        if full not in seen:
+            seen.add(full)
+            out.append(full)
+    return out
+
+
+def cms_source(region: str, platform: str, index_urls, path_tokens, limit: int = 10):
+    links = []
+    for index_url in index_urls:
+        try:
+            page = get(index_url, timeout=12)
+            links.extend(article_links(page, index_url, path_tokens))
+        except Exception as e:
+            print(f"cms index failed {index_url}: {e}")
+
+    unique_links = list(dict.fromkeys(links))[:limit]
+    if not unique_links:
+        return []
+
+    def fetch_article(url):
+        try:
+            page = get(url, timeout=12)
+            title = extract_article_title(page, region)
+            body = extract_article_body(page, region) or title
+            epoch = extract_article_epoch(page)
+            image = image_from_html(page, url)
+            if is_placeholder_image(image):
+                image = official_fallback_image(region)
+            return {
+                "id": stable_id(url),
+                "region": region,
+                "platform": platform,
+                "title": title,
+                "body": body,
+                "sourceUrl": url,
+                "publishedLabel": rel_label(epoch),
+                "publishedAtEpoch": epoch,
+                "imageUrl": image,
+            }
+        except Exception as e:
+            print(f"cms article failed {url}: {e}")
+            return None
+
+    rows = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(6, len(unique_links))) as pool:
+        for row in pool.map(fetch_article, unique_links):
+            if row and row["title"] != "新着ニュース":
+                rows.append(row)
+    return rows
 
 
 def load_existing():
@@ -301,7 +504,6 @@ def load_existing():
 
 def main():
     existing = load_existing()
-    fresh = []
 
     sources = [
         lambda: youtube_channel("JAPAN", "公式YouTube", channel_id="UC9MO21fNvt0F4-UK28kc_VQ"),
@@ -313,13 +515,25 @@ def main():
         lambda: youtube_channel("KOREA", "公式YouTube", page_urls=["https://www.youtube.com/@stylight_official"]),
         lambda: rsshub("CHINA", "公式Weibo · RSSHub", "/weibo/user/7521830234"),
         lambda: rsshub("CHINA", "公式Bilibili · RSSHub", "/bilibili/user/video/676200579"),
+        lambda: rsshub("JAPAN", "公式X · RSSHub", "/twitter/user/kirapara_JP"),
+        lambda: rsshub("GLOBAL", "公式X · RSSHub", "/twitter/user/LifeMakeover510"),
+        lambda: rsshub("KOREA", "公式X · RSSHub", "/twitter/user/stylight_kr"),
     ]
+    sources.extend(
+        lambda region=region, platform=platform, urls=urls, tokens=tokens: cms_source(region, platform, urls, tokens)
+        for region, platform, urls, tokens in CMS_SOURCES
+    )
 
-    for fn in sources:
-        try:
-            fresh.extend(fn())
-        except Exception as e:
-            print(f"source failed: {e}")
+    fresh = []
+    # Independent sources are I/O bound, so collect them concurrently. This cuts a
+    # refresh from the sum of all source timeouts to roughly the slowest source.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(10, len(sources))) as pool:
+        futures = [pool.submit(fn) for fn in sources]
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                fresh.extend(future.result())
+            except Exception as e:
+                print(f"source failed: {e}")
 
     fresh_regions = {x.get("region") for x in fresh}
     for region in {"JAPAN", "CHINA", "GLOBAL", "KOREA"}:
@@ -333,6 +547,9 @@ def main():
             continue
         row.pop("translatedTitle", None)
         row.pop("translatedBody", None)
+        # Old caches used Python's randomized hash(). Rewrite every ID to a stable
+        # URL-derived value so local translation/summary caches survive refreshes.
+        row["id"] = stable_id(url)
         if is_placeholder_image(row.get("imageUrl")):
             row["imageUrl"] = official_fallback_image(row.get("region"))
         dedup[url] = row
@@ -341,11 +558,17 @@ def main():
         dedup.values(),
         key=lambda x: int(x.get("publishedAtEpoch") or 0),
         reverse=True,
-    )[:60]
+    )[:80]
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    counts = {}
+    for row in rows:
+        key = f"{row.get('region')} / {row.get('platform')}"
+        counts[key] = counts.get(key, 0) + 1
     print(f"wrote {len(rows)} original-language items")
+    for key, count in sorted(counts.items()):
+        print(f"  {key}: {count}")
 
 
 if __name__ == "__main__":
