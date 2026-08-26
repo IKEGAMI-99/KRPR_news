@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v1';
+const CACHE_NAME = 'kirapara-pwa-shell-v2';
 const APP_SHELL = [
   './',
   './index.html',
@@ -28,17 +28,16 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // News data is intentionally network-first in app.js and backed by localStorage.
-  // Keep the service worker focused on making the UI itself launch offline.
+  // News data is network-first in app.js and backed by localStorage.
   if (url.hostname === 'raw.githubusercontent.com') return;
 
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
       return fetch(event.request).then((response) => {
-        if (!response || response.status !== 200 || response.type === 'opaque') return response;
+        if (!response || response.status !== 200) return response;
         const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy)).catch(() => {});
         return response;
       });
     })
