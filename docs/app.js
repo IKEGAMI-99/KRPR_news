@@ -2,11 +2,10 @@ const DATA_URL = 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/da
 const CACHE_KEY = 'kirapara-news-cache-v3';
 const THEME_KEY = 'kirapara-news-theme';
 
-const state = { items: [], region: 'ALL', query: '', installPrompt: null };
+const state = { items: [], region: 'ALL', installPrompt: null };
 const els = {
   grid: document.querySelector('#newsGrid'), template: document.querySelector('#newsCardTemplate'),
-  tabs: document.querySelector('#regionTabs'), search: document.querySelector('#searchInput'),
-  clearSearch: document.querySelector('#clearSearchButton'), refresh: document.querySelector('#refreshButton'),
+  tabs: document.querySelector('#regionTabs'), refresh: document.querySelector('#refreshButton'),
   retry: document.querySelector('#retryButton'), theme: document.querySelector('#themeButton'),
   install: document.querySelector('#installButton'), status: document.querySelector('#statusText'),
   visibleCount: document.querySelector('#visibleCount'), empty: document.querySelector('#emptyState'),
@@ -21,7 +20,6 @@ const BAD_IMAGE_TOKENS = [
 ];
 let viewerImages = [], viewerIndex = 0;
 
-function normalizeText(value) { return String(value ?? '').toLocaleLowerCase('ja'); }
 function looksLikeBadImage(url) {
   const value = String(url || '').toLowerCase();
   if (!/^https?:\/\//.test(value) || /\.(svg|ico)(?:\?|$)/.test(value)) return true;
@@ -44,13 +42,7 @@ function formatDate(epoch, fallback) {
   } catch { return fallback || ''; }
 }
 function filteredItems() {
-  const q = normalizeText(state.query).trim();
-  return state.items.filter((item) => {
-    if (state.region !== 'ALL' && item.region !== state.region) return false;
-    if (!q) return true;
-    return normalizeText([item.title,item.body,item.titleJa,item.bodyJa,item.summaryJa,item.platform,item.region]
-      .filter(Boolean).join('\n')).includes(q);
-  });
+  return state.items.filter((item) => state.region === 'ALL' || item.region === state.region);
 }
 function updateCounts() {
   for (const region of ['ALL','JAPAN','CHINA','KOREA','GLOBAL']) {
@@ -72,7 +64,6 @@ function setImageWithFallback(image, wrap, urls, startIndex = 0) {
   });
   tryNext();
 }
-
 function ensureViewer() {
   let viewer = document.querySelector('#imageViewer');
   if (viewer) return viewer;
@@ -127,7 +118,6 @@ function addAiSummary(body, summaryText) {
   const label = document.createElement('div'); label.className = 'ai-summary-label'; label.textContent = '✦ AI要約';
   const text = document.createElement('p'); text.textContent = summaryText; box.append(label, text); body.insertAdjacentElement('beforebegin', box);
 }
-
 function createCard(item) {
   const fragment = els.template.content.cloneNode(true), article = fragment.querySelector('.news-card');
   const imageLink = fragment.querySelector('.card-image-link'), imageWrap = fragment.querySelector('.card-image-wrap'), image = fragment.querySelector('.card-image');
@@ -139,7 +129,6 @@ function createCard(item) {
   const titleJapanese = item.titleJa || titleOriginal, bodyJapanese = item.bodyJa || bodyOriginal;
   const hasAi = Boolean(item.aiProcessed && item.summaryJa);
   const hasTranslation = Boolean(hasAi && item.region !== 'JAPAN' && (titleJapanese !== titleOriginal || bodyJapanese !== bodyOriginal));
-
   imageLink.href = sourceUrl; source.href = sourceUrl; badge.textContent = regionNames[item.region] || item.region || 'NEWS'; platform.textContent = item.platform || '公式';
   if (hasAi) {
     const aiBadge = document.createElement('span'); aiBadge.className = 'ai-badge'; aiBadge.textContent = item.region === 'JAPAN' ? 'AI要約' : 'AI翻訳';
@@ -148,10 +137,8 @@ function createCard(item) {
   published.textContent = formatDate(item.publishedAtEpoch, item.publishedLabel);
   published.dateTime = item.publishedAtEpoch ? new Date(Number(item.publishedAtEpoch) * 1000).toISOString() : '';
   title.textContent = titleJapanese; body.textContent = bodyJapanese; if (hasAi) addAiSummary(body, item.summaryJa);
-
   if (images.length) { image.alt = `${titleJapanese} の画像`; setImageWithFallback(image, imageWrap, images); }
   else imageWrap.classList.add('is-fallback');
-
   const gallery = buildGallery(article, body, images, titleJapanese);
   if (gallery && images.length > 1) {
     const galleryButton = document.createElement('button'); galleryButton.className = 'gallery-button'; galleryButton.type = 'button'; galleryButton.textContent = `画像 ${images.length}枚`;
@@ -172,7 +159,6 @@ function createCard(item) {
   else more.addEventListener('click', () => { const expanded = article.classList.toggle('is-expanded'); more.textContent = expanded ? '閉じる' : '続きを読む'; });
   return fragment;
 }
-
 function render() {
   const items = filteredItems(); els.grid.replaceChildren(); const fragment = document.createDocumentFragment();
   for (const item of items) fragment.appendChild(createCard(item)); els.grid.appendChild(fragment); els.grid.setAttribute('aria-busy','false');
@@ -214,14 +200,11 @@ function initTheme() {
   const saved = localStorage.getItem(THEME_KEY), preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   setTheme(saved === 'light' || saved === 'dark' ? saved : preferred);
 }
-
 els.tabs.addEventListener('click', (event) => {
   const button = event.target.closest('[data-region]'); if (!button) return; state.region = button.dataset.region;
   for (const tab of els.tabs.querySelectorAll('.region-tab')) tab.classList.toggle('is-active', tab === button);
   render(); window.scrollTo({ top:0, behavior:'smooth' });
 });
-els.search.addEventListener('input', () => { state.query = els.search.value; els.clearSearch.hidden = !state.query; render(); });
-els.clearSearch.addEventListener('click', () => { els.search.value = ''; state.query = ''; els.clearSearch.hidden = true; els.search.focus(); render(); });
 els.refresh.addEventListener('click', () => loadNews({ force:true }));
 els.retry.addEventListener('click', () => loadNews({ force:true }));
 els.theme.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
