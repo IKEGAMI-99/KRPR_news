@@ -13,7 +13,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
 ACCOUNT = "以闪亮之名"
-UA = "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/140 Mobile Safari/537.36 MicroMessenger/8.0 KiraparaNews-WeChat/0.1"
+UA = "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 Chrome/140 Mobile Safari/537.36 MicroMessenger/8.0 KiraparaNews-WeChat/0.2"
+RSSHUB_HOSTS = [
+    "https://rsshub.akr.moe",
+    "https://rsshub.chn.moe",
+    "https://rsshub.ethanliunyaa.com",
+    "https://rsshub.stsecurity.moe",
+    "https://rsshub.yfi.moe",
+]
 
 
 def stable_id(value: str) -> str:
@@ -82,10 +89,7 @@ def meta_value(page: str, name: str) -> str:
 
 
 def article_account(page: str) -> str:
-    candidates = [
-        meta_value(page, "author"),
-        meta_value(page, "og:article:author"),
-    ]
+    candidates = [meta_value(page, "author"), meta_value(page, "og:article:author")]
     for pattern in (
         r'\bnickname\s*=\s*["\']([^"\']+)',
         r'["\']nickname["\']\s*:\s*["\']([^"\']+)',
@@ -157,7 +161,6 @@ def parse_article(url: str):
         return None
 
     if "mp.weixin.qq.com" not in urllib.parse.urlparse(final_url).netloc.lower():
-        # Sogou sometimes returns an HTML/JS redirect rather than a 30x.
         for pattern in (
             r'(https?://mp\.weixin\.qq\.com/s\?[^"\'<> ]+)',
             r'(https?://mp\.weixin\.qq\.com/s/[A-Za-z0-9_-]+)',
@@ -209,6 +212,45 @@ def parse_article(url: str):
         "imageUrl": images[0] if images else None,
         "imageUrls": images,
     }
+
+
+def feed_links(xml_text: str, limit: int = 16) -> list[str]:
+    try:
+        root = ET.fromstring(xml_text)
+    except Exception:
+        return []
+    entries = root.findall(".//item") or [e for e in root.iter() if e.tag.split("}")[-1] == "entry"]
+    found = []
+    for entry in entries:
+        author = ""
+        link = ""
+        for child in entry.iter():
+            name = child.tag.split("}")[-1].lower()
+            if name in ("author", "creator") and child.text and not author:
+                author = strip_tags(child.text)
+            if name == "link" and not link:
+                link = child.attrib.get("href") or (child.text or "").strip()
+        if author and ACCOUNT not in author:
+            continue
+        if link and link not in found:
+            found.append(link)
+        if len(found) >= limit:
+            break
+    return found
+
+
+def discover_rsshub(limit: int = 16) -> list[str]:
+    route = "/wechat/sogou/" + urllib.parse.quote(ACCOUNT, safe="")
+    for host in RSSHUB_HOSTS:
+        try:
+            xml_text, _ = request(host.rstrip("/") + route, timeout=14)
+            links = feed_links(xml_text, limit=limit)
+            if links:
+                print(f"RSSHub WeChat candidates: {len(links)} via {host}")
+                return links
+        except Exception as exc:
+            print(f"RSSHub WeChat failed {host}: {exc}")
+    return []
 
 
 def discover_sogou(limit: int = 16) -> list[str]:
@@ -273,12 +315,12 @@ def main():
         rows = []
 
     candidates = []
-    for url in discover_sogou() + discover_bing():
+    for url in discover_rsshub() + discover_sogou() + discover_bing():
         if url not in candidates:
             candidates.append(url)
 
     added = []
-    for candidate in candidates[:20]:
+    for candidate in candidates[:24]:
         row = parse_article(candidate)
         if row:
             added.append(row)
