@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+  "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
+  "items": {}
+}
