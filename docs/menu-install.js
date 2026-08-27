@@ -60,8 +60,8 @@
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">✦</span>
-        <div><strong>Qwen 翻訳・要約</strong><small>奇数時 :37</small></div>
-        <b>2時間ごと</b>
+        <div><strong>LFM2.5 翻訳・要約</strong><small>毎時 :37</small></div>
+        <b>1時間ごと</b>
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">◇</span>
