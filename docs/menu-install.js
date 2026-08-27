@@ -19,6 +19,19 @@
     <p class="menu-install-message" aria-live="polite"></p>`;
   body.prepend(section);
 
+  const analysis = document.createElement('section');
+  analysis.className = 'menu-analysis-section';
+  analysis.innerHTML = `
+    <a class="menu-analysis-action" href="./gap.html">
+      <span class="menu-analysis-icon" aria-hidden="true">📊</span>
+      <span class="menu-analysis-copy">
+        <span><strong>実装差分析</strong><b>BETA</b></span>
+        <small>各国の実装差・日本版の実装時期予想</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
+    </a>`;
+  section.insertAdjacentElement('afterend', analysis);
+
   // Developer tools belong at the very bottom, after links and notes.
   if (devSection) body.appendChild(devSection);
 
