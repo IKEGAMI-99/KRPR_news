@@ -1,6 +1,31 @@
 {
   "version": 1,
   "initialAuditComplete": false,
-  "audited": {},
-  "lastRunAt": null
+  "audited": {
+    "https://x.com/kirapara_JP/status/2092794229718212740": {
+      "contentFingerprint": "2c683c20fac669fe",
+      "auditedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092791708568498290": {
+      "contentFingerprint": "cf0e23d1fd9390c3",
+      "auditedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092789192208298055": {
+      "contentFingerprint": "bc9db30d71c729da",
+      "auditedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092786675575369907": {
+      "contentFingerprint": "0a7f184e54ae10fa",
+      "auditedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092784159156470187": {
+      "contentFingerprint": "2df13bda367f85fb",
+      "auditedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092781642557575197": {
+      "contentFingerprint": "786e1556011344bd",
+      "auditedAtEpoch": 1787806936
+    }
+  },
+  "lastRunAt": 1787806936
 }
