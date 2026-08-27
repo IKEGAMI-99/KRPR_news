@@ -9,6 +9,8 @@ on:
       - 'scripts/translate_news_llm.py'
       - 'scripts/audit_translations.py'
       - 'scripts/apply_sol_edits.py'
+      - 'scripts/glossary_schema.py'
+      - 'scripts/run_with_runtime_glossary.py'
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
@@ -116,7 +118,7 @@ jobs:
         env:
           LLM_MAX_ITEMS: '50'
         run: |
-          python -u scripts/translate_news_llm.py translate \
+          python -u scripts/run_with_runtime_glossary.py scripts/translate_news_llm.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
       - name: Compare overseas previews with Japan feed
