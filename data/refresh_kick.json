@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "lastKickAt": null,
-  "reason": "ChatGPT watchdog updates this file only when the hourly refresh appears stale."
+  "lastKickAt": "2026-08-27T06:26:53Z",
+  "reason": "Refresh News Cacheの直近runがキャンセル後に回復していないため"
 }
