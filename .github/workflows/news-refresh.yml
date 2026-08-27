@@ -2,7 +2,7 @@ name: Refresh News Cache
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '0 * * * *'
     - cron: '43 20 * * *'
   workflow_dispatch:
   push:
@@ -24,6 +24,7 @@ on:
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
+      - 'data/refresh_kick.json'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -31,7 +32,7 @@ permissions:
 
 concurrency:
   group: news-refresh
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   refresh:
