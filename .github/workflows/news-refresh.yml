@@ -11,6 +11,7 @@ on:
       - 'scripts/enrich_sources.py'
       - 'scripts/enrich_social_images.py'
       - 'scripts/enrich_weibo_images.py'
+      - 'scripts/normalize_weibo_cdn.py'
       - 'scripts/enrich_bilibili_images.py'
       - 'scripts/upgrade_x_images.py'
       - 'scripts/fetch_wechat_official.py'
@@ -56,6 +57,7 @@ jobs:
           python scripts/enrich_sources.py
           python scripts/enrich_social_images.py
           python scripts/enrich_weibo_images.py
+          python scripts/normalize_weibo_cdn.py
           python scripts/enrich_bilibili_images.py
           python scripts/upgrade_x_images.py
           python scripts/fetch_wechat_official.py
