@@ -836,7 +836,7 @@
     "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.69
+    "earlyInfoConfidence": 0.71
   },
   {
     "id": "53d1396780c3df96ef30f989",
@@ -1247,8 +1247,8 @@
       "https://i0.hdslb.com/bfs/game/e9bff7ee879c5628a3830b58ac0dc98d64f0ed70.jpg"
     ],
     "titleJa": "处暑时节，蝉鸣渐淡",
-    "bodyJa": "处暑时节，蝉鸣渐淡。游戏『以闪亮之名』中，所有女生都爱玩的3A级模拟生活游戏。游戏内有新活动，具体内容未提及。",
-    "summaryJa": "・追加: なし\n・期間: なし",
+    "bodyJa": "处暑时节，蝉鸣渐淡。游戏『以闪亮之名』追加。所有女生都爱玩的3A级模拟生活游戏。进入。",
+    "summaryJa": "・追加: 游戏『以闪亮之名』\n・期間: 無指定",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
     "aiSummaryFormat": "facts-v2"
@@ -1598,7 +1598,7 @@
     "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.74
+    "earlyInfoConfidence": 0.73
   },
   {
     "id": "d6bb0aec8ee7057baa655655",
@@ -1622,7 +1622,7 @@
     "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.71
+    "earlyInfoConfidence": 0.7
   },
   {
     "id": "e7198cbc048370ec4c4f1f8a",
@@ -1832,7 +1832,7 @@
     "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.73
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "2f95b4d1f2a59f0ae457fee6",
@@ -1916,12 +1916,12 @@
     "imageUrls": [
       "https://pbs.twimg.com/media/HP-eA8CbQAAgMxx?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 Midnight Tea Party - 一般規約",
-    "bodyJa": "以闪亮之名 Midnight Tea Party - 一般規約\n以闪亮之名のこの季の Midnight Tea Partyにようこそ。\nあなたの経験が安全で楽しいものになるように、以下のルールを厳格に遵守してください。\n......",
-    "summaryJa": "以闪亮之名のこの季の Midnight Tea Partyに参加するためには、以下のルールを厳格に遵守することが重要です。",
+    "titleJa": "Midnight Tea Party - 一般ガイドライン",
+    "bodyJa": "Midnight Tea Party - 一般ガイドライン\n皆様、本季のMidnight Tea Partyにようこそ。\n安全で楽しい体験を保証するため、以下のルールを厳守してください。\n......",
+    "summaryJa": "・追加: なし\n・期間: なし",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c6bdef77b8f2ec9cddd21dd3",
@@ -1936,12 +1936,12 @@
     "imageUrls": [
       "https://pbs.twimg.com/media/HP_ivXqb0AAKusg?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名のタイムアライブーストパックが期間限定で販売開始",
-    "bodyJa": "以闪亮之名のタイムアライブーストパック\n以闪亮之名のタイムイベントが開催された後、タイムアライブーストパックは14日間販売されます! \n⏰2022年8月19日 09:00 - 2022年9月1日 23:59 UTC\n\n-\n\n専用染色パック\n⏰2022年8月19日 09:00 - 2022年8月8日 23:59 UTC\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "summaryJa": "以闪亮之名のタイムイベントが開催された後、タイムアライブーストパックが販売されます。専用染色パックは8月19日から8月8日まで販売されます。",
+    "titleJa": "以闪亮之名のイベント後にタイムアライアンスブースストラップが14日間提供されます",
+    "bodyJa": "以闪亮之名のイベント後にタイムアライアンスブースストラップが14日間提供されます。タイムアライアンスブースストラップは、以閃亮之名のイベントが開催された後、2019年8月19日9:00〜2019年9月1日23:59 UTCまで提供されます。タイムアライアンスブースストラップは、限定の染色パックとセットで提供されます。限定の染色パックは、2019年8月19日9:00〜2019年8月8日23:59 UTCまで提供されます。",
+    "summaryJa": "・追加: ティムアライアンスブースストラップ\n・期間: 2019年8月19日9:00〜2019年9月1日23:59 UTC",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.71
@@ -1959,15 +1959,12 @@
     "imageUrls": [
       "https://pbs.twimg.com/media/HP_iqrLbwAAkBQs?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 限定出現パックエンドレーサー",
-    "bodyJa": "以闪亮之名 限定出現パックエンドレーサー\n\n⏰8月19日 09:00 - 9月8日 23:59 UTC\n\n[以闪亮之名 限定出現パックエンドレーサー]\n1. 过去の庭パック\n2. 希望の像パック\n3. 虚構のシーンパック\n4. 失った奇跡パック\n5. 夜の願いパック\n6. 冰の薔薇の夢幻パック\n\n#LifeMakeover",
-    "summaryJa": "以闪亮之名 限定出現パックエンドレーサーが8月19日から9月8日まで限定で登場します。過去の庭パック、希望の像パック、虚構のシーンパック、失った奇跡パック、夜の願いパック、冰の薔薇の夢幻パックの6種類が登場します。",
+    "titleJa": "Limited-Time Appearance Pack Encore [8月19日09:00〜9月8日23:59 UTC]",
+    "bodyJa": "Limited-Time Appearance Pack Encore\n\n[期間] 8月19日09:00 - 9月8日23:59 UTC\n\n[追加パック] 1. Court of Yore Pack\n2. Statue of Hope Pack\n3. Illusional Scene Pack\n4. Lost Miracle Pack\n5. Night Wish Pack\n6. Ice Rose Reverie Pack\n\n#LifeMakeover",
+    "summaryJa": "・追加: Court of Yore Pack、Statue of Hope Pack、Illusional Scene Pack、Lost Miracle Pack、Night Wish Pack、Ice Rose Reverie Pack\n・期間: 8月19日09:00〜9月8日23:59 UTC",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-    "aiSummaryFormat": "legacy",
-    "earlyInfo": true,
-    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.73
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5a740d8c5d15a2c89ab80546",
@@ -1982,12 +1979,12 @@
     "imageUrls": [
       "https://pbs.twimg.com/media/HP_imFCakAAwZB7?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 スcanted Mortals アピアランス パック",
-    "bodyJa": "以闪亮之名 スcanted Mortals アピアランス パック\n\n⏰8月19日 09:00 - 9月1日 23:59 UTC\n\nイベント期間中、パックを54%の割引で購入できます。パックにはダイナミックカメラポーズ [フラワーウイング]、シーン [ペタルガーデン]、ポーズ [ playful春 ]、カメラモーションなど、多数のアイテムが含まれています。",
-    "summaryJa": "以闪亮之名 スcanted Mortals アピアランス パックが8月19日から9月1日まで購入可能。割引で54%、ダイナミックカメラポーズやシーン、ポーズなど多数のアイテムが含まれています。",
+    "titleJa": "以闪亮之名 Scented Mortals Appearance Pack 出会いイベント",
+    "bodyJa": "以闪亮之名 Scented Mortals Appearance Pack\n\n⏰8月19日09:00 - 9月1日23:59 UTC\n\nイベント期間中、以闪亮之名 Scented Mortals Pack を54%の割引で購入できます。パックには動的なカメラポーズ [フラワーウイング]、シーン [花びらの露店]、ポーズ [ playful 春]、カメラモーションなど、多数のアイテムが含まれています。",
+    "summaryJa": "・追加: 以闪亮之名 Scented Mortals Appearance Pack\n・期間: 8月19日09:00 - 9月1日23:59 UTC",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "62e3989bc8552413437a7564",
@@ -2024,11 +2021,11 @@
       "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
     ],
     "titleJa": "バージョン更新",
-    "bodyJa": "8月19日のアップデート後の新コンテンツと最適化：1. 日常ミッションでQuick Deploy機能が追加されました。日常ミッションを行う際、Quick Deploy機能を使用することで、ミッションごとに Ally キャラクターを割り当てることで、より効率化が可能になります！2. Life Makeover x Guan Dazhou：新テーマソング砂嵐と山道を経由して、旅の途中のすべての障害は、家への遠くの光がより愛着をもって望むものとなります。Life MakeoverはGuan Dazhouと再び手を組み、張希雲の美しい歌声を提供することで、あなたに新しいバージョンのテーマソング Homeland Odeを提供します。パネルミュージックをタップして、将軍の故郷への旅を体験してください。3. 新しいストーリークエスト第42章：血痕の音 - 言葉を超えて8月31日から開催。 cageの外はもっと大きなもので、古い弦は上昇と下降を繰り返します。 おなじみの「Flora」さん、霧の中を闘う魂を救ってください。開催章が開いた後、新しい4星セット \\[Champagne Ballet]、4星セット \\[Sunset Tangerine]、4星セット \\[Daydream Walk]はファッショスタジオで crafting できます。第42章 Vvannaチャレンジも開催！5星アクセサリー \\[Heart Piercer]、ポーズ \\[Sealed In Time]、写真フレーム \\[Wind's Graffiti]が利用可能になります。新しい4星トップ \\[Wild Code]はVvannaショップに追加されます。4. ストアで新ファッションと他の報酬新4星ネックレス \\[Fruity Signal]と新4星腕時計 \\[Glaze Sky]がコンビニに追加されました。また、コンビニ、 Ally キャラクターのショップ、リバートショップ、Wonder Connect交換ショップで新アイテムが利用可能になります。ポーズ、チャットバブル、チャット背景のカバー、家具、写真フレーム、愛らしい効果なども含まれます。お気に入りを選びましょう！5. リバートショップで新ネイルセット、ファッショイン、他々新静止ネイルポーズ \\[Faint Sigh]が価値リバートに追加されます。",
-    "summaryJa": "日常ミッションのQuick Deploy機能が追加され、Life Makeover x Guan Dazhouの新テーマソングが提供されました。第42章のストーリークエストが開催され、新4星セットと新4星トップが追加されました。コンビニやリバートショップで新ファッションと新アイテムが提供されました。",
+    "bodyJa": "8月19日のアップデート後、新コンテンツと最適化が追加されました。1. 日常ミッションでQuick Deploy機能が追加され、ミッションごとに Ally キャラクターを割り当てることで、より効率的になります。2. Life Makeover x Guan Dazhou: 新しいテーマソングが追加され、砂嵐と山道を経由して、旅の全ての障害が彼女の故郷への灯りをより美しいものにします。Life MakeoverはGuan Dazhouと再度協力し、張希雲の美しい歌声を提供し、 Homeland Odeという新バージョンのテーマソングを提供します。Tap Panel Musicをタップして、Generalの故郷への旅を体験してください。3. 新しいストーリーチャプター42: 血痕の音 - 聞こえる声が開幕。 cage外はもっと広いですが、古い弦は上昇と下降します。 ああ、素晴らしい「フラオ」— ご存知の通り、霧の中で闘争する魂を救ってください。チャプターが開幕すると、4スターセット[ champain バレエ]、4スターセット[ sunset タンジュリーヌ]、4スターセット[ daydream ライド]がファッショスタジオで作成できます。 Vvannaチャレンジのチャプター42も開幕します！ 5スターアクセサリー[ heart ピアサー]、ポーズ[ sealed in time]、写真フレーム[ wind's graffiti]がクリアできます。 Vvannaショップで4スタートップ[ wild code]が追加されます。4. ストアで新ファッションと他の報酬が追加されました。コンビニエンスストアで4スターネックレス[ fruity シグナル]と4スター腕時計[ glaze スカイ]が追加されました。また、コンビニエンスストア、 Ally ストア、リバートストア、ワンド・コネクト交換ストアで新アイテムが追加されました。ポーズ、チャットバブル、チャットバックグラウンド、家具、写真フレーム、カワイイ効果などがあります。お気に入りを選びましょう！5. リバートストアで新静止ネイルポーズ[ faint sigh]が追加されます。",
+    "summaryJa": "・追加: Quick Deploy機能、Life Makeover x Guan Dazhou: Homeland Odeの新テーマソング、4スターセット[ champain バレエ]、4スターセット[ sunset タンジュリーヌ]、4スターセット[ daydream ライド]、4スタートップ[ wild code]、新静止ネイルポーズ[\n・期間: 未指定",
     "aiProcessed": true,
     "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.74
@@ -2061,7 +2058,13 @@
     "imageUrls": [
       "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
       "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
-    ]
+    ],
+    "titleJa": "メンテナンス通知",
+    "bodyJa": "皆様、より良い体験を提供するため、8月19日 UTC 03:00よりメンテナンスを開始します。メンテナンスに備えて時間のスケジューリングをお願いします。不要な損失を避けるために。\\[メンテナンス時間] 8月19日 UTC 03:00 - 08:30\\[サーバー] 全サーバー\\[メインコンテンツ] イベント通知とバージョン更新をご参照ください。サーバーの開設時間は実際の運用状況によって変動する可能性があります。メンテナンスが終了した後、全プレイヤーにメンテナンス補償を送ります。8月22日 UTC 23:59までに補償を取得してください。皆様の理解とサポートに感謝します。Life Makeoverチーム",
+    "summaryJa": "・期間: 8月19日03:00〜08:30 UTC",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3e917c104097d602ae9eea59",
@@ -2076,7 +2079,13 @@
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=Z6FY62EgMPLXBmdhgyuLeLx9ZFU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787968800&x-signature=b6WvWYNsM7YlKhjqeXeuqLcTmJc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+    "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+    "summaryJa": "・追加: 新SSR絆「揺るがぬ錨」が登場\n・期間: 未記載",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "eeb5cd41ae5fbf1b71619790",
@@ -2090,7 +2099,13 @@
     "imageUrl": "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig",
     "imageUrls": [
       "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "『숲の旋律』背景画面共有 🎶 暮れた月光に覆われた森、ハープの旋律と共に神秘的な妖精の世界が展開されます。\n\n銀色の髪と青いレース、星のようにキラキラと光る蝶が交錯する\n『森林の旋律』の美しい瞬間を背景画面としてお楽しみください。\n\nPC背景設定に設定し、日常生活中も森の旋律が伝える幻想と興奮を体験してください。\n\n今日もStylightと\n夢のような一日をお過ごしください！ 💙\n\n#Stylight #Stylight復活 #Stylight更新 #森林の旋律",
+    "bodyJa": "『森林の旋律』背景画面共有\n\n🎶 暮れた月光に覆われた森、ハープの旋律と共に神秘的な妖精の世界が展開されます。\n\n銀色の髪と青いレース、星のようにキラキラと光る蝶が交錯する\n『森林の旋律』の美しい瞬間を背景画面としてお楽しみください。\n\nPC背景設定に設定し、日常生活中も森の旋律が伝える幻想と興奮を体験してください。\n\n今日もStylightと\n夢のような一日をお過ごしください！ 💙\n\n#Stylight #Stylight復活 #Stylight更新 #森林の旋律",
+    "summaryJa": "・追加: 『森林の旋律』の背景画面\n・期間: 不明\n・入手: PC背景設定に設定\n・報酬: 美しい幻想と興奮\n・価格: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "4f962f847222399795290b59",
@@ -2104,7 +2119,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=MxyEh2x8zcs2tbehmJs7k8IVgws%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=MxyEh2x8zcs2tbehmJs7k8IVgws%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+    "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+    "summaryJa": "・追加: 新星5セット「占心の誓い」が『きらめきパラダイス』のイベント『孤刃帰鞘』に登場\n・期間: 公開日未定",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bcf72431254aaf9eaa34de80",
@@ -2118,7 +2139,13 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=uAGKGZ7GEBHkejCewSzfA%2BSavXs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=uAGKGZ7GEBHkejCewSzfA%2BSavXs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星6セット「修羅帰鞘」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『き...",
+    "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星6セット「修羅帰鞘」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『き...",
+    "summaryJa": "・追加: 新星6セット「修羅帰鞘」が『きらめきパラダイス』のイベント『孤刃帰鞘』に登場\n・期間: 公開日未定",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3fe0b4b88b8f9f53786b0bf7",
@@ -2132,7 +2159,13 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=v%2BHhVKHJCsu2V5zSVfceTytklOI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=v%2BHhVKHJCsu2V5zSVfceTytklOI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "新イベント『孤刃帰鞘』が8月27日にスタート",
+    "bodyJa": "新イベント『孤刃帰鞘』が8月27日にスタート！ 『きらめきパラダイス』の新星6イベントのPVを公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+    "summaryJa": "・追加: 新イベント『孤刃帰鞘』\n・期間: 8月27日",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "072106022878369e637e7c32",
@@ -2162,7 +2195,16 @@
     "imageUrl": "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig",
     "imageUrls": [
       "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "[NEW] 『앤티크 살롱』 배경 패키지 예고",
+    "bodyJa": "“타닥타닥 울리는 축음기의 선율과 빛바랜 햇살이 머무는 곳.\n시간이 켜켜이 쌓인 살롱에서 우아하고 느긋한 오후를 즐겨 보세요.”\n\n開催期間: 9月1日 10:30 ~ 9月4日 23:59\n\n[パッケージ情報]\n美しい撮影背景『藝術の時代』や、美しいポーズ『優雅な視線』など、様々なアイテムが含まれる美しいパッケージ\n\n※詳細は出荷後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
+    "summaryJa": "・追加: 『앤티크 살롱』の背景パッケージ\n・期間: 9月1日 10:30〜9月4日 23:59\n・情報: 美しい撮影背景『藝術の時代』や、美しいポーズ『優雅な視線』など、様々なアイテムが含まれる美しいパッケージ",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "043f5635460df35d01230ee9",
@@ -2176,7 +2218,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKn8AoOhIAZUiI1BPivABwhRPNAePEaKAB8Bd~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=xqFmoDKFhzZg1McgBkTI8ZlM7aU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oMKn8AoOhIAZUiI1BPivABwhRPNAePEaKAB8Bd~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=xqFmoDKFhzZg1McgBkTI8ZlM7aU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "以闪亮之名 新バージョン | ピタールティータイム 5種星セット インゲーム映像",
+    "bodyJa": "以闪亮之名 新バージョン | ピタールティータイム 5種星セット インゲーム映像！❗ 大きなパンナリとスカートテーブルの統合❗ 革新的な革新！",
+    "summaryJa": "・追加: ピタールティータイム 5種星セット\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "630900bf92c2d60c99f97a1d",
@@ -2190,7 +2238,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAT8WpA6eB9IJPUKGAIAsepe3MsAwLEGAqAJfH~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=5H2bpk%2BrvDO5YT1WlO%2Fbb8iw%2Bdw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAT8WpA6eB9IJPUKGAIAsepe3MsAwLEGAqAJfH~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=5H2bpk%2BrvDO5YT1WlO%2Fbb8iw%2Bdw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "以闪亮之名 新バージョン4.2 | 5段階 [ phantom candle ] ゲーム内映像",
+    "bodyJa": "以闪亮之名 新バージョン4.2 | 5段階 [ phantom candle ] ゲーム内映像! 蜡、火、蜘蛛の巣、そして水晶が交錯すると、この衣装を...",
+    "summaryJa": "・追加: 星5セット「 phantom candle 」\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a416e88fc4a7d0f3bc3c7bec",
@@ -2204,7 +2258,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIEB8i1ChBAAgzBNIf2MAUAwirJ1iP7xMBKAKW~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=jRuGX%2BoclHni2YPkWXyhewCDNr0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIEB8i1ChBAAgzBNIf2MAUAwirJ1iP7xMBKAKW~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=jRuGX%2BoclHni2YPkWXyhewCDNr0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "#LifeMakeover 新バージョン4.2 | ガーデンソワールトレーラーカンドル 梦はティータイムで refuge します、香りの渦中で舞い踊っています",
+    "bodyJa": "#LifeMakeover 新バージョン4.2 | ガーデンソワールトレーラーカンドル 梦はティータイムで refuge します、香りの渦中で舞い踊っています。新バージョン - ...",
+    "summaryJa": "・追加: ガーデンソワールトレーラーカンドル\n・期間: 無記載",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "678ea3f1b4e144af08a83503",
@@ -2218,7 +2278,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=N1ijubhRqBRm1m%2B9MzaTrd1WYNk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=N1ijubhRqBRm1m%2B9MzaTrd1WYNk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する 新SR絆💞ゲン『風と残り火』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+    "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する 新SR絆💞ゲン『風と残り火』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+    "summaryJa": "・追加: 新SR絆『風と残り火』が公開\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5dd017227129accd7a1c7679",
@@ -2232,7 +2298,13 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osIAfqoCCCxA5gVFqMQACFEBQFDR9XAPFf4jCQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=IN41g%2FKjUwW2ssspbYmI%2FPD%2BYvY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osIAfqoCCCxA5gVFqMQACFEBQFDR9XAPFf4jCQ~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=IN41g%2FKjUwW2ssspbYmI%2FPD%2BYvY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "新イベント『七宝庭の香り』が8月6日より開催",
+    "bodyJa": "新イベント『七宝庭の香り』が8月6日より開催！ 『きらめきパラダイス』の新星5イベントPVを公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+    "summaryJa": "・追加: 新イベント『七宝庭の香り』\n・期間: 8月6日〜",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "acf7ad4cb6ae11e5856028c0",
@@ -2246,7 +2318,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocUCYAAu1BAcWjGWB4iiwTBGBKAKu0AIEyfEIw~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=3rlbBVn1kQxpSDkwnRZgoHrABb0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocUCYAAu1BAcWjGWB4iiwTBGBKAKu0AIEyfEIw~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=3rlbBVn1kQxpSDkwnRZgoHrABb0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「香りの饗宴」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームR...",
+    "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「香りの饗宴」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームR...",
+    "summaryJa": "・追加: 新星5セット「香りの饗宴」が『きらめきパラダイス』のイベント『七宝庭の香り』に登場\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "6c6ed548ca3583530263199f",
@@ -2260,7 +2338,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osQgxDVMIApMaoAC7BCEnekAwEBVgAF3qWCV6f~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=AX%2B6BaSETlp7FZG1OEsxjSqz8UM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osQgxDVMIApMaoAC7BCEnekAwEBVgAF3qWCV6f~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=AX%2B6BaSETlp7FZG1OEsxjSqz8UM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「七宝の蜻蛉夢」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリー...",
+    "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「七宝の蜻蛉夢」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリー...",
+    "summaryJa": "・追加: 新星5セット「七宝の蜻蛉夢」が『きらめきパラダイス』のイベント『七宝庭の香り』に登場\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "762becfc8e496daeb623ca47",
@@ -2274,7 +2358,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEjUEViEAjIYcjWNAABAIMJ4Kj1wxBBBAui5f1~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=XECRmRBTR3q0%2BGyxxTUqk8bhdws%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEjUEViEAjIYcjWNAABAIMJ4Kj1wxBBBAui5f1~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=XECRmRBTR3q0%2BGyxxTUqk8bhdws%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『夢巡る広野』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #自由な私 ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リン...",
+    "bodyJa": "『夢巡る広野』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #自由な私 ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リン...",
+    "summaryJa": "・追加: 『夢巡る広野』特別投稿キャンペーン\n・期間: 無指定",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5fe01886909eca189c86da74",
@@ -2288,7 +2378,13 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIMAQ7ALiAuBxt8kBYz5aNbiEAnAu5xWPkIAl~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=txwqio3P6%2FL7geAYHDEZlHB%2BZLE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIMAQ7ALiAuBxt8kBYz5aNbiEAnAu5xWPkIAl~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=txwqio3P6%2FL7geAYHDEZlHB%2BZLE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』のイベント『蔓守の誓い』に登場する 新SSR絆💞ジキ『戯れ夢の実現』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+    "bodyJa": "『きらめきパラダイス』のイベント『蔓守の誓い』に登場する 新SSR絆💞ジキ『戯れ夢の実現』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+    "summaryJa": "・追加: 新SSR絆💞ジキ『戯れ夢の実現』が『蔓守の誓い』イベントに登場\n・期間: 未記載",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c703c1be17100d4f816b5124",
@@ -2302,7 +2398,16 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=YciiWat%2BCg9m9QziapfrFIVfXXo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=YciiWat%2BCg9m9QziapfrFIVfXXo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『幽靈の森』パッケージ明日リリース",
+    "bodyJa": "[予告] 『幽靈の森』パッケージ明日リリース！ 📜 “風に伝わる囁きが道を照らし、冒険家たちは描かれた地図上に自分の信念を書き加える。” 🕙 2/3(水) 10:30",
+    "summaryJa": "・追加: 『幽靈の森』パッケージ\n・期間: 2月3日10:30",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.75
   },
   {
     "id": "f84532f4b831482fc750d5d1",
@@ -2316,7 +2421,16 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=hbLtWUbat4wDeEWEC5wX8Cf2Zt4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=hbLtWUbat4wDeEWEC5wX8Cf2Zt4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『ラスト 월드』パッケージ明日リリース",
+    "bodyJa": "[予告] 『ラスト 월드』パッケージ明日リリース！機械都市の黄昏に光が掠め、混沌の隙に新たな存在が目を開いた。🕒 1/27(火) 10:30〜2/9(月) 23:59",
+    "summaryJa": "・追加: 『ラスト 월드』パッケージ\n・期間: 1月27日10:30〜2月9日23:59",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "55f5b1baecea68679daa7acf",
@@ -2330,7 +2444,16 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=9M5x6XwSzXEHe3Iux4R%2FlVMvgUI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=9M5x6XwSzXEHe3Iux4R%2FlVMvgUI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『アラビアン ファントージ』フロート パッケージ明日リリース",
+    "bodyJa": "[予告] 『アラビアン ファントージ』フロート パッケージ明日リリース！幻想のアラビアン世界へ旅立ちの時！『アラビアン ファントージ』パッケージ期間限定オープン ✨ 🕙 1/24(土) 10:30...",
+    "summaryJa": "・追加: 『アラビアン ファントージ』フロート パッケージ\n・期間: 1月24日10:30〜",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.74
   },
   {
     "id": "4aa542ec0dc08c2a4da41a74",
@@ -2344,7 +2467,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=7psVaHEE%2BboMd%2FjeVnqFrfCqooI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=7psVaHEE%2BboMd%2FjeVnqFrfCqooI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "深い心地から覚めた宝石、その光は災いか奇跡か。砂漠の息を追って、封印された千年の夢の中へ一歩近づく。 - スリーエフ期間限定 SSR 『太陽神の...",
+    "bodyJa": "深い心地から覚めた宝石、その光は災いか奇跡か。砂漠の息を追って、封印された千年の夢の中へ一歩近づく。 - スリーエフ期間限定 SSR 『太陽神の...",
+    "summaryJa": "・追加: スリーエフ期間限定 SSR 『太陽神の...'\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "af604c0b74cc9d8f9eafde4a",
@@ -2358,7 +2487,16 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=ko4mp15V2ItGvrMlwySb6wlnwLc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=ko4mp15V2ItGvrMlwySb6wlnwLc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[更新] 『運命の矢』予告編映像 \"運命の矢が届く瞬間、心は花のように咲く。\"\nHymne à l’Amour—誰も脱出できない讃歌,残酷な...",
+    "bodyJa": "[更新] 『運命の矢』予告編映像 \"運命の矢が届く瞬間、心は花のように咲く。\"\nHymne à l’Amour—誰も脱出できない讃歌,残酷な...",
+    "summaryJa": "・追加: 『運命の矢』予告編映像\n・期間: 不明",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.74
   },
   {
     "id": "cf259ee5901373bbaf21696e",
@@ -2372,7 +2510,13 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=1gKDY%2FAlN9EtICMV5mJiV9WkhHM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=1gKDY%2FAlN9EtICMV5mJiV9WkhHM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "...",
+    "bodyJa": "...",
+    "summaryJa": "・追加: 6★『以闪亮之名』イベントの新衣装\n・期間: 翻訳内容により確定が必要",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "140ebba5fdcee6319e990cdc",
@@ -2386,7 +2530,16 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=E8gXYYIo9YjuIXKk98buEBJJMvo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=E8gXYYIo9YjuIXKk98buEBJJMvo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『설원의 호수』パッケージ明日リリース",
+    "bodyJa": "[予告] 『설원의 호수』パッケージ明日リリース！ \"설원의 깊은 고요 속, 눈꽃이 흩날리는 호수에 비친 별빛처럼, 마음속 숨겨진 이야기가 흐르고 있다.\" 🕙 1/13(火)",
+    "summaryJa": "・追加: 『설원의 호수』パッケージ\n・期間: 1月13日",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.76
   },
   {
     "id": "738b1b6980342efbd0b267da",
@@ -2400,7 +2553,13 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=Q1nH0bmtY%2B9Kxfy9ANvK75%2Bcil0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=Q1nH0bmtY%2B9Kxfy9ANvK75%2Bcil0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[NEW] 『ネバーランド ファンタジー』 小願 ランダムボックス明日発売",
+    "bodyJa": "[NEW] 『ネバーランド ファンタジー』 小願 ランダムボックス明日発売！ スパンチックな 5★ 独特の コスチューム ネバーランド ファンタジーが皆様をお招きします。 🕙2026/1/9 10:30 ~ 2026/4/6 23:59",
+    "summaryJa": "・追加: スパンチックな 5★ 独特の コスチューム ネバーランド ファンタジー\n・期間: 2026/1/9 10:30〜2026/4/6 23:59",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f254eaad7f653c5a6818ac2f",
