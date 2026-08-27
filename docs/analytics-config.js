@@ -1,3 +1,3 @@
 window.KIRAPARA_ANALYTICS = {
-  measurementId: ""
+  measurementId: "G-04CWCWFSM7"
 };
