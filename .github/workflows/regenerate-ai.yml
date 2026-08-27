@@ -64,9 +64,9 @@ jobs:
             "llama-cpp-python==0.3.16" \
             --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
 
-      - name: Regenerate translation and summary
+      - name: Regenerate translation and summary in strict Japanese
         run: |
-          python -u scripts/regenerate_ai.py \
+          python -u scripts/strict_qwen_translate.py regenerate \
             --article-id "${{ steps.request.outputs.article_id }}" \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
