@@ -17,12 +17,12 @@
 - 地域フィルター / 検索 / SNS共有
 - キラキラ系ライトテーマ / 病みカワ系ダークテーマ
 - ホーム画面追加に対応したPWA
-- GitHub Actions 上のローカルLLMによる日本語翻訳 / 要約
-- GPT-5.6 Sol による1日3回の取りこぼし・翻訳品質監査
+- GitHub Actions上のローカルQwenによる日本語翻訳 / 要約
+- ニュース収集とAI推論を分離した軽量更新パイプライン
+- GPT-5.6 Solによる1日3回の取りこぼし・翻訳品質監査
 - Solが発見した欠落記事の補完と、誤訳・誤要約の保護付き修整
 - GitHub Actions停止時のChatGPT外部watchdogによる自動再起動
 - 原文表示への切り替え
-- AI結果がおかしい記事の再翻訳 / 再要約依頼
 
 ## 📱 インストール
 
@@ -34,9 +34,51 @@ APKは使用しません。ブラウザからPWAを開いてホーム画面へ�
 
 サイト側を更新すれば新しいUIが配信されるため、APKの再インストールやPlay Storeは不要です。
 
+## 🧭 更新アーキテクチャ
+
+ニュース収集、Qwen翻訳、Sol監査、死活監視を別系統にしています。
+
+```text
+公開ニュース / SNS
+        │
+        ▼
+毎時 :17  news-refresh.yml
+        │
+        ├─ 本文・日時・画像を整理
+        ├─ 重複 / 小画像を除外
+        ├─ Sol補完記事をマージ
+        └─ 既存の翻訳キャッシュだけ反映
+        │
+        ▼
+   data/news.json
+        │
+        ├──────────────► Kirapara News PWA
+        │
+        ▼
+2時間ごと :37  ai-translate.yml
+        │
+        ├─ 未処理件数を確認
+        ├─ 0件なら重いAIジョブをskip
+        └─ 未処理があれば最大50件をQwen処理
+        │
+        ▼
+data/translations.json
+        │
+        ▼
+   data/news.jsonへ反映
+
+別系統:
+Sol監査 8:00 / 14:00 / 20:00 JST
+ChatGPT watchdog 毎時 :30
+```
+
+収集とAIを切り離しているため、Qwen側に障害が起きても原文ニュースの更新自体は継続できます。
+
 ## 📰 ニュース収集
 
-GitHub Actions が**毎時00分**に通常のニュース収集を実行します。
+`news-refresh.yml` が**毎時17分**に通常のニュース収集を実行します。
+
+GitHub Actionsでは毎時00分付近にscheduled workflowが集中しやすいため、ピークを避けて17分にしています。
 
 ```text
 公式サイト / X / TikTok / YouTube
@@ -51,9 +93,8 @@ PR TIMES / ゲームメディア / 一般ニュース
                 ↓
       Sol補完記事をマージ
                 ↓
-     Qwen翻訳・要約を適用
-                ↓
-   Sol修整を最終適用して保護
+  Qwen / Solの既存翻訳キャッシュを反映
+      ※ここではLLM推論しない
                 ↓
           data/news.json
                 ↓
@@ -72,6 +113,49 @@ PR TIMES / ゲームメディア / 一般ニュース
 Webニュースの発見には公開RSS等を利用しますが、**Google Newsのプロキシ記事はタイムラインへ保存しません**。元記事URLと元記事側の公開日時を優先し、日時は `data/article_dates.json` に保持して後の収集で不自然に前後しないようにします。
 
 SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。そのため、通常収集とは別にSolによる定期監査を行います。
+
+## 🤖 Qwen翻訳・要約
+
+通常処理では有料AI APIを使用せず、GitHub ActionsのCPU上で **Qwen2.5-3B-Instruct Q4_K_M** を `llama.cpp` 経由で実行します。
+
+AI処理は `ai-translate.yml` に分離され、**2時間ごとの37分**に実行します。
+
+### backlog方式
+
+最初に軽量な `plan` ジョブが `data/news.json` と `data/translations.json` を確認します。
+
+```text
+未翻訳 / 再生成待ち記事を確認
+        ↓
+ backlog = 0 ?
+   │          │
+  Yes        No
+   │          │
+   ▼          ▼
+重いAI      Qwenジョブ開始
+ジョブskip      │
+               ▼
+          最大50件を処理
+```
+
+backlogが0件の場合、Qwenモデルの復元、`llama.cpp` のインストール、モデル推論を行う重い `translate` ジョブ自体を起動しません。
+
+未処理がある場合は、1回につき**最大50件**を処理します。同じ記事は内容ハッシュとキャッシュキーで判定し、内容が変わっていなければ毎回再推論しません。
+
+海外記事は `titleJa` / `bodyJa` / `summaryJa` を生成し、日本語記事は原文を維持しながら `summaryJa` を生成します。
+
+固有名詞は `data/translation_glossary.json` の辞書を優先し、辞書にない名称は無理に日本語公式名へ変換しない方針です。
+
+### Qwen / llama.cpp キャッシュ
+
+Actionsでは以下をキャッシュします。
+
+- `~/.cache/kirapara-models` : Qwen 2.5 3B Q4_K_M GGUF
+- `~/.cache/pip` : Pythonパッケージとビルド済み `llama-cpp-python` wheel
+
+Qwen GGUFはSHA256を確認してから使用します。`llama-cpp-python` もpipキャッシュを再利用するため、毎回ソースからビルドするコストを減らします。
+
+AIジョブの必須ステップは失敗を握りつぶさず、モデル取得・runtime準備・推論に失敗した場合はworkflow側で失敗として見える構成です。
 
 ## 🔎 Solによる外部監査・補完
 
@@ -121,7 +205,9 @@ Qwenからは有効な処理済みキャッシュとして見える
 再翻訳対象から除外
 ```
 
-Sol管理の翻訳には `managedBySol: true`、記事側には `solLocked: true` が付きます。通常のQwen処理後にもSol修整を再適用するため、毎時のニュース更新やQwen再生成でSol版が意図せず失われない構成です。
+Sol管理の翻訳には `managedBySol: true`、記事側には `solLocked: true` が付きます。
+
+AIジョブではQwen処理の前後にSol修整を再適用します。Sol版が有効なキャッシュとして存在する記事はQwenの再生成対象から除外されるため、後からQwenに上書きされません。
 
 Solの修整そのものに誤りが見つかった場合は、より新しい根拠に基づいてSol側のoverrideを更新します。
 
@@ -133,46 +219,27 @@ URL上のfavicon、ロゴ、QR、アバター等の除外に加え、画像本�
 
 PWA側でも画像の実寸を確認するため、サーバー側で寸法を判定できなかった小画像が混ざってもカードや全画面ビューアから除外します。
 
-## 🤖 AI翻訳・要約
+## 🛟 refresh watchdog
 
-通常処理では有料AI APIを使用せず、GitHub Actions のCPU上で **Qwen2.5-3B-Instruct Q4_K_M** を `llama.cpp` 経由で実行します。
+通常収集とは別に、ChatGPT側の **Kirapara Refresh Watch** が毎時30分にGitHub Actionsの実行状況を確認します。
 
-```text
-新着ニュース
-    ↓
-翻訳キャッシュ確認
-    ↓
-未処理の記事だけLLMへ
-    ↓
-海外記事: 日本語翻訳 + 日本語要約
-日本語記事: 日本語要約
-    ↓
-data/translations.json にキャッシュ
-    ↓
-data/news.json へ反映
-```
+直近の成功実行が90分以上見つからず、最近開始された `Refresh News Cache` もない場合は `data/refresh_kick.json` を更新してmainへコミットします。このファイルは `news-refresh.yml` のpush triggerに含まれているため、GitHub側のcronが途切れていても外部から収集workflowを起動できます。
 
-同じ記事を毎回推論せず、記事ID / 内容に対応した翻訳結果を再利用します。原文の `title` / `body` は保持し、日本語結果は `titleJa` / `bodyJa` / `summaryJa` として追加します。
+直近60分以内にwatchdogがキック済みの場合は重複起動を避けます。
 
-固有名詞は `data/translation_glossary.json` の辞書を優先し、辞書にない名称は無理に日本語公式名へ変換しない方針です。
+## 🚦 同時実行の制御
 
-### AI結果の再生成
+ニュース収集とAI翻訳はどちらも `kirapara-data-writer` という同じconcurrency groupを使用し、`cancel-in-progress: false` にしています。
 
-AI処理済みの記事には「再要約」または「再翻訳・要約」ボタンが表示されます。静的なGitHub Pagesへ書き込み用トークンを埋め込まないため、ボタンは記事ID入りのGitHub Issue作成画面を開きます。
-
-リポジトリ所有者がそのIssueを投稿すると `regenerate-ai.yml` が起動し、対象記事だけQwenで再生成して `data/translations.json` / `data/news.json` を更新します。第三者が同じ形式のIssueを作ってもAIジョブは起動しません。
-
-Solによる保護対象の記事は、通常のQwen結果よりSol側のoverrideが優先されます。
-
-> [!NOTE]
-> 小型ローカルLLMによる翻訳・要約のため、誤訳や不自然な表現が発生する可能性があります。Sol監査はそれを補助する二重チェックですが、完全性を保証するものではありません。重要な内容は必ず元記事も確認してください。
+これにより、収集workflowとAI workflowが同時に `data/news.json` / `data/translations.json` を更新して競合するのを避け、先に始まった処理が完了してから次の処理へ進みます。
 
 ## 🧱 構成
 
 ```text
 KRPR_news/
 ├─ .github/workflows/
-│  ├─ news-refresh.yml       # ニュース収集 + 整理 + Qwen翻訳/要約 + Sol修整適用
+│  ├─ news-refresh.yml       # 毎時:17のニュース収集。重いLLM推論はしない
+│  ├─ ai-translate.yml       # 2時間ごと:37のQwen翻訳/要約。最大50件
 │  ├─ regenerate-ai.yml      # 指定記事のQwen結果を再生成
 │  ├─ gap-analysis.yml       # 実装ギャップ解析
 │  └─ pages.yml              # GitHub PagesへPWAを公開
@@ -192,11 +259,9 @@ KRPR_news/
 │  ├─ app.js
 │  ├─ ui_fixes.js
 │  ├─ share.js
-│  ├─ regenerate.js
 │  ├─ styles.css
 │  ├─ theme-kawaii.css
 │  ├─ layout-fixes.css
-│  ├─ regenerate.css
 │  ├─ manifest.webmanifest
 │  ├─ sw.js
 │  └─ icon.svg
@@ -205,6 +270,7 @@ KRPR_news/
    ├─ merge_direct_official.py
    ├─ enrich_sources.py
    ├─ enrich_social_images.py
+   ├─ upgrade_x_images.py
    ├─ fetch_wechat_official.py
    ├─ discover_web_news.py
    ├─ enrich_images.py
@@ -219,17 +285,18 @@ KRPR_news/
 
 ## 🔄 自動更新
 
-`news-refresh.yml` が毎時00分にニュースデータを更新し、変更をmainへ保存します。PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
+- `news-refresh.yml`: 毎時17分。ニュース収集と既存翻訳キャッシュ反映
+- `ai-translate.yml`: 2時間ごとの37分。backlogがある場合だけ最大50件をQwen処理
+- `Kirapara Refresh Watch`: 毎時30分。収集workflowの停止を外部監視
+- Sol監査: 8:00 / 14:00 / 20:00 JST。取りこぼしと翻訳品質を外部監査
 
-通常収集とは別に、ChatGPT側の **Kirapara Refresh Watch** が毎時30分にGitHub Actionsの実行状況を確認します。直近の成功実行が90分以上見つからず、最近開始された実行もない場合は `data/refresh_kick.json` を更新して `news-refresh.yml` をpush経由で再起動します。直近60分以内にwatchdogがキック済みの場合は重複起動を避けます。
-
-GitHub Actions側は `cancel-in-progress: false` とし、watchdogのキックで処理中の正常な更新を途中キャンセルしないようにしています。
-
-Sol監査はさらに別系統のChatGPT定期タスクとして1日3回実行します。通常収集・外部watchdog・Sol監査の経路を分けることで、同じ障害点に依存しすぎない構成にしています。
+PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
 
 ## 💰 運用コスト
 
 通常のニュース収集・Qwen翻訳は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料AI APIを前提にしていません。
+
+AIを毎時の収集から分離し、backlog 0なら重いAIジョブを起動しないことで、runner時間、モデル復元、Pythonビルドの無駄を減らしています。
 
 Sol監査とrefresh watchdogは運用者のChatGPT定期タスクを利用するため、GitHub Actions上でGPT-5.6 Solを動かしているわけではありません。利用可能性や制限はChatGPT側の契約・機能に依存します。
 
