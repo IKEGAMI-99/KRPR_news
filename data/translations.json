@@ -87,37 +87,41 @@
       "contentHash": "0265cda0f89340d12497216e",
       "titleJa": "☀️星の交響楽パック特別販売☀️ 指定されたクエストを完了すると、最大78%OFFで購入できます",
       "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "指定されたクエストを完了すると、最大78%OFFで星の交響楽パックを購入できます。星5背中アクセ『契りの浮星』には専属のメイン画面ポーズがあります。販売期間は8月27日10:30～9月9日23:59です。",
+      "summaryJa": "・追加: 星5背中アクセ『契りの浮星』\n・期間: 8月27日10:30〜9月9日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747220
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787791435
     },
     "https://x.com/kirapara_JP/status/2092522435669069995": {
       "contentHash": "dd67cfb73a4d9c2f704dbc3c",
       "titleJa": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
       "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "アプリ内課金で『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れる。イベント期間中は8月27日10:30～9月16日23:59。",
+      "summaryJa": "・追加: アプリ内課金で『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れる\n・期間: 8月27日10:30〜9月16日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747232
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787791448
     },
     "https://x.com/kirapara_JP/status/2092514884575437286": {
       "contentHash": "299da56783bd79f9bf183ed6",
       "titleJa": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
       "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "5つの無料イベントを開催し、星5セットと星4セットを獲得できるチャンスがあります。#きらめきパラダイス #着せ替えゲーム",
+      "summaryJa": "・追加: Life Makeover、Stylightのイベント\n・期間: 不明",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747240
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787791455
     },
     "https://x.com/kirapara_JP/status/2092507341736268068": {
       "contentHash": "5ce2c92130f0e994049e3fe4",
       "titleJa": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
       "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "立ち姿勢固定モードとデイリー任務のお任せ派遣機能が追加される。また新テーマ曲と交換ショップに新たなファッションと報酬が登場する。",
+      "summaryJa": "・追加: 立ち姿勢固定モード、デイリー任務お任せ派遣機能、新テーマ曲、交換ショップの新たなファッションと報酬\n・期間: 不明",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747250
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787791465
     },
     "https://x.com/LifeMakeover510/status/2092462040459932131": {
       "contentHash": "dc15c201b93fb6947903e6f3",
