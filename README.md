@@ -18,6 +18,8 @@
 - キラキラ系ライトテーマ / 病みカワ系ダークテーマ
 - ホーム画面追加に対応したPWA
 - GitHub Actions 上のローカルLLMによる日本語翻訳 / 要約
+- GPT-5.6 Sol による1日3回の取りこぼし・翻訳品質監査
+- Solが発見した欠落記事の補完と、誤訳・誤要約の保護付き修整
 - 原文表示への切り替え
 - AI結果がおかしい記事の再翻訳 / 再要約依頼
 
@@ -33,7 +35,7 @@ APKは使用しません。ブラウザからPWAを開いてホーム画面へ�
 
 ## 📰 ニュース収集
 
-GitHub Actions が毎時17分にニュース収集を実行します。
+GitHub Actions が毎時17分に通常のニュース収集を実行します。
 
 ```text
 公式サイト / X / TikTok / YouTube
@@ -45,6 +47,12 @@ PR TIMES / ゲームメディア / 一般ニュース
    本文・元記事日時・画像を整理
                 ↓
   小さい画像 / 重複 / 不正候補を除外
+                ↓
+      Sol補完記事をマージ
+                ↓
+     Qwen翻訳・要約を適用
+                ↓
+   Sol修整を最終適用して保護
                 ↓
           data/news.json
                 ↓
@@ -62,7 +70,59 @@ PR TIMES / ゲームメディア / 一般ニュース
 
 Webニュースの発見には公開RSS等を利用しますが、**Google Newsのプロキシ記事はタイムラインへ保存しません**。元記事URLと元記事側の公開日時を優先し、日時は `data/article_dates.json` に保持して後の収集で不自然に前後しないようにします。
 
-SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。
+SNSや外部サイトは仕様変更・アクセス制限・RSSHub側の障害などで一時的に取得できない場合があります。そのため、通常収集とは別にSolによる定期監査を行います。
+
+## 🔎 Solによる外部監査・補完
+
+通常の `data/news.json` だけを唯一の情報源にせず、運用者のChatGPT定期タスクから **GPT-5.6 Sol** が公開情報を横断確認します。
+
+現在は日本時間の **8:00 / 14:00 / 20:00 の1日3回**を基準に監査します。各回で直近約7日間を対象に、日本・中国・韓国・Globalの公式サイト、X、TikTok、YouTube、Weibo、Bilibili、Steam、公式コミュニティ、プレス記事、信頼できるWeb記事などを確認します。
+
+### 取りこぼし記事
+
+Kirapara Newsに存在しない実在の記事・投稿を確認できた場合は `data/sol_news.json` に保存します。
+
+通常の収集処理で `data/news.json` が作り直されても、`scripts/apply_sol_edits.py` が `sol_news.json` を再マージするため、Sol追加記事は消えません。
+
+重複、噂、根拠の弱い転載、内容が実質同一の再投稿は原則として追加しません。画像URLも元ソースで確認できる場合だけ保存します。
+
+### 翻訳・要約の監査
+
+初期段階では既存の**全記事**を監査します。1回で確認しきれない場合は `data/sol_audit_state.json` に進捗を保存し、複数回に分けて続行します。
+
+全件監査が完了した後は、原則として以下だけを監査します。
+
+- 新しく追加された記事
+- 原文内容が変更された記事
+- 再確認が必要になった記事
+
+意味、固有名詞、日時、数値、イベント期間、報酬、星数、入手条件などに明確な誤りがある場合のみ修整し、単なる文体の好みでは上書きしません。
+
+修整内容は `data/sol_overrides.json` に保存します。
+
+## 🔒 Sol修整のQwen上書き防止
+
+Solが修整した翻訳・要約は `scripts/apply_sol_edits.py` により `data/translations.json` にも同期されます。
+
+```text
+Solが翻訳 / 要約を修整
+        ↓
+data/sol_overrides.json
+        ↓
+scripts/apply_sol_edits.py
+        ↓
+data/translations.json
+  model: GPT-5.6 Sol
+  managedBySol: true
+        ↓
+Qwenからは有効な処理済みキャッシュとして見える
+        ↓
+再翻訳対象から除外
+```
+
+Sol管理の翻訳には `managedBySol: true`、記事側には `solLocked: true` が付きます。通常のQwen処理後にもSol修整を再適用するため、毎時のニュース更新やQwen再生成でSol版が意図せず失われない構成です。
+
+Solの修整そのものに誤りが見つかった場合は、より新しい根拠に基づいてSol側のoverrideを更新します。
 
 ## 🖼️ 画像
 
@@ -74,7 +134,7 @@ PWA側でも画像の実寸を確認するため、サーバー側で寸法を�
 
 ## 🤖 AI翻訳・要約
 
-有料AI APIは使用しません。GitHub Actions のCPU上で **Qwen2.5-3B-Instruct Q4_K_M** を `llama.cpp` 経由で実行します。
+通常処理では有料AI APIを使用せず、GitHub Actions のCPU上で **Qwen2.5-3B-Instruct Q4_K_M** を `llama.cpp` 経由で実行します。
 
 ```text
 新着ニュース
@@ -101,23 +161,30 @@ AI処理済みの記事には「再要約」または「再翻訳・要約」ボ
 
 リポジトリ所有者がそのIssueを投稿すると `regenerate-ai.yml` が起動し、対象記事だけQwenで再生成して `data/translations.json` / `data/news.json` を更新します。第三者が同じ形式のIssueを作ってもAIジョブは起動しません。
 
+Solによる保護対象の記事は、通常のQwen結果よりSol側のoverrideが優先されます。
+
 > [!NOTE]
-> 小型ローカルLLMによる翻訳・要約のため、誤訳や不自然な表現が発生する可能性があります。重要な内容は必ず元記事も確認してください。
+> 小型ローカルLLMによる翻訳・要約のため、誤訳や不自然な表現が発生する可能性があります。Sol監査はそれを補助する二重チェックですが、完全性を保証するものではありません。重要な内容は必ず元記事も確認してください。
 
 ## 🧱 構成
 
 ```text
 KRPR_news/
 ├─ .github/workflows/
-│  ├─ news-refresh.yml       # ニュース収集 + 整理 + LLM翻訳/要約
-│  ├─ regenerate-ai.yml      # 指定記事のAI結果を再生成
+│  ├─ news-refresh.yml       # ニュース収集 + 整理 + Qwen翻訳/要約 + Sol修整適用
+│  ├─ regenerate-ai.yml      # 指定記事のQwen結果を再生成
+│  ├─ gap-analysis.yml       # 実装ギャップ解析
 │  └─ pages.yml              # GitHub PagesへPWAを公開
 ├─ data/
-│  ├─ news.json
-│  ├─ translations.json
+│  ├─ news.json              # PWAが読む統合ニュース
+│  ├─ translations.json      # Qwen / Sol 翻訳キャッシュ
+│  ├─ sol_news.json          # Solが発見した取りこぼし記事
+│  ├─ sol_overrides.json     # Solによる翻訳・要約修整
+│  ├─ sol_audit_state.json   # Sol全件監査の進捗
 │  ├─ translation_glossary.json
 │  ├─ article_dates.json
-│  └─ image_quality.json
+│  ├─ image_quality.json
+│  └─ gap_analysis.json
 ├─ docs/
 │  ├─ index.html
 │  ├─ app.js
@@ -136,11 +203,15 @@ KRPR_news/
    ├─ merge_direct_official.py
    ├─ enrich_sources.py
    ├─ enrich_social_images.py
+   ├─ fetch_wechat_official.py
    ├─ discover_web_news.py
    ├─ enrich_images.py
    ├─ filter_small_images.py
    ├─ normalize_news.py
+   ├─ audit_translations.py
    ├─ translate_news_llm.py
+   ├─ apply_sol_edits.py
+   ├─ tag_early_info.py
    └─ regenerate_ai.py
 ```
 
@@ -148,16 +219,23 @@ KRPR_news/
 
 `news-refresh.yml` がニュースデータを更新し、変更をmainへ保存します。PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
 
+通常収集は毎時実行し、Sol監査は別系統のChatGPT定期タスクとして1日3回実行します。通常収集と監査経路を分けることで、同じ取得方法の失敗をそのまま二重化しない構成にしています。
+
 ## 💰 運用コスト
 
-現在の構成は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料APIを前提にしていません。GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
+通常のニュース収集・Qwen翻訳は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料AI APIを前提にしていません。
+
+Sol監査は運用者のChatGPT定期タスクを利用するため、GitHub Actions上でGPT-5.6 Solを動かしているわけではありません。利用可能性や制限はChatGPT側の契約・機能に依存します。
+
+GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
 
 ## 🔒 プライバシー
 
-- ユーザー登録不要
+- PWAの利用にユーザー登録不要
 - 位置情報・連絡先不要
-- OpenAI / DeepL / Google翻訳等の有料AI APIへ記事本文を送信しない
-- 翻訳・要約はGitHub Actions上のローカルLLMで処理
+- 通常の翻訳・要約はGitHub Actions上のローカルQwenで処理
+- OpenAI / DeepL / Google翻訳等の有料翻訳APIを通常収集パイプラインには組み込まない
+- Sol監査では運用者のChatGPT定期タスクが公開Web情報と公開GitHubリポジトリの内容を確認する
 
 ## ⚖️ コンテンツと免責
 
