@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - 'scripts/translate_news_llm.py'
+      - 'scripts/strict_qwen_translate.py'
       - 'scripts/audit_translations.py'
       - 'scripts/apply_sol_edits.py'
       - 'scripts/glossary_schema.py'
@@ -43,9 +44,9 @@ jobs:
       - name: Restore Sol-managed locks
         run: python scripts/apply_sol_edits.py
 
-      - name: Count pending translations
+      - name: Reject non-Japanese cache and count pending translations
         id: llm_plan
-        run: python scripts/translate_news_llm.py prepare --github-output "$GITHUB_OUTPUT"
+        run: python -u scripts/strict_qwen_translate.py prepare --github-output "$GITHUB_OUTPUT"
 
   translate:
     needs: plan
@@ -67,9 +68,9 @@ jobs:
       - name: Restore Sol-managed locks before Qwen
         run: python scripts/apply_sol_edits.py
 
-      - name: Recheck pending translations
+      - name: Recheck strict Japanese pending translations
         id: llm_plan
-        run: python scripts/translate_news_llm.py prepare --github-output "$GITHUB_OUTPUT"
+        run: python -u scripts/strict_qwen_translate.py prepare --github-output "$GITHUB_OUTPUT"
 
       - name: Cache Qwen 3B GGUF
         if: steps.llm_plan.outputs.pending != '0'
@@ -112,12 +113,12 @@ jobs:
             "llama-cpp-python==0.3.16" \
             --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
 
-      - name: Translate and summarize queued articles locally
+      - name: Translate and summarize queued articles in strict Japanese
         if: steps.llm_plan.outputs.pending != '0'
         env:
           LLM_MAX_ITEMS: '50'
         run: |
-          python -u scripts/translate_news_llm.py translate \
+          python -u scripts/strict_qwen_translate.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
       - name: Compare overseas previews with Japan feed
