@@ -1,0 +1,49 @@
+name: Refresh Analytics
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analytics-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh GA4 snapshot
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+        run: |
+          if [ -z "$GA4_PROPERTY_ID" ] || [ -z "$GA4_CREDENTIALS_JSON" ]; then
+            echo "GA4 secrets are not configured. Keeping the existing analytics snapshot."
+            exit 0
+          fi
+          printf '%s' "$GA4_CREDENTIALS_JSON" > "$RUNNER_TEMP/ga4-credentials.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/ga4-credentials.json"
+          python -m pip install --disable-pip-version-check google-analytics-data
+          python scripts/fetch_ga4.py
+
+          if git diff --quiet -- docs/analytics/data.json; then
+            echo "No analytics changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/analytics/data.json
+          git commit -m "chore: refresh analytics snapshot"
+          git push
