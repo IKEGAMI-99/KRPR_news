@@ -20,7 +20,10 @@ on:
       - 'scripts/audit_translations.py'
       - 'scripts/translate_news_llm.py'
       - 'scripts/tag_early_info.py'
+      - 'scripts/apply_sol_edits.py'
       - 'data/translation_glossary.json'
+      - 'data/sol_news.json'
+      - 'data/sol_overrides.json'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
@@ -59,6 +62,9 @@ jobs:
       - name: Audit Japanese translations for foreign-language residue
         if: github.event_name == 'schedule' && github.event.schedule == '43 20 * * *'
         run: python scripts/audit_translations.py --github-output "$GITHUB_OUTPUT"
+
+      - name: Merge Sol supplemental news and reviewed translations
+        run: python scripts/apply_sol_edits.py
 
       - name: Apply cached translations and plan LLM work
         id: llm_plan
@@ -115,6 +121,9 @@ jobs:
 
       - name: Compare overseas previews with Japan feed
         run: python scripts/tag_early_info.py
+
+      - name: Reapply Sol locks after local AI
+        run: python scripts/apply_sol_edits.py
 
       - name: Commit cache when changed
         run: |
