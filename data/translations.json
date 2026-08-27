@@ -3,17 +3,6 @@
   "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
   "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-region-titles-strict-ja-v4",
   "items": {
-    "https://x.com/LifeMakeover510/status/2092567745489502482": {
-      "contentHash": "2b33250f37bd4f9d545fd5bc",
-      "titleJa": "Tide Treasure",
-      "bodyJa": "Tide Treasure\n\n⏰8月27日09:00〜9月3日05:00 UTC\n\n[報酬受取期間]\n8月27日09:00〜9月4日05:00 UTC\n\n[イベント報酬]\nポイントを貯めると、★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーカード×13、Luster Invitation、各種素材報酬を獲得できます。",
-      "summaryJa": "・期間: 8月27日09:00〜9月3日05:00 UTC\n・報酬受取: 8月27日09:00〜9月4日05:00 UTC\n・報酬: ★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーカード×13、Luster Invitationなど",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787828640,
-      "managedBySol": true
-    },
     "https://x.com/kirapara_JP/status/2092552642140533220": {
       "contentHash": "f60e421a308cfedfbd964c63",
       "titleJa": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
@@ -113,17 +102,6 @@
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1787791465
-    },
-    "https://x.com/LifeMakeover510/status/2092462040459932131": {
-      "contentHash": "dc15c201b93fb6947903e6f3",
-      "titleJa": "Oddly Pretty｜ファッションアートの簡単な紹介",
-      "bodyJa": "Oddly Pretty｜ファッションアートの簡単な紹介\n\n🔮華やかで精緻なロココ様式も、\n🔮軽やかで神秘的なホワイトゴシック様式も、\n🔮それぞれの時代の美意識を鮮やかに記録し、感情を目に見える形で表現しています。",
-      "summaryJa": "・ロココ様式とホワイトゴシック様式、それぞれの時代の美意識を紹介",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787828640,
-      "managedBySol": true
     },
     "https://x.com/LifeMakeover510/status/2092205354482630892": {
       "contentHash": "8b3cb7d9ecfee2ecfc619dfd",
@@ -523,72 +501,6 @@
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1787799655
-    },
-    "https://x.com/LifeMakeover510/status/2092791708568498290": {
-      "contentHash": "55941e9a06c205e5bac274f3",
-      "titleJa": "復刻追光｜Deceit Decomショップ予告",
-      "bodyJa": "復刻追光｜Deceit Decomショップ予告\n\nDeceit Decomショップは8月28日09:00から9月18日23:59まで開催されます。期間限定イベントで獲得した衣装を分解すると、限定★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などと交換できます。",
-      "summaryJa": "・Deceit Decomショップが復刻\n・期間: 8月28日09:00〜9月18日23:59\n・イベント衣装の分解で限定★5アイテムなどと交換可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787806936,
-      "managedBySol": true
-    },
-    "https://x.com/LifeMakeover510/status/2092789192208298055": {
-      "contentHash": "9f53761704666190206221fd",
-      "titleJa": "復刻追光｜SSR「Gerald - Frozen Slumber」予告",
-      "bodyJa": "復刻追光｜SSR「Gerald - Frozen Slumber」\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n「あなたの頼みを、私が断れるはずがないだろう。」\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover",
-      "summaryJa": "・SSR「Gerald - Frozen Slumber」がDance of Deceit復刻で登場\n・期間: 8月28日09:00〜9月17日23:59",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787806936,
-      "managedBySol": true
-    },
-    "https://x.com/LifeMakeover510/status/2092786675575369907": {
-      "contentHash": "c8d9d48048c52ba999c8533d",
-      "titleJa": "復刻追光｜★4セット「Wander Limit」プレビュー",
-      "bodyJa": "復刻追光｜★4セット「Wander Limit」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-      "summaryJa": "・★4セット「Wander Limit」を公開\n・期間: 8月28日09:00〜9月17日23:59",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787806936,
-      "managedBySol": true
-    },
-    "https://x.com/LifeMakeover510/status/2092784159156470187": {
-      "contentHash": "ac62dfddd704fd68fa93cf56",
-      "titleJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー",
-      "bodyJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-      "summaryJa": "・★5セット「Saccharine Spell」を公開\n・期間: 8月28日09:00〜9月17日23:59",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787806936,
-      "managedBySol": true
-    },
-    "https://x.com/LifeMakeover510/status/2092781642557575197": {
-      "contentHash": "c98bd4b1ec545247949fdb98",
-      "titleJa": "復刻追光｜★6セット「Crimson Cleansing」染色エリア最適化",
-      "bodyJa": "復刻追光｜★6セット「Crimson Cleansing」プレビュー\n\n★6セット「Crimson Cleansing」の染色エリアが最適化されました。ドレス「Crimson Cleansing」では、染色エリア#1が#19へ、#3が#20へ、#4が#21へ、#5が#22へ、#6が#23〜27へ、#7が#28へ、#9が#29へ最適化されています。",
-      "summaryJa": "・★6セット「Crimson Cleansing」の染色エリアを最適化\n・#1→#19、#3→#20、#4→#21、#5→#22、#6→#23〜27、#7→#28、#9→#29",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787806936,
-      "managedBySol": true
-    },
-    "https://x.com/LifeMakeover510/status/2092779131024904435": {
-      "contentHash": "a3467633eebe9c5b0abc25c5",
-      "titleJa": "復刻追光｜「Dance of Deceit」まもなく開催",
-      "bodyJa": "復刻追光｜「Dance of Deceit」まもなく開催！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-      "summaryJa": "・復刻追光「Dance of Deceit」が開催\n・期間: 8月28日09:00〜9月17日23:59",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1787828640,
-      "managedBySol": true
     },
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678277791045061908": {
       "contentHash": "aff15b6ec517368aa387f29a",
