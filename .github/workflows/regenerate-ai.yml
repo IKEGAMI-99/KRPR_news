@@ -66,7 +66,7 @@ jobs:
 
       - name: Regenerate translation and summary
         run: |
-          python scripts/regenerate_ai.py \
+          python -u scripts/run_with_runtime_glossary.py scripts/regenerate_ai.py \
             --article-id "${{ steps.request.outputs.article_id }}" \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
