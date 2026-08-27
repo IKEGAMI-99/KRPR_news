@@ -125,12 +125,13 @@
     },
     "https://x.com/LifeMakeover510/status/2092462040459932131": {
       "contentHash": "dc15c201b93fb6947903e6f3",
-      "titleJa": "以闪亮之名 | ファッションアートの簡易紹介 🔮 ロココ様式やホワイトゴシック様式など、",
-      "bodyJa": "以闪亮之名 | ファッションアートの簡易紹介\n\n🔮 ロココ様式やホワイトゴシック様式など、\n🔮 絢爛で複雑なロココ様式や\n🔮 軽やかで神秘的なホワイトゴシック様式など、\n🔮 それぞれ時代の美意識を鮮やかに記録し、感情を palpably に表現しています。",
-      "summaryJa": "ロココ様式やホワイトゴシック様式など、それぞれ時代の美意識を鮮やかに記録し、感情を palpably に表現しています。",
+      "titleJa": "以闪亮之名 / Life Makeover / Stylight | ファッションアートの簡易紹介\n\n🔮 ロココ様式の華やかで複雑な様式\n🔮 または白ゴシック様式の軽やかで神秘的な様式\n\n🔮 両方ともその時代の美術と感情を palpably に記録している。",
+      "bodyJa": "以闪亮之名 / Life Makeover / Stylight | ファッションアートの簡易紹介\n\n🔮 ロココ様式の華やかで複雑な様式\n🔮 または白ゴシック様式の軽やかで神秘的な様式\n\n🔮 両方ともその時代の美術と感情を palpably に記録している。",
+      "summaryJa": "・追加: 以闪亮之名 / Life Makeover / Stylight\n・期間: 無し",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747277
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800092
     },
     "https://weibo.com/7521830234/Rf9BhoCFS": {
       "contentHash": "a59620dcf0b6052073eac2b2",
@@ -165,55 +166,61 @@
       "contentHash": "04756e9127b67fb569eb6de2",
       "titleJa": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #着せ替えゲーム",
       "bodyJa": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️\nぜひGETしてみてください🥰\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "SSR絆💞レイ『揺るがぬ錨』の動画がいち早く公開され、#キラパラの公式Twitterで公開されました。着せ替えゲーム#キラめきパラダイスの最新情報として、ファンは動画を楽しみにしています。",
+      "summaryJa": "・追加: SSR絆💞レイ『揺るがぬ錨』の動画\n・期間: 未定",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747604
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800118
     },
     "https://x.com/kirapara_JP/status/2092165079798050874": {
       "contentHash": "d02050080926e2832469f14b",
       "titleJa": "🔔分解ショップアイテム公開🔔 最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放",
       "bodyJa": "🔔分解ショップアイテム公開🔔\n\n最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放！\n星5浮遊やワンピースなどを手に入れよう✨\n\n詳細はゲーム内をチェックしてね👀\n\n#キラパラ\n#着せ替えゲーム",
-      "summaryJa": "最新のガチャイベントに合わせて、分解ショップ『孤刃分解』がオープン。星5の浮遊やワンピースなど、限定アイテムが手に入ります。",
+      "summaryJa": "・追加: 分解ショップ『孤刃分解』\n・期間: 不明",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747613
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800125
     },
     "https://x.com/kirapara_JP/status/2092163821960155563": {
       "contentHash": "1cb450dce57fed6a7b64e860",
       "titleJa": "✍️紹介コーナー 星5セットコーデ「占心の誓い」 時を刻む時計の針、そして星々が描く軌跡",
       "bodyJa": "✍️紹介コーナー\n星5セットコーデ「占心の誓い」\n\n時を刻む時計の針、そして星々が描く軌跡。まるで星々の運行を記録しているかのような幻想的なドレスを広げると、それぞれ異なる星図がドラマチックに咲き誇ります。\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "星5セットコーデ「占心の誓い」は、時計の針と星の軌跡が描く幻想的なドレスを紹介。それぞれ異なる星図がドラマチックに咲き誇ります。",
+      "summaryJa": "・追加: 星5セット「占心の誓い」が登場\n・期間: 公開日未定",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747624
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800134
     },
     "https://x.com/kirapara_JP/status/2092162563261739070": {
       "contentHash": "6fb3c689fe3c652296d963b4",
       "titleJa": "✍️紹介コーナー 星6セットコーデ「修羅帰鞘」3⃣ 腰甲やボトムス、片袖は自由に取り外し可能",
       "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」3⃣\n\n腰甲やボトムス、片袖は自由に取り外し可能。戦地に立つ勇姿も、軽やかな装いも、思いのままに楽しめます。\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "星6セットコーデ「修羅帰鞘」3⃣は、腰甲やボトムス、片袖が自由に取り外し可能で、様々な装いを楽しむことができます。",
+      "summaryJa": "・追加: 星6セット「修羅帰鞘」3⃣\n・期間: 不明\n・入手: 限定ガチャ「修羅帰鞘」から獲得\n・報酬: ログイン7日でダイヤ×200",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747633
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800146
     },
     "https://x.com/kirapara_JP/status/2092161305180315753": {
       "contentHash": "cda07406feaec993d3897af5",
       "titleJa": "✍️紹介コーナー 星6セットコーデ「修羅帰鞘」2️⃣ 明光鎧に着想を得た牡丹の胸甲と、山文甲を落とし込んだ肩甲",
       "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」2️⃣\n\n明光鎧に着想を得た牡丹の胸甲と、山文甲を落とし込んだ肩甲。揺らめく炎を纏う片袖が、絶え間なき生命の火を打ち出します。\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "星6セットコーデ「修羅帰鞘」2は、明光鎧に着想を得た牡丹の胸甲と、山文甲を落とし込んだ肩甲を装備。揺らめく炎を纏う片袖が、絶え間なき生命の火を打ち出します。",
+      "summaryJa": "・追加: 星6セット「修羅帰鞘」2\n・期間: 不明\n・星数: 2\n・報酬: 不明\n・価格: 不明",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747645
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800156
     },
     "https://x.com/kirapara_JP/status/2092160055860703608": {
       "contentHash": "d567ae729e66b27da10ab16b",
       "titleJa": "✍️紹介コーナー 星6セットコーデ「修羅帰鞘」1️⃣ 重甲を纏い刃を握る勇姿から、鎧を脱ぎ捨てる柔和な佇まいまで",
       "bodyJa": "✍️紹介コーナー\n星6セットコーデ「修羅帰鞘」1️⃣\n\n重甲を纏い刃を握る勇姿から、鎧を脱ぎ捨てる柔和な佇まいまで。変幻自在なスタイルが、幾重にも重なる運命の物語を紡ぎ出します。\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "重甲を纏い刃を握る勇姿から、鎧を脱ぎ捨てる柔和な佇まいまで。変幻自在なスタイルが、幾重にも重なる運命の物語を紡ぎ出します。",
+      "summaryJa": "・追加: 星6セット「修羅帰鞘」1️⃣\n・期間: 不明",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747656
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800165
     },
     "https://weibo.com/7521830234/Rf0bE7gfu": {
       "contentHash": "b055ba952a57927a8688dff2",
@@ -227,84 +234,93 @@
     },
     "https://weibo.com/7521830234/ReTuLsMw2": {
       "contentHash": "fe1e10fe9afc7059071d3310",
-      "titleJa": "以闪亮之名 #以闪亮之名# 雪城夜话外观礼包即将上架",
-      "bodyJa": "以闪亮之名 #以闪亮之名# \n\n雪城夜话外观礼包即将上架\n\n【发售时间】\n8月25日10:00-9月7日23:59\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-      "summaryJa": "雪城夜话外观礼包即将上架，限时礼包售卖期间，合伙人可以4.6折的价格直接购买，礼包内含多种道具，永久限购1次。",
+      "titleJa": "以闪亮之名 #以闪亮之名# 雪城夜话外观礼包即将上架【礼包时间】8月25日10:00-9月7日23:59【礼包说明】",
+      "bodyJa": "以闪亮之名 #以闪亮之名# \n\n雪城夜话外观礼包即将上架\n\n【礼包时间】\n8月25日10:00-9月7日23:59\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
+      "summaryJa": "・追加: 雪城夜话外观礼包\n・期間: 8月25日10:00〜9月7日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787747993
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800206
     },
     "https://www.bilibili.com/opus/1240073883666612227": {
       "contentHash": "799c0f22aa6bdb75c24423a2",
       "titleJa": "雪城夜话外观礼包即将上架",
-      "bodyJa": "雪城夜话外观礼包即将上架。限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。",
-      "summaryJa": "雪城夜话外观礼包即将上架，限时售卖期间合伙人可以4.6折购买，礼包内含多种道具，永久限购1次。",
+      "bodyJa": "雪城夜话外观礼包即将上架\n\n【发售时间】\n8月25日10:00-9月7日23:59\n\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。",
+      "summaryJa": "・追加: 雪城夜话外观礼包\n・期間: 8月25日10:00〜9月7日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748012
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800234
     },
     "https://www.youtube.com/shorts/iL0CZX9DM7Q": {
       "contentHash": "ba96cb6c1c6a8bf66a28a6d8",
       "titleJa": "『以闪亮之名』の背景パック明日発売",
-      "bodyJa": "「一歩踏み入れると、平穏だった森が不思議な姿に変わります。\n巨大な花と名前を知らぬ草木の間で不思議な旅を始めてみませんか。」\n\n🕙 8/25 10:30 ~ 9/7 23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散策』など様々なアイテムが含まれた美しいパック\n※詳細は発売後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強림",
-      "summaryJa": "『以闪亮之名』の背景パックが明日発売。巨大な花と不思議な草木の間で不思議な旅を始める。",
+      "bodyJa": "「一歩踏み入れると、平穏だった森が不思議な姿に変わります。\n巨大な花と名前の知れない草木の間で不思議な冒険を始めてみましょう。」\n\n📅 8月25日10:30〜9月7日23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散策』など様々なアイテムが含まれた美しいパック\n※詳細は発売後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強림",
+      "summaryJa": "・追加: 『以闪亮之名』の背景パック\n・期間: 8月25日10:30〜9月7日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748035
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800257
     },
     "https://x.com/stylight_kr/status/2091814017094270990": {
       "contentHash": "a6d39b728cfa83a6b179671f",
-      "titleJa": "[予告] 『きらめきの森』背景パック明日発売\n\n「一歩踏み入れると、平穏だった森が不思議な姿に変わります。\n巨大な花と名前のわからない草木の間で不思議な冒険を始めてみましょう。」\n\n⏰ 8/25 10:30 ~ 9/7 23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散策』など様々なアイテムが含まれた美しいパック\n※詳細は発売後、ゲーム内で確認してください。\n\n#きらめきパラダイス #きらめきパラダイス強림",
-      "bodyJa": "[予告] 『きらめきの森』背景パック明日発売\n\n「一歩踏み入れると、平穏だった森が不思議な姿に変わります。\n巨大な花と名前のわからない草木の間で不思議な冒険を始めてみましょう。」\n\n⏰ 8/25 10:30 ~ 9/7 23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散策』など様々なアイテムが含まれた美しいパック\n※詳細は発売後、ゲーム内で確認してください。\n\n#きらめきパラダイス #きらめきパラダイス強림",
-      "summaryJa": "『きらめきの森』背景パックが明日発売。一歩踏み入れると平穏だった森が不思議な姿に変わり、巨大な花と名前のわからない草木の間で不思議な冒険を始める。",
+      "titleJa": "[予告] 『きらめきの森』背景パック明日リリース「一歩踏み入れると、平穏だった森は不思議な姿に変わります。巨大な花と謎の草木の間で不思議な冒険を始めてみてください。」",
+      "bodyJa": "[予告] 『きらめきの森』背景パック明日リリース\n\n「一歩踏み入れると、平穏だった森は不思議な姿に変わります。\n巨大な花と謎の草木の間で不思議な冒険を始めてみてください。」\n\n⏰ 8/25 10:30 ~ 9/7 23:59\n\n[パック情報]\n撮影背景『アリスの森』、ライブポーズ『花道散歩』など様々なアイテムが含まれた美しいパック\n※詳細はリリース後、ゲーム内で確認してください。\n\n#スタイルライト #スタイルライト強림",
+      "summaryJa": "・追加: 『きらめきの森』背景パック\n・期間: 8月25日10:30〜9月7日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748078
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800289
     },
     "https://x.com/stylight_kr/status/2091812776150786051": {
       "contentHash": "2fe8ca63c2cc98345eced1b9",
-      "titleJa": "[イベント] 『バニー・トレ블』と various 地域と特別な場所を旅行し、旅の途中で突然の報酬を得てください。",
-      "bodyJa": "[イベント] 『バニー・トレブ』\n\nバニーと様々な地域と特別な場所を旅行し、\n旅の途中で突然の報酬を得てください。\n\n🎁 主な報酬: \n- 5★セット 'ピッチ・シャレロット'\n\n⏰ 8/25 10:30 ~ 9/8 5:00\n\n※ 詳細はゲームで確認してください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #スタイルライト強림 #スタイルライトアップデート",
-      "summaryJa": "バニーと様々な地域と特別な場所を旅行し、旅の途中で突然の報酬を得られるイベントが開催されます。主な報酬は5★セット 'ピッチ・シャレロット'です。",
+      "titleJa": "[イベント] 『バニーチェア』と一緒で様々な地域と特別な場所を旅して、旅の途中で突然の報酬を得てください。 🎁 主な報酬: - 5★セット 'ピッチシャロット'",
+      "bodyJa": "[イベント] 『バニーチェア』\n\nバニーチェアと一緒で様々な地域と特別な場所を旅して、\n旅の途中で突然の報酬を得てください。\n\n🎁 主な報酬: \n- 5★セット 'ピッチシャロット'\n\n🕙 8/25 10:30 ~ 9/8 5:00\n\n※ 詳細はゲームで確認してください。\n\n▶ ゲームダウンロード:\n\n#スタイルライト #スタイルライト強化 #スタイルライトアップデート",
+      "summaryJa": "・追加: 5★セット 'ピッチシャロット'\n・期間: 8月25日10:30〜9月8日5:00",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748104
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800323
     },
     "https://weibo.com/7521830234/ReSI3zeEz": {
       "contentHash": "b2c2048cea20b9df5fc490ae",
       "titleJa": "以闪亮之名 #以闪亮之名# 参与山神的园林，获取五星限定套装",
-      "bodyJa": "以闪亮之名 #以闪亮之名# \n\n参加山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够的园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够的神奇种子，还可以在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！\n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，每天都有可能不一样哦~三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。\n\n💎下载传送门： 网页链接\n💎闪亮作品上映季活动传送门： 网页链接",
-      "summaryJa": "参加山神的园林，获取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具。获得足够的神奇种子，还可以在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励。活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格。售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子。",
+      "bodyJa": "以闪亮之名 #以闪亮之名#\n\n参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！\n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。\n\n💎下载传送门： 网页链接\n💎闪亮作品上映季活动传送门： 网页链接",
+      "summaryJa": "・追加: 五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具\n・期间: 8月25日10:00-9月8日5:00\n・领奖时间: 8月25日10:00-9月9日5:00\n・入手: 活动期间每日最多购买3个园艺工具，最多出售6个园艺工具\n・解放条件: 帮助山神购买装园艺工具达成心愿",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748167
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800397
     },
     "https://www.bilibili.com/opus/1240042959866429440": {
       "contentHash": "d919e16c7667c20bc708b924",
       "titleJa": "参与山神的园林，获取五星限定套装",
-      "bodyJa": "参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！ \n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。 收起 查看大图 向左旋转 向右旋转",
-      "summaryJa": "参与山神的园林，可以获取五星限定套装、拍照道具等，活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！",
+      "bodyJa": "参与山神的园林，获取五星限定套装！获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！【活动时间】8月25日10:00-9月8日5:00【领奖时间】8月25日10:00-9月9日5:00【活动规则】风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。更多规则请在游戏内活动界面的帮助说明中查看。",
+      "summaryJa": "・追加: 五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具\n・期间: 8月25日10:00-9月8日5:00\n・领奖时间: 8月25日10:00-9月9日5:00\n・入手: 活动期间每日最多购买3个园艺工具，最多出售6个园艺工具\n・解放条件: 售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748217
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800457
     },
     "https://www.bilibili.com/opus/1240027497997795353": {
       "contentHash": "c22a37b0e8e22d489b611c47",
       "titleJa": "復刻追光活動｜SR羁绊「顧蘇澄·長夜歸途」プレビュー",
-      "bodyJa": "復刻追光活動｜SR羁绊「顧蘇澄·長夜歸途」プレビュー！\nきらめきパラダイス | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限定開催！\n\n「私たちが密接だった頃、私の身体の各所はあなたが无比熟知していた」\nその夜以降、顧先生を見たことはなく、彼についての噂も徐々に消えました。\n雪夜に迷い、恍惚として彼の声を聞き、彼が繰り返し呼びかけるあなた……\n長圖\n\n長圖\n收起 查看大图 向左旋转 向右旋转\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/高画質/シミュレーション経営\n\nすべての女性が愛するAAA級シミュレーション生活ゲーム\n\n入る",
-      "summaryJa": "きらめきパラダイスの復刻追光活動が8月25日から9月14日まで開催されます。このイベントでは、SR羁绊「顧蘇澄·長夜歸途」がプレビューされます。",
+      "bodyJa": "復刻追光活動｜SR羁绊「顧蘇澄·長夜歸途」プレビュー！\n晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n「我們曾經亲密無間，我身體的每一處你都无比熟悉」\n那夜之後，你再也没見過顧先生，關於他的傳聞也逐漸散去。\n直到你再次迷失在雪夜，恍惚中聽到他的聲音，正一遍遍呼喚著你……\n\n長圖\n\n長圖\n\n收起 查看大圖 向左旋轉 向右旋轉\nきらめきパラダイス\n\nゲーム\n\nキャラクターパロディ/高画質/シミュレーション経営\n\n所有女生都愛玩的AAA級シミュレーション生活ゲーム\n\n入場",
+      "summaryJa": "・追加: SR羁绊「顾苏澄·长夜归途」\n・期間: 8月25日10:00〜9月14日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748289
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800542
     },
     "https://www.bilibili.com/opus/1240026209509703687": {
       "contentHash": "0d37f19eca84fbdb37b1fc54",
       "titleJa": "復刻追光活動｜四星セット「暖雾绒心」プレビュー",
-      "bodyJa": "復刻追光活動｜四星セット「暖雾绒心」プレビュー！\nきらめきパラダイス | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限定開催！\n\n柔らかでぬくもりのある触感、安心感のある暖かさ~\n再現コピーの世界、追跡の他に、\n自分だけの碎片を収集するのもいいでしょう。 絵を閉じる 大きな画像を向左に回転 大きな画像を向右に回転\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/高画質/シミュレーション経営\n\nすべての女性が愛用するAAA級シミュレーション生活ゲーム\n\n入る",
-      "summaryJa": "四星セット「暖雾绒心」が復刻追光活動でプレビューされ、8月25日から9月14日まで限定で開催されます。柔らかでぬくもりのある触感と安心感のある暖かさが特徴です。",
+      "bodyJa": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n细腻柔软的触感，温暖又有安全感~\n在复制粘贴的世界，追逐之外，\n总该收集一些属于自己的碎片。 收起 查看大图 向左旋转 向右旋转\n\n以闪亮之名\n\nゲーム\n\nキャラクターパロディ/ハイクオリティ/シミュレート経営\n\n全ての女性が愛用するAAA級シミュレーション生活ゲーム\n\n入る",
+      "summaryJa": "・追加: 四星套装「暖雾绒心」復刻\n・期間: 8月25日10:00〜9月14日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787748319
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800571
     },
     "https://www.bilibili.com/opus/1240022344037040148": {
       "contentHash": "7175db2dccabbee152e8df1a",
@@ -641,13 +657,13 @@
     },
     "https://www.bilibili.com/opus/1240028786514198552": {
       "contentHash": "f360f32481d652afd8af4db6",
-      "titleJa": "復刻追光活動｜棱彩分解商店限定特典品情報公開 棱彩幻夢 | 晶芯解体、時茧再生",
-      "bodyJa": "復刻追光活動｜棱彩分解商店限定特典品情報公開\n棱彩幻夢 | 晶芯解体、時茧再生。8月25日10:00–9月14日23:59限定開催！\n\n【棱彩分解】商店は8月25日10:00–9月15日23:59限定開催され、該限定追光活動内の服を分解することで、限定着せ替え【洋流情書】、【無名詩】、【紅玫覆羽】、動画撮影動作【拂花揽月】、動画撮影動作【月下傾輝】、頭像框、棱彩風向標、心念の蝶、知之鍵、ゴールドなど素材アイテムを獲得できます！\n\n收起\n查看大图\n向左旋转\n向右旋转\n\nきらめきパラダイス\n\nゲーム\n\nキャラクターパロディ/高画質/シミュレーション経営\n\nすべての女性が楽しめるAAA級シミュレーション生活ゲーム\n\n入る",
-      "summaryJa": "復刻追光活動が8月25日10:00–9月14日23:59に開催され、限定特典品が公開されました。分解した限定追光活動内の服で、限定着せ替えや動画撮影動作、頭像框、素材アイテムなどが獲得できます。",
+      "titleJa": "復刻追光活動｜棱彩分解商店限定兌换单品爆料｜棱彩幻夢 | 晶芯裂變，時茧新生",
+      "bodyJa": "復刻追光活動｜棱彩分解商店限定兌换单品爆料\n棱彩幻夢 | 晶芯裂變，時茧新生。8月25日10:00–9月14日23:59限时開啟！\n\n【棱彩分解】商店於8月25日10:00–9月15日23:59限时開啟，透過分解該限时追光活動內的服飾，可獲得限定裝飾部件【洋流情書】、【無名詩】、【紅玫覆羽】、動態拍照動作【拂花攬月】、拍照動作【月下傾輝】及頭像框、棱彩風向標、心念之蝶、知之鑰、金幣等材料道具！ 收起 查看大圖 向左旋轉 向右旋轉\n\n以閃亮之名\n\n遊戲\n\n角色扮演/高畫質/模擬經營\n\n所有女生都愛玩的3A級模擬生活遊戲\n\n進入",
+      "summaryJa": "・追加: 限定时装部件【洋流情书】、【无名诗】、【红玫覆羽】、动态拍照动作【拂花揽月】、拍照动作【月下倾辉】及头像框、棱彩风向标、心念之蝶、知之钥、金币等材料道具\n・期間: 8月25日10:00〜9月14日23:59",
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
-      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
-      "updatedAtEpoch": 1787777436,
-      "regenerated": true
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800505
     },
     "https://weibo.com/7521830234/Rf2Vgm2pk": {
       "contentHash": "cbe95f39f6cd719a99dbecde",
@@ -797,6 +813,66 @@
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1787799721
+    },
+    "https://x.com/LifeMakeover510/status/2092784159156470187": {
+      "contentHash": "ac62dfddd704fd68fa93cf56",
+      "titleJa": "以闪亮之名 | 5段星セット [甘いスパイラル]のプレビュー",
+      "bodyJa": "以闪亮之名 | 5段星セット [甘いスパイラル]のプレビュー!\nDance of Deceit | 8月28日09:00から9月17日23:59までイベント可用!\n\n#DanceofDeceit | 神への奉仕と願いを、神々の前に万華鏡の Masks を着る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: 5段星セット [甘いスパイラル]\n・期間: 8月28日09:00〜9月17日23:59",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787799977
+    },
+    "https://x.com/LifeMakeover510/status/2092781642557575197": {
+      "contentHash": "c98bd4b1ec545247949fdb98",
+      "titleJa": "以闪亮之名 Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー\n\n[赤浄]染色エリアの最適化\n\n[赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました。",
+      "bodyJa": "以闪亮之名 Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー\n\n[赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました。",
+      "summaryJa": "・追加: [赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800006
+    },
+    "https://x.com/LifeMakeover510/status/2092779131024904435": {
+      "contentHash": "a3467633eebe9c5b0abc25c5",
+      "titleJa": "以閃亮之名 | 誑詐の舞が近づく",
+      "bodyJa": "以閃亮之名 | 誑詐の舞が近づく!\n以閃亮之名 | 誑詐の舞 | イベントは8月28日09:00から9月17日23:59まで利用可能!\n\n#以閃亮之名 #生命の変身 #スタイルライト #慾望と願いを捧げ、神々の前に myriadのマスクを着用する。",
+      "summaryJa": "・期間: 8月28日09:00〜9月17日23:59\n・追加: 以閃亮之名 | 誑詐の舞",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800024
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678277791045061908": {
+      "contentHash": "aff15b6ec517368aa387f29a",
+      "titleJa": "#LifeMakeover Lightchase Encore | 5-Star Set [Saccharine Spell] プレビュー",
+      "bodyJa": "#LifeMakeover Lightchase Encore | 5-Star Set [Saccharine Spell] プレビュー! 観察の目を背け、私の心は自由に進みます。 Amidst ...",
+      "summaryJa": "・追加: 5スターベストセット「Saccharine Spell」\n・期間: 無記載",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800041
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678277254572494100": {
+      "contentHash": "cf1d7922cc3b29ec75ced96a",
+      "titleJa": "#LifeMakeover Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー",
+      "bodyJa": "#LifeMakeover Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー! \"神々を夢に呼び、炎の抱擁で再生せよ。\" 本イベントでは、6セットの星6セット[ Crimson Cleansing ]が登場します。",
+      "summaryJa": "・追加: 6セットの星6セット[ Crimson Cleansing ]が登場\n・期間: 無指定",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800061
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678276380634975508": {
+      "contentHash": "1bdee4ce56522c7527313b3e",
+      "titleJa": "Life Makeover Lightchase Encore: Deceitの舞が近づきます",
+      "bodyJa": "Life Makeover Lightchase Encore: Deceitの舞が近づきます! \"あなたは踊りでここに来ます、誘惑を献上品として編みます。私はあなたに結びついて...",
+      "summaryJa": "・追加: Life Makeover Lightchase Encore\n・期間: 近づきます",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787800071
     }
   }
 }
