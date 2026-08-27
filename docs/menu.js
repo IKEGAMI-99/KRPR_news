@@ -37,8 +37,8 @@
   ];
 
   const API = 'https://api.github.com/repos/IKEGAMI-99/KRPR_news';
-  const WORKFLOW_RUNS = `${API}/actions/workflows/news-refresh.yml/runs?per_page=5`;
-  const DEV_CACHE_KEY = 'kirapara-dev-status-v2';
+  const WORKFLOW_RUNS = `${API}/actions/workflows/ai-translate.yml/runs?per_page=5`;
+  const DEV_CACHE_KEY = 'kirapara-dev-status-v3';
   const DEV_CACHE_MS = 3 * 60 * 1000;
 
   const backdrop = document.createElement('div');
@@ -68,12 +68,12 @@
       </div>
       <div class="dev-status-card dev-loading">
         <span class="dev-status-dot"></span>
-        <div><strong>取得中…</strong><small>GitHub Actionsを確認しています</small></div>
+        <div><strong>取得中…</strong><small>Qwen workflowを確認しています</small></div>
       </div>
       <div class="dev-metrics"></div>
       <div class="dev-steps"></div>
       <div class="dev-runs"></div>
-      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions/workflows/news-refresh.yml" target="_blank" rel="noopener noreferrer">GitHub Actionsで詳細を見る ↗</a>
+      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions/workflows/ai-translate.yml" target="_blank" rel="noopener noreferrer">Qwen Actionsで詳細を見る ↗</a>
     </div>`;
   body.appendChild(devSection);
 
@@ -184,7 +184,8 @@
     let job = null;
     if (latest?.jobs_url) {
       const jobsPayload = await apiJson(latest.jobs_url);
-      job = Array.isArray(jobsPayload?.jobs) ? jobsPayload.jobs[0] || null : null;
+      const jobs = Array.isArray(jobsPayload?.jobs) ? jobsPayload.jobs : [];
+      job = jobs.find((entry) => entry?.name === 'translate') || jobs.find((entry) => entry?.name === 'plan') || jobs[0] || null;
     }
     const data = { runs, latest, job };
     saveCached(data);
@@ -199,23 +200,23 @@
     const latest = data.latest;
     const job = data.job;
     const aiStep = stepByName(job, 'Translate and summarize');
-    const planStep = stepByName(job, 'Apply cached translations');
+    const planStep = stepByName(job, 'Recheck pending translations') || stepByName(job, 'Count pending translations');
     const advanceStep = stepByName(job, 'Compare overseas previews');
-    const [mainLabel, mainClass] = statusLabel(aiStep?.status || latest?.status, aiStep?.conclusion || latest?.conclusion);
+    const [mainLabel, mainClass] = statusLabel(aiStep?.status || job?.status || latest?.status, aiStep?.conclusion || job?.conclusion || latest?.conclusion);
     const card = devSection.querySelector('.dev-status-card');
     card.className = `dev-status-card dev-${mainClass}`;
-    card.innerHTML = `<span class="dev-status-dot"></span><div><strong>AI ${mainLabel}</strong><small>${aiStep?.name || 'Refresh News Cache'}${aiStep?.started_at ? ` · ${elapsed(aiStep.started_at, aiStep.completed_at)}` : ''}</small></div>`;
+    card.innerHTML = `<span class="dev-status-dot"></span><div><strong>AI ${mainLabel}</strong><small>${aiStep?.name || job?.name || 'Translate News with Qwen'}${aiStep?.started_at ? ` · ${elapsed(aiStep.started_at, aiStep.completed_at)}` : ''}</small></div>`;
 
     const counts = processedCount();
     const metrics = devSection.querySelector('.dev-metrics');
     metrics.innerHTML = `
-      <div class="dev-metric"><span>最新Run</span><strong>#${latest?.run_number ?? '—'}</strong></div>
+      <div class="dev-metric"><span>最新AI Run</span><strong>#${latest?.run_number ?? '—'}</strong></div>
       <div class="dev-metric"><span>開始</span><strong>${formatTime(latest?.run_started_at || latest?.created_at)}</strong></div>
       <div class="dev-metric"><span>AI処理済み</span><strong>${counts ? `${counts.ai} / ${counts.total}` : '—'}</strong></div>
       <div class="dev-metric"><span>箇条書き要約</span><strong>${counts ? `${counts.facts} / ${counts.total}` : '—'}</strong></div>`;
 
     const steps = [
-      ['翻訳計画', planStep],
+      ['未処理確認', planStep],
       ['翻訳・要約AI', aiStep],
       ['先行情報比較', advanceStep]
     ];
@@ -225,7 +226,7 @@
     }).join('')}`;
 
     const recent = (data.runs || []).slice(0,3);
-    devSection.querySelector('.dev-runs').innerHTML = `<div class="dev-section-label">最近の実行</div>${recent.map((run) => {
+    devSection.querySelector('.dev-runs').innerHTML = `<div class="dev-section-label">最近のAI実行</div>${recent.map((run) => {
       const [text, cls] = statusLabel(run.status, run.conclusion);
       return `<a class="dev-run" href="${run.html_url}" target="_blank" rel="noopener noreferrer"><span><strong>#${run.run_number}</strong><small>${formatTime(run.run_started_at || run.created_at)}</small></span><span class="dev-pill dev-${cls}">${text}</span></a>`;
     }).join('')}`;
