@@ -26,6 +26,7 @@ concurrency:
 
 jobs:
   plan:
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ai]') }}
     runs-on: ubuntu-latest
     outputs:
       pending: ${{ steps.llm_plan.outputs.pending }}
