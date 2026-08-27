@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "lastKickAt": "2026-08-27T13:26:35Z",
-  "reason": "Refresh News Cacheの最終成功から90分以上経過しているため"
+  "lastKickAt": "2026-08-27T15:37:31Z",
+  "reason": "Refresh News Cacheの最終成功から90分以上経過し、実行中のrunもないため"
 }
