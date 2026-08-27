@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "lastKickAt": "2026-08-27T17:28:35Z",
-  "reason": "定期Refreshが途切れ、最終確認できる更新から90分以上経過したため"
+  "lastKickAt": "2026-08-27T19:40:02Z",
+  "reason": "最終成功runから90分以上経過し、定期Refreshが途切れているため"
 }
