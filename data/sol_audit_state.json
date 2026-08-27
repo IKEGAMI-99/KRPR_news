@@ -1,6 +1,98 @@
 {
   "version": 1,
   "initialAuditComplete": false,
-  "audited": {},
-  "lastRunAt": 0
+  "audited": {
+    "https://weibo.com/7521830234/RflMge0Oz": {
+      "id": "967c79534b61bc7f782b58bd",
+      "publishedAtEpoch": 1787824801,
+      "fingerprint": "967c79534b61bc7f782b58bd|1787824801|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092899932063813799": {
+      "id": "a6737bab0251e76923da4756",
+      "publishedAtEpoch": 1787821202,
+      "fingerprint": "a6737bab0251e76923da4756|1787821202|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://weibo.com/7521830234/RflnUkx2m": {
+      "id": "d61f7041b0200766d513d42e",
+      "publishedAtEpoch": 1787821201,
+      "fingerprint": "d61f7041b0200766d513d42e|1787821201|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092884825501794646": {
+      "id": "d20c10b98f06f46d44fc359d",
+      "publishedAtEpoch": 1787817600,
+      "fingerprint": "d20c10b98f06f46d44fc359d|1787817600|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092854875121913997": {
+      "id": "62d9dff47301ec7a1202a5a6",
+      "publishedAtEpoch": 1787810460,
+      "fingerprint": "62d9dff47301ec7a1202a5a6|1787810460|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092854626416824432": {
+      "id": "f00292da6c83dfac4171ba6d",
+      "publishedAtEpoch": 1787810400,
+      "fingerprint": "f00292da6c83dfac4171ba6d|1787810400|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://weibo.com/7521830234/Rfjq8fJXD": {
+      "id": "89efd7cd3132c52fe417b7b4",
+      "publishedAtEpoch": 1787803200,
+      "fingerprint": "89efd7cd3132c52fe417b7b4|1787803200|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092507341736268068": {
+      "id": "41b53014c26c05314b2bcdde",
+      "publishedAtEpoch": 1787727601,
+      "fingerprint": "41b53014c26c05314b2bcdde|1787727601|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/LifeMakeover510/status/2092462040459932131": {
+      "id": "7086bf07ea0a37018778896d",
+      "publishedAtEpoch": 1787716801,
+      "fingerprint": "7086bf07ea0a37018778896d|1787716801|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://weibo.com/7521830234/Rf9BhoCFS": {
+      "id": "1e51fd9c9da7a84018bd2dc2",
+      "publishedAtEpoch": 1787713200,
+      "fingerprint": "1e51fd9c9da7a84018bd2dc2|1787713200|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/LifeMakeover510/status/2092205354482630892": {
+      "id": "5bf87acffdfa3c58786a3616",
+      "publishedAtEpoch": 1787655602,
+      "fingerprint": "5bf87acffdfa3c58786a3616|1787655602|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://weibo.com/7521830234/Rf2Vgm2pk": {
+      "id": "f577891891573f5ecba926ef",
+      "publishedAtEpoch": 1787652000,
+      "fingerprint": "f577891891573f5ecba926ef|1787652000|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    },
+    "https://x.com/kirapara_JP/status/2092167598372958331": {
+      "id": "c0c03c393caa180519b416ad",
+      "publishedAtEpoch": 1787646600,
+      "fingerprint": "c0c03c393caa180519b416ad|1787646600|translation:none",
+      "auditedAtEpoch": 1787871846,
+      "status": "reviewed_no_translation_fields"
+    }
+  },
+  "lastRunAt": 1787871846
 }
