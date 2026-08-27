@@ -34,12 +34,15 @@
       "https://pbs.twimg.com/media/HQoelUAaMAEOcsz?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HQoemP-bMAAOI8N?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 Encore | 惑惑分解ショッププレビュー",
-    "bodyJa": "以闪亮之名 Encore | 惑惑分解ショッププレビュー\n惑惑分解ショップは8月28日09:00から9月18日23:59まで開催されます。イベント限定で取得したファッションから、5段星のファッション - 林檎、蓮の花、紫の霧など - をリデュースして redeem することができます！",
-    "summaryJa": "・追加: 惑惑分解ショップ\n・期間: 8月28日09:00〜9月18日23:59",
+    "titleJa": "復刻追光｜Deceit Decomショップ予告",
+    "bodyJa": "復刻追光｜Deceit Decomショップ予告\n\nDeceit Decomショップは8月28日09:00から9月18日23:59まで開催されます。期間限定イベントで獲得した衣装を分解すると、限定★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などと交換できます。",
+    "summaryJa": "・Deceit Decomショップが復刻\n・期間: 8月28日09:00〜9月18日23:59\n・イベント衣装の分解で限定★5アイテムなどと交換可能",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
+    "solEditReason": "原文のDeceit Decom shopを別名に誤変換し、5-starを「5段星」、redeem/decomposingの意味も崩していたため。公式X原文とSteam公式コミュニティのイベント告知で内容を照合。",
+    "solReviewed": true,
+    "solLocked": true,
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.72
@@ -58,15 +61,18 @@
       "https://pbs.twimg.com/media/HQoeVzEbMAA7wbj?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HQoeW8kagAAPNyT?format=jpg&name=orig"
     ],
-    "titleJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | 8月28日09:00〜9月17日23:59開催",
-    "bodyJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | 8月28日09:00〜9月17日23:59開催！\n\n「あなたには拒否するわけがないでしょう。」\n\n#DanceofDeceit | 神々に捧げ、願いを込めて、我々は万華鏡の Masks を着る。\n#LifeMakeover",
-    "summaryJa": "・追加: SSR [Gerald - Frozen Slumber] Dance of Deceit\n・期間: 8月28日09:00〜9月17日23:59",
+    "titleJa": "復刻追光｜SSR「Gerald - Frozen Slumber」予告",
+    "bodyJa": "復刻追光｜SSR「Gerald - Frozen Slumber」\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n「あなたの頼みを、私が断れるはずがないだろう。」\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover",
+    "summaryJa": "・SSR「Gerald - Frozen Slumber」がDance of Deceit復刻で登場\n・期間: 8月28日09:00〜9月17日23:59",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
+    "solEditReason": "固有名詞と英文キャッチコピーが不自然に混在し、意味が崩れていたため。公式X原文とSteam公式コミュニティ告知でSSR名・期間を照合。",
+    "solReviewed": true,
+    "solLocked": true,
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.72
+    "earlyInfoConfidence": 0.74
   },
   {
     "id": "1215b18de26a73e7fad8b098",
@@ -81,15 +87,18 @@
     "imageUrls": [
       "https://pbs.twimg.com/media/HQoeNU-bEAAldg8?format=jpg&name=orig"
     ],
-    "titleJa": "以閃亮之名 | 4段星セット [遊び制限] プレビュー",
-    "bodyJa": "以閃亮之名 | 4段星セット [遊び制限] プレビュー!\n以閃亮之名 | 8月28日09:00〜9月17日23:59にイベント可用!\n\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-    "summaryJa": "・追加: 4段星セット [遊び制限]が登場\n・期間: 8月28日09:00〜9月17日23:59",
+    "titleJa": "復刻追光｜★4セット「Wander Limit」プレビュー",
+    "bodyJa": "復刻追光｜★4セット「Wander Limit」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+    "summaryJa": "・★4セット「Wander Limit」を公開\n・期間: 8月28日09:00〜9月17日23:59",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
+    "solEditReason": "4-Starを「4段星」と誤訳し、セット名も意味の異なる日本語に置換していたため。公式X原文とSteam公式コミュニティ告知で星数・名称・期間を照合。",
+    "solReviewed": true,
+    "solLocked": true,
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.71
+    "earlyInfoConfidence": 0.73
   },
   {
     "id": "3533197a2dffc1bc8873fe37",
@@ -106,15 +115,18 @@
       "https://pbs.twimg.com/media/HQob5Kga0AAf8za?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HQob6lebwAAxhog?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 | 5段星セット [甘いスパイラル]のプレビュー",
-    "bodyJa": "以闪亮之名 | 5段星セット [甘いスパイラル]のプレビュー!\nDance of Deceit | 8月28日09:00から9月17日23:59までイベント可用!\n\n#DanceofDeceit | 神への奉仕と願いを、神々の前に万華鏡の Masks を着る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-    "summaryJa": "・追加: 5段星セット [甘いスパイラル]\n・期間: 8月28日09:00〜9月17日23:59",
+    "titleJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー",
+    "bodyJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+    "summaryJa": "・★5セット「Saccharine Spell」を公開\n・期間: 8月28日09:00〜9月17日23:59",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
+    "solEditReason": "5-Starを「5段星」と誤訳し、セット名を原文と対応しない名称へ変えていたため。公式X原文とSteam公式コミュニティ告知で星数・名称・期間を照合。",
+    "solReviewed": true,
+    "solLocked": true,
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
-    "earlyInfoConfidence": 0.71
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "6bd58a2693c651349cfa32d5",
@@ -132,12 +144,15 @@
       "https://pbs.twimg.com/media/HQobq5taIAA3iZR?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HQobsZhbEAAmmQI?format=jpg&name=orig"
     ],
-    "titleJa": "以闪亮之名 Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー\n\n[赤浄]染色エリアの最適化\n\n[赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました。",
-    "bodyJa": "以闪亮之名 Lightchase Encore | 6-Star Set [Crimson Cleansing] プレビュー\n\n[赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました。",
-    "summaryJa": "・追加: [赤浄]のドレスの染色エリア #1 が #19、#3 が #20、#4 が #21、#5 が #22、#6 が #23-27、#7 が #28、#9 が #29 に最適化されました",
+    "titleJa": "復刻追光｜★6セット「Crimson Cleansing」染色エリア最適化",
+    "bodyJa": "復刻追光｜★6セット「Crimson Cleansing」プレビュー\n\n★6セット「Crimson Cleansing」の染色エリアが最適化されました。ドレス「Crimson Cleansing」では、染色エリア#1が#19へ、#3が#20へ、#4が#21へ、#5が#22へ、#6が#23〜27へ、#7が#28へ、#9が#29へ最適化されています。",
+    "summaryJa": "・★6セット「Crimson Cleansing」の染色エリアを最適化\n・#1→#19、#3→#20、#4→#21、#5→#22、#6→#23〜27、#7→#28、#9→#29",
     "aiProcessed": true,
-    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
+    "solEditReason": "原文にない中国語表記が混入し、タイトルと染色エリア変更内容の可読性が損なわれていたため。公式X原文に記載された番号を保持して修正。",
+    "solReviewed": true,
+    "solLocked": true,
     "earlyInfo": true,
     "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
     "earlyInfoConfidence": 0.75
@@ -2181,7 +2196,16 @@
       "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "新メインストーリー22章予告 💎 新メインストーリー22章『死のショー · 禁制』8月31日オープン\n\n\"真実と虚偽が交錯する幻想の世界に,\n懐かしい人が再び目の前に現れます。\n\nこの甘い夢を続けるのも良いですが,\n最後の謎の答えを求めるためには,\n「記憶」という名の罠から脱却しなければなりません。\n\n最終的に開幕した「探偵」たちの戦い。\n真実に向かう鍵を手に入れるためには,\n何の代償を払う覚悟が必要でしょうか?\"\n\n💎 シャンプー22セット:\n- 5★ リング '出航の日'",
+    "bodyJa": "新メインストーリー22章予告\n\n💎 新メインストーリー22章『死のショー · 禁制』8月31日オープン。\n\n\"真実と虚偽が交錯する幻想の世界に,\n懐かしい人が再び目の前に現れます。\n\nこの甘い夢を続けるのも良いですが,\n最後の謎の答えを求めるためには,\n「記憶」という名の罠から脱却しなければなりません。\n\n最終的に開幕した「探偵」たちの戦い。\n真実に向かう鍵を手に入れるためには,\n何の代償を払う覚悟が必要でしょうか?\"\n\n💎 シャンプー22セット:\n- 5★ リング '出航の日'\n- ショットポーズ 'シック メセージ'\n- ショットフレーム 'フラロール インク'\n\n👗 ファッションスタジオ追加セット:\n- 4★ コスチュームセット 'ハート フルディング'\n- 4★ コスチュームセット 'シュガ マデルン'\n- 4★ コスチュームセット 'チェリー ポップスター'\n\n様々なスタイルのメインストーリーセット,\nファッションスタジオで作成してみてください!\n\n#スタイルライト #スタイルライト強化 #スタイルライトアップデート",
+    "summaryJa": "・追加: 新メインストーリー22章『死のショー · 禁制』\n・期間: 8月31日",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.7
   },
   {
     "id": "dbbc40fb17099754f08c38ed",
@@ -2573,7 +2597,16 @@
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=0RonOIADElRvdvCkBQwcIJ0J2hY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=0RonOIADElRvdvCkBQwcIJ0J2hY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『星に囚われた夜』パッケージ明日リリース",
+    "bodyJa": "[予告] 『星に囚われた夜』パッケージ明日リリース！ 星が消えた夜、思いを馳せる中に隠された mysteriousな階段を登れば、そこでは新たな運命が展開される。",
+    "summaryJa": "・追加: 『星に囚われた夜』パッケージ\n・期間: 未指定",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.75
   },
   {
     "id": "5f55efab1f3ab4ecb68e9ca5",
@@ -2587,7 +2620,16 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=abeBut%2Bu9NeSu%2BW3K1TvEnZUo4c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1787972400&x-signature=abeBut%2Bu9NeSu%2BW3K1TvEnZUo4c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ]
+    ],
+    "titleJa": "[予告] 『フラロール・ワールド』など装飾パッケージ明日リリース",
+    "bodyJa": "[予告] 『フラロール・ワールド』など装飾パッケージ明日リリース！ 花の王国から吹き来的風と共に運を運びます。 🕙 1/3(土) 10:30 〜 1/16(金) 23:59",
+    "summaryJa": "・追加: 『フラロール・ワールド』など装飾パッケージ\n・期間: 1月3日10:30〜1月16日23:59",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2",
+    "earlyInfo": true,
+    "earlyInfoReason": "海外公式の予告・近日公開系情報で、現在の日本版フィードに近い告知が見つかっていません",
+    "earlyInfoConfidence": 0.72
   },
   {
     "id": "fee87d33c477b26daa49a27b",
@@ -2599,7 +2641,13 @@
     "publishedLabel": "2023-05-09",
     "publishedAtEpoch": 1683651600,
     "imageUrl": null,
-    "imageUrls": []
+    "imageUrls": [],
+    "titleJa": "Life Makeoverが追加",
+    "bodyJa": "Life Makeoverが追加されました。個性的な衣装を染色し、自由にデザインするなど、個々のスタイルを表現できます。無償で、無限の仮装、夢の家を建設することもできます。",
+    "summaryJa": "・追加: Life Makeover\n・期間: 全世界",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bb73523b0968606bda103e17",
@@ -2632,6 +2680,12 @@
       "https://kotaku.com/app/uploads/2026/08/fields-of-mistria-review.jpg",
       "https://kotaku.com/app/uploads/2026/08/donuts2-1.jpg",
       "https://i.ytimg.com/vi/ID/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeover - Kotaku",
+    "bodyJa": "Life Makeoverのニュース、レビュー、リリース日、トレーラー、プレイプレイムービーなど",
+    "summaryJa": "・追加: Life Makeover\n・期間: GLOBAL",
+    "aiProcessed": true,
+    "aiModel": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+    "aiSummaryFormat": "facts-v2"
   }
 ]
