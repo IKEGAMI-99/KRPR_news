@@ -20,6 +20,7 @@
 - GitHub Actions 上のローカルLLMによる日本語翻訳 / 要約
 - GPT-5.6 Sol による1日3回の取りこぼし・翻訳品質監査
 - Solが発見した欠落記事の補完と、誤訳・誤要約の保護付き修整
+- GitHub Actions停止時のChatGPT外部watchdogによる自動再起動
 - 原文表示への切り替え
 - AI結果がおかしい記事の再翻訳 / 再要約依頼
 
@@ -35,7 +36,7 @@ APKは使用しません。ブラウザからPWAを開いてホーム画面へ�
 
 ## 📰 ニュース収集
 
-GitHub Actions が毎時17分に通常のニュース収集を実行します。
+GitHub Actions が**毎時00分**に通常のニュース収集を実行します。
 
 ```text
 公式サイト / X / TikTok / YouTube
@@ -181,6 +182,7 @@ KRPR_news/
 │  ├─ sol_news.json          # Solが発見した取りこぼし記事
 │  ├─ sol_overrides.json     # Solによる翻訳・要約修整
 │  ├─ sol_audit_state.json   # Sol全件監査の進捗
+│  ├─ refresh_kick.json      # ChatGPT watchdogからの再起動トリガー
 │  ├─ translation_glossary.json
 │  ├─ article_dates.json
 │  ├─ image_quality.json
@@ -217,15 +219,19 @@ KRPR_news/
 
 ## 🔄 自動更新
 
-`news-refresh.yml` がニュースデータを更新し、変更をmainへ保存します。PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
+`news-refresh.yml` が毎時00分にニュースデータを更新し、変更をmainへ保存します。PWAは `data/news.json` をネットワーク優先で読み、UIのアプリシェルだけService Workerでキャッシュします。
 
-通常収集は毎時実行し、Sol監査は別系統のChatGPT定期タスクとして1日3回実行します。通常収集と監査経路を分けることで、同じ取得方法の失敗をそのまま二重化しない構成にしています。
+通常収集とは別に、ChatGPT側の **Kirapara Refresh Watch** が毎時30分にGitHub Actionsの実行状況を確認します。直近の成功実行が90分以上見つからず、最近開始された実行もない場合は `data/refresh_kick.json` を更新して `news-refresh.yml` をpush経由で再起動します。直近60分以内にwatchdogがキック済みの場合は重複起動を避けます。
+
+GitHub Actions側は `cancel-in-progress: false` とし、watchdogのキックで処理中の正常な更新を途中キャンセルしないようにしています。
+
+Sol監査はさらに別系統のChatGPT定期タスクとして1日3回実行します。通常収集・外部watchdog・Sol監査の経路を分けることで、同じ障害点に依存しすぎない構成にしています。
 
 ## 💰 運用コスト
 
 通常のニュース収集・Qwen翻訳は、公開GitHubリポジトリ、GitHub Pages、標準GitHub-hosted Actions、無料公開データ取得経路を利用しており、追加の有料AI APIを前提にしていません。
 
-Sol監査は運用者のChatGPT定期タスクを利用するため、GitHub Actions上でGPT-5.6 Solを動かしているわけではありません。利用可能性や制限はChatGPT側の契約・機能に依存します。
+Sol監査とrefresh watchdogは運用者のChatGPT定期タスクを利用するため、GitHub Actions上でGPT-5.6 Solを動かしているわけではありません。利用可能性や制限はChatGPT側の契約・機能に依存します。
 
 GitHubや外部サービスの料金・利用条件は将来変更される可能性があります。
 
@@ -236,6 +242,7 @@ GitHubや外部サービスの料金・利用条件は将来変更される可�
 - 通常の翻訳・要約はGitHub Actions上のローカルQwenで処理
 - OpenAI / DeepL / Google翻訳等の有料翻訳APIを通常収集パイプラインには組み込まない
 - Sol監査では運用者のChatGPT定期タスクが公開Web情報と公開GitHubリポジトリの内容を確認する
+- refresh watchdogは公開GitHub Actionsの実行状態と `data/refresh_kick.json` だけを扱う
 
 ## ⚖️ コンテンツと免責
 
