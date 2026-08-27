@@ -6,7 +6,8 @@
   const RELEASE_URL = `${API}/releases/latest`;
   const BRANCH_URL = `${API}/branches/main`;
   const RELEASE_NOTES = [
-    'Qwen翻訳・要約を専用workflowへ分離し、処理状況をリアルタイム表示',
+    'ニュース一覧の区切りを月単位からJST基準の日付単位へ変更',
+    'Qwen翻訳・要約を専用workflowへ分離し、日本語出力の検証と再試行を強化',
     'Sol監査による誤訳修正と、修正結果をQwen辞書へフィードバックする仕組みを追加',
     '翻訳辞書を将来のKRPR特化LoRA学習に使える構造化形式へ移行',
     '先行情報のAI推定注意文、自動更新スケジュール、PWAキャッシュ更新を改善'
