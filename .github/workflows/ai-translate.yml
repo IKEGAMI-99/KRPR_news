@@ -116,7 +116,7 @@ jobs:
         env:
           LLM_MAX_ITEMS: '50'
         run: |
-          python scripts/translate_news_llm.py translate \
+          python -u scripts/translate_news_llm.py translate \
             --model "$HOME/.cache/kirapara-models/qwen2.5-3b-instruct-q4_k_m.gguf"
 
       - name: Compare overseas previews with Japan feed
