@@ -38,7 +38,7 @@
 
   const API = 'https://api.github.com/repos/IKEGAMI-99/KRPR_news';
   const WORKFLOW_RUNS = `${API}/actions/workflows/ai-translate.yml/runs?per_page=5`;
-  const DEV_CACHE_KEY = 'kirapara-dev-status-v3';
+  const DEV_CACHE_KEY = 'kirapara-dev-status-v4';
   const DEV_CACHE_MS = 3 * 60 * 1000;
 
   const backdrop = document.createElement('div');
@@ -62,18 +62,18 @@
       <div class="dev-topline">
         <div>
           <div class="dev-kicker">LOCAL AI / GITHUB ACTIONS</div>
-          <div class="dev-model">Qwen2.5 3B · Q4_K_M</div>
+          <div class="dev-model">LFM2.5 8B A1B · Q4_K_M</div>
         </div>
         <button class="dev-refresh" type="button" title="状態を更新" aria-label="AI状態を更新">↻</button>
       </div>
       <div class="dev-status-card dev-loading">
         <span class="dev-status-dot"></span>
-        <div><strong>取得中…</strong><small>Qwen workflowを確認しています</small></div>
+        <div><strong>取得中…</strong><small>LFM2.5 workflowを確認しています</small></div>
       </div>
       <div class="dev-metrics"></div>
       <div class="dev-steps"></div>
       <div class="dev-runs"></div>
-      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions/workflows/ai-translate.yml" target="_blank" rel="noopener noreferrer">Qwen Actionsで詳細を見る ↗</a>
+      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions/workflows/ai-translate.yml" target="_blank" rel="noopener noreferrer">LFM2.5 Actionsで詳細を見る ↗</a>
     </div>`;
   body.appendChild(devSection);
 
@@ -205,7 +205,7 @@
     const [mainLabel, mainClass] = statusLabel(aiStep?.status || job?.status || latest?.status, aiStep?.conclusion || job?.conclusion || latest?.conclusion);
     const card = devSection.querySelector('.dev-status-card');
     card.className = `dev-status-card dev-${mainClass}`;
-    card.innerHTML = `<span class="dev-status-dot"></span><div><strong>AI ${mainLabel}</strong><small>${aiStep?.name || job?.name || 'Translate News with Qwen'}${aiStep?.started_at ? ` · ${elapsed(aiStep.started_at, aiStep.completed_at)}` : ''}</small></div>`;
+    card.innerHTML = `<span class="dev-status-dot"></span><div><strong>AI ${mainLabel}</strong><small>${aiStep?.name || job?.name || 'Translate News with LFM2.5'}${aiStep?.started_at ? ` · ${elapsed(aiStep.started_at, aiStep.completed_at)}` : ''}</small></div>`;
 
     const counts = processedCount();
     const metrics = devSection.querySelector('.dev-metrics');
