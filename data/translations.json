@@ -757,6 +757,46 @@
       "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
       "modelRevision": "qwen2.5-3b-instruct-q4-k-m-v1",
       "updatedAtEpoch": 1787780424
+    },
+    "https://x.com/kirapara_JP/status/2092794229718212740": {
+      "contentHash": "ca191aa66f87c32099fbe7ef",
+      "titleJa": "🔔新バージョン『万世の平定』更新🔔 出会いの感謝を🎁 連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます...",
+      "bodyJa": "🔔新バージョン『万世の平定』更新🔔\n\n出会いの感謝を🎁\n連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます。お見逃しなく！\n\nイベント期間⏰\n8月27日10:30～8月30日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 新バージョン『万世の平定』\n・期間: 8月27日10:30〜8月30日23:59",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787799655
+    },
+    "https://x.com/LifeMakeover510/status/2092791708568498290": {
+      "contentHash": "55941e9a06c205e5bac274f3",
+      "titleJa": "以闪亮之名 Encore | 惑惑分解ショッププレビュー",
+      "bodyJa": "以闪亮之名 Encore | 惑惑分解ショッププレビュー\n惑惑分解ショップは8月28日09:00から9月18日23:59まで開催されます。イベント限定で取得したファッションから、5段星のファッション - 林檎、蓮の花、紫の霧など - をリデュースして redeem することができます！",
+      "summaryJa": "・追加: 惑惑分解ショップ\n・期間: 8月28日09:00〜9月18日23:59",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787799683
+    },
+    "https://x.com/LifeMakeover510/status/2092789192208298055": {
+      "contentHash": "9f53761704666190206221fd",
+      "titleJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | 8月28日09:00〜9月17日23:59開催",
+      "bodyJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | 8月28日09:00〜9月17日23:59開催！\n\n「あなたには拒否するわけがないでしょう。」\n\n#DanceofDeceit | 神々に捧げ、願いを込めて、我々は万華鏡の Masks を着る。\n#LifeMakeover",
+      "summaryJa": "・追加: SSR [Gerald - Frozen Slumber] Dance of Deceit\n・期間: 8月28日09:00〜9月17日23:59",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787799704
+    },
+    "https://x.com/LifeMakeover510/status/2092786675575369907": {
+      "contentHash": "c8d9d48048c52ba999c8533d",
+      "titleJa": "以閃亮之名 | 4段星セット [遊び制限] プレビュー",
+      "bodyJa": "以閃亮之名 | 4段星セット [遊び制限] プレビュー!\n以閃亮之名 | 8月28日09:00〜9月17日23:59にイベント可用!\n\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: 4段星セット [遊び制限]が登場\n・期間: 8月28日09:00〜9月17日23:59",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF:Q4_K_M",
+      "modelRevision": "qwen2.5-3b-instruct-q4-k-m-summary-facts-v2",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787799721
     }
   }
 }
