@@ -17,8 +17,11 @@ on:
       - 'scripts/filter_small_images.py'
       - 'scripts/normalize_news.py'
       - 'scripts/translate_news_llm.py'
+      - 'scripts/strict_qwen_translate.py'
+      - 'scripts/glossary_schema.py'
       - 'scripts/tag_early_info.py'
       - 'scripts/apply_sol_edits.py'
+      - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
       - 'data/refresh_kick.json'
@@ -60,8 +63,8 @@ jobs:
       - name: Merge Sol supplemental news and reviewed translations
         run: python scripts/apply_sol_edits.py
 
-      - name: Apply cached translations without running the LLM
-        run: python scripts/translate_news_llm.py prepare
+      - name: Apply only Japanese-safe cached translations without running the LLM
+        run: python -u scripts/strict_qwen_translate.py prepare
 
       - name: Compare overseas previews with Japan feed
         run: python scripts/tag_early_info.py
