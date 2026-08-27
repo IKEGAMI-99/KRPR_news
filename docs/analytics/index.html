@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17131f">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Kirapara Analytics</title>
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">PRIVATE DASHBOARD</p>
+        <h1>Kirapara Analytics</h1>
+        <p id="updatedAt" class="muted">データを読み込み中…</p>
+      </div>
+      <div class="live-dot" title="analytics"></div>
+    </header>
+
+    <section id="setupNotice" class="notice" hidden>
+      <strong>解析データはまだ未接続です。</strong>
+      <span>GA4接続後、この画面へ自動で集計結果が表示されます。</span>
+    </section>
+
+    <section class="kpis">
+      <article class="kpi"><span>今日</span><strong id="todayViews">—</strong><small>views</small></article>
+      <article class="kpi"><span>7日</span><strong id="weekViews">—</strong><small>views</small></article>
+      <article class="kpi"><span>30日</span><strong id="monthViews">—</strong><small>views</small></article>
+      <article class="kpi"><span>30日 Users</span><strong id="monthUsers">—</strong><small>users</small></article>
+    </section>
+
+    <section class="panel wide">
+      <div class="panel-head"><div><p class="eyebrow">TREND</p><h2>30日アクセス</h2></div></div>
+      <div id="trendChart" class="trend" aria-label="30日アクセス推移"></div>
+    </section>
+
+    <section class="grid">
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">POPULAR</p><h2>人気ページ</h2></div></div><div id="pages" class="rank-list"></div></article>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">REFERRER</p><h2>流入元</h2></div></div><div id="referrers" class="bars"></div></article>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">REGION</p><h2>国・地域</h2></div></div><div id="regions" class="bars"></div></article>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">DEVICE</p><h2>デバイス</h2></div></div><div id="devices" class="bars"></div></article>
+    </section>
+
+    <footer>Kirapara News analytics · direct URL only</footer>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
