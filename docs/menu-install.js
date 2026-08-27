@@ -32,6 +32,19 @@
     </a>`;
   section.insertAdjacentElement('afterend', analysis);
 
+  const analytics = document.createElement('section');
+  analytics.className = 'menu-analysis-section';
+  analytics.innerHTML = `
+    <a class="menu-analysis-action" href="./analytics/">
+      <span class="menu-analysis-icon" aria-hidden="true">📈</span>
+      <span class="menu-analysis-copy">
+        <span><strong>アクセス解析</strong></span>
+        <small>閲覧数・ユーザー・流入元・地域・デバイス</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
+    </a>`;
+  analysis.insertAdjacentElement('afterend', analytics);
+
   const schedule = document.createElement('section');
   schedule.className = 'menu-schedule-section';
   schedule.innerHTML = `
