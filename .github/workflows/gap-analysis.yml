@@ -1,0 +1,46 @@
+name: Build Implementation Gap Analysis
+
+on:
+  schedule:
+    - cron: '30 21 * * *' # 06:30 JST
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_gap_analysis.py'
+      - '.github/workflows/gap-analysis.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gap-analysis
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build regional implementation gap analysis
+        run: python scripts/build_gap_analysis.py
+
+      - name: Commit analysis when changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/gap_analysis.json)" ]; then
+            echo "No implementation-gap changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/gap_analysis.json
+          git commit -m "chore: refresh implementation gap analysis"
+          git pull --rebase origin main
+          git push
