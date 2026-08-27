@@ -1,4 +1,40 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "https://x.com/LifeMakeover510/status/2092791708568498290": {
+      "titleJa": "復刻追光｜Deceit Decomショップ予告",
+      "bodyJa": "復刻追光｜Deceit Decomショップ予告\n\nDeceit Decomショップは8月28日09:00から9月18日23:59まで開催されます。期間限定イベントで獲得した衣装を分解すると、限定★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などと交換できます。",
+      "summaryJa": "・Deceit Decomショップが復刻\n・期間: 8月28日09:00〜9月18日23:59\n・イベント衣装の分解で限定★5アイテムなどと交換可能",
+      "reason": "原文のDeceit Decom shopを別名に誤変換し、5-starを「5段星」、redeem/decomposingの意味も崩していたため。公式X原文とSteam公式コミュニティのイベント告知で内容を照合。",
+      "updatedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092789192208298055": {
+      "titleJa": "復刻追光｜SSR「Gerald - Frozen Slumber」予告",
+      "bodyJa": "復刻追光｜SSR「Gerald - Frozen Slumber」\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n「あなたの頼みを、私が断れるはずがないだろう。」\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover",
+      "summaryJa": "・SSR「Gerald - Frozen Slumber」がDance of Deceit復刻で登場\n・期間: 8月28日09:00〜9月17日23:59",
+      "reason": "固有名詞と英文キャッチコピーが不自然に混在し、意味が崩れていたため。公式X原文とSteam公式コミュニティ告知でSSR名・期間を照合。",
+      "updatedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092786675575369907": {
+      "titleJa": "復刻追光｜★4セット「Wander Limit」プレビュー",
+      "bodyJa": "復刻追光｜★4セット「Wander Limit」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・★4セット「Wander Limit」を公開\n・期間: 8月28日09:00〜9月17日23:59",
+      "reason": "4-Starを「4段星」と誤訳し、セット名も意味の異なる日本語に置換していたため。公式X原文とSteam公式コミュニティ告知で星数・名称・期間を照合。",
+      "updatedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092784159156470187": {
+      "titleJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー",
+      "bodyJa": "復刻追光｜★5セット「Saccharine Spell」プレビュー！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit｜祈りと願いの中で、私たちは神々のために無数の仮面をまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・★5セット「Saccharine Spell」を公開\n・期間: 8月28日09:00〜9月17日23:59",
+      "reason": "5-Starを「5段星」と誤訳し、セット名を原文と対応しない名称へ変えていたため。公式X原文とSteam公式コミュニティ告知で星数・名称・期間を照合。",
+      "updatedAtEpoch": 1787806936
+    },
+    "https://x.com/LifeMakeover510/status/2092781642557575197": {
+      "titleJa": "復刻追光｜★6セット「Crimson Cleansing」染色エリア最適化",
+      "bodyJa": "復刻追光｜★6セット「Crimson Cleansing」プレビュー\n\n★6セット「Crimson Cleansing」の染色エリアが最適化されました。ドレス「Crimson Cleansing」では、染色エリア#1が#19へ、#3が#20へ、#4が#21へ、#5が#22へ、#6が#23〜27へ、#7が#28へ、#9が#29へ最適化されています。",
+      "summaryJa": "・★6セット「Crimson Cleansing」の染色エリアを最適化\n・#1→#19、#3→#20、#4→#21、#5→#22、#6→#23〜27、#7→#28、#9→#29",
+      "reason": "原文にない中国語表記が混入し、タイトルと染色エリア変更内容の可読性が損なわれていたため。公式X原文に記載された番号を保持して修正。",
+      "updatedAtEpoch": 1787806936
+    }
+  }
 }
