@@ -32,7 +32,39 @@
     </a>`;
   section.insertAdjacentElement('afterend', analysis);
 
-  // Developer tools belong at the very bottom, after links and notes.
+  const schedule = document.createElement('section');
+  schedule.className = 'menu-schedule-section';
+  schedule.innerHTML = `
+    <div class="menu-schedule-heading">
+      <span>⏱</span>
+      <div><strong>自動更新スケジュール</strong><small>時刻はすべて日本時間（JST）</small></div>
+    </div>
+    <div class="menu-schedule-list">
+      <div class="menu-schedule-row">
+        <span class="menu-schedule-icon">↻</span>
+        <div><strong>ニュース収集</strong><small>毎時 :17</small></div>
+        <b>1時間ごと</b>
+      </div>
+      <div class="menu-schedule-row">
+        <span class="menu-schedule-icon">✦</span>
+        <div><strong>Qwen 翻訳・要約</strong><small>奇数時 :37</small></div>
+        <b>2時間ごと</b>
+      </div>
+      <div class="menu-schedule-row">
+        <span class="menu-schedule-icon">◇</span>
+        <div><strong>Sol 監査</strong><small>08:00 / 14:00 / 20:00</small></div>
+        <b>1日3回</b>
+      </div>
+      <div class="menu-schedule-row">
+        <span class="menu-schedule-icon">⚡</span>
+        <div><strong>更新監視</strong><small>毎時 :30・異常時のみ再起動</small></div>
+        <b>1時間ごと</b>
+      </div>
+    </div>
+    <p class="menu-schedule-note">GitHub Actionsの混雑状況により、実際の開始時刻は数分以上遅れる場合があります。</p>`;
+  body.appendChild(schedule);
+
+  // Developer tools belong at the very bottom, after links, notes, and schedule.
   if (devSection) body.appendChild(devSection);
 
   const action = section.querySelector('.menu-install-action');
