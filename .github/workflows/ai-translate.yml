@@ -21,7 +21,7 @@ permissions:
 
 concurrency:
   group: kirapara-data-writer
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   plan:
