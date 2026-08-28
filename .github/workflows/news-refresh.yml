@@ -12,6 +12,7 @@ on:
       - 'scripts/enrich_social_images.py'
       - 'scripts/enrich_weibo_images.py'
       - 'scripts/normalize_weibo_cdn.py'
+      - 'scripts/mirror_weibo_images.py'
       - 'scripts/enrich_bilibili_images.py'
       - 'scripts/upgrade_x_images.py'
       - 'scripts/fetch_wechat_official.py'
@@ -75,15 +76,18 @@ jobs:
       - name: Reapply Sol locks
         run: python scripts/apply_sol_edits.py
 
+      - name: Mirror Weibo images for browser-safe delivery
+        run: python scripts/mirror_weibo_images.py
+
       - name: Commit refreshed news when changed
         run: |
-          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json)" ]; then
-            echo "No news, date, image-quality or translation changes"
+          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json docs/media/weibo)" ]; then
+            echo "No news, date, image-quality, translation or Weibo mirror changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/translations.json data/article_dates.json data/image_quality.json
+          git add data/news.json data/translations.json data/article_dates.json data/image_quality.json docs/media/weibo
           git commit -m "chore: refresh normalized news"
           git pull --rebase origin main
           git push
