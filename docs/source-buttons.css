@@ -1,0 +1,27 @@
+.news-card.has-multiple-sources .card-actions {
+  align-items: stretch;
+}
+
+.news-card.has-multiple-sources .source-button {
+  margin-left: 0;
+  flex: 1 1 auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.news-card.has-multiple-sources .more-button,
+.news-card.has-multiple-sources .original-button {
+  flex: 0 0 auto;
+}
+
+.source-button-extra {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 700px) {
+  .news-card.has-multiple-sources .source-button {
+    min-width: calc(50% - 4px);
+  }
+}
