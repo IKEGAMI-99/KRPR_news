@@ -35,18 +35,6 @@
     "height": 360,
     "checkedAt": 1787776438
   },
-  "https://kotaku.com/app/uploads/2026/01/unnamed.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1787776438
-  },
-  "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1787776438
-  },
   "https://pbs.twimg.com/media/HQoeNU-bEAAldg8?format=jpg&name=orig": {
     "ok": true,
     "width": 3840,
@@ -431,40 +419,16 @@
     "height": 4096,
     "checkedAt": 1787851943
   },
-  "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1787851943
-  },
-  "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1787851943
-  },
   "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig": {
     "ok": true,
     "width": 1920,
     "height": 1080,
     "checkedAt": 1787851943
   },
-  "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1787851943
-  },
   "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig": {
     "ok": true,
     "width": 3000,
     "height": 3000,
-    "checkedAt": 1787851943
-  },
-  "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
     "checkedAt": 1787851943
   },
   "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png": {
@@ -478,12 +442,6 @@
     "width": 800,
     "height": 450,
     "checkedAt": 1787866033
-  },
-  "https://kotaku.com/app/uploads/2026/08/2022-gta26.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1787877812
   },
   "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
     "ok": true,
