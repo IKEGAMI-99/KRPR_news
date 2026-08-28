@@ -1,9 +1,13 @@
-.image-viewer {
+.image-viewer:not([hidden]) {
   display: block !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
   overscroll-behavior: contain;
   padding: max(18px, var(--safe-top)) 8px max(24px, var(--safe-bottom)) !important;
+}
+
+.image-viewer[hidden] {
+  display: none !important;
 }
 
 .viewer-figure {
@@ -45,7 +49,7 @@
 .viewer-next { right: 8px !important; }
 
 @media (max-width: 700px) {
-  .image-viewer {
+  .image-viewer:not([hidden]) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
