@@ -226,12 +226,13 @@
     "https://x.com/stylight_kr/status/2092537547641454873": {
       "contentHash": "5c22202dbb85eaca88fa4700",
       "titleJa": "【イベント】『Makeover Story』 友人や協会メンバーなどスタイルパートナーと楽しむ特別なイベント『Makeover Story』が明日オープンします",
-      "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서（ダエプの連書）」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
       "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879355
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1787914720,
+      "managedBySol": true
     },
     "https://x.com/kirapara_JP/status/2092537548589449433": {
       "contentHash": "80baa7808aa26c6c9bf940f2",
