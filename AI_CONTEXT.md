@@ -32,7 +32,7 @@ runtime_model:
 
 schedules:
   news_refresh: "hourly at minute 00"
-  ai_translate: "hourly at minutes 07,22,37,52 and after successful crawl status updates; max 3 articles/run"
+  ai_translate: "hourly at minutes 07,22,37,52 and after successful Refresh News Cache workflow completion; max 3 articles/run"
   gap_analysis: "daily 06:30 JST"
   analytics_refresh: "every 6 hours"
 

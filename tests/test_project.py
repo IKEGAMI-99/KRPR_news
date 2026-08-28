@@ -256,7 +256,9 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertIn("Gemma 4 E4B", readme)
         for minute in (7, 22, 37, 52):
             self.assertIn(f"cron: '{minute} * * * *'", workflow)
-        self.assertIn("- 'data/crawl_status.json'", workflow)
+        self.assertIn("workflow_run:", workflow)
+        self.assertIn("- 'Refresh News Cache'", workflow)
+        self.assertIn("github.event.workflow_run.conclusion == 'success'", workflow)
         self.assertIn("python scripts/merge_translation_results.py", workflow)
         self.assertIn("LLM_MAX_ITEMS: '3'", workflow)
 

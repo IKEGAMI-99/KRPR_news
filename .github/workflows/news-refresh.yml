@@ -1,5 +1,6 @@
 name: Refresh News Cache
 
+# ai-translate.yml subscribes to successful completion through workflow_run.
 on:
   workflow_call:
   schedule:

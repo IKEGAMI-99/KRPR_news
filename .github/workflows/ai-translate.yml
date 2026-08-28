@@ -7,6 +7,11 @@ on:
     - cron: '37 * * * *'
     - cron: '52 * * * *'
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 'Refresh News Cache'
+    types:
+      - completed
   push:
     paths:
       - 'scripts/translation_engine.py'
@@ -19,9 +24,6 @@ on:
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
-      # Every successful crawl updates this file, providing an event-driven
-      # fallback when GitHub drops a scheduled trigger.
-      - 'data/crawl_status.json'
       - '.github/workflows/ai-translate.yml'
 
 permissions:
@@ -33,7 +35,7 @@ concurrency:
 
 jobs:
   plan:
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ai]') }}
+    if: ${{ (github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ai]')) && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     outputs:
       pending: ${{ steps.llm_plan.outputs.pending }}

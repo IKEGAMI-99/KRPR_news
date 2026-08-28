@@ -210,7 +210,7 @@ AIが変更を完了したと判断する前に、関連実装・テスト・Wor
 
 5分ごとに1件ずつ処理していたAI構成は、モデル復元・ランタイム準備・checkoutの回数が多すぎるため廃止しました。現在は15分ごとに最大3件をまとめ、同等の最大処理量を保ちながらrunner起動回数を4分の1にしています。
 
-ニュース収集とAI処理は `kirapara-news-refresh` / `kirapara-ai-translate` の別concurrency groupで並行実行します。競合時は単純なrebaseに頼らず、最新`main`と生成済みキャッシュを意味的に統合し、監査済み翻訳または新しい翻訳を残して最大4回pushを再試行します。定期cronの取りこぼしに備え、収集成功で `data/crawl_status.json` が更新されたpushもAI処理を起動します。
+ニュース収集とAI処理は `kirapara-news-refresh` / `kirapara-ai-translate` の別concurrency groupで並行実行します。競合時は単純なrebaseに頼らず、最新`main`と生成済みキャッシュを意味的に統合し、監査済み翻訳または新しい翻訳を残して最大4回pushを再試行します。定期cronの取りこぼしに備え、`Refresh News Cache` が成功すると `workflow_run` でもAI処理を起動します。
 
 ## ニュース収集
 
