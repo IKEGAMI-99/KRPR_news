@@ -181,7 +181,7 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertNotIn("early-info.css", sw)
         self.assertNotIn("tag_early_info.py", news_workflow)
         self.assertNotIn("tag_early_info.py", ai_workflow)
-        self.assertNotIn("先行情報", readme)
+        self.assertIn("検索バーと旧トップ3予測UIは2026-08-28に完全削除", readme)
         self.assertNotIn("FORECAST", gap_html)
         self.assertNotIn("forecasts", gap_js)
 
