@@ -128,6 +128,25 @@ class ProjectStructureTests(unittest.TestCase):
             with self.subTest(asset=asset):
                 self.assertTrue(path.exists(), f"missing service-worker asset: {asset}")
 
+    def test_legal_pages_are_linked_and_cached(self):
+        index = (DOCS / "index.html").read_text(encoding="utf-8")
+        menu = (DOCS / "menu-install.js").read_text(encoding="utf-8")
+        sw = (DOCS / "sw.js").read_text(encoding="utf-8")
+        terms = (DOCS / "terms.html").read_text(encoding="utf-8")
+        privacy = (DOCS / "privacy.html").read_text(encoding="utf-8")
+
+        for name in ("terms.html", "privacy.html", "legal.css"):
+            self.assertTrue((DOCS / name).exists(), f"missing legal asset: {name}")
+            self.assertIn(f"./{name}", sw)
+
+        self.assertIn("./terms.html", index)
+        self.assertIn("./privacy.html", index)
+        self.assertIn("./terms.html", menu)
+        self.assertIn("./privacy.html", menu)
+        self.assertIn("@ikegami_krpr", terms)
+        self.assertIn("Google Analytics 4", privacy)
+        self.assertIn("@ikegami_krpr", privacy)
+
     def test_weibo_image_delivery_is_self_hosted_and_wired(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
         sw = (DOCS / "sw.js").read_text(encoding="utf-8")
