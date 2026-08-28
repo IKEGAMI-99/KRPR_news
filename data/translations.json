@@ -219,9 +219,9 @@
       "bodyJa": "🔔【復刻】トレンドコードが再登場🔔\n\n『時間の反響』イベントで、2つのトレンドコードが復刻！\n前回見逃してしまった場合は、この機会をお見逃しなく👀\n\nイベント期間⏰\n8月27日10:30～9月25日23:59\n\n※詳細はゲーム内からご確認ください。\n\n#キラパラ\n#着せ替えゲーム",
       "summaryJa": "・復刻: トレンドコード2種が『時間の反響』イベントで再登場\n・期間: 8月27日10:30〜9月25日23:59\n・入手: ゲーム内イベントにて",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879306
+      "updatedAtEpoch": 1787956986
     },
     "https://x.com/stylight_kr/status/2092537547641454873": {
       "contentHash": "5c22202dbb85eaca88fa4700",
@@ -240,9 +240,9 @@
       "bodyJa": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
       "summaryJa": "・追加: 星6セット「修羅帰鞘」が登場\n・追加: 星5セット「占心の誓い」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879382
+      "updatedAtEpoch": 1787957011
     },
     "https://x.com/kirapara_JP/status/2092533759073456435": {
       "contentHash": "f0a1215bdb1ffe59a51718fd",
