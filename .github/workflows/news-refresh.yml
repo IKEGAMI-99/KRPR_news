@@ -21,6 +21,7 @@ on:
       - 'scripts/normalize_news.py'
       - 'scripts/translate_news_llm.py'
       - 'scripts/strict_qwen_translate.py'
+      - 'scripts/strict_gemma_translate.py'
       - 'scripts/glossary_schema.py'
       - 'scripts/tag_early_info.py'
       - 'scripts/apply_sol_edits.py'
@@ -70,7 +71,7 @@ jobs:
         run: python scripts/apply_sol_edits.py
 
       - name: Apply only Japanese-safe cached translations without running the LLM
-        run: python -u scripts/strict_qwen_translate.py prepare
+        run: python -u scripts/strict_gemma_translate.py prepare
 
       - name: Compare overseas previews with Japan feed
         run: python scripts/tag_early_info.py
