@@ -250,9 +250,9 @@
       "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『孤刃帰鞘』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
       "summaryJa": "・イベントファッション復刻『孤刃帰鞘』が期間限定で開放\n・見逃したイベントファッションや外観が制作可能\n・期間: 指定なし",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879408
+      "updatedAtEpoch": 1787958106
     },
     "https://x.com/kirapara_JP/status/2092529984489541762": {
       "contentHash": "f2413aa4a016e41965c8f7e9",
@@ -260,9 +260,9 @@
       "bodyJa": "＼パックがサプライズ復刻💃／ \n\n6つのパックが期間限定で復刻します！\nこの他にも、流行カラーカードやスタミナなど、用途に応じたお得なパックを多数販売！\nモールの『割引セット』からご確認くださいね！👀\n\n復刻期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
       "summaryJa": "・追加: 6つのパックが期間限定で復刻\n・期間: 8月27日10:30～9月16日23:59\n・入手: モールの「割引セット」から確認可能",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879436
+      "updatedAtEpoch": 1787958132
     },
     "https://x.com/kirapara_JP/status/2092526209351696684": {
       "contentHash": "0265cda0f89340d12497216e",
