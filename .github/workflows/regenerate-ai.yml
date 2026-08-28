@@ -16,6 +16,7 @@ jobs:
   regenerate:
     if: github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[AI再生成]')
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,6 +26,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Validate translation inputs
+        run: |
+          python scripts/validate_pipeline_state.py \
+            --news data/news.json \
+            --translations data/translations.json
 
       - name: Read article ID
         id: request

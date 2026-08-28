@@ -211,10 +211,8 @@ def strict_infer_one(llm, row: dict):
 
 
 def purge_non_japanese_cache() -> int:
-    rows = engine.read_json(engine.NEWS_PATH, [])
-    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
-    if not isinstance(rows, list):
-        return 0
+    rows = engine.read_json_required(engine.NEWS_PATH, list)
+    cache = engine.normalized_cache(engine.read_json_required(engine.CACHE_PATH, dict))
     items = cache.get("items", {})
     removed = 0
     for row in rows:
@@ -230,6 +228,7 @@ def purge_non_japanese_cache() -> int:
         if not reason:
             continue
         items.pop(key, None)
+        engine.clear_failure(cache, row)
         removed += 1
         print(f"purged non-Japanese cache: {key}: {reason}")
 

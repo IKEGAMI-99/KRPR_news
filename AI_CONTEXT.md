@@ -32,13 +32,16 @@ runtime_model:
 
 schedules:
   news_refresh: "hourly at minute 00"
-  ai_translate: "hourly at minutes 07,22,37,52; max 3 articles/run"
+  ai_translate: "after each successful news refresh and hourly at minutes 07,22,37,52; max 3 articles/run"
+  external_watchdog: "hourly at minute 30; kicks stale refresh or translation workflows"
   gap_analysis: "daily 06:30 JST"
   analytics_refresh: "every 6 hours"
 
 write_coordination:
   concurrency_group: kirapara-data-writer
   collector_push_retry: "rebase latest main and retry up to 4 times"
+  destructive_refresh_gate: scripts/validate_pipeline_state.py
+  translation_failure_cooldowns: "1h, 6h, 24h"
 
 legal:
   terms: docs/terms.html
@@ -85,6 +88,8 @@ AIが変更を始める前に、対象機能について少なくとも以下を
 | 法的ページ共通スタイル | `docs/legal.css` |
 | ニュース収集Workflow | `.github/workflows/news-refresh.yml` |
 | AI Workflow | `.github/workflows/ai-translate.yml` |
+| 収集前後のデータ検証 | `scripts/validate_pipeline_state.py` |
+| 外部watchdogの起動marker | `data/refresh_kick.json` / `data/ai_kick.json` |
 | Stable Release gate | `.github/workflows/release-stable.yml` |
 | 構造上の回帰防止 | `tests/test_project.py` |
 
@@ -102,10 +107,12 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 6. **ニュースJSONを固定キャッシュしない。** PWAは新しいニュースを取りに行けること。
 7. **Service Worker更新後に古い実装が残留し続けないこと。** 現行のcontroller変更時リロード設計を壊さないこと。
 8. **ニュース収集とAI書き込みを競合させない。** `kirapara-data-writer` の排他設計を維持すること。
-9. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
-10. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
-11. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
-12. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
+9. **破損・急減した収集結果をcommitしない。** 必須JSONをfail closedで読み、`scripts/validate_pipeline_state.py` の収集前後gateを維持すること。
+10. **1件の翻訳失敗でbacklog全体を止めない。** content hash単位のfailure cooldownを維持し、後続記事を処理可能にすること。
+11. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
+12. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
+13. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
+14. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
 
 ## Explicitly removed / deprecated behavior
 
@@ -164,6 +171,7 @@ external public sources
 new/invalid translation backlog
   -> Gemma 4 E4B
   -> quality validation
+  -> failed article cooldown (1h -> 6h -> 24h)
   -> data/translations.json
   -> next news refresh / PWA rendering
 ```
@@ -183,6 +191,8 @@ summaryFormatVersion: 4
 古いrevisionは表示され続ける場合がありますが、backlogから順次再処理される対象です。
 
 `managedBySol` またはSol管理モデルとして明示されたエントリは別扱いで、有効な手動監査結果として保持されます。
+
+生成または品質検査に失敗した記事は、`data/translations.json` の `failures` にcontent hashと再試行時刻を記録します。同じ内容は1時間、6時間、24時間の段階的cooldown中に通常queueから除外し、後続記事を処理します。本文が変われば古いfailure stateは無効です。成功またはSol管理結果の適用時にfailure stateを削除します。
 
 ## Source-specific knowledge
 
@@ -235,6 +245,8 @@ preserve correct existing data
 
 つまり、空レスポンス・一時403・タイムアウト・RSSHub障害などを、即座に「元記事削除」とみなしてはいけません。
 
+`data/news.json` と `data/translations.json` は必須データです。JSON parse失敗やtop-level型不一致を空配列・空objectへ置換して書き戻してはいけません。収集後に全体または地域別の件数が直前データから安全閾値を下回った場合も、正常な更新としてcommitしてはいけません。
+
 ## Safe modification protocol for another AI
 
 コード変更を依頼されたAIは、原則として次の順で作業してください。
@@ -262,6 +274,7 @@ node --check docs/menu-install.js
 python -m json.tool data/news.json >/dev/null
 python -m json.tool data/translations.json >/dev/null
 python -m json.tool data/crawl_status.json >/dev/null
+python scripts/validate_pipeline_state.py --news data/news.json --translations data/translations.json
 ```
 
 法的ページを変更した場合は `tests/test_project.py::ProjectStructureTests.test_legal_pages_are_linked_and_cached` 相当の条件も維持してください。

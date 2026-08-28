@@ -23,6 +23,16 @@ def read_json(path: Path, default):
         return default
 
 
+def read_json_required(path: Path, expected_type):
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"required JSON is unreadable or malformed: {path}: {exc}") from exc
+    if not isinstance(value, expected_type):
+        raise RuntimeError(f"required JSON has the wrong type: {path}")
+    return value
+
+
 def write_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -55,6 +65,10 @@ def normalize_translation_cache(raw) -> dict:
     if not isinstance(items, dict):
         items = {}
     raw["items"] = items
+    failures = raw.get("failures")
+    if not isinstance(failures, dict):
+        failures = {}
+    raw["failures"] = failures
     raw.setdefault("version", 2)
     return raw
 
@@ -118,9 +132,7 @@ def find_override(row: dict, overrides: dict):
 
 
 def main() -> int:
-    rows = read_json(NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
+    rows = read_json_required(NEWS_PATH, list)
 
     sol_news_raw = read_json(SOL_NEWS_PATH, {"version": 1, "items": []})
     sol_items = sol_news_raw.get("items", []) if isinstance(sol_news_raw, dict) else []
@@ -132,8 +144,9 @@ def main() -> int:
     if not isinstance(overrides, dict):
         overrides = {}
 
-    cache = normalize_translation_cache(read_json(TRANSLATIONS_PATH, {}))
+    cache = normalize_translation_cache(read_json_required(TRANSLATIONS_PATH, dict))
     cache_items = cache["items"]
+    cache_failures = cache["failures"]
 
     merged = merge_sol_news(rows, sol_items)
     now = int(time.time())
@@ -191,6 +204,7 @@ def main() -> int:
             "managedBySol": True,
         }
         cache_items[key] = entry
+        cache_failures.pop(key, None)
         locked_keys.add(key)
 
         row["solLocked"] = True

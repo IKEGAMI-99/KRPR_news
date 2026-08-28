@@ -126,10 +126,8 @@ def cmd_translate_litert(args) -> int:
         print(f"model not found: {model_path}", file=sys.stderr)
         return 2
 
-    rows = engine.read_json(engine.NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
-    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
+    rows = engine.read_json_required(engine.NEWS_PATH, list)
+    cache = engine.normalized_cache(engine.read_json_required(engine.CACHE_PATH, dict))
     engine.apply_cache(rows, cache)
     pending = engine.pending_rows(rows, cache)
     limit = max(1, int(args.max_items or os.getenv("LLM_MAX_ITEMS", "10")))
@@ -152,10 +150,19 @@ def cmd_translate_litert(args) -> int:
                 f"{row.get('region')} {row.get('platform')}: "
                 f"{str(row.get('title') or '')[:70]}"
             )
-            result = engine.infer_one(llm, row)
+            try:
+                result = engine.infer_one(llm, row)
+            except Exception as exc:
+                print(f"  inference error: {key}: {exc}", file=sys.stderr)
+                result = None
             if not result:
                 failures += 1
-                print(f"  failed: {key}", file=sys.stderr)
+                failure = engine.record_failure(cache, row)
+                print(
+                    f"  failed and deferred: {key}; attempts={failure['attempts']} "
+                    f"retryAfterEpoch={failure['retryAfterEpoch']}",
+                    file=sys.stderr,
+                )
                 continue
 
             entry = {
@@ -167,6 +174,7 @@ def cmd_translate_litert(args) -> int:
                 "updatedAtEpoch": int(time.time()),
             }
             cache["items"][key] = entry
+            engine.clear_failure(cache, row)
             successes += 1
 
             engine.apply_cache(rows, cache)
@@ -174,15 +182,27 @@ def cmd_translate_litert(args) -> int:
             engine.write_json(engine.CACHE_PATH, cache)
             engine.write_json(engine.NEWS_PATH, rows)
     finally:
-        llm.close()
+        try:
+            llm.close()
+        except Exception as exc:
+            print(f"::warning::LiteRT close failed: {exc}", file=sys.stderr)
 
     engine.apply_cache(rows, cache)
     engine.prune_cache(cache)
     engine.write_json(engine.CACHE_PATH, cache)
     engine.write_json(engine.NEWS_PATH, rows)
-    remaining = len(engine.pending_rows(rows, cache))
-    print(f"Gemma4/LiteRT processed: success={successes} failed={failures} remaining={remaining}")
-    return 0 if successes or not selected else 1
+    eligible_remaining = len(engine.pending_rows(rows, cache))
+    total_remaining = len(engine.pending_rows(rows, cache, include_deferred=True))
+    print(
+        f"Gemma4/LiteRT processed: success={successes} failed={failures} "
+        f"eligible_remaining={eligible_remaining} total_remaining={total_remaining}"
+    )
+    if failures:
+        print(f"::warning::{failures} article(s) failed validation and were deferred")
+    # A per-article failure is durable queue state, not an infrastructure crash.
+    # Returning success lets the workflow commit the cooldown markers so later
+    # articles can advance on the next run.
+    return 0
 
 
 def run_regenerate_litert(argv: list[str]) -> int:
@@ -192,15 +212,13 @@ def run_regenerate_litert(argv: list[str]) -> int:
     args = parser.parse_args(argv)
 
     strict.patch_engine()
-    rows = engine.read_json(engine.NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
+    rows = engine.read_json_required(engine.NEWS_PATH, list)
     row = next((r for r in rows if str(r.get("id") or "") == args.article_id), None)
     if not row:
         print(f"article not found: {args.article_id}", file=sys.stderr)
         return 2
 
-    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
+    cache = engine.normalized_cache(engine.read_json_required(engine.CACHE_PATH, dict))
     key = engine.cache_key(row)
     previous = cache.get("items", {}).get(key)
     cache["items"].pop(key, None)
@@ -232,6 +250,7 @@ def run_regenerate_litert(argv: list[str]) -> int:
         "updatedAtEpoch": int(time.time()),
         "regenerated": True,
     }
+    engine.clear_failure(cache, row)
     engine.prune_cache(cache)
     engine.apply_cache(rows, cache)
     engine.write_json(engine.CACHE_PATH, cache)
