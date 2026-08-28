@@ -117,21 +117,21 @@
       "contentHash": "f60e421a308cfedfbd964c63",
       "titleJa": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
       "bodyJa": "📢メンテナンスのお知らせ\n\n更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします。\n\nメンテナンス時間\n8月27日 午前3:25～10:00前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・実施内容: 全サーバーの定期メンテナンス\n・期間: 8月27日 午前3:25～10:00前後\n・詳細: ゲーム内「お知らせ」にて確認可能\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "summaryJa": "・実施内容: 全サーバーの定期メンテナンス\n・期間: 8月27日 午前3:25～10:00前後\n・詳細: ゲーム内「お知らせ」にて確認可能",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877539
+      "updatedAtEpoch": 1787955412
     },
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678277791045061908": {
       "contentHash": "aff15b6ec517368aa387f29a",
       "titleJa": "Life Makeover Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！",
-      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！監視の目を背け、私は自由に心を放たせていく。その中で...",
+      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！監視の目を背け、私は自由な心で前へと進む。その中で...",
       "summaryJa": "・追加: ★5セット「Saccharine Spell」がLife Makeover Lightchase Encoreでプレビュー公開",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877559
+      "updatedAtEpoch": 1787955442
     },
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678277254572494100": {
       "contentHash": "cf1d7922cc3b29ec75ced96a",
