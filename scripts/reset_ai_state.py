@@ -58,8 +58,8 @@ def main() -> int:
     write_json(NEWS_PATH, rows)
     write_json(TRANSLATIONS_PATH, {
         "version": 2,
-        "model": "LiquidAI/LFM2.5-8B-A1B-GGUF:Q4_K_M",
-        "modelRevision": "lfm2.5-8b-a1b-q4-k-m-summary-facts-region-titles-strict-ja-v1",
+        "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+        "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
         "items": {},
     })
     write_json(SOL_OVERRIDES_PATH, {"version": 1, "items": {}})
