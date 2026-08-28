@@ -57,6 +57,53 @@ class TapTapCollectorTests(unittest.TestCase):
             row["imageUrls"],
         )
 
+    def test_image_collection_keeps_article_media_and_rejects_page_assets(self):
+        topic = {
+            "images": [
+                {"original_url": "https://img2-tc.tapimg.com/article-main.jpg"},
+                {"url": "https://img2-tc.tapimg.com/article-second.jpg"},
+            ],
+            "author": {
+                "avatar": {"url": "https://img2-tc.tapimg.com/avatar/author.jpg"}
+            },
+            "app": {
+                "icon": {"url": "https://img2-tc.tapimg.com/app-icon.jpg"},
+                "cover": {"url": "https://img2-tc.tapimg.com/game-cover.jpg"},
+            },
+            "related": {
+                "images": [
+                    {"original_url": "https://img2-tc.tapimg.com/related-post.jpg"}
+                ]
+            },
+            "share": {"image_url": "https://img2-tc.tapimg.com/share-card.jpg"},
+        }
+        found = self.collector.collect_image_urls(topic)
+        self.assertEqual(
+            [
+                "https://img2-tc.tapimg.com/article-main.jpg",
+                "https://img2-tc.tapimg.com/article-second.jpg",
+            ],
+            found,
+        )
+
+    def test_html_fallback_does_not_scan_every_tapimg_asset(self):
+        page = """
+        <meta property="og:image" content="https://img2-tc.tapimg.com/moment-cover.jpg">
+        <script>
+        {"app":{"icon":{"image_url":"https://img2-tc.tapimg.com/app-icon.jpg"}},
+         "images":[{"original_url":"https://img2-tc.tapimg.com/article-main.jpg"}]}
+        </script>
+        <img src="https://img2-tc.tapimg.com/unrelated-footer.jpg">
+        """
+        found = self.collector.collect_html_article_images(page)
+        self.assertEqual(
+            [
+                "https://img2-tc.tapimg.com/moment-cover.jpg",
+                "https://img2-tc.tapimg.com/article-main.jpg",
+            ],
+            found,
+        )
+
     def test_non_official_author_is_rejected(self):
         payload = {
             "data": {
