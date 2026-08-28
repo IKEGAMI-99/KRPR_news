@@ -45,9 +45,11 @@
 
   async function load() {
     try {
+      // Do not add custom request headers here. raw.githubusercontent.com is a
+      // cross-origin endpoint and custom headers can force a CORS preflight.
+      // The timestamp query plus cache: no-store is enough to bypass caches.
       const response = await fetch(`${STATUS_URL}?t=${Date.now()}`, {
         cache: 'no-store',
-        headers: { 'Cache-Control': 'no-cache' },
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const parsed = parseStatus(await response.json());
@@ -55,9 +57,10 @@
       current = parsed;
       writeCached(parsed);
       apply(parsed);
-    } catch {
+    } catch (error) {
+      console.warn('Kirapara crawl status fetch failed:', error);
       if (current) apply(current);
-      else status.textContent = '最終更新 不明';
+      else status.textContent = '最終更新 取得失敗';
     }
   }
 
