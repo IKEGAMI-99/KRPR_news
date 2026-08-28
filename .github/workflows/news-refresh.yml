@@ -6,6 +6,8 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - 'scripts/fetch_news.py'
       - 'scripts/preserve_official_x_history.py'
@@ -26,6 +28,7 @@ on:
       - 'scripts/enrich_images.py'
       - 'scripts/filter_small_images.py'
       - 'scripts/normalize_news.py'
+      - 'scripts/validate_pipeline_state.py'
       - 'scripts/translation_engine.py'
       - 'scripts/translation_quality.py'
       - 'scripts/strict_gemma_translate.py'
@@ -35,18 +38,20 @@ on:
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
       - 'data/refresh_kick.json'
+      - 'tests/test_critical_liveness.py'
       - '.github/workflows/news-refresh.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: kirapara-news-refresh
+  group: kirapara-data-writer
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -56,6 +61,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Validate and snapshot last-known-good data
+        run: |
+          python scripts/validate_pipeline_state.py \
+            --news data/news.json \
+            --translations data/translations.json
+          cp data/news.json "$RUNNER_TEMP/news-before-refresh.json"
 
       - name: Fetch public news in original languages
         run: |
@@ -93,6 +105,14 @@ jobs:
 
       - name: Mirror Weibo images for browser-safe delivery
         run: python scripts/mirror_weibo_images.py
+
+      - name: Reject destructive or malformed refresh output
+        run: |
+          python scripts/validate_pipeline_state.py \
+            --news data/news.json \
+            --translations data/translations.json \
+            --baseline-news "$RUNNER_TEMP/news-before-refresh.json"
+          python -m unittest discover -s tests -v
 
       - name: Record completed crawl time
         run: |

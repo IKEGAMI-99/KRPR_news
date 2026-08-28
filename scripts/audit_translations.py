@@ -23,6 +23,16 @@ def read_json(path: Path, default):
         return default
 
 
+def read_json_required(path: Path, expected_type):
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"required JSON is unreadable or malformed: {path}: {exc}") from exc
+    if not isinstance(value, expected_type):
+        raise RuntimeError(f"required JSON has the wrong type: {path}")
+    return value
+
+
 def write_json(path: Path, data):
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -95,16 +105,16 @@ def main():
     parser.add_argument("--github-output", default="")
     args = parser.parse_args()
 
-    rows = read_json(NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
-    cache = read_json(CACHE_PATH, {})
-    if not isinstance(cache, dict):
-        cache = {}
+    rows = read_json_required(NEWS_PATH, list)
+    cache = read_json_required(CACHE_PATH, dict)
     items = cache.get("items")
     if not isinstance(items, dict):
         items = {}
         cache["items"] = items
+    failures = cache.get("failures")
+    if not isinstance(failures, dict):
+        failures = {}
+        cache["failures"] = failures
 
     scanned = 0
     flagged = 0
@@ -120,6 +130,7 @@ def main():
 
         key = cache_key(row)
         items.pop(key, None)
+        failures.pop(key, None)
         for field in ("titleJa", "bodyJa", "summaryJa", "aiProcessed", "aiModel"):
             row.pop(field, None)
         flagged += 1

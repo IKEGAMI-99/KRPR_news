@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 from glossary_schema import active_entries, read_glossary
@@ -20,6 +21,7 @@ MODEL_VARIANT = "unconfigured"
 MODEL_REVISION = "unconfigured"
 CACHE_VERSION = 2
 SUMMARY_FORMAT_VERSION = 2
+FAILURE_COOLDOWNS = (60 * 60, 6 * 60 * 60, 24 * 60 * 60)
 
 TRANSLATION_FIELDS = ("titleJa", "bodyJa", "summaryJa")
 REGION_GAME_TITLES = {
@@ -48,6 +50,19 @@ def read_json(path: Path, default):
         return default
 
 
+def read_json_required(path: Path, expected_type):
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"required JSON is unreadable or malformed: {path}: {exc}") from exc
+    if not isinstance(value, expected_type):
+        raise RuntimeError(
+            f"required JSON has the wrong type: {path}: "
+            f"expected {expected_type.__name__}, got {type(value).__name__}"
+        )
+    return value
+
+
 def write_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -74,12 +89,54 @@ def normalized_cache(raw) -> dict:
     items = raw.get("items")
     if not isinstance(items, dict):
         items = {}
+    failures = raw.get("failures")
+    if not isinstance(failures, dict):
+        failures = {}
     return {
         "version": CACHE_VERSION,
         "model": f"{MODEL_ID}:{MODEL_VARIANT}",
         "modelRevision": MODEL_REVISION,
         "items": items,
+        "failures": failures,
     }
+
+
+def failure_state(row: dict, cache: dict) -> dict | None:
+    value = cache.get("failures", {}).get(cache_key(row))
+    if not isinstance(value, dict) or value.get("contentHash") != source_hash(row):
+        return None
+    return value
+
+
+def failure_deferred(row: dict, cache: dict, now_epoch: int | None = None) -> bool:
+    value = failure_state(row, cache)
+    if not value:
+        return False
+    now = int(time.time()) if now_epoch is None else int(now_epoch)
+    return int(value.get("retryAfterEpoch") or 0) > now
+
+
+def record_failure(cache: dict, row: dict, reason: str = "", now_epoch: int | None = None) -> dict:
+    now = int(time.time()) if now_epoch is None else int(now_epoch)
+    failures = cache.setdefault("failures", {})
+    previous = failure_state(row, cache) or {}
+    attempts = int(previous.get("attempts") or 0) + 1
+    cooldown = FAILURE_COOLDOWNS[min(attempts - 1, len(FAILURE_COOLDOWNS) - 1)]
+    value = {
+        "contentHash": source_hash(row),
+        "attempts": attempts,
+        "lastFailedAtEpoch": now,
+        "retryAfterEpoch": now + cooldown,
+        "reason": str(reason or "generation-or-quality-validation")[:300],
+    }
+    failures[cache_key(row)] = value
+    return value
+
+
+def clear_failure(cache: dict, row: dict) -> None:
+    failures = cache.get("failures")
+    if isinstance(failures, dict):
+        failures.pop(cache_key(row), None)
 
 
 def content_entry_valid(row: dict, entry) -> bool:
@@ -153,13 +210,21 @@ def apply_cache(rows: list, cache: dict) -> int:
     return applied
 
 
-def pending_rows(rows: list, cache: dict) -> list:
+def pending_rows(
+    rows: list,
+    cache: dict,
+    *,
+    include_deferred: bool = False,
+    now_epoch: int | None = None,
+) -> list:
     items = cache.get("items", {})
     candidates = []
     for row in rows:
         if not row.get("title") and not row.get("body"):
             continue
         if valid_entry(row, items.get(cache_key(row))):
+            continue
+        if not include_deferred and failure_deferred(row, cache, now_epoch):
             continue
         candidates.append(row)
 
@@ -400,14 +465,22 @@ def infer_one(llm, row: dict) -> dict | None:
 
 def prune_cache(cache: dict, max_entries: int = 2500):
     items = cache.get("items", {})
-    if len(items) <= max_entries:
-        return
-    ranked = sorted(
-        items.items(),
-        key=lambda kv: int((kv[1] or {}).get("updatedAtEpoch") or 0),
-        reverse=True,
-    )[:max_entries]
-    cache["items"] = dict(ranked)
+    if isinstance(items, dict) and len(items) > max_entries:
+        ranked = sorted(
+            items.items(),
+            key=lambda kv: int((kv[1] or {}).get("updatedAtEpoch") or 0),
+            reverse=True,
+        )[:max_entries]
+        cache["items"] = dict(ranked)
+
+    failures = cache.get("failures", {})
+    if isinstance(failures, dict) and len(failures) > max_entries:
+        ranked_failures = sorted(
+            failures.items(),
+            key=lambda kv: int((kv[1] or {}).get("lastFailedAtEpoch") or 0),
+            reverse=True,
+        )[:max_entries]
+        cache["failures"] = dict(ranked_failures)
 
 
 def write_github_output(path: str | None, pending: int, applied: int):
@@ -419,17 +492,17 @@ def write_github_output(path: str | None, pending: int, applied: int):
 
 
 def cmd_prepare(args) -> int:
-    rows = read_json(NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
-    cache = normalized_cache(read_json(CACHE_PATH, {}))
+    rows = read_json_required(NEWS_PATH, list)
+    cache = normalized_cache(read_json_required(CACHE_PATH, dict))
     applied = apply_cache(rows, cache)
     pending = len(pending_rows(rows, cache))
+    total_pending = len(pending_rows(rows, cache, include_deferred=True))
+    deferred = total_pending - pending
     write_json(NEWS_PATH, rows)
     write_json(CACHE_PATH, cache)
     write_github_output(args.github_output, pending, applied)
     print(f"translation cache applied: {applied}/{len(rows)}")
-    print(f"translation pending: {pending}")
+    print(f"translation pending: eligible={pending} deferred={deferred} total={total_pending}")
     return 0
 
 

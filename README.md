@@ -138,13 +138,17 @@ AI処理はGitHub Actions上で **Gemma 4 E4B** を **LiteRT-LM 0.16.1** から�
 
 記事本文のハッシュと翻訳revisionで再処理要否を判断し、古いrevisionの結果はbacklogとして順次置き換えます。生成後は日本語以外の文章が残っていないかなどを品質検査し、不適切な出力は有効な翻訳として採用しません。
 
+特定の記事だけが繰り返し品質検査に失敗した場合は、その記事を1時間、6時間、24時間の段階的なcooldownへ入れます。失敗記事が毎回3件の処理枠を占有して後続記事を永久に止めることはなく、本文が変わった場合やcooldown終了後は再試行します。
+
 15分ごとに最大3件をまとめて処理するのは、5分ごとにモデルを起動する方式よりrunner起動、checkout、モデル復元の回数を減らしながら、同等の最大処理量を維持するためです。
 
 ### 書き込み競合対策
 
-ニュース収集とAI翻訳はどちらも `data/news.json` や `data/translations.json` を更新する可能性があります。同時実行で一方の変更を消さないよう、同じ `kirapara-data-writer` concurrency groupで排他します。
+ニュース収集、通常のAI翻訳、IssueからのAI再生成はどれも `data/news.json` や `data/translations.json` を更新する可能性があります。同時実行で一方の変更を消さないよう、すべて同じ `kirapara-data-writer` concurrency groupで排他します。
 
 さらに収集処理のpush直前に `main` が進んでいた場合は、最新状態へrebaseして最大4回までpushを再試行します。Gitをデータストア代わりに使う以上、最後に書いた人が全部持っていく雑な世界にはしない、という最低限の礼儀です。
+
+収集の前には現在のJSONを厳格に読み、収集後には構造、URL重複、地域別件数、直前データからの急減を検査します。JSON破損や取得元の一時障害で記事が大幅に減った場合は、`data/news.json` と `data/translations.json` をcommitせず、直前の正常データを公開し続けます。
 
 ### PWAとキャッシュ戦略
 
@@ -192,6 +196,7 @@ AIが変更を完了したと判断する前に、関連実装・テスト・Wor
         ├─ Weibo画像を docs/media/weibo にミラー
         ├─ Sol補完データの再適用
         ├─ 有効な翻訳キャッシュを反映
+        ├─ JSON構造と直前データからの件数急減を検査
         └─ クロール完了時刻を data/crawl_status.json に記録
         │
         ▼
@@ -199,16 +204,17 @@ AIが変更を完了したと判断する前に、関連実装・テスト・Wor
    data/crawl_status.json ──► ヘッダーの「最終更新」
         │
         ▼
-毎時 :07 / :22 / :37 / :52  ai-translate.yml
+収集成功直後 + 毎時 :07 / :22 / :37 / :52  ai-translate.yml
         │
         ├─ 未処理が0件なら重いAIジョブを開始しない
         ├─ 未処理があれば1回最大3件をGemma 4で処理
+        ├─ 失敗記事をcooldownし、後続記事を先へ進める
         └─ 日本語品質検査後に翻訳キャッシュへ保存
 ```
 
 ニュース収集は毎時00分に開始します。GitHub Actionsの混雑や取得先の応答時間により実際の完了時刻は数分以上ずれることがあります。ヘッダーの「最終更新」は記事の公開日時ではなく、`news-refresh.yml` が収集・画像処理まで正常に完了して `data/crawl_status.json` を更新した時刻です。新着記事が0件でもクロール自体が成功すればこの時刻は更新されます。
 
-5分ごとに1件ずつ処理していたAI構成は、モデル復元・ランタイム準備・checkoutの回数が多すぎるため廃止しました。現在は15分ごとに最大3件をまとめ、同等の最大処理量を保ちながらrunner起動回数を4分の1にしています。
+5分ごとに1件ずつ処理していたAI構成は、モデル復元・ランタイム準備・checkoutの回数が多すぎるため廃止しました。現在は15分ごとに最大3件をまとめ、さらにニュース収集が成功した直後にもbacklogを確認します。
 
 ニュース収集とAI処理は同じ `kirapara-data-writer` concurrency groupを使います。両方が同時に `data/news.json` と `data/translations.json` を書き換える競合を防ぐためです。収集結果のpush直前に別コミットで`main`が進んだ場合は、最新`main`へrebaseして最大4回までpushを再試行します。
 
@@ -282,7 +288,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 現在のスケジュール表示は実際のワークフローと揃えています。
 
 - ニュース収集: 毎時 :00
-- Gemma 4 E4B 翻訳・要約: 毎時 :07 / :22 / :37 / :52、1回最大3記事
+- Gemma 4 E4B 翻訳・要約: 収集成功直後 + 毎時 :07 / :22 / :37 / :52、1回最大3記事
 - Sol監査: 08:00 / 14:00 / 20:00 JST
 - 更新watchdog: 毎時 :30、異常時のみ再起動
 
@@ -290,15 +296,15 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 | Workflow | 実行 | 役割 |
 | --- | --- | --- |
-| `news-refresh.yml` | 毎時00分 | ニュース収集、公式X / Bilibiliの複数Feed統合と履歴保護、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
-| `ai-translate.yml` | 毎時07 / 22 / 37 / 52分 | backlog確認、最大3件のGemma 4 E4B翻訳・要約 |
+| `news-refresh.yml` | 毎時00分 | ニュース収集、公式X / Bilibiliの複数Feed統合と履歴保護、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、破壊的な件数急減の拒否、クロール完了時刻の記録 |
+| `ai-translate.yml` | 収集成功直後 + 毎時07 / 22 / 37 / 52分 | backlog確認、失敗記事のcooldown、最大3件のGemma 4 E4B翻訳・要約 |
 | `regenerate-ai.yml` | リポジトリ所有者のIssue | 指定記事のAI結果を再生成 |
 | `gap-analysis.yml` | 毎日06:30 JST | 地域別の実装差分析を更新 |
 | `analytics-refresh.yml` | 6時間ごと | GA4の集計スナップショットを更新（公開は `pages.yml` に一本化） |
 | `pages.yml` | `docs/**` 更新時 | GitHub PagesへPWAを公開 |
 | `release-stable.yml` | Stable marker更新時 / 手動 | テスト後に指定バージョンのStable Releaseを作成 |
 
-運用環境では、ChatGPT側のSol監査（08:00 / 14:00 / 20:00 JST）と更新watchdogも併用しています。これらはGitHub Actions内でGPTを実行する仕組みではなく、リポジトリ外の運用タスクです。
+運用環境では、ChatGPT側のSol監査（08:00 / 14:00 / 20:00 JST）と更新watchdogも併用しています。watchdogはGitHub側のscheduleが遅延・停止した場合に `data/refresh_kick.json` または `data/ai_kick.json` を更新して対象Workflowを起動します。これらはGitHub Actions内でGPTを実行する仕組みではなく、リポジトリ外の運用タスクです。
 
 ## v1.0.0 Stableの主な変更
 
@@ -344,6 +350,7 @@ KRPR_news/
 ├─ data/
 │  ├─ news.json
 │  ├─ crawl_status.json
+│  ├─ ai_kick.json
 │  ├─ translations.json
 │  ├─ translation_glossary.json
 │  ├─ sol_news.json
@@ -373,6 +380,7 @@ KRPR_news/
 │  ├─ translation_engine.py
 │  ├─ translation_quality.py
 │  ├─ strict_gemma_translate.py
+│  ├─ validate_pipeline_state.py
 │  ├─ normalize_news.py
 │  ├─ mirror_weibo_images.py
 │  └─ 収集・画像・分析用スクリプト
@@ -382,6 +390,7 @@ KRPR_news/
    ├─ test_haoyoukuaibao.py
    ├─ test_duplicate_sources.py
    ├─ test_preserve_official_x_history.py
+   ├─ test_critical_liveness.py
    └─ test_crawl_status.py
 ```
 
