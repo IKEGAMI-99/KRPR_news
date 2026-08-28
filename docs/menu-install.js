@@ -45,6 +45,32 @@
     </a>`;
   analysis.insertAdjacentElement('afterend', analytics);
 
+  const terms = document.createElement('section');
+  terms.className = 'menu-analysis-section';
+  terms.innerHTML = `
+    <a class="menu-analysis-action" href="./terms.html">
+      <span class="menu-analysis-icon" aria-hidden="true">⚖️</span>
+      <span class="menu-analysis-copy">
+        <span><strong>利用規約</strong></span>
+        <small>自動運営・免責・利用条件について</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
+    </a>`;
+  analytics.insertAdjacentElement('afterend', terms);
+
+  const privacy = document.createElement('section');
+  privacy.className = 'menu-analysis-section';
+  privacy.innerHTML = `
+    <a class="menu-analysis-action" href="./privacy.html">
+      <span class="menu-analysis-icon" aria-hidden="true">🔒</span>
+      <span class="menu-analysis-copy">
+        <span><strong>プライバシーポリシー</strong></span>
+        <small>GA4・Cookie・データ取扱いについて</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
+    </a>`;
+  terms.insertAdjacentElement('afterend', privacy);
+
   const schedule = document.createElement('section');
   schedule.className = 'menu-schedule-section';
   schedule.innerHTML = `
@@ -77,7 +103,7 @@
     <p class="menu-schedule-note">GitHub Actionsの混雑状況により、実際の開始時刻は数分以上遅れる場合があります。</p>`;
   body.appendChild(schedule);
 
-  // Developer tools belong at the very bottom, after links, notes, and schedule.
+  // Developer tools belong at the very bottom, after links, notes, schedule, and legal pages.
   if (devSection) body.appendChild(devSection);
 
   const action = section.querySelector('.menu-install-action');
