@@ -63,13 +63,15 @@ jobs:
           python scripts/enrich_weibo_images.py
           python scripts/normalize_weibo_cdn.py
           python scripts/enrich_bilibili_images.py
-          python scripts/upgrade_x_images.py
           python scripts/fetch_taptap_official.py
           python scripts/fetch_haoyoukuaibao.py
           python scripts/fetch_wechat_official.py
           python scripts/merge_duplicate_sources.py
           python scripts/discover_web_news.py
           python scripts/enrich_images.py
+          # X URLs can be reintroduced by later enrichment passes, so normalize
+          # them only after every collector/enricher has finished.
+          python scripts/upgrade_x_images.py
           python scripts/filter_small_images.py
           python scripts/normalize_news.py
 
