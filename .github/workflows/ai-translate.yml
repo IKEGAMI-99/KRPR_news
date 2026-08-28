@@ -2,7 +2,7 @@ name: Translate News with Gemma 4 E4B LiteRT
 
 on:
   schedule:
-    - cron: '7-59/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
     paths:
@@ -116,7 +116,7 @@ jobs:
           python -m pip install --disable-pip-version-check --prefer-binary \
             "litert-lm==0.16.1"
 
-      - name: Translate and summarize up to three articles with Gemma 4 E4B
+      - name: Translate and summarize exactly up to three articles with Gemma 4 E4B
         if: steps.llm_plan.outputs.pending != '0'
         env:
           LLM_MAX_ITEMS: '3'
