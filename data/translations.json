@@ -17,11 +17,11 @@
       "contentHash": "efe4bc80c9be05a22750f5e3",
       "titleJa": "明日よりゲーム内イベント『秘密の願いボトル』を開催✨ イベント期間⏰ 8月28日10:30～9月4日5:00 イベントに参加して、星4セット『野風の思い』をゲットしよう...",
       "bodyJa": "明日よりゲーム内イベント『秘密の願いボトル』を開催✨\n\nイベント期間⏰\n8月28日10:30～9月4日5:00\n\nイベントに参加して、星4セット『野風の思い』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・イベント開催: ゲーム内イベント『秘密の願いボトル』が明日より開催\n・期間: 8月28日10:30〜9月4日5:00\n・内容: イベントに参加することで、星4セット『野風の思い』を入手可能",
+      "summaryJa": "・追加: ゲーム内イベント『秘密の願いボトル』が開催される\n・期間: 8月28日10:30〜9月4日5:00\n・入手: イベントに参加することで星4セット『野風の思い』を入手できる",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877161
+      "updatedAtEpoch": 1787884414
     },
     "https://x.com/kirapara_JP/status/2092854875121913997": {
       "contentHash": "498080551c27e25c01b79fa2",
@@ -199,9 +199,9 @@
       "bodyJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨\n\n幸運をあなたに「卵生」させましょう！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
       "summaryJa": "・イベント: VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n・参加方法: Vvanna.Music.Entertainmentの神秘的な卵殻で参加\n・参加条件: いいねを一つ増やすごとに幸運のオーラが凝縮\n・参加条件: リツイートを一つ増やすごとに幸運の輝きが増す",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879148
+      "updatedAtEpoch": 1787884387
     },
     "https://weibo.com/7521830234/Rfjq8fJXD": {
       "contentHash": "e335673fe2e8939d22761c78",
