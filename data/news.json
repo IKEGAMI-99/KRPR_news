@@ -21,7 +21,13 @@
         "url": "https://x.com/LifeMakeover510/status/2093187064678281326"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "#LifeMakeover #VVANNACommunity 真夜中が訪れると、ドリームメーカーの物語が静かに花開き始める—💎このエディションの特集",
+    "bodyJa": "#LifeMakeover #VVANNACommunity\n\n真夜中が訪れると、ドリームメーカーの物語が静かに花開き始める—\n \n💎このエディションでは、VVANNA Communityのトピック「Garden Soiree」から素晴らしい作品を特集しています。\nNgTramn_\nbabybabyvili\nSommeri",
+    "summaryJa": "・特集: VVANNA Communityのトピック「Garden Soiree」から素晴らしい作品をフィーチャー\n・対象: NgTramn_\n・babybabyvili\n・Sommeri",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f88f766d20abf824dee93975",
@@ -54,7 +60,13 @@
         "url": "https://www.taptap.cn/moment/842032893923427818"
       }
     ],
-    "sourceCount": 3
+    "sourceCount": 3,
+    "titleJa": "VME | 独占情報：初登場アーティストが旅立つ、超新星が音楽宇宙に降臨💘\n⭐独占デビュー応援が始まります💗\n✨運命的な出会いを共に創り上げましょう☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します……",
+    "bodyJa": "VME | 独占情報：初登場アーティストが旅立つ\n\n💘超新星が音楽宇宙に降臨\n⭐独占デビュー応援が始まります\n💗共に創造しましょう☆✮⁺⊹\n✨運命的な出会いを☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します。ご期待ください……\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+    "summaryJa": "・新バージョン4.4が間もなく始動する\n・初登場アーティストが旅立つ\n・超新星が音楽宇宙に降臨する\n・独占デビュー応援が開始される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f27256b5df4684464d1c5572",
@@ -78,7 +90,13 @@
         "url": "https://x.com/LifeMakeover510/status/2093186815435940167"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "#LifeMakeover #VVANNACommunity [★5セット - Phantom Candle] 🔹限定Lightchaseイベント[Garden Soiree]で入手可能",
+    "bodyJa": "#LifeMakeover #VVANNACommunity\n\n[★5セット - Phantom Candle]\n🔹限定Lightchaseイベント[Garden Soiree]にて、8月19日から9月8日23:59 UTCまで入手可能です。\n\n💎このエディションは、VVANNA Community Topic - Garden Soireeより、Fierth、Ake、Mizokoの素晴らしい作品をフィーチャーしています。",
+    "summaryJa": "・追加: ★5セット「Phantom Candle」が登場\n・期間: 8月19日〜9月8日 23:59 UTC\n・入手: 限定Lightchaseイベント「Garden Soiree」から獲得\n・内容: VVANNA Community Topic - Garden SoireeのFierth、Ake、Mizokoの作品をフィーチャー",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "967c79534b61bc7f782b58bd",
@@ -470,9 +488,9 @@
     ],
     "titleJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー",
     "bodyJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 崇拝と願いの中で、我々は神々のために無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-    "summaryJa": "・追加: ★4セット「Lightchase Encore [Wander Limit]」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
+    "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiModel": "GPT-5.6 Sol",
     "aiSummaryFormat": "facts-v2",
     "sources": [
       {
@@ -481,7 +499,10 @@
         "url": "https://x.com/LifeMakeover510/status/2092786675575369907"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "solEditReason": "原文では「Lightchase Encore」は投稿シリーズ／イベント見出しで、★4セット名は「Wander Limit」。既存summaryJaがセット名を「Lightchase Encore [Wander Limit]」と結合していたため修正。",
+    "solReviewed": true,
+    "solLocked": true
   },
   {
     "id": "3533197a2dffc1bc8873fe37",
@@ -3181,5 +3202,23 @@
       "https://kotaku.com/app/uploads/2026/08/donuts2-1.jpg",
       "https://i.ytimg.com/vi/ID/hqdefault.jpg"
     ]
+  },
+  {
+    "id": "174dc18156c0c29181e2587d",
+    "region": "CHINA",
+    "platform": "公式TapTap",
+    "title": "全新版本·耀月神临限时登陆",
+    "body": "全新版本·耀月神临8月28日-9月16日限时登陆！双五星套装〖幻月神裁〗〖赦罪永寐〗上线。",
+    "sourceUrl": "https://www.taptap.cn/game-event/5122",
+    "publishedLabel": "8月28日更新",
+    "titleJa": "新バージョン「耀月神临」期間限定登場",
+    "bodyJa": "新バージョン「耀月神临」は8月28日から9月16日まで期間限定で登場。★5セット「幻月神裁」「赦罪永寐」が登場します。",
+    "summaryJa": "・新バージョン: 「耀月神临」が期間限定登場\n・期間: 8月28日〜9月16日\n・追加: ★5セット「幻月神裁」「赦罪永寐」",
+    "solUpdatedAtEpoch": 1787893011,
+    "solAdded": true,
+    "solLocked": true,
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2"
   }
 ]
