@@ -172,6 +172,13 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertNotIn("weserv.nl", fallback)
         self.assertNotIn("weserv.nl", mirror)
 
+    def test_bilibili_opus_aliases_share_one_source_button(self):
+        source_buttons = (DOCS / "source-buttons.js").read_text(encoding="utf-8")
+        self.assertIn("function sourceKey(source)", source_buttons)
+        self.assertIn("host === 't.bilibili.com'", source_buttons)
+        self.assertIn("url.pathname.match(/^\\/opus\\/(\\d+)", source_buttons)
+        self.assertIn("`bilibili:opus:${match[1]}`", source_buttons)
+
     def test_search_and_advance_info_features_are_removed(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
         app = (DOCS / "app.js").read_text(encoding="utf-8")

@@ -14,6 +14,22 @@
     }
   }
 
+  function sourceKey(source) {
+    try {
+      const url = new URL(source.url);
+      const host = url.hostname.toLowerCase();
+      let match = null;
+      if (host === 't.bilibili.com') match = url.pathname.match(/^\/(\d+)(?:\/|$)/);
+      if (host === 'bilibili.com' || host.endsWith('.bilibili.com')) {
+        match = url.pathname.match(/^\/opus\/(\d+)(?:\/|$)/);
+      }
+      if (match) return `bilibili:opus:${match[1]}`;
+    } catch {
+      // safeUrl has already validated the value; fall back to its exact URL.
+    }
+    return source.url;
+  }
+
   function sourcesFor(item) {
     const values = Array.isArray(item?.sources) ? item.sources : [];
     const rows = values.length ? values : [{ platform: item?.platform, url: item?.sourceUrl }];
@@ -22,8 +38,9 @@
       label: cleanLabel(source),
       url: safeUrl(source?.url || source?.sourceUrl),
     })).filter((source) => {
-      if (!source.url || seen.has(source.url)) return false;
-      seen.add(source.url);
+      const key = sourceKey(source);
+      if (!source.url || seen.has(key)) return false;
+      seen.add(key);
       return true;
     });
   }
