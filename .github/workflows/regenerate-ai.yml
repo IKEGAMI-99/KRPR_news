@@ -50,13 +50,17 @@ jobs:
           MODEL_DIR="$HOME/.cache/kirapara-models"
           MODEL="$MODEL_DIR/gemma-4-E4B-it.litertlm"
           SHA256="0b2a8980ce155fd97673d8e820b4d29d9c7d99b8fa6806f425d969b145bd52e0"
+          URL="https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/main/gemma-4-E4B-it.litertlm?download=true"
           mkdir -p "$MODEL_DIR"
-          if [ -f "$MODEL" ] && ! echo "$SHA256  $MODEL" | sha256sum -c - >/dev/null 2>&1; then rm -f "$MODEL"; fi
-          if [ ! -f "$MODEL" ]; then
-            curl -fL --retry 4 --retry-delay 5 -o "$MODEL" \
-              "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/main/gemma-4-E4B-it.litertlm?download=true"
+          if [ -f "$MODEL" ] && echo "$SHA256  $MODEL" | sha256sum -c - >/dev/null 2>&1; then
+            echo "Gemma 4 LiteRT model already verified"
+          else
+            curl -fL --http1.1 \
+              --retry 8 --retry-all-errors --retry-delay 5 \
+              --connect-timeout 30 -C - \
+              -o "$MODEL" "$URL"
+            echo "$SHA256  $MODEL" | sha256sum -c -
           fi
-          echo "$SHA256  $MODEL" | sha256sum -c -
 
       - name: Install LiteRT-LM runtime
         run: |
