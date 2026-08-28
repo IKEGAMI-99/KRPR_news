@@ -7,6 +7,13 @@
       "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
       "reason": "原文では「Lightchase Encore」は投稿シリーズ／イベント見出しで、★4セット名は「Wander Limit」。既存summaryJaがセット名を「Lightchase Encore [Wander Limit]」と結合していたため修正。",
       "updatedAtEpoch": 1787893011
+    },
+    "https://x.com/stylight_kr/status/2092537547641454873": {
+      "titleJa": "【イベント】『Makeover Story』 友人や協会メンバーなどスタイルパートナーと楽しむ特別なイベント『Makeover Story』が明日オープンします",
+      "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
+      "reason": "韓国公式Xの原文セット名は「댓잎의 연서」。既存bodyJaの「ダエプの連書」は公式日本語名の根拠がない創作的な括弧訳だったため、固有名詞を原語表記に戻した。",
+      "updatedAtEpoch": 1787914720
     }
   }
 }
