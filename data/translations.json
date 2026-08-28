@@ -270,9 +270,9 @@
       "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
       "summaryJa": "・特別販売: 星の交響楽パックが最大78%OFFで購入可能\n・対象アイテム: 星5背中アクセ『契りの浮星』（専属メイン画面ポーズ付き）\n・販売期間: 8月27日10:30〜9月9日23:59\n・入手条件: 指定されたクエストを完了すること",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879467
+      "updatedAtEpoch": 1787958603
     },
     "https://x.com/kirapara_JP/status/2092522435669069995": {
       "contentHash": "dd67cfb73a4d9c2f704dbc3c",
@@ -280,9 +280,9 @@
       "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
       "summaryJa": "・イベント期間中にアプリ内課金（金額指定なし）を行うと、『茶を巡る旅』画面で星5所持品と壺の中の日月を受け取れる\n・さらに還元Expで追加の報酬も獲得可能\n・期間: 8月27日10:30～9月16日23:59\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879502
+      "updatedAtEpoch": 1787958636
     },
     "https://x.com/kirapara_JP/status/2092514884575437286": {
       "contentHash": "299da56783bd79f9bf183ed6",
