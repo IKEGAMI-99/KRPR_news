@@ -4,6 +4,7 @@
 
   const nativeInstall = document.querySelector('#installButton');
   const devSection = body.querySelector('.developer-section');
+  const officialLinks = body.querySelector('.official-links-block');
 
   const section = document.createElement('section');
   section.className = 'menu-install-section';
@@ -17,7 +18,8 @@
       <span class="menu-install-arrow" aria-hidden="true">＋</span>
     </button>
     <p class="menu-install-message" aria-live="polite"></p>`;
-  body.prepend(section);
+  if (officialLinks) officialLinks.insertAdjacentElement('afterend', section);
+  else body.prepend(section);
 
   const analysis = document.createElement('section');
   analysis.className = 'menu-analysis-section';
@@ -32,19 +34,6 @@
     </a>`;
   section.insertAdjacentElement('afterend', analysis);
 
-  const analytics = document.createElement('section');
-  analytics.className = 'menu-analysis-section';
-  analytics.innerHTML = `
-    <a class="menu-analysis-action" href="./analytics/">
-      <span class="menu-analysis-icon" aria-hidden="true">📈</span>
-      <span class="menu-analysis-copy">
-        <span><strong>アクセス解析</strong></span>
-        <small>公開中の集計値（個人を特定する情報は表示しません）</small>
-      </span>
-      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
-    </a>`;
-  analysis.insertAdjacentElement('afterend', analytics);
-
   const terms = document.createElement('section');
   terms.className = 'menu-analysis-section';
   terms.innerHTML = `
@@ -56,7 +45,33 @@
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
-  analytics.insertAdjacentElement('afterend', terms);
+  analysis.insertAdjacentElement('afterend', terms);
+
+  const repository = document.createElement('section');
+  repository.className = 'menu-analysis-section';
+  repository.innerHTML = `
+    <a class="menu-analysis-action" href="https://github.com/IKEGAMI-99/KRPR_news" target="_blank" rel="noopener noreferrer">
+      <span class="menu-analysis-icon" aria-hidden="true">⌘</span>
+      <span class="menu-analysis-copy">
+        <span><strong>GitHubリポジトリ</strong></span>
+        <small>ソースコード・README・更新履歴</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">↗</span>
+    </a>`;
+  terms.insertAdjacentElement('afterend', repository);
+
+  const analytics = document.createElement('section');
+  analytics.className = 'menu-analysis-section';
+  analytics.innerHTML = `
+    <a class="menu-analysis-action" href="./analytics/">
+      <span class="menu-analysis-icon" aria-hidden="true">📈</span>
+      <span class="menu-analysis-copy">
+        <span><strong>アクセス解析</strong></span>
+        <small>公開中の集計値（個人を特定する情報は表示しません）</small>
+      </span>
+      <span class="menu-analysis-arrow" aria-hidden="true">›</span>
+    </a>`;
+  repository.insertAdjacentElement('afterend', analytics);
 
   const privacy = document.createElement('section');
   privacy.className = 'menu-analysis-section';
@@ -69,7 +84,7 @@
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
-  terms.insertAdjacentElement('afterend', privacy);
+  analytics.insertAdjacentElement('afterend', privacy);
 
   const schedule = document.createElement('section');
   schedule.className = 'menu-schedule-section';
