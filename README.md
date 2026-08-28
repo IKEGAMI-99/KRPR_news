@@ -10,7 +10,7 @@
 ## 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムラインと地域フィルター
-- 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、Steamなどの横断収集
+- 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、TapTap、Steamなどの横断収集
 - 複数画像のスワイプ表示と全画面ビューア
 - Weibo画像のリポジトリ内ミラーと、GitHub Pages同一オリジンからの安定配信
 - 低解像度画像、ロゴ、QR、トラッキング画像などの除外
@@ -63,7 +63,7 @@
 | 地域 | 主なソース |
 | --- | --- |
 | 🇯🇵 日本 | 公式サイト / 公式X / TikTok / YouTube / 国内Webニュース |
-| 🇨🇳 中国 | 公式サイト / Weibo / Bilibili / 中国Webニュース |
+| 🇨🇳 中国 | 公式サイト / Weibo / Bilibili / TapTap / WeChat / 中国Webニュース |
 | 🇰🇷 韓国 | 公式X / TikTok / YouTube / 韓国Webニュース |
 | 🌐 Global | 公式サイト / 公式X / TikTok / YouTube / Steam / 海外Webニュース |
 
@@ -72,6 +72,10 @@ YouTubeはチャンネルページ内の任意の `channelId` ではなく、正
 Google NewsのプロキシURLはタイムラインへ保存しません。Web記事は元記事URLと、取得できる場合は発行元の明示的な公開日時を優先します。確認済み日時は `data/article_dates.json`、画像検査結果は `data/image_quality.json` に保持します。
 
 WeiboはSina CDNの直接表示がブラウザやPWA環境で不安定になるため、収集時に取得できた画像を `docs/media/weibo/` へ保存し、`imageMirrorUrls` として記事データに紐付けます。PWAはGitHub Pages上の同一オリジン画像を優先し、必要な場合のみ元のSina画像をフォールバックとして使います。Service Worker更新時には既存タブを一度リロードし、古い画像配信ロジックが残り続けないようにしています。
+
+TapTapは中国版「以闪亮之名」の公式投稿一覧 `type=official` から直近のMoment IDを取得し、TapTapの公開Web API `webapiv2/moment/v3/detail` からタイトル、本文、公開時刻、画像を取得します。API取得に失敗した記事だけ個別Webページのメタデータへフォールバックし、`公式TapTap` として通常の翻訳・要約パイプラインへ流します。
+
+WeChatは既存の公開Web探索による収集を継続しつつ、中国の公式リンク欄にも入口を追加しています。WeChatには安定した公開WebプロフィールURLがないため、メニューのWeChatリンクは公式公众号名「以闪亮之名」を検索できるSogou微信検索を開きます。
 
 外部サービスの仕様変更、アクセス制限、RSSHub側の障害により、一部ソースを一時的に取得できない場合があります。ある地域の収集が全滅した場合は、その地域の直前データを保持します。
 
@@ -104,7 +108,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 ## メニュー
 
-メニュー上部にはホーム画面追加、実装差分析、アクセス解析を並べています。その下に各地域の公式リンク、自動更新スケジュール、運用情報を配置しています。
+メニュー上部にはホーム画面追加、実装差分析、アクセス解析を並べています。その下に各地域の公式リンク、自動更新スケジュール、運用情報を配置しています。中国の公式リンクには公式サイト、Weibo、Bilibili、TapTap、WeChatを表示します。
 
 現在のスケジュール表示は実際のワークフローと揃えています。
 
@@ -136,6 +140,8 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 - PWA更新後も古い画像ロジックが残る問題をService Workerのcontroller変更時リロードで修正
 - ニュース収集を毎時00分へ戻し、クロール完了日時を独立ファイルで記録
 - ヘッダー表示を「記事件数・最新記事日時」から「最終クロール完了日時のみ」へ変更
+- 中国版の公式TapTap投稿を毎時収集する `fetch_taptap_official.py` を追加
+- 中国の公式リンク欄にTapTapとWeChat（公式公众号検索）を追加
 
 ## ディレクトリ構成
 
@@ -169,6 +175,8 @@ KRPR_news/
 │  └─ 各機能のCSS / JS
 ├─ scripts/
 │  ├─ fetch_news.py
+│  ├─ fetch_taptap_official.py
+│  ├─ fetch_wechat_official.py
 │  ├─ translation_engine.py
 │  ├─ translation_quality.py
 │  ├─ strict_gemma_translate.py
