@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run the strict Japanese translation pipeline with Gemma 4 E4B on LiteRT-LM."""
 
+import argparse
 import os
 import sys
 import time
@@ -158,8 +159,65 @@ def cmd_translate_litert(args) -> int:
     return 0 if successes or not selected else 1
 
 
+def run_regenerate_litert(argv: list[str]) -> int:
+    parser = argparse.ArgumentParser(description="Regenerate one article with Gemma 4 E4B LiteRT-LM.")
+    parser.add_argument("--model", required=True)
+    parser.add_argument("--article-id", required=True)
+    args = parser.parse_args(argv)
+
+    strict.patch_qwen_module()
+    rows = engine.read_json(engine.NEWS_PATH, [])
+    if not isinstance(rows, list):
+        rows = []
+    row = next((r for r in rows if str(r.get("id") or "") == args.article_id), None)
+    if not row:
+        print(f"article not found: {args.article_id}", file=sys.stderr)
+        return 2
+
+    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
+    key = engine.cache_key(row)
+    previous = cache.get("items", {}).get(key)
+    cache["items"].pop(key, None)
+
+    model_path = Path(args.model).expanduser()
+    if not model_path.is_file():
+        print(f"model not found: {model_path}", file=sys.stderr)
+        return 2
+
+    llm = LiteRTChatAdapter(str(model_path))
+    try:
+        result = engine.infer_one(llm, row)
+    finally:
+        llm.close()
+
+    if not result:
+        if previous:
+            cache["items"][key] = previous
+        engine.write_json(engine.CACHE_PATH, cache)
+        print("LLM regeneration failed; previous result restored", file=sys.stderr)
+        return 1
+
+    cache["items"][key] = {
+        "contentHash": engine.source_hash(row),
+        **result,
+        "model": f"{MODEL_ID}:{MODEL_VARIANT}",
+        "modelRevision": MODEL_REVISION,
+        "summaryFormatVersion": SUMMARY_FORMAT_VERSION,
+        "updatedAtEpoch": int(time.time()),
+        "regenerated": True,
+    }
+    engine.prune_cache(cache)
+    engine.apply_cache(rows, cache)
+    engine.write_json(engine.CACHE_PATH, cache)
+    engine.write_json(engine.NEWS_PATH, rows)
+    print(f"regenerated AI result with Gemma4/LiteRT: {args.article_id}")
+    return 0
+
+
 def main() -> int:
     configure_gemma()
+    if len(sys.argv) >= 2 and sys.argv[1] == "regenerate":
+        return run_regenerate_litert(sys.argv[2:])
     engine.cmd_translate = cmd_translate_litert
     return strict.main()
 
