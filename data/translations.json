@@ -310,9 +310,9 @@
       "bodyJa": "Oddly Pretty | ファッションアートの簡単な紹介\n\n🔮 豪華で複雑なロココ様式であれ、\n🔮 または軽やかで神秘的なホワイトゴシック様式であれ、\n🔮 どちらもその時代の美学を鮮やかに記録し、感情を触知できる形で表現しています。",
       "summaryJa": "・追加: Oddly Pretty | ファッションアートの簡単な紹介が公開",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879590
+      "updatedAtEpoch": 1787959857
     },
     "https://weibo.com/7521830234/Rf9BhoCFS": {
       "contentHash": "a59620dcf0b6052073eac2b2",
@@ -330,9 +330,9 @@
       "bodyJa": "プレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。\n\nボイス担当者の体調不良の影響により、プロジェクトチームはボイス担当者の意向を十分に尊重した上で、双方の協議により、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。これまでキャラクターを素晴らしい演技で演じ、多大な貢献をしてくださったボイス担当者の方に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備を進めており、新しいボイスキャストの試聴作業を全面的に開始しました。「顧苏澄新CV試音问卷」が正式に公開されましたので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。現在ゲーム内に実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な思い出の時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験をお届けします。共に歩む旅は続きます。皆様の変わらぬご支援とご愛顧に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備の進捗については、いち早く皆様にご報告いたします。\n\n『以闪亮之名』プロジェクトチーム",
       "summaryJa": "・変更: 顧苏澄のボイス担当者が体調不良のため、今後担当しないことが決定した\n・公開: 「顧苏澄新CV試音问卷」が正式に公開された\n・対応: 現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・予定: 今後の新バージョンで、プレイヤーが選んだ新しいボイスコンテンツが正式に採用される",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879870
+      "updatedAtEpoch": 1787959940
     },
     "https://x.com/LifeMakeover510/status/2092205354482630892": {
       "contentHash": "8b3cb7d9ecfee2ecfc619dfd",
