@@ -4,7 +4,6 @@
 
   const nativeInstall = document.querySelector('#installButton');
   const devSection = body.querySelector('.developer-section');
-  const officialLinks = body.querySelector('.official-links-block');
 
   const section = document.createElement('section');
   section.className = 'menu-install-section';
@@ -18,8 +17,7 @@
       <span class="menu-install-arrow" aria-hidden="true">＋</span>
     </button>
     <p class="menu-install-message" aria-live="polite"></p>`;
-  if (officialLinks) officialLinks.insertAdjacentElement('afterend', section);
-  else body.prepend(section);
+  body.prepend(section);
 
   const analysis = document.createElement('section');
   analysis.className = 'menu-analysis-section';
@@ -32,7 +30,9 @@
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
-  section.insertAdjacentElement('afterend', analysis);
+  const officialLinks = body.querySelector('.official-links-block');
+  if (officialLinks) officialLinks.insertAdjacentElement('afterend', analysis);
+  else section.insertAdjacentElement('afterend', analysis);
 
   const terms = document.createElement('section');
   terms.className = 'menu-analysis-section';
