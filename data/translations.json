@@ -29,9 +29,9 @@
       "bodyJa": "『万世の平定』特別投稿キャンペーン詳細✏\n\nルールとキャンペーンの詳細、注意事項は下記画像を参照してね～\n投稿後は忘れずに応募リンクの内容を記入してください\n\n皆様のご投稿を待っているよ🥰\n\n#キラパラ \n#着せ替えゲーム \n#LifemakeoverWorld",
       "summaryJa": "・イベント名: 『万世の平定』特別投稿キャンペーン\n・詳細: ルール、キャンペーンの詳細、注意事項は画像を参照\n・応募方法: 投稿後、応募リンクの内容を記入する",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877176
+      "updatedAtEpoch": 1787915037
     },
     "https://x.com/kirapara_JP/status/2092854626416824432": {
       "contentHash": "4ec003be066320c69ac6c095",
@@ -404,6 +404,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1787893011,
       "managedBySol": true
+    },
+    "https://www.taptap.cn/moment/841997063154566516": {
+      "contentHash": "a9de36c52153e03250652e82",
+      "titleJa": "VME | 幸運を孵化させて💖トップスターの卵を産ませよう💥",
+      "bodyJa": "📢Vvanna.Music.Entertainmentの神秘的な卵の殻で\n📢いいねを増やすごとに、欧州の幸運が凝縮されます\n📢リツイートを増やすごとに、幸運の輝きが増します\n✨幸運を味方につけて「卵を産ませ」ましょう！\nTAPTAP：以闪亮之名\n公式微博：@以闪亮之名\n公式微信公众号：以闪亮之名\n公式抖音：以闪亮之名\n公式小红书：以闪亮之名VVANNA Studio\n公式B站：以闪亮之名\n公式サイト：",
+      "summaryJa": "・イベント: VME「孵化幸运💖助力顶流蛋生💥」が開催\n・参加方法: Vvanna.Music.Entertainmentの神秘的な卵の殻で、いいねやリツイートを行う\n・目的: 幸運を味方につけて「卵を産ませる」こと",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787915013
     }
   }
 }
