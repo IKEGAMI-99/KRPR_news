@@ -16,6 +16,8 @@
       ['公式サイト','https://mystyle.archosaur.com/'],
       ['Weibo','https://weibo.com/u/7521830234'],
       ['Bilibili','https://space.bilibili.com/676200579'],
+      ['TapTap','https://www.taptap.cn/app/218210/topic?type=official'],
+      ['WeChat','https://weixin.sogou.com/weixin?type=1&query=%E4%BB%A5%E9%97%AA%E4%BA%AE%E4%B9%8B%E5%90%8D'],
     ]},
     { title:'🌐 Global', links:[
       ['公式サイト','https://lifemakeover.archosaur.com/'],
@@ -89,7 +91,7 @@
 
   const note = document.createElement('p');
   note.className = 'menu-note';
-  note.textContent = 'Wikiは運営公式ではなく、コミュニティ運営の攻略Wikiです。';
+  note.textContent = 'Wikiは運営公式ではなく、コミュニティ運営の攻略Wikiです。WeChatは公開Webプロフィールがないため、公式公众号「以闪亮之名」の検索ページを開きます。';
   body.appendChild(note);
   document.body.append(backdrop, menu);
 
