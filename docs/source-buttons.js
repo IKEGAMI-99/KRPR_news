@@ -1,6 +1,7 @@
 (() => {
   function cleanLabel(source) {
     const raw = String(source?.label || source?.platform || '元記事').trim();
+    if (raw === '公式サイト') return raw;
     return raw.replace(/^(公式|官方)/, '').replace(/\s*·\s*(記事|動態)$/, '').trim() || '元記事';
   }
 
