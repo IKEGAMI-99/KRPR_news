@@ -60,7 +60,7 @@
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">✦</span>
-        <div><strong>LFM2.5 翻訳・要約</strong><small>毎時 :37</small></div>
+        <div><strong>Gemma 4 E4B 翻訳・要約</strong><small>毎時 :37</small></div>
         <b>1時間ごと</b>
       </div>
       <div class="menu-schedule-row">
