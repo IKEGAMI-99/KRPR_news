@@ -54,21 +54,26 @@
     attributeFilter: ['class', 'hidden'],
   });
 
-  // ×、背景タップなど「画面内で閉じる」操作でも積んだ履歴を残さない。
+  // ×、背景タップなど「画面内で閉じる」操作では、まず通常のクリック処理で
+  // UIを即座に閉じる。その後にオーバーレイ用の履歴だけを消費する。
+  // capture + stopImmediatePropagation で先回りすると app.js 側の closeViewer()
+  // まで止めてしまうため、document の bubble フェーズで後処理する。
   document.addEventListener('click', (event) => {
     if (closingFromPopstate || !history.state?.[TOKEN]) return;
     const target = event.target;
     const viewer = document.querySelector('#imageViewer');
-    const closesViewer = isViewerOpen() &&
-      (target?.closest?.('.viewer-close') || target === viewer);
-    const closesMenu = isMenuOpen() &&
-      (target?.closest?.('.link-menu-close') || target?.classList?.contains('menu-backdrop'));
+    const closesViewer = Boolean(
+      target?.closest?.('.viewer-close') || target === viewer
+    );
+    const closesMenu = Boolean(
+      target?.closest?.('.link-menu-close') || target?.classList?.contains('menu-backdrop')
+    );
     if (!closesViewer && !closesMenu) return;
 
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    history.back();
-  }, true);
+    // The component's own click handler has already run by the time this bubbles
+    // to document, so this only removes the synthetic same-URL history entry.
+    if (history.state?.[TOKEN]) history.back();
+  });
 
   window.addEventListener('popstate', () => {
     const kind = currentOverlay();
