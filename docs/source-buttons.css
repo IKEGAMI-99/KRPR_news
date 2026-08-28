@@ -7,11 +7,34 @@
   flex: 1 1 auto;
   text-align: center;
   white-space: nowrap;
+  min-height: 40px !important;
+  border-radius: 14px !important;
+  border: 0 !important;
+  color: #2c1732 !important;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255,255,255,.86), transparent 28%),
+    linear-gradient(135deg, #ffd0ea, #d4b9ff 50%, #a8e3ff) !important;
+  box-shadow: var(--glow-pink), 0 8px 20px rgba(83,44,101,.14) !important;
+}
+
+.news-card.has-multiple-sources .source-button:hover {
+  filter: saturate(1.05) brightness(1.02);
+  box-shadow: 0 0 30px rgba(255,119,196,.28), 0 9px 22px rgba(83,44,101,.17) !important;
 }
 
 .news-card.has-multiple-sources .more-button,
 .news-card.has-multiple-sources .original-button {
   flex: 0 0 auto;
+}
+
+/* Compatibility for tabs that still have the old generated class in memory. */
+.news-card.has-multiple-sources .source-button-extra {
+  color: #2c1732 !important;
+  border: 0 !important;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255,255,255,.86), transparent 28%),
+    linear-gradient(135deg, #ffd0ea, #d4b9ff 50%, #a8e3ff) !important;
+  box-shadow: var(--glow-pink), 0 8px 20px rgba(83,44,101,.14) !important;
 }
 
 @media (max-width: 700px) {
