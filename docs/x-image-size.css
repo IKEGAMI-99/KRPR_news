@@ -3,25 +3,58 @@
   overflow-y: auto !important;
   overflow-x: hidden !important;
   overscroll-behavior: contain;
-  padding: 0 8px !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  padding: 0 !important;
 }
 
 .image-viewer[hidden] {
   display: none !important;
 }
 
+/* Keep the page itself scrollable. The fixed viewer owns touch scrolling while open,
+   which avoids Android WebAPK leaving body scrolling in a sluggish state after close. */
+body.viewer-open {
+  overflow: auto !important;
+}
+
 .viewer-figure {
-  width: min(1100px, calc(100vw - 16px)) !important;
+  width: min(1100px, 100vw) !important;
   max-width: none !important;
-  min-height: 100dvh !important;
+  min-height: 0 !important;
   height: auto !important;
   box-sizing: border-box !important;
   margin: 0 auto !important;
-  padding: max(72px, calc(var(--safe-top) + 54px)) 0 max(42px, calc(var(--safe-bottom) + 18px)) !important;
+  padding: 0 !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+}
+
+/* Short/normal images are placed against the actual viewport center instead of
+   relying on 100dvh flex sizing, which behaved inconsistently in Android WebAPK. */
+.image-viewer.viewer-centered .viewer-figure {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Long images stay full-width and start near the top so they can be read by
+   scrolling naturally from the beginning. */
+.image-viewer.viewer-tall .viewer-figure {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  margin: 0 auto !important;
+  padding: max(72px, calc(var(--safe-top) + 54px)) 0 max(42px, calc(var(--safe-bottom) + 18px)) !important;
 }
 
 .viewer-image {
@@ -57,23 +90,13 @@
 .viewer-next { right: 8px !important; }
 
 @media (max-width: 700px) {
-  .image-viewer:not([hidden]) {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .viewer-figure {
-    width: 100vw !important;
-    max-width: none !important;
-    min-height: 100dvh !important;
-    margin: 0 auto !important;
-    padding-top: max(72px, calc(var(--safe-top) + 54px)) !important;
-    padding-bottom: max(42px, calc(var(--safe-bottom) + 18px)) !important;
-  }
-
+  .viewer-figure,
   .viewer-image {
     width: 100vw !important;
     max-width: 100vw !important;
+  }
+
+  .viewer-image {
     height: auto !important;
     max-height: none !important;
     border-radius: 0 !important;

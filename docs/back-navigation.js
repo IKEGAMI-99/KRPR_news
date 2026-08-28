@@ -1,9 +1,11 @@
 (() => {
-  // Android/PWA の戻る操作は、ページを閉じる前に開いているUIを閉じる。
-  // 各オーバーレイを開いた時だけ履歴を1段積み、戻るでその履歴を消費する。
+  // Android/PWA back should close an open overlay before leaving the app.
   const TOKEN = 'kiraparaOverlay';
   let active = null;
   let closingFromPopstate = false;
+  let overlayScrollY = 0;
+
+  try { history.scrollRestoration = 'manual'; } catch {}
 
   const isMenuOpen = () => document.querySelector('.link-menu')?.classList.contains('is-open');
   const isViewerOpen = () => {
@@ -22,8 +24,20 @@
       active = kind || active;
       return;
     }
+    overlayScrollY = window.scrollY;
     history.pushState({ ...(history.state || {}), [TOKEN]: kind }, '', location.href);
     active = kind;
+  }
+
+  function restoreOverlayScroll() {
+    const root = document.documentElement;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, overlayScrollY);
+    requestAnimationFrame(() => {
+      if (previous) root.style.scrollBehavior = previous;
+      else root.style.removeProperty('scroll-behavior');
+    });
   }
 
   function closeOverlay(kind) {
@@ -40,7 +54,6 @@
     }
   }
 
-  // app.js / menu.js が動的にUIを開くため、状態変化を監視して履歴を積む。
   const observer = new MutationObserver(() => {
     if (closingFromPopstate) return;
     const kind = currentOverlay();
@@ -54,30 +67,25 @@
     attributeFilter: ['class', 'hidden'],
   });
 
-  // ×、背景タップなど「画面内で閉じる」操作では、まず通常のクリック処理で
-  // UIを即座に閉じる。その後にオーバーレイ用の履歴だけを消費する。
-  // capture + stopImmediatePropagation で先回りすると app.js 側の closeViewer()
-  // まで止めてしまうため、document の bubble フェーズで後処理する。
+  // Let each component close itself first, then consume only the synthetic
+  // same-URL history entry. Manual scroll restoration prevents Chromium from
+  // animating/restoring the page and making touch scrolling feel heavy after it.
   document.addEventListener('click', (event) => {
     if (closingFromPopstate || !history.state?.[TOKEN]) return;
     const target = event.target;
     const viewer = document.querySelector('#imageViewer');
-    const closesViewer = Boolean(
-      target?.closest?.('.viewer-close') || target === viewer
-    );
+    const closesViewer = Boolean(target?.closest?.('.viewer-close') || target === viewer);
     const closesMenu = Boolean(
       target?.closest?.('.link-menu-close') || target?.classList?.contains('menu-backdrop')
     );
     if (!closesViewer && !closesMenu) return;
-
-    // The component's own click handler has already run by the time this bubbles
-    // to document, so this only removes the synthetic same-URL history entry.
-    if (history.state?.[TOKEN]) history.back();
+    history.back();
   });
 
   window.addEventListener('popstate', () => {
     const kind = currentOverlay();
     if (kind) closeOverlay(kind);
     else active = null;
+    requestAnimationFrame(restoreOverlayScroll);
   });
 })();

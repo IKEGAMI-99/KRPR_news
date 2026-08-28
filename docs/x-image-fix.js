@@ -10,11 +10,7 @@
         return url.href;
       }
 
-      // X sometimes exposes legacy URLs such as image.jpg:small.
       url.pathname = url.pathname.replace(LEGACY_SIZE_SUFFIX, '');
-
-      // Modern pbs.twimg.com URLs use the name query parameter for sizing.
-      // Force the original asset instead of thumb/small/medium/large variants.
       url.searchParams.set('name', 'orig');
       return url.href;
     } catch {
@@ -22,46 +18,10 @@
     }
   }
 
-  // Replace app.js' helper for any image URLs processed after this script loads.
+  // app.js calls upgradeXImage while building cards and viewer candidates.
+  // Replacing that helper is enough; a document-wide MutationObserver that
+  // rewrites every img[src] caused unnecessary work during scrolling on Android.
   try {
-    if (typeof upgradeXImage === 'function') {
-      upgradeXImage = preferOriginalXImage;
-    }
+    if (typeof upgradeXImage === 'function') upgradeXImage = preferOriginalXImage;
   } catch {}
-
-  function upgradeImageElement(image) {
-    if (!(image instanceof HTMLImageElement)) return;
-    const current = image.getAttribute('src');
-    if (!current) return;
-    const upgraded = preferOriginalXImage(current);
-    if (upgraded && upgraded !== new URL(current, location.href).href) {
-      image.src = upgraded;
-    }
-  }
-
-  function scan(root = document) {
-    if (root instanceof HTMLImageElement) upgradeImageElement(root);
-    root.querySelectorAll?.('img[src]').forEach(upgradeImageElement);
-  }
-
-  scan();
-
-  const observer = new MutationObserver((mutations) => {
-    for (const mutation of mutations) {
-      if (mutation.type === 'attributes') {
-        upgradeImageElement(mutation.target);
-        continue;
-      }
-      for (const node of mutation.addedNodes) {
-        if (node instanceof Element) scan(node);
-      }
-    }
-  });
-
-  observer.observe(document.documentElement, {
-    subtree: true,
-    childList: true,
-    attributes: true,
-    attributeFilter: ['src'],
-  });
 })();
