@@ -7,13 +7,32 @@ import translate_news_llm as qwen
 from glossary_schema import active_entries, read_glossary
 
 
-STRICT_MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-summary-facts-region-titles-strict-ja-v4"
+STRICT_MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-summary-facts-region-titles-strict-ja-v5"
 URL_HASH_RE = re.compile(r"https?://\S+|#[^\s#]+")
 KANA_RE = re.compile(r"[ぁ-ゖァ-ヺー]")
 HANGUL_RE = re.compile(r"[가-힣] ")
 HANGUL_CHAR_RE = re.compile(r"[가-힣]")
 HAN_RE = re.compile(r"[一-龯㐀-䶿]")
 LATIN_WORD_RE = re.compile(r"[A-Za-z]{3,}")
+CHINESE_COMMON_LEFTOVERS = (
+    "礼包",
+    "活动",
+    "任务",
+    "合伙人",
+    "网页链接",
+    "限时",
+    "说明",
+    "获得",
+    "完成全部",
+    "累计",
+    "进行协会",
+    "本次",
+    "上次",
+    "购买情况",
+    "无法重复购买",
+    "开启期间",
+)
+CHINESE_DISCOUNT_RE = re.compile(r"(?<![A-Za-z0-9])\d+(?:\.\d+)?折")
 
 _ORIGINAL_BUILD_MESSAGES = qwen.build_messages
 _ORIGINAL_VALIDATE_RESULT = qwen.validate_result
@@ -47,6 +66,23 @@ def prose_for_language_check(value: str, row: dict) -> str:
     return text.strip()
 
 
+def chinese_residue_reason(row: dict, result: dict) -> str:
+    if str(row.get("region") or "").upper() != "CHINA":
+        return ""
+    check = "\n".join([
+        str(result.get("titleJa") or ""),
+        str(result.get("bodyJa") or ""),
+        str(result.get("summaryJa") or ""),
+    ])
+    prose = prose_for_language_check(check, row)
+    leftovers = [term for term in CHINESE_COMMON_LEFTOVERS if term in prose]
+    if leftovers:
+        return "中国語の一般語が残っています: " + ", ".join(leftovers[:5])
+    if CHINESE_DISCOUNT_RE.search(check):
+        return "中国式の割引表記（○折）が残っています"
+    return ""
+
+
 def japanese_failure_reason(row: dict, result: dict) -> str:
     region = str(row.get("region") or "").upper()
     if region == "JAPAN":
@@ -61,6 +97,10 @@ def japanese_failure_reason(row: dict, result: dict) -> str:
             str(row.get("body") or ""),
             str(row.get("title") or ""),
         ])
+
+    residue_reason = chinese_residue_reason(row, result)
+    if residue_reason:
+        return residue_reason
 
     prose = prose_for_language_check(check, row)
     source_prose = prose_for_language_check(source, row)
@@ -105,6 +145,31 @@ region={region} の記事でも、ユーザーに表示する titleJa / bodyJa /
 特に bodyJa と summaryJa は日本語の文章として読めることが必須です。翻訳できていない場合は出力を完了したことにしてはいけません。
 JSONキーは指定どおりにし、値だけを日本語化してください。
 """
+
+    if region == "CHINA":
+        language_rule += """
+
+【中国語→日本語の自然化ルール】
+中国語の一般名詞・UI語・説明語を日本語文中に残してはいけません。固有名詞だけを原語保持してください。
+特に次のような一般語は必ず自然な日本語へ置き換えてください。
+- 礼包 → パック / セット（文脈に合う方）
+- 活动 → イベント / キャンペーン
+- 任务 → ミッション / クエスト
+- 合伙人 → プレイヤー（用語集に別の公式訳がある場合は用語集を優先）
+- 网页链接 → Webリンク
+- 限购1次 → 1回のみ購入可能
+- 复刻 → 復刻
+「星夜神谕礼包」のように固有名詞＋一般語で構成される名称は、「星夜神諭パック」のように固有部分だけを保持し、一般語は日本語化してください。
+
+中国式の割引表記「○折」は日本語出力に残してはいけません。日本の読者に自然なOFF表記へ正確に換算してください。
+例: 2.2折 = 通常価格の22% = 78%OFF、5折 = 50%OFF、8折 = 20%OFF。
+数値の意味を変えず、「最大78%OFF」のように自然な日本語で表現してください。
+
+衣装名・アイテム名・イベント固有名など、用語集に公式日本語名がない固有名詞は勝手に創作せず原語を保持して構いません。ただし、その前後の「五星」「妆容」「家具」「手持」など種類を示す一般語は「★5」「メイク」「家具」「手持ちアイテム」など自然な日本語にしてください。
+
+出力直前に titleJa / bodyJa / summaryJa を自分で読み直し、「礼包」「活动」「任务」「合伙人」「网页链接」「○折」など中国語の一般語・中国式表記が残っていたら、JSONを返す前に必ず日本語へ修正してください。
+"""
+
     messages[0]["content"] = str(messages[0].get("content") or "") + language_rule
     return messages
 
@@ -122,9 +187,9 @@ def strict_validate_result(row: dict, obj):
 
 def strict_infer_one(llm, row: dict):
     attempts = [
-        "日本語への完全翻訳を最優先してください。原文言語の文章を残さないでください。",
-        "前回は日本語化が不十分でした。固有名詞・URL・ハッシュタグ以外の中国語・韓国語・英語文をすべて自然な日本語へ翻訳し直してください。JSONだけを返してください。",
-        "最終再試行です。bodyJaとsummaryJaが日本語として読めない出力は失敗です。原文コピーは禁止。固有名詞以外を必ず日本語にしてください。",
+        "日本語への完全翻訳を最優先してください。原文言語の一般語を残さず、日本のゲームニュースとして自然な表現にしてください。中国語の○折は必ず正確な○%OFFへ換算してください。",
+        "前回は日本語化が不十分でした。固有名詞・URL・ハッシュタグ以外の中国語・韓国語・英語文をすべて自然な日本語へ翻訳し直してください。礼包・活动・任务・合伙人・网页链接・○折などの中国語一般語や中国式表記を残さないでください。JSONだけを返してください。",
+        "最終再試行です。bodyJaとsummaryJaが日本語として読めない出力は失敗です。原文コピーは禁止。固有名詞以外を必ず日本語にし、中国式割引表記も日本式の%OFFへ換算してください。",
     ]
     for attempt, retry_note in enumerate(attempts, 1):
         try:
