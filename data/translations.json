@@ -87,21 +87,21 @@
       "contentHash": "c98bd4b1ec545247949fdb98",
       "titleJa": "Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー：染色エリアが★6セット「Crimson Cleansing」向けに最適化",
       "bodyJa": "Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー\n\n★6セット「Crimson Cleansing」向けに染色エリアが最適化されました！ドレス「Crimson Cleansing」の染色エリアは、#1が#19に、#3が#20に、#4が#21に、#5が#22に、#6が#23〜#27に、#7が#28に、#9が#29に最適化されています。",
-      "summaryJa": "・追加: Lightchase Encore | ★6セット「Crimson Cleansing」のプレビューが公開\n・変更: ドレス「Crimson Cleansing」の染色エリアが★6セット向けに最適化された\n・最適化内容: 染色エリアの番号が#1→#19、#3→#20、#4→#21、#5→#22、#6→#23-27、#7→#28、#9→#29に変更された",
+      "summaryJa": "・追加: ★6セット「Crimson Cleansing」のプレビューが公開\n・変更: ドレス「Crimson Cleansing」の染色エリアが最適化された\n・最適化内容: 染色エリアの番号が#19〜#29に再配置された",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877445
+      "updatedAtEpoch": 1787954729
     },
     "https://x.com/LifeMakeover510/status/2092779131024904435": {
       "contentHash": "a3467633eebe9c5b0abc25c5",
       "titleJa": "Lightchase Encore | Dance of Deceitが近日登場",
-      "bodyJa": "Lightchase Encore | Dance of Deceitが近日登場！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit | 神々への崇拝と願いの中で、我々は無数の仮面を身にまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-      "summaryJa": "・イベント: Dance of Deceitが開催される\n・期間: 8月28日09:00〜9月17日23:59",
+      "bodyJa": "Lightchase Encore | Dance of Deceitが近日登場！\nDance of Deceitイベントは8月28日09:00から9月17日23:59まで開催されます！\n\n#DanceofDeceit | 神々を崇め、願いを込めて、我々は無数の仮面を被ります。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・イベント: Dance of Deceitが開催される\n・期間: 8月28日09:00〜9月17日23:59\n・内容: 神々を崇め、願いを込めて無数の仮面を被るイベント",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877474
+      "updatedAtEpoch": 1787954771
     },
     "https://x.com/LifeMakeover510/status/2092567745489502482": {
       "contentHash": "2b33250f37bd4f9d545fd5bc",
