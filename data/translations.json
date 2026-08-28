@@ -288,11 +288,11 @@
       "contentHash": "299da56783bd79f9bf183ed6",
       "titleJa": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
       "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・追加: 5つの無料イベントが開催されます\n・内容: 星5セット、星4セットを獲得できるチャンスです\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "summaryJa": "・追加: 5つの無料イベントが開催されます\n・内容: 星5セット、星4セットを獲得できるチャンスがあります\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879529
+      "updatedAtEpoch": 1787958869
     },
     "https://x.com/kirapara_JP/status/2092507341736268068": {
       "contentHash": "5ce2c92130f0e994049e3fe4",
@@ -300,9 +300,9 @@
       "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
       "summaryJa": "・新機能として立ち姿勢固定モードがまもなく登場します\n・デイリー任務に「お任せ派遣機能」が追加されます\n・新テーマ曲が登場します\n・交換ショップに新たなファッションと報酬が追加されます",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879557
+      "updatedAtEpoch": 1787958881
     },
     "https://x.com/LifeMakeover510/status/2092462040459932131": {
       "contentHash": "dc15c201b93fb6947903e6f3",
