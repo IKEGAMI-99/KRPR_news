@@ -2,6 +2,7 @@ import ast
 import importlib
 import json
 import re
+import subprocess
 import sys
 import unittest
 from html.parser import HTMLParser
@@ -178,6 +179,14 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertIn("host === 't.bilibili.com'", source_buttons)
         self.assertIn("url.pathname.match(/^\\/opus\\/(\\d+)", source_buttons)
         self.assertIn("`bilibili:opus:${match[1]}`", source_buttons)
+        result = subprocess.run(
+            ["node", str(ROOT / "tests" / "test_source_buttons.js")],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stdout + result.stderr)
 
     def test_search_and_advance_info_features_are_removed(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")

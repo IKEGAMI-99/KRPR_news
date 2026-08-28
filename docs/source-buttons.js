@@ -20,7 +20,7 @@
       const host = url.hostname.toLowerCase();
       let match = null;
       if (host === 't.bilibili.com') match = url.pathname.match(/^\/(\d+)(?:\/|$)/);
-      if (host === 'bilibili.com' || host.endsWith('.bilibili.com')) {
+      else if (host === 'bilibili.com' || host.endsWith('.bilibili.com')) {
         match = url.pathname.match(/^\/opus\/(\d+)(?:\/|$)/);
       }
       if (match) return `bilibili:opus:${match[1]}`;
