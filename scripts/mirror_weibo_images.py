@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 MIRROR_DIR = ROOT / "docs" / "media" / "weibo"
-RAW_BASE = "https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/docs/media/weibo/"
+RAW_BASE = "https://ikegami-99.github.io/KRPR_news/media/weibo/"
 UA = "Mozilla/5.0 (Linux; Android 16; 24122RKC7G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Mobile Safari/537.36"
 SINA_SUFFIXES = ("sinaimg.cn", "sinaimg.com")
 MAX_BYTES = 18 * 1024 * 1024
