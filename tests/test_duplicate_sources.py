@@ -50,7 +50,8 @@ class DuplicateSourceMergeTests(unittest.TestCase):
             {"Weibo", "TapTap", "Bilibili"},
             {source["label"] for source in merged[0]["sources"]},
         )
-        self.assertEqual(3, len(merged[0]["imageUrls"]))
+        self.assertEqual("https://www.taptap.cn/moment/1", merged[0]["sourceUrl"])
+        self.assertEqual("https://example.com/taptap.jpg", merged[0]["imageUrl"])
 
     def test_nearby_but_different_titles_do_not_merge(self):
         rows = [
@@ -86,6 +87,9 @@ class DuplicateSourceMergeTests(unittest.TestCase):
             {**base, "id": "j", "region": "JAPAN", "platform": "公式X", "sourceUrl": "https://x.com/example/2"},
         ]
         self.assertEqual(2, len(merger.merge_rows(rows)))
+
+    def test_official_site_label_stays_natural(self):
+        self.assertEqual("公式サイト", merger.platform_label("公式サイト"))
 
 
 if __name__ == "__main__":
