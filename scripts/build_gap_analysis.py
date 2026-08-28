@@ -13,7 +13,6 @@ OUT_PATH = ROOT / "data" / "gap_analysis.json"
 DAY_MS = 86_400_000
 
 REGIONS = ("CHINA", "GLOBAL", "KOREA")
-CATEGORIES = ("GACHA", "OUTFIT", "EVENT", "UPDATE", "FEATURE", "OTHER")
 CATEGORY_LABELS = {
     "GACHA": "ガチャ",
     "OUTFIT": "衣装",
@@ -253,22 +252,6 @@ def stats_for(matches, region=None, category=None):
     }
 
 
-def model_for(matches, region, category):
-    specific = stats_for(matches, region, category)
-    if specific["n"] >= 2:
-        return {**specific, "source": "地域×カテゴリ"}
-    regional = stats_for(matches, region, None)
-    if regional["n"] >= 2:
-        return {**regional, "source": "地域全体"}
-    category_all = stats_for(matches, None, category)
-    if category_all["n"] >= 2:
-        return {**category_all, "source": "カテゴリ全体"}
-    overall = stats_for(matches)
-    if overall["n"] >= 1:
-        return {**overall, "source": "全地域"}
-    return None
-
-
 def iso_date(ms):
     if not ms:
         return None
@@ -278,43 +261,6 @@ def iso_date(ms):
 def short_title(row):
     value = re.sub(r"\s+", " ", str(row.get("titleJa") or row.get("title") or "名称不明")).strip()
     return value if len(value) <= 68 else value[:67] + "…"
-
-
-def build_forecasts(rows, matches):
-    pending = [r for r in rows if r.get("earlyInfo") is True and r.get("region") in REGIONS]
-    pending.sort(key=published_ms, reverse=True)
-    out = []
-    for row in pending[:60]:
-        category = category_of(row)
-        source_date = implementation_date(row)
-        model = model_for(matches, row.get("region"), category)
-        item = {
-            "id": row.get("id"),
-            "title": short_title(row),
-            "region": row.get("region"),
-            "category": category,
-            "categoryLabel": CATEGORY_LABELS.get(category, "その他"),
-            "sourceDate": iso_date(source_date["ms"]),
-            "sourceBasis": source_date["basis"],
-            "sourceUrl": row.get("sourceUrl") or "",
-            "prediction": None,
-        }
-        if model and model.get("median") is not None and source_date["ms"]:
-            lag = round(model["median"])
-            predicted = source_date["ms"] + lag * DAY_MS
-            spread = max(7, round((model.get("mad") * 1.5 if model.get("mad") is not None else 14)), 14 if model["n"] < 3 else 0)
-            confidence = "高め" if model["n"] >= 6 else "中" if model["n"] >= 3 else "低め"
-            item["prediction"] = {
-                "date": iso_date(predicted),
-                "rangeStart": iso_date(predicted - spread * DAY_MS),
-                "rangeEnd": iso_date(predicted + spread * DAY_MS),
-                "lagDays": lag,
-                "modelSource": model["source"],
-                "samples": model["n"],
-                "confidence": confidence,
-            }
-        out.append(item)
-    return out
 
 
 def build_match_rows(matches):
@@ -360,17 +306,15 @@ def main():
 
     match_rows = build_match_rows(matches)
     payload = {
-        "version": 1,
+        "version": 2,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "sourceCount": len(rows),
         "matchedCount": len(match_rows),
-        "earlyCount": sum(1 for r in rows if r.get("earlyInfo") is True),
         "stats": region_stats,
-        "forecasts": build_forecasts(rows, matches),
         "matches": match_rows,
     }
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"gap analysis: rows={payload['sourceCount']} matches={payload['matchedCount']} early={payload['earlyCount']}")
+    print(f"gap analysis: rows={payload['sourceCount']} matches={payload['matchedCount']}")
 
 
 if __name__ == "__main__":

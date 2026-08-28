@@ -124,10 +124,6 @@ jobs:
           python -u scripts/strict_gemma_translate.py translate \
             --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm"
 
-      - name: Compare overseas previews with Japan feed
-        if: steps.llm_plan.outputs.pending != '0'
-        run: python scripts/tag_early_info.py
-
       - name: Reapply Sol locks after Gemma 4
         if: steps.llm_plan.outputs.pending != '0'
         run: python scripts/apply_sol_edits.py

@@ -108,16 +108,44 @@ class ProjectStructureTests(unittest.TestCase):
             with self.subTest(asset=asset):
                 self.assertTrue(path.exists(), f"missing service-worker asset: {asset}")
 
-    def test_search_is_connected(self):
+    def test_search_and_advance_info_features_are_removed(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
         app = (DOCS / "app.js").read_text(encoding="utf-8")
-        self.assertIn('id="searchInput"', html)
-        self.assertIn("els.search.addEventListener('input'", app)
+        sw = (DOCS / "sw.js").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        news_workflow = (ROOT / ".github" / "workflows" / "news-refresh.yml").read_text(encoding="utf-8")
+        ai_workflow = (ROOT / ".github" / "workflows" / "ai-translate.yml").read_text(encoding="utf-8")
+        gap_html = (DOCS / "gap.html").read_text(encoding="utf-8")
+        gap_js = (DOCS / "gap.js").read_text(encoding="utf-8")
+
+        self.assertNotIn('id="searchInput"', html)
+        self.assertNotIn("search-wrap", html)
+        self.assertNotIn("weeklyTopics", html)
+        self.assertNotIn("state.query", app)
+        self.assertNotIn("early-info-badge", app)
+        self.assertNotIn("topics.js", sw)
+        self.assertNotIn("early-info.css", sw)
+        self.assertNotIn("tag_early_info.py", news_workflow)
+        self.assertNotIn("tag_early_info.py", ai_workflow)
+        self.assertNotIn("先行情報", readme)
+        self.assertNotIn("FORECAST", gap_html)
+        self.assertNotIn("forecasts", gap_js)
+
+        for path in (
+            DOCS / "topics.js",
+            DOCS / "topics.css",
+            DOCS / "early-info.css",
+            SCRIPTS / "tag_early_info.py",
+        ):
+            self.assertFalse(path.exists(), f"removed feature file still exists: {path}")
 
     def test_mobile_layout_does_not_force_viewport_width(self):
-        topics_css = (DOCS / "topics.css").read_text(encoding="utf-8")
-        self.assertNotIn("width:100vw", topics_css)
-        self.assertNotIn("min-width:100vw", topics_css)
+        combined_css = "\n".join(
+            (DOCS / name).read_text(encoding="utf-8")
+            for name in ("styles.css", "theme-kawaii.css", "layout-fixes.css")
+        )
+        self.assertNotIn("width:100vw", combined_css)
+        self.assertNotIn("min-width:100vw", combined_css)
 
     def test_active_translation_cache_metadata(self):
         gemma = importlib.import_module("strict_gemma_translate")

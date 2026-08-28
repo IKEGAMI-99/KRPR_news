@@ -13,6 +13,13 @@ NEWS_PATH = ROOT / "data" / "news.json"
 DATE_CACHE_PATH = ROOT / "data" / "article_dates.json"
 UA = "Mozilla/5.0 KiraparaNews-DateNormalizer/1.1"
 GOOGLE_NAMES = ("google news", "googleニュース", "google ニュース")
+LEGACY_REMOVED_FIELDS = (
+    "earlyInfo",
+    "earlyInfoReason",
+    "earlyInfoConfidence",
+    "importanceScore",
+    "weeklyTopic",
+)
 
 
 def read_json(path, default):
@@ -62,8 +69,6 @@ def explicit_published(url: str) -> int:
     except Exception:
         return 0
 
-    # Only publication-specific metadata is trusted here. Generic <time> or
-    # meta[name=date] often describes an update, event date or navigation block.
     patterns = [
         r'<meta[^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate)["\'][^>]+content=["\']([^"\']+)',
         r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:article:published_time|datePublished|datepublished|pubdate|publishdate)["\']',
@@ -132,6 +137,9 @@ def main():
     seen_urls = set()
     normalized = []
     for row in kept:
+        for field in LEGACY_REMOVED_FIELDS:
+            row.pop(field, None)
+
         url = str(row.get("sourceUrl") or "")
         key = canonical(url)
         if key in seen_urls:
@@ -142,9 +150,6 @@ def main():
         page_epoch = int(published.get(key) or 0)
         stored = int(cache.get(key) or 0)
 
-        # Once a publisher date has been stored, keep it stable. On the first
-        # encounter prefer the publisher's explicit publication metadata, then
-        # fall back to the discovery feed timestamp.
         stable = stored or page_epoch or current
         if stable and stable != current:
             corrected += 1

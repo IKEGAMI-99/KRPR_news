@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v31';
+const CACHE_NAME = 'kirapara-pwa-shell-v32';
 const APP_SHELL = [
   './',
   './index.html',
@@ -10,15 +10,12 @@ const APP_SHELL = [
   './layout-fixes.css',
   './gallery-strip.css',
   './day-sections.css',
-  './early-info.css',
-  './topics.css',
   './menu.css',
   './menu-install.css',
   './gap.css',
   './analytics-config.js',
   './analytics-track.js',
   './app.js',
-  './topics.js',
   './share.js',
   './menu.js',
   './menu-install.js',

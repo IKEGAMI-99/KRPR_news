@@ -100,13 +100,11 @@
     const items = (typeof state !== 'undefined' && Array.isArray(state.items)) ? state.items : [];
     const ai = items.filter((item) => item?.aiProcessed && item?.summaryJa).length;
     const facts = items.filter((item) => item?.aiSummaryFormat === 'facts-v2').length;
-    const early = items.filter((item) => item?.earlyInfo === true).length;
     const metrics = operations.querySelector('.dev-metrics');
     metrics.replaceChildren();
     for (const [label, value] of [
       ['AI処理済み', `${ai} / ${items.length || '—'}`],
       ['箇条書き要約', `${facts} / ${items.length || '—'}`],
-      ['先行情報候補', String(early)],
       ['翻訳モデル', 'Gemma 4 E4B'],
     ]) {
       const metric = document.createElement('div');

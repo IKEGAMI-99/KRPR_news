@@ -23,7 +23,6 @@ on:
       - 'scripts/translation_quality.py'
       - 'scripts/strict_gemma_translate.py'
       - 'scripts/glossary_schema.py'
-      - 'scripts/tag_early_info.py'
       - 'scripts/apply_sol_edits.py'
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
@@ -73,16 +72,13 @@ jobs:
       - name: Apply only Japanese-safe cached translations without running the LLM
         run: python -u scripts/strict_gemma_translate.py prepare
 
-      - name: Compare overseas previews with Japan feed
-        run: python scripts/tag_early_info.py
-
       - name: Reapply Sol locks
         run: python scripts/apply_sol_edits.py
 
       - name: Commit refreshed news when changed
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/article_dates.json data/image_quality.json)" ]; then
-            echo "No news, date, image-quality, translation or advance-info changes"
+            echo "No news, date, image-quality or translation changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"

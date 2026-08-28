@@ -10,20 +10,17 @@
     JAPAN: { label:'日本', flag:'🇯🇵' },
   };
   const CATEGORY = {
-    ALL:'すべて', GACHA:'ガチャ', OUTFIT:'衣装', EVENT:'イベント', UPDATE:'アップデート', FEATURE:'新機能', OTHER:'その他'
+    GACHA:'ガチャ', OUTFIT:'衣装', EVENT:'イベント', UPDATE:'アップデート', FEATURE:'新機能', OTHER:'その他'
   };
 
   const els = {
     status: document.querySelector('#gapStatus'),
     stats: document.querySelector('#gapStats'),
-    forecasts: document.querySelector('#gapForecasts'),
     matches: document.querySelector('#gapMatches'),
-    filters: document.querySelector('#gapFilters'),
     theme: document.querySelector('#gapThemeButton'),
   };
 
   let payload = null;
-  let selectedCategory = 'ALL';
 
   function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
@@ -91,52 +88,6 @@
     }).join('');
   }
 
-  function renderFilters() {
-    const forecasts = Array.isArray(payload?.forecasts) ? payload.forecasts : [];
-    const available = new Set(forecasts.map((item) => item.category));
-    const keys = ['ALL','GACHA','OUTFIT','EVENT','UPDATE','FEATURE','OTHER'].filter((key) => key === 'ALL' || available.has(key));
-    els.filters.replaceChildren();
-    for (const key of keys) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = `gap-filter${selectedCategory === key ? ' is-active' : ''}`;
-      button.textContent = CATEGORY[key];
-      button.addEventListener('click', () => {
-        selectedCategory = key;
-        renderFilters();
-        renderForecasts();
-      });
-      els.filters.appendChild(button);
-    }
-  }
-
-  function renderForecasts() {
-    let forecasts = Array.isArray(payload?.forecasts) ? payload.forecasts.slice() : [];
-    if (selectedCategory !== 'ALL') forecasts = forecasts.filter((item) => item.category === selectedCategory);
-    forecasts = forecasts.slice(0, 18);
-
-    if (!forecasts.length) {
-      els.forecasts.innerHTML = '<div class="gap-empty">このカテゴリには現在、予測対象の先行情報がありません。</div>';
-      return;
-    }
-
-    els.forecasts.innerHTML = forecasts.map((item) => {
-      const region = REGION[item.region] || { flag:'🌐', label:item.region || '海外' };
-      const title = escapeHtml(item.title || '先行情報');
-      const href = escapeHtml(safeUrl(item.sourceUrl));
-      const category = escapeHtml(item.categoryLabel || CATEGORY[item.category] || CATEGORY.OTHER);
-      const sourceDate = escapeHtml(formatDate(item.sourceDate));
-      const sourceBasis = escapeHtml(item.sourceBasis || '不明');
-      const prediction = item.prediction;
-
-      if (!prediction?.date) {
-        return `<article class="gap-forecast"><div class="gap-forecast-head"><div class="gap-forecast-title"><a class="gap-source-link" href="${href}" target="_blank" rel="noopener noreferrer"><strong>${title}</strong></a><small>${region.flag} ${escapeHtml(region.label)} · ${sourceBasis}</small></div><span class="gap-category">${category}</span></div><div class="gap-forecast-note">日本版予測: まだ比較サンプルが足りません。</div></article>`;
-      }
-
-      return `<article class="gap-forecast"><div class="gap-forecast-head"><div class="gap-forecast-title"><a class="gap-source-link" href="${href}" target="_blank" rel="noopener noreferrer"><strong>${title}</strong></a><small>${region.flag} ${escapeHtml(region.label)} · ${sourceBasis}</small></div><span class="gap-category">${category}</span></div><div class="gap-forecast-grid"><div class="gap-date-box"><span>${region.flag} ${escapeHtml(region.label)}</span><strong>${sourceDate}</strong></div><div class="gap-date-arrow">→</div><div class="gap-date-box"><span>🇯🇵 日本版予想</span><strong>${escapeHtml(formatDate(prediction.date))}</strong></div></div><div class="gap-forecast-note">予想範囲 ${escapeHtml(formatDate(prediction.rangeStart))}〜${escapeHtml(formatDate(prediction.rangeEnd))} · ${escapeHtml(prediction.modelSource || '統計')} ${Number(prediction.samples || 0)}件から推定<span class="gap-confidence">確度 ${escapeHtml(prediction.confidence || '低め')}</span></div></article>`;
-    }).join('');
-  }
-
   function renderMatches() {
     const matches = Array.isArray(payload?.matches) ? payload.matches.slice(0, 36) : [];
     if (!matches.length) {
@@ -160,14 +111,11 @@
       if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('データ形式エラー');
       payload = data;
       renderStats();
-      renderFilters();
-      renderForecasts();
       renderMatches();
-      els.status.textContent = `${Number(payload.sourceCount || 0)}件を分析 · 一致 ${Number(payload.matchedCount || 0)}組 · 先行情報 ${Number(payload.earlyCount || 0)}件 · ${formatGenerated(payload.generatedAt)}更新`;
+      els.status.textContent = `${Number(payload.sourceCount || 0)}件を分析 · 一致 ${Number(payload.matchedCount || 0)}組 · ${formatGenerated(payload.generatedAt)}更新`;
     } catch (error) {
       els.status.textContent = `分析データを取得できませんでした (${error.message})`;
       els.stats.innerHTML = '<div class="gap-empty">次回の日次分析が完了すると表示されます。</div>';
-      els.forecasts.innerHTML = '';
       els.matches.innerHTML = '';
     }
   }

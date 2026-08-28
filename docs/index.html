@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="./layout-fixes.css">
   <link rel="stylesheet" href="./gallery-strip.css">
   <link rel="stylesheet" href="./day-sections.css">
-  <link rel="stylesheet" href="./early-info.css">
-  <link rel="stylesheet" href="./topics.css">
   <link rel="stylesheet" href="./menu.css">
   <link rel="stylesheet" href="./menu-install.css">
 </head>
@@ -33,12 +31,6 @@
           <button id="refreshButton" class="icon-button" type="button" aria-label="更新" title="更新">↻</button>
         </div>
       </div>
-      <div class="search-wrap" role="search">
-        <span class="search-icon" aria-hidden="true">⌕</span>
-        <label class="sr-only" for="searchInput">ニュースを検索</label>
-        <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="タイトル・本文・プラットフォームを検索">
-        <button id="clearSearchButton" type="button" aria-label="検索を消去" title="検索を消去" hidden>×</button>
-      </div>
       <nav id="regionTabs" class="region-tabs" aria-label="地域フィルター">
         <button class="region-tab is-active" type="button" data-region="ALL">すべて <span data-count="ALL">0</span></button>
         <button class="region-tab" type="button" data-region="JAPAN">🇯🇵 日本 <span data-count="JAPAN">0</span></button>
@@ -48,26 +40,16 @@
       </nav>
     </header>
     <main>
-      <section id="weeklyTopics" class="weekly-topics" aria-labelledby="weeklyTopicsTitle">
-        <div class="weekly-topics-head">
-          <div><span class="weekly-topics-kicker">ADVANCE INFO</span><h2 id="weeklyTopicsTitle">先行情報 TOP 3</h2></div>
-          <span class="weekly-topics-note">日本版にまだ近い告知がない最新3件</span>
-        </div>
-        <p class="early-info-notice">※ AIが海外版と日本版の告知を比較して推定した参考情報です。日本版での実装・開催を保証するものではありません。</p>
-        <div id="weeklyTopicsList" class="weekly-topics-list"><div class="weekly-topic-empty">先行情報を確認中…</div></div>
-        <span id="visibleCount" hidden>0件</span>
-      </section>
       <section id="newsGrid" class="news-grid" aria-live="polite" aria-busy="true"></section>
       <div id="emptyState" class="empty-state" hidden><div class="empty-mark">◇</div><h2>ニュースが見つかりません</h2><p id="emptyMessage">地域タブを変えてみてください。</p></div>
       <div id="errorState" class="error-state" hidden><div class="empty-mark">!</div><h2>読み込みに失敗しました</h2><p id="errorMessage">通信状態を確認して、もう一度更新してください。</p><button id="retryButton" class="primary-button" type="button">再読み込み</button></div>
     </main>
-    <footer><p>非公式ファンツール。AI翻訳・要約には誤りが含まれる場合があります。「先行情報」は海外版の予告内容と日本版フィードを自動比較した参考タグです。</p></footer>
+    <footer><p>非公式ファンツール。AI翻訳・要約には誤りが含まれる場合があります。</p></footer>
   </div>
   <template id="newsCardTemplate"><article class="news-card"><button class="card-image-link" type="button" aria-label="サムネイル画像を拡大"><div class="card-image-wrap"><img class="card-image" alt="" loading="lazy" decoding="async"><div class="image-fallback" aria-hidden="true">✦</div><span class="region-badge"></span></div></button><div class="card-content"><div class="card-meta"><span class="platform"></span><time class="published"></time></div><h3 class="card-title"></h3><p class="card-body"></p><div class="card-actions"><button class="more-button" type="button">続きを読む</button><a class="source-button" target="_blank" rel="noopener noreferrer">元記事を開く ↗</a></div></div></article></template>
   <script src="./analytics-config.js"></script>
   <script src="./analytics-track.js" defer></script>
   <script src="./app.js" defer></script>
-  <script src="./topics.js" defer></script>
   <script src="./share.js" defer></script>
   <script src="./menu.js" defer></script>
   <script src="./menu-install.js" defer></script>

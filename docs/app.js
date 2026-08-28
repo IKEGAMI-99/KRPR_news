@@ -10,9 +10,7 @@ const MIN_IMAGE_AREA = 150000;
 const state = {
   items: [],
   region: 'ALL',
-  query: '',
   installPrompt: null,
-  searchIndex: new WeakMap(),
 };
 
 const els = {
@@ -24,9 +22,6 @@ const els = {
   theme: document.querySelector('#themeButton'),
   install: document.querySelector('#installButton'),
   status: document.querySelector('#statusText'),
-  search: document.querySelector('#searchInput'),
-  clearSearch: document.querySelector('#clearSearchButton'),
-  visibleCount: document.querySelector('#visibleCount'),
   empty: document.querySelector('#emptyState'),
   emptyMessage: document.querySelector('#emptyMessage'),
   error: document.querySelector('#errorState'),
@@ -57,7 +52,6 @@ const dayLabel = new Intl.DateTimeFormat('ja-JP', {
 let viewerImages = [];
 let viewerIndex = 0;
 let viewerOpener = null;
-let searchTimer = 0;
 
 function storageGet(key) {
   try { return localStorage.getItem(key); } catch { return null; }
@@ -67,32 +61,8 @@ function storageSet(key, value) {
   try { localStorage.setItem(key, value); return true; } catch { return false; }
 }
 
-function normalizeSearchText(value) {
-  return String(value || '').normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/\s+/g, ' ').trim();
-}
-
-function searchText(item) {
-  let value = state.searchIndex.get(item);
-  if (value !== undefined) return value;
-  value = normalizeSearchText([
-    item.titleJa, item.title, item.bodyJa, item.body, item.summaryJa, item.platform,
-    regionNames[item.region], item.region,
-  ].filter(Boolean).join(' '));
-  state.searchIndex.set(item, value);
-  return value;
-}
-
-function queryItems() {
-  const terms = normalizeSearchText(state.query).split(' ').filter(Boolean);
-  if (!terms.length) return state.items;
-  return state.items.filter((item) => {
-    const haystack = searchText(item);
-    return terms.every((term) => haystack.includes(term));
-  });
-}
-
 function filteredItems() {
-  return queryItems().filter((item) => state.region === 'ALL' || item.region === state.region);
+  return state.items.filter((item) => state.region === 'ALL' || item.region === state.region);
 }
 
 function safeHttpUrl(value) {
@@ -408,14 +378,6 @@ function createCard(item) {
     aiBadge.textContent = item.region === 'JAPAN' ? 'AI要約' : 'AI翻訳';
     platform.insertAdjacentElement('afterend', aiBadge);
   }
-  if (item.earlyInfo === true) {
-    const earlyBadge = document.createElement('span');
-    earlyBadge.className = 'early-info-badge';
-    earlyBadge.textContent = '✦ 先行情報';
-    earlyBadge.title = `AIによる推定情報です。日本版での実装・開催を保証するものではありません。${item.earlyInfoReason || ''}`;
-    earlyBadge.setAttribute('aria-label', '先行情報。AIによる推定で、日本版での実装・開催を保証するものではありません');
-    published.insertAdjacentElement('beforebegin', earlyBadge);
-  }
   published.textContent = formatDate(item.publishedAtEpoch, item.publishedLabel);
   const epoch = Number(item.publishedAtEpoch);
   if (Number.isFinite(epoch) && epoch > 0) published.dateTime = new Date(epoch * 1000).toISOString();
@@ -462,9 +424,8 @@ function createCard(item) {
 }
 
 function updateCounts() {
-  const candidates = queryItems();
   for (const region of ['ALL', 'JAPAN', 'CHINA', 'KOREA', 'GLOBAL']) {
-    const count = region === 'ALL' ? candidates.length : candidates.filter((item) => item.region === region).length;
+    const count = region === 'ALL' ? state.items.length : state.items.filter((item) => item.region === region).length;
     const target = document.querySelector(`[data-count="${region}"]`);
     if (target) target.textContent = String(count);
   }
@@ -492,13 +453,12 @@ function render() {
   }
   els.grid.replaceChildren(fragment);
   els.grid.setAttribute('aria-busy', 'false');
-  els.visibleCount.textContent = `${items.length}件`;
   els.empty.hidden = items.length !== 0 || state.items.length === 0;
-  els.emptyMessage.textContent = state.query ? '検索語や地域を変えてみてください。' : '地域タブを変えてみてください。';
+  els.emptyMessage.textContent = '地域タブを変えてみてください。';
   els.error.hidden = true;
   updateCounts();
   document.dispatchEvent(new CustomEvent('kirapara:rendered', {
-    detail: { items, region: state.region, query: state.query },
+    detail: { items, region: state.region },
   }));
   requestAnimationFrame(repairOverflowButtons);
 }
@@ -545,7 +505,6 @@ async function loadNews({ force = false } = {}) {
     if (!Array.isArray(json)) throw new Error('ニュースデータの形式が不正です');
     state.items = json.filter((item) => item && typeof item === 'object')
       .sort((a, b) => (Number(b.publishedAtEpoch) || 0) - (Number(a.publishedAtEpoch) || 0));
-    state.searchIndex = new WeakMap();
     storageSet(CACHE_KEY, JSON.stringify({ savedAt: Date.now(), items: state.items }));
     els.status.textContent = latestUpdateLabel(state.items);
     render();
@@ -553,7 +512,6 @@ async function loadNews({ force = false } = {}) {
     const cached = loadCachedNews();
     if (cached.length) {
       state.items = cached;
-      state.searchIndex = new WeakMap();
       els.status.textContent = `${cached.length}件 · オフラインキャッシュ`;
       render();
     } else {
@@ -562,7 +520,6 @@ async function loadNews({ force = false } = {}) {
       els.grid.setAttribute('aria-busy', 'false');
       els.error.hidden = false;
       els.empty.hidden = true;
-      els.visibleCount.textContent = '0件';
       els.errorMessage.textContent = `ニュースを取得できませんでした (${error.message})`;
       els.status.textContent = '読み込み失敗';
     }
@@ -584,13 +541,6 @@ function initTheme() {
   setTheme(saved === 'light' || saved === 'dark' ? saved : preferred);
 }
 
-function syncSearch() {
-  state.query = els.search.value;
-  els.clearSearch.hidden = !state.query;
-  window.clearTimeout(searchTimer);
-  searchTimer = window.setTimeout(render, 120);
-}
-
 els.tabs.addEventListener('click', (event) => {
   const button = event.target.closest('[data-region]');
   if (!button) return;
@@ -598,18 +548,6 @@ els.tabs.addEventListener('click', (event) => {
   for (const tab of els.tabs.querySelectorAll('.region-tab')) tab.classList.toggle('is-active', tab === button);
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-els.search.addEventListener('input', syncSearch);
-els.search.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && els.search.value) {
-    els.search.value = '';
-    syncSearch();
-  }
-});
-els.clearSearch.addEventListener('click', () => {
-  els.search.value = '';
-  syncSearch();
-  els.search.focus();
 });
 els.refresh.addEventListener('click', () => loadNews({ force: true }));
 els.retry.addEventListener('click', () => loadNews({ force: true }));

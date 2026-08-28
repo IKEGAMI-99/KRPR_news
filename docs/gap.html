@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#d59be8">
-  <meta name="description" content="きらめきパラダイス / Life Makeover 各地域の実装時期差を比較・予測するベータ分析ページ">
+  <meta name="description" content="きらめきパラダイス / Life Makeover 各地域の実装時期差を比較するベータ分析ページ">
   <title>実装差分析 β | Kirapara News</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
       <a class="gap-back" href="./" aria-label="ニュースへ戻る">‹</a>
       <div class="gap-title-wrap">
         <div class="gap-title-line"><h1>実装差分析</h1><span class="gap-beta">BETA</span></div>
-        <p>各地域の実装タイミングを比較・予測</p>
+        <p>各地域の実装タイミングを比較</p>
       </div>
       <button id="gapThemeButton" class="gap-icon-button" type="button" aria-label="テーマ切替">☾</button>
     </header>
@@ -37,12 +37,6 @@
         <div id="gapStats" class="gap-stats"></div>
       </section>
 
-      <section class="gap-section" aria-labelledby="forecastTitle">
-        <div class="gap-section-head"><div><span>FORECAST</span><h2 id="forecastTitle">日本版の実装時期予想</h2></div><small>先行情報から推定</small></div>
-        <div id="gapFilters" class="gap-filters" aria-label="カテゴリフィルター"></div>
-        <div id="gapForecasts" class="gap-forecast-list"></div>
-      </section>
-
       <section class="gap-section" aria-labelledby="matchesTitle">
         <div class="gap-section-head"><div><span>CONTENT MATCHES</span><h2 id="matchesTitle">コンテンツ単位の比較</h2></div><small>自動照合・高一致のみ</small></div>
         <div id="gapMatches" class="gap-match-list"></div>
@@ -50,11 +44,11 @@
 
       <section class="gap-method">
         <strong>β版の計算方法</strong>
-        <p>毎日06:30（日本時間）に最新のニュース・翻訳データを一括分析します。告知本文から開始日を読み取れる場合はその日を実装日候補として使用し、読み取れない場合は記事公開日を暫定使用します。同一コンテンツ判定と予測時期は自動計算なので、公式の実装予定ではありません。</p>
+        <p>毎日06:30（日本時間）に最新のニュース・翻訳データを一括分析します。告知本文から開始日を読み取れる場合はその日を実装日候補として使用し、読み取れない場合は記事公開日を暫定使用します。同一コンテンツ判定は自動計算なので、照合結果は参考値として確認してください。</p>
       </section>
     </main>
 
-    <footer class="gap-footer"><p>Kirapara News 非公式分析ツール · 予測値は参考情報です。</p></footer>
+    <footer class="gap-footer"><p>Kirapara News 非公式分析ツール · 比較値は参考情報です。</p></footer>
   </div>
   <script src="./gap.js" defer></script>
 </body>
