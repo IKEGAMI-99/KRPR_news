@@ -53,6 +53,7 @@ def clean_text(value) -> str:
     value = re.sub(r"</(?:p|div|section|li|h\d)\s*>", "\n", value, flags=re.I)
     value = re.sub(r"<[^>]+>", " ", value)
     value = html.unescape(value).replace("\xa0", " ")
+    value = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", value)
     value = re.sub(r"[ \t]+", " ", value)
     value = re.sub(r"\n\s*\n\s*\n+", "\n\n", value)
     return value.strip()
@@ -146,6 +147,7 @@ def collect_image_urls(value) -> list[str]:
         candidate = html.unescape(node).replace("\\/", "/").strip()
         if not candidate.startswith(("http://", "https://")):
             return
+        candidate = re.sub(r"/_tap_[^/?#]+(?=$|[?#])", "", candidate, flags=re.I)
         try:
             parsed = urllib.parse.urlparse(candidate)
         except Exception:
@@ -240,6 +242,7 @@ def article_from_html(page: str, moment_id: str):
         images.append(cover)
     for match in re.finditer(r'https?://[^"\'<>\s\\]+(?:tapimg\.com|tapimg\.cn)[^"\'<>\s\\]*', page, re.I):
         candidate = html.unescape(match.group(0)).replace("\\/", "/")
+        candidate = re.sub(r"/_tap_[^/?#]+(?=$|[?#])", "", candidate, flags=re.I)
         if candidate not in images:
             images.append(candidate)
         if len(images) >= 20:
