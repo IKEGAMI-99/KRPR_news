@@ -47,21 +47,21 @@
       "contentHash": "ca191aa66f87c32099fbe7ef",
       "titleJa": "🔔新バージョン『万世の平定』更新🔔 出会いの感謝を🎁 連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます...",
       "bodyJa": "🔔新バージョン『万世の平定』更新🔔\n\n出会いの感謝を🎁\n連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます。お見逃しなく！\n\nイベント期間⏰\n8月27日10:30～8月30日23:59\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・新バージョン「万世の平定」が更新されました\n・連続ログインでスタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます\n・イベント期間は8月27日10:30から8月30日23:59までです",
+      "summaryJa": "・新バージョン『万世の平定』が更新されました\n・連続ログインイベントが開催されます\n・期間: 8月27日10:30～8月30日23:59\n・報酬: スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877262
+      "updatedAtEpoch": 1787954094
     },
     "https://x.com/LifeMakeover510/status/2092791708568498290": {
       "contentHash": "55941e9a06c205e5bac274f3",
       "titleJa": "Lightchase Encore | Deceit Decom Shop プレビュー",
-      "bodyJa": "Lightchase Encore | Deceit Decom Shop プレビュー\n\nDeceit Decomショップは、8月28日09:00から9月18日23:59までオープンします。期間限定イベントで入手したDecomposing fashions（分解ファッション）を使用することで、限定の★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などを交換できます！",
-      "summaryJa": "・追加: Deceit Decomショップがオープン\n・期間: 8月28日09:00〜9月18日23:59\n・内容: 期間限定イベントで入手したDecomposing fashionsで限定★5ファッションアイテムを交換可能",
+      "bodyJa": "Lightchase Encore | Deceit Decom Shop プレビュー\n\nDeceit Decomショップは、8月28日09:00から9月18日23:59まで開催されます。期間限定イベントで入手したDecom化されたファッションアイテムを使用することで、限定の★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などを交換することができます！",
+      "summaryJa": "・追加: Deceit Decomショップがプレビュー公開\n・期間: 8月28日09:00〜9月18日23:59\n・内容: 期間限定イベントで入手したDecom化ファッションアイテムで、限定★5ファッションアイテム（Forest Rose、Lotus Tap、Lilac Hazeなど）と交換可能",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877295
+      "updatedAtEpoch": 1787954136
     },
     "https://x.com/LifeMakeover510/status/2092789192208298055": {
       "contentHash": "9f53761704666190206221fd",
