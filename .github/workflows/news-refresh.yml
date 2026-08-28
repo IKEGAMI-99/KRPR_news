@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - 'scripts/fetch_news.py'
+      - 'scripts/preserve_official_x_history.py'
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
       - 'scripts/enrich_social_images.py'
@@ -57,6 +58,7 @@ jobs:
       - name: Fetch public news in original languages
         run: |
           python scripts/fetch_news.py
+          python scripts/preserve_official_x_history.py
           python scripts/merge_direct_official.py
           python scripts/enrich_sources.py
           python scripts/enrich_social_images.py
