@@ -17,6 +17,10 @@
       ['Weibo','https://weibo.com/u/7521830234'],
       ['Bilibili','https://space.bilibili.com/676200579'],
       ['TapTap','https://www.taptap.cn/app/218210/topic?type=official'],
+      ['好游快爆','https://m.3839.com/a/137078.htm'],
+      ['抖音','https://www.douyin.com/user/MS4wLjABAAAAkoSoF-ocsviTaKo31fSAT3f6sWROggvyk8kgt-mdQ07AZ6gSi8skQ1aPHu2moL17'],
+      ['小紅書','https://www.xiaohongshu.com/search_result?keyword=%E4%BB%A5%E9%97%AA%E4%BA%AE%E4%B9%8B%E5%90%8DVVANNA%20Studio'],
+      ['百度贴吧','https://tieba.baidu.com/f?kw=%E4%BB%A5%E9%97%AA%E4%BA%AE%E4%B9%8B%E5%90%8D'],
       ['WeChat','https://weixin.sogou.com/weixin?type=1&query=%E4%BB%A5%E9%97%AA%E4%BA%AE%E4%B9%8B%E5%90%8D'],
     ]},
     { title:'🌐 Global', links:[
@@ -91,7 +95,7 @@
 
   const note = document.createElement('p');
   note.className = 'menu-note';
-  note.textContent = 'Wikiは運営公式ではなく、コミュニティ運営の攻略Wikiです。WeChatは公開Webプロフィールがないため、公式公众号「以闪亮之名」の検索ページを開きます。';
+  note.textContent = 'Wikiは運営公式ではなく、コミュニティ運営の攻略Wikiです。WeChatは公式公众号「以闪亮之名」、小紅書は公式アカウント「以闪亮之名VVANNA Studio」の検索ページを開きます。';
   body.appendChild(note);
   document.body.append(backdrop, menu);
 
