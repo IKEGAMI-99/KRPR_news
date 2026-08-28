@@ -1,4 +1,4 @@
-name: Reset AI State and Start LFM2.5
+name: Reset AI State and Start Gemma 4 E4B LiteRT
 
 on:
   push:
@@ -42,26 +42,26 @@ jobs:
             git push
           fi
 
-      - name: Cache LFM2.5 8B A1B GGUF
+      - name: Cache Gemma 4 E4B LiteRT model
         uses: actions/cache@v4
         with:
           path: ~/.cache/kirapara-models
-          key: kirapara-lfm2.5-8b-a1b-q4-k-m-v1
+          key: kirapara-gemma4-e4b-litertlm-v1
 
-      - name: Cache pip and llama.cpp wheel
+      - name: Cache pip packages
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: kirapara-pip-${{ runner.os }}-${{ runner.arch }}-py312-llama-cpp-python-0.3.34-v1
+          key: kirapara-pip-${{ runner.os }}-${{ runner.arch }}-py312-litert-lm-0.16.1-v1
           restore-keys: |
             kirapara-pip-${{ runner.os }}-${{ runner.arch }}-py312-
 
-      - name: Verify or download LFM2.5 8B A1B GGUF
+      - name: Verify or download Gemma 4 E4B LiteRT model
         run: |
           set -e
           MODEL_DIR="$HOME/.cache/kirapara-models"
-          MODEL="$MODEL_DIR/LFM2.5-8B-A1B-Q4_K_M.gguf"
-          SHA256="4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0"
+          MODEL="$MODEL_DIR/gemma-4-E4B-it.litertlm"
+          SHA256="0b2a8980ce155fd97673d8e820b4d29d9c7d99b8fa6806f425d969b145bd52e0"
           mkdir -p "$MODEL_DIR"
           if [ -f "$MODEL" ] && ! echo "$SHA256  $MODEL" | sha256sum -c - >/dev/null 2>&1; then
             rm -f "$MODEL"
@@ -69,35 +69,34 @@ jobs:
           if [ ! -f "$MODEL" ]; then
             curl -fL --retry 4 --retry-delay 5 \
               -o "$MODEL" \
-              "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/main/LFM2.5-8B-A1B-Q4_K_M.gguf?download=true"
+              "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/main/gemma-4-E4B-it.litertlm?download=true"
           fi
           echo "$SHA256  $MODEL" | sha256sum -c -
 
-      - name: Install LFM2.5-compatible llama.cpp runtime
+      - name: Install LiteRT-LM runtime
         run: |
           python -m pip install --disable-pip-version-check --prefer-binary \
-            "llama-cpp-python==0.3.34" \
-            --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+            "litert-lm==0.16.1"
 
       - name: Process newest articles immediately
         env:
-          LLM_MAX_ITEMS: '50'
+          LLM_MAX_ITEMS: '20'
         run: |
-          python -u scripts/strict_lfm_translate.py translate \
-            --model "$HOME/.cache/kirapara-models/LFM2.5-8B-A1B-Q4_K_M.gguf"
+          python -u scripts/strict_gemma_translate.py translate \
+            --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm"
 
       - name: Compare overseas previews with Japan feed
         run: python scripts/tag_early_info.py
 
-      - name: Commit initial LFM2.5 batch
+      - name: Commit initial Gemma 4 batch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json data/translations.json
           if git diff --cached --quiet; then
-            echo "No LFM2.5 changes"
+            echo "No Gemma 4 changes"
           else
-            git commit -m "chore: process newest articles with LFM2.5"
+            git commit -m "chore: process newest articles with Gemma 4 E4B LiteRT"
             git pull --rebase origin main
             git push
           fi
