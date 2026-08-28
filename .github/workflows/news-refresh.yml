@@ -11,6 +11,7 @@ on:
       - 'scripts/preserve_official_x_history.py'
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
+      - 'scripts/repair_social_sources.py'
       - 'scripts/enrich_social_images.py'
       - 'scripts/enrich_weibo_images.py'
       - 'scripts/normalize_weibo_cdn.py'
@@ -62,6 +63,9 @@ jobs:
           python scripts/preserve_official_x_history.py
           python scripts/merge_direct_official.py
           python scripts/enrich_sources.py
+          # Recover X/Bilibili through independent public RSSHub hosts and keep
+          # the last known Bilibili rows when a temporary upstream outage occurs.
+          python scripts/repair_social_sources.py
           python scripts/enrich_social_images.py
           python scripts/enrich_weibo_images.py
           python scripts/normalize_weibo_cdn.py
