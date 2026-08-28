@@ -196,10 +196,12 @@ class ProjectStructureTests(unittest.TestCase):
             for name in ("index.html", "sw.js")
         )
         for name in (
-            "feed-status.js", "x-image-fix.js", "ui_fixes.js", "gallery-strip.js",
+            "feed-status.js", "ui_fixes.js", "gallery-strip.js",
             "month-sections.js", "early-info.js", "dev-release.js", "theme-kawaii.js",
         ):
             self.assertNotIn(name, combined)
+        self.assertIn("x-image-fix.js", combined)
+        self.assertTrue((DOCS / "x-image-fix.js").exists())
         self.assertFalse((ROOT / ".github" / "workflows" / "reset-lfm-state.yml").exists())
 
     def test_documentation_matches_active_model_and_schedule(self):
