@@ -21,6 +21,57 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Sa
 X_UA = "V=1&PN=WebApp&LANG=zh_CN&VN_CODE=102&LOC=CN&PLT=PC&DS=Android&UID={uuid}&OS=Windows&OSV=10&DT=PC"
 OFFICIAL_AUTHOR_TOKENS = ("vvanna", "以闪亮之名")
 MAX_DISCOVERED = 30
+MAX_ARTICLE_IMAGES = 12
+
+ARTICLE_IMAGE_PATH_TOKENS = {
+    "images",
+    "image_list",
+    "image_urls",
+    "pictures",
+    "photos",
+    "attachments",
+    "attachment",
+    "media",
+    "cover",
+}
+ARTICLE_IMAGE_URL_KEYS = {
+    "original_url",
+    "large_url",
+    "full_url",
+    "image_url",
+}
+BLOCKED_IMAGE_PATH_TOKENS = {
+    "author",
+    "user",
+    "avatar",
+    "app",
+    "game",
+    "group",
+    "icon",
+    "logo",
+    "emoji",
+    "qrcode",
+    "qr_code",
+    "badge",
+    "medal",
+    "recommend",
+    "recommended",
+    "related",
+    "share",
+    "follow",
+    "user_card",
+    "usercard",
+    "topic_group",
+}
+BLOCKED_IMAGE_URL_TOKENS = (
+    "/avatar/",
+    "/user/avatar",
+    "/icon/",
+    "/logo/",
+    "/emoji/",
+    "/qrcode/",
+    "/qr_code/",
+)
 
 
 def stable_id(value: str) -> str:
@@ -130,13 +181,46 @@ def normalize_epoch(value) -> int:
     return epoch if epoch > 1_500_000_000 else 0
 
 
-def collect_image_urls(value) -> list[str]:
-    found = []
+def normalize_image_url(value: str) -> str:
+    candidate = html.unescape(value or "").replace("\\/", "/").strip()
+    if not candidate.startswith(("http://", "https://")):
+        return ""
+    candidate = re.sub(r"/_tap_[^/?#]+(?=$|[?#])", "", candidate, flags=re.I)
+    try:
+        parsed = urllib.parse.urlparse(candidate)
+    except Exception:
+        return ""
+    host = parsed.netloc.lower()
+    if "tapimg.com" not in host and "tapimg.cn" not in host:
+        return ""
+    low_url = (parsed.path + "?" + parsed.query).lower()
+    if any(token in low_url for token in BLOCKED_IMAGE_URL_TOKENS):
+        return ""
+    return candidate
 
-    def walk(node, path=""):
+
+def image_path_score(path: tuple[str, ...]) -> int:
+    segments = {segment.casefold() for segment in path if segment}
+    if segments & BLOCKED_IMAGE_PATH_TOKENS:
+        return -100
+
+    score = 0
+    if segments & ARTICLE_IMAGE_PATH_TOKENS:
+        score += 8
+    if segments & ARTICLE_IMAGE_URL_KEYS:
+        score += 5
+    if path and path[-1].casefold() == "url":
+        score += 1
+    return score
+
+
+def collect_image_urls(value) -> list[str]:
+    ranked: dict[str, int] = {}
+
+    def walk(node, path=()):
         if isinstance(node, dict):
             for key, child in node.items():
-                walk(child, f"{path}/{key}".lower())
+                walk(child, path + (str(key).casefold(),))
             return
         if isinstance(node, list):
             for child in node:
@@ -144,25 +228,17 @@ def collect_image_urls(value) -> list[str]:
             return
         if not isinstance(node, str):
             return
-        candidate = html.unescape(node).replace("\\/", "/").strip()
-        if not candidate.startswith(("http://", "https://")):
+
+        score = image_path_score(path)
+        if score < 8:
             return
-        candidate = re.sub(r"/_tap_[^/?#]+(?=$|[?#])", "", candidate, flags=re.I)
-        try:
-            parsed = urllib.parse.urlparse(candidate)
-        except Exception:
+        candidate = normalize_image_url(node)
+        if not candidate:
             return
-        host = parsed.netloc.lower()
-        low = (path + " " + parsed.path).lower()
-        if "tapimg.com" not in host and "tapimg.cn" not in host:
-            return
-        if any(token in low for token in ("avatar", "user/avatar", "icon", "logo", "emoji", "qrcode", "qr_code")):
-            return
-        if candidate not in found:
-            found.append(candidate)
+        ranked[candidate] = max(score, ranked.get(candidate, -100))
 
     walk(value)
-    return found[:20]
+    return [url for url, _ in sorted(ranked.items(), key=lambda item: -item[1])][:MAX_ARTICLE_IMAGES]
 
 
 def article_from_api(payload: dict, moment_id: str):
@@ -213,6 +289,40 @@ def meta_value(page: str, name: str) -> str:
     return ""
 
 
+def collect_html_article_images(page: str) -> list[str]:
+    images = []
+
+    def add(value: str):
+        candidate = normalize_image_url(value)
+        if candidate and candidate not in images:
+            images.append(candidate)
+
+    add(meta_value(page, "og:image"))
+
+    normalized_page = html.unescape(page or "").replace("\\/", "/")
+    pattern = re.compile(
+        r'["\'](?P<key>original_url|large_url|full_url|image_url)["\']\s*:\s*["\'](?P<url>https?://[^"\'<>\s]+)["\']',
+        re.I,
+    )
+    for match in pattern.finditer(normalized_page):
+        context = normalized_page[max(0, match.start() - 260): match.start()].casefold()
+        article_pos = max(
+            (max(context.rfind(f'"{token}"'), context.rfind(f"'{token}'")) for token in ARTICLE_IMAGE_PATH_TOKENS),
+            default=-1,
+        )
+        blocked_pos = max(
+            (max(context.rfind(f'"{token}"'), context.rfind(f"'{token}'")) for token in BLOCKED_IMAGE_PATH_TOKENS),
+            default=-1,
+        )
+        if article_pos < 0 or blocked_pos > article_pos:
+            continue
+        add(match.group("url"))
+        if len(images) >= MAX_ARTICLE_IMAGES:
+            break
+
+    return images[:MAX_ARTICLE_IMAGES]
+
+
 def article_from_html(page: str, moment_id: str):
     title = meta_value(page, "og:title")
     if " - " in title:
@@ -236,17 +346,7 @@ def article_from_html(page: str, moment_id: str):
             epoch = normalize_epoch(match.group(1))
             break
 
-    images = []
-    cover = meta_value(page, "og:image")
-    if cover.startswith(("http://", "https://")):
-        images.append(cover)
-    for match in re.finditer(r'https?://[^"\'<>\s\\]+(?:tapimg\.com|tapimg\.cn)[^"\'<>\s\\]*', page, re.I):
-        candidate = html.unescape(match.group(0)).replace("\\/", "/")
-        candidate = re.sub(r"/_tap_[^/?#]+(?=$|[?#])", "", candidate, flags=re.I)
-        if candidate not in images:
-            images.append(candidate)
-        if len(images) >= 20:
-            break
+    images = collect_html_article_images(page)
 
     source_url = f"https://www.taptap.cn/moment/{moment_id}"
     return {
