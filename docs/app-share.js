@@ -11,6 +11,22 @@
     '#きらめきパラダイス #KiraparaNews',
   ].join('\n');
 
+  const installSection = document.querySelector('.menu-install-section');
+  if (installSection && !document.querySelector('.menu-discord-section')) {
+    const discord = document.createElement('section');
+    discord.className = 'menu-analysis-section menu-discord-section';
+    discord.innerHTML = `
+      <a class="menu-analysis-action" href="https://discord.gg/wDNNqt3H4" target="_blank" rel="noopener noreferrer" aria-label="Discordを開く">
+        <span class="menu-analysis-icon" aria-hidden="true">💬</span>
+        <span class="menu-analysis-copy">
+          <span><strong>Discord</strong></span>
+          <small>Kirapara NewsのDiscordを開く</small>
+        </span>
+        <span class="menu-analysis-arrow" aria-hidden="true">↗</span>
+      </a>`;
+    installSection.insertAdjacentElement('afterend', discord);
+  }
+
   let statusResetTimer = null;
   let shareImageFile = null;
 
