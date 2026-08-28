@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import difflib
-import hashlib
 import json
 import re
 from pathlib import Path
@@ -8,10 +7,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 MAX_TIME_GAP = 12 * 60 * 60
-
-
-def stable_id(value: str) -> str:
-    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:24]
 
 
 def normalize_title(value: str) -> str:
@@ -43,12 +38,13 @@ def same_story(a: dict, b: dict) -> bool:
     short, long = sorted((ta, tb), key=len)
     if len(short) >= 14 and short in long:
         return True
-    ratio = difflib.SequenceMatcher(None, ta, tb).ratio()
-    return ratio >= 0.76
+    return difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.76
 
 
 def platform_label(platform: str) -> str:
-    value = str(platform or "元記事")
+    value = str(platform or "元記事").strip()
+    if value == "公式サイト":
+        return value
     value = re.sub(r"^(?:公式|官方)", "", value).strip()
     value = re.sub(r"\s*·\s*(?:記事|動態)$", "", value).strip()
     return value or "元記事"
@@ -92,25 +88,24 @@ def quality_score(row: dict) -> int:
     return body + images * 250 + ai + official
 
 
+def has_images(row: dict) -> bool:
+    return bool(row.get("imageUrl") or row.get("imageUrls"))
+
+
 def merge_cluster(cluster: list[dict]) -> dict:
-    primary = max(cluster, key=quality_score).copy()
+    primary_row = max(cluster, key=quality_score)
+    primary = primary_row.copy()
     sources = []
     seen_urls = set()
-    images = []
-    seen_images = set()
     epochs = []
 
-    for row in cluster:
+    ordered_rows = [primary_row] + [row for row in cluster if row is not primary_row]
+    for row in ordered_rows:
         for source in source_entries(row):
             if source["url"] in seen_urls:
                 continue
             seen_urls.add(source["url"])
             sources.append(source)
-        for image in list(row.get("imageUrls") or []) + ([row.get("imageUrl")] if row.get("imageUrl") else []):
-            if not isinstance(image, str) or not image.startswith(("http://", "https://")) or image in seen_images:
-                continue
-            seen_images.add(image)
-            images.append(image)
         epoch = int(row.get("publishedAtEpoch") or 0)
         if epoch:
             epochs.append(epoch)
@@ -118,15 +113,22 @@ def merge_cluster(cluster: list[dict]) -> dict:
             if not primary.get(key) and row.get(key):
                 primary[key] = row[key]
 
+    # Keep one representative source's media. Mixing equivalent images from
+    # Weibo/TapTap/Bilibili makes the same artwork appear several times.
+    if not has_images(primary):
+        fallback = next((row for row in ordered_rows[1:] if has_images(row)), None)
+        if fallback:
+            if fallback.get("imageUrl"):
+                primary["imageUrl"] = fallback["imageUrl"]
+            if fallback.get("imageUrls"):
+                primary["imageUrls"] = list(fallback["imageUrls"])
+            if fallback.get("imageMirrorUrls"):
+                primary["imageMirrorUrls"] = list(fallback["imageMirrorUrls"])
+
     primary["sources"] = sources
     primary["sourceCount"] = len(sources)
-    if images:
-        primary["imageUrls"] = images[:16]
-        primary["imageUrl"] = primary.get("imageUrl") or images[0]
     if epochs:
         primary["publishedAtEpoch"] = min(epochs)
-    if len(sources) > 1:
-        primary["id"] = stable_id("merged:" + "|".join(sorted(seen_urls)))
     return primary
 
 
