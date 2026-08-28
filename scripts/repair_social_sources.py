@@ -28,6 +28,11 @@ RSSHUB_HOSTS = [
     "https://rsshub.rssforever.com",
 ]
 
+# rss.xxu.do is useful for X but does not consistently expose Bilibili routes.
+# Keep it out of the common pool so a predictable 404 does not add noise to every
+# Bilibili refresh.
+X_RSSHUB_HOSTS = ["https://rss.xxu.do", *RSSHUB_HOSTS]
+
 X_ACCOUNTS = [
     ("JAPAN", "kirapara_JP"),
     ("GLOBAL", "LifeMakeover510"),
@@ -175,7 +180,61 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 18):
     return rows
 
 
-def fetch_first(region: str, platform: str, routes):
+def canonical_source_url(platform: str, value: str) -> str:
+    value = html.unescape(str(value or "").strip())
+    if platform != "公式X":
+        return value
+    try:
+        parsed = urllib.parse.urlsplit(value)
+    except ValueError:
+        return value
+    if parsed.hostname and parsed.hostname.lower().removeprefix("www.") in {"x.com", "twitter.com"}:
+        match = re.match(r"^/([^/]+)/status/(\d+)", parsed.path, re.I)
+        if match:
+            return f"https://x.com/{match.group(1)}/status/{match.group(2)}"
+    return value
+
+
+def merge_feed_rows(platform: str, feeds, limit: int = 20):
+    """Merge healthy mirrors instead of trusting the quickest non-empty feed.
+
+    Public RSSHub mirrors can return HTTP 200 with an old cached timeline.  The
+    previous first-success policy therefore treated a stale mirror as success
+    and silently skipped newer X posts.  Combining every healthy response makes
+    the freshest post from any mirror win while still retaining a useful feed
+    when some mirrors lag.
+    """
+    merged = {}
+    for rows in feeds:
+        for incoming in rows:
+            if not isinstance(incoming, dict):
+                continue
+            row = dict(incoming)
+            url = canonical_source_url(platform, row.get("sourceUrl") or "")
+            if not url:
+                continue
+            row["sourceUrl"] = url
+            row["id"] = stable_id(url)
+            previous = merged.get(url)
+            if previous is None:
+                merged[url] = row
+                continue
+            previous_score = row_score(previous)
+            incoming_score = row_score(row)
+            if incoming_score > previous_score:
+                merged[url] = row
+            elif incoming_score == previous_score and int(row.get("publishedAtEpoch") or 0) > int(previous.get("publishedAtEpoch") or 0):
+                merged[url] = row
+    return sorted(
+        merged.values(),
+        key=lambda row: int(row.get("publishedAtEpoch") or 0),
+        reverse=True,
+    )[:limit]
+
+
+def fetch_best(region: str, platform: str, routes, hosts=None, limit: int = 20):
+    hosts = hosts or RSSHUB_HOSTS
+
     def fetch_candidate(candidate):
         host, route = candidate
         url = host.rstrip("/") + route
@@ -187,19 +246,36 @@ def fetch_first(region: str, platform: str, routes):
         except Exception as exc:
             return candidate, [], str(exc)
 
-    candidates = [(host, route) for route in routes for host in RSSHUB_HOSTS]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=min(10, len(candidates))) as pool:
+    candidates = [(host, route) for route in routes for host in hosts]
+    feeds = []
+    successes = []
+    failures = []
+    # All candidates start together so comparing mirrors does not make a refresh
+    # take the sum of their timeouts.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(24, len(candidates))) as pool:
         futures = [pool.submit(fetch_candidate, candidate) for candidate in candidates]
         for future in concurrent.futures.as_completed(futures):
             (host, route), rows, error = future.result()
             if rows:
-                for other in futures:
-                    other.cancel()
-                print(f"social repair {platform}: {len(rows)} via {host}{route}")
-                return rows
+                feeds.append(rows)
+                successes.append(f"{host}{route}")
             if error:
-                print(f"social repair failed {platform} {host}{route}: {error}")
-    return []
+                failures.append(f"{host}{route}: {error}")
+
+    rows = merge_feed_rows(platform, feeds, limit=limit)
+    if rows:
+        latest = int(rows[0].get("publishedAtEpoch") or 0)
+        print(
+            f"social repair {platform}: {len(rows)} merged from "
+            f"{len(successes)}/{len(candidates)} healthy feeds; latest={latest}"
+        )
+    else:
+        print(f"social repair {platform}: no healthy feed ({len(failures)}/{len(candidates)} failed)")
+    for error in failures[:3]:
+        print(f"  {error}")
+    if len(failures) > 3:
+        print(f"  ... {len(failures) - 3} more failures")
+    return rows
 
 
 def load_news_text(text: str):
@@ -284,21 +360,21 @@ def main():
     # they currently support.
     for region, handle in X_ACCOUNTS:
         quoted = urllib.parse.quote(handle)
-        additions.extend(fetch_first(region, "公式X", [
+        additions.extend(fetch_best(region, "公式X", [
             f"/twitter/user/{quoted}/exclude_rts_replies",
             f"/twitter/user/{quoted}",
-        ]))
+        ], hosts=X_RSSHUB_HOSTS))
 
     # Bilibili: dynamic posts carry most announcements; article/video routes are
     # additional coverage. If every live endpoint is down, Git history below
     # prevents a temporary outage from deleting the source from the app.
-    additions.extend(fetch_first("CHINA", "公式Bilibili · 動態", [
+    additions.extend(fetch_best("CHINA", "公式Bilibili · 動態", [
         f"/bilibili/user/dynamic/{BILIBILI_UID}",
     ]))
-    additions.extend(fetch_first("CHINA", "公式Bilibili · 記事", [
+    additions.extend(fetch_best("CHINA", "公式Bilibili · 記事", [
         f"/bilibili/user/article/{BILIBILI_UID}",
     ]))
-    additions.extend(fetch_first("CHINA", "公式Bilibili · 動画", [
+    additions.extend(fetch_best("CHINA", "公式Bilibili · 動画", [
         f"/bilibili/user/video/{BILIBILI_UID}",
     ]))
 

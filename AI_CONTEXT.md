@@ -96,7 +96,7 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 
 1. **原文ニュース収集はAIに依存しない。** AIが失敗しても原文タイムラインは更新可能であること。
 2. **元記事URLを失わない。** 同一ニュースを統合しても各媒体URLは `sources` に保持すること。
-3. **一時的な取得障害を削除と解釈しない。** last known good を優先し、公式Xや地域全体の履歴を不必要に消さないこと。
+3. **一時的な取得障害を削除と解釈しない。** last known good を優先し、公式X / Bilibiliなど媒体単位の履歴を不必要に消さないこと。
 4. **手動監査済み翻訳を自動処理で破壊しない。** `managedBySol` / `solLocked` を尊重すること。
 5. **異なる地域の記事を自動統合しない。** JAPAN / CHINA / KOREA / GLOBAL の境界を保持すること。
 6. **ニュースJSONを固定キャッシュしない。** PWAは新しいニュースを取りに行けること。
@@ -189,8 +189,15 @@ summaryFormatVersion: 4
 ### X
 
 - 公式Feedが一時的に空になった場合、`scripts/preserve_official_x_history.py` が直前履歴を保護します。
+- `scripts/repair_social_sources.py` は最初に応答したFeedを採用して終了せず、全healthy mirrorのURLを統合して最も新しい投稿を残します。HTTP 200でも古いキャッシュを返すミラーがあるため、この比較をfirst-successへ戻さないでください。
 - `docs/x-image-fix.js` はactiveです。
 - 可能な限り元投稿側の高解像度画像候補を優先します。
+
+### Bilibili
+
+- `scripts/repair_social_sources.py` で動態・記事・動画を別々に収集し、複数Feedの結果を統合します。
+- live Feedがすべて失敗した場合は、Git履歴にある直近のBilibili行をlast known goodとして復元します。
+- 同じCHINA地域のWeibo / TapTap等が成功しても、Bilibili取得成功とはみなしません。媒体単位の障害を地域単位の成功で上書きしないでください。
 
 ### Weibo
 

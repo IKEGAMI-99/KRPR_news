@@ -84,6 +84,16 @@ class DataTests(unittest.TestCase):
         for token in blocked:
             self.assertNotIn(token, titles)
 
+    def test_official_x_and_bilibili_sources_are_retained(self):
+        platforms = [str(row.get("platform") or "") for row in self.rows]
+        urls = [str(row.get("sourceUrl") or "").lower() for row in self.rows]
+        self.assertIn("公式X", platforms)
+        self.assertTrue(
+            any("bilibili" in platform.lower() for platform in platforms)
+            or any("bilibili.com" in url for url in urls),
+            "Bilibili disappeared from the normalized news cache",
+        )
+
     def test_complete_weibo_mirrors_are_backed_by_deployed_files(self):
         mirror_dir = DOCS / "media" / "weibo"
         for row in self.rows:
@@ -228,7 +238,7 @@ class ProjectStructureTests(unittest.TestCase):
         workflow = (ROOT / ".github" / "workflows" / "ai-translate.yml").read_text(encoding="utf-8")
         self.assertNotIn("Qwen", readme)
         self.assertIn("Gemma 4 E4B", readme)
-        self.assertIn("cron: '7-59/15 * * * *'", workflow)
+        self.assertIn("cron: '7,22,37,52 * * * *'", workflow)
         self.assertIn("LLM_MAX_ITEMS: '3'", workflow)
 
 
