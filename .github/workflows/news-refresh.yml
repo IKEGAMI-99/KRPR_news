@@ -15,6 +15,7 @@ on:
       - 'scripts/mirror_weibo_images.py'
       - 'scripts/enrich_bilibili_images.py'
       - 'scripts/upgrade_x_images.py'
+      - 'scripts/fetch_taptap_official.py'
       - 'scripts/fetch_wechat_official.py'
       - 'scripts/discover_web_news.py'
       - 'scripts/enrich_images.py'
@@ -61,6 +62,7 @@ jobs:
           python scripts/normalize_weibo_cdn.py
           python scripts/enrich_bilibili_images.py
           python scripts/upgrade_x_images.py
+          python scripts/fetch_taptap_official.py
           python scripts/fetch_wechat_official.py
           python scripts/discover_web_news.py
           python scripts/enrich_images.py
