@@ -12,6 +12,7 @@
   ].join('\n');
 
   let statusResetTimer = null;
+  let shareImageFile = null;
 
   function appShareUrl() {
     const url = new URL('./', window.location.href);
@@ -57,10 +58,15 @@
     return new File([bytes], 'kirapara-news.jpg', { type: 'image/jpeg' });
   }
 
-  // Preload before the user taps Share. Web Share requires a transient user
-  // activation, so the click handler should not wait on network I/O if possible.
-  const shareImagePromise = buildShareImageFile();
-  shareImagePromise.catch(() => null);
+  // Preload before the user taps Share. Calling navigator.share directly from
+  // the click keeps the browser's transient user activation alive.
+  buildShareImageFile()
+    .then((file) => {
+      shareImageFile = file;
+    })
+    .catch(() => {
+      shareImageFile = null;
+    });
 
   async function copyShareText(text) {
     if (navigator.clipboard?.writeText) {
@@ -86,18 +92,11 @@
 
     action.disabled = true;
     try {
-      let imageFile = null;
-      try {
-        imageFile = await shareImagePromise;
-      } catch {
-        imageFile = null;
-      }
-
       if (navigator.share) {
         let canShareImage = false;
-        if (imageFile && navigator.canShare) {
+        if (shareImageFile && navigator.canShare) {
           try {
-            canShareImage = navigator.canShare({ files: [imageFile] });
+            canShareImage = navigator.canShare({ files: [shareImageFile] });
           } catch {
             canShareImage = false;
           }
@@ -107,7 +106,7 @@
           await navigator.share({
             title: 'Kirapara News',
             text: fullText,
-            files: [imageFile],
+            files: [shareImageFile],
           });
           setShareStatus('文章と画像を共有しました', true);
           return;
