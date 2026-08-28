@@ -146,22 +146,22 @@
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678276380634975508": {
       "contentHash": "1bdee4ce56522c7527313b3e",
       "titleJa": "Life Makeover Lightchase Encore | Dance of Deceitが近日登場",
-      "bodyJa": "Life Makeover Lightchase Encore | Dance of Deceitが近日登場！「誘惑を捧げながら踊り、ここへ辿り着いたのね。私に求めているのは…」",
-      "summaryJa": "・イベント: Lightchase Encore\n・新コンテンツ: Dance of Deceitが近日登場予定",
+      "bodyJa": "Life Makeover Lightchase Encore | Dance of Deceitが近日登場！「誘惑を捧げ、踊りながらここへ辿り着いたのね。私に誘いを求めているの？」",
+      "summaryJa": "・追加: Dance of Deceitが近日登場予定",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877601
+      "updatedAtEpoch": 1787956189
     },
     "https://x.com/kirapara_JP/status/2092545084713799935": {
       "contentHash": "3f0b74046f4a084bea19ec61",
       "titleJa": "明日より『ファンタイム』開催👀 イベント期間⏰ 8月27日10:30-9月17日05:00 毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景...",
       "bodyJa": "明日より『ファンタイム』開催👀\n\nイベント期間⏰\n8月27日10:30-9月17日05:00\n\n毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景などの豪華報酬を獲得できます！\n詳細はゲーム内でチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・イベント開催: 「ファンタイム」が明日より開催\n・期間: 8月27日10:30〜9月17日05:00\n・内容: 毎日ログインし、カレンダーにスタンプを押すことで豪華報酬を獲得可能\n・報酬: 星5ファッションやフォト背景など",
+      "summaryJa": "・イベント開催: 「ファンタイム」が明日より開催\n・期間: 8月27日10:30〜9月17日05:00\n・内容: 毎日ログインし、カレンダーにスタンプを押すことで豪華報酬を獲得できる\n・報酬: 星5ファッションやフォト背景など",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877620
+      "updatedAtEpoch": 1787956199
     },
     "https://weibo.com/7521830234/RflMge0Oz": {
       "contentHash": "b6469cc122d42e614d54992a",
