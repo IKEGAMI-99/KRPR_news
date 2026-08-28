@@ -2,7 +2,7 @@ name: Translate News with Gemma 4 E4B LiteRT
 
 on:
   schedule:
-    - cron: '37 * * * *'
+    - cron: '2-59/5 * * * *'
   workflow_dispatch:
   push:
     paths:
@@ -46,7 +46,7 @@ jobs:
       - name: Restore Sol-managed locks
         run: python scripts/apply_sol_edits.py
 
-      - name: Reject non-Japanese cache and count pending translations
+      - name: Count articles still needing current Gemma translation
         id: llm_plan
         run: python -u scripts/strict_gemma_translate.py prepare --github-output "$GITHUB_OUTPUT"
 
@@ -70,7 +70,7 @@ jobs:
       - name: Restore Sol-managed locks before Gemma 4
         run: python scripts/apply_sol_edits.py
 
-      - name: Recheck strict Japanese pending translations
+      - name: Recheck Gemma backlog
         id: llm_plan
         run: python -u scripts/strict_gemma_translate.py prepare --github-output "$GITHUB_OUTPUT"
 
@@ -102,7 +102,9 @@ jobs:
             rm -f "$MODEL"
           fi
           if [ ! -f "$MODEL" ]; then
-            curl -fL --retry 4 --retry-delay 5 \
+            curl -fL --http1.1 \
+              --retry 8 --retry-all-errors --retry-delay 5 \
+              --connect-timeout 30 -C - \
               -o "$MODEL" \
               "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/main/gemma-4-E4B-it.litertlm?download=true"
           fi
@@ -114,10 +116,10 @@ jobs:
           python -m pip install --disable-pip-version-check --prefer-binary \
             "litert-lm==0.16.1"
 
-      - name: Translate and summarize queued articles with Gemma 4 E4B
+      - name: Translate and summarize one article with Gemma 4 E4B
         if: steps.llm_plan.outputs.pending != '0'
         env:
-          LLM_MAX_ITEMS: '20'
+          LLM_MAX_ITEMS: '1'
         run: |
           python -u scripts/strict_gemma_translate.py translate \
             --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm"
@@ -130,7 +132,7 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         run: python scripts/apply_sol_edits.py
 
-      - name: Commit AI cache when changed
+      - name: Commit one Gemma translation when changed
         if: steps.llm_plan.outputs.pending != '0'
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json)" ]; then
@@ -140,6 +142,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json data/translations.json
-          git commit -m "chore: translate queued news with Gemma 4 E4B LiteRT"
+          git commit -m "chore: replace one article with Gemma 4 E4B LiteRT"
           git pull --rebase origin main
           git push
