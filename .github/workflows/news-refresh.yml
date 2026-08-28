@@ -18,6 +18,7 @@ on:
       - 'scripts/fetch_taptap_official.py'
       - 'scripts/fetch_haoyoukuaibao.py'
       - 'scripts/fetch_wechat_official.py'
+      - 'scripts/merge_duplicate_sources.py'
       - 'scripts/discover_web_news.py'
       - 'scripts/enrich_images.py'
       - 'scripts/filter_small_images.py'
@@ -66,6 +67,7 @@ jobs:
           python scripts/fetch_taptap_official.py
           python scripts/fetch_haoyoukuaibao.py
           python scripts/fetch_wechat_official.py
+          python scripts/merge_duplicate_sources.py
           python scripts/discover_web_news.py
           python scripts/enrich_images.py
           python scripts/filter_small_images.py
