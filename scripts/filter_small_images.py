@@ -3,17 +3,20 @@ import concurrent.futures
 import json
 import struct
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 CACHE_PATH = ROOT / "data" / "image_quality.json"
-UA = "Mozilla/5.0 KiraparaNews-ImageQuality/1.1"
+UA = "Mozilla/5.0 KiraparaNews-ImageQuality/1.2"
+BROWSER_UA = "Mozilla/5.0 (Linux; Android 16; 24122RKC7G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Mobile Safari/537.36"
 MIN_SHORT_SIDE = 260
 MIN_AREA = 150_000
 MAX_READ = 512_000
 CACHE_TTL = 30 * 86400
+SINA_SUFFIXES = ("sinaimg.cn", "sinaimg.com")
 
 
 def read_json(path, default):
@@ -57,25 +60,74 @@ def dimensions(data: bytes):
     return None
 
 
-def probe(url: str):
+def is_sina(url: str) -> bool:
     try:
-        req = urllib.request.Request(url, headers={
-            "User-Agent": UA,
-            "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-            "Range": f"bytes=0-{MAX_READ - 1}",
-        })
-        with urllib.request.urlopen(req, timeout=8) as response:
-            ctype = (response.headers.get("Content-Type") or "").lower()
-            if ctype and not ctype.startswith("image/"):
-                return False, None
-            data = response.read(MAX_READ)
-        size = dimensions(data)
-        if not size:
-            return None, None
-        w, h = size
-        return min(w, h) >= MIN_SHORT_SIDE and w * h >= MIN_AREA, (w, h)
+        host = urllib.parse.urlparse(url).netloc.lower()
+        return any(host == suffix or host.endswith("." + suffix) for suffix in SINA_SUFFIXES)
     except Exception:
+        return False
+
+
+def request_profiles(url: str):
+    image_accept = "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"
+    if is_sina(url):
+        # Sina's CDN can reject generic bot UAs, a missing Weibo referer, or Range
+        # requests independently. Try browser-like combinations before declaring
+        # the image unverifiable. A hotlink response must never delete a real URL.
+        return [
+            {
+                "User-Agent": BROWSER_UA,
+                "Accept": image_accept,
+                "Accept-Language": "zh-CN,zh;q=0.9,ja;q=0.8",
+                "Referer": "https://weibo.com/",
+                "Range": f"bytes=0-{MAX_READ - 1}",
+            },
+            {
+                "User-Agent": BROWSER_UA,
+                "Accept": image_accept,
+                "Accept-Language": "zh-CN,zh;q=0.9,ja;q=0.8",
+                "Referer": "https://m.weibo.cn/",
+            },
+            {
+                "User-Agent": BROWSER_UA,
+                "Accept": image_accept,
+                "Accept-Language": "zh-CN,zh;q=0.9,ja;q=0.8",
+            },
+        ]
+    return [{
+        "User-Agent": UA,
+        "Accept": image_accept,
+        "Range": f"bytes=0-{MAX_READ - 1}",
+    }]
+
+
+def probe(url: str):
+    sina = is_sina(url)
+    saw_non_image = False
+    for headers in request_profiles(url):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=9) as response:
+                ctype = (response.headers.get("Content-Type") or "").lower()
+                if ctype and not ctype.startswith("image/"):
+                    saw_non_image = True
+                    continue
+                data = response.read(MAX_READ)
+            size = dimensions(data)
+            if not size:
+                continue
+            w, h = size
+            return min(w, h) >= MIN_SHORT_SIDE and w * h >= MIN_AREA, (w, h)
+        except Exception:
+            continue
+
+    # For Sina, an HTML/403/anti-hotlink response is not evidence that the real
+    # image is invalid. Keep it and let the browser/proxy fallbacks try it.
+    if sina:
         return None, None
+    if saw_non_image:
+        return False, None
+    return None, None
 
 
 def main():
@@ -129,6 +181,19 @@ def main():
 
     removed = 0
     known = 0
+    sina_total = 0
+    sina_known = 0
+    sina_unknown = []
+    for url in urls:
+        if not is_sina(url):
+            continue
+        sina_total += 1
+        verdict, size = results.get(url, (None, None))
+        if size:
+            sina_known += 1
+        elif verdict is None:
+            sina_unknown.append(url)
+
     for row in rows:
         values = []
         for url in list(row.get("imageUrls") or []) + ([row.get("imageUrl")] if row.get("imageUrl") else []):
@@ -150,6 +215,11 @@ def main():
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"image quality: cached={len(urls) - len(pending)} probed={len(pending)} known={known}")
     print(f"small/non-image candidates removed: {removed}")
+    print(f"Sina image quality: total={sina_total} verified={sina_known} unresolved={len(sina_unknown)}")
+    if sina_unknown:
+        print(f"::warning::Sina image verification unresolved for {len(sina_unknown)}/{sina_total} URLs; keeping them for browser fallback")
+        for url in sina_unknown[:8]:
+            print(f"Sina image unresolved: {url}")
 
 
 if __name__ == "__main__":
