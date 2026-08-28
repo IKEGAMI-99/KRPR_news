@@ -566,9 +566,9 @@
       "https://pbs.twimg.com/media/HQoeVzEbMAA7wbj?format=jpg&name=orig",
       "https://pbs.twimg.com/media/HQoeW8kagAAPNyT?format=jpg&name=orig"
     ],
-    "titleJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | イベント開催中（8月28日9:00〜9月17日23:59）",
-    "bodyJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit が、8月28日9:00から9月17日23:59まで開催されます！\n\n「君を断ることは決してできないよ。」\n\n#DanceofDeceit | 神々への崇拝と願いの中で、我々は無数の仮面を被る。 #LifeMakeover",
-    "summaryJa": "・追加: Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit が登場\n・期間: 8月28日9:00〜9月17日23:59",
+    "titleJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit イベント開催！",
+    "bodyJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit イベントが8月28日09:00から9月17日23:59まで開催されます！\n\n「君を断ることは決してできないよ。」\n\n#DanceofDeceit | 崇拝と願いの中で、我々は神々のために無数の仮面を被る。 #LifeMakeover",
+    "summaryJa": "・追加: Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit が登場\n・期間: 8月28日09:00〜9月17日23:59\n・イベント名: Dance of Deceit",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2",
@@ -599,7 +599,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -628,8 +628,8 @@
       "https://pbs.twimg.com/media/HQob6lebwAAxhog?format=jpg&name=orig"
     ],
     "titleJa": "Lightchase Encore | ★5セット「Saccharine Spell」プレビュー",
-    "bodyJa": "Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 神々を前に、そして願いを込めて、我々は無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
-    "summaryJa": "・追加: ★5セット「Saccharine Spell」がプレビュー公開\n・イベント: Dance of Deceitが開催\n・期間: 8月28日09:00から9月17日23:59まで",
+    "bodyJa": "Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 神々を讃え、願いを込めて、我々は無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+    "summaryJa": "・追加: ★5セット「Saccharine Spell」がプレビュー公開\n・イベント名: Dance of Deceit\n・期間: 8月28日09:00〜9月17日23:59",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2",
@@ -919,7 +919,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -4344,6 +4344,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
