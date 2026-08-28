@@ -2,19 +2,26 @@ name: Translate News with Gemma 4 E4B LiteRT
 
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '7 * * * *'
+    - cron: '22 * * * *'
+    - cron: '37 * * * *'
+    - cron: '52 * * * *'
   workflow_dispatch:
   push:
     paths:
       - 'scripts/translation_engine.py'
       - 'scripts/translation_quality.py'
       - 'scripts/strict_gemma_translate.py'
+      - 'scripts/merge_translation_results.py'
       - 'scripts/audit_translations.py'
       - 'scripts/apply_sol_edits.py'
       - 'scripts/glossary_schema.py'
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
+      # Every successful crawl updates this file, providing an event-driven
+      # fallback when GitHub drops a scheduled trigger.
+      - 'data/crawl_status.json'
       - '.github/workflows/ai-translate.yml'
 
 permissions:
@@ -128,16 +135,67 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         run: python scripts/apply_sol_edits.py
 
-      - name: Commit Gemma translations when changed
+      - name: Commit Gemma translations with semantic retry
         if: steps.llm_plan.outputs.pending != '0'
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json)" ]; then
             echo "No translation changes"
             exit 0
           fi
+
+          incoming_cache="${RUNNER_TEMP}/gemma-translations.json"
+          cp data/translations.json "$incoming_cache"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json data/translations.json
           git commit -m "chore: translate news with Gemma 4 E4B LiteRT"
-          git pull --rebase origin main
-          git push
+
+          for attempt in 1 2 3 4; do
+            echo "Translation push attempt ${attempt}/4"
+            git fetch origin main
+
+            if ! git merge-base --is-ancestor origin/main HEAD; then
+              set +e
+              git merge --no-commit --no-ff origin/main
+              merge_status=$?
+              set -e
+
+              conflicts="$(git diff --name-only --diff-filter=U)"
+              unexpected_conflicts="$(printf '%s\n' "$conflicts" | grep -vFx -e '' -e 'data/news.json' -e 'data/translations.json' || true)"
+              if [ -n "$unexpected_conflicts" ]; then
+                echo "Unexpected merge conflicts:"
+                printf '%s\n' "$unexpected_conflicts"
+                git merge --abort || true
+                exit 1
+              fi
+              if [ "$merge_status" -ne 0 ] && [ -z "$conflicts" ]; then
+                echo "Merge failed without a resolvable data-file conflict"
+                git merge --abort || true
+                exit 1
+              fi
+
+              # The newest main owns the collected article set. Reapply this
+              # run's generated cache entries semantically on top of it.
+              git checkout origin/main -- data/news.json data/translations.json
+              python scripts/merge_translation_results.py --incoming "$incoming_cache"
+              python scripts/apply_sol_edits.py
+              python scripts/strict_gemma_translate.py prepare
+              git add data/news.json data/translations.json
+
+              if git diff --name-only --diff-filter=U | grep -q .; then
+                echo "Unresolved merge conflicts remain"
+                git merge --abort || true
+                exit 1
+              fi
+              git commit --no-edit
+            fi
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+
+          echo "Translation push failed after retries"
+          exit 1

@@ -115,7 +115,7 @@
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">✦</span>
-        <div><strong>Gemma 4 E4B 翻訳・要約</strong><small>毎時 :07から15分おき・最大3記事</small></div>
+        <div><strong>Gemma 4 E4B 翻訳・要約</strong><small>毎時 :07から15分おき・収集完了時も起動</small></div>
         <b>15分ごと</b>
       </div>
       <div class="menu-schedule-row">

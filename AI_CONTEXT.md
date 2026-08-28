@@ -32,13 +32,17 @@ runtime_model:
 
 schedules:
   news_refresh: "hourly at minute 00"
-  ai_translate: "hourly at minutes 07,22,37,52; max 3 articles/run"
+  ai_translate: "hourly at minutes 07,22,37,52 and after successful crawl status updates; max 3 articles/run"
   gap_analysis: "daily 06:30 JST"
   analytics_refresh: "every 6 hours"
 
 write_coordination:
-  concurrency_group: kirapara-data-writer
-  collector_push_retry: "rebase latest main and retry up to 4 times"
+  collector_concurrency_group: kirapara-news-refresh
+  translator_concurrency_group: kirapara-ai-translate
+  manual_regeneration_concurrency_group: kirapara-data-writer
+  merge_script: scripts/merge_translation_results.py
+  conflict_policy: "reviewed translation first; otherwise newest updatedAtEpoch"
+  push_retry: "merge latest main semantically and retry up to 4 times"
 
 legal:
   terms: docs/terms.html
@@ -72,6 +76,7 @@ AIが変更を始める前に、対象機能について少なくとも以下を
 | 翻訳・要約キャッシュ | `data/translations.json` |
 | 現行AIモデル・revision | `scripts/strict_gemma_translate.py` |
 | 翻訳の共通処理 | `scripts/translation_engine.py` / `scripts/translation_quality.py` |
+| 並行書き込み時の翻訳統合 | `scripts/merge_translation_results.py` |
 | 最終クロール成功時刻 | `data/crawl_status.json` |
 | 手動監査・上書き | `data/sol_news.json` / `data/sol_overrides.json` |
 | 画像品質判定 | `data/image_quality.json` |
@@ -101,7 +106,7 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 5. **異なる地域の記事を自動統合しない。** JAPAN / CHINA / KOREA / GLOBAL の境界を保持すること。
 6. **ニュースJSONを固定キャッシュしない。** PWAは新しいニュースを取りに行けること。
 7. **Service Worker更新後に古い実装が残留し続けないこと。** 現行のcontroller変更時リロード設計を壊さないこと。
-8. **ニュース収集とAI書き込みを競合させない。** `kirapara-data-writer` の排他設計を維持すること。
+8. **並行するニュース収集とAI書き込みの結果を失わない。** 分離concurrency group、`merge_translation_results.py`、監査済み翻訳優先、最大4回のpush再試行を維持すること。
 9. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
 10. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
 11. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
@@ -183,6 +188,8 @@ summaryFormatVersion: 4
 古いrevisionは表示され続ける場合がありますが、backlogから順次再処理される対象です。
 
 `managedBySol` またはSol管理モデルとして明示されたエントリは別扱いで、有効な手動監査結果として保持されます。
+
+ニュース収集とAI翻訳は別concurrency groupで並行可能です。競合時は `scripts/merge_translation_results.py` が監査済みエントリを最優先し、自動生成同士では `updatedAtEpoch` が新しい方を採用します。同時更新を単純なrebaseで解決しないでください。
 
 ## Source-specific knowledge
 

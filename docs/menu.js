@@ -122,7 +122,7 @@
       <div class="dev-topline"><div><div class="dev-kicker">LOCAL AI</div><div class="dev-model">Gemma 4 E4B · LiteRT-LM</div></div><button class="dev-refresh" type="button" aria-label="翻訳状況を更新" title="翻訳状況を更新">↻</button></div>
       <div class="dev-status-card dev-waiting"><span class="dev-status-dot"></span><div><strong>翻訳状況を取得中</strong><small>公開中のニュースと翻訳キャッシュを照合します</small></div></div>
       <div class="dev-metrics"></div>
-      <p class="menu-note">翻訳は毎時07・22・37・52分に最大3記事ずつ処理します。GitHub Actionsの開始時刻は混雑時に少し遅れる場合があります。</p>
+      <p class="menu-note">翻訳は毎時07・22・37・52分に最大3記事ずつ処理し、ニュース収集完了時にも補助起動します。GitHub Actionsの開始時刻は混雑時に少し遅れる場合があります。</p>
       <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions" target="_blank" rel="noopener noreferrer">GitHub Actionsで確認する ↗</a>
     </div>`;
   body.appendChild(operations);
@@ -208,7 +208,7 @@
       ['1回の処理', '最大3記事'],
       ['実行間隔', '15分'],
       ['最終翻訳', lastEpoch ? tokyoDateTime.format(new Date(lastEpoch * 1000)) : '—'],
-      ['次回目安', nextRunLabel()],
+      ['次回定期', nextRunLabel()],
     ];
     for (const [label, value] of rows) {
       const metric = document.createElement('div');

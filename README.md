@@ -142,9 +142,9 @@ AI処理はGitHub Actions上で **Gemma 4 E4B** を **LiteRT-LM 0.16.1** から�
 
 ### 書き込み競合対策
 
-ニュース収集とAI翻訳はどちらも `data/news.json` や `data/translations.json` を更新する可能性があります。同時実行で一方の変更を消さないよう、同じ `kirapara-data-writer` concurrency groupで排他します。
+ニュース収集とAI翻訳は、長いGemma処理中も原文ニュース収集を止めないため、それぞれ `kirapara-news-refresh` と `kirapara-ai-translate` の別concurrency groupで並行実行します。
 
-さらに収集処理のpush直前に `main` が進んでいた場合は、最新状態へrebaseして最大4回までpushを再試行します。Gitをデータストア代わりに使う以上、最後に書いた人が全部持っていく雑な世界にはしない、という最低限の礼儀です。
+両方が `data/news.json` と `data/translations.json` を更新し得るため、push前に最新`main`をmergeし、`scripts/merge_translation_results.py` で翻訳キャッシュを意味的に統合します。`managedBySol` の監査済み結果を最優先し、それ以外は新しい `updatedAtEpoch` を採用します。競合時は、収集側が新しい原文記事セットを保持して最新翻訳を再適用し、翻訳側は最新の収集結果へ生成済み翻訳を再適用します。pushは最大4回再試行するため、同時実行でも一方の結果を失いません。
 
 ### PWAとキャッシュ戦略
 
@@ -170,7 +170,7 @@ Stableタグはニュースデータを凍結するものではなく、PWA本�
 - `managedBySol` / `solLocked` の手動監査結果を自動処理で上書きしない
 - JAPAN / CHINA / KOREA / GLOBALをまたいで記事を自動統合しない
 - ニュースJSONをService Workerで固定キャッシュしない
-- `kirapara-data-writer` の書き込み排他を維持する
+- 分離したdata writerの意味的マージ、監査済み翻訳優先、最大4回のpush再試行を維持する
 - Stable Releaseのテストgateを迂回しない
 - 検索バー、旧「先行情報トップ3」、予測UIを勝手に復活させない
 - `docs/x-image-fix.js` は削除済みlegacyではなく現行の有効機能として扱う
@@ -199,7 +199,7 @@ AIが変更を完了したと判断する前に、関連実装・テスト・Wor
    data/crawl_status.json ──► ヘッダーの「最終更新」
         │
         ▼
-毎時 :07 / :22 / :37 / :52  ai-translate.yml
+毎時 :07 / :22 / :37 / :52 ＋ 収集完了時  ai-translate.yml
         │
         ├─ 未処理が0件なら重いAIジョブを開始しない
         ├─ 未処理があれば1回最大3件をGemma 4で処理
@@ -210,7 +210,7 @@ AIが変更を完了したと判断する前に、関連実装・テスト・Wor
 
 5分ごとに1件ずつ処理していたAI構成は、モデル復元・ランタイム準備・checkoutの回数が多すぎるため廃止しました。現在は15分ごとに最大3件をまとめ、同等の最大処理量を保ちながらrunner起動回数を4分の1にしています。
 
-ニュース収集とAI処理は同じ `kirapara-data-writer` concurrency groupを使います。両方が同時に `data/news.json` と `data/translations.json` を書き換える競合を防ぐためです。収集結果のpush直前に別コミットで`main`が進んだ場合は、最新`main`へrebaseして最大4回までpushを再試行します。
+ニュース収集とAI処理は `kirapara-news-refresh` / `kirapara-ai-translate` の別concurrency groupで並行実行します。競合時は単純なrebaseに頼らず、最新`main`と生成済みキャッシュを意味的に統合し、監査済み翻訳または新しい翻訳を残して最大4回pushを再試行します。定期cronの取りこぼしに備え、収集成功で `data/crawl_status.json` が更新されたpushもAI処理を起動します。
 
 ## ニュース収集
 
@@ -282,7 +282,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 現在のスケジュール表示は実際のワークフローと揃えています。
 
 - ニュース収集: 毎時 :00
-- Gemma 4 E4B 翻訳・要約: 毎時 :07 / :22 / :37 / :52、1回最大3記事
+- Gemma 4 E4B 翻訳・要約: 毎時 :07 / :22 / :37 / :52に加え、ニュース収集完了時にも起動、1回最大3記事
 - Sol監査: 08:00 / 14:00 / 20:00 JST
 - 更新watchdog: 毎時 :30、異常時のみ再起動
 
@@ -291,7 +291,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 | Workflow | 実行 | 役割 |
 | --- | --- | --- |
 | `news-refresh.yml` | 毎時00分 | ニュース収集、公式X / Bilibiliの複数Feed統合と履歴保護、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
-| `ai-translate.yml` | 毎時07 / 22 / 37 / 52分 | backlog確認、最大3件のGemma 4 E4B翻訳・要約 |
+| `ai-translate.yml` | 毎時07 / 22 / 37 / 52分、ニュース収集完了時 | backlog確認、最大3件のGemma 4 E4B翻訳・要約、競合時の意味的キャッシュ統合 |
 | `regenerate-ai.yml` | リポジトリ所有者のIssue | 指定記事のAI結果を再生成 |
 | `gap-analysis.yml` | 毎日06:30 JST | 地域別の実装差分析を更新 |
 | `analytics-refresh.yml` | 6時間ごと | GA4の集計スナップショットを更新（公開は `pages.yml` に一本化） |

@@ -254,8 +254,27 @@ class ProjectStructureTests(unittest.TestCase):
         workflow = (ROOT / ".github" / "workflows" / "ai-translate.yml").read_text(encoding="utf-8")
         self.assertNotIn("Qwen", readme)
         self.assertIn("Gemma 4 E4B", readme)
-        self.assertIn("cron: '7,22,37,52 * * * *'", workflow)
+        for minute in (7, 22, 37, 52):
+            self.assertIn(f"cron: '{minute} * * * *'", workflow)
+        self.assertIn("- 'data/crawl_status.json'", workflow)
+        self.assertIn("python scripts/merge_translation_results.py", workflow)
         self.assertIn("LLM_MAX_ITEMS: '3'", workflow)
+
+
+    def test_parallel_data_writers_merge_translation_results(self):
+        ai_workflow = (ROOT / ".github" / "workflows" / "ai-translate.yml").read_text(encoding="utf-8")
+        news_workflow = (ROOT / ".github" / "workflows" / "news-refresh.yml").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("group: kirapara-ai-translate", ai_workflow)
+        self.assertIn("group: kirapara-news-refresh", news_workflow)
+        self.assertIn("python scripts/merge_translation_results.py", ai_workflow)
+        self.assertIn("python scripts/merge_translation_results.py", news_workflow)
+        self.assertNotIn("git pull --rebase origin main", ai_workflow)
+        self.assertNotIn("git pull --rebase origin main", news_workflow)
+        self.assertIn("kirapara-ai-translate", readme)
+        self.assertIn("kirapara-news-refresh", readme)
+        self.assertIn("意味的", readme)
 
 
 if __name__ == "__main__":
