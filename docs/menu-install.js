@@ -26,7 +26,7 @@
       <span class="menu-analysis-icon" aria-hidden="true">📊</span>
       <span class="menu-analysis-copy">
         <span><strong>実装差分析</strong><b>BETA</b></span>
-        <small>各国の実装差・日本版の実装時期予想</small>
+        <small>各国の実装差・コンテンツ比較</small>
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
@@ -55,7 +55,7 @@
     <div class="menu-schedule-list">
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">↻</span>
-        <div><strong>ニュース収集</strong><small>毎時 :17</small></div>
+        <div><strong>ニュース収集</strong><small>毎時 :00</small></div>
         <b>1時間ごと</b>
       </div>
       <div class="menu-schedule-row">
