@@ -152,14 +152,14 @@
         "url": "https://weibo.com/7521830234/RflMge0Oz"
       },
       {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1241187139140452373"
-      },
-      {
         "platform": "公式Bilibili · 記事",
         "label": "Bilibili",
         "url": "https://www.bilibili.com/opus/1241187139140452373"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1241187139140452373"
       }
     ],
     "sourceCount": 3,
@@ -194,7 +194,7 @@
       "https://img2-tc.tapimg.com/moment/etag/FsAA7q4dV10AZ2gW-2Ak7BaK4BUo_20260330183842.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lhUK8JU1hGEsdnlaQUnBBU4KEKA1_20251011192332.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/llK3JiYFjheNQ1zgCIbVpS5nE-xx_20260309140034.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lomWdPw0_MbuJgQ30d0YCzNNNZiI_20250901155946.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lomWdPw0_MbuJgQ30d0YCzNNNZiI_20250901160046.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/luFRSTQUpHEQnpqrl5MTnEj-Kk2E_20250915162100.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FuIIFiOlcLN0iUtcz_0BeNeciy4Y_20260825185115.jpg/_tap_banner.jpg",
       "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
@@ -298,6 +298,17 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FlzLNhNlKg4XYp7mQvioPS6PAg18_20260808002727.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/li16ezm3NcOa8YY4qfdrP1eOnKaw_20260717222039.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/llfkjKRQS-twTOZkHErYMMN4gb2h_20260205185817.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FpIuVzL_UiBeIJ8nHfAMVmuqe40T_20260807152901.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fn0T-oEkyTECtXcbp-OnMgpjjye0_20260827111236.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FkOsEpzuCBqmqQUInmG4QGdhHQrF_20260428150813.jpg/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg"
     ],
     "sources": [
@@ -954,17 +965,7 @@
     "sourceUrl": "https://x.com/kirapara_JP/status/2092526209351696684",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1787732100,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089296764025405441/img/r_dnlD3MvtxYujU3.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089296764025405441/img/r_dnlD3MvtxYujU3.jpg",
-      "https://pbs.twimg.com/media/HP6sYjdbMAAilfn?format=jpg&name=orig"
-    ],
-    "titleJa": "☀️星の交響楽パック特別販売☀️ 指定されたクエストを完了すると、最大78%OFFで購入できます",
-    "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
-    "summaryJa": "・特別販売: 星の交響楽パックが最大78%OFFで購入可能\n・対象アイテム: 星5背中アクセ『契りの浮星』（専属メイン画面ポーズ付き）\n・販売期間: 8月27日10:30〜9月9日23:59\n・入手条件: 指定されたクエストを完了すること",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2",
+    "imageUrl": "https://pbs.twimg.com/media/HP6sYjdbMAAilfn?format=jpg&name=orig",
     "sources": [
       {
         "platform": "公式X",
@@ -972,7 +973,16 @@
         "url": "https://x.com/kirapara_JP/status/2092526209351696684"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6sYjdbMAAilfn?format=jpg&name=orig"
+    ],
+    "titleJa": "☀️星の交響楽パック特別販売☀️ 指定されたクエストを完了すると、最大78%OFFで購入できます",
+    "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・特別販売: 星の交響楽パックが最大78%OFFで購入可能\n・対象アイテム: 星5背中アクセ『契りの浮星』（専属メイン画面ポーズ付き）\n・販売期間: 8月27日10:30〜9月9日23:59\n・入手条件: 指定されたクエストを完了すること",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b8fc1d7cf3d898f7d4c9dc7f",
@@ -984,9 +994,6 @@
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1787731200,
     "imageUrl": "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -995,6 +1002,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig"
+    ],
     "titleJa": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
     "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "・イベント期間中にアプリ内課金（金額指定なし）を行うと、『茶を巡る旅』画面で星5所持品と壺の中の日月を受け取れる\n・さらに還元Expで追加の報酬も獲得可能\n・期間: 8月27日10:30～9月16日23:59\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
@@ -1012,9 +1022,6 @@
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1787729400,
     "imageUrl": "https://pbs.twimg.com/media/HP6rawZa8AAAAlz?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP6rawZa8AAAAlz?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -1023,6 +1030,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6rawZa8AAAAlz?format=jpg&name=orig"
+    ],
     "titleJa": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
     "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "・追加: 5つの無料イベントが開催されます\n・内容: 星5セット、星4セットを獲得できるチャンスです\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
@@ -1040,9 +1050,6 @@
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1787727601,
     "imageUrl": "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -1051,6 +1058,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig"
+    ],
     "titleJa": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
     "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
     "summaryJa": "・新機能として立ち姿勢固定モードがまもなく登場します\n・デイリー任務に「お任せ派遣機能」が追加されます\n・新テーマ曲が登場します\n・交換ショップに新たなファッションと報酬が追加されます",
@@ -1251,10 +1261,7 @@
     "sourceUrl": "https://x.com/kirapara_JP/status/2092167598372958331",
     "publishedLabel": "3日前",
     "publishedAtEpoch": 1787646600,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089278099733336064/img/TUQfU53SOHfUxKGk.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089278099733336064/img/TUQfU53SOHfUxKGk.jpg"
-    ],
+    "imageUrl": null,
     "sources": [
       {
         "platform": "公式X",
@@ -1262,7 +1269,8 @@
         "url": "https://x.com/kirapara_JP/status/2092167598372958331"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "imageUrls": []
   },
   {
     "id": "8c458012d4af3868e192eb95",
@@ -1274,11 +1282,6 @@
     "publishedLabel": "3日前",
     "publishedAtEpoch": 1787646000,
     "imageUrl": "https://pbs.twimg.com/media/HP6ArfFa8AELJxu?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP6ArfFa8AELJxu?format=jpg&name=orig",
-      "https://pbs.twimg.com/media/HP6AtZubEAAEtX3?format=jpg&name=orig",
-      "https://pbs.twimg.com/media/HP6AufDbYAALDDZ?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -1286,7 +1289,10 @@
         "url": "https://x.com/kirapara_JP/status/2092165079798050874"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6ArfFa8AELJxu?format=jpg&name=orig"
+    ]
   },
   {
     "id": "c80453468c860161b120b9fc",
@@ -1575,10 +1581,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1240026209509703687",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787545500,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c"
+      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg"
     ],
     "sources": [
       {
@@ -2094,17 +2100,24 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrG_dGdyeGeqLOUWjsUFwi0P5NiY_20260723130133.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fi2-S_4LLtTWfm1I_DILMjoXGeNw_20260821114927.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FsB8AKO1-YATU6Sg4074kXBXAV7k_20260821114926.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FkCfPGV3uP9ItC3p0t3Ij6kL0H-8_20260821114928.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FjV3jNtGLjZ6Dkc_qzj7bSiPnzLu_20260821114928.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FthHcvTKp7m2gBSKYRLGfg2hD8Q5_20260628113646.jpg/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fi2-S_4LLtTWfm1I_DILMjoXGeNw_20260821114927.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FsB8AKO1-YATU6Sg4074kXBXAV7k_20260821114926.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FkCfPGV3uP9ItC3p0t3Ij6kL0H-8_20260821114928.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FjV3jNtGLjZ6Dkc_qzj7bSiPnzLu_20260821114928.jpg"
+      "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg"
     ],
     "sources": [
       {
@@ -2147,9 +2160,20 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Foot50bXhL5-sVXWmXiUxemwHxvq_20260820115524.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/Foot50bXhL5-sVXWmXiUxemwHxvq_20260820115524.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lvG9fzAUq7Kh62dkQfP3bilyXtMJ_20260820115532.png/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lnRjhnQujoAw8XBkBFSJ0soith4L_20260818142728.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lkgbKXJOsgcGq9ENYD9OODZkC_Yg_20260818130343.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fi_7pRObgsdKgmzoeGipliCp43Rw_20260818132030.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fp_W2CWCHqhZw1fYSOVJ_mt2deYM_20260821193001.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FjX0gsonNPF450Rj3Ze-pdlcXPm0_20260820115528.png/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FmhxRiusMjOa1GCi3jnvkCVVsu9l_20260820115531.png/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fmy2Z9BzGxR13M7CziVMKLQG6yh8_20260821170544.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FlZUujluxpi6MXwaGBxsKffQlkLi_20260819114935.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Foot50bXhL5-sVXWmXiUxemwHxvq_20260820115524.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lvG9fzAUq7Kh62dkQfP3bilyXtMJ_20260820115532.png",
       "https://img2-tc.tapimg.com/moment/etag/FjX0gsonNPF450Rj3Ze-pdlcXPm0_20260820115528.png",
@@ -2523,8 +2547,8 @@
       "https://img2-tc.tapimg.com/moment/etag/Fm38EIEGvI4DK0ANpmDhxInyQJDi_20260712181930.png/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lnRjhnQujoAw8XBkBFSJ0soith4L_20260818142728.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lkgbKXJOsgcGq9ENYD9OODZkC_Yg_20260818130343.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fi_7pRObgsdKgmzoeGipliCp43Rw_20260818132030.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fp_W2CWCHqhZw1fYSOVJ_mt2deYM_20260821193001.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fi_7pRObgsdKgmzoeGipliCp43Rw_20260818132030.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fi6bBhvWGFSSc3dmVlF42FS0L1Eb_20260819114935.jpg/_tap_ugc.jpg",
@@ -2599,7 +2623,7 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136304",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787023138,
-    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
+    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
     "sources": [
       {
         "platform": "公式Steam",
@@ -2609,7 +2633,7 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
     ]
   },
   {
@@ -2621,7 +2645,7 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136302",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022698,
-    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
     "sources": [
       {
         "platform": "公式Steam",
@@ -2631,6 +2655,7 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
+      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
       "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
     ]
   },
@@ -2643,7 +2668,7 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136300",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022504,
-    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
+    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
     "sources": [
       {
         "platform": "公式Steam",
@@ -2653,6 +2678,7 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
+      "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
       "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
     ]
   },
@@ -3833,7 +3859,18 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FiC_xudWmBZgwj7dfElmqkJS3I6U_20260717144245.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/FiC_xudWmBZgwj7dfElmqkJS3I6U_20260717144245.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FiC_xudWmBZgwj7dfElmqkJS3I6U_20260717144245.jpg/_tap_banner.jpg"
+      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FikQ0ZvApp5WjZl4Ml7_VoLUzW7C_20251026000353.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FiC_xudWmBZgwj7dfElmqkJS3I6U_20260717144245.jpg/_tap_banner.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/video-picture/tid-6978396c2238e66def56c668/first.jpg/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/video-picture/tid-6a49fd23878f47d09fa8af94/first.jpg/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg"
     ],
     "sources": [
       {
@@ -4169,6 +4206,668 @@
       }
     ],
     "sourceCount": 1
+  },
+  {
+    "id": "d58bf5031e6e47e91abf6ca0",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "스타일라잇 업데이트 스포일러 KEY WORD: 신비의 책 의문의 바람이 작업실을 지나며, 테이블 위의 디자인 스케치들이 마치 춤을 추듯 흩날린다. 구석에 놓인 오...",
+    "body": "스타일라잇 업데이트 스포일러\n\nKEY WORD: 신비의 책\n\n의문의 바람이 작업실을 지나며, 테이블 위의 디자인 스케치들이 마치 춤을 추듯 흩날린다. \n구석에 놓인 오래된 책이 눈에 띄고, 그 책이 무언가를 부르고 있는 듯한 느낌이 든다. \n\n가까이 다가가 손을 뻗자, 책이 서서히 열리며 그 속에서 찬란한 프리즘 빛이 퍼져 나간다. \n빛이 사라진 자리에 \"케이크, 케이크!\" 노래를 부르는 작은 형체가 \n날개를 퍼덕이며 나타나 신비로운 열쇠를 당신에게 건네는데...\n\n빛나는 세계\nGUESS WHO'S NEXT?\n\n▶ 게임 다운로드 \n- \n\n#스타일라잇 #스타일라잇업데이트 #스타일라잇카캡체 #카캡체",
+    "sourceUrl": "https://x.com/stylight_kr/status/1989166401542656005",
+    "publishedLabel": "2025-11-14",
+    "publishedAtEpoch": 1763089201,
+    "imageUrl": "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1989166401542656005"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "c5dd49257aa19252902640c3",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "우와아ㅠㅠㅠㅠ💍💍💍💍",
+    "body": "우와아ㅠㅠㅠㅠ💍💍💍💍 시안 CYAN シアン🎀: #스타일라잇 #영원한서약 \n💍 오늘 꼭 보러와줘 기다리고있을게 ❤︎",
+    "sourceUrl": "https://x.com/stylight_kr/status/1989148523359805872",
+    "publishedLabel": "2025-11-14",
+    "publishedAtEpoch": 1763084939,
+    "imageUrl": "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1989148523359805872"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "fb52b98fd1225f5b512bb91c",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "💌 G-STAR 2025 | 유령신부 & 닉스의 초대장 ‘영원한 서약’, ‘닉스의 장미’ 코스튬을 입은 아름다운 코스어분들과 함께하는 특별한 순간",
+    "body": "💌 G-STAR 2025 | 유령신부 & 닉스의 초대장\n\n‘영원한 서약’, ‘닉스의 장미’ 코스튬을 입은\n아름다운 코스어분들과 함께하는 특별한 순간!\n다양한 현장 이벤트로 지스타를 스타일라잇의 색으로 물들일 예정이에요.\n\n🗓 11월 14일~15일\n📍 게릴라 이벤트: 부산 벡스코 BTC 1관 전시장\n📍 포토월 행사장: 부산 롯데백화점 센텀시티점 지하 2층 PLAY ON & POP UP\n\n[CAST LIST]\n💍 영원한 서약 — @CYAN_Nyacos \n🌹 닉스의 장미 — @sunyoyun \n\n이벤트에 참여하거나 현장에서 스타일라잇 코스튬을 발견하면 #스타일라잇 해시태그와 함께 자랑해주세요!\n바로 찾아가서 💕 눌러드릴게요.\n\n그럼 내일, 지스타에서 만나요!\n\n#스타일라잇 #영원한서약 #지스타2025 #싫은말분쇄기 #지스타장미챌린지",
+    "sourceUrl": "https://x.com/stylight_kr/status/1988971986064949347",
+    "publishedLabel": "2025-11-13",
+    "publishedAtEpoch": 1763042849,
+    "imageUrl": "https://pbs.twimg.com/media/G5o_efiacAAdFVl?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1988971986064949347"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5o_efiacAAdFVl?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "2b821fdd745446a3ea25aed4",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "“마음을 짓눌렀던 편견이 있나요",
+    "body": "“마음을 짓눌렀던 편견이 있나요?\n그 편견을 불태우고, 자유로운 나를 마주해 보세요.”\n\n신규 6★ ‘영원한 서약’ 출시 기념 경품 이벤트 진행 중!\n\n• 경품 (총 30명 추첨)\n- 공식 굿즈 ‘산신 스트레스볼 인형’ (10명)\n- 구글 플레이 기프트 카드 1만원권 (20명)\n\n• 참여 방법\n1. 게시글 RT\n2. 타래의 이벤트 링크에 접속해 직접 선택한 ‘편견’을 태우는 이벤트를 즐겨 주세요.\n링크 안내에 따라 연락처를 입력·제출하면 응모 완료!\n\n• 이벤트 기간: ~11/19(수)\n• 당첨자 발표: 11/21(금)\n\n많은 참여 부탁드립니다!",
+    "sourceUrl": "https://x.com/stylight_kr/status/1987028219867111728",
+    "publishedLabel": "2025-11-08",
+    "publishedAtEpoch": 1762579419,
+    "imageUrl": "https://pbs.twimg.com/media/G5NXoIgbIAQ9KWD?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1987028219867111728"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5NXoIgbIAQ9KWD?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "087f571aa51e42e3fde411a1",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "『We Burn, We Bloom』 EVENT “마음을 짓눌렀던 편견이 있나요",
+    "body": "『We Burn, We Bloom』 EVENT\n\n“마음을 짓눌렀던 편견이 있나요?\n그 편견을 불태우고, 자유로운 나를 마주해 보세요.”\n\n신규 6★ 코스튬 ‘영원한 서약’ 출시를 기념해 경품 이벤트를 준비했습니다!\n\n🔥경품 (총 30명 추첨)\n- 공식 굿즈 ‘산신 스트레스볼 인형’ (10명)\n- 구글 플레이 기프트 카드 1만원권 (20명)\n\n🔥이벤트 링크\n- \n\n🌹참여 방법\n1. 게시글 RT\n2. 이벤트 링크에 접속해 직접 선택한 ‘편견’을 태우는 이벤트를 즐겨 주세요.\n링크 안내에 따라 연락처를 입력·제출하면 응모 완료!\n\n🌹참여 기간: ~11/19(수)까지\n당첨자 발표: 11/21(금) X & 공식 카페에서 공개\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #weburnwebloom",
+    "sourceUrl": "https://x.com/stylight_kr/status/1986275311475171822",
+    "publishedLabel": "2025-11-06",
+    "publishedAtEpoch": 1762399912,
+    "imageUrl": "https://pbs.twimg.com/media/G5CcHIjbIAUUpM4?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1986275311475171822"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5CcHIjbIAUUpM4?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "1ac300f7234bcfb6171f6f89",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "限定ガチャイベント『綺想の扉』まもなく開催",
+    "body": "限定ガチャイベント『綺想の扉』まもなく開催！\n星6セット「綺夢の旅」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆11月6日\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1984908337800986985",
+    "publishedLabel": "2025-11-02",
+    "publishedAtEpoch": 1762074000,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/1983449860746641408/img/vNx18CoCI_ZpL5b3.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/1983449860746641408/img/vNx18CoCI_ZpL5b3.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1984908337800986985"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "09130996369612db500dbcdd",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "\"아니 다들 이렇게 예쁘시면 저는 고를 수가 없어요",
+    "body": "\"아니 다들 이렇게 예쁘시면 저는 고를 수가 없어요!!\"\n\n🥭여러분의 상큼한 아이스 망고 후기\n지금 바로 인용으로 자랑해 주세요~\n\n(˶˃ᆺ˂˶) 오늘의 작품: \n1번 작가님(게임 닉네임): 하휴 \n2번 작가님(게임 닉네임): 림즈\n\n감사합니다!\n#스타일라잇 #스타일라잇_파트너즈",
+    "sourceUrl": "https://x.com/stylight_kr/status/1982784147086078263",
+    "publishedLabel": "2025-10-27",
+    "publishedAtEpoch": 1761567553,
+    "imageUrl": "https://pbs.twimg.com/media/G4RAngnWAAA1Aqc?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1982784147086078263"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G4RAngnWAAA1Aqc?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "b160a329ccbbcef0486b6a68",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Free Life Makeover x Cardcaptor Sakura Collab Set",
+    "body": "Free Life Makeover x Cardcaptor Sakura Collab Set!\n\nFrom Nov. 6 to Nov. 12, join Popping Gifts event for the Life Makeover x Cardcaptor Sakura Collab set!\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982356524555968856",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761465600,
+    "imageUrl": "https://pbs.twimg.com/media/G38dwxMWwAAcGAm?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982356524555968856"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G38dwxMWwAAcGAm?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "95951fb3c6d0b1c6fe9a131d",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version | 5-Star Set [Clear Prelude] Preview",
+    "body": "New Version | 5-Star Set [Clear Prelude] Preview!\n\nLife Makeover x Cardcaptor Sakura New Version - Card Pact available from Oct. 29 to Nov. 18!\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982311228002517080",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761454800,
+    "imageUrl": "https://pbs.twimg.com/media/G38bZypWkAAh4SM?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982311228002517080"
+      },
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982341426303451516"
+      }
+    ],
+    "sourceCount": 2,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G38bZypWkAAh4SM?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "d491aefe691e5c7ef57861f2",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version | 5-Star Set [Clear Prelude] In-game Footage Life Makeover x Cardcaptor Sakura New Version - Card Pact avail",
+    "body": "New Version | 5-Star Set [Clear Prelude] In-game Footage\n\nLife Makeover x Cardcaptor Sakura New Version - Card Pact available from Oct. 29 to Nov. 18!\n\n#LifeMakeover #CardcaptorSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982296128709156892",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761451201,
+    "imageUrl": null,
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982296128709156892"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": []
+  },
+  {
+    "id": "1834e6ddc8475f026ea7b2af",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "“반드시 지켜줄게… 너만은” 나시온과의 아름다운 이야기가 곧 시작됩니다. - 기간 한정 이벤트 '그림자의 맹세' 10월 30일(목) 출시",
+    "body": "“반드시 지켜줄게… 너만은”\n\n나시온과의 아름다운 이야기가 곧 시작됩니다.\n\n- 기간 한정 이벤트 '그림자의 맹세' \n10월 30일(목) 출시!\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드\n- \n\n#스타일라잇  #스타일라잇강림  #스타일라잇업데이트  #영원한서약 #나시온",
+    "sourceUrl": "https://x.com/stylight_kr/status/1982286866771775676",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761448992,
+    "imageUrl": "https://pbs.twimg.com/media/G4J_YTEWQAA1tat?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1982286866771775676"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G4J_YTEWQAA1tat?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "0d086352fc6ba52c4d6a9e73",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version | Card Pact Preview: Hearts resonate, the contract echoes eternally. Life Makeover x Cardcaptor Sakura New V",
+    "body": "New Version | Card Pact Preview: Hearts resonate, the contract echoes eternally.\nLife Makeover x Cardcaptor Sakura New Version - Card Pact available from Oct. 29 to Nov. 18!\n\n\"Key that hides the power of stars, reveal your true form before me—Release!\"\n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982281039390429594",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761447603,
+    "imageUrl": null,
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982281039390429594"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": []
+  },
+  {
+    "id": "6d77d5fe31be502b664b0f6b",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "The seal is loosening; the contract is approaching. This hurricane about to sweep across the entire world of Life Makeov",
+    "body": "The seal is loosening; the contract is approaching.\n\nThis hurricane about to sweep across the entire world of Life Makeover—what is its true name...?\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982039446787600496",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761390003,
+    "imageUrl": "https://pbs.twimg.com/media/G38adAsXcAAurfG?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982039446787600496"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G38adAsXcAAurfG?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "58d17ad8d93be6de55d7a193",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[이벤트] 트렌드 코드 『은빛 달의 전설』 예고 \"전설 속 붉은 눈의 소녀, 혹시 그녀를 알고 계신가요",
+    "body": "[이벤트] 트렌드 코드 『은빛 달의 전설』 예고\n\n\"전설 속 붉은 눈의 소녀, 혹시 그녀를 알고 계신가요?\"\n\n🐺유니크한 헤어와 다양한 재해석이 가능한 원피스, \n빛나는 연말 분위기에 완벽하게 어울리는 스타일라잇의 NEW 트렌드 코드!\n\n🕙 10/30(목) ~ 12/11(목)\n\n[이벤트 상세]\n- 다양한 데일리",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981931221065048303",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761364200,
+    "imageUrl": "https://pbs.twimg.com/media/G4COR92W8AAaGTW?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981931221065048303"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G4COR92W8AAaGTW?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "4a09786e309aff4cf3f9a843",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "SSR 인연 카드, 나시온의『죽음의 키스』진화 \"맹세의 입맞춤, 목숨을 걸고 지킬 약속\" 🤍당신의 손에 쥐어진 그의 운명 그 이야기가 곧 시작됩니다. - 기간 ...",
+    "body": "SSR 인연 카드, 나시온의『죽음의 키스』진화\n\n\"맹세의 입맞춤,\n목숨을 걸고 지킬 약속\"\n\n🤍당신의 손에 쥐어진 그의 운명\n그 이야기가 곧 시작됩니다.\n\n- 기간 한정 이벤트 '그림자의 맹세' 10월 30일(목) 출시!\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드\n- \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #영원한서약",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981929207958565051",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761363720,
+    "imageUrl": "https://pbs.twimg.com/media/G4CKWxmXIAA56Y-?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981929207958565051"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G4CKWxmXIAA56Y-?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "7dc450392b96cd535f396c12",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "SSR 인연 카드, 나시온의『죽음의 키스』초기 무언가를 기다리듯 멈추지 않는 비 나시온은 신녀 앞에서 서약합니다. 🖤당신의 손에 쥐어진 그의 운명, 그 이야...",
+    "body": "SSR 인연 카드, 나시온의『죽음의 키스』초기\n\n무언가를 기다리듯 멈추지 않는 비\n나시온은 신녀 앞에서 서약합니다.\n\n🖤당신의 손에 쥐어진 그의 운명,\n그 이야기가 곧 시작됩니다.\n\n- 기간 한정 이벤트 '그림자의 맹세' 10월 30일(목) 출시!\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드\n- \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #영원한서약",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981928704583537134",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761363600,
+    "imageUrl": "https://pbs.twimg.com/media/G4CJEUwWQAACpaR?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981928704583537134"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G4CJEUwWQAACpaR?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "64e99d32fc258d4013953523",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "6★『영원한 서약』예고-인게임 영상 하이라이트 \"타버린 심장도, 여전히 아플 수 있을까요",
+    "body": "6★『영원한 서약』예고-인게임 영상 하이라이트\n\n\"타버린 심장도, 여전히 아플 수 있을까요?\"\n\n불태우고 다시 태어나는 그녀의 이야기,\n역대급 서사의 슬프고 아름다운 코스튬 등장\n\n💍10월 30일(목), 6★ 코스튬 영원한 서약 한정 출시!\n\n※ 자세한 내용은 인게임에서 확인해 주세요.\n\n▶ 게임 다운로드\n- \n\n- 풀 영상: \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #영원한서약",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981919897715142843",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761361500,
+    "imageUrl": null,
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981919897715142843"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": []
+  },
+  {
+    "id": "32b8186ed74e5476a5f9c03e",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[업데이트] 『영원한 서약』예고편 영상 \"우리는 언제부터 '완벽'을 기준으로 아름다움을 정의하게 되었을까요",
+    "body": "[업데이트] 『영원한 서약』예고편 영상\n\n\"우리는 언제부터 '완벽'을 기준으로 \n아름다움을 정의하게 되었을까요? \"\n\n💍활활 타오르며 새로운 치마를 만들어내는 \n혁신적인 2-in-1 드레스\n그리고 강렬한 서사의 \"영원한 서약\"\n\nWe Burn, We Bloom\n\n10월 30일(목) 스타일라잇 신규 업데이트!\n\n▶ 게임 다운로드\n- \n\n- 풀 영상: \n\n#스타일라잇 #스타일라잇강림 #lifemakeover #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981918639830794566",
+    "publishedLabel": "2025-10-25",
+    "publishedAtEpoch": 1761361200,
+    "imageUrl": null,
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981918639830794566"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": []
+  },
+  {
+    "id": "e66fa825c75047f7564d5e85",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[스타일라잇 업데이트 예고편] KEY WORD: BURN “타버린 심장도, 여전히 아플 수 있을까요",
+    "body": "[스타일라잇 업데이트 예고편]\n\nKEY WORD: BURN\n\n“타버린 심장도, 여전히 아플 수 있을까요?\"\n\n세상에서 가장 아름다운 비극\n태우고, 다시 태어나는 눈부신 시작\n\nWe burn,\nWe bloom\n\n<GUESS WHO'S NEXT? 인용으로 맞춰보세요!>\n\n#스타일라잇 #스타일라잇강림 #lifemakeover #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/1981556257975914780",
+    "publishedLabel": "2025-10-24",
+    "publishedAtEpoch": 1761274802,
+    "imageUrl": "https://pbs.twimg.com/media/G3_eJQLWgAA85yi?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1981556257975914780"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G3_eJQLWgAA85yi?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "ae0175cb8163c6d2a096d385",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "\"스타일라잇의 산신이올시다. 인간들은 산신님이라고 부르렴. 반말 금지. 산신 이벤트 클리어하면 그날은 반모 가능.\"",
+    "body": "\"스타일라잇의 산신이올시다. 인간들은 산신님이라고 부르렴. 반말 금지. 산신 이벤트 클리어하면 그날은 반모 가능.\"",
+    "sourceUrl": "https://x.com/stylight_kr/status/1978792291021312137",
+    "publishedLabel": "2025-10-16",
+    "publishedAtEpoch": 1760615821,
+    "imageUrl": "https://pbs.twimg.com/media/G3YUB8QaAAA_fSP?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1978792291021312137"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G3YUB8QaAAA_fSP?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "b6db6ee82e04adeb2869d1a0",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[예고] 『두근거림』 배경 패키지 내일 출시 모든 컷이 로맨틱한 화보가 되는 아름다운 장미 배경",
+    "body": "[예고] 『두근거림』 배경 패키지 내일 출시\n\n모든 컷이 로맨틱한 화보가 되는 아름다운 장미 배경!\n\n🕙 10/14 (화)10:30 ~ 10/27(월) 23:59\n\n[패키지 정보]: \n: 촬영 배경 '로맨틱한 맹세', 라이브 포즈 '도나우강의 사랑' 등 다양한 아이템이 포함된 아름다운 패키지\n\n※ 자세한 내용은 출시 후 인게임 샵에서 확인해 주세요.",
+    "sourceUrl": "https://x.com/stylight_kr/status/1977664618605711373",
+    "publishedLabel": "2025-10-13",
+    "publishedAtEpoch": 1760346962,
+    "imageUrl": "https://pbs.twimg.com/media/G3ISRxSaoAAmBSo?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1977664618605711373"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G3ISRxSaoAAmBSo?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "088c7870dfe2a05592ec9df0",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "限定ガチャイベント『焦土の花』まもなく開催",
+    "body": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1977298201414701539",
+    "publishedLabel": "2025-10-12",
+    "publishedAtEpoch": 1760259602,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1977298201414701539"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "4d0931f7a91a502540095926",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[이벤트] 『와인빛의 밤』 소원 랜덤 박스 예고",
+    "body": "[이벤트] 『와인빛의 밤』 소원 랜덤 박스 예고!\n\n매혹적인 5★ 한정 코스튬 와인빛의 밤이 내일 오전, 여러분을 찾아갑니다.\n\n🕙2025/10/13 10:30 ~ 2026/1/8 23:59까지\n\n※ 자세한 내용은 인게임에서 확인해 주세요.\n\n▶ 게임 다운로드\n- \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/1977207604301451345",
+    "publishedLabel": "2025-10-12",
+    "publishedAtEpoch": 1760238002,
+    "imageUrl": "https://pbs.twimg.com/media/G2-fKSmbwAMPd0A?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1977207604301451345"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G2-fKSmbwAMPd0A?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "51984f9b7b744f8135476842",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "SSR [Ashley - Tale of Tails] Preview #PrincessAllAboard New Version - Wonder Lullaby will be live from Oct. 8 to Oct. 28",
+    "body": "SSR [Ashley - Tale of Tails] Preview\n\n#PrincessAllAboard New Version - Wonder Lullaby will be live from Oct. 8 to Oct. 28!\n\n\"Perhaps fate is cruel that way. At the very least, we are given this chance to truly say goodbye, aren't we?\"\n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1974799226556014646",
+    "publishedLabel": "2025-10-05",
+    "publishedAtEpoch": 1759663800,
+    "imageUrl": "https://pbs.twimg.com/media/G2FRwDybQAATBWy?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1974799226556014646"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G2FRwDybQAATBWy?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "c792a684f9fc1a9512424aa9",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version | 6-Star Set [Dream Adventure] Preview",
+    "body": "New Version | 6-Star Set [Dream Adventure] Preview!\n\n#PrincessAllAboard New Version - Wonder Lullaby will be live from Oct. 8 to Oct. 28!\n\n<Before Midnight: A Ball of Freedom and Dreams>\nIn the corner, the pendulum murmurs insistently, urging time toward the stroke of midnight...",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1974701081986011485",
+    "publishedLabel": "2025-10-05",
+    "publishedAtEpoch": 1759640400,
+    "imageUrl": "https://pbs.twimg.com/media/G2FPr-KakAE3bW4?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1974701081986011485"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G2FPr-KakAE3bW4?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "332481df8804b89765c8db64",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Lightchase Encore | 6-Star Set - Ocean Nebula Preview",
+    "body": "Lightchase Encore | 6-Star Set - Ocean Nebula Preview!\n\nOcean Slumber | \"Have you ever listened to the seashells sharing my story?\"\nEvent available from Sep. 26, 9:00 to Oct. 16, 23:59!\n\n❗️New form for the 6-star set top [Lost Song Ripple] is available❗️\n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1971185414066102430",
+    "publishedLabel": "2025-09-25",
+    "publishedAtEpoch": 1758802200,
+    "imageUrl": "https://pbs.twimg.com/media/G1qIgpVaAAEV9wI?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1971185414066102430"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G1qIgpVaAAEV9wI?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "22baaa5d8b71c7b9bb12023b",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "限定ガチャイベント『月狩の神託』まもなく開催",
+    "body": "限定ガチャイベント『月狩の神託』まもなく開催！\n星6セット「新月降臨」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆9月25日\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1969688048410779732",
+    "publishedLabel": "2025-09-21",
+    "publishedAtEpoch": 1758445200,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/1968998639378010112/img/X7NQ4IhnL4gnsaRL.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/1968998639378010112/img/X7NQ4IhnL4gnsaRL.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1969688048410779732"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "3b8761fd0aa4702a2f53f197",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "＼#秋分の日 🌾特別抽選キャンペーン開催／ 参加してくれた方から抽選で20名様に#Amazonギフト券 を🎁 ぜひご参加ください✨ 【参加方法】 ①@kirapara_JP ...",
+    "body": "＼#秋分の日 🌾特別抽選キャンペーン開催／\n参加してくれた方から抽選で20名様に#Amazonギフト券 を🎁\nぜひご参加ください✨\n\n【参加方法】 \n①@kirapara_JP をフォロー \n②本ツイートをリポスト \n\n〆9/24\n\n#キラパラ \n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1969219964461523167",
+    "publishedLabel": "2025-09-20",
+    "publishedAtEpoch": 1758333600,
+    "imageUrl": "https://pbs.twimg.com/media/G1NVeW9b0AAN-mM?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G1NVeW9b0AAN-mM?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1969219964461523167"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "90027ed1a39f55e32b163119",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Life Makeover New Version [Smolder Bloom] will be live from Sep. 17 to Oct. 7",
+    "body": "Life Makeover New Version [Smolder Bloom] will be live from Sep. 17 to Oct. 7!\n\nLife Makeover New 5-Star Set | Fall and Reform\n\n[Smolder Bloom] \nSep. 17, 09:00 - Oct. 7, 23:59 UTC\nThe eternal flame, the sacred seed of life.\n#LifeMakeover #SmolderBloom",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1967090934895833283",
+    "publishedLabel": "2025-09-14",
+    "publishedAtEpoch": 1757826000,
+    "imageUrl": "https://pbs.twimg.com/media/G0nTxF6aMAIU0Sn?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1967090934895833283"
+      },
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1967121137038774412"
+      }
+    ],
+    "sourceCount": 2,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G0nTxF6aMAIU0Sn?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "ac95846fc05b332bcf205e71",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Lightchase Encore | SSR Ally: Ashley - Atum's Tear Open from Sep. 10 to Sep. 30",
+    "body": "Lightchase Encore | SSR Ally: Ashley - Atum's Tear\nOpen from Sep. 10 to Sep. 30!\n\n\"Sister is someone who is very close and dear to you.\"\n\n#LifeMakeover AngelsArrival Love is in the Vow, Let's Keep Our Promise\nPrepare yourself for love in all its shapes.",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1965349460260819121",
+    "publishedLabel": "2025-09-09",
+    "publishedAtEpoch": 1757410800,
+    "imageUrl": "https://pbs.twimg.com/media/G0SiImaaEAEtxH3?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1965349460260819121"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G0SiImaaEAEtxH3?format=jpg&name=orig"
+    ]
   },
   {
     "id": "bb73523b0968606bda103e17",
