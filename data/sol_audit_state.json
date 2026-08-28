@@ -31,7 +31,14 @@
     "https://x.com/kirapara_JP/status/2092552642140533220": {"id":"283dc40c34ec15a748435cb7","publishedAtEpoch":1787738402,"contentKey":"283dc40c34ec15a748435cb7:1787738402","auditedAtEpoch":1787893011,"result":"ok"},
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678277791045061908": {"id":"f4db49029be92c0ba74ac112","publishedAtEpoch":1787738360,"contentKey":"f4db49029be92c0ba74ac112:1787738360","auditedAtEpoch":1787893011,"result":"ok"},
     "https://www.tiktok.com/@lifemakeoverofficial/video/7678277254572494100": {"id":"fcc548da89b1a4dd886efba4","publishedAtEpoch":1787738235,"contentKey":"fcc548da89b1a4dd886efba4:1787738235","auditedAtEpoch":1787893011,"result":"ok"},
-    "https://www.tiktok.com/@lifemakeoverofficial/video/7678276380634975508": {"id":"f02add4d1867418de312b029","publishedAtEpoch":1787738031,"contentKey":"f02add4d1867418de312b029:1787738031","auditedAtEpoch":1787893011,"result":"ok"}
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678276380634975508": {"id":"f02add4d1867418de312b029","publishedAtEpoch":1787738031,"contentKey":"f02add4d1867418de312b029:1787738031","auditedAtEpoch":1787893011,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2092545084713799935": {"id":"da0de0f7e0c9ffbd7cb8dba1","publishedAtEpoch":1787736600,"contentKey":"da0de0f7e0c9ffbd7cb8dba1:1787736600","auditedAtEpoch":1787914720,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2092541309416337867": {"id":"e6116f80c1e29168c3c2ad28","publishedAtEpoch":1787735700,"contentKey":"e6116f80c1e29168c3c2ad28:1787735700","auditedAtEpoch":1787914720,"result":"ok"},
+    "https://x.com/stylight_kr/status/2092537547641454873": {"id":"a1b1c65b055644269df5c9eb","publishedAtEpoch":1787734803,"contentKey":"a1b1c65b055644269df5c9eb:1787734803","auditedAtEpoch":1787914720,"result":"override"},
+    "https://x.com/kirapara_JP/status/2092537548589449433": {"id":"748536cbb7e0dd364deb0e10","publishedAtEpoch":1787734803,"contentKey":"748536cbb7e0dd364deb0e10:1787734803","auditedAtEpoch":1787914720,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2092533759073456435": {"id":"1f89e97338819657af3919e4","publishedAtEpoch":1787733900,"contentKey":"1f89e97338819657af3919e4:1787733900","auditedAtEpoch":1787914720,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2092529984489541762": {"id":"b6a1e7c1e9c6f468dbc4877b","publishedAtEpoch":1787733000,"contentKey":"b6a1e7c1e9c6f468dbc4877b:1787733000","auditedAtEpoch":1787914720,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2092526209351696684": {"id":"de58e7b2ea974a1158eaf617","publishedAtEpoch":1787732100,"contentKey":"de58e7b2ea974a1158eaf617:1787732100","auditedAtEpoch":1787914720,"result":"ok"}
   },
-  "lastRunAt": 1787893011
+  "lastRunAt": 1787914720
 }
