@@ -19,6 +19,22 @@
     <p class="menu-install-message" aria-live="polite"></p>`;
   body.prepend(section);
 
+  const officialLinks = body.querySelector('.official-links-block');
+
+  const share = document.createElement('section');
+  share.className = 'menu-analysis-section menu-share-section';
+  share.innerHTML = `
+    <button class="menu-analysis-action menu-share-action" type="button" aria-label="Kirapara Newsを共有">
+      <span class="menu-analysis-icon" aria-hidden="true">⤴︎</span>
+      <span class="menu-analysis-copy">
+        <span><strong>Kirapara Newsを共有</strong></span>
+        <small class="menu-share-status" aria-live="polite">このアプリのURLを共有します</small>
+      </span>
+      <span class="menu-analysis-arrow menu-share-arrow" aria-hidden="true">›</span>
+    </button>`;
+  if (officialLinks) officialLinks.insertAdjacentElement('afterend', share);
+  else section.insertAdjacentElement('afterend', share);
+
   const analysis = document.createElement('section');
   analysis.className = 'menu-analysis-section';
   analysis.innerHTML = `
@@ -30,9 +46,7 @@
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
-  const officialLinks = body.querySelector('.official-links-block');
-  if (officialLinks) officialLinks.insertAdjacentElement('afterend', analysis);
-  else section.insertAdjacentElement('afterend', analysis);
+  share.insertAdjacentElement('afterend', analysis);
 
   const terms = document.createElement('section');
   terms.className = 'menu-analysis-section';
@@ -125,6 +139,10 @@
   const copy = section.querySelector('.menu-install-copy');
   const arrow = section.querySelector('.menu-install-arrow');
   const message = section.querySelector('.menu-install-message');
+  const shareAction = share.querySelector('.menu-share-action');
+  const shareStatus = share.querySelector('.menu-share-status');
+  const shareArrow = share.querySelector('.menu-share-arrow');
+  let shareResetTimer = null;
 
   function isStandalone() {
     return window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true;
@@ -146,6 +164,41 @@
     arrow.textContent = '＋';
   }
 
+  function appShareUrl() {
+    const url = new URL('./', window.location.href);
+    url.search = '';
+    url.hash = '';
+    return url.href;
+  }
+
+  async function copyAppUrl(url) {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(url);
+      return true;
+    }
+
+    const area = document.createElement('textarea');
+    area.value = url;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    const copied = document.execCommand('copy');
+    area.remove();
+    return copied;
+  }
+
+  function setShareStatus(text, success = false) {
+    clearTimeout(shareResetTimer);
+    shareStatus.textContent = text;
+    shareArrow.textContent = success ? '✓' : '›';
+    shareResetTimer = setTimeout(() => {
+      shareStatus.textContent = 'このアプリのURLを共有します';
+      shareArrow.textContent = '›';
+    }, 1800);
+  }
+
   action.addEventListener('click', () => {
     if (isStandalone()) return;
     message.textContent = '';
@@ -159,6 +212,37 @@
     }
 
     message.textContent = 'このブラウザでは自動表示できません。Chromeの︙メニューから「アプリをインストール」または「ホーム画面に追加」を選んでください。';
+  });
+
+  shareAction.addEventListener('click', async () => {
+    const url = appShareUrl();
+    const payload = {
+      title: 'Kirapara News',
+      text: 'きらめきパラダイス / 以闪亮之名 / Life Makeover / 스타일라잇 のニュースまとめ',
+      url,
+    };
+
+    shareAction.disabled = true;
+    try {
+      if (navigator.share) {
+        await navigator.share(payload);
+        setShareStatus('共有しました', true);
+        return;
+      }
+
+      if (await copyAppUrl(url)) setShareStatus('URLをコピーしました', true);
+      else setShareStatus('共有できませんでした');
+    } catch (error) {
+      if (error?.name === 'AbortError') return;
+      try {
+        if (await copyAppUrl(url)) setShareStatus('URLをコピーしました', true);
+        else setShareStatus('共有できませんでした');
+      } catch {
+        setShareStatus('共有できませんでした');
+      }
+    } finally {
+      shareAction.disabled = false;
+    }
   });
 
   if (nativeInstall) {
