@@ -52,26 +52,13 @@
   menu.innerHTML = `<div class="link-menu-header"><div class="link-menu-title">メニュー ✦</div><button class="link-menu-close" type="button" aria-label="閉じる">×</button></div><div class="link-menu-body"></div>`;
   const body = menu.querySelector('.link-menu-body');
 
-  const operations = document.createElement('section');
-  operations.className = 'menu-region developer-section developer-section-featured';
-  operations.innerHTML = `
-    <button class="developer-toggle" type="button" aria-expanded="false">
-      <span><span class="developer-toggle-icon">⚙</span><span><strong>運用情報</strong><small>AI処理件数 / GitHub Actions</small></span></span>
-      <span class="developer-chevron">›</span>
-    </button>
-    <div class="developer-panel" hidden>
-      <div class="dev-topline"><div><div class="dev-kicker">LOCAL AI</div><div class="dev-model">Gemma 4 E4B · LiteRT-LM</div></div></div>
-      <div class="dev-status-card dev-success"><span class="dev-status-dot"></span><div><strong>公開データの処理状況</strong><small>一覧に読み込んだデータから集計</small></div></div>
-      <div class="dev-metrics"></div>
-      <p class="menu-note">実行中・失敗などのリアルタイム状態はGitHub Actionsで確認できます。</p>
-      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions" target="_blank" rel="noopener noreferrer">GitHub Actionsで確認する ↗</a>
-    </div>`;
-  body.appendChild(operations);
+  const officialLinks = document.createElement('div');
+  officialLinks.className = 'official-links-block';
 
   const linksHeading = document.createElement('div');
   linksHeading.className = 'menu-section-heading';
   linksHeading.textContent = '公式リンク';
-  body.appendChild(linksHeading);
+  officialLinks.appendChild(linksHeading);
 
   for (const group of groups) {
     const section = document.createElement('section');
@@ -90,13 +77,30 @@
       links.appendChild(anchor);
     }
     section.append(heading, links);
-    body.appendChild(section);
+    officialLinks.appendChild(section);
   }
 
   const note = document.createElement('p');
   note.className = 'menu-note';
   note.textContent = 'Wikiは運営公式ではなく、コミュニティ運営の攻略Wikiです。WeChatは公式公众号「以闪亮之名」、小紅書は公式アカウント「以闪亮之名VVANNA Studio」の検索ページを開きます。';
-  body.appendChild(note);
+  officialLinks.appendChild(note);
+  body.appendChild(officialLinks);
+
+  const operations = document.createElement('section');
+  operations.className = 'menu-region developer-section developer-section-featured';
+  operations.innerHTML = `
+    <button class="developer-toggle" type="button" aria-expanded="false">
+      <span><span class="developer-toggle-icon">⚙</span><span><strong>運用情報</strong><small>AI処理件数 / GitHub Actions</small></span></span>
+      <span class="developer-chevron">›</span>
+    </button>
+    <div class="developer-panel" hidden>
+      <div class="dev-topline"><div><div class="dev-kicker">LOCAL AI</div><div class="dev-model">Gemma 4 E4B · LiteRT-LM</div></div></div>
+      <div class="dev-status-card dev-success"><span class="dev-status-dot"></span><div><strong>公開データの処理状況</strong><small>一覧に読み込んだデータから集計</small></div></div>
+      <div class="dev-metrics"></div>
+      <p class="menu-note">実行中・失敗などのリアルタイム状態はGitHub Actionsで確認できます。</p>
+      <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions" target="_blank" rel="noopener noreferrer">GitHub Actionsで確認する ↗</a>
+    </div>`;
+  body.appendChild(operations);
   document.body.append(backdrop, menu);
 
   const toggle = operations.querySelector('.developer-toggle');
