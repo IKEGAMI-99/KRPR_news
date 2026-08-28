@@ -21,7 +21,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: kirapara-data-writer
+  group: kirapara-ai-translate
   cancel-in-progress: false
 
 jobs:
