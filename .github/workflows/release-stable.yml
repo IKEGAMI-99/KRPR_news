@@ -1,0 +1,72 @@
+name: Release Stable
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/stable_release.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Read stable version
+        id: release_meta
+        shell: bash
+        run: |
+          VERSION="$(python -c 'import json; print(json.load(open("data/stable_release.json", encoding="utf-8"))["version"])')"
+          if [[ ! "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Invalid stable version: $VERSION" >&2
+            exit 1
+          fi
+          NOTES=".github/release-notes/${VERSION}.md"
+          test -f "$NOTES"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "notes=$NOTES" >> "$GITHUB_OUTPUT"
+
+      - name: Run Python unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            node --check "$file"
+          done < <(find docs -type f -name '*.js' -print0)
+
+      - name: Validate important JSON files
+        shell: bash
+        run: |
+          python -m json.tool data/stable_release.json >/dev/null
+          python -m json.tool data/crawl_status.json >/dev/null
+          python -m json.tool data/translation_glossary.json >/dev/null
+
+      - name: Create stable GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.release_meta.outputs.version }}
+          NOTES: ${{ steps.release_meta.outputs.notes }}
+        shell: bash
+        run: |
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            echo "$VERSION already exists; nothing to do."
+            exit 0
+          fi
+          gh release create "$VERSION" \
+            --target "$GITHUB_SHA" \
+            --title "Kirapara News ${VERSION#v} Stable" \
+            --notes-file "$NOTES"

@@ -1,0 +1,7 @@
+{
+  "version": "v1.0.0",
+  "channel": "stable",
+  "releasedAt": "2026-08-28",
+  "platform": "PWA",
+  "releaseNotes": ".github/release-notes/v1.0.0.md"
+}

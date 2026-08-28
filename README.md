@@ -4,16 +4,29 @@
 
 **公開PWA:** https://ikegami-99.github.io/KRPR_news/
 
+**現在の安定版:** `v1.0.0 Stable`（2026-08-28）  
+**Release:** https://github.com/IKEGAMI-99/KRPR_news/releases/tag/v1.0.0
+
 > [!IMPORTANT]
 > Kirapara Newsは非公式ファンプロジェクトです。Archosaur Games、VVANNA GIRLS、各地域の運営会社、SNS・ニュース各社とは関係ありません。
+
+## 安定版について
+
+`v1.0.0` から現行の配布形態を **PWA版に一本化**しています。ブラウザから公開PWAを開き、ホーム画面へ追加することでアプリとして利用できます。
+
+過去の `v0.3.x` ReleaseにあるAndroid APKは旧ネイティブ版です。現在の `main` ではAndroidネイティブ実装とAPKビルドWorkflowを削除しているため、旧APKを現行 `v1.0.0` の配布物として再利用していません。現在の機能・収集ロジック・Gemma 4翻訳・画像処理はPWA版を基準にしています。
+
+`v1.0.0` のReleaseは、単体テストとJavaScript構文チェックに成功した `main` のスナップショットをStableとして固定します。ニュース本文や翻訳キャッシュはその後も定期Workflowで更新されるため、Releaseタグはアプリ本体の安定基準点、公開PWAのニュースデータは継続更新される運用です。
 
 ## 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムラインと地域フィルター
 - 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、TapTap、好游快爆、Steamなどの横断収集
+- 公式Xの一時的なFeed障害時も直前の公式投稿履歴を保持し、記事消失を防止
 - 同一ニュースを1枚のカードへ統合し、Weibo / TapTap / Bilibiliなど複数の元記事ボタンを保持
 - 複数画像のスワイプ表示と全画面ビューア
 - Weibo画像のリポジトリ内ミラーと、GitHub Pages同一オリジンからの安定配信
+- TapTap記事では本文に属する画像を優先し、ページ共通画像や無関係画像の混入を抑制
 - 低解像度画像、ロゴ、QR、トラッキング画像などの除外
 - Gemma 4 E4Bによる日本語翻訳・箇条書き要約
 - 原文 / 日本語の切り替え、共有、ライト / ダークテーマ
@@ -33,6 +46,7 @@
 毎時 :00  news-refresh.yml
         │
         ├─ 収集
+        ├─ 公式X取得失敗時は直前の公式履歴を保持
         ├─ 同一ニュースを統合し複数の出典URLを保持
         ├─ 日時・画像の正規化
         ├─ Weibo画像を docs/media/weibo にミラー
@@ -69,13 +83,15 @@
 | 🇰🇷 韓国 | 公式X / TikTok / YouTube / 韓国Webニュース |
 | 🌐 Global | 公式サイト / 公式X / TikTok / YouTube / Steam / 海外Webニュース |
 
+公式Xは取得元の一時障害でFeedが空になった場合、`scripts/preserve_official_x_history.py` で直前の公式投稿履歴を保持します。新しい取得結果が正常なときだけ更新し、一時障害を「投稿が削除された」と誤認して過去記事を大量に消すことを防ぎます。
+
 YouTubeはチャンネルページ内の任意の `channelId` ではなく、正規URLのチャンネルIDを優先します。Global版は公式チャンネル `UCaaIsX56nWN0fvGJXQ8yvhA` に固定し、同じ運営会社の別ゲーム動画が混入しないようにしています。
 
 Google NewsのプロキシURLはタイムラインへ保存しません。Web記事は元記事URLと、取得できる場合は発行元の明示的な公開日時を優先します。確認済み日時は `data/article_dates.json`、画像検査結果は `data/image_quality.json` に保持します。
 
 WeiboはSina CDNの直接表示がブラウザやPWA環境で不安定になるため、収集時に取得できた画像を `docs/media/weibo/` へ保存し、`imageMirrorUrls` として記事データに紐付けます。PWAはGitHub Pages上の同一オリジン画像を優先し、必要な場合のみ元のSina画像をフォールバックとして使います。Service Worker更新時には既存タブを一度リロードし、古い画像配信ロジックが残り続けないようにしています。
 
-TapTapは中国版「以闪亮之名」の公式投稿一覧 `type=official` から直近のMoment IDを取得し、TapTapの公開Web API `webapiv2/moment/v3/detail` からタイトル、本文、公開時刻、画像を取得します。API取得に失敗した記事だけ個別Webページのメタデータへフォールバックし、`公式TapTap` として通常の翻訳・要約パイプラインへ流します。
+TapTapは中国版「以闪亮之名」の公式投稿一覧 `type=official` から直近のMoment IDを取得し、TapTapの公開Web API `webapiv2/moment/v3/detail` からタイトル、本文、公開時刻、画像を取得します。API取得に失敗した記事だけ個別Webページのメタデータへフォールバックし、`公式TapTap` として通常の翻訳・要約パイプラインへ流します。画像は記事本文・投稿メディアに紐付く候補を優先し、ページ共通素材や別投稿の画像が混入しにくいようにフィルタします。
 
 好游快爆は「以闪亮之名」ゲームページの `官方帖子` セクションだけを収集対象にします。一般ユーザーのフォーラム投稿は対象外です。公式投稿の個別ページから本文、公開日時、画像を取得し、個別ページがJavaScript依存などで十分に読めない場合も、公式一覧で確認できたタイトルと元記事URLを保持して `官方好游快爆` として取り込みます。
 
@@ -92,6 +108,7 @@ WeChatは既存の公開Web探索による収集を継続しつつ、中国の�
 - モデルファイルはSHA-256を検証
 - モデルとpipパッケージをActions cacheへ保存
 - 記事本文のハッシュで再処理の要否を判定
+- 現行revision以外のGemma結果はbacklogとして順次再処理
 - 日本語以外の文章が残った出力を品質検査で無効化
 - 固有名詞は `data/translation_glossary.json` を優先
 - Sol管理の修正は `managedBySol` / `solLocked` で再上書きを防止
@@ -109,6 +126,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 - Service Workerはアプリシェルだけをキャッシュ
 - ニュースJSON、アクセス解析JSON、外部画像はService Workerで固定キャッシュしない
 - 画像ギャラリーは1つだけ生成し、非表示ギャラリーを複製しない
+- 画像ビューアはスワイプ移動に対応し、戻る操作ではビューアやメニューを先に閉じる
 - カード描画完了イベントで補助機能を更新し、複数の `MutationObserver` による全件再走査を行わない
 - カードに `content-visibility: auto` を使用
 - 新しいService Workerが制御を引き継いだ際は既存PWAタブを一度だけ再読み込みして更新を反映
@@ -130,22 +148,31 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 | Workflow | 実行 | 役割 |
 | --- | --- | --- |
-| `news-refresh.yml` | 毎時00分 | ニュース収集、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
-| `ai-translate.yml` | 毎時07 / 22 / 37 / 52分 | backlog確認、最大3件の翻訳・要約 |
+| `news-refresh.yml` | 毎時00分 | ニュース収集、公式X履歴保護、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
+| `ai-translate.yml` | 毎時07 / 22 / 37 / 52分 | backlog確認、最大3件のGemma 4 E4B翻訳・要約 |
 | `regenerate-ai.yml` | リポジトリ所有者のIssue | 指定記事のAI結果を再生成 |
 | `gap-analysis.yml` | 毎日06:30 JST | 地域別の実装差分析を更新 |
 | `analytics-refresh.yml` | 6時間ごと | GA4の集計スナップショットを更新（公開は `pages.yml` に一本化） |
 | `pages.yml` | `docs/**` 更新時 | GitHub PagesへPWAを公開 |
+| `release-stable.yml` | Stable marker更新時 / 手動 | テスト後に指定バージョンのStable Releaseを作成 |
 
 運用環境では、ChatGPT側のSol監査（08:00 / 14:00 / 20:00 JST）と更新watchdogも併用しています。これらはGitHub Actions内でGPTを実行する仕組みではなく、リポジトリ外の運用タスクです。
 
-## 2026-08-28時点の主な整理
+## v1.0.0 Stableの主な変更
 
+- 現行PWAを最初の正式Stableとして固定
+- Androidネイティブ版からPWA版へ配布基準を一本化
 - 検索バー、旧トップ3予測UI、関連タグ付け処理を削除
 - Gemma 4 E4B + LiteRT-LMへ翻訳・要約系を統一
+- Gemma翻訳を15分ごと最大3件のバッチ処理へ変更
 - 実装差分析から予測表示を外し、公開記事同士の比較に整理
 - メニューの実装差分析直下にアクセス解析を追加
 - Weibo画像を収集時にリポジトリへミラーし、Pages同一オリジン配信へ変更
+- TapTap画像を記事メディア中心にフィルタし、無関係画像の混入を抑制
+- 公式X Feed障害時に直前の公式投稿履歴を保持する保護処理を追加
+- X画像は元投稿側の高解像度候補を優先
+- 画像ビューアに左右スワイプ移動を追加
+- 戻る操作で画像ビューアやメニューより先にPWA自体が閉じる問題を修正
 - PWA更新後も古い画像ロジックが残る問題をService Workerのcontroller変更時リロードで修正
 - ニュース収集を毎時00分へ戻し、クロール完了日時を独立ファイルで記録
 - ヘッダー表示を「記事件数・最新記事日時」から「最終クロール完了日時のみ」へ変更
@@ -160,13 +187,17 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 ```text
 KRPR_news/
-├─ .github/workflows/
-│  ├─ news-refresh.yml
-│  ├─ ai-translate.yml
-│  ├─ regenerate-ai.yml
-│  ├─ gap-analysis.yml
-│  ├─ analytics-refresh.yml
-│  └─ pages.yml
+├─ .github/
+│  ├─ release-notes/
+│  │  └─ v1.0.0.md
+│  └─ workflows/
+│     ├─ news-refresh.yml
+│     ├─ ai-translate.yml
+│     ├─ regenerate-ai.yml
+│     ├─ gap-analysis.yml
+│     ├─ analytics-refresh.yml
+│     ├─ pages.yml
+│     └─ release-stable.yml
 ├─ data/
 │  ├─ news.json
 │  ├─ crawl_status.json
@@ -176,6 +207,7 @@ KRPR_news/
 │  ├─ sol_overrides.json
 │  ├─ article_dates.json
 │  ├─ image_quality.json
+│  ├─ stable_release.json
 │  └─ gap_analysis.json
 ├─ docs/
 │  ├─ index.html
@@ -193,6 +225,7 @@ KRPR_news/
 │  ├─ fetch_taptap_official.py
 │  ├─ fetch_haoyoukuaibao.py
 │  ├─ fetch_wechat_official.py
+│  ├─ preserve_official_x_history.py
 │  ├─ merge_duplicate_sources.py
 │  ├─ translation_engine.py
 │  ├─ translation_quality.py
@@ -205,6 +238,7 @@ KRPR_news/
    ├─ test_taptap.py
    ├─ test_haoyoukuaibao.py
    ├─ test_duplicate_sources.py
+   ├─ test_preserve_official_x_history.py
    └─ test_crawl_status.py
 ```
 
