@@ -9,7 +9,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: ai-regenerate
+  group: kirapara-data-writer
   cancel-in-progress: false
 
 jobs:
@@ -38,8 +38,9 @@ jobs:
           fi
           echo "article_id=$ARTICLE_ID" >> "$GITHUB_OUTPUT"
 
-      - name: Cache Gemma 4 E4B LiteRT model
-        uses: actions/cache@v4
+      - name: Restore Gemma 4 E4B LiteRT model cache
+        id: model_cache
+        uses: actions/cache/restore@v4
         with:
           path: ~/.cache/kirapara-models
           key: kirapara-gemma4-e4b-litertlm-v1
@@ -61,6 +62,13 @@ jobs:
               -o "$MODEL" "$URL"
             echo "$SHA256  $MODEL" | sha256sum -c -
           fi
+
+      - name: Save Gemma 4 E4B LiteRT model cache
+        if: steps.model_cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/kirapara-models
+          key: kirapara-gemma4-e4b-litertlm-v1
 
       - name: Install LiteRT-LM runtime
         run: |
