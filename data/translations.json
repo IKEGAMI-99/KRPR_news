@@ -340,9 +340,9 @@
       "bodyJa": "月光の蔦アピアランスパック\n\n⏰8月26日 09:00 - 9月8日 23:59 UTC\n\nイベント期間中、月光の蔦パックを54%割引で購入できます。このパックには、ダイナミックカメラポーズ[Vine Shadows]、シーン[Waterside Vines]、ポーズ[Intimate Gaze]、カメラモーションなどが含まれています！",
       "summaryJa": "・追加: 月光の蔦アピアランスパックが登場\n・期間: 8月26日 09:00 - 9月8日 23:59 UTC\n・内容: ダイナミックカメラポーズ[Vine Shadows]、シーン[Waterside Vines]、ポーズ[Intimate Gaze]、カメラモーションなどを含む\n・特典: イベント期間中、54%割引で購入可能",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879918
+      "updatedAtEpoch": 1787960655
     },
     "https://weibo.com/7521830234/Rf2Vgm2pk": {
       "contentHash": "cbe95f39f6cd719a99dbecde",
@@ -445,6 +445,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787955125
+    },
+    "https://www.taptap.cn/moment/841628572568256586": {
+      "contentHash": "65edf6fc9aeff93b3018b2bf",
+      "titleJa": "ゲーム内ボイスの調整に関するお知らせ",
+      "bodyJa": "プレイヤーの皆様へ：\n『以闪亮之名』への長きにわたるご愛顧とご支援に感謝申し上げます。ボイス担当者の体調不良の影響を受け、プロジェクトチームはボイス担当者の意向を十分に尊重した上で、双方の協議により、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。これまでキャラクターを素晴らしい演技で演じ、多大な尽力をいただいたボイス担当者に感謝申し上げます。\nプロジェクトチームは、顧苏澄の今後のボイスコンテンツの準備に着手し、新しいボイスキャストの試聴作業を全面的に開始いたしました。現在、「顧苏澄新CV試聴アンケート」が正式に公開されておりますので、プレイヤーの皆様にぜひご清聴いただき、貴重なご意見をお寄せいただきたく存じます。ゲームコンテンツの継続的な展開に伴い、",
+      "summaryJa": "・変更: ボイス担当者の体調不良により、今後、顧苏澄のボイス関連の仕事は担当されなくなります\n・対応: プロジェクトチームは顧苏澄の今後のボイスコンテンツの準備に着手し、新しいボイスキャストの試聴作業を開始しました\n・公開: 「顧苏澄新CV試聴アンケート」が正式に公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787960610
     }
   }
 }
