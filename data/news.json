@@ -24,7 +24,13 @@
     "sourceCount": 2,
     "imageUrls": [
       "https://i2.ytimg.com/vi/ugA2eTQiNjk/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "SSRアライ [Gerald - Frozen Slumber] - デフォルト",
+    "bodyJa": "SSRアライ [Gerald - Frozen Slumber] - デフォルト\n\n「君を断ることはできないよ。」\n\n#DanceofDeceit | イベントは8月28日09:00から9月17日23:59まで開催中！\n#LifeMakeoverWorld #CrimsonCleansing #SaccharineSpell",
+    "summaryJa": "・追加: SSRアライ [Gerald - Frozen Slumber] - デフォルトが登場\n・イベント期間: 8月28日09:00から9月17日23:59まで",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "aa007bc2625af90710f44188",
@@ -46,7 +52,13 @@
         "url": "https://x.com/kirapara_JP/status/2093262324618707193"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🔔【復刻】イベント予告🔔 セットコーデの情報をお届け",
+    "bodyJa": "🔔【復刻】イベント予告🔔\n\nセットコーデの情報をお届け！\n\n限定ガチャイベント『鏡海の迷路』、9月3日より復刻\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・復刻イベント: 限定ガチャイベント『鏡海の迷路』が9月3日より復刻\n・内容: セットコーデの情報が提供される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a8442559f8611e1637ef583a",
