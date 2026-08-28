@@ -109,9 +109,9 @@
       "bodyJa": "潮の宝探し\n\n⏰8月27日 09:00 - 9月3日 05:00 UTC\n\n[報酬受け取り]\n8月27日 09:00 - 9月4日 05:00 UTC\n\n[イベント報酬]\nポイントを蓄積して、★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーチャート×13、Luster Invitation、および各種素材報酬を獲得できます！",
       "summaryJa": "・イベント名: 潮の宝探し\n・期間: 8月27日 09:00 - 9月3日 05:00 UTC\n・報酬受け取り期間: 8月27日 09:00 - 9月4日 05:00 UTC\n・報酬: ★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーチャート×13、Luster Invitation、各種素材報酬",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877522
+      "updatedAtEpoch": 1787955092
     },
     "https://x.com/kirapara_JP/status/2092552642140533220": {
       "contentHash": "f60e421a308cfedfbd964c63",
@@ -435,6 +435,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787953423
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678278239160241428": {
+      "contentHash": "10147f954fb3905e174a48b8",
+      "titleJa": "「君を断ることはできない」#LifeMakeover Lightchase Encore | SSR Ally [Gerald - Frozen Slumber] #DanceofDec",
+      "bodyJa": "「君を断ることはできない」#LifeMakeover Lightchase Encore | SSR Ally [Gerald - Frozen Slumber] #DanceofDeceit | イベントは8月より開催中",
+      "summaryJa": "・追加: SSR Ally [Gerald - Frozen Slumber] が登場\n・イベント名: Lightchase Encore | SSR Ally [Gerald - Frozen Slumber] #DanceofDeceit\n・期間: 8月より開催中",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787955125
     }
   }
 }
