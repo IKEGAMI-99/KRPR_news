@@ -30,44 +30,80 @@
   box-shadow: inset 0 0 0 3px color-mix(in srgb, var(--accent) 58%, transparent);
 }
 
-/* Use the real app icon in the header instead of the old decorative glyph. */
-.brand-mark-logo {
-  padding: 0 !important;
-  overflow: hidden !important;
-  transform: none !important;
-  background: none !important;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 22px rgba(122, 94, 184, .18), 0 0 20px rgba(232, 123, 196, .16) !important;
-}
-.brand-mark-logo::after { display: none !important; }
-.brand-mark-logo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+/*
+ * Image viewer sizing.
+ *
+ * X can publish extremely tall images (for example 1080x3785). The previous
+ * fixed-height viewer used object-fit: contain, which shrank those images into
+ * a narrow strip. Use viewport width instead and let the overlay scroll.
+ * Keep !important here because this file intentionally overrides styles.css.
+ */
+.image-viewer {
+  display: block !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain;
+  padding: max(18px, var(--safe-top)) 8px max(24px, var(--safe-bottom)) !important;
 }
 
-/* Give the viewer a large canvas even when the source image has small intrinsic
-   CSS dimensions. Low-resolution files are filtered separately. */
 .viewer-figure {
-  width: min(92vw, 1080px) !important;
-  max-width: min(92vw, 1080px) !important;
-}
-.viewer-image {
-  width: min(92vw, 1080px) !important;
-  height: min(82vh, 1080px) !important;
+  width: min(1100px, calc(100vw - 16px)) !important;
   max-width: none !important;
+  height: auto !important;
+  margin: 56px auto 24px !important;
+  display: block !important;
+}
+
+.viewer-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
   max-height: none !important;
   object-fit: contain !important;
+  margin: 0 auto !important;
 }
 
+.viewer-count {
+  display: block !important;
+  margin-top: 10px !important;
+  text-align: center !important;
+}
+
+.viewer-close,
+.viewer-nav {
+  position: fixed !important;
+  z-index: 102 !important;
+}
+
+.viewer-nav {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.viewer-prev { left: 8px !important; }
+.viewer-next { right: 8px !important; }
+
 @media (max-width: 700px) {
+  .image-viewer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .viewer-figure {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 100vw !important;
+    max-width: none !important;
+    margin-top: 54px !important;
   }
+
   .viewer-image {
-    width: 100% !important;
-    height: 78vh !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    max-height: none !important;
+    border-radius: 0 !important;
   }
+
+  .viewer-prev { left: 4px !important; }
+  .viewer-next { right: 4px !important; }
 }

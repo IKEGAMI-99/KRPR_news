@@ -1,62 +1,69 @@
 .image-viewer {
-  display: block;
-  overflow-y: auto;
-  overflow-x: hidden;
+  display: block !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
   overscroll-behavior: contain;
-  padding: max(18px, var(--safe-top)) 8px max(24px, var(--safe-bottom));
+  padding: max(18px, var(--safe-top)) 8px max(24px, var(--safe-bottom)) !important;
 }
 
 .viewer-figure {
-  width: min(1100px, calc(100vw - 16px));
-  max-width: none;
-  height: auto;
-  margin: 56px auto 24px;
-  display: block;
+  width: min(1100px, calc(100vw - 16px)) !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 56px auto 24px !important;
+  display: block !important;
 }
 
 .viewer-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: none;
-  object-fit: contain;
-  margin: 0 auto;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  margin: 0 auto !important;
 }
 
 .viewer-count {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
+  display: block !important;
+  margin-top: 10px !important;
+  text-align: center !important;
+}
+
+.viewer-close,
+.viewer-nav {
+  position: fixed !important;
+  z-index: 102 !important;
 }
 
 .viewer-nav {
-  position: fixed;
-  top: 50%;
-  z-index: 102;
-  transform: translateY(-50%);
+  top: 50% !important;
+  transform: translateY(-50%) !important;
 }
 
-.viewer-prev { left: 8px; }
-.viewer-next { right: 8px; }
+.viewer-prev { left: 8px !important; }
+.viewer-next { right: 8px !important; }
 
 @media (max-width: 700px) {
   .image-viewer {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .viewer-figure {
-    width: 100vw;
-    margin-top: 54px;
+    width: 100vw !important;
+    max-width: none !important;
+    margin-top: 54px !important;
   }
 
   .viewer-image {
-    width: 100vw;
-    max-width: 100vw;
-    border-radius: 0;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    max-height: none !important;
+    border-radius: 0 !important;
   }
 
-  .viewer-prev { left: 4px; }
-  .viewer-next { right: 4px; }
+  .viewer-prev { left: 4px !important; }
+  .viewer-next { right: 4px !important; }
 }

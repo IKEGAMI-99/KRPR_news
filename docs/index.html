@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./menu.css">
   <link rel="stylesheet" href="./menu-install.css">
   <link rel="stylesheet" href="./source-buttons.css">
-  <link rel="stylesheet" href="./x-image-size.css">
+  <link rel="stylesheet" href="./x-image-size.css?v=44">
 </head>
 <body>
   <div class="app-shell">
@@ -49,10 +49,20 @@
     <footer><p>非公式ファンツール。AI翻訳・要約には誤りが含まれる場合があります。</p></footer>
   </div>
   <template id="newsCardTemplate"><article class="news-card"><button class="card-image-link" type="button" aria-label="サムネイル画像を拡大"><div class="card-image-wrap"><img class="card-image" alt="" loading="lazy" decoding="async"><div class="image-fallback" aria-hidden="true">✦</div><span class="region-badge"></span></div></button><div class="card-content"><div class="card-meta"><span class="platform"></span><time class="published"></time></div><h3 class="card-title"></h3><p class="card-body"></p><div class="card-actions"><button class="more-button" type="button">続きを読む</button><a class="source-button" target="_blank" rel="noopener noreferrer">元記事を開く ↗</a></div></div></article></template>
+  <script>
+    if ('serviceWorker' in navigator) {
+      let reloadingForServiceWorker = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (reloadingForServiceWorker) return;
+        reloadingForServiceWorker = true;
+        location.reload();
+      });
+    }
+  </script>
   <script src="./analytics-config.js"></script>
   <script src="./analytics-track.js" defer></script>
   <script src="./app.js" defer></script>
-  <script src="./x-image-fix.js" defer></script>
+  <script src="./x-image-fix.js?v=44" defer></script>
   <script src="./source-buttons.js" defer></script>
   <script src="./crawl-status.js" defer></script>
   <script src="./weibo-image-fallback.js" defer></script>

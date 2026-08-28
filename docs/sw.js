@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v43';
+const CACHE_NAME = 'kirapara-pwa-shell-v44';
 const APP_SHELL = [
   './',
   './index.html',
@@ -13,10 +13,12 @@ const APP_SHELL = [
   './menu.css',
   './menu-install.css',
   './source-buttons.css',
+  './x-image-size.css',
   './gap.css',
   './analytics-config.js',
   './analytics-track.js',
   './app.js',
+  './x-image-fix.js',
   './source-buttons.js',
   './crawl-status.js',
   './weibo-image-fallback.js',
