@@ -178,7 +178,6 @@
     grid.querySelectorAll('.news-card').forEach(attachShareButton);
   }
 
-  const observer = new MutationObserver(attachAll);
-  observer.observe(grid, { childList: true, subtree: false });
+  document.addEventListener('kirapara:rendered', attachAll);
   attachAll();
 })();

@@ -1,5 +1,7 @@
 (() => {
-  const DATA_URL = 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/gap_analysis.json';
+  const DATA_URL = ['localhost', '127.0.0.1'].includes(location.hostname)
+    ? '../data/gap_analysis.json'
+    : 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/gap_analysis.json';
   const THEME_KEY = 'kirapara-news-theme';
   const REGION = {
     CHINA: { label:'中国', flag:'🇨🇳' },
@@ -39,6 +41,13 @@
 
   function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function safeUrl(value) {
+    try {
+      const url = new URL(String(value || ''), location.href);
+      return /^https?:$/.test(url.protocol) ? url.href : '#';
+    } catch { return '#'; }
   }
 
   function formatDate(value) {
@@ -114,7 +123,7 @@
     els.forecasts.innerHTML = forecasts.map((item) => {
       const region = REGION[item.region] || { flag:'🌐', label:item.region || '海外' };
       const title = escapeHtml(item.title || '先行情報');
-      const href = escapeHtml(item.sourceUrl || '#');
+      const href = escapeHtml(safeUrl(item.sourceUrl));
       const category = escapeHtml(item.categoryLabel || CATEGORY[item.category] || CATEGORY.OTHER);
       const sourceDate = escapeHtml(formatDate(item.sourceDate));
       const sourceBasis = escapeHtml(item.sourceBasis || '不明');
@@ -137,8 +146,8 @@
 
     els.matches.innerHTML = matches.map((item) => {
       const region = REGION[item.sourceRegion] || { flag:'🌐', label:item.sourceRegion || '海外' };
-      const srcHref = escapeHtml(item.sourceUrl || '#');
-      const jpHref = escapeHtml(item.jpUrl || '#');
+      const srcHref = escapeHtml(safeUrl(item.sourceUrl));
+      const jpHref = escapeHtml(safeUrl(item.jpUrl));
       return `<article class="gap-match"><div class="gap-match-head"><div class="gap-match-title"><strong>${escapeHtml(item.title || '名称不明')}</strong><small>${region.flag} ${escapeHtml(region.label)} → 🇯🇵 日本</small></div><span class="gap-category">${escapeHtml(item.categoryLabel || CATEGORY[item.category] || CATEGORY.OTHER)}</span></div><div class="gap-match-timeline"><a class="gap-date-box gap-source-link" href="${srcHref}" target="_blank" rel="noopener noreferrer"><span>${region.flag} ${escapeHtml(region.label)} · ${escapeHtml(item.sourceBasis || '不明')}</span><strong>${escapeHtml(formatDate(item.sourceDate))}</strong></a><div class="gap-match-gap">${escapeHtml(formatGap(item.gapDays))}</div><a class="gap-date-box gap-source-link" href="${jpHref}" target="_blank" rel="noopener noreferrer"><span>🇯🇵 日本 · ${escapeHtml(item.jpBasis || '不明')}</span><strong>${escapeHtml(formatDate(item.jpDate))}</strong></a></div><div class="gap-match-score">自動照合一致度 ${Math.round(Number(item.score || 0) * 100)}%</div></article>`;
     }).join('');
   }

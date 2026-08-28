@@ -32,6 +32,17 @@
 }
 
 * { box-sizing: border-box; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 html { background: var(--bg); scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -83,10 +94,12 @@ a { color: inherit; }
   padding: 0 13px; height: 46px; border-radius: 15px;
   border: 1px solid var(--line); background: var(--surface);
 }
+.search-wrap:focus-within { border-color: color-mix(in srgb, var(--accent) 48%, var(--line)); }
 .search-icon { color: var(--muted); font-size: 20px; transform: rotate(-15deg); }
 .search-wrap input { min-width: 0; flex: 1; border: 0; outline: 0; color: var(--text); background: transparent; font-size: 15px; }
 .search-wrap input::placeholder { color: var(--muted); }
 #clearSearchButton { border: 0; background: transparent; color: var(--muted); font-size: 22px; cursor: pointer; }
+#clearSearchButton[hidden] { display: none; }
 
 .region-tabs { display: flex; gap: 8px; margin-top: 11px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .region-tabs::-webkit-scrollbar { display: none; }
@@ -110,7 +123,17 @@ main { padding: 2px 18px 30px; }
   background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: var(--shadow);
   content-visibility: auto; contain-intrinsic-size: 520px;
 }
-.card-image-link { display: block; text-decoration: none; }
+.card-image-link {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: inherit;
+  cursor: zoom-in;
+}
+.card-image-link:disabled { cursor: default; }
 .card-image-wrap { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: linear-gradient(135deg, var(--surface-2), var(--surface-3)); }
 .card-image {
   width: 100%; height: 100%; max-width: 100%; object-fit: cover; object-position: center;
@@ -129,36 +152,9 @@ main { padding: 2px 18px 30px; }
 .card-body { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; white-space: pre-line; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .news-card.is-expanded .card-body { display: block; }
 .card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.more-button, .gallery-button, .source-button { border-radius: 12px; min-height: 38px; padding: 9px 12px; font-size: 12px; font-weight: 700; text-decoration: none; cursor: pointer; }
-.more-button, .gallery-button { color: var(--text); border: 1px solid var(--line); background: var(--surface-2); }
-.gallery-button { color: var(--accent); }
-.gallery-button.is-active { background: var(--surface-3); }
+.more-button, .source-button { border-radius: 12px; min-height: 38px; padding: 9px 12px; font-size: 12px; font-weight: 700; text-decoration: none; cursor: pointer; }
+.more-button { color: var(--text); border: 1px solid var(--line); background: var(--surface-2); }
 .source-button { margin-left: auto; color: #17121d; background: linear-gradient(135deg, #dcc3ff, #a7dcff); border: 0; }
-
-.article-gallery {
-  margin-top: 14px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-}
-.article-gallery[hidden] { display: none; }
-.gallery-item {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  min-width: 0;
-  overflow: hidden;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface-2);
-  cursor: zoom-in;
-}
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 .image-viewer {
   position: fixed;
@@ -238,7 +234,6 @@ footer { padding: 0 20px 14px; text-align: center; color: var(--muted); font-siz
   .news-grid { grid-template-columns: 1fr; gap: 13px; }
   .news-card { border-radius: 19px; }
   .card-title { font-size: 17px; }
-  .article-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .image-viewer { grid-template-columns: 42px minmax(0, 1fr) 42px; padding-left: 4px; padding-right: 4px; }
   .viewer-figure { max-width: 100%; }
   .viewer-image { max-height: 78vh; border-radius: 10px; }

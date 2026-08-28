@@ -76,11 +76,11 @@ def validate_glossary(doc: dict) -> None:
 
 
 def runtime_flat_map(doc: dict) -> dict[str, str]:
-    """Build the legacy flat map consumed by the current Qwen prompt code.
+    """Build the flat map consumed by the current translation prompt code.
 
     The structured file stays authoritative. If future entries require the same
     sourceText to map differently by region, this function fails loudly instead
-    of silently teaching Qwen a wrong global replacement.
+    of silently teaching the model a wrong global replacement.
     """
     validate_glossary(doc)
     result = {}
@@ -89,7 +89,7 @@ def runtime_flat_map(doc: dict) -> dict[str, str]:
         target = str(entry.get("targetText") or "").strip()
         if source in result and result[source] != target:
             raise ValueError(
-                f"runtime glossary ambiguity for {source!r}; update translate_news_llm.py to use scoped entries"
+                f"runtime glossary ambiguity for {source!r}; update translation_engine.py to use scoped entries"
             )
         result[source] = target
     return result

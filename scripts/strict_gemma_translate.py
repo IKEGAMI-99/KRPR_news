@@ -7,8 +7,8 @@ import sys
 import time
 from pathlib import Path
 
-import translate_news_llm as engine
-import strict_qwen_translate as strict
+import translation_engine as engine
+import translation_quality as strict
 
 MODEL_ID = "litert-community/gemma-4-E4B-it-litert-lm"
 MODEL_VARIANT = "LiteRT-LM"
@@ -21,10 +21,9 @@ _BASE_VALID_ENTRY = engine.valid_entry
 def gemma_entry_valid(row: dict, entry) -> bool:
     """Only current Gemma results (or explicit Sol-reviewed locks) count as complete.
 
-    Older Qwen/LFM/Gemma cache entries remain visible until their turn comes, but
-    are kept in the pending queue so the five-minute worker replaces them one by
-    one. Newer articles naturally win because engine.pending_rows sorts newest
-    first.
+    Older model revisions remain visible until their turn comes, but stay in the
+    pending queue so the active batched worker replaces them. Newer articles win
+    because engine.pending_rows sorts newest first.
     """
     if not engine.content_entry_valid(row, entry):
         return False
@@ -192,7 +191,7 @@ def run_regenerate_litert(argv: list[str]) -> int:
     parser.add_argument("--article-id", required=True)
     args = parser.parse_args(argv)
 
-    strict.patch_qwen_module()
+    strict.patch_engine()
     rows = engine.read_json(engine.NEWS_PATH, [])
     if not isinstance(rows, list):
         rows = []

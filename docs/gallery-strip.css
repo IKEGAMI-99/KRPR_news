@@ -1,15 +1,7 @@
-/* Image layout:
-   - 1 image: keep the large cover thumbnail at the top.
-   - 2+ images: keep the cover thumbnail and show a compact swipe strip
-     directly underneath it. Slider artwork is shown whole and aligned by height. */
+/* Two or more article images are rendered once as a compact swipe strip. */
 
 .card-image-link {
   display: block !important;
-}
-
-.article-gallery,
-.gallery-button {
-  display: none !important;
 }
 
 .inline-image-strip {

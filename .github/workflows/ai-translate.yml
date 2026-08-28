@@ -2,12 +2,12 @@ name: Translate News with Gemma 4 E4B LiteRT
 
 on:
   schedule:
-    - cron: '2-59/5 * * * *'
+    - cron: '7-59/15 * * * *'
   workflow_dispatch:
   push:
     paths:
-      - 'scripts/translate_news_llm.py'
-      - 'scripts/strict_qwen_translate.py'
+      - 'scripts/translation_engine.py'
+      - 'scripts/translation_quality.py'
       - 'scripts/strict_gemma_translate.py'
       - 'scripts/audit_translations.py'
       - 'scripts/apply_sol_edits.py'
@@ -116,10 +116,10 @@ jobs:
           python -m pip install --disable-pip-version-check --prefer-binary \
             "litert-lm==0.16.1"
 
-      - name: Translate and summarize one article with Gemma 4 E4B
+      - name: Translate and summarize up to three articles with Gemma 4 E4B
         if: steps.llm_plan.outputs.pending != '0'
         env:
-          LLM_MAX_ITEMS: '1'
+          LLM_MAX_ITEMS: '3'
         run: |
           python -u scripts/strict_gemma_translate.py translate \
             --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm"
@@ -132,7 +132,7 @@ jobs:
         if: steps.llm_plan.outputs.pending != '0'
         run: python scripts/apply_sol_edits.py
 
-      - name: Commit one Gemma translation when changed
+      - name: Commit Gemma translations when changed
         if: steps.llm_plan.outputs.pending != '0'
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json)" ]; then
@@ -142,6 +142,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json data/translations.json
-          git commit -m "chore: replace one article with Gemma 4 E4B LiteRT"
+          git commit -m "chore: translate news with Gemma 4 E4B LiteRT"
           git pull --rebase origin main
           git push

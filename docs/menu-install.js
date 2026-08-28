@@ -39,7 +39,7 @@
       <span class="menu-analysis-icon" aria-hidden="true">📈</span>
       <span class="menu-analysis-copy">
         <span><strong>アクセス解析</strong></span>
-        <small>閲覧数・ユーザー・流入元・地域・デバイス</small>
+        <small>公開中の集計値（個人を特定する情報は表示しません）</small>
       </span>
       <span class="menu-analysis-arrow" aria-hidden="true">›</span>
     </a>`;
@@ -60,8 +60,8 @@
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">✦</span>
-        <div><strong>Gemma 4 E4B 翻訳・要約</strong><small>毎時 :02から5分おき・1回1記事</small></div>
-        <b>5分ごと</b>
+        <div><strong>Gemma 4 E4B 翻訳・要約</strong><small>毎時 :07から15分おき・最大3記事</small></div>
+        <b>15分ごと</b>
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">◇</span>

@@ -1,14 +1,35 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v30';
+const CACHE_NAME = 'kirapara-pwa-shell-v31';
 const APP_SHELL = [
-  './','./index.html','./gap.html','./styles.css','./ai.css','./share.css','./theme-kawaii.css','./layout-fixes.css','./gallery-strip.css','./month-sections.css','./early-info.css','./topics.css','./menu.css','./menu-install.css','./dev-release.css','./gap.css','./app.js','./feed-status.js','./topics.js','./x-image-fix.js','./ui_fixes.js','./gallery-strip.js','./month-sections.js','./early-info.js','./share.js','./menu.js','./menu-install.js','./dev-release.js','./theme-kawaii.js','./gap.js','./manifest.webmanifest','./icon.svg'
+  './',
+  './index.html',
+  './gap.html',
+  './styles.css',
+  './ai.css',
+  './share.css',
+  './theme-kawaii.css',
+  './layout-fixes.css',
+  './gallery-strip.css',
+  './day-sections.css',
+  './early-info.css',
+  './topics.css',
+  './menu.css',
+  './menu-install.css',
+  './gap.css',
+  './analytics-config.js',
+  './analytics-track.js',
+  './app.js',
+  './topics.js',
+  './share.js',
+  './menu.js',
+  './menu-install.js',
+  './gap.js',
+  './manifest.webmanifest',
+  './icon.svg',
 ];
+const SHELL_URLS = new Set(APP_SHELL.map((path) => new URL(path, self.registration.scope).href));
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(APP_SHELL))
-      .then(() => self.skipWaiting())
-  );
+  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -19,38 +40,34 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-function cacheResponse(request, response) {
-  if (!response || response.status !== 200) return response;
-  const copy = response.clone();
-  caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
-  return response;
+async function navigationResponse(request) {
+  try {
+    const response = await fetch(request);
+    if (response?.ok) {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    return (await caches.match(request)) || caches.match('./index.html');
+  }
+}
+
+async function shellResponse(request) {
+  const cached = await caches.match(request, { ignoreSearch: true });
+  if (cached) return cached;
+  return fetch(request);
 }
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
-  if (url.hostname === 'raw.githubusercontent.com' || url.hostname === 'api.github.com') return;
+  if (url.origin !== self.location.origin) return;
 
-  const sameOrigin = url.origin === self.location.origin;
-  const isUiAsset = sameOrigin && (
-    event.request.mode === 'navigate' ||
-    /\.(?:html|js|css)$/.test(url.pathname) ||
-    url.pathname.endsWith('/')
-  );
-
-  if (isUiAsset) {
-    event.respondWith(
-      fetch(event.request)
-        .then((response) => cacheResponse(event.request, response))
-        .catch(() => caches.match(event.request).then((cached) => cached || caches.match('./index.html')))
-    );
+  if (event.request.mode === 'navigate') {
+    event.respondWith(navigationResponse(event.request));
     return;
   }
 
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
-      return fetch(event.request).then((response) => cacheResponse(event.request, response));
-    })
-  );
+  if (SHELL_URLS.has(`${url.origin}${url.pathname}`)) event.respondWith(shellResponse(event.request));
 });

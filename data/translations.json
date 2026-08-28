@@ -1,7 +1,7 @@
 {
   "version": 2,
   "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-  "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+  "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
   "items": {
     "https://x.com/kirapara_JP/status/2092899932063813799": {
       "contentHash": "7b8741c95678028d9d055a39",

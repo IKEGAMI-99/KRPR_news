@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+"""Model-agnostic translation cache, prompt, and inference engine."""
 import argparse
 import hashlib
 import json
 import os
 import re
 import sys
-import time
 from pathlib import Path
 
 from glossary_schema import active_entries, read_glossary
@@ -15,9 +15,9 @@ NEWS_PATH = ROOT / "data" / "news.json"
 CACHE_PATH = ROOT / "data" / "translations.json"
 GLOSSARY_PATH = ROOT / "data" / "translation_glossary.json"
 
-MODEL_ID = "Qwen/Qwen2.5-3B-Instruct-GGUF"
-MODEL_VARIANT = "Q4_K_M"
-MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-summary-facts-region-titles-v3"
+MODEL_ID = "unconfigured"
+MODEL_VARIANT = "unconfigured"
+MODEL_REVISION = "unconfigured"
 CACHE_VERSION = 2
 SUMMARY_FORMAT_VERSION = 2
 
@@ -76,7 +76,7 @@ def normalized_cache(raw) -> dict:
         items = {}
     return {
         "version": CACHE_VERSION,
-        "model": raw.get("model") or f"{MODEL_ID}:{MODEL_VARIANT}",
+        "model": f"{MODEL_ID}:{MODEL_VARIANT}",
         "modelRevision": MODEL_REVISION,
         "items": items,
     }
@@ -433,73 +433,9 @@ def cmd_prepare(args) -> int:
     return 0
 
 
-def cmd_translate(args) -> int:
-    model_path = Path(args.model or os.getenv("LLM_MODEL_PATH", "")).expanduser()
-    if not model_path.is_file():
-        print(f"model not found: {model_path}", file=sys.stderr)
-        return 2
-
-    rows = read_json(NEWS_PATH, [])
-    if not isinstance(rows, list):
-        rows = []
-    cache = normalized_cache(read_json(CACHE_PATH, {}))
-    apply_cache(rows, cache)
-    pending = pending_rows(rows, cache)
-    limit = max(1, int(args.max_items or os.getenv("LLM_MAX_ITEMS", "10")))
-    selected = pending[:limit]
-
-    if not selected:
-        write_json(NEWS_PATH, rows)
-        write_json(CACHE_PATH, cache)
-        print("no new items need LLM processing")
-        return 0
-
-    from llama_cpp import Llama
-
-    threads = max(2, min(4, os.cpu_count() or 4))
-    llm = Llama(
-        model_path=str(model_path),
-        n_ctx=4096,
-        n_batch=128,
-        n_threads=threads,
-        n_threads_batch=threads,
-        verbose=False,
-    )
-
-    successes = 0
-    failures = 0
-    for index, row in enumerate(selected, 1):
-        key = cache_key(row)
-        print(f"[{index}/{len(selected)}] LLM {row.get('region')} {row.get('platform')}: {str(row.get('title') or '')[:70]}")
-        result = infer_one(llm, row)
-        if not result:
-            failures += 1
-            print(f"  failed: {key}", file=sys.stderr)
-            continue
-
-        entry = {
-            "contentHash": source_hash(row),
-            **result,
-            "model": f"{MODEL_ID}:{MODEL_VARIANT}",
-            "modelRevision": MODEL_REVISION,
-            "summaryFormatVersion": SUMMARY_FORMAT_VERSION,
-            "updatedAtEpoch": int(time.time()),
-        }
-        cache["items"][key] = entry
-        successes += 1
-
-        apply_cache(rows, cache)
-        prune_cache(cache)
-        write_json(CACHE_PATH, cache)
-        write_json(NEWS_PATH, rows)
-
-    apply_cache(rows, cache)
-    prune_cache(cache)
-    write_json(CACHE_PATH, cache)
-    write_json(NEWS_PATH, rows)
-    remaining = len(pending_rows(rows, cache))
-    print(f"LLM processed: success={successes} failed={failures} remaining={remaining}")
-    return 0 if successes or not selected else 1
+def cmd_translate(_args) -> int:
+    print("translation runtime is not configured; use strict_gemma_translate.py", file=sys.stderr)
+    return 2
 
 
 def main():

@@ -12,7 +12,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "news.json"
-UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.3.12"
+UA = "Mozilla/5.0 KiraparaNews-GitHubCollector/0.3.13"
+
+YOUTUBE_CHANNEL_IDS = {
+    "JAPAN": "UC9MO21fNvt0F4-UK28kc_VQ",
+    "GLOBAL": "UCaaIsX56nWN0fvGJXQ8yvhA",
+    "KOREA": "UC-E6zjPaMmZk6dm9EfQ3gBg",
+}
+
+UNRELATED_YOUTUBE_TITLES = (
+    "dragon raja",
+    "noah's heart",
+    "noah’s heart",
+    "archosaur games’ ue5 teaser",
+    "archosaur games' ue5 teaser",
+)
 
 RSSHUB_HOSTS = [
     "https://rsshub.app",
@@ -331,8 +345,12 @@ def parse_feed(xml_text: str, region: str, platform: str, limit: int = 12):
 
 def resolve_youtube_channel_id(page_url: str):
     text = get(page_url)
+    # Channel pages also contain IDs for recommended and embedded videos. The
+    # canonical page owner must win over generic channelId fields.
     patterns = [
-        r'"channelId"\s*:\s*"(UC[a-zA-Z0-9_-]{22})"',
+        r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\'][^"\']*?/channel/(UC[a-zA-Z0-9_-]{22})',
+        r'<meta[^>]+property=["\']og:url["\'][^>]+content=["\'][^"\']*?/channel/(UC[a-zA-Z0-9_-]{22})',
+        r'<meta[^>]+content=["\'][^"\']*?/channel/(UC[a-zA-Z0-9_-]{22})[^"\']*["\'][^>]+property=["\']og:url["\']',
         r'"browseId"\s*:\s*"(UC[a-zA-Z0-9_-]{22})"',
         r'"externalId"\s*:\s*"(UC[a-zA-Z0-9_-]{22})"',
         r'youtube\.com/channel/(UC[a-zA-Z0-9_-]{22})',
@@ -506,13 +524,9 @@ def main():
     existing = load_existing()
 
     sources = [
-        lambda: youtube_channel("JAPAN", "公式YouTube", channel_id="UC9MO21fNvt0F4-UK28kc_VQ"),
-        lambda: youtube_channel(
-            "GLOBAL",
-            "公式YouTube",
-            page_urls=["https://www.youtube.com/c/LifeMakeover/", "https://www.youtube.com/@LifeMakeover"],
-        ),
-        lambda: youtube_channel("KOREA", "公式YouTube", page_urls=["https://www.youtube.com/@stylight_official"]),
+        lambda: youtube_channel("JAPAN", "公式YouTube", channel_id=YOUTUBE_CHANNEL_IDS["JAPAN"]),
+        lambda: youtube_channel("GLOBAL", "公式YouTube", channel_id=YOUTUBE_CHANNEL_IDS["GLOBAL"]),
+        lambda: youtube_channel("KOREA", "公式YouTube", channel_id=YOUTUBE_CHANNEL_IDS["KOREA"]),
         lambda: rsshub("CHINA", "公式Weibo · RSSHub", "/weibo/user/7521830234"),
         lambda: rsshub("CHINA", "公式Bilibili · RSSHub", "/bilibili/user/video/676200579"),
         lambda: rsshub("JAPAN", "公式X · RSSHub", "/twitter/user/kirapara_JP"),
@@ -544,6 +558,12 @@ def main():
     for row in fresh:
         url = row.get("sourceUrl")
         if not url:
+            continue
+        title_lower = str(row.get("title") or "").casefold()
+        if str(row.get("platform") or "") == "公式YouTube" and any(
+            token in title_lower for token in UNRELATED_YOUTUBE_TITLES
+        ):
+            print(f"skipped unrelated YouTube item: {row.get('title')}")
             continue
         row.pop("translatedTitle", None)
         row.pop("translatedBody", None)

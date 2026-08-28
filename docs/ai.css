@@ -33,6 +33,7 @@
   line-height: 1.7;
   white-space: pre-line;
 }
+.ai-summary.is-hidden-for-original { display: none; }
 
 .original-button {
   min-height: 38px;

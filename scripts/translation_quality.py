@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
+"""Shared Japanese-output validation used by the active Gemma pipeline."""
 import re
 import sys
 from pathlib import Path
 
-import translate_news_llm as qwen
+import translation_engine as engine
 from glossary_schema import active_entries, read_glossary
 
 
-STRICT_MODEL_REVISION = "qwen2.5-3b-instruct-q4-k-m-summary-facts-region-titles-strict-ja-v5"
+STRICT_MODEL_REVISION = "translation-quality-strict-ja-v1"
 URL_HASH_RE = re.compile(r"https?://\S+|#[^\s#]+")
 KANA_RE = re.compile(r"[ぁ-ゖァ-ヺー]")
 HANGUL_RE = re.compile(r"[가-힣] ")
@@ -34,14 +35,14 @@ CHINESE_COMMON_LEFTOVERS = (
 )
 CHINESE_DISCOUNT_RE = re.compile(r"(?<![A-Za-z0-9])\d+(?:\.\d+)?折")
 
-_ORIGINAL_BUILD_MESSAGES = qwen.build_messages
-_ORIGINAL_VALIDATE_RESULT = qwen.validate_result
+_ORIGINAL_BUILD_MESSAGES = engine.build_messages
+_ORIGINAL_VALIDATE_RESULT = engine.validate_result
 
 
 def scoped_preserved_terms(row: dict) -> list[str]:
-    terms = [qwen.canonical_game_title(str(row.get("region") or ""))]
+    terms = [engine.canonical_game_title(str(row.get("region") or ""))]
     try:
-        doc = read_glossary(qwen.GLOSSARY_PATH)
+        doc = read_glossary(engine.GLOSSARY_PATH)
         region = str(row.get("region") or "").upper()
         for entry in active_entries(doc):
             regions = {str(value).upper() for value in (entry.get("regions") or [])}
@@ -180,7 +181,7 @@ def strict_validate_result(row: dict, obj):
         return None
     reason = japanese_failure_reason(row, result)
     if reason:
-        print(f"  rejected non-Japanese output: {qwen.cache_key(row)}: {reason}", file=sys.stderr)
+        print(f"  rejected non-Japanese output: {engine.cache_key(row)}: {reason}", file=sys.stderr)
         return None
     return result
 
@@ -201,30 +202,30 @@ def strict_infer_one(llm, row: dict):
                 seed=42 + attempt,
             )
             text = response["choices"][0]["message"]["content"]
-            result = strict_validate_result(row, qwen.parse_json_object(text))
+            result = strict_validate_result(row, engine.parse_json_object(text))
             if result:
                 return result
         except Exception as exc:
-            print(f"LLM strict attempt {attempt} failed {qwen.cache_key(row)}: {exc}", file=sys.stderr)
+            print(f"LLM strict attempt {attempt} failed {engine.cache_key(row)}: {exc}", file=sys.stderr)
     return None
 
 
 def purge_non_japanese_cache() -> int:
-    rows = qwen.read_json(qwen.NEWS_PATH, [])
-    cache = qwen.normalized_cache(qwen.read_json(qwen.CACHE_PATH, {}))
+    rows = engine.read_json(engine.NEWS_PATH, [])
+    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
     if not isinstance(rows, list):
         return 0
     items = cache.get("items", {})
     removed = 0
     for row in rows:
-        key = qwen.cache_key(row)
+        key = engine.cache_key(row)
         entry = items.get(key)
-        if not qwen.content_entry_valid(row, entry):
+        if not engine.content_entry_valid(row, entry):
             continue
         model = str((entry or {}).get("model") or "")
         if "GPT-5.6 Sol" in model or (entry or {}).get("managedBySol"):
             continue
-        result = {field: str((entry or {}).get(field) or "") for field in qwen.TRANSLATION_FIELDS}
+        result = {field: str((entry or {}).get(field) or "") for field in engine.TRANSLATION_FIELDS}
         reason = japanese_failure_reason(row, result)
         if not reason:
             continue
@@ -233,43 +234,28 @@ def purge_non_japanese_cache() -> int:
         print(f"purged non-Japanese cache: {key}: {reason}")
 
     if removed:
-        qwen.apply_cache(rows, cache)
-        qwen.write_json(qwen.CACHE_PATH, cache)
-        qwen.write_json(qwen.NEWS_PATH, rows)
+        engine.apply_cache(rows, cache)
+        engine.write_json(engine.CACHE_PATH, cache)
+        engine.write_json(engine.NEWS_PATH, rows)
     print(f"strict Japanese cache audit: removed={removed}")
     return removed
 
 
-def patch_qwen_module() -> None:
-    qwen.MODEL_REVISION = STRICT_MODEL_REVISION
-    qwen.build_messages = strict_build_messages
-    qwen.validate_result = strict_validate_result
-    qwen.infer_one = strict_infer_one
+def patch_engine() -> None:
+    engine.MODEL_REVISION = STRICT_MODEL_REVISION
+    engine.build_messages = strict_build_messages
+    engine.validate_result = strict_validate_result
+    engine.infer_one = strict_infer_one
 
 
 def run_prepare_or_translate(args: list[str]) -> int:
-    patch_qwen_module()
+    patch_engine()
     purge_non_japanese_cache()
     old_argv = sys.argv[:]
     try:
-        sys.argv = [str(Path(qwen.__file__)), *args]
+        sys.argv = [str(Path(engine.__file__)), *args]
         try:
-            qwen.main()
-        except SystemExit as exc:
-            return int(exc.code or 0)
-    finally:
-        sys.argv = old_argv
-    return 0
-
-
-def run_regenerate(args: list[str]) -> int:
-    patch_qwen_module()
-    import regenerate_ai
-    old_argv = sys.argv[:]
-    try:
-        sys.argv = [str(Path(regenerate_ai.__file__)), *args]
-        try:
-            regenerate_ai.main()
+            engine.main()
         except SystemExit as exc:
             return int(exc.code or 0)
     finally:
@@ -279,14 +265,12 @@ def run_regenerate(args: list[str]) -> int:
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("usage: strict_qwen_translate.py prepare|translate|regenerate [ARGS...]", file=sys.stderr)
+        print("usage: translation_quality.py prepare|translate [ARGS...]", file=sys.stderr)
         return 2
     command = sys.argv[1]
     args = sys.argv[2:]
     if command in {"prepare", "translate"}:
         return run_prepare_or_translate([command, *args])
-    if command == "regenerate":
-        return run_regenerate(args)
     print(f"unknown command: {command}", file=sys.stderr)
     return 2
 

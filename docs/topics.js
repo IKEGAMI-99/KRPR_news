@@ -20,6 +20,7 @@
 
   function visibleItems() {
     try {
+      if (typeof filteredItems === 'function') return filteredItems();
       if (typeof state === 'undefined' || !Array.isArray(state.items)) return [];
       return state.items.filter((item) => state.region === 'ALL' || item.region === state.region);
     } catch { return []; }
@@ -51,9 +52,16 @@
   async function goToArticle(id) {
     let target = document.querySelector(`#article-${CSS.escape(id)}`);
     if (!target) {
+      const search = document.querySelector('#searchInput');
+      if (search?.value) {
+        search.value = '';
+        if (typeof state !== 'undefined') state.query = '';
+        document.querySelector('#clearSearchButton')?.setAttribute('hidden', '');
+      }
       const all = document.querySelector('.region-tab[data-region="ALL"]');
       if (all && !all.classList.contains('is-active')) all.click();
-      await new Promise((resolve) => setTimeout(resolve, 80));
+      else if (typeof render === 'function') render();
+      await new Promise((resolve) => requestAnimationFrame(resolve));
       markCards();
       target = document.querySelector(`#article-${CSS.escape(id)}`);
     }
@@ -109,11 +117,9 @@
     render();
   }
 
-  new MutationObserver(refresh).observe(grid, { childList:true });
-  document.querySelector('#regionTabs')?.addEventListener('click', () => setTimeout(refresh, 0));
+  document.addEventListener('kirapara:rendered', refresh);
   window.addEventListener('pageshow', () => setTimeout(resetHorizontalScroll, 0));
-  window.addEventListener('resize', () => setTimeout(resetHorizontalScroll, 0));
+  window.addEventListener('resize', resetHorizontalScroll, { passive:true });
   resetHorizontalScroll();
-  setTimeout(resetHorizontalScroll, 60);
   refresh();
 })();

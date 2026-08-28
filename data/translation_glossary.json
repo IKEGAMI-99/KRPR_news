@@ -2,7 +2,7 @@
   "version": 2,
   "schema": "krpr.translation-glossary.v2",
   "defaultTargetLanguage": "ja",
-  "description": "Runtime glossary plus provenance-rich seed data for a future Qwen2.5-3B-KRPR LoRA dataset. Keep corrections, scope and evidence instead of flattening them away.",
+  "description": "Runtime glossary plus provenance-rich seed data for future Kirapara-specific model training. Keep corrections, scope and evidence instead of flattening them away.",
   "entries": [
     {
       "id": "game-title-japan",
