@@ -61,4 +61,16 @@
   } catch {
     // The normal async load path will use the overrides on its first render.
   }
+
+  // Existing tabs keep already-loaded JavaScript even after a new service
+  // worker claims them. Reload once when the controller changes so a PWA that
+  // stays open for days cannot keep an obsolete image-delivery shim forever.
+  if ('serviceWorker' in navigator) {
+    let reloadingForUpdate = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (reloadingForUpdate) return;
+      reloadingForUpdate = true;
+      location.reload();
+    });
+  }
 })();
