@@ -1,5 +1,27 @@
 [
   {
+    "id": "aa007bc2625af90710f44188",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "🔔【復刻】イベント予告🔔 セットコーデの情報をお届け",
+    "body": "🔔【復刻】イベント予告🔔\n\nセットコーデの情報をお届け！\n\n限定ガチャイベント『鏡海の迷路』、9月3日より復刻\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2093262324618707193",
+    "publishedLabel": "2時間前",
+    "publishedAtEpoch": 1787907603,
+    "imageUrl": "https://pbs.twimg.com/media/HP6wZc0awAEIeqz?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6wZc0awAEIeqz?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2093262324618707193"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "a8442559f8611e1637ef583a",
     "region": "GLOBAL",
     "platform": "公式X",
@@ -30,24 +52,24 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "2c4c833cba1ebc2099c586a6",
+    "id": "f88f766d20abf824dee93975",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "VME | 爆料早班机：首发艺人即将启程",
-    "body": "💘超级新星降临音乐宇宙\n⭐独家出道应援即将开启\n💗让我们共同创造☆✮⁺⊹\n✨这命运般的相遇☆✮⁺⊹\n以闪亮之名全新4.4版本即将开启，敬请期待……\nTAPTAP：以闪亮之名\n官方微博：@以闪亮之名\n官方微信公众号：以闪亮之名\n官方抖音：以闪亮之名\n官方小红书：以闪亮之名VVANNA Studio\n官方B站：以闪亮之名\n官网：",
-    "sourceUrl": "https://www.taptap.cn/moment/842032893923427818",
+    "platform": "公式Bilibili · 記事",
+    "title": "VME | 爆料早班机：首发艺人即将启程 💘超级新星降临音乐宇宙 ⭐独家出道应援即将开启 💗让我们共同创造☆✮⁺⊹ ✨这命运般的相遇☆✮⁺⊹ 以闪亮之名全新4...",
+    "body": "VME | 爆料早班机：首发艺人即将启程\n\n💘超级新星降临音乐宇宙\n⭐独家出道应援即将开启\n💗让我们共同创造☆✮⁺⊹\n✨这命运般的相遇☆✮⁺⊹\n以闪亮之名全新4.4版本即将开启，敬请期待…… 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1241465453027524644",
     "publishedLabel": "7時間前",
     "publishedAtEpoch": 1787889600,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/lmLneEC1aOi0N0ctHo6_K7RP03FD_20260827133743.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg@316w_560h_1e_1c",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/lmLneEC1aOi0N0ctHo6_K7RP03FD_20260827133743.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lmLneEC1aOi0N0ctHo6_K7RP03FD_20260827133743.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg@316w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg"
     ],
     "sources": [
       {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/842032893923427818"
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1241465453027524644"
       },
       {
         "platform": "公式Weibo",
@@ -55,12 +77,28 @@
         "url": "https://weibo.com/7521830234/RfsQDmbtc"
       },
       {
+        "platform": "公式TapTap",
+        "label": "TapTap",
+        "url": "https://www.taptap.cn/moment/842032893923427818"
+      },
+      {
         "platform": "官方好游快爆",
         "label": "好游快爆",
         "url": "https://m.bbs.3839.com/thread-9114444.htm"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1241465453027524644"
       }
     ],
-    "sourceCount": 3
+    "sourceCount": 5,
+    "titleJa": "VME | 独占情報：初登場アーティストが旅立つ、超新星が音楽宇宙に降臨💘\n⭐独占デビュー応援が始まります💗\n✨運命的な出会いを共に創り上げましょう☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します……",
+    "bodyJa": "VME | 独占情報：初登場アーティストが旅立つ\n\n💘超新星が音楽宇宙に降臨\n⭐独占デビュー応援が始まります\n💗共に創造しましょう☆✮⁺⊹\n✨運命的な出会いを☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します。ご期待ください……\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+    "summaryJa": "・新バージョン4.4が間もなく始動する\n・初登場アーティストが旅立つ\n・超新星が音楽宇宙に降臨する\n・独占デビュー応援が開始される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f27256b5df4684464d1c5572",
@@ -112,9 +150,19 @@
         "platform": "公式Weibo",
         "label": "Weibo",
         "url": "https://weibo.com/7521830234/RflMge0Oz"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1241187139140452373"
+      },
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1241187139140452373"
       }
     ],
-    "sourceCount": 1,
+    "sourceCount": 3,
     "titleJa": "以闪亮之名 #以闪亮之名# 【復刻】星夜神諭パック期間限定開催【パック期間】8月28日10:00-9月3日23:59【パック説明】",
     "bodyJa": "以闪亮之名 #以闪亮之名# \n\n【復刻】星夜神諭パック期間限定開催\n\n【パック期間】\n8月28日10:00-9月3日23:59\n【パック説明】\n星夜神諭パックの販売期間中、プレイヤーは限定ミッションを完了することでパックの割引を獲得できます。全4つのミッションを完了すると、最低割引率の22%（78%OFF）になります！このお得な特典をお見逃しなく！パックには、★5の精巧な手持ちアイテム【星祈绘卷】、★5のメイク【裂隙霞金】、精巧な家具【深渊呢喃】、逐光招待状*3、体力*300、潮流色カード*45が含まれており、このパックは永久に1回のみ購入可能です。\n【ミッション説明】\n4つの限定ミッションは2つのグループに分かれています。イベント期間中に以下のいずれかのグループのミッションを完了すると、1回割引が適用されます。全2グループのミッションを完了すると、最低割引率の22%（78%OFF）が適用されます！\n第1グループミッション\n1. 追光を1回完了する\n2. フレンドに体力を5回贈呈する\n第2グループミッション\n1. 体力を合計1000ポイント消費する\n2. 協会応援に参加して会員ポイントを90ポイント獲得する\n【特別説明】\n★5の精巧な手持ちアイテム【星祈绘卷】には専用のメイン画面インタラクション動作が付いています。メイン画面で装備し、この手持ちアイテムをクリックすることで発動します。プレイヤーの皆様、新しい専用インタラクションを体験してください！\n【復刻説明】\n今回のパックイベントは、お客様の過去の購入状況を記録します。以前にこのパックを購入済みの場合は、今回は再購入できません。また、今回のパックイベントは、前回イベント開始時の限定割引ミッションの完了状況も記録します。すでに完了したミッションは今回は重複して完了する必要はありません。前回イベント開始期間中に消費された体力や協会応援で獲得した会員ポイントも、ミッションの進捗に累積されます。\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク 映像は表示されません。微博動画をご覧ください。",
     "summaryJa": "・復刻: 星夜神諭パックが期間限定で販売開始\n・期間: 8月28日10:00〜9月3日23:59\n・内容: ★5手持ちアイテム【星祈绘卷】、★5メイク【裂隙霞金】、家具【深渊呢喃】、逐光招待状*3、体力*300、潮流色カード*45を含む\n・割引: 全4ミッション完了で最低割引率22%（78%OFF）が適用される\n・購入制限: このパックは永久に1回のみ購入可能",
@@ -146,7 +194,7 @@
       "https://img2-tc.tapimg.com/moment/etag/FsAA7q4dV10AZ2gW-2Ak7BaK4BUo_20260330183842.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lhUK8JU1hGEsdnlaQUnBBU4KEKA1_20251011192332.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/llK3JiYFjheNQ1zgCIbVpS5nE-xx_20260309140034.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lomWdPw0_MbuJgQ30d0YCzNNNZiI_20250901160046.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lomWdPw0_MbuJgQ30d0YCzNNNZiI_20250901155946.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/luFRSTQUpHEQnpqrl5MTnEj-Kk2E_20250915162100.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FuIIFiOlcLN0iUtcz_0BeNeciy4Y_20260825185115.jpg/_tap_banner.jpg",
       "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
@@ -200,35 +248,43 @@
     "sourceCount": 1
   },
   {
-    "id": "d61f7041b0200766d513d42e",
+    "id": "c215f29ccd873dd60580211f",
     "region": "CHINA",
-    "platform": "公式Weibo",
-    "title": "以闪亮之名 #以闪亮之名# #顶流的蛋生# VME | 孵化幸运💖助力顶流蛋生💥📢在 Vvanna.Music.Entertainment 的神秘蛋壳上📢每多一个点赞就多一缕欧气凝结...",
-    "body": "以闪亮之名 #以闪亮之名# #顶流的蛋生# \n\nVME | 孵化幸运💖助力顶流蛋生💥\n\n📢在 Vvanna.Music.Entertainment 的神秘蛋壳上\n📢每多一个点赞就多一缕欧气凝结\n📢每多一次转发就多一分幸运闪亮\n✨让幸运为你 「蛋生」！\n\n带话题 #顶流的蛋生# 转发本条微博，我们将随机抽选一位幸运合伙人送出 500元京东卡*1张！\n活动期：8月27日-9月10日\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-    "sourceUrl": "https://weibo.com/7521830234/RflnUkx2m",
+    "platform": "公式Bilibili · 記事",
+    "title": "VME | 孵化幸运💖助力顶流蛋生💥 📢在 Vvanna.Music.Entertainment 的神秘蛋壳上 📢每多一个点赞就多一缕欧气凝结 📢每多一次转发就多一分幸运闪亮 ✨...",
+    "body": "VME | 孵化幸运💖助力顶流蛋生💥\n\n📢在 Vvanna.Music.Entertainment 的神秘蛋壳上\n📢每多一个点赞就多一缕欧气凝结\n📢每多一次转发就多一分幸运闪亮\n✨让幸运为你 「蛋生」！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1241171677259235393",
     "publishedLabel": "1日前",
-    "publishedAtEpoch": 1787821201,
-    "imageUrl": "https://wx4.sinaimg.cn/large/008d2PEugy1igi7sh4ry4j31jk1jk19f.jpg",
+    "publishedAtEpoch": 1787821200,
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg@560w_560h_1e_1c",
     "imageUrls": [
-      "https://wx4.sinaimg.cn/large/008d2PEugy1igi7sh4ry4j31jk1jk19f.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg@560w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1241171677259235393"
+      },
       {
         "platform": "公式Weibo",
         "label": "Weibo",
         "url": "https://weibo.com/7521830234/RflnUkx2m"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1241171677259235393"
       }
     ],
-    "sourceCount": 1,
-    "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# VME | 幸運を孵化💖トップスターの卵生を応援💥📢Vvanna.Music.Entertainmentの神秘的な卵殻で📢いいねを増やすごとに幸運のオーラが凝縮...",
-    "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\nVME | 幸運を孵化💖トップスターの卵生を応援💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを増やすごとに幸運のオーラが凝縮\n📢リツイートを増やすごとに幸運の輝きが加算\n✨幸運をあなたに「卵生」！\n\nハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすると、抽選で1名の幸運なプレイヤーに500元JDカード*1枚をプレゼント！\nイベント期間：8月27日〜9月10日\n\n💎ダウンロード用リンク： Webリンク \n💎閃亮作品上映季イベント用リンク： Webリンク",
-    "summaryJa": "・イベント名: VME | 幸運を孵化💖トップスターの卵生を応援💥\n・期間: 8月27日〜9月10日\n・参加条件: ハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすること\n・報酬: 抽選で1名のプレイヤーに500元JDカード*1枚をプレゼント",
+    "sourceCount": 3,
+    "titleJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨...",
+    "bodyJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨\n\n幸運をあなたに「卵生」させましょう！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+    "summaryJa": "・イベント: VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n・参加方法: Vvanna.Music.Entertainmentの神秘的な卵殻で参加\n・参加条件: いいねを一つ増やすごとに幸運のオーラが凝縮\n・参加条件: リツイートを一つ増やすごとに幸運の輝きが増す",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2",
-    "imageMirrorUrls": [
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/78e98506e547e9ece426.jpg"
-    ]
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "fac4be1a680df91d444144cc",
@@ -242,17 +298,6 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FlzLNhNlKg4XYp7mQvioPS6PAg18_20260808002727.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/li16ezm3NcOa8YY4qfdrP1eOnKaw_20260717222039.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/llfkjKRQS-twTOZkHErYMMN4gb2h_20260205185817.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FpIuVzL_UiBeIJ8nHfAMVmuqe40T_20260807152901.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fn0T-oEkyTECtXcbp-OnMgpjjye0_20260827111236.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FkOsEpzuCBqmqQUInmG4QGdhHQrF_20260428150813.jpg/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FpPRc2Kyb8euZ6VPou1BEQ7Ozr2u_20260827111518.jpg"
     ],
     "sources": [
@@ -361,45 +406,48 @@
     "sourceCount": 1
   },
   {
-    "id": "99e28c77e08efaf37654150c",
+    "id": "46509284a14b8ceaa1a8f1e6",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "Vvanna.Music.Entertainment官宣",
-    "body": "👏🏻Vvanna.Music.Entertainment正式官宣\n✨聚光灯下，VME新星为你闪亮\n📢梦想孵化招募即日起同步启动\n🌟欢迎持续关注以闪亮之名全新4.4版本\n💖大事很妙，敬请期待\nTAPTAP：以闪亮之名\n官方微博：@以闪亮之名\n官方微信公众号：以闪亮之名\n官方抖音：以闪亮之名\n官方小红书：以闪亮之名VVANNA Studio\n官方B站：以闪亮之名\n官网：",
-    "sourceUrl": "https://www.taptap.cn/moment/841996392720236819",
+    "platform": "公式Bilibili · 記事",
+    "title": "Vvanna.Music.Entertainment官宣 👏🏻Vvanna.Music.Entertainment正式官宣 ✨聚光灯下，VME新星为你闪亮 📢梦想孵化招募即日起同步启动 🌟欢迎持续关注...",
+    "body": "Vvanna.Music.Entertainment官宣\n\n👏🏻Vvanna.Music.Entertainment正式官宣\n✨聚光灯下，VME新星为你闪亮\n📢梦想孵化招募即日起同步启动\n🌟欢迎持续关注以闪亮之名全新4.4版本\n💖大事很妙，敬请期待 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1241094367904530448",
     "publishedLabel": "1日前",
     "publishedAtEpoch": 1787803200,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fn0T-oEkyTECtXcbp-OnMgpjjye0_20260827111236.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/ef09a5cd995ab0a5af04a1cd20cfb90f676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/Fn0T-oEkyTECtXcbp-OnMgpjjye0_20260827111236.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FhhZJTAu9PB-3YUgJ9r6APSTlmPT_20251107221449.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FmLi5sZDq8pBbEqiJlA0L5YfsYIz_20260802015026.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fh1yJ03BNV4OhmSqJS3hHvCfGc2B_20260826105106.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/li16ezm3NcOa8YY4qfdrP1eOnKaw_20260717222039.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FpIuVzL_UiBeIJ8nHfAMVmuqe40T_20260807152901.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fhjeip4lmEsYxqJhCPvLqM2VoWrK_20260801203424.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fn507iqaV9ga9xy69_M0qpPgQNqO_20260827111236.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fn0T-oEkyTECtXcbp-OnMgpjjye0_20260827111236.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fn507iqaV9ga9xy69_M0qpPgQNqO_20260827111236.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/ef09a5cd995ab0a5af04a1cd20cfb90f676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/4ccdcff7be3709c8aeef4e37b14d1350676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1241094367904530448"
+      },
+      {
+        "platform": "公式Weibo",
+        "label": "Weibo",
+        "url": "https://weibo.com/7521830234/Rfjq8fJXD"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/841996392720236819"
       },
       {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/Rfjq8fJXD"
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1241094367904530448"
       }
     ],
-    "sourceCount": 2
+    "sourceCount": 4,
+    "titleJa": "Vvanna.Music.Entertainmentが正式発表 👏🏻Vvanna.Music.Entertainmentが正式に発表 ✨スポットライトの下で、VMEの新星があなたを輝かせる 📢ドリームインキュベーション（夢の孵化）の募集が本日より開始 🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください...",
+    "bodyJa": "Vvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表\n✨スポットライトの下で、VMEの新星があなたを輝かせる\n📢ドリームインキュベーションの募集が本日より開始\n🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください\n💖素晴らしいことが起こりますので、ご期待ください\n\n以闪亮之名\n \n ゲーム\n \n ロールプレイング/高画質/シミュレーション経営\n \n 全ての女性が夢中になる3A級シミュレーションライフゲーム\n \n 入場",
+    "summaryJa": "・追加: Vvanna.Music.Entertainmentが正式に発表\n・イベント: ドリームインキュベーションの募集が本日より開始\n・バージョン: 以闪亮之名（以閃亮之名）の全新4.4バージョンが予定されている",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3c01de80d76097ef95460dcc",
@@ -927,6 +975,90 @@
     "sourceCount": 1
   },
   {
+    "id": "b8fc1d7cf3d898f7d4c9dc7f",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
+    "body": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2092522435669069995",
+    "publishedLabel": "2日前",
+    "publishedAtEpoch": 1787731200,
+    "imageUrl": "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6r2iVbUAEN3xX?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2092522435669069995"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
+    "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・イベント期間中にアプリ内課金（金額指定なし）を行うと、『茶を巡る旅』画面で星5所持品と壺の中の日月を受け取れる\n・さらに還元Expで追加の報酬も獲得可能\n・期間: 8月27日10:30～9月16日23:59\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "f633a0ef6cab4734e0c34311",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
+    "body": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2092514884575437286",
+    "publishedLabel": "2日前",
+    "publishedAtEpoch": 1787729400,
+    "imageUrl": "https://pbs.twimg.com/media/HP6rawZa8AAAAlz?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6rawZa8AAAAlz?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2092514884575437286"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
+    "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: 5つの無料イベントが開催されます\n・内容: 星5セット、星4セットを獲得できるチャンスです\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "41b53014c26c05314b2bcdde",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
+    "body": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2092507341736268068",
+    "publishedLabel": "2日前",
+    "publishedAtEpoch": 1787727601,
+    "imageUrl": "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6rIZGa0AAljgT?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2092507341736268068"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
+    "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・新機能として立ち姿勢固定モードがまもなく登場します\n・デイリー任務に「お任せ派遣機能」が追加されます\n・新テーマ曲が登場します\n・交換ショップに新たなファッションと報酬が追加されます",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
     "id": "7086bf07ea0a37018778896d",
     "region": "GLOBAL",
     "platform": "公式X",
@@ -958,35 +1090,43 @@
     "sourceCount": 1
   },
   {
-    "id": "1e51fd9c9da7a84018bd2dc2",
+    "id": "5f80c1040580753eac3c4d02",
     "region": "CHINA",
-    "platform": "公式Weibo",
-    "title": "以闪亮之名 #以闪亮之名# 关于游戏内配音调整情况说明亲爱的合伙人：感谢您长久以来对《以闪亮之名》的喜爱和支持",
-    "body": "以闪亮之名 #以闪亮之名# \n\n关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-    "sourceUrl": "https://weibo.com/7521830234/Rf9BhoCFS",
+    "platform": "公式Bilibili · 記事",
+    "title": "关于游戏内配音调整情况说明 亲爱的合伙人： 感谢您长久以来对《以闪亮之名》的喜爱和支持",
+    "body": "关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240707820837404690",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1787713200,
-    "imageUrl": "https://wx2.sinaimg.cn/large/008d2PEugy1iggzozj7enj32yo1o0h5q.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
     "imageUrls": [
-      "https://wx2.sinaimg.cn/large/008d2PEugy1iggzozj7enj32yo1o0h5q.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240707820837404690"
+      },
       {
         "platform": "公式Weibo",
         "label": "Weibo",
         "url": "https://weibo.com/7521830234/Rf9BhoCFS"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240707820837404690"
       }
     ],
-    "sourceCount": 1,
-    "titleJa": "以闪亮之名：ゲーム内ボイス調整に関するお知らせ",
-    "bodyJa": "以闪亮之名\n\nゲーム内ボイス調整に関するお知らせ\n\nプレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。ボイスアクターの体調不良の影響により、プロジェクトチームはボイスアクターの意向を十分に尊重した上で、双方の協議の結果、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。ボイスアクターの皆様の、キャラクターへの素晴らしい演技と多大なご尽力に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備に着手しており、新しいボイスアクターによる試聴作業を全面的に開始しました。現在、「顧苏澄新CV試音问卷」が正式に公開されていますので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。ゲーム内で現在実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験を提供することを目指します。共に歩む旅は続きます。皆様の変わらぬご支援とご陪伴に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備状況につきましては、いち早くプレイヤーの皆様にお知らせいたします。\n\n『以闪亮之名』プロジェクトチーム\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク",
-    "summaryJa": "・変更: ボイスアクターの体調不良により、顧苏澄のボイス担当が変更になることが決定した\n・実施: 新しいボイスアクターによる試聴作業が開始され、「顧苏澄新CV試音问卷」が公開された\n・継続: ゲーム内で現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・今後の予定: 新バージョンでプレイヤーが選んだ新しい音声コンテンツが正式に採用される",
+    "sourceCount": 3,
+    "titleJa": "ゲーム内ボイスの調整に関するお知らせ",
+    "bodyJa": "プレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。\n\nボイス担当者の体調不良の影響により、プロジェクトチームはボイス担当者の意向を十分に尊重した上で、双方の協議により、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。これまでキャラクターを素晴らしい演技で演じ、多大な貢献をしてくださったボイス担当者の方に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備を進めており、新しいボイスキャストの試聴作業を全面的に開始しました。「顧苏澄新CV試音问卷」が正式に公開されましたので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。現在ゲーム内に実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な思い出の時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験をお届けします。共に歩む旅は続きます。皆様の変わらぬご支援とご愛顧に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備の進捗については、いち早く皆様にご報告いたします。\n\n『以闪亮之名』プロジェクトチーム",
+    "summaryJa": "・変更: 顧苏澄のボイス担当者が体調不良のため、今後担当しないことが決定した\n・公開: 「顧苏澄新CV試音问卷」が正式に公開された\n・対応: 現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・予定: 今後の新バージョンで、プレイヤーが選んだ新しいボイスコンテンツが正式に採用される",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2",
-    "imageMirrorUrls": [
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/9d1f49fb9f42ad2037aa.jpg"
-    ]
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "dd43f14121d4af7f6078e9e4",
@@ -1000,6 +1140,17 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fh1yJ03BNV4OhmSqJS3hHvCfGc2B_20260826105106.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/Fh1yJ03BNV4OhmSqJS3hHvCfGc2B_20260826105106.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lix5ByY0yt9KXwPvSd5HlIX3kikN_20260825213138.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrG_dGdyeGeqLOUWjsUFwi0P5NiY_20260723130133.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fh1yJ03BNV4OhmSqJS3hHvCfGc2B_20260826105106.jpg"
     ],
     "sources": [
@@ -1092,6 +1243,52 @@
     ]
   },
   {
+    "id": "c0c03c393caa180519b416ad",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #着せ替えゲーム",
+    "body": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️\nぜひGETしてみてください🥰\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2092167598372958331",
+    "publishedLabel": "3日前",
+    "publishedAtEpoch": 1787646600,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089278099733336064/img/TUQfU53SOHfUxKGk.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2089278099733336064/img/TUQfU53SOHfUxKGk.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2092167598372958331"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "8c458012d4af3868e192eb95",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "🔔分解ショップアイテム公開🔔 最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放",
+    "body": "🔔分解ショップアイテム公開🔔\n\n最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放！\n星5浮遊やワンピースなどを手に入れよう✨\n\n詳細はゲーム内をチェックしてね👀\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2092165079798050874",
+    "publishedLabel": "3日前",
+    "publishedAtEpoch": 1787646000,
+    "imageUrl": "https://pbs.twimg.com/media/HP6ArfFa8AELJxu?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP6ArfFa8AELJxu?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HP6AtZubEAAEtX3?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HP6AufDbYAALDDZ?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2092165079798050874"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "c80453468c860161b120b9fc",
     "region": "CHINA",
     "platform": "公式Weibo",
@@ -1117,33 +1314,38 @@
     ]
   },
   {
-    "id": "a1107e593f6caac576da28cf",
+    "id": "b761daa769775c2c4476eea8",
     "region": "CHINA",
-    "platform": "公式Weibo",
-    "title": "以闪亮之名 #以闪亮之名# 雪城夜话外观礼包即将上架【礼包时间】8月25日10:00-9月7日23:59【礼包说明】限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜...",
-    "body": "以闪亮之名 #以闪亮之名# \n\n雪城夜话外观礼包即将上架\n\n【礼包时间】\n8月25日10:00-9月7日23:59\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-    "sourceUrl": "https://weibo.com/7521830234/ReTuLsMw2",
+    "platform": "公式Bilibili · 記事",
+    "title": "雪城夜话外观礼包即将上架 【礼包时间】 8月25日10:00-9月7日23:59 【礼包说明】 限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像...",
+    "body": "雪城夜话外观礼包即将上架\n\n【礼包时间】\n8月25日10:00-9月7日23:59\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240073883666612227",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787565600,
-    "imageUrl": "https://wx2.sinaimg.cn/large/008d2PEugy1igex00gj64j31401hcqg0.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/711ccf78e38e5437e7868a2285f8e7a1676200579.jpg",
     "imageUrls": [
-      "https://wx2.sinaimg.cn/large/008d2PEugy1igex00gj64j31401hcqg0.jpg",
-      "https://wx3.sinaimg.cn/large/008d2PEugy1igex00qrojj32yo1o04qp.jpg",
-      "https://wx3.sinaimg.cn/large/008d2PEugy1igex00ryy1j32yo1o07wh.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/711ccf78e38e5437e7868a2285f8e7a1676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/19bbddd34a75d36ff618bd699c51fc99676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/5f4517dd7445d2c79e6fa8f3644579b3676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240073883666612227"
+      },
       {
         "platform": "公式Weibo",
         "label": "Weibo",
         "url": "https://weibo.com/7521830234/ReTuLsMw2"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240073883666612227"
       }
     ],
-    "sourceCount": 1,
-    "imageMirrorUrls": [
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/76a7b36943902f9ff268.jpg",
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/cc7e3db1abdc050eb93a.jpg",
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/352191e765140744f4ed.jpg"
-    ]
+    "sourceCount": 3
   },
   {
     "id": "54082af5a9ac5b445ad08eea",
@@ -1255,19 +1457,25 @@
     "sourceCount": 1
   },
   {
-    "id": "2094879d77a4163b5f949ce8",
+    "id": "8b0a9b074bb4d57d8b52e52e",
     "region": "CHINA",
-    "platform": "公式Weibo",
-    "title": "以闪亮之名 #以闪亮之名# 参与山神的园林，获取五星限定套装",
-    "body": "以闪亮之名 #以闪亮之名# \n\n参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！ \n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-    "sourceUrl": "https://weibo.com/7521830234/ReSI3zeEz",
+    "platform": "公式Bilibili · 記事",
+    "title": "参与山神的园林，获取五星限定套装",
+    "body": "参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！ \n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240042959866429440",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787558400,
-    "imageUrl": "https://wx2.sinaimg.cn/large/008d2PEugy1igbasiahqkj31o02yotse.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg@316w_560h_1e_1c",
     "imageUrls": [
-      "https://wx2.sinaimg.cn/large/008d2PEugy1igbasiahqkj31o02yotse.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg@316w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240042959866429440"
+      },
       {
         "platform": "公式Weibo",
         "label": "Weibo",
@@ -1277,29 +1485,36 @@
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839947208617887317"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240042959866429440"
       }
     ],
-    "sourceCount": 2,
-    "imageMirrorUrls": [
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/91894c019ef61a06ed05.jpg"
-    ]
+    "sourceCount": 4
   },
   {
-    "id": "666c985af65829dd0c682a96",
+    "id": "ee4669a11810ba349b1fe89d",
     "region": "CHINA",
-    "platform": "公式Weibo",
-    "title": "以闪亮之名 #以闪亮之名# 复刻追光活动｜棱彩分解商店限定兑换单品爆料棱彩幻梦 | 晶芯裂变，时茧新生",
-    "body": "以闪亮之名 #以闪亮之名# \n\n复刻追光活动｜棱彩分解商店限定兑换单品爆料\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n【棱彩分解】商店将于8月25日10:00–9月15日23:59限时开启，通过分解该限时追光活动内的服饰，可获得限定时装部件【洋流情书】、【无名诗】、【红玫覆羽】、动态拍照动作【拂花揽月】、拍照动作【月下倾辉】及头像框、棱彩风向标、心念之蝶、知之钥、金币等材料道具！\n\n💎下载传送门： 网页链接 \n💎闪亮作品上映季活动传送门： 网页链接",
-    "sourceUrl": "https://weibo.com/7521830234/ReRmQwbXi",
+    "platform": "公式Bilibili · 記事",
+    "title": "复刻追光活动｜棱彩分解商店限定兑换单品爆料 棱彩幻梦 | 晶芯裂变，时茧新生",
+    "body": "复刻追光活动｜棱彩分解商店限定兑换单品爆料\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n【棱彩分解】商店将于8月25日10:00–9月15日23:59限时开启，通过分解该限时追光活动内的服饰，可获得限定时装部件【洋流情书】、【无名诗】、【红玫覆羽】、动态拍照动作【拂花揽月】、拍照动作【月下倾辉】及头像框、棱彩风向标、心念之蝶、知之钥、金币等材料道具！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240028786514198552",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787546100,
-    "imageUrl": "https://wx1.sinaimg.cn/large/008d2PEugy1igbaraw9p6j31401hcn91.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/bf0e7a3d98dfcf222616e0d87762513b676200579.jpg",
     "imageUrls": [
-      "https://wx1.sinaimg.cn/large/008d2PEugy1igbaraw9p6j31401hcn91.jpg",
-      "https://wx3.sinaimg.cn/large/008d2PEugy1igbarb6nxej31401hctxd.jpg",
-      "https://wx1.sinaimg.cn/large/008d2PEugy1igbarb7mhyj31401hc1kx.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/bf0e7a3d98dfcf222616e0d87762513b676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/3ad703d74102e95d33c606e68d4abc56676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/1146f1dd955d9ae95bd7c94299186614676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240028786514198552"
+      },
       {
         "platform": "公式Weibo",
         "label": "Weibo",
@@ -1309,172 +1524,175 @@
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839946139229753196"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240028786514198552"
       }
     ],
-    "sourceCount": 2,
-    "imageMirrorUrls": [
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/642bc3a13a78132c2c83.jpg",
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/31179bea417c94ae97e5.jpg",
-      "https://ikegami-99.github.io/KRPR_news/media/weibo/8a4f2ad8cd83ab344588.jpg"
-    ]
+    "sourceCount": 4
   },
   {
-    "id": "53bec9786debaa8824fe8cf2",
+    "id": "d3ac88cabd861324ccae9ad8",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览！",
-    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n「我们曾经亲密无间，我身体的每一处你都无比熟悉」\n那夜之后，你再也没见过顾先生，关于他的传闻也逐渐散去。\n直到你再次迷失在雪夜，恍惚中听到他的声音，正一遍遍呼唤着你…… \nTAPTAP：以闪亮之名\n官方微博：@以闪亮之名\n官方微信公众号：以闪亮之名\n官方抖音：以闪亮之名\n官方小红书：以闪亮之名VVANNA St",
-    "sourceUrl": "https://www.taptap.cn/moment/839945782227373526",
+    "platform": "公式Bilibili · 記事",
+    "title": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览",
+    "body": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n「我们曾经亲密无间，我身体的每一处你都无比熟悉」\n那夜之后，你再也没见过顾先生，关于他的传闻也逐渐散去。\n直到你再次迷失在雪夜，恍惚中听到他的声音，正一遍遍呼唤着你…… \n 长图\n \n 长图\n 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240027497997795353",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787545800,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/ltMbeJVkGiZeoZx8ibOzaAb8EthD_20260821192411.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/d740472a07c85c2a6c25c5b50f818948676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/ltMbeJVkGiZeoZx8ibOzaAb8EthD_20260821192411.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lsy_jFwBn9xVGD1_6qAVuzhkcnqw_20260821192413.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/ltMbeJVkGiZeoZx8ibOzaAb8EthD_20260821192411.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lsy_jFwBn9xVGD1_6qAVuzhkcnqw_20260821192413.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/d740472a07c85c2a6c25c5b50f818948676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/c2b36996e5c7f57e264b4747cea59163676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240027497997795353"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839945782227373526"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240027497997795353"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 3
   },
   {
-    "id": "e7fb8a380ccf9f3855ce4d65",
+    "id": "4183a635c66d413555f86a88",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "复刻追光活动｜四星套装「暖雾绒心」预览！",
-    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n细腻柔软的触感，温暖又有安全感~\n在复制粘贴的世界，追逐之外，\n总该收集一些属于自己的碎片。\nTAPTAP：以闪亮之名\n官方微博：@以闪亮之名\n官方微信公众号：以闪亮之名\n官方抖音：以闪亮之名\n官方小红书：以闪亮之名VVANNA Studio\n官方B站：以闪亮之名\n官网：",
-    "sourceUrl": "https://www.taptap.cn/moment/839945504732220794",
+    "platform": "公式Bilibili · 記事",
+    "title": "复刻追光活动｜四星套装「暖雾绒心」预览",
+    "body": "复刻追光活动｜四星套装「暖雾绒心」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n细腻柔软的触感，温暖又有安全感~\n在复制粘贴的世界，追逐之外，\n总该收集一些属于自己的碎片。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240026209509703687",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787545500,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/lniXkgnujsetahIvR6bpi705Bh7d_20260821192315.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/lniXkgnujsetahIvR6bpi705Bh7d_20260821192315.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lmCuW8Xf5IfgS2YSCjveo4KM1VOU_20251011191028.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fg8Bj6w4BiZ2ztbyUvhZlSNS1hQj_20250913140802.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FpIuVzL_UiBeIJ8nHfAMVmuqe40T_20260807152901.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FtJRWht6EdoVm0ygCgYZsbWQtuT-_20250906005537.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqxqZEMrtgbK_dia9flmqbDeq_7v_20251017205135.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FmdoosGAGYJ8eliS2VNtoBRE_n0q_20250926200702.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lniXkgnujsetahIvR6bpi705Bh7d_20260821192315.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240026209509703687"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839945504732220794"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240026209509703687"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 3
   },
   {
-    "id": "64ea07f458718be11381f9a4",
+    "id": "33da8797a4c421bf8d1dce95",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "复刻追光活动｜五星套装「枫露晨祷」预览！",
-    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！\n珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！\n超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！\n在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？\n------时尚设计手札📓------\n【艺术灵感来源经典】\n裙",
-    "sourceUrl": "https://www.taptap.cn/moment/839945308724003908",
+    "platform": "公式Bilibili · 記事",
+    "title": "复刻追光活动｜五星套装「枫露晨祷」预览",
+    "body": "复刻追光活动｜五星套装「枫露晨祷」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！\n珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！\n超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！\n在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？\n\n------时尚设计手札📓------\n【艺术灵感来源经典】\n裙身版型参考欧式帝政长裙以及奥黛丽赫本出演的《战争与和平》，帝政裙的设计深受古希腊与古罗马文化影响，体现了对古典美的追求，并反映了对简约、纯粹与和谐的乌托邦理想。\n在19世纪，这种服装成为上层社会女性的象征，其精致面料与细腻工艺彰显了财富与地位。穿着帝政裙的女性往往备受尊重与欢迎。其流动轮廓与轻盈材质使穿着者显得优雅自如，传递出浪漫与自由的气息，同时也反映了当时社会对女性解放与个性自由的期待。\n【面料材质物理效果新升级】\n面料的呈现是本次面料材质升级的重大表现，以柔滑垂坠的真丝缎为主体面料，极致细腻的光泽感，增加刺绣点缀，烘托细节高贵优雅。裙子上加入立体百合和珍珠等元素，保留了帝政长裙的典雅风范，又融入了现代设计的精致与细腻。\n【致美版型打造】\n为了完美呈现帝政裙，我们采取了高腰线的长裙版型设计，袖子肩部、下摆缀上层层的荷叶边装饰，丰富视觉层次与细节。大量的金色刺绣和珍珠镶边让裙子整体风格雅致确不失高贵；\n【细节亮点呼应】\n独立拆分的百合珍珠链外套代替传统披帛，百合花散发出粒子特效，更加烘托主题。\n手持扇子可开合，扇面与裙身使用繁复的百合蕾丝花纹相呼应，同时扇子带有蝴蝶飞舞的特效，丰富帝政裙的氛围感。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240024921038389251",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787545200,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/lsMWCQ_x2RNp6WSrdgBj7Gvk0Vjf_20260821192228.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/7606715a5ab905a9875d3c6148d49a73676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/lsMWCQ_x2RNp6WSrdgBj7Gvk0Vjf_20260821192228.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/loTjh2YT_EnTz6P2GrxJI7EbZi6g_20260821192228.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/llcCZQHI9kiANQX8XtCp_KEF2DCC_20260821192231.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqaSCoJE59LKlfBZlkjXE4IrHVt3_20260819025653.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrG_dGdyeGeqLOUWjsUFwi0P5NiY_20260723130133.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/loTjh2YT_EnTz6P2GrxJI7EbZi6g_20260821192228.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lsMWCQ_x2RNp6WSrdgBj7Gvk0Vjf_20260821192228.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/llcCZQHI9kiANQX8XtCp_KEF2DCC_20260821192231.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/7606715a5ab905a9875d3c6148d49a73676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/f6717f78cbb8838406bbb99ab69890df676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/53deeef7676368a93eed9ae137c88a13676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240024921038389251"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839945308724003908"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240024921038389251"
+      },
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1240023973960351778"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 4
   },
   {
-    "id": "8c77c150fbe5dbb59ac7e57b",
+    "id": "0d70275263631fb5a5e3c489",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "复刻追光活动｜五星套装「芯璃絮语」预览！",
-    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n💎突破次元极限的异质共生美学，无机水晶+永生花重构量子法则。\n💎双层冰晶躯干中绽放花朵，「三明治」物理光学渲染折射亿万光瀑\n💎超大双马尾+超柔软可拆分水袖外套，多维重力锚定带来极致物理表现。\n------时尚设计手札📓------\n【晶魄永生——以无机之躯叩响永恒圣殿】\n当冰晶在真空宇宙凝结成第一朵花，被时间放",
-    "sourceUrl": "https://www.taptap.cn/moment/839945026824832816",
+    "platform": "公式Bilibili · 記事",
+    "title": "复刻追光活动｜五星套装「芯璃絮语」预览",
+    "body": "复刻追光活动｜五星套装「芯璃絮语」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n💎突破次元极限的异质共生美学，无机水晶+永生花重构量子法则。\n💎双层冰晶躯干中绽放花朵，「三明治」物理光学渲染折射亿万光瀑\n💎超大双马尾+超柔软可拆分水袖外套，多维重力锚定带来极致物理表现。\n\n------时尚设计手札📓------\n【晶魄永生——以无机之躯叩响永恒圣殿】\n当冰晶在真空宇宙凝结成第一朵花，被时间放逐的少女终于在钻石光瀑中睁开双眸。克什米尔宝石浇筑她的骨骼，血管流淌着银河碎钻的辉光，亿万年前被冰封的永生花种在胸腔抽枝发芽，生机诞生与无机永恒开始共生纠缠。\n【无机绽放——花朵与水晶共生的异质美学】\n灵感源自神秘能量的水晶与永生花，简约的身体轮廓和造型，大量运用花朵设计和水晶材质，整体呈现出于水晶之中新生的主题，进一步烘托了“无机绽放”“华丽永生”的氛围美感。\n【材质突破——多层光影寄生在机体之上】\n为了更好地突出艺术与美学，我们设计了身体胸口和腿上的身体的水晶结构，水晶封存绽放的花朵，裙子胸口部分和袜子上的水晶经过多日的精心打造，并通过引擎长时间的调试、优化以及渲染效果，呈现出无与伦比的视觉盛宴。\n外层与内层均采用钻石玻璃的材质设计，当人物在游戏中做出各种动作时，基于物理光学原理的渲染算法，我们能够模拟出玻璃的反光效果以及钻石特有的碎面闪烁。而在这两层钻石玻璃之间，是大量由细腻建模呈现的精致花朵。每一片花瓣的纹理、色泽，都经过精心雕琢。并与钻石玻璃的光芒相互映衬，极具美感。\n冰晶底座部分为了模拟玻璃的效果采用双层材质制作，通过材质分层可以控制不同角度的光线交互，避免单层材质难以兼顾透射与反射的物理矛盾，更加真实的同时达到视觉上冰透的效果。\n【视觉亮点——以新的形式完美呈现】\n超大双马尾设计，包裹人物和水晶花座，一静一动带来完美的物理效果，更具二次元的氛围。花朵设计缠绕遍布超大水袖，柔软灵动的同时，与超大双马尾交相呼应，更惊喜的是，我们将超柔软水袖拆分为独立外套！人物周围不断飘散的花瓣特效和消散的冰雾特效，更加烘托整体氛围和主题，带来更极致的视觉呈现。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1240022344037040148",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787544600,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/luE7DLZT5tA61pGxrEFUtlE2CQW7_20260821192110.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/9cda7d6c82cf71bcf180779c497d1a81676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/luE7DLZT5tA61pGxrEFUtlE2CQW7_20260821192110.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lhF3cAzJmrplxeCbQrghme2LRWlZ_20260821192110.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lgr3ncC8thNgNctnd_dwmT79mvVg_20260821192113.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqaSCoJE59LKlfBZlkjXE4IrHVt3_20260819025653.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrG_dGdyeGeqLOUWjsUFwi0P5NiY_20260723130133.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lhF3cAzJmrplxeCbQrghme2LRWlZ_20260821192110.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/luE7DLZT5tA61pGxrEFUtlE2CQW7_20260821192110.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lgr3ncC8thNgNctnd_dwmT79mvVg_20260821192113.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/9cda7d6c82cf71bcf180779c497d1a81676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/a5864f83ce1616d29021f425e74bfa93676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/3258dc61d492aaeabe92fd80a034fcf6676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1240022344037040148"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839945026824832816"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 2
   },
   {
-    "id": "7e5697ecce21a6f687e63684",
+    "id": "51494617e199f3a4a7d0946a",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "复刻追光活动｜棱彩幻梦·即将开启！",
-    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n「不必追问梦境与光锥之外的答案」\n未成的诗稿被次元塌缩重演，在另一个维度新生、盛开；\n所有时间的载体都在此刻破土，旋转的每一面水晶成为平行世界的弥撒——\n倒映着过去，预示着已存在的未来。\nTAPTAP：以闪亮之名\n官方微博：@以闪亮之名\n官方微信公众号：以闪亮之名\n官方抖音：以闪亮之名\n官方小红书：以闪亮之名V",
-    "sourceUrl": "https://www.taptap.cn/moment/839944658833378124",
+    "platform": "公式Bilibili · 動画",
+    "title": "复刻追光活动｜棱彩幻梦·即将开启",
+    "body": "棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n \n「不必追问梦境与光锥之外的答案」\n未成的诗稿被次元塌缩重演，在另一个维度新生、盛开；\n所有时间的载体都在此刻破土，旋转的每一面水晶成为平行世界的弥撒——\n倒映着过去，预示着已存在的未来。",
+    "sourceUrl": "https://www.bilibili.com/video/BV1Bp8v6gEZo",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1787544000,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FiNbU3x0MgyOCAVhScJX1Ebem5yi_20260821191630.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i1.hdslb.com/bfs/archive/af1755913583fe1769521950de2ea522b86a029b.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/FiNbU3x0MgyOCAVhScJX1Ebem5yi_20260821191630.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FiNbU3x0MgyOCAVhScJX1Ebem5yi_20260821191943.jpg/_tap_banner.jpg"
+      "https://i1.hdslb.com/bfs/archive/af1755913583fe1769521950de2ea522b86a029b.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1Bp8v6gEZo"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839944658833378124"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 2
   },
   {
     "id": "4be88e4b5ea5ebef2070a1da",
@@ -1593,6 +1811,29 @@
     "sourceCount": 1
   },
   {
+    "id": "f1647055082087a092ea7b38",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 記事",
+    "title": "处暑至 天高云阔 处暑时节，蝉鸣渐淡",
+    "body": "处暑至 天高云阔\n\n处暑时节，蝉鸣渐淡。「画檐不碍迎霜叶，玉宇频来处暑风」，夏去秋来，秋色渐浓。\n愿合伙人在新秋时节，耕耘均能有收获。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1239594565320572929",
+    "publishedLabel": "5日前",
+    "publishedAtEpoch": 1787454000,
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/d6eb0559673d53e04e5f9d66a068542a676200579.jpg@316w_560h_1e_1c",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/new_dyn/d6eb0559673d53e04e5f9d66a068542a676200579.jpg@316w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/d6eb0559673d53e04e5f9d66a068542a676200579.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1239594565320572929"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "fc1592ffe91455e8a1c7da65",
     "region": "CHINA",
     "platform": "公式TapTap",
@@ -1627,40 +1868,32 @@
     "sourceCount": 1
   },
   {
-    "id": "af26ffb8ce434904c3e62432",
+    "id": "ae5513e19368d22be0c7dbe0",
     "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "全新休闲玩法——【闪亮牌局】欢乐上线！",
-    "body": "在这里，每一张牌面都可能暗藏转机，每一次争夺主场都是风格的无声较量。你可以把午后的休憩角化作运筹帷幄的牌桌，与好友在牌运与胆识之间谈笑过招；也可以将夜晚的闲暇酿成一场华丽对局，看顺子与王炸在指尖绽出高光。不必担心生疏——我们为每一位合伙人准备了经典简洁易上手的规则，你只需带上几分玩心，剩下的交给直觉。\n你既是优雅的牌手，也是这场闪光对局的主角。既可以稳扎稳打，用一手好牌步步为营；也可以于胶着中捕捉",
-    "sourceUrl": "https://www.taptap.cn/moment/839910542846985943",
+    "platform": "公式Bilibili · 記事",
+    "title": "全新休闲玩法——【闪亮牌局】欢乐上线",
+    "body": "全新休闲玩法——【闪亮牌局】欢乐上线！\n\n在这里，每一张牌面都可能暗藏转机，每一次争夺主场都是风格的无声较量。你可以把午后的休憩角化作运筹帷幄的牌桌，与好友在牌运与胆识之间谈笑过招；也可以将夜晚的闲暇酿成一场华丽对局，看顺子与王炸在指尖绽出高光。不必担心生疏——我们为每一位合伙人准备了经典简洁易上手的规则，你只需带上几分玩心，剩下的交给直觉。\n你既是优雅的牌手，也是这场闪光对局的主角。既可以稳扎稳打，用一手好牌步步为营；也可以于胶着中捕捉破绽，享受绝地翻盘的雀跃。从一个人的随性消遣，到一群人的欢乐交锋，每一种节奏都由你主宰。\n当倒计时的光影在牌桌边缘游走，当最后一张王牌在指间被清脆甩落，真正的胜负才浮出水面——叫分的果决、炸弹的时机、牌型的千变万化，让每一局都暗藏悬念，每一次出牌都牵动局势。你能否在对手倾尽之前，率先把自己手中的光芒悉数打出？每一次胜利，都将是智慧与好运共谱的闪亮瞬间。\n更多乐趣正在牌桌之外悄然孕育，准备好让你的闲暇一刻，成为闪亮世界里最洒脱的一手好牌了吗？\n后续还将有精美卡背、卡面以及牌桌背景加入牌局商店，合伙人可使用王牌之心兑换获得，让你的牌局与众不同！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1239208018244010008",
     "publishedLabel": "6日前",
     "publishedAtEpoch": 1787364000,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FtmQFjeDTm-ZRW85eycgZQT6IX9S_20260821170409.jpg/_tap_ugc.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/bc00163f9bc58dce669c15f753025849676200579.jpg",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/FtmQFjeDTm-ZRW85eycgZQT6IX9S_20260821170409.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lumu7cIGbmqVDqP7dhXYjh9xkveC_20260813144141.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lkgbKXJOsgcGq9ENYD9OODZkC_Yg_20260818130343.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FgMLp_gT7nc8ao4fPC9DLV7pQUig_20260819103546.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fp_W2CWCHqhZw1fYSOVJ_mt2deYM_20260821193001.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fi_7pRObgsdKgmzoeGipliCp43Rw_20260818132030.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fm4WxkaAxOizI04Vn7uuIIE8cbJ2_20260821170403.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fm4WxkaAxOizI04Vn7uuIIE8cbJ2_20260821170403.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FtmQFjeDTm-ZRW85eycgZQT6IX9S_20260821170409.jpg"
+      "https://i0.hdslb.com/bfs/new_dyn/bc00163f9bc58dce669c15f753025849676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/ca682059653e75607ddd89249f02a5b5676200579.jpg"
     ],
     "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1239208018244010008"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839910542846985943"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 2
   },
   {
     "id": "6b3a00204accf950f7763131",
@@ -1688,6 +1921,72 @@
     "imageUrls": [
       "https://i2.ytimg.com/vi/MV8zP_9mbsE/hqdefault.jpg"
     ]
+  },
+  {
+    "id": "9c0ce009faaaed3904c60b52",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "⭐Winner Announcement Life Makeover Fashion Guide - Everlasting Peace Version Congratulations to all the winners",
+    "body": "⭐Winner Announcement\nLife Makeover Fashion Guide - Everlasting Peace Version\n\nCongratulations to all the winners!\nPlease submit the prize form before Aug. 24, 2026: \n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090763343543877993",
+    "publishedLabel": "2026-08-21",
+    "publishedAtEpoch": 1787311800,
+    "imageUrl": "https://pbs.twimg.com/media/HQOk-ioakAAzsJh?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQOk-ioakAAzsJh?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090763343543877993"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "46f2afdb95ec9be8d8f22d06",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Dessert Party ⏰Aug. 22, 09:00 - Aug. 29, 05:00 UTC [Reward Claim] Aug. 22, 09:00 - Aug. 30, 05:00 UTC [Event Rewards] Po",
+    "body": "Dessert Party\n\n⏰Aug. 22, 09:00 - Aug. 29, 05:00 UTC\n\n[Reward Claim]\nAug. 22, 09:00 - Aug. 30, 05:00 UTC\n\n[Event Rewards]\nPoints obtained during the event can be exchanged for 4-Star Set [Secret Blossom], Cute Effect [Glorious Crown] and many other items. \n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090755798679109997",
+    "publishedLabel": "2026-08-21",
+    "publishedAtEpoch": 1787310001,
+    "imageUrl": "https://pbs.twimg.com/media/HQDgjSmbMAAfUSW?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQDgjSmbMAAfUSW?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090755798679109997"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "6793db3b6a9f069b04fd5e53",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Congratulations on unlocking creator-only fashion inspiration pack",
+    "body": "Congratulations on unlocking creator-only fashion inspiration pack!\n\n⏰Reward Claim: Aug. 21, 00:00 - Nov. 21, 23:59 (UTC+0)\n📌How to claim: During the Reward Claim time period, sign in the game and you can get the reward in Email.\n\n#LifeMakeover",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090748244867637521",
+    "publishedLabel": "2026-08-21",
+    "publishedAtEpoch": 1787308200,
+    "imageUrl": "https://pbs.twimg.com/media/HQNmGNsakAEVWQ_?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQNmGNsakAEVWQ_?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090748244867637521"
+      }
+    ],
+    "sourceCount": 1
   },
   {
     "id": "813510a89d6267dfa842d08c",
@@ -1734,6 +2033,56 @@
     "sourceCount": 1
   },
   {
+    "id": "f7f00f148efa33ef8e1d49c0",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 記事",
+    "title": "参与小丑鱼之家，获取五星限定饰品",
+    "body": "参与小丑鱼之家，获取五星限定饰品！\n\n🌻花随影转，我们在春日相逢。\n\n照顾小丑鱼有机会获得材料奖励奖励，累积亲密度还可领取五星饰品【若花缠水】、钻石*30、潮流色卡*9及多种材料道具！ \n\n【活动时间】\n8月22日10:00-8月26日5:00\n【领奖时间】\n8月22日10:00-8月26日5:00\n【活动规则】\n活动期间，完成活动内的每日任务可获得培育次数，每天最多获得3次。活动期间该次数不会清空，记得及时使用哦。使用照顾次数运用多种方式照顾小丑鱼，可获得亲密度及照顾附加奖励。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1238929704335966217",
+    "publishedLabel": "2026-08-21",
+    "publishedAtEpoch": 1787299200,
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/b600dcff8274b59ef9f358be72e8aa69676200579.jpg@316w_560h_1e_1c",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/new_dyn/b600dcff8274b59ef9f358be72e8aa69676200579.jpg@316w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/b600dcff8274b59ef9f358be72e8aa69676200579.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1238929704335966217"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "ae93aa4f2e7300bb35a5b1c4",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 記事",
+    "title": "怪美的 | 衣柜考古 🔎璞玉单品再就业， 🔎衣柜考古大挖掘",
+    "body": "怪美的 | 衣柜考古\n\n🔎璞玉单品再就业，\n🔎衣柜考古大挖掘！\n\n时尚潮流总有循环，不妨将衣柜里的闲置时装单品重新搭配一番，穿出属于自己的流行趋势！\n即日起，欢迎合伙人带 #以闪亮之名怪美的# 话题，发布你挖掘出的游戏内璞玉单品，并展示你的搭配成果~ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1238883318686023731",
+    "publishedLabel": "2026-08-21",
+    "publishedAtEpoch": 1787288400,
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/f4f98b5d07a7b99c034489f6fd866bf5676200579.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/new_dyn/f4f98b5d07a7b99c034489f6fd866bf5676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/fee53611d6205bda8e817d5bcbcff99d676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/bc797d5389ed4dc1206a345f542abeeb676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/ca8455cc1ca09e6e31b560c858a84390676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/87b52dc9e1ff013055186f76788395ab676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/aa653e7dd8628ba0522a7874c0893474676200579.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1238883318686023731"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "9e2a37dd6ad23655ced9f40d",
     "region": "CHINA",
     "platform": "公式TapTap",
@@ -1745,30 +2094,43 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FlX-JuKISZbYdX_IA35my-ZYa1j2_20251116233121.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrySUmoRIOGyIwWOopp18u82_bOo_20260606134409.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrG_dGdyeGeqLOUWjsUFwi0P5NiY_20260723130133.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fi2-S_4LLtTWfm1I_DILMjoXGeNw_20260821114927.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FsB8AKO1-YATU6Sg4074kXBXAV7k_20260821114926.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FkCfPGV3uP9ItC3p0t3Ij6kL0H-8_20260821114928.jpg/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FjV3jNtGLjZ6Dkc_qzj7bSiPnzLu_20260821114928.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/video-picture/tid-69da44d22238e66def5e1de1/first.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FrcINNXZ-pAyXghVlACeTPwVTj2D_20260828110227.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FthHcvTKp7m2gBSKYRLGfg2hD8Q5_20260628113646.jpg/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg"
+      "https://img2-tc.tapimg.com/moment/etag/lhWASaXFqA_brPB-iwZiPq4r9Fg-_20260821114944.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/Fi2-S_4LLtTWfm1I_DILMjoXGeNw_20260821114927.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FsB8AKO1-YATU6Sg4074kXBXAV7k_20260821114926.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FkCfPGV3uP9ItC3p0t3Ij6kL0H-8_20260821114928.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FjV3jNtGLjZ6Dkc_qzj7bSiPnzLu_20260821114928.jpg"
     ],
     "sources": [
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839831453830221717"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "88a3e879ea9a0fcdd9033e62",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 記事",
+    "title": "探索茶会秘境奇遇 月光摇曳轻盈光影， 沁甜糖霜缭绕味蕾",
+    "body": "探索茶会秘境奇遇\n\n月光摇曳轻盈光影，\n沁甜糖霜缭绕味蕾。\n❤️本期展示作品来自以下合伙人：\n红茶栗\n杏仁芋圆卷\n归零zero.\n椒盐海豹（以闪版） 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1238589542920880131",
+    "publishedLabel": "2026-08-20",
+    "publishedAtEpoch": 1787220000,
+    "imageUrl": null,
+    "imageUrls": [],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1238589542920880131"
       }
     ],
     "sourceCount": 1
@@ -1869,6 +2231,51 @@
     "sourceCount": 1
   },
   {
+    "id": "d6bb0aec8ee7057baa655655",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "A Midnight Invitation Reflected in Candlelight New Version - Garden Soiree available from Aug. 19 to Sep. 8",
+    "body": "A Midnight Invitation Reflected in Candlelight\nNew Version - Garden Soiree available from Aug. 19 to Sep. 8!\n\n✨ The invitation to the Midnight Tea Party has been sent,\n✨ Thank you for gracing us in your finest attire.\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090015931934408922",
+    "publishedLabel": "2026-08-19",
+    "publishedAtEpoch": 1787133603,
+    "imageUrl": "https://pbs.twimg.com/media/HQDgXcWbMAAyENb?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQDgXcWbMAAyENb?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HQDgYhibYAAb3b3?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090015931934408922"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "e7198cbc048370ec4c4f1f8a",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Life Makeover x Guan Dazhou: New Theme Song Life Makeover has joined hands with Guan Dazhou once again, featuring the be",
+    "body": "Life Makeover x Guan Dazhou: New Theme Song\n\nLife Makeover has joined hands with Guan Dazhou once again, featuring the beautiful vocals of Zhang Xiyun, to bring you a new theme song: Homeland Ode.\n\nTap Panel Music to listen and feel the General's journey back to her homeland.",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090008371608858833",
+    "publishedLabel": "2026-08-19",
+    "publishedAtEpoch": 1787131800,
+    "imageUrl": "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090008371608858833"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "aa5ee0a3a212b47e1ab447bd",
     "region": "KOREA",
     "platform": "公式X",
@@ -1963,38 +2370,53 @@
     "sourceCount": 2
   },
   {
-    "id": "723d19a7c2d5143c10dc0625",
-    "region": "CHINA",
-    "platform": "公式TapTap",
-    "title": "参与秘藏传说，领取五星限定时装、拍照动作等多重免费福利！",
-    "body": "【活动时间】\n8月20日10:00 - 8月31日05:00\n【活动说明】\n古老水道中的藏宝图揭开夏日冒险的序幕，海风已吹响集结的号角，暂时逃离烦闷的日常，这一次，我们的征途是星辰大海！和山神一起即刻起航，不要畏惧凶猛的飞鱼阵，不要害怕岛屿的艰险陷阱，握紧手中的指南针，去解锁那片被时光遗忘的蔚蓝，让每一寸甲板都写满传奇！活动持续时间内，每完成一天的故事，都可以免费领取一份奖励，合伙人们要记得每日登",
-    "sourceUrl": "https://www.taptap.cn/moment/839106831950283339",
+    "id": "b044b4486e3c3e453f1dbc11",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version 4.2 - Garden Soiree is Live New Version - Garden Soiree available from Aug. 19 to Sep. 8",
+    "body": "New Version 4.2 - Garden Soiree is Live\nNew Version - Garden Soiree available from Aug. 19 to Sep. 8!\n\nLife Makeover's amazing version is underway...❤️\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2090000820766929177",
     "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787126400,
-    "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FhY3ybOtNck4pnVka6W7bmRj0Q93_20260819115034.jpg/_tap_ugc.jpg",
+    "publishedAtEpoch": 1787130000,
+    "imageUrl": "https://pbs.twimg.com/media/HQDgGMOakAAN04p?format=jpg&name=orig",
     "imageUrls": [
-      "https://img2-tc.tapimg.com/moment/etag/FhY3ybOtNck4pnVka6W7bmRj0Q93_20260819115034.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lumu7cIGbmqVDqP7dhXYjh9xkveC_20260813144141.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lnRjhnQujoAw8XBkBFSJ0soith4L_20260818142728.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fi_7pRObgsdKgmzoeGipliCp43Rw_20260818132030.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fp_W2CWCHqhZw1fYSOVJ_mt2deYM_20260821193001.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fsq07tTUyNKJtCgjJ7UMCKqCtxGV_20260821114934.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fmy2Z9BzGxR13M7CziVMKLQG6yh8_20260821170544.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FlZUujluxpi6MXwaGBxsKffQlkLi_20260819114935.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FhY3ybOtNck4pnVka6W7bmRj0Q93_20260819115034.jpg"
+      "https://pbs.twimg.com/media/HQDgGMOakAAN04p?format=jpg&name=orig"
     ],
     "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2090000820766929177"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "ecbe910ea2f2a2baee138cd2",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 記事",
+    "title": "参与秘藏传说，领取五星限定时装、拍照动作等多重免费福利",
+    "body": "参与秘藏传说，领取五星限定时装、拍照动作等多重免费福利！\n\n【活动时间】\n8月20日10:00 - 8月31日05:00\n【活动说明】\n古老水道中的藏宝图揭开夏日冒险的序幕，海风已吹响集结的号角，暂时逃离烦闷的日常，这一次，我们的征途是星辰大海！和山神一起即刻起航，不要畏惧凶猛的飞鱼阵，不要害怕岛屿的艰险陷阱，握紧手中的指南针，去解锁那片被时光遗忘的蔚蓝，让每一寸甲板都写满传奇！活动持续时间内，每完成一天的故事，都可以免费领取一份奖励，合伙人们要记得每日登录参与活动哦~\n【活动奖励】\n全部奖励包含5星耳饰【小熊蜜糖】、静态拍照动作【抓星星啦】、家具【玛格丽特公园】、拍照相框【海盐蜜桃】、拍照萌拍【学霸小猫】、聊天背景【沁甜微光】、潮流色卡*10等多重好礼！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
+    "sourceUrl": "https://www.bilibili.com/opus/1238187534038597669",
+    "publishedLabel": "2026-08-19",
+    "publishedAtEpoch": 1787126400,
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/ab913a77393416758e67d390a5cdc341676200579.jpg@316w_560h_1e_1c",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/new_dyn/ab913a77393416758e67d390a5cdc341676200579.jpg@316w_560h_1e_1c"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 記事",
+        "label": "Bilibili",
+        "url": "https://www.bilibili.com/opus/1238187534038597669"
+      },
       {
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/839106831950283339"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 2
   },
   {
     "id": "23b0dc883aaf71b3d31a1470",
@@ -2125,6 +2547,50 @@
     "sourceCount": 1
   },
   {
+    "id": "be299545a7d8067a3341b0ac",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "🎁 사랑 가득",
+    "body": "🎁 사랑 가득! 특별한 선물!\n\n별빛이 사랑으로 물드는 특별한 날을 맞아, \n스타일 파트너님을 위한 깜짝 선물을 준비했습니다 ✨\n\n🕙 8/19 00:00 ~ 8/21 23:59\n\n이벤트 기간 동안 게임에 로그인하시면 \n우편함을 통해 아래 보상을 수령하실 수 있습니다.\n\n🎁 특별 선물\n다이아 ×200 \n트렌드 컬러 카드 ×77 \n골드 ×30,000\n\n소중한 사람과 마음을 나누며, \n오늘도 스타일라잇과 함께 빛나는 하루 보내세요!\n\n#스타일라잇 #스타일라잇이벤트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2089910230876389435",
+    "publishedLabel": "2026-08-19",
+    "publishedAtEpoch": 1787108402,
+    "imageUrl": "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2089910230876389435"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "9f9ea3291c57f0162be5aeaa",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "复刻追光活动｜谲舞缚厄·即将开启",
+    "body": "“你踏歌而来，以诱惑为祭，邀我共赴这场人间盛宴？”\n“身正为庙，引神魔入窍。你不过是我舞步下万千影子中的一道。”\n“影子？你看清了吗，傩师大人？究竟是谁的舞步，在牵引谁的魂灵？”\n“我的舞步未停，这场神飨便由我做主。”\n“是吗？那你有没有想过，当你献上祭品时，你……也是祭品的一部分呢？”\n“为了人间所有的她，愿以身为祭，我们一同共归沉沦吧”\n \n子时三刻，阴阳路通，\n我燃起引魂的幽幽火光；\n你循着祭典的鼓点而来，贪恋这人间至美的烟火琳琅。\n别用那套志怪传说的言语诱惑；\n踏歌而来，画地为牢。",
+    "sourceUrl": "https://www.bilibili.com/video/BV1rBbr6bE2N",
+    "publishedLabel": "2026-08-18",
+    "publishedAtEpoch": 1787032800,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/3bd62cb90dd16de042596063615de1444bef5302.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/3bd62cb90dd16de042596063615de1444bef5302.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1rBbr6bE2N"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "dd4b3cc7b2c84f02d525a7b4",
     "region": "GLOBAL",
     "platform": "公式Steam",
@@ -2165,8 +2631,7 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
-      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
-      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
     ]
   },
   {
@@ -2188,8 +2653,7 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
-      "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
-      "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
     ]
   },
   {
@@ -2232,6 +2696,28 @@
         "platform": "公式TikTok",
         "label": "TikTok",
         "url": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674925307157138709"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "eeb5cd41ae5fbf1b71619790",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "『숲의 선율』 바탕화면 공유 🎶 달빛이 내려앉은 숲, 하프의 선율과 함께 신비로운 요정의 세계가 펼쳐집니다. 은빛 머리카락과 푸른 레이스, 별빛처럼 반짝...",
+    "body": "『숲의 선율』 바탕화면 공유\n\n🎶 달빛이 내려앉은 숲,\n하프의 선율과 함께 신비로운 요정의 세계가 펼쳐집니다.\n\n은빛 머리카락과 푸른 레이스,\n별빛처럼 반짝이는 나비가 어우러진\n『숲의 선율』의 아름다운 순간을 바탕화면으로 만나보세요.\n\nPC 바탕화면으로 설정하고\n일상 속에서도 숲의 선율이 전하는 환상과 설렘을 느껴보세요. ✨\n\n오늘도 스타일라잇과 함께\n꿈결 같은 하루 보내시길 바랍니다! 💙\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #숲의선율",
+    "sourceUrl": "https://x.com/stylight_kr/status/2089276054288679324",
+    "publishedLabel": "2026-08-17",
+    "publishedAtEpoch": 1786957202,
+    "imageUrl": "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2089276054288679324"
       }
     ],
     "sourceCount": 1
@@ -2333,6 +2819,96 @@
     "imageUrls": [
       "https://i2.ytimg.com/vi/ilJjEqG4C1k/hqdefault.jpg"
     ]
+  },
+  {
+    "id": "072106022878369e637e7c32",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "신규 메인 스토리 22장 예고 💎 신규 메인 스토리 22장 '죽음의 쇼 · 구속'이 8월 31일 오픈됩니다. \"진실과 거짓이 뒤엉킨 환상 속, 그리운 사람이 다시 눈...",
+    "body": "신규 메인 스토리 22장 예고\n\n💎 신규 메인 스토리 22장 '죽음의 쇼 · 구속'이 8월 31일 오픈됩니다.\n\n\"진실과 거짓이 뒤엉킨 환상 속,\n그리운 사람이 다시 눈앞에 나타납니다.\n\n이 달콤한 꿈에 계속 머물고 싶지만,\n마지막 수수께끼의 답을 찾기 위해서는\n'기억'이라는 이름의 함정에서 벗어나야 합니다.\n\n마침내 막을 올린 '탐정'들의 전쟁.\n진실로 향하는 열쇠를 손에 넣기 위해\n과연 어떤 대가를 치러야 할까요?\"\n\n✂️ 챕터 22 SET:\n- 5★ 귀걸이 '출항의 날'\n- 촬영 포즈 '시크 메세지'\n- 촬영 프레임 '플로럴 잉크'\n\n👗 패션 스튜디오 추가 세트: \n- 4★ 코스튬 세트 '하트 플러팅'\n- 4★ 코스튬 세트 '슈가 마들렌'\n- 4★ 코스튬 세트 '체리 팝스타'\n\n다양한 스타일의 메인 스토리 세트, 패션 스튜디오에서 제작해 보세요!\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088192655545217302",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698900,
+    "imageUrl": "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2088192655545217302"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "dbbc40fb17099754f08c38ed",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[NEW] 『앤티크 살롱』 배경 패키지 예고 “타닥타닥 울리는 축음기의 선율과 빛바랜 햇살이 머무는 곳. 시간이 켜켜이 쌓인 살롱에서 우아하고 느긋한 오후를 ...",
+    "body": "[NEW] 『앤티크 살롱』 배경 패키지 예고\n\n“타닥타닥 울리는 축음기의 선율과 빛바랜 햇살이 머무는 곳.\n시간이 켜켜이 쌓인 살롱에서 우아하고 느긋한 오후를 즐겨 보세요.”\n\n🕙 9/1 10:30 ~ 9/4 23:59\n\n[패키지 정보]\n촬영 배경 '예술의 시대', 라이브 포즈 '우아한 응시' 등 다양한 아이템이 포함된 아름다운 패키지\n\n※ 자세한 내용은 출시 후, 게임에서 확인해 주세요.\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088191396788265056",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698600,
+    "imageUrl": "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2088191396788265056"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "91820ece6dea575f378c9de4",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[NEW] 『기묘한 숲』 배경 패키지 예고 “한 걸음 들어서는 순간, 평범했던 숲이 낯선 모습으로 변합니다. 거대한 꽃과 이름 모를 풀숲 사이에서 기묘한 여정을 ...",
+    "body": "[NEW] 『기묘한 숲』 배경 패키지 예고\n\n“한 걸음 들어서는 순간, 평범했던 숲이 낯선 모습으로 변합니다.\n거대한 꽃과 이름 모를 풀숲 사이에서 기묘한 여정을 시작해 보세요.”\n\n🕙 8/25 10:30 ~ 9/7 23:59\n\n[패키지 정보]\n촬영 배경 '앨리스의 숲', 라이브 포즈 '꽃길 산책' 등 다양한 아이템이 포함된 아름다운 패키지\n\n※ 자세한 내용은 출시 후, 게임에서 확인해 주세요.\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088190138820206754",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698300,
+    "imageUrl": "https://pbs.twimg.com/media/HPlivc0bUAANq7j?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPlivc0bUAANq7j?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2088190138820206754"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "78f25bb7eb7886328e863b19",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[이벤트] 『마녀의 밀회』 소지품 패키지 예고 “수상하고 신비로운 보랏빛 스프, 마계 비밀 스프의 비법이 궁금하신가요",
+    "body": "[이벤트] 『마녀의 밀회』 소지품 패키지 예고\n\n“수상하고 신비로운 보랏빛 스프,\n마계 비밀 스프의 비법이 궁금하신가요?\n자, 한입 드셔 보세요. 레시피는 맛본 사람만 알 수 있대요.”\n\n🕙 8/22 10:30 ~ 9/4 23:59\n\n [이벤트 상세] \n- 퀘스트 완성하여 '마계 비밀 스프' 소지품이 포함된 마녀의 밀회를 파격 할인가로 만나보세요!\n\n※ 자세한 내용은 출시 후 게임에서 확인해 주세요.\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088188891929207045",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698003,
+    "imageUrl": "https://pbs.twimg.com/media/HPliEBEa0AAa-CX?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPliEBEa0AAa-CX?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2088188891929207045"
+      }
+    ],
+    "sourceCount": 1
   },
   {
     "id": "cd09ecb18d5629097ee5b618",
@@ -2544,6 +3120,60 @@
     ]
   },
   {
+    "id": "441fac572ae7eb9cf54c93fb",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "全新4.3版本｜五星套装「花间茶约」实机展示",
+    "body": "#以闪亮之名怪美的# 全新4.3版本·花庭绮宴8月11日-8月31日限时登陆！\n\n❗巨型帕尼埃裙撑实体化❗连衣裙形态的艺术性创新：将18世纪洛可可时代夸张的裙撑梗融入时装的设计中，让“裙子”与“茶桌”有机地合二为一，优雅翻倍。\n❗31种繁复暗纹蕾丝图案❗整套时装融合31种重工纹样细节，极尽展示繁复美学。\n❗甜点化作重工蕾丝鞋履❗鞋子采用别具匠心的蛋糕切面防水台，环绕重工蕾丝面料与蝴蝶结蕾丝袜子，将洛可可时代的甜蜜幻想投射进时装设计。\n\n🍰【巨型帕尼埃裙撑，演绎法式优雅】\n洛可可时代，是18世纪法国艺术最为",
+    "sourceUrl": "https://www.bilibili.com/video/BV1nPuh65E3C",
+    "publishedLabel": "2026-08-08",
+    "publishedAtEpoch": 1786154700,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/a54387a51afbf4b6ca075cfb354a0606f09a16f6.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/a54387a51afbf4b6ca075cfb354a0606f09a16f6.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1nPuh65E3C"
+      },
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1Jcub6BEZa"
+      }
+    ],
+    "sourceCount": 2
+  },
+  {
+    "id": "c32b96ef08488aa2567a6431",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動態",
+    "title": "全新4.3版本｜花庭绮宴PV首曝，蜡影缭香，茶歇栖梦",
+    "body": "全新4.3版本｜花庭绮宴PV首曝，蜡影缭香，茶歇栖梦\n#以闪亮之名怪美的# 全新4.3版本·花庭绮宴8月11日-8月31日限时登陆！\n🎁关注+卷发，Summer将随机抽10位幸运合伙人每人送出【200元购物卡*1】\n \n有一座花园，永远停留在下午茶时段。\n有一支烛火，永远停留在熄灭以前。\n \n她们在世界的两端，\n共享同一场梦，\n却始终醒在不同的空间。\n在繁花里轻轻抬头，\n在烛光中缓缓回首。\n她们从未抓住彼此，\n却总觉得在自己的心里，\n好像住着另一个季节。\n \n直到一阵风吹过，\n光影开始交换。\n茶会的烛焰盛绽，\n命运终于忘记怎样将她们分开。\n \n视频地址：",
+    "sourceUrl": "https://t.bilibili.com/1234012840842493985",
+    "publishedLabel": "2026-08-08",
+    "publishedAtEpoch": 1786154400,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/d85a6d5f1edbeef529f1ee4f58093a7a1cfc5fb0.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/d85a6d5f1edbeef529f1ee4f58093a7a1cfc5fb0.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動態",
+        "label": "Bilibili",
+        "url": "https://t.bilibili.com/1234012840842493985"
+      },
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1ZFu468E4s"
+      }
+    ],
+    "sourceCount": 2
+  },
+  {
     "id": "a9c57d1476e942c62dbefd44",
     "region": "GLOBAL",
     "platform": "公式YouTube",
@@ -2593,6 +3223,28 @@
     ]
   },
   {
+    "id": "c2d3701eeca248111036ce4b",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "复刻追光活动｜梦穿星海·即将开启",
+    "body": "梦穿星海 | 命运振翅，星河的召唤从未停歇，8月4日10:00–8月24日23:59限时开启！\n \n🦋不是所有沉睡都意味着止息，沉睡中不断积蓄的能量，只需要一点点的微光就能再次觉醒点亮；\n🦋未曾想到，在过去某个瞬间不经意扇动的翅膀，在时针指向未来、一切失去光彩的对立时刻，打破所有束缚和原则，让命运从秘境森林升起，再次与万物星河的联系无限紧密；\n🦋本就夺目闪亮的，不会因为短暂的蒙尘，而永远黯淡；",
+    "sourceUrl": "https://www.bilibili.com/video/BV1FdMQ6KEhA",
+    "publishedLabel": "2026-08-03",
+    "publishedAtEpoch": 1785729600,
+    "imageUrl": "https://i1.hdslb.com/bfs/archive/18523bc451c7a3a2962f078a80ac98d7be2f95b3.jpg",
+    "imageUrls": [
+      "https://i1.hdslb.com/bfs/archive/18523bc451c7a3a2962f078a80ac98d7be2f95b3.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1FdMQ6KEhA"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "75e85c5fef9a30448b56bcb1",
     "region": "JAPAN",
     "platform": "公式サイト",
@@ -2638,6 +3290,28 @@
     "imageUrls": [
       "https://i1.ytimg.com/vi/HnjuPEFwZ4o/hqdefault.jpg"
     ]
+  },
+  {
+    "id": "ed6c6d88a6d56daa3a84ab66",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "闪亮世界全新竞技玩法——【BiuBiu大作战】重磅登场",
+    "body": "亲爱的合伙人们，属于你的高光时刻，正从闪亮的T台转向心跳加速的战场！我们诚邀你参与这场60人的生存派对——准备好让你亲手定义的角色，拿起武器，迎接一场实力与风格的双重挑战！\n在这里，战场节奏尽由你掌控，多重硬核玩法解锁无限战术可能——\n百变身形，趣味对战： 告别千篇一律的默认角色！从0.9m的灵动萌系体型，到1.8m的气场御姐，不同体型的角色将打破次元，同场竞技。是利用娇小身形在掩体间灵活走位，还是凭借修长身姿傲视群雌？这不是单纯的战术对抗，更是充满反差萌的欢乐对决。\n高空突降，硬核搜集：航线随机划过，命",
+    "sourceUrl": "https://www.bilibili.com/video/BV11PGc6kEK9",
+    "publishedLabel": "2026-08-02",
+    "publishedAtEpoch": 1785637800,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/617fddaaa8833dd5aa2b0e987ee0d0f9f361b910.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/617fddaaa8833dd5aa2b0e987ee0d0f9f361b910.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV11PGc6kEK9"
+      }
+    ],
+    "sourceCount": 1
   },
   {
     "id": "9a906d32811d2b82bd443a81",
@@ -2733,6 +3407,50 @@
     ]
   },
   {
+    "id": "b2897b5d4c014e8a87a6a1c9",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "复刻追光活动｜镜海迷途·即将开启",
+    "body": "镜海迷途| 桅影成缚，永恒追逐。7月29日10:00-8月18日23:59限时开启！\n\n🔮“解开我的血咒，再埋葬过去的往事？”\n🚢“你销毁的航海日志第13页，写着我们共同冒险的预言”\n🔮“你看，我们连恨意都是双生”\n🚢”你可以继续恨我三百年——毕竟永恒，是我们刚达成的共识“\n\n所有预言都指向你是我命定的舵手\n我偏要让自己成为你最完美的漏洞\n你听见船板哀鸣以为是胜利前奏\n却不知那是深渊在咀嚼你灵魂的回声\n\n把骄傲淬炼成鱼钩，将罗盘扭转成网\n桅杆上缠绕的岂止是绳索\n是你注定要永久留于此处的魂灵\n\n当永不沉没的",
+    "sourceUrl": "https://www.bilibili.com/video/BV1Pf3Y6wEWw",
+    "publishedLabel": "2026-07-28",
+    "publishedAtEpoch": 1785211200,
+    "imageUrl": "https://i1.hdslb.com/bfs/archive/de036d2ae6f98cbce087fd4fe18b371b3a9432e8.jpg",
+    "imageUrls": [
+      "https://i1.hdslb.com/bfs/archive/de036d2ae6f98cbce087fd4fe18b371b3a9432e8.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1Pf3Y6wEWw"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "e3e19523fb1b19ddd232d475",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "关大洲 x 以闪亮之名｜万世平戎版本主题曲《望乡吟》MV上线",
+    "body": "十三关，是征途。\n归家路，是答案。\n愿所有奔赴，终有归处。\n \n「万世平戎」版本主题曲《望乡吟》特邀「国乐大师」关大洲担纲制作，「国风音乐人」张曦匀倾情献唱，风染山河万里，拨开旧忆尘封。谨借此篇祝愿天下游子，归途如歌，旧梦在望。\n————————\n演唱：张曦匀\n作词：田带鱼\n作曲：关大洲\n制作人：关大洲\n编曲：关大洲/郭林京运\n古筝：丁雪儿\n笛箫：丁晓逵\n管弦乐团：国际首席爱乐乐团\n配唱制作人：关大洲\n音频编辑：罗锦程@KME 李嘉彬\n录音棚：M1-A Studio\n录音/混音/母带：罗锦程@KME",
+    "sourceUrl": "https://www.bilibili.com/video/BV1gs3F6jE5H",
+    "publishedLabel": "2026-07-27",
+    "publishedAtEpoch": 1785151800,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/4d5ae86652225e4bbe763843c1cdf31b187722f8.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/4d5ae86652225e4bbe763843c1cdf31b187722f8.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1gs3F6jE5H"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "8a6dba4e941b4aae057d9ee4",
     "region": "GLOBAL",
     "platform": "公式YouTube",
@@ -2777,6 +3495,28 @@
     ]
   },
   {
+    "id": "6756bc47c330bfd8665e59bb",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "全新站姿固定模式上线",
+    "body": "还在为更换时装后心仪的专属站姿被系统重置，穿搭体验大打折扣而烦恼吗？为带给大家更自由、便捷的外观穿搭体验，打造独一无二的角色造型，固定站姿切换模式功能上线！\n合伙人们可以在【衣橱】-【站姿更换】中切换全新的站姿模式功能，有常规站姿模式和固定站姿模式两种模式可选，在使用固定站姿模式时保存自定义站姿后，切换任意时装、配饰都不会重置姿势，告别更换时装强制重置默认站姿的困扰。\n \n鸣谢合伙人：\n淡水梨花\n红茶栗\nAnnie？\n不明下落",
+    "sourceUrl": "https://www.bilibili.com/video/BV12bgv6iEwD",
+    "publishedLabel": "2026-07-25",
+    "publishedAtEpoch": 1784952000,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/632976f14271f92e3585fb4e8c0d7bb075c536be.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/632976f14271f92e3585fb4e8c0d7bb075c536be.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV12bgv6iEwD"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
     "id": "88d70849f00094c3ec177553",
     "region": "KOREA",
     "platform": "公式YouTube",
@@ -2819,6 +3559,50 @@
     "imageUrls": [
       "https://i4.ytimg.com/vi/_r0KeBJjsMs/hqdefault.jpg"
     ]
+  },
+  {
+    "id": "90e1880b1a8948b7e827a4ef",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "用猎猎旌旗奏响归途凯歌",
+    "body": "鼓点震落尘埃，盔甲映射寒光。\n属于她的锋利与从容，从不曾失去。\n \n鸣谢合伙人：京谕",
+    "sourceUrl": "https://www.bilibili.com/video/BV1ihgm6XEYn",
+    "publishedLabel": "2026-07-23",
+    "publishedAtEpoch": 1784793600,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/886c52bb10e04ad487b26ee874e15b22fb96eea3.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/886c52bb10e04ad487b26ee874e15b22fb96eea3.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1ihgm6XEYn"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "c40b9681a1e1e1cb53d3dfb8",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "「以闪亮之名 × 豪士面包」联动先导片正式上线",
+    "body": "全新主题视觉公开，定制周边如约而至 ✨\n\n⏰【闪亮豪礼】联名礼盒\n66.6元即可获得30包面包4款周边\n蛋皮吐司×5\n藜麦吐司×9\n乳酸菌×16\n荔枝喵PP夹x1\n荔枝喵扇子x1\nSummer＆Luna双闪徽章x1\n换装主题折光色纸x1\n联名礼盒现已正式上线！！！\n就让@豪士面包陪伴各位合伙人，闪亮一整个夏天~  ദ്ദി˶ᵒ ᵕ ˂)",
+    "sourceUrl": "https://www.bilibili.com/video/BV1ipgC6kEbm",
+    "publishedLabel": "2026-07-23",
+    "publishedAtEpoch": 1784768400,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/19c738d232327a081581a2608254d99df2e9b153.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/19c738d232327a081581a2608254d99df2e9b153.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1ipgC6kEbm"
+      }
+    ],
+    "sourceCount": 1
   },
   {
     "id": "b037ce56db972702dcff7381",
@@ -2901,6 +3685,138 @@
         "platform": "公式TapTap",
         "label": "TapTap",
         "url": "https://www.taptap.cn/moment/828260941740116010"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "dcde8434b62e683d9e84094e",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "【直播回放】生生不息「归途」有光 2026年07月17日18点场",
+    "body": "【直播回放】生生不息「归途」有光 2026年07月17日18点场",
+    "sourceUrl": "https://www.bilibili.com/video/BV1jWNZ66E7Q",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784305937,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/9416f5f365b99d14e750063486dbcb98e0ce9354.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/9416f5f365b99d14e750063486dbcb98e0ce9354.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1jWNZ66E7Q"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "8c2686147bb1f59885d1663c",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "宠物打工功能即将上线",
+    "body": "#和以闪亮之名一起回家# 全新4.3版本·万世平戎 7月21日-8月10日限时登陆！\n\n在闪亮世界中，合伙人的宠物不再仅仅是可爱的陪伴者，还可以出去进行打工养家喽！\n宠物打工，一场充满挑战与回报的旅程。每个岗位、每个机会，都精准匹配宠物的天赋与技能。通过精心训练，宠物的技能日益精进，挑战更高难度的工作不再是梦。这是对宠物能力的赞誉，更是对它们辛勤付出的回馈，让每一份努力都化为满满的收获！\n宠物打工的地点遍布闪亮世界，无论是温馨的家园还是热闹的社区沙滩广场，都能找到宠物们忙碌的身影。合伙人可以前往这些地方，",
+    "sourceUrl": "https://www.bilibili.com/video/BV1y3NZ6UEWi",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784301339,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/674261c5047c499f62a6a8e69b2c27ff024ab94c.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/674261c5047c499f62a6a8e69b2c27ff024ab94c.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1y3NZ6UEWi"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "a8d1f3eaeed0cd138c114d02",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "全新4.3版本｜专属六星套装「星月神谕」实机展示",
+    "body": "#和以闪亮之名一起回家# 全新4.3版本·万世平戎 7月21日-8月10日限时登陆！\n\n❗星茧礼裙的梦幻环绕❗连衣裙采用极具视觉张力的半包裹式大茧型裙摆设计，轮廓自腰部向外舒展延伸，营造出被星光轻轻包裹的神秘仪式感。\n❗超大占星师手持❗超大羊皮卷与速记羽毛笔共同组成专属手持。泛黄的羊皮卷仿佛承载着古老观测记录，与羽毛笔共同构成占星师不可或缺的仪式法器，让角色身份更加鲜明完整。\n❗星月头纱与流光盘羊角❗帽子将占星师经典头纱造型重新演绎，巨幅刺绣融入太阳、月亮与星辰图腾，头纱尾端点缀完整月相变化，将星辰运行的",
+    "sourceUrl": "https://www.bilibili.com/video/BV1imKJ6eEBj",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784298000,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/a101a96530b12f7a22faa5f8d1e2f6bdc9c3b760.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/a101a96530b12f7a22faa5f8d1e2f6bdc9c3b760.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1imKJ6eEBj"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "9724b977cc7c3803ac7100eb",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "全新站姿固定模式即将上线",
+    "body": "#和以闪亮之名一起回家# 全新4.3版本·万世平戎 7月21日-8月10日限时登陆！\n\n还在为更换时装后心仪的专属站姿被系统重置，穿搭体验大打折扣而烦恼吗？为带给大家更自由、便捷的外观穿搭体验，打造独一无二的角色造型，固定站姿切换模式功能即将上线！\n合伙人们可以在【衣橱】-【站姿更换】中切换全新的站姿模式功能，有常规站姿模式和固定站姿模式两种模式可选，在使用固定站姿模式时保存自定义站姿后，切换任意时装、配饰都不会重置姿势，告别更换时装强制重置默认站姿的困扰。\n该功能将在更新后尽快开启，请关注后续公告内容~",
+    "sourceUrl": "https://www.bilibili.com/video/BV19DKJ6hED5",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784296800,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/632976f14271f92e3585fb4e8c0d7bb075c536be.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/632976f14271f92e3585fb4e8c0d7bb075c536be.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV19DKJ6hED5"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "18bfb1418f0095df34b75cba",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "归途 | 助漂泊藏品回归故土",
+    "body": "从蜀绣到藏羌织绣，从苗族银饰到傩面具雕刻，一直以来，我们致力于将传统文化的针法、纹样与工序之美，呈现于数字时装之上。\n而游戏中的还原，并非终点。那些纹样的真正归属，是我们脚下的土地。\n\n2016年，一方漂泊海外一百四十余年的「清·深蓝色团凤穿牡丹纹织金妆花缎匹料」，首度现身拍卖场。槌声落下的那一刻，它不再是深藏于异乡的旧物，而是一枚漂泊的烙印，一缕承载故园之情的愁绪。\n2026年，拍卖行槌声再响——这一次，它终于结束了一百四十余年的漂泊，等来了命运的转向：我们以合伙人的名义将其竞得，着手推进捐赠事宜，助藏",
+    "sourceUrl": "https://www.bilibili.com/video/BV1iCNR6FEpj",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784296316,
+    "imageUrl": "https://i2.hdslb.com/bfs/archive/7b146207c7bf92cdca4d37b043d6846405ab35d2.jpg",
+    "imageUrls": [
+      "https://i2.hdslb.com/bfs/archive/7b146207c7bf92cdca4d37b043d6846405ab35d2.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1iCNR6FEpj"
+      }
+    ],
+    "sourceCount": 1
+  },
+  {
+    "id": "93bb7328efd010d4e4a16735",
+    "region": "CHINA",
+    "platform": "公式Bilibili · 動画",
+    "title": "闪亮世界全新竞技玩法——【BiuBiu大作战】即将重磅登场",
+    "body": "#和以闪亮之名一起回家# 全新4.3版本·万世平戎 7月21日-8月10日限时登陆！\n\n亲爱的合伙人们，属于你的高光时刻，正从闪亮的T台转向心跳加速的战场！我们诚邀你参与这场60人的生存派对——准备好让你亲手定义的角色，拿起武器，迎接一场实力与风格的双重挑战！\n在这里，战场节奏尽由你掌控，多重硬核玩法解锁无限战术可能——\n百变身形，趣味对战： 告别千篇一律的默认角色！从0.9m的灵动萌系体型，到1.8m的气场御姐，不同体型的角色将打破次元，同场竞技。是利用娇小身形在掩体间灵活走位，还是凭借修长身姿傲视群雌",
+    "sourceUrl": "https://www.bilibili.com/video/BV1eDKJ6aEkS",
+    "publishedLabel": "2026-07-17",
+    "publishedAtEpoch": 1784295900,
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/617fddaaa8833dd5aa2b0e987ee0d0f9f361b910.jpg",
+    "imageUrls": [
+      "https://i0.hdslb.com/bfs/archive/617fddaaa8833dd5aa2b0e987ee0d0f9f361b910.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式Bilibili · 動画",
+        "label": "Bilibili · 動画",
+        "url": "https://www.bilibili.com/video/BV1eDKJ6aEkS"
       }
     ],
     "sourceCount": 1
@@ -3011,7 +3927,18 @@
     "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fv-EhUH0D3zwHLXKEUBQOwPOXU4h_20260630170937.jpg/_tap_ugc.jpg",
     "imageUrls": [
       "https://img2-tc.tapimg.com/moment/etag/Fv-EhUH0D3zwHLXKEUBQOwPOXU4h_20260630170937.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FvfwBGmW-gRY-Jl60Co-uNGiVoq7_20260630170905.jpg/_tap_ugc.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lg44KAnhvo7H0x5RvRj29lTxbMwY_20260807185443.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FlzLNhNlKg4XYp7mQvioPS6PAg18_20260808002727.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/li16ezm3NcOa8YY4qfdrP1eOnKaw_20260717222039.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lsrJs7TAvSZzsx8wFysdf3CVaQy__20260808002936.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FpIuVzL_UiBeIJ8nHfAMVmuqe40T_20260807152901.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FjKct8ZlgLvtB37EY3bxezu3j5pj_20260430130200.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/video/cover/FmUJGTDjucLBkTGgQ2ETBEG0T9Sp_20260704103722.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqKqT6N4HivfetWK_Fi5x_-CV4pX_20260612104648.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FkOsEpzuCBqmqQUInmG4QGdhHQrF_20260428150813.jpg/_tap_ugc_m.jpg",
+      "https://img-tc.tapimg.com/market/images/2d89a24cdb4c2c00c2f2aa90e3a60cd0.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FvfwBGmW-gRY-Jl60Co-uNGiVoq7_20260630170905.jpg"
     ],
     "sources": [
