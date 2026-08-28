@@ -49,18 +49,16 @@
 
 /*
  * Image viewer sizing.
- *
- * X can publish extremely tall images (for example 1080x3785). The previous
- * fixed-height viewer used object-fit: contain, which shrank those images into
- * a narrow strip. Use viewport width instead and let the overlay scroll.
- * Keep !important here because this file intentionally overrides styles.css.
+ * Normal-height images are vertically centered in the viewport. Very tall
+ * images naturally grow the figure beyond 100dvh and remain scrollable from
+ * the top, so X long-post images keep their full-width behavior.
  */
 .image-viewer:not([hidden]) {
   display: block !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
   overscroll-behavior: contain;
-  padding: max(18px, var(--safe-top)) 8px max(24px, var(--safe-bottom)) !important;
+  padding: 0 8px !important;
 }
 
 .image-viewer[hidden] {
@@ -70,9 +68,15 @@
 .viewer-figure {
   width: min(1100px, calc(100vw - 16px)) !important;
   max-width: none !important;
+  min-height: 100dvh !important;
   height: auto !important;
-  margin: 56px auto 24px !important;
-  display: block !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+  padding: max(72px, calc(var(--safe-top) + 54px)) 0 max(42px, calc(var(--safe-bottom) + 18px)) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .viewer-image {
@@ -83,12 +87,14 @@
   max-height: none !important;
   object-fit: contain !important;
   margin: 0 auto !important;
+  flex: 0 0 auto !important;
 }
 
 .viewer-count {
   display: block !important;
   margin-top: 10px !important;
   text-align: center !important;
+  flex: 0 0 auto !important;
 }
 
 .viewer-close,
@@ -114,7 +120,10 @@
   .viewer-figure {
     width: 100vw !important;
     max-width: none !important;
-    margin-top: 54px !important;
+    min-height: 100dvh !important;
+    margin: 0 auto !important;
+    padding-top: max(72px, calc(var(--safe-top) + 54px)) !important;
+    padding-bottom: max(42px, calc(var(--safe-bottom) + 18px)) !important;
   }
 
   .viewer-image {
