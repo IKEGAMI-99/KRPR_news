@@ -6,6 +6,7 @@ import sys
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,6 +84,25 @@ class DataTests(unittest.TestCase):
         for token in blocked:
             self.assertNotIn(token, titles)
 
+    def test_complete_weibo_mirrors_are_backed_by_deployed_files(self):
+        mirror_dir = DOCS / "media" / "weibo"
+        for row in self.rows:
+            mirrors = row.get("imageMirrorUrls")
+            if not isinstance(mirrors, list) or not mirrors:
+                continue
+            sources = []
+            if isinstance(row.get("imageUrls"), list):
+                sources.extend(value for value in row.get("imageUrls") or [] if isinstance(value, str))
+            if row.get("imageUrl") and row.get("imageUrl") not in sources:
+                sources.append(row.get("imageUrl"))
+            self.assertEqual(len(sources), len(mirrors), row.get("sourceUrl"))
+            for mirror in mirrors:
+                parsed = urlparse(mirror)
+                self.assertIn(parsed.hostname, {"ikegami-99.github.io", "raw.githubusercontent.com"})
+                filename = Path(parsed.path).name
+                self.assertTrue(filename)
+                self.assertTrue((mirror_dir / filename).exists(), f"missing Weibo mirror: {filename}")
+
 
 class ProjectStructureTests(unittest.TestCase):
     def test_python_sources_parse(self):
@@ -107,6 +127,21 @@ class ProjectStructureTests(unittest.TestCase):
             path = DOCS / (asset or "index.html")
             with self.subTest(asset=asset):
                 self.assertTrue(path.exists(), f"missing service-worker asset: {asset}")
+
+    def test_weibo_image_delivery_is_self_hosted_and_wired(self):
+        html = (DOCS / "index.html").read_text(encoding="utf-8")
+        sw = (DOCS / "sw.js").read_text(encoding="utf-8")
+        fallback = (DOCS / "weibo-image-fallback.js").read_text(encoding="utf-8")
+        workflow = (ROOT / ".github" / "workflows" / "news-refresh.yml").read_text(encoding="utf-8")
+        mirror = (SCRIPTS / "mirror_weibo_images.py").read_text(encoding="utf-8")
+
+        self.assertIn("./weibo-image-fallback.js", html)
+        self.assertIn("./weibo-image-fallback.js", sw)
+        self.assertIn("python scripts/mirror_weibo_images.py", workflow)
+        self.assertIn("docs/media/weibo", workflow)
+        self.assertIn("ikegami-99.github.io/KRPR_news/media/weibo/", mirror)
+        self.assertNotIn("weserv.nl", fallback)
+        self.assertNotIn("weserv.nl", mirror)
 
     def test_search_and_advance_info_features_are_removed(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
