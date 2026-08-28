@@ -112,5 +112,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json data/translations.json data/article_dates.json data/image_quality.json data/crawl_status.json docs/media/weibo
           git commit -m "chore: refresh normalized news"
-          git pull --rebase origin main
-          git push
+
+          for attempt in 1 2 3 4; do
+            echo "Push attempt ${attempt}/4"
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+
+          echo "Refresh push failed after retries"
+          exit 1
