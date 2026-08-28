@@ -39,9 +39,13 @@
     return true;
   }
 
+  function showLoading() {
+    status.textContent = '最終更新 取得中…';
+  }
+
   let current = readCached();
   if (current) apply(current);
-  else status.textContent = '最終更新 取得中…';
+  else showLoading();
 
   async function load({ force = false } = {}) {
     try {
@@ -55,12 +59,16 @@
       apply(parsed);
     } catch {
       if (current) apply(current);
+      else status.textContent = '最終更新 不明';
     }
   }
 
   document.addEventListener('kirapara:rendered', () => {
     if (current) apply(current);
-    else load();
+    else {
+      showLoading();
+      load();
+    }
   });
 
   document.querySelector('#refreshButton')?.addEventListener('click', () => load({ force: true }));
