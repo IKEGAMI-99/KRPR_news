@@ -1,43 +1,27 @@
 (() => {
-  const originalCandidates = window.imageCandidates;
-  if (typeof originalCandidates !== 'function') return;
+  const originalImageList = window.imageList;
+  if (typeof originalImageList !== 'function') return;
 
-  function isSinaImage(url) {
-    try {
-      return /(^|\.)sinaimg\.(?:cn|com)$/i.test(new URL(url, location.href).hostname);
-    } catch {
-      return false;
-    }
-  }
-
-  function weservUrl(source) {
-    try {
-      const parsed = new URL(source, location.href);
-      if (!isSinaImage(parsed.href)) return '';
-      const remote = `${parsed.hostname}${parsed.pathname}${parsed.search}`;
-      return `https://images.weserv.nl/?url=${encodeURIComponent(remote)}&output=webp`;
-    } catch {
-      return '';
-    }
-  }
-
-  // app.js already tries several equivalent Sina CDN aliases directly. Append a
-  // neutral image proxy only after those direct candidates, so normal traffic
-  // stays on the original CDN while anti-hotlink failures still have a way out.
-  window.imageCandidates = function imageCandidatesWithWeiboProxy(urls) {
-    const direct = originalCandidates(urls);
-    const result = [...direct];
-    const seen = new Set(result);
-    for (const source of direct) {
-      if (!isSinaImage(source)) continue;
-      const proxy = weservUrl(source);
-      if (proxy && !seen.has(proxy)) {
-        seen.add(proxy);
-        result.push(proxy);
+  function validMirrorList(item, sourceImages) {
+    if (!Array.isArray(item?.imageMirrorUrls)) return [];
+    const mirrors = item.imageMirrorUrls.filter((value) => {
+      if (typeof value !== 'string' || !/^https:\/\//i.test(value)) return false;
+      try {
+        const parsed = new URL(value);
+        return parsed.hostname === 'raw.githubusercontent.com' && parsed.pathname.includes('/IKEGAMI-99/KRPR_news/');
+      } catch {
+        return false;
       }
-    }
-    return result;
-  };
+    });
+    // The mirror script only publishes this field when every source image was
+    // downloaded successfully. Keep the count check here as a second guard so a
+    // partial/stale mirror can never collapse a multi-image Weibo post.
+    return mirrors.length === sourceImages.length ? mirrors : [];
+  }
 
-  window.kiraparaWeiboProxyUrl = weservUrl;
+  window.imageList = function imageListWithWeiboMirror(item) {
+    const sourceImages = originalImageList(item);
+    const mirrors = validMirrorList(item, sourceImages);
+    return mirrors.length ? mirrors : sourceImages;
+  };
 })();
