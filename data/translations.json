@@ -37,11 +37,11 @@
       "contentHash": "4ec003be066320c69ac6c095",
       "titleJa": "『万世の平定』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応...",
       "bodyJa": "『万世の平定』特別投稿キャンペーン開催👗\n\nテーマ　✨ \n#キラパラ と #ノスタルジック\n\nハッシュタグをつけて作品を投稿した方へ\n抽選でAmazonギフト券を🎁\n\n応募リンク：\n#キラパラ \n#LifemakeoverWorld",
-      "summaryJa": "・イベント名: 『万世の平定』特別投稿キャンペーンが開催されます\n・テーマ: #キラパラ と #ノスタルジック\n・参加方法: 指定のハッシュタグをつけて作品を投稿する\n・特典: 抽選でAmazonギフト券が当たる",
+      "summaryJa": "・イベント名: 『万世の平定』特別投稿キャンペーン開催\n・テーマ: #キラパラ と #ノスタルジック\n・内容: 指定ハッシュタグをつけて作品を投稿した方の中から抽選でAmazonギフト券をプレゼント\n・応募リンク: #キラパラ #LifemakeoverWorld",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787877193
+      "updatedAtEpoch": 1787915348
     },
     "https://x.com/kirapara_JP/status/2092794229718212740": {
       "contentHash": "ca191aa66f87c32099fbe7ef",
@@ -209,9 +209,9 @@
       "bodyJa": "Vvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表\n✨スポットライトの下で、VMEの新星があなたを輝かせる\n📢ドリームインキュベーションの募集が本日より開始\n🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください\n💖素晴らしいことが起こりますので、ご期待ください\n\n以闪亮之名\n \n ゲーム\n \n ロールプレイング/高画質/シミュレーション経営\n \n 全ての女性が夢中になる3A級シミュレーションライフゲーム\n \n 入場",
       "summaryJa": "・追加: Vvanna.Music.Entertainmentが正式に発表\n・イベント: ドリームインキュベーションの募集が本日より開始\n・バージョン: 以闪亮之名（以閃亮之名）の全新4.4バージョンが予定されている",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879278
+      "updatedAtEpoch": 1787915416
     },
     "https://x.com/kirapara_JP/status/2092541309416337867": {
       "contentHash": "c24cdbcfc5c43ccae1a436f2",
