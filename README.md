@@ -11,6 +11,7 @@
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムラインと地域フィルター
 - 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、TapTap、好游快爆、Steamなどの横断収集
+- 同一ニュースを1枚のカードへ統合し、Weibo / TapTap / Bilibiliなど複数の元記事ボタンを保持
 - 複数画像のスワイプ表示と全画面ビューア
 - Weibo画像のリポジトリ内ミラーと、GitHub Pages同一オリジンからの安定配信
 - 低解像度画像、ロゴ、QR、トラッキング画像などの除外
@@ -31,7 +32,8 @@
         ▼
 毎時 :00  news-refresh.yml
         │
-        ├─ 収集・重複排除
+        ├─ 収集
+        ├─ 同一ニュースを統合し複数の出典URLを保持
         ├─ 日時・画像の正規化
         ├─ Weibo画像を docs/media/weibo にミラー
         ├─ Sol補完データの再適用
@@ -54,7 +56,7 @@
 
 5分ごとに1件ずつ処理していたAI構成は、モデル復元・ランタイム準備・checkoutの回数が多すぎるため廃止しました。現在は15分ごとに最大3件をまとめ、同等の最大処理量を保ちながらrunner起動回数を4分の1にしています。
 
-ニュース収集とAI処理は同じ `kirapara-data-writer` concurrency groupを使います。両方が同時に `data/news.json` と `data/translations.json` を書き換える競合を防ぐためです。
+ニュース収集とAI処理は同じ `kirapara-data-writer` concurrency groupを使います。両方が同時に `data/news.json` と `data/translations.json` を書き換える競合を防ぐためです。収集結果のpush直前に別コミットで`main`が進んだ場合は、最新`main`へrebaseして最大4回までpushを再試行します。
 
 ## ニュース収集
 
@@ -76,6 +78,8 @@ WeiboはSina CDNの直接表示がブラウザやPWA環境で不安定になる�
 TapTapは中国版「以闪亮之名」の公式投稿一覧 `type=official` から直近のMoment IDを取得し、TapTapの公開Web API `webapiv2/moment/v3/detail` からタイトル、本文、公開時刻、画像を取得します。API取得に失敗した記事だけ個別Webページのメタデータへフォールバックし、`公式TapTap` として通常の翻訳・要約パイプラインへ流します。
 
 好游快爆は「以闪亮之名」ゲームページの `官方帖子` セクションだけを収集対象にします。一般ユーザーのフォーラム投稿は対象外です。公式投稿の個別ページから本文、公開日時、画像を取得し、個別ページがJavaScript依存などで十分に読めない場合も、公式一覧で確認できたタイトルと元記事URLを保持して `官方好游快爆` として取り込みます。
+
+同一地域で同じ告知と判定できる記事は `scripts/merge_duplicate_sources.py` で1件に統合します。公開時刻が近く、ハッシュタグや公式接頭辞を除去したタイトルが包含関係または高い類似度にある場合を同一候補とし、本文・画像は最も情報量の多い代表記事を使用します。各媒体のURLは `sources` 配列に残し、PWAでは `Weiboで開く`、`TapTapで開く`、`Bilibiliで開く`、`好游快爆で開く` のように元記事ごとのボタンを表示します。異なる地域の記事は統合しません。
 
 WeChatは既存の公開Web探索による収集を継続しつつ、中国の公式リンク欄にも入口を追加しています。WeChatには安定した公開WebプロフィールURLがないため、メニューのWeChatリンクは公式公众号名「以闪亮之名」を検索できるSogou微信検索を開きます。
 
@@ -100,6 +104,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 - `data/news.json` はネットワーク優先で取得し、失敗時は端末内の直前データを表示
 - `data/crawl_status.json` はネットワークから取得し、端末には直近の成功値も保存
+- 同一記事に複数の `sources` がある場合はカードを複製せず、元記事ボタンだけを複数表示
 - タイトル下は件数や「最新記事」の日時を表示せず、クロール完了時刻だけを表示
 - Service Workerはアプリシェルだけをキャッシュ
 - ニュースJSON、アクセス解析JSON、外部画像はService Workerで固定キャッシュしない
@@ -125,7 +130,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 | Workflow | 実行 | 役割 |
 | --- | --- | --- |
-| `news-refresh.yml` | 毎時00分 | ニュース収集、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
+| `news-refresh.yml` | 毎時00分 | ニュース収集、同一記事の出典統合、画像・日時の正規化、Weibo画像ミラー、クロール完了時刻の記録 |
 | `ai-translate.yml` | 毎時07 / 22 / 37 / 52分 | backlog確認、最大3件の翻訳・要約 |
 | `regenerate-ai.yml` | リポジトリ所有者のIssue | 指定記事のAI結果を再生成 |
 | `gap-analysis.yml` | 毎日06:30 JST | 地域別の実装差分析を更新 |
@@ -147,6 +152,9 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 - 中国版の公式TapTap投稿を毎時収集する `fetch_taptap_official.py` を追加
 - 中国版の好游快爆 `官方帖子` を毎時収集する `fetch_haoyoukuaibao.py` を追加
 - 中国の公式リンク欄をWeibo / Bilibili / TapTap / 好游快爆 / 抖音 / 小紅書 / 百度贴吧 / WeChatまで拡張
+- 同一ニュースを1カードへ統合し、複数媒体の元記事URLを `sources` として保持する処理を追加
+- 複数出典の記事カードに媒体別の元記事ボタンを表示するUIを追加
+- `main` がクロール中に進んだ場合の収集結果pushを最大4回再試行するように変更
 
 ## ディレクトリ構成
 
@@ -172,6 +180,8 @@ KRPR_news/
 ├─ docs/
 │  ├─ index.html
 │  ├─ app.js
+│  ├─ source-buttons.js
+│  ├─ source-buttons.css
 │  ├─ crawl-status.js
 │  ├─ sw.js
 │  ├─ gap.html
@@ -183,6 +193,7 @@ KRPR_news/
 │  ├─ fetch_taptap_official.py
 │  ├─ fetch_haoyoukuaibao.py
 │  ├─ fetch_wechat_official.py
+│  ├─ merge_duplicate_sources.py
 │  ├─ translation_engine.py
 │  ├─ translation_quality.py
 │  ├─ strict_gemma_translate.py
@@ -193,6 +204,7 @@ KRPR_news/
    ├─ test_project.py
    ├─ test_taptap.py
    ├─ test_haoyoukuaibao.py
+   ├─ test_duplicate_sources.py
    └─ test_crawl_status.py
 ```
 
