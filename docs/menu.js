@@ -2,6 +2,31 @@
   const trigger = document.querySelector('#menuButton');
   if (!trigger) return;
 
+  const IS_LOCAL_PREVIEW = ['localhost', '127.0.0.1'].includes(location.hostname);
+  const TRANSLATIONS_URL = IS_LOCAL_PREVIEW
+    ? '../data/translations.json'
+    : 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/translations.json';
+  const CURRENT_MODEL = 'litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM';
+  const CURRENT_REVISION = 'gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2';
+  const RUN_MINUTES = [7, 22, 37, 52];
+  const tokyoDateTime = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    month: 'numeric',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+  const tokyoClock = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Tokyo',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+
+  let translationCache = null;
+  let translationLoading = null;
+
   const groups = [
     { title:'🇯🇵 日本', links:[
       ['公式サイト','https://kirapara.archosaur.com/'],
@@ -90,14 +115,14 @@
   operations.className = 'menu-region developer-section developer-section-featured';
   operations.innerHTML = `
     <button class="developer-toggle" type="button" aria-expanded="false">
-      <span><span class="developer-toggle-icon">⚙</span><span><strong>運用情報</strong><small>AI処理件数 / GitHub Actions</small></span></span>
+      <span><span class="developer-toggle-icon">⚙</span><span><strong>運用情報</strong><small>翻訳進捗 / 15分おき・3記事ずつ</small></span></span>
       <span class="developer-chevron">›</span>
     </button>
     <div class="developer-panel" hidden>
-      <div class="dev-topline"><div><div class="dev-kicker">LOCAL AI</div><div class="dev-model">Gemma 4 E4B · LiteRT-LM</div></div></div>
-      <div class="dev-status-card dev-success"><span class="dev-status-dot"></span><div><strong>公開データの処理状況</strong><small>一覧に読み込んだデータから集計</small></div></div>
+      <div class="dev-topline"><div><div class="dev-kicker">LOCAL AI</div><div class="dev-model">Gemma 4 E4B · LiteRT-LM</div></div><button class="dev-refresh" type="button" aria-label="翻訳状況を更新" title="翻訳状況を更新">↻</button></div>
+      <div class="dev-status-card dev-waiting"><span class="dev-status-dot"></span><div><strong>翻訳状況を取得中</strong><small>公開中のニュースと翻訳キャッシュを照合します</small></div></div>
       <div class="dev-metrics"></div>
-      <p class="menu-note">実行中・失敗などのリアルタイム状態はGitHub Actionsで確認できます。</p>
+      <p class="menu-note">翻訳は毎時07・22・37・52分に最大3記事ずつ処理します。GitHub Actionsの開始時刻は混雑時に少し遅れる場合があります。</p>
       <a class="dev-actions-link" href="https://github.com/IKEGAMI-99/KRPR_news/actions" target="_blank" rel="noopener noreferrer">GitHub Actionsで確認する ↗</a>
     </div>`;
   body.appendChild(operations);
@@ -105,18 +130,87 @@
 
   const toggle = operations.querySelector('.developer-toggle');
   const panel = operations.querySelector('.developer-panel');
+  const refresh = operations.querySelector('.dev-refresh');
+  const statusCard = operations.querySelector('.dev-status-card');
+  const statusTitle = statusCard.querySelector('strong');
+  const statusDetail = statusCard.querySelector('small');
+
+  function itemKey(item) {
+    return String(item?.sourceUrl || item?.id || '');
+  }
+
+  function isCurrentTranslation(entry) {
+    if (!entry || typeof entry !== 'object') return false;
+    const hasText = ['titleJa', 'bodyJa', 'summaryJa'].every((field) => typeof entry[field] === 'string' && entry[field].trim());
+    if (!hasText) return false;
+    const model = String(entry.model || '');
+    if (entry.managedBySol || model.includes('GPT-5.6 Sol')) return true;
+    return model === CURRENT_MODEL
+      && String(entry.modelRevision || '') === CURRENT_REVISION
+      && Number(entry.summaryFormatVersion || 0) === 4;
+  }
+
+  function nextRunLabel() {
+    const [hourText, minuteText] = tokyoClock.format(new Date()).split(':');
+    let hour = Number(hourText);
+    const minute = Number(minuteText);
+    let nextMinute = RUN_MINUTES.find((value) => value > minute);
+    if (nextMinute === undefined) {
+      nextMinute = RUN_MINUTES[0];
+      hour = (hour + 1) % 24;
+    }
+    return `${String(hour).padStart(2, '0')}:${String(nextMinute).padStart(2, '0')}ごろ`;
+  }
 
   function renderOperations() {
     const items = (typeof state !== 'undefined' && Array.isArray(state.items)) ? state.items : [];
-    const ai = items.filter((item) => item?.aiProcessed && item?.summaryJa).length;
-    const facts = items.filter((item) => item?.aiSummaryFormat === 'facts-v2').length;
+    const candidates = items.filter((item) => item?.title || item?.body);
+    const entries = translationCache?.items && typeof translationCache.items === 'object' ? translationCache.items : null;
+
+    let translated;
+    let pending;
+    let lastEpoch = 0;
+
+    if (entries) {
+      translated = 0;
+      for (const item of candidates) {
+        const entry = entries[itemKey(item)];
+        if (!isCurrentTranslation(entry)) continue;
+        translated += 1;
+        lastEpoch = Math.max(lastEpoch, Number(entry.updatedAtEpoch || 0));
+      }
+      pending = Math.max(0, candidates.length - translated);
+    } else {
+      translated = candidates.filter((item) => item?.aiProcessed && item?.summaryJa).length;
+      pending = null;
+    }
+
+    statusCard.classList.remove('dev-success', 'dev-waiting', 'dev-failure');
+    if (!entries) {
+      statusCard.classList.add('dev-waiting');
+      statusTitle.textContent = '翻訳状況を取得中';
+      statusDetail.textContent = 'ニュース一覧の暫定値を表示しています';
+    } else if (pending === 0) {
+      statusCard.classList.add('dev-success');
+      statusTitle.textContent = '翻訳バックログなし';
+      statusDetail.textContent = '現在の公開記事はすべて処理済みです';
+    } else {
+      statusCard.classList.add('dev-waiting');
+      statusTitle.textContent = `未翻訳 ${pending}件`;
+      statusDetail.textContent = '15分ごとに最大3記事ずつ処理します';
+    }
+
     const metrics = operations.querySelector('.dev-metrics');
     metrics.replaceChildren();
-    for (const [label, value] of [
-      ['AI処理済み', `${ai} / ${items.length || '—'}`],
-      ['箇条書き要約', `${facts} / ${items.length || '—'}`],
-      ['翻訳モデル', 'Gemma 4 E4B'],
-    ]) {
+    const rows = [
+      ['翻訳済み', `${translated} / ${candidates.length || '—'}`],
+      ['未翻訳', pending === null ? '取得中…' : `${pending}件`],
+      ['1回の処理', '最大3記事'],
+      ['実行間隔', '15分'],
+      ['最終翻訳', lastEpoch ? tokyoDateTime.format(new Date(lastEpoch * 1000)) : '—'],
+      ['次回目安', nextRunLabel()],
+    ];
+    for (const [label, value] of rows) {
       const metric = document.createElement('div');
       metric.className = 'dev-metric';
       const name = document.createElement('span');
@@ -128,13 +222,45 @@
     }
   }
 
+  async function loadTranslationCache({ force = false } = {}) {
+    if (translationLoading && !force) return translationLoading;
+    refresh.classList.add('is-loading');
+    refresh.disabled = true;
+    translationLoading = (async () => {
+      try {
+        const separator = TRANSLATIONS_URL.includes('?') ? '&' : '?';
+        const response = await fetch(`${TRANSLATIONS_URL}${separator}t=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const value = await response.json();
+        if (!value || typeof value !== 'object' || !value.items || typeof value.items !== 'object') throw new Error('invalid translations cache');
+        translationCache = value;
+      } catch {
+        translationCache = null;
+        statusCard.classList.remove('dev-success', 'dev-waiting');
+        statusCard.classList.add('dev-failure');
+        statusTitle.textContent = '翻訳状況の取得に失敗';
+        statusDetail.textContent = 'ニュース一覧の暫定値のみ表示しています';
+      } finally {
+        refresh.classList.remove('is-loading');
+        refresh.disabled = false;
+        translationLoading = null;
+        renderOperations();
+      }
+    })();
+    return translationLoading;
+  }
+
   toggle.addEventListener('click', () => {
     const open = panel.hidden;
     panel.hidden = !open;
     toggle.setAttribute('aria-expanded', String(open));
     operations.classList.toggle('is-open', open);
-    if (open) renderOperations();
+    if (open) {
+      renderOperations();
+      loadTranslationCache();
+    }
   });
+  refresh.addEventListener('click', () => loadTranslationCache({ force: true }));
   document.addEventListener('kirapara:rendered', () => { if (!panel.hidden) renderOperations(); });
 
   const close = () => {
