@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "https://x.com/LifeMakeover510/status/2092786675575369907": {
+      "titleJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー",
+      "bodyJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 崇拝と願いの中で、我々は神々のために無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
+      "reason": "原文では「Lightchase Encore」は投稿シリーズ／イベント見出しで、★4セット名は「Wander Limit」。既存summaryJaがセット名を「Lightchase Encore [Wander Limit]」と結合していたため修正。",
+      "updatedAtEpoch": 1787893011
+    }
+  }
 }
