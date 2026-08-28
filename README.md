@@ -10,7 +10,7 @@
 ## 主な機能
 
 - 🇯🇵 日本 / 🇨🇳 中国 / 🇰🇷 韓国 / 🌐 Global の統合タイムラインと地域フィルター
-- 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、TapTap、Steamなどの横断収集
+- 公式サイト、X、TikTok、YouTube、Weibo、Bilibili、TapTap、好游快爆、Steamなどの横断収集
 - 複数画像のスワイプ表示と全画面ビューア
 - Weibo画像のリポジトリ内ミラーと、GitHub Pages同一オリジンからの安定配信
 - 低解像度画像、ロゴ、QR、トラッキング画像などの除外
@@ -63,7 +63,7 @@
 | 地域 | 主なソース |
 | --- | --- |
 | 🇯🇵 日本 | 公式サイト / 公式X / TikTok / YouTube / 国内Webニュース |
-| 🇨🇳 中国 | 公式サイト / Weibo / Bilibili / TapTap / WeChat / 中国Webニュース |
+| 🇨🇳 中国 | 公式サイト / Weibo / Bilibili / TapTap / 好游快爆 / WeChat / 中国Webニュース |
 | 🇰🇷 韓国 | 公式X / TikTok / YouTube / 韓国Webニュース |
 | 🌐 Global | 公式サイト / 公式X / TikTok / YouTube / Steam / 海外Webニュース |
 
@@ -74,6 +74,8 @@ Google NewsのプロキシURLはタイムラインへ保存しません。Web記
 WeiboはSina CDNの直接表示がブラウザやPWA環境で不安定になるため、収集時に取得できた画像を `docs/media/weibo/` へ保存し、`imageMirrorUrls` として記事データに紐付けます。PWAはGitHub Pages上の同一オリジン画像を優先し、必要な場合のみ元のSina画像をフォールバックとして使います。Service Worker更新時には既存タブを一度リロードし、古い画像配信ロジックが残り続けないようにしています。
 
 TapTapは中国版「以闪亮之名」の公式投稿一覧 `type=official` から直近のMoment IDを取得し、TapTapの公開Web API `webapiv2/moment/v3/detail` からタイトル、本文、公開時刻、画像を取得します。API取得に失敗した記事だけ個別Webページのメタデータへフォールバックし、`公式TapTap` として通常の翻訳・要約パイプラインへ流します。
+
+好游快爆は「以闪亮之名」ゲームページの `官方帖子` セクションだけを収集対象にします。一般ユーザーのフォーラム投稿は対象外です。公式投稿の個別ページから本文、公開日時、画像を取得し、個別ページがJavaScript依存などで十分に読めない場合も、公式一覧で確認できたタイトルと元記事URLを保持して `官方好游快爆` として取り込みます。
 
 WeChatは既存の公開Web探索による収集を継続しつつ、中国の公式リンク欄にも入口を追加しています。WeChatには安定した公開WebプロフィールURLがないため、メニューのWeChatリンクは公式公众号名「以闪亮之名」を検索できるSogou微信検索を開きます。
 
@@ -108,7 +110,9 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 ## メニュー
 
-メニュー上部にはホーム画面追加、実装差分析、アクセス解析を並べています。その下に各地域の公式リンク、自動更新スケジュール、運用情報を配置しています。中国の公式リンクには公式サイト、Weibo、Bilibili、TapTap、WeChatを表示します。
+メニュー上部にはホーム画面追加、実装差分析、アクセス解析を並べています。その下に各地域の公式リンク、自動更新スケジュール、運用情報を配置しています。
+
+中国の公式リンク欄には、公式サイトが案内しているWeibo、Bilibili、百度贴吧、WeChat、小紅書、好游快爆に加え、公式投稿やストア説明で案内されているTapTap、抖音を表示します。WeChatと小紅書は公開プロフィールURLの安定性を考慮し、公式アカウント名を確認できる検索ページを入口にしています。ニュース転載サイトは公式リンク欄へ追加しません。
 
 現在のスケジュール表示は実際のワークフローと揃えています。
 
@@ -141,7 +145,8 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 - ニュース収集を毎時00分へ戻し、クロール完了日時を独立ファイルで記録
 - ヘッダー表示を「記事件数・最新記事日時」から「最終クロール完了日時のみ」へ変更
 - 中国版の公式TapTap投稿を毎時収集する `fetch_taptap_official.py` を追加
-- 中国の公式リンク欄にTapTapとWeChat（公式公众号検索）を追加
+- 中国版の好游快爆 `官方帖子` を毎時収集する `fetch_haoyoukuaibao.py` を追加
+- 中国の公式リンク欄をWeibo / Bilibili / TapTap / 好游快爆 / 抖音 / 小紅書 / 百度贴吧 / WeChatまで拡張
 
 ## ディレクトリ構成
 
@@ -176,6 +181,7 @@ KRPR_news/
 ├─ scripts/
 │  ├─ fetch_news.py
 │  ├─ fetch_taptap_official.py
+│  ├─ fetch_haoyoukuaibao.py
 │  ├─ fetch_wechat_official.py
 │  ├─ translation_engine.py
 │  ├─ translation_quality.py
@@ -185,6 +191,8 @@ KRPR_news/
 │  └─ 収集・画像・分析用スクリプト
 └─ tests/
    ├─ test_project.py
+   ├─ test_taptap.py
+   ├─ test_haoyoukuaibao.py
    └─ test_crawl_status.py
 ```
 
