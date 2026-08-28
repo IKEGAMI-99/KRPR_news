@@ -158,6 +158,25 @@ Python側は `unittest` でプロジェクト構造、各収集処理、重複�
 
 Stableタグはニュースデータを凍結するものではなく、PWA本体の安定基準点です。公開ニュースと翻訳キャッシュはStable公開後も定期Workflowで更新され続けます。
 
+## AI / エージェント向け引継ぎ
+
+このリポジトリを別のAI、コーディングエージェント、自動保守ツールが編集する場合は、**[`AI_CONTEXT.md`](./AI_CONTEXT.md) をREADMEとセットで読んでください。** `AI_CONTEXT.md` には人間向け説明よりも、現在の正本ファイル、データの優先順位、不変条件、障害時の判断、廃止済み機能、検証手順を機械的に判断しやすい形式で記載しています。
+
+特に次の条件は、明示的な仕様変更がない限り維持します。
+
+- AI翻訳が失敗しても原文ニュース収集を止めない
+- 一時的な取得障害を「記事削除」と解釈せずlast known goodを保持する
+- 同一ニュース統合後も媒体ごとの元URLを `sources` に残す
+- `managedBySol` / `solLocked` の手動監査結果を自動処理で上書きしない
+- JAPAN / CHINA / KOREA / GLOBALをまたいで記事を自動統合しない
+- ニュースJSONをService Workerで固定キャッシュしない
+- `kirapara-data-writer` の書き込み排他を維持する
+- Stable Releaseのテストgateを迂回しない
+- 検索バー、旧「先行情報トップ3」、予測UIを勝手に復活させない
+- `docs/x-image-fix.js` は削除済みlegacyではなく現行の有効機能として扱う
+
+AIが変更を完了したと判断する前に、関連実装・テスト・Workflowを確認し、GitHubへ書き込んだ後は再fetchして実際の反映まで確認することを運用ルールとします。
+
 ## 更新アーキテクチャ
 
 ```text
@@ -308,6 +327,7 @@ AI処理に失敗しても、原文ニュースの収集と表示は継続しま
 
 ```text
 KRPR_news/
+├─ AI_CONTEXT.md
 ├─ .github/
 │  ├─ release-notes/
 │  │  └─ v1.0.0.md
