@@ -507,26 +507,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "a1b1c65b055644269df5c9eb",
-    "region": "KOREA",
-    "platform": "公式X",
-    "title": "[이벤트] 『메이크오버 스토리』 친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 『메이크오버 스토리』가 내일 오픈됩니다",
-    "body": "[이벤트] 『메이크오버 스토리』\n\n친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 \n『메이크오버 스토리』가 내일 오픈됩니다!\n\n🎁 메인 보상:\n5★ 세트 '댓잎의 연서'\n\n🕙 8/27 10:30 ~ 9/10 5:00\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드: \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
-    "sourceUrl": "https://x.com/stylight_kr/status/2092537547641454873",
-    "publishedLabel": "1日前",
-    "publishedAtEpoch": 1787734803,
-    "imageUrl": "https://pbs.twimg.com/media/HQoFv93bYAASY0s?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQoFv93bYAASY0s?format=jpg&name=orig"
-    ],
-    "titleJa": "【イベント】『Makeover Story』 友人や協会メンバーなどスタイルパートナーと楽しむ特別なイベント『Makeover Story』が明日オープンします",
-    "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서（ダエプの連書）」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
-    "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "748536cbb7e0dd364deb0e10",
     "region": "JAPAN",
     "platform": "公式X",
@@ -543,6 +523,26 @@
     "titleJa": "明日登場するセットコーデをお届け✨ 星6セット·修羅帰鞘 ——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる",
     "bodyJa": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "・追加: 星6セット「修羅帰鞘」が登場\n・追加: 星5セット「占心の誓い」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "a1b1c65b055644269df5c9eb",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[이벤트] 『메이크오버 스토리』 친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 『메이크오버 스토리』가 내일 오픈됩니다",
+    "body": "[이벤트] 『메이크오버 스토리』\n\n친구, 협회 멤버 등 스타일 파트너들과 함께 즐기는 특별한 이벤트 \n『메이크오버 스토리』가 내일 오픈됩니다!\n\n🎁 메인 보상:\n5★ 세트 '댓잎의 연서'\n\n🕙 8/27 10:30 ~ 9/10 5:00\n\n※ 자세한 내용은 게임에서 확인해 주세요.\n\n▶ 게임 다운로드: \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2092537547641454873",
+    "publishedLabel": "1日前",
+    "publishedAtEpoch": 1787734803,
+    "imageUrl": "https://pbs.twimg.com/media/HQoFv93bYAASY0s?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQoFv93bYAASY0s?format=jpg&name=orig"
+    ],
+    "titleJa": "【イベント】『Makeover Story』 友人や協会メンバーなどスタイルパートナーと楽しむ特別なイベント『Makeover Story』が明日オープンします",
+    "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서（ダエプの連書）」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+    "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -1557,10 +1557,10 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136304",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787023138,
-    "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
+    "imageUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
     "imageUrls": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
-      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg"
     ]
   },
   {
@@ -1572,10 +1572,10 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136302",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022698,
-    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
+    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
     "imageUrls": [
-      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
-      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
+      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
     ]
   },
   {
@@ -1587,10 +1587,10 @@
     "sourceUrl": "https://store.steampowered.com/news/app/2626940/view/681884487904136300",
     "publishedLabel": "2026-08-18",
     "publishedAtEpoch": 1787022504,
-    "imageUrl": "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
+    "imageUrl": "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
     "imageUrls": [
-      "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
-      "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png",
+      "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png"
     ]
   },
   {
@@ -1680,6 +1680,36 @@
     "imageUrls": [
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1788058800&x-signature=l6aYiIB8Hx2TdI1VRKLXpGajPq0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1788051600&x-signature=xungBKAyw2W%2BDE4pCZVDq0X%2BTNg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+    ]
+  },
+  {
+    "id": "072106022878369e637e7c32",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "신규 메인 스토리 22장 예고 💎 신규 메인 스토리 22장 '죽음의 쇼 · 구속'이 8월 31일 오픈됩니다. \"진실과 거짓이 뒤엉킨 환상 속, 그리운 사람이 다시 눈...",
+    "body": "신규 메인 스토리 22장 예고\n\n💎 신규 메인 스토리 22장 '죽음의 쇼 · 구속'이 8월 31일 오픈됩니다.\n\n\"진실과 거짓이 뒤엉킨 환상 속,\n그리운 사람이 다시 눈앞에 나타납니다.\n\n이 달콤한 꿈에 계속 머물고 싶지만,\n마지막 수수께끼의 답을 찾기 위해서는\n'기억'이라는 이름의 함정에서 벗어나야 합니다.\n\n마침내 막을 올린 '탐정'들의 전쟁.\n진실로 향하는 열쇠를 손에 넣기 위해\n과연 어떤 대가를 치러야 할까요?\"\n\n✂️ 챕터 22 SET:\n- 5★ 귀걸이 '출항의 날'\n- 촬영 포즈 '시크 메세지'\n- 촬영 프레임 '플로럴 잉크'\n\n👗 패션 스튜디오 추가 세트: \n- 4★ 코스튬 세트 '하트 플러팅'\n- 4★ 코스튬 세트 '슈가 마들렌'\n- 4★ 코스튬 세트 '체리 팝스타'\n\n다양한 스타일의 메인 스토리 세트, 패션 스튜디오에서 제작해 보세요!\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088192655545217302",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698900,
+    "imageUrl": "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig"
+    ]
+  },
+  {
+    "id": "dbbc40fb17099754f08c38ed",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "[NEW] 『앤티크 살롱』 배경 패키지 예고 “타닥타닥 울리는 축음기의 선율과 빛바랜 햇살이 머무는 곳. 시간이 켜켜이 쌓인 살롱에서 우아하고 느긋한 오후를 ...",
+    "body": "[NEW] 『앤티크 살롱』 배경 패키지 예고\n\n“타닥타닥 울리는 축음기의 선율과 빛바랜 햇살이 머무는 곳.\n시간이 켜켜이 쌓인 살롱에서 우아하고 느긋한 오후를 즐겨 보세요.”\n\n🕙 9/1 10:30 ~ 9/4 23:59\n\n[패키지 정보]\n촬영 배경 '예술의 시대', 라이브 포즈 '우아한 응시' 등 다양한 아이템이 포함된 아름다운 패키지\n\n※ 자세한 내용은 출시 후, 게임에서 확인해 주세요.\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2088191396788265056",
+    "publishedLabel": "2026-08-14",
+    "publishedAtEpoch": 1786698600,
+    "imageUrl": "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig"
     ]
   },
   {
@@ -1946,6 +1976,39 @@
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1788058800&x-signature=Na1GYh0QnGB0H94jsNYFabIz6Lw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1788058800&x-signature=Na1GYh0QnGB0H94jsNYFabIz6Lw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+    ]
+  },
+  {
+    "id": "bb73523b0968606bda103e17",
+    "region": "GLOBAL",
+    "platform": "Webニュース · Kotaku",
+    "title": "Life Makeover - Kotaku",
+    "body": "News, Reviews, Release Date, Trailers, Gameplay and more for Life Makeover",
+    "sourceUrl": "https://kotaku.com/games/life-makeover",
+    "publishedLabel": "2022-08-04",
+    "publishedAtEpoch": 1659607732,
+    "imageUrl": "https://kotaku.com/app/uploads/2025/07/kotaku-1200x900-1.jpg",
+    "imageUrls": [
+      "https://kotaku.com/app/uploads/2025/07/kotaku-1200x900-1.jpg",
+      "https://kotaku.com/app/uploads/2025/11/LEGOStarWarsTheDarkFalcon.jpg",
+      "https://kotaku.com/app/uploads/2026/07/disneyland_new_pirate.jpg",
+      "https://kotaku.com/app/uploads/2026/01/unnamed.jpg",
+      "https://kotaku.com/app/uploads/2025/04/4d37d5ca6faef9a4585b40f4f445bde2.jpg",
+      "https://kotaku.com/app/uploads/2024/10/2cceec8eecb802fffb913c5fd9ccd53b.jpg",
+      "https://kotaku.com/app/uploads/2025/12/star-wars-set.jpg",
+      "https://kotaku.com/app/uploads/2025/06/89db8acf29b5113008accdbf18e643b3.jpg",
+      "https://kotaku.com/app/uploads/2024/10/9e237efb29857f2246e0428f3be9d316.jpg",
+      "https://kotaku.com/app/uploads/2026/02/image-5-1.jpg",
+      "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif",
+      "https://kotaku.com/app/uploads/2026/08/2022-gta26.jpg",
+      "https://kotaku.com/app/uploads/2026/08/large.jpg",
+      "https://kotaku.com/app/uploads/2026/08/gta-6a.jpg",
+      "https://kotaku.com/app/uploads/2026/08/Untitled-1_0004_VS-Netflix-Netflix-624-1.jpg",
+      "https://kotaku.com/app/uploads/2026/08/Resonance_-A-Plague-Tale-Legacy_20260823125546-1.jpg",
+      "https://kotaku.com/app/uploads/2026/08/Screenshots_01.jpg",
+      "https://kotaku.com/app/uploads/2026/08/fields-of-mistria-review.jpg",
+      "https://kotaku.com/app/uploads/2026/08/donuts2-1.jpg",
+      "https://i.ytimg.com/vi/ID/hqdefault.jpg"
     ]
   }
 ]

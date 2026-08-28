@@ -1127,12 +1127,6 @@
     "height": 1564,
     "checkedAt": 1787885188
   },
-  "https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
-    "ok": false,
-    "width": 244,
-    "height": 212,
-    "checkedAt": 1787886752
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAGAfa3BAC1iAkB0Oiu1iEORBIITMlw9nKzxA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788058800&x-signature=mxc6L%2FyNqW8w4FbeBuXOM7SwHuY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
@@ -1324,5 +1318,53 @@
     "width": 1500,
     "height": 2000,
     "checkedAt": 1787886752
+  },
+  "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
+    "ok": false,
+    "width": 244,
+    "height": 212,
+    "checkedAt": 1787888084
+  },
+  "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1440,
+    "height": 1920,
+    "checkedAt": 1787888084
+  },
+  "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1440,
+    "height": 1920,
+    "checkedAt": 1787888084
+  },
+  "https://kotaku.com/app/uploads/2026/08/2022-gta26.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1787888084
+  },
+  "https://pbs.twimg.com/media/HPljL6XbUAAj8jt?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1787888084
+  },
+  "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1440,
+    "height": 1920,
+    "checkedAt": 1787888084
+  },
+  "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1787888084
+  },
+  "https://kotaku.com/app/uploads/2026/01/unnamed.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1787888084
   }
 }
