@@ -3,5 +3,6 @@
   "channel": "stable",
   "releasedAt": "2026-08-28",
   "platform": "PWA",
-  "releaseNotes": ".github/release-notes/v1.0.0.md"
+  "releaseNotes": ".github/release-notes/v1.0.0.md",
+  "gateRevision": 2
 }
