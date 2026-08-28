@@ -40,6 +40,16 @@ write_coordination:
   concurrency_group: kirapara-data-writer
   collector_push_retry: "rebase latest main and retry up to 4 times"
 
+legal:
+  terms: docs/terms.html
+  privacy: docs/privacy.html
+  shared_style: docs/legal.css
+  contact: "@ikegami_krpr"
+  required_navigation:
+    - docs/index.html footer
+    - docs/menu-install.js menu
+  offline_shell: true
+
 release:
   marker: data/stable_release.json
   workflow: .github/workflows/release-stable.yml
@@ -70,6 +80,9 @@ AIが変更を始める前に、対象機能について少なくとも以下を
 | Stable基準 | `data/stable_release.json` |
 | PWA本体 | `docs/index.html` / `docs/app.js` / 関連CSS・JS |
 | Service Worker | `docs/sw.js` |
+| 利用規約 | `docs/terms.html` |
+| プライバシーポリシー | `docs/privacy.html` |
+| 法的ページ共通スタイル | `docs/legal.css` |
 | ニュース収集Workflow | `.github/workflows/news-refresh.yml` |
 | AI Workflow | `.github/workflows/ai-translate.yml` |
 | Stable Release gate | `.github/workflows/release-stable.yml` |
@@ -91,6 +104,8 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 8. **ニュース収集とAI書き込みを競合させない。** `kirapara-data-writer` の排他設計を維持すること。
 9. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
 10. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
+11. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
+12. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
 
 ## Explicitly removed / deprecated behavior
 
@@ -116,6 +131,19 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 注意: `docs/x-image-fix.js` は削除済みlegacyではありません。**現在も有効なX画像処理レイヤー**です。削除対象として扱わないでください。
 
 `tests/test_project.py` には上記の一部を回帰させないためのテストがあります。テストが仕様と衝突した場合は、単にテストを消すのではなく、現在の意図を確認してください。
+
+## Legal / privacy contract
+
+利用規約とプライバシーポリシーは、README内の説明よりも利用者向けの公開正本として扱います。
+
+- `docs/terms.html`: 非公式ファンプロジェクト、自動運営、情報の非保証、外部リンク、権利帰属、責任範囲、サービス変更・停止、連絡先を説明する。
+- `docs/privacy.html`: 登録不要、直接要求しない情報、GA4で扱う情報、計測イベント、Cookie等、IPアドレスの扱い、公開analyticsページ、外部サービス、連絡先を説明する。
+- `docs/legal.css`: 両ページの共通表示。PWA本体で保存された `kirapara-news-theme` を各ページが読み、light / darkを引き継ぐ。
+- `docs/index.html` と `docs/menu-install.js`: 利用者が規約・プライバシーへ到達するための導線。
+- `docs/sw.js`: `terms.html`、`privacy.html`、`legal.css` をAPP_SHELLに含め、PWAからオフラインでも確認可能にする。
+- `tests/test_project.py`: 上記ページ・導線・Service Worker登録・問い合わせ先の存在を回帰テストする。
+
+規約文言を変更する場合は、実装事実と一致しているか確認してください。特にGA4で新しいイベントを送る変更、広告・課金・会員登録・ユーザー投稿・位置情報権限などを導入する変更は、法的ページの更新対象です。
 
 ## Data flow and precedence
 
@@ -204,15 +232,17 @@ preserve correct existing data
 
 コード変更を依頼されたAIは、原則として次の順で作業してください。
 
-1. ユーザー要求を、UI / collector / data / AI / workflow / release のどの層に影響するか分類する。
+1. ユーザー要求を、UI / collector / data / AI / workflow / release / legal のどの層に影響するか分類する。
 2. READMEだけでなく、関連実装とテストを読む。
 3. 廃止済み機能を別名で復活させていないか確認する。
 4. データを削除・再生成する変更では last known good と手動overrideへの影響を確認する。
 5. Workflowを変更する場合はスケジュール、concurrency、書き込み対象を確認する。
 6. PWA assetを変更する場合は `docs/index.html` と `docs/sw.js` の両方の参照を確認する。
-7. 変更後、最低限Python unit tests、対象JavaScriptの構文、重要JSONの妥当性を検査する。
-8. GitHubへ書き込んだ後、**再fetchして実際に反映された内容を確認してから完了と報告する。**
-9. READMEまたはAI_CONTEXTと実装が食い違った場合は、同じ変更で文書も更新する。
+7. GA4、Cookie、ユーザー入力、権限、外部解析サービスを変更する場合は `docs/privacy.html` を確認・更新する。
+8. 自動運営、免責、外部リンク、禁止事項、サービス停止方針に影響する変更は `docs/terms.html` を確認する。
+9. 変更後、最低限Python unit tests、対象JavaScriptの構文、重要JSONの妥当性を検査する。
+10. GitHubへ書き込んだ後、**再fetchして実際に反映された内容を確認してから完了と報告する。**
+11. READMEまたはAI_CONTEXTと実装が食い違った場合は、同じ変更で文書も更新する。
 
 ## Verification checklist
 
@@ -221,10 +251,13 @@ preserve correct existing data
 ```bash
 python -m unittest discover -s tests -v
 node --check docs/app.js
+node --check docs/menu-install.js
 python -m json.tool data/news.json >/dev/null
 python -m json.tool data/translations.json >/dev/null
 python -m json.tool data/crawl_status.json >/dev/null
 ```
+
+法的ページを変更した場合は `tests/test_project.py::ProjectStructureTests.test_legal_pages_are_linked_and_cached` 相当の条件も維持してください。
 
 Stable Releaseでは `.github/workflows/release-stable.yml` のgateを正本としてください。
 
@@ -257,5 +290,3 @@ UI改善のために1〜5を犠牲にしないでください。
 7. 過去Releaseや旧Androidコード
 
 古い実装や過去Releaseの存在だけを理由に、現行mainへ機能を戻さないでください。
-
-バグ・改善提案の公開連絡先は X **@ikegami_krpr** です。
