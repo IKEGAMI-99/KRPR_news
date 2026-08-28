@@ -1,0 +1,75 @@
+name: News Refresh Watchdog
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_run:
+    workflows:
+      - 'Translate News with Gemma 4 E4B LiteRT'
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      stale: ${{ steps.status.outputs.stale }}
+      age_seconds: ${{ steps.status.outputs.age_seconds }}
+      last_crawl_at: ${{ steps.status.outputs.last_crawl_at }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Check crawl freshness
+        id: status
+        env:
+          FORCE_REFRESH: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          threshold_seconds = 90 * 60
+          status_path = Path('data/crawl_status.json')
+          last_crawl_at = ''
+          age_seconds = threshold_seconds + 1
+
+          try:
+              payload = json.loads(status_path.read_text(encoding='utf-8'))
+              last_crawl_at = str(payload.get('lastCrawlAt') or '').strip()
+              parsed = datetime.fromisoformat(last_crawl_at.replace('Z', '+00:00'))
+              if parsed.tzinfo is None:
+                  parsed = parsed.replace(tzinfo=timezone.utc)
+              age_seconds = max(0, int((datetime.now(timezone.utc) - parsed.astimezone(timezone.utc)).total_seconds()))
+          except Exception as exc:
+              print(f'crawl status unavailable: {exc}')
+
+          forced = os.environ.get('FORCE_REFRESH') == '1'
+          stale = forced or age_seconds >= threshold_seconds
+          print(f'last crawl: {last_crawl_at or "unknown"}')
+          print(f'age seconds: {age_seconds}')
+          print(f'forced: {forced}')
+          print(f'stale: {stale}')
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f"stale={'true' if stale else 'false'}\n")
+              output.write(f"age_seconds={age_seconds}\n")
+              output.write(f"last_crawl_at={last_crawl_at}\n")
+          PY
+
+      - name: Report healthy crawl
+        if: steps.status.outputs.stale != 'true'
+        run: echo "News crawl is healthy; no recovery refresh is needed."
+
+  recover:
+    needs: check
+    if: needs.check.outputs.stale == 'true'
+    uses: ./.github/workflows/news-refresh.yml
