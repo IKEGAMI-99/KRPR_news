@@ -172,6 +172,196 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787877620
+    },
+    "https://weibo.com/7521830234/RflMge0Oz": {
+      "contentHash": "b6469cc122d42e614d54992a",
+      "titleJa": "以闪亮之名 #以闪亮之名# 【復刻】星夜神諭パック期間限定開催【パック期間】8月28日10:00-9月3日23:59【パック説明】",
+      "bodyJa": "以闪亮之名 #以闪亮之名# \n\n【復刻】星夜神諭パック期間限定開催\n\n【パック期間】\n8月28日10:00-9月3日23:59\n【パック説明】\n星夜神諭パックの販売期間中、プレイヤーは限定ミッションを完了することでパックの割引を獲得できます。全4つのミッションを完了すると、最低割引率の22%（78%OFF）になります！このお得な特典をお見逃しなく！パックには、★5の精巧な手持ちアイテム【星祈绘卷】、★5のメイク【裂隙霞金】、精巧な家具【深渊呢喃】、逐光招待状*3、体力*300、潮流色カード*45が含まれており、このパックは永久に1回のみ購入可能です。\n【ミッション説明】\n4つの限定ミッションは2つのグループに分かれています。イベント期間中に以下のいずれかのグループのミッションを完了すると、1回割引が適用されます。全2グループのミッションを完了すると、最低割引率の22%（78%OFF）が適用されます！\n第1グループミッション\n1. 追光を1回完了する\n2. フレンドに体力を5回贈呈する\n第2グループミッション\n1. 体力を合計1000ポイント消費する\n2. 協会応援に参加して会員ポイントを90ポイント獲得する\n【特別説明】\n★5の精巧な手持ちアイテム【星祈绘卷】には専用のメイン画面インタラクション動作が付いています。メイン画面で装備し、この手持ちアイテムをクリックすることで発動します。プレイヤーの皆様、新しい専用インタラクションを体験してください！\n【復刻説明】\n今回のパックイベントは、お客様の過去の購入状況を記録します。以前にこのパックを購入済みの場合は、今回は再購入できません。また、今回のパックイベントは、前回イベント開始時の限定割引ミッションの完了状況も記録します。すでに完了したミッションは今回は重複して完了する必要はありません。前回イベント開始期間中に消費された体力や協会応援で獲得した会員ポイントも、ミッションの進捗に累積されます。\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク 映像は表示されません。微博動画をご覧ください。",
+      "summaryJa": "・復刻: 星夜神諭パックが期間限定で販売開始\n・期間: 8月28日10:00〜9月3日23:59\n・内容: ★5手持ちアイテム【星祈绘卷】、★5メイク【裂隙霞金】、家具【深渊呢喃】、逐光招待状*3、体力*300、潮流色カード*45を含む\n・割引: 全4ミッション完了で最低割引率22%（78%OFF）が適用される\n・購入制限: このパックは永久に1回のみ購入可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787878658
+    },
+    "https://weibo.com/7521830234/RflnUkx2m": {
+      "contentHash": "3eb42250510f076199a79a70",
+      "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# VME | 幸運を孵化💖トップスターの卵生を応援💥📢Vvanna.Music.Entertainmentの神秘的な卵殻で📢いいねを増やすごとに幸運のオーラが凝縮...",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\nVME | 幸運を孵化💖トップスターの卵生を応援💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを増やすごとに幸運のオーラが凝縮\n📢リツイートを増やすごとに幸運の輝きが加算\n✨幸運をあなたに「卵生」！\n\nハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすると、抽選で1名の幸運なプレイヤーに500元JDカード*1枚をプレゼント！\nイベント期間：8月27日〜9月10日\n\n💎ダウンロード用リンク： Webリンク \n💎閃亮作品上映季イベント用リンク： Webリンク",
+      "summaryJa": "・イベント名: VME | 幸運を孵化💖トップスターの卵生を応援💥\n・期間: 8月27日〜9月10日\n・参加条件: ハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすること\n・報酬: 抽選で1名のプレイヤーに500元JDカード*1枚をプレゼント",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879081
+    },
+    "https://www.bilibili.com/opus/1241171677259235393": {
+      "contentHash": "9582f295a431477363f1aae6",
+      "titleJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨...",
+      "bodyJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨\n\n幸運をあなたに「卵生」させましょう！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・イベント: VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n・参加方法: Vvanna.Music.Entertainmentの神秘的な卵殻で参加\n・参加条件: いいねを一つ増やすごとに幸運のオーラが凝縮\n・参加条件: リツイートを一つ増やすごとに幸運の輝きが増す",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879148
+    },
+    "https://weibo.com/7521830234/Rfjq8fJXD": {
+      "contentHash": "e335673fe2e8939d22761c78",
+      "titleJa": "以闪亮之名 #以闪亮之名# Vvanna.Music.Entertainmentが正式発表👏🏻Vvanna.Music.Entertainmentが正式に発表✨スポットライトの下で、VMEの新星があなたを輝かせる📢ドリームインキュベーション（夢の孵化）の募集が本日より開始...",
+      "bodyJa": "以闪亮之名 #以闪亮之名# \n\nVvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表\n✨スポットライトの下で、VMEの新星があなたを輝かせる\n📢ドリームインキュベーションの募集が本日より開始\n🌟以闪亮之名全新4.4バージョンの継続的な注目をお待ちしています\n💖素晴らしいことが起こりますので、ご期待ください\n\n💎ダウンロードはこちら： Webリンク \n💎閃光作品上映季イベントはこちら： Webリンク",
+      "summaryJa": "・Vvanna.Music.Entertainmentが正式に発表されました\n・ドリームインキュベーションの募集が本日より開始されました\n・以闪亮之名全新4.4バージョンの継続的な注目を呼びかけています\n・ダウンロードおよび閃光作品上映季イベントへのWebリンクが提供されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879211
+    },
+    "https://www.bilibili.com/opus/1241094367904530448": {
+      "contentHash": "ab9e494ef12b9579442ef2d8",
+      "titleJa": "Vvanna.Music.Entertainmentが正式発表 👏🏻Vvanna.Music.Entertainmentが正式に発表 ✨スポットライトの下で、VMEの新星があなたを輝かせる 📢ドリームインキュベーション（夢の孵化）の募集が本日より開始 🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください...",
+      "bodyJa": "Vvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表\n✨スポットライトの下で、VMEの新星があなたを輝かせる\n📢ドリームインキュベーションの募集が本日より開始\n🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください\n💖素晴らしいことが起こりますので、ご期待ください\n\n以闪亮之名\n \n ゲーム\n \n ロールプレイング/高画質/シミュレーション経営\n \n 全ての女性が夢中になる3A級シミュレーションライフゲーム\n \n 入場",
+      "summaryJa": "・追加: Vvanna.Music.Entertainmentが正式に発表\n・イベント: ドリームインキュベーションの募集が本日より開始\n・バージョン: 以闪亮之名（以閃亮之名）の全新4.4バージョンが予定されている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879278
+    },
+    "https://x.com/kirapara_JP/status/2092541309416337867": {
+      "contentHash": "c24cdbcfc5c43ccae1a436f2",
+      "titleJa": "🔔【復刻】トレンドコードが再登場🔔 『時間の反響』イベントで、2つのトレンドコードが復刻",
+      "bodyJa": "🔔【復刻】トレンドコードが再登場🔔\n\n『時間の反響』イベントで、2つのトレンドコードが復刻！\n前回見逃してしまった場合は、この機会をお見逃しなく👀\n\nイベント期間⏰\n8月27日10:30～9月25日23:59\n\n※詳細はゲーム内からご確認ください。\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・復刻: トレンドコード2種が『時間の反響』イベントで再登場\n・期間: 8月27日10:30〜9月25日23:59\n・入手: ゲーム内イベントにて",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879306
+    },
+    "https://x.com/stylight_kr/status/2092537547641454873": {
+      "contentHash": "5c22202dbb85eaca88fa4700",
+      "titleJa": "【イベント】『Makeover Story』 友人や協会メンバーなどスタイルパートナーと楽しむ特別なイベント『Makeover Story』が明日オープンします",
+      "bodyJa": "【イベント】『Makeover Story』\n\n友人や協会メンバーなど、スタイルパートナーと一緒に楽しめる特別なイベント『Makeover Story』が明日オープンします！\n\n🎁 メイン報酬:\n5★セット「댓잎의 연서（ダエプの連書）」\n\n🕙 8/27 10:30 〜 9/10 5:00\n\n※ 詳細についてはゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879355
+    },
+    "https://x.com/kirapara_JP/status/2092537548589449433": {
+      "contentHash": "80baa7808aa26c6c9bf940f2",
+      "titleJa": "明日登場するセットコーデをお届け✨ 星6セット·修羅帰鞘 ——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる",
+      "bodyJa": "明日登場するセットコーデをお届け✨\n\n星6セット·修羅帰鞘\n——長き夢は鞘に帰り千壑を鎮め、百戦の修羅は塵煙に隠れる。\n星5セット·占心の誓い\n——心中を占うとは、答えを求める必要のない慰めを探し求めることに過ぎない。\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・追加: 星6セット「修羅帰鞘」が登場\n・追加: 星5セット「占心の誓い」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879382
+    },
+    "https://x.com/kirapara_JP/status/2092533759073456435": {
+      "contentHash": "f0a1215bdb1ffe59a51718fd",
+      "titleJa": "＼イベントファッション復刻／ イベント制作復刻『孤刃帰鞘』が期間限定開放",
+      "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『孤刃帰鞘』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・イベントファッション復刻『孤刃帰鞘』が期間限定で開放\n・見逃したイベントファッションや外観が制作可能\n・期間: 指定なし",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879408
+    },
+    "https://x.com/kirapara_JP/status/2092529984489541762": {
+      "contentHash": "f2413aa4a016e41965c8f7e9",
+      "titleJa": "＼パックがサプライズ復刻💃／ 6つのパックが期間限定で復刻します",
+      "bodyJa": "＼パックがサプライズ復刻💃／ \n\n6つのパックが期間限定で復刻します！\nこの他にも、流行カラーカードやスタミナなど、用途に応じたお得なパックを多数販売！\nモールの『割引セット』からご確認くださいね！👀\n\n復刻期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・追加: 6つのパックが期間限定で復刻\n・期間: 8月27日10:30～9月16日23:59\n・入手: モールの「割引セット」から確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879436
+    },
+    "https://x.com/kirapara_JP/status/2092526209351696684": {
+      "contentHash": "0265cda0f89340d12497216e",
+      "titleJa": "☀️星の交響楽パック特別販売☀️ 指定されたクエストを完了すると、最大78%OFFで購入できます",
+      "bodyJa": "☀️星の交響楽パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5背中アクセ『契りの浮星』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n8月27日10:30～9月9日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・特別販売: 星の交響楽パックが最大78%OFFで購入可能\n・対象アイテム: 星5背中アクセ『契りの浮星』（専属メイン画面ポーズ付き）\n・販売期間: 8月27日10:30〜9月9日23:59\n・入手条件: 指定されたクエストを完了すること",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879467
+    },
+    "https://x.com/kirapara_JP/status/2092522435669069995": {
+      "contentHash": "dd67cfb73a4d9c2f704dbc3c",
+      "titleJa": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ",
+      "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『茶を巡る旅』画面で星5所持品・壺の中の日月を受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n8月27日10:30～9月16日23:59\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・イベント期間中にアプリ内課金（金額指定なし）を行うと、『茶を巡る旅』画面で星5所持品と壺の中の日月を受け取れる\n・さらに還元Expで追加の報酬も獲得可能\n・期間: 8月27日10:30～9月16日23:59\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879502
+    },
+    "https://x.com/kirapara_JP/status/2092514884575437286": {
+      "contentHash": "299da56783bd79f9bf183ed6",
+      "titleJa": "🔔ゲーム内イベント開催のお知らせ🔔 5つの無料イベントを開催✨ 星5セット、星4セットを獲得できる絶好のチャンス",
+      "bodyJa": "🔔ゲーム内イベント開催のお知らせ🔔 \n\n5つの無料イベントを開催✨ \n\n星5セット、星4セットを獲得できる絶好のチャンス！\nぜひお見逃しなく🤭\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 5つの無料イベントが開催されます\n・内容: 星5セット、星4セットを獲得できるチャンスです\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879529
+    },
+    "https://x.com/kirapara_JP/status/2092507341736268068": {
+      "contentHash": "5ce2c92130f0e994049e3fe4",
+      "titleJa": "🔔新内容実装のお知らせ🔔 ◆新たに立ち姿勢固定モードがまもなく登場 ◆デイリー任務にお任せ派遣機能を追加 ◆新テーマ曲登場 ◆交換ショップに新たなファ...",
+      "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新たに立ち姿勢固定モードがまもなく登場 \n◆デイリー任務にお任せ派遣機能を追加\n◆新テーマ曲登場\n◆交換ショップに新たなファッションと報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・新機能として立ち姿勢固定モードがまもなく登場します\n・デイリー任務に「お任せ派遣機能」が追加されます\n・新テーマ曲が登場します\n・交換ショップに新たなファッションと報酬が追加されます",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879557
+    },
+    "https://x.com/LifeMakeover510/status/2092462040459932131": {
+      "contentHash": "dc15c201b93fb6947903e6f3",
+      "titleJa": "Oddly Pretty | ファッションアートの簡単な紹介 🔮",
+      "bodyJa": "Oddly Pretty | ファッションアートの簡単な紹介\n\n🔮 豪華で複雑なロココ様式であれ、\n🔮 または軽やかで神秘的なホワイトゴシック様式であれ、\n🔮 どちらもその時代の美学を鮮やかに記録し、感情を触知できる形で表現しています。",
+      "summaryJa": "・追加: Oddly Pretty | ファッションアートの簡単な紹介が公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879590
+    },
+    "https://weibo.com/7521830234/Rf9BhoCFS": {
+      "contentHash": "a59620dcf0b6052073eac2b2",
+      "titleJa": "以闪亮之名：ゲーム内ボイス調整に関するお知らせ",
+      "bodyJa": "以闪亮之名\n\nゲーム内ボイス調整に関するお知らせ\n\nプレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。ボイスアクターの体調不良の影響により、プロジェクトチームはボイスアクターの意向を十分に尊重した上で、双方の協議の結果、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。ボイスアクターの皆様の、キャラクターへの素晴らしい演技と多大なご尽力に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備に着手しており、新しいボイスアクターによる試聴作業を全面的に開始しました。現在、「顧苏澄新CV試音问卷」が正式に公開されていますので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。ゲーム内で現在実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験を提供することを目指します。共に歩む旅は続きます。皆様の変わらぬご支援とご陪伴に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備状況につきましては、いち早くプレイヤーの皆様にお知らせいたします。\n\n『以闪亮之名』プロジェクトチーム\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク",
+      "summaryJa": "・変更: ボイスアクターの体調不良により、顧苏澄のボイス担当が変更になることが決定した\n・実施: 新しいボイスアクターによる試聴作業が開始され、「顧苏澄新CV試音问卷」が公開された\n・継続: ゲーム内で現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・今後の予定: 新バージョンでプレイヤーが選んだ新しい音声コンテンツが正式に採用される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879782
+    },
+    "https://www.bilibili.com/opus/1240707820837404690": {
+      "contentHash": "ddf10ff8c78bf61198e9a01f",
+      "titleJa": "ゲーム内ボイスの調整に関するお知らせ",
+      "bodyJa": "プレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。\n\nボイス担当者の体調不良の影響により、プロジェクトチームはボイス担当者の意向を十分に尊重した上で、双方の協議により、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。これまでキャラクターを素晴らしい演技で演じ、多大な貢献をしてくださったボイス担当者の方に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備を進めており、新しいボイスキャストの試聴作業を全面的に開始しました。「顧苏澄新CV試音问卷」が正式に公開されましたので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。現在ゲーム内に実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な思い出の時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験をお届けします。共に歩む旅は続きます。皆様の変わらぬご支援とご愛顧に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備の進捗については、いち早く皆様にご報告いたします。\n\n『以闪亮之名』プロジェクトチーム",
+      "summaryJa": "・変更: 顧苏澄のボイス担当者が体調不良のため、今後担当しないことが決定した\n・公開: 「顧苏澄新CV試音问卷」が正式に公開された\n・対応: 現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・予定: 今後の新バージョンで、プレイヤーが選んだ新しいボイスコンテンツが正式に採用される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879870
+    },
+    "https://x.com/LifeMakeover510/status/2092205354482630892": {
+      "contentHash": "8b3cb7d9ecfee2ecfc619dfd",
+      "titleJa": "月光の蔦アピアランスパック登場",
+      "bodyJa": "月光の蔦アピアランスパック\n\n⏰8月26日 09:00 - 9月8日 23:59 UTC\n\nイベント期間中、月光の蔦パックを54%割引で購入できます。このパックには、ダイナミックカメラポーズ[Vine Shadows]、シーン[Waterside Vines]、ポーズ[Intimate Gaze]、カメラモーションなどが含まれています！",
+      "summaryJa": "・追加: 月光の蔦アピアランスパックが登場\n・期間: 8月26日 09:00 - 9月8日 23:59 UTC\n・内容: ダイナミックカメラポーズ[Vine Shadows]、シーン[Waterside Vines]、ポーズ[Intimate Gaze]、カメラモーションなどを含む\n・特典: イベント期間中、54%割引で購入可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879918
+    },
+    "https://weibo.com/7521830234/Rf2Vgm2pk": {
+      "contentHash": "cbe95f39f6cd719a99dbecde",
+      "titleJa": "以闪亮之名 #以闪亮之名# #キラキラニャ語屋# #全ネットで私のOOTDの相棒を募集# 全方位でプレイヤーの絶美な作品を展示🔮全ネットで私のOOTDの相棒を募集「真夜中編」🔮プレイヤーの絶美な作品展示🔮あなたはどう思う...",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #キラキラニャ語屋# #全ネットで私のOOTDの相棒を募集# \n\nプレイヤーの絶美な作品を全方位で展示\n\n🔮全ネットで私のOOTDの相棒を募集「真夜中編」\n🔮プレイヤーの絶美な作品展示\n🔮これらの作品をどう思いますか？\n✅世界中から、美神の降臨を感じてください\n✅まるで小さなケーキのようです\n✅通りかかっただけで萌えちゃいます\n\n❤️今期の展示作品は以下のプレイヤーから提供されています：\nWildest\n沐沐想星星\n炸鱼狂奔\nPenguin💠\n胡云zhen\nfoooooliao_\n吃鱼丸不（气愤版）\n哇叽吧唧呱啦哈\n南漪(限限限~流中)\n\n💎ダウンロードはこちら： Webリンク \n💎キラキラ作品上映シーズンイベントはこちら： Webリンク",
+      "summaryJa": "・イベント: 全ネットで私のOOTDの相棒を募集「真夜中編」が開催\n・内容: プレイヤーの絶美な作品を全方位で展示\n・参加: プレイヤーが作品を投稿し、展示される\n・情報: 展示作品のダウンロードリンクおよびイベントリンクが提供されている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787879995
     }
   }
 }
