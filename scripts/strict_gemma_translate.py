@@ -12,8 +12,34 @@ import strict_qwen_translate as strict
 
 MODEL_ID = "litert-community/gemma-4-E4B-it-litert-lm"
 MODEL_VARIANT = "LiteRT-LM"
-MODEL_REVISION = "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1"
+MODEL_REVISION = "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2"
 SUMMARY_FORMAT_VERSION = 4
+
+_BASE_VALID_ENTRY = engine.valid_entry
+
+
+def gemma_entry_valid(row: dict, entry) -> bool:
+    """Only current Gemma results (or explicit Sol-reviewed locks) count as complete.
+
+    Older Qwen/LFM/Gemma cache entries remain visible until their turn comes, but
+    are kept in the pending queue so the five-minute worker replaces them one by
+    one. Newer articles naturally win because engine.pending_rows sorts newest
+    first.
+    """
+    if not engine.content_entry_valid(row, entry):
+        return False
+    if not isinstance(entry, dict):
+        return False
+
+    model = str(entry.get("model") or "")
+    if entry.get("managedBySol") or "GPT-5.6 Sol" in model:
+        return True
+
+    return (
+        model == f"{MODEL_ID}:{MODEL_VARIANT}"
+        and str(entry.get("modelRevision") or "") == MODEL_REVISION
+        and int(entry.get("summaryFormatVersion") or 0) == SUMMARY_FORMAT_VERSION
+    )
 
 
 def configure_gemma() -> None:
@@ -21,6 +47,7 @@ def configure_gemma() -> None:
     engine.MODEL_VARIANT = MODEL_VARIANT
     engine.MODEL_REVISION = MODEL_REVISION
     engine.SUMMARY_FORMAT_VERSION = SUMMARY_FORMAT_VERSION
+    engine.valid_entry = gemma_entry_valid
     strict.STRICT_MODEL_REVISION = MODEL_REVISION
 
 
