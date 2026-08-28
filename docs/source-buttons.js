@@ -35,31 +35,34 @@
       const item = byId.get(card.dataset.articleId || '');
       if (!item) return;
       const actions = card.querySelector('.card-actions');
-      const original = actions?.querySelector('.source-button');
+      const original = actions?.querySelector('.source-button:not([data-source-extra="true"])') || actions?.querySelector('.source-button');
       if (!actions || !original) return;
 
-      actions.querySelectorAll('.source-button-extra').forEach((node) => node.remove());
+      actions.querySelectorAll('.source-button-extra, [data-source-extra="true"]').forEach((node) => node.remove());
+      original.classList.remove('source-button-extra');
+      original.removeAttribute('data-source-extra');
+
       const sources = sourcesFor(item);
       if (!sources.length) {
         original.hidden = true;
         return;
       }
 
-      const setButton = (button, source, extra = false) => {
+      const setButton = (button, source) => {
         button.hidden = false;
         button.href = source.url;
         button.textContent = `${source.label}で開く ↗`;
         button.setAttribute('aria-label', `${source.label}の元記事を開く`);
-        if (extra) button.classList.add('source-button-extra');
       };
 
       setButton(original, sources[0]);
       for (const source of sources.slice(1)) {
         const button = document.createElement('a');
-        button.className = 'source-button source-button-extra';
+        button.className = 'source-button';
+        button.dataset.sourceExtra = 'true';
         button.target = '_blank';
         button.rel = 'noopener noreferrer';
-        setButton(button, source, true);
+        setButton(button, source);
         actions.appendChild(button);
       }
       card.classList.toggle('has-multiple-sources', sources.length > 1);
