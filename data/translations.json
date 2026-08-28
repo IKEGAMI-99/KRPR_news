@@ -2,5 +2,196 @@
   "version": 2,
   "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
   "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
-  "items": {}
+  "items": {
+    "https://x.com/kirapara_JP/status/2092899932063813799": {
+      "contentHash": "7b8741c95678028d9d055a39",
+      "titleJa": "【復刻】古き夢の残響に人気のパックが再登場",
+      "bodyJa": "【復刻】古き夢の残響に人気のパックが再登場！\n\n販売期間⏰\n8月28日10:30～9月10日23:59\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n星5浮遊『月面星摘み』と星5背中アクセ『夢花ブレス』には専属のメイン画面ポーズも。\n早速をチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 人気パックが再登場\n・期間: 8月28日10:30～9月10日23:59\n・入手方法: 指定されたクエストを完了すると最大78%OFFで購入可能\n・内容: 星5浮遊『月面星摘み』と星5背中アクセ『夢花ブレス』が含まれ、専属のメイン画面ポーズも付与",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877083
+    },
+    "https://weibo.com/7521830234/RflnUkx2m": {
+      "contentHash": "3eb42250510f076199a79a70",
+      "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# VME | 幸運を孵化させて💖トップスターの卵生をサポート💥📢Vvanna.Music.Entertainmentの神秘的な卵殻の上で📢いいねを一つ増やすごとに、幸運のオーラが凝縮されます...",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\nVME | 幸運を孵化させて💖トップスターの卵生をサポート💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻の上で\n📢いいねを一つ増やすごとに、幸運のオーラが凝縮されます\n📢リツイートを一つ増やすごとに、幸運の輝きが加わります\n✨幸運をあなたに「卵生」させて！\n\nハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすると、ランダムに選ばれた幸運なパートナーに500元JDカード*1枚をプレゼントします！\nイベント期間：8月27日〜9月10日\n\n💎ダウンロード用リンク： 网页链接 \n💎輝く作品上映シーズンイベント用リンク： 网页链接",
+      "summaryJa": "・イベント名: VME | 幸運を孵化させて💖トップスターの卵生をサポート💥\n・期間: 8月27日〜9月10日\n・参加条件: ハッシュタグ #トップスターの卵生# をつけて本投稿をリツイートすること\n・報酬: ランダムに選ばれた幸運なパートナーに500元JDカード*1枚をプレゼント",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877143
+    },
+    "https://x.com/kirapara_JP/status/2092884825501794646": {
+      "contentHash": "efe4bc80c9be05a22750f5e3",
+      "titleJa": "明日よりゲーム内イベント『秘密の願いボトル』を開催✨ イベント期間⏰ 8月28日10:30～9月4日5:00 イベントに参加して、星4セット『野風の思い』をゲットしよう...",
+      "bodyJa": "明日よりゲーム内イベント『秘密の願いボトル』を開催✨\n\nイベント期間⏰\n8月28日10:30～9月4日5:00\n\nイベントに参加して、星4セット『野風の思い』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・イベント開催: ゲーム内イベント『秘密の願いボトル』が明日より開催\n・期間: 8月28日10:30〜9月4日5:00\n・内容: イベントに参加することで、星4セット『野風の思い』を入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877161
+    },
+    "https://x.com/kirapara_JP/status/2092854875121913997": {
+      "contentHash": "498080551c27e25c01b79fa2",
+      "titleJa": "『万世の平定』特別投稿キャンペーン詳細✏ ルールとキャンペーンの詳細、注意事項は下記画像を参照してね～ 投稿後は忘れずに応募リンクの内容を記入してくださ...",
+      "bodyJa": "『万世の平定』特別投稿キャンペーン詳細✏\n\nルールとキャンペーンの詳細、注意事項は下記画像を参照してね～\n投稿後は忘れずに応募リンクの内容を記入してください\n\n皆様のご投稿を待っているよ🥰\n\n#キラパラ \n#着せ替えゲーム \n#LifemakeoverWorld",
+      "summaryJa": "・イベント名: 『万世の平定』特別投稿キャンペーン\n・詳細: ルール、キャンペーンの詳細、注意事項は画像を参照\n・応募方法: 投稿後、応募リンクの内容を記入する",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877176
+    },
+    "https://x.com/kirapara_JP/status/2092854626416824432": {
+      "contentHash": "4ec003be066320c69ac6c095",
+      "titleJa": "『万世の平定』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応...",
+      "bodyJa": "『万世の平定』特別投稿キャンペーン開催👗\n\nテーマ　✨ \n#キラパラ と #ノスタルジック\n\nハッシュタグをつけて作品を投稿した方へ\n抽選でAmazonギフト券を🎁\n\n応募リンク：\n#キラパラ \n#LifemakeoverWorld",
+      "summaryJa": "・イベント名: 『万世の平定』特別投稿キャンペーンが開催されます\n・テーマ: #キラパラ と #ノスタルジック\n・参加方法: 指定のハッシュタグをつけて作品を投稿する\n・特典: 抽選でAmazonギフト券が当たる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877193
+    },
+    "https://weibo.com/7521830234/Rfjq8fJXD": {
+      "contentHash": "e335673fe2e8939d22761c78",
+      "titleJa": "以闪亮之名 #以闪亮之名# Vvanna.Music.Entertainmentが正式発表👏🏻Vvanna.Music.Entertainmentが正式に発表✨スポットライトの下で、VMEの新星があなたを輝かせる📢ドリームインキュベーション（夢の孵化）募集が本日より開始...",
+      "bodyJa": "以闪亮之名 #以闪亮之名# \n\nVvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表されました\n✨スポットライトの下で、VMEの新星があなたを輝かせます\n📢ドリームインキュベーション（夢の孵化）募集が本日より開始されます\n🌟以闪亮之名（以闪亮之名）の新しい4.4バージョンをぜひご注目ください\n💖素晴らしいことが起こりますので、ご期待ください\n\n💎ダウンロードはこちら： 网页链接 \n💎閃亮作品上映季活動はこちら： 网页链接",
+      "summaryJa": "・Vvanna.Music.Entertainmentが正式に発表されました\n・ドリームインキュベーション（夢の孵化）募集が本日より開始されます\n・以闪亮之名（以闪亮之名）の新しい4.4バージョンが公開されます\n・ダウンロードリンクと閃亮作品上映季活動のリンクが提供されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877242
+    },
+    "https://x.com/kirapara_JP/status/2092794229718212740": {
+      "contentHash": "ca191aa66f87c32099fbe7ef",
+      "titleJa": "🔔新バージョン『万世の平定』更新🔔 出会いの感謝を🎁 連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます...",
+      "bodyJa": "🔔新バージョン『万世の平定』更新🔔\n\n出会いの感謝を🎁\n連続ログインで、スタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます。お見逃しなく！\n\nイベント期間⏰\n8月27日10:30～8月30日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・新バージョン「万世の平定」が更新されました\n・連続ログインでスタミナ×100、ダイヤ×100、青史丹書×3、流行カラーカード×20を受け取れます\n・イベント期間は8月27日10:30から8月30日23:59までです",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877262
+    },
+    "https://x.com/LifeMakeover510/status/2092791708568498290": {
+      "contentHash": "55941e9a06c205e5bac274f3",
+      "titleJa": "Lightchase Encore | Deceit Decom Shop プレビュー",
+      "bodyJa": "Lightchase Encore | Deceit Decom Shop プレビュー\n\nDeceit Decomショップは、8月28日09:00から9月18日23:59までオープンします。期間限定イベントで入手したDecomposing fashions（分解ファッション）を使用することで、限定の★5ファッションアイテム「Forest Rose」「Lotus Tap」「Lilac Haze」などを交換できます！",
+      "summaryJa": "・追加: Deceit Decomショップがオープン\n・期間: 8月28日09:00〜9月18日23:59\n・内容: 期間限定イベントで入手したDecomposing fashionsで限定★5ファッションアイテムを交換可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877295
+    },
+    "https://x.com/LifeMakeover510/status/2092789192208298055": {
+      "contentHash": "9f53761704666190206221fd",
+      "titleJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit | イベント開催中（8月28日9:00〜9月17日23:59）",
+      "bodyJa": "Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit が、8月28日9:00から9月17日23:59まで開催されます！\n\n「君を断ることは決してできないよ。」\n\n#DanceofDeceit | 神々への崇拝と願いの中で、我々は無数の仮面を被る。 #LifeMakeover",
+      "summaryJa": "・追加: Lightchase Encore | SSR [Gerald - Frozen Slumber] Dance of Deceit が登場\n・期間: 8月28日9:00〜9月17日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877331
+    },
+    "https://x.com/LifeMakeover510/status/2092786675575369907": {
+      "contentHash": "c8d9d48048c52ba999c8533d",
+      "titleJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー",
+      "bodyJa": "Lightchase Encore | ★4セット [Wander Limit] プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 崇拝と願いの中で、我々は神々のために無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: ★4セット「Lightchase Encore [Wander Limit]」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877366
+    },
+    "https://x.com/LifeMakeover510/status/2092784159156470187": {
+      "contentHash": "ac62dfddd704fd68fa93cf56",
+      "titleJa": "Lightchase Encore | ★5セット「Saccharine Spell」プレビュー",
+      "bodyJa": "Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！\nDance of Deceit | イベントは8月28日09:00から9月17日23:59まで開催！\n\n#DanceofDeceit | 神々を前に、そして願いを込めて、我々は無数の仮面を被る。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: ★5セット「Saccharine Spell」がプレビュー公開\n・イベント: Dance of Deceitが開催\n・期間: 8月28日09:00から9月17日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877400
+    },
+    "https://x.com/LifeMakeover510/status/2092781642557575197": {
+      "contentHash": "c98bd4b1ec545247949fdb98",
+      "titleJa": "Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー：染色エリアが★6セット「Crimson Cleansing」向けに最適化",
+      "bodyJa": "Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー\n\n★6セット「Crimson Cleansing」向けに染色エリアが最適化されました！ドレス「Crimson Cleansing」の染色エリアは、#1が#19に、#3が#20に、#4が#21に、#5が#22に、#6が#23〜#27に、#7が#28に、#9が#29に最適化されています。",
+      "summaryJa": "・追加: Lightchase Encore | ★6セット「Crimson Cleansing」のプレビューが公開\n・変更: ドレス「Crimson Cleansing」の染色エリアが★6セット向けに最適化された\n・最適化内容: 染色エリアの番号が#1→#19、#3→#20、#4→#21、#5→#22、#6→#23-27、#7→#28、#9→#29に変更された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877445
+    },
+    "https://x.com/LifeMakeover510/status/2092779131024904435": {
+      "contentHash": "a3467633eebe9c5b0abc25c5",
+      "titleJa": "Lightchase Encore | Dance of Deceitが近日登場",
+      "bodyJa": "Lightchase Encore | Dance of Deceitが近日登場！\nDance of Deceitは8月28日09:00から9月17日23:59まで開催されます。\n\n#DanceofDeceit | 神々への崇拝と願いの中で、我々は無数の仮面を身にまとう。\n#LifeMakeover #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・イベント: Dance of Deceitが開催される\n・期間: 8月28日09:00〜9月17日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877474
+    },
+    "https://x.com/LifeMakeover510/status/2092567745489502482": {
+      "contentHash": "2b33250f37bd4f9d545fd5bc",
+      "titleJa": "潮の宝探し ⏰8月27日 09:00 - 9月3日 05:00 UTC [報酬受け取り] 8月27日 09:00 - 9月4日 05:00 UTC [イベント報酬]",
+      "bodyJa": "潮の宝探し\n\n⏰8月27日 09:00 - 9月3日 05:00 UTC\n\n[報酬受け取り]\n8月27日 09:00 - 9月4日 05:00 UTC\n\n[イベント報酬]\nポイントを蓄積して、★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーチャート×13、Luster Invitation、および各種素材報酬を獲得できます！",
+      "summaryJa": "・イベント名: 潮の宝探し\n・期間: 8月27日 09:00 - 9月3日 05:00 UTC\n・報酬受け取り期間: 8月27日 09:00 - 9月4日 05:00 UTC\n・報酬: ★4セット「Sunset Dunes」、フォトフレーム「Sweet Summer」、トレンドカラーチャート×13、Luster Invitation、各種素材報酬",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877522
+    },
+    "https://x.com/kirapara_JP/status/2092552642140533220": {
+      "contentHash": "f60e421a308cfedfbd964c63",
+      "titleJa": "📢メンテナンスのお知らせ 更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします",
+      "bodyJa": "📢メンテナンスのお知らせ\n\n更なる良質なゲーム体験をご提供するため、以下の時間に全サーバーの定期メンテナンスを実施いたします。\n\nメンテナンス時間\n8月27日 午前3:25～10:00前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・実施内容: 全サーバーの定期メンテナンス\n・期間: 8月27日 午前3:25～10:00前後\n・詳細: ゲーム内「お知らせ」にて確認可能\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877539
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678277791045061908": {
+      "contentHash": "aff15b6ec517368aa387f29a",
+      "titleJa": "Life Makeover Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！",
+      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Saccharine Spell」プレビュー！監視の目を背け、私は自由に心を放たせていく。その中で...",
+      "summaryJa": "・追加: ★5セット「Saccharine Spell」がLife Makeover Lightchase Encoreでプレビュー公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877559
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678277254572494100": {
+      "contentHash": "cf1d7922cc3b29ec75ced96a",
+      "titleJa": "Life Makeover Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー",
+      "bodyJa": "Life Makeover Lightchase Encore | ★6セット「Crimson Cleansing」プレビュー！「神々を夢に呼び、炎の抱擁の中で生まれ変われ。」として、d...",
+      "summaryJa": "・追加: ★6セット「Crimson Cleansing」がLife Makeover Lightchase Encoreでプレビュー公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877580
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678276380634975508": {
+      "contentHash": "1bdee4ce56522c7527313b3e",
+      "titleJa": "Life Makeover Lightchase Encore | Dance of Deceitが近日登場",
+      "bodyJa": "Life Makeover Lightchase Encore | Dance of Deceitが近日登場！「誘惑を捧げながら踊り、ここへ辿り着いたのね。私に求めているのは…」",
+      "summaryJa": "・イベント: Lightchase Encore\n・新コンテンツ: Dance of Deceitが近日登場予定",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877601
+    },
+    "https://x.com/kirapara_JP/status/2092545084713799935": {
+      "contentHash": "3f0b74046f4a084bea19ec61",
+      "titleJa": "明日より『ファンタイム』開催👀 イベント期間⏰ 8月27日10:30-9月17日05:00 毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景...",
+      "bodyJa": "明日より『ファンタイム』開催👀\n\nイベント期間⏰\n8月27日10:30-9月17日05:00\n\n毎日ログインして、カレンダーにスタンプを押すと、星5ファッションやフォト背景などの豪華報酬を獲得できます！\n詳細はゲーム内でチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・イベント開催: 「ファンタイム」が明日より開催\n・期間: 8月27日10:30〜9月17日05:00\n・内容: 毎日ログインし、カレンダーにスタンプを押すことで豪華報酬を獲得可能\n・報酬: 星5ファッションやフォト背景など",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787877620
+    }
+  }
 }
