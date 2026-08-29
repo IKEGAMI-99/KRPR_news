@@ -705,6 +705,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787987679
+    },
+    "https://x.com/kirapara_JP/status/2093594503131037745": {
+      "contentHash": "02c89e4b8a1c259c39c6ae1a",
+      "titleJa": "【復刻】SR絆💞シュウ『まくら物語』 復刻限定ガチャイベント『鏡海の迷路』に再登場予定✨ #キラパラ #着せ替えゲーム",
+      "bodyJa": "【復刻】SR絆💞シュウ『まくら物語』\n\n復刻限定ガチャイベント『鏡海の迷路』に再登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: SR絆💞シュウ『まくら物語』が復刻限定ガチャイベント『鏡海の迷路』に再登場予定\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787987763
     }
   }
 }

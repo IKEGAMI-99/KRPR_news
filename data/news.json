@@ -21,7 +21,13 @@
         "url": "https://x.com/kirapara_JP/status/2093594503131037745"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【復刻】SR絆💞シュウ『まくら物語』 復刻限定ガチャイベント『鏡海の迷路』に再登場予定✨ #キラパラ #着せ替えゲーム",
+    "bodyJa": "【復刻】SR絆💞シュウ『まくら物語』\n\n復刻限定ガチャイベント『鏡海の迷路』に再登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・復刻: SR絆💞シュウ『まくら物語』が復刻限定ガチャイベント『鏡海の迷路』に再登場予定\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0644e599c656203d4e4b7502",
@@ -1467,7 +1473,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -1822,7 +1828,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -4860,6 +4866,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
