@@ -935,6 +935,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788006655
+    },
+    "https://www.youtube.com/shorts/MV8zP_9mbsE": {
+      "contentHash": "61d19df5772d0385a279ffe1",
+      "titleJa": "SRアライ [ラリー - 運命の出会い] - デフォルト",
+      "bodyJa": "SRアライ [ラリー - 運命の出会い] - デフォルト\n\n「契約の絆を、この身で返そうと…どうかな、奥様？」\n\n#GardenSoiree | イベントは8月19日から9月8日まで開催中！\n#LifeMakeoverWorld #GardenSoiree #PetalTeaTime #PhantomCandle",
+      "summaryJa": "・追加: SRアライ [ラリー - 運命の出会い] - デフォルトが登場\n・イベント: #GardenSoiree が開催中\n・期間: 8月19日から9月8日まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788007198
+    },
+    "https://x.com/LifeMakeover510/status/2090763343543877993": {
+      "contentHash": "50478162a546fbcd29eb737c",
+      "titleJa": "⭐Life Makeoverファッションガイド - Everlasting Peace版 抽選結果発表 - 全ての当選者へおめでとうございます",
+      "bodyJa": "⭐当選者発表\nLife Makeoverファッションガイド - Everlasting Peace版\n\n全ての当選者の皆様、おめでとうございます！\n\n賞品フォームは2026年8月24日までに提出してください。\n\n#LifeMakeover",
+      "summaryJa": "・当選者発表: Life Makeoverファッションガイド - Everlasting Peace版\n・提出期限: 2026年8月24日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788007237
+    },
+    "https://x.com/LifeMakeover510/status/2090755798679109997": {
+      "contentHash": "b18d078c86c60fc798389da6",
+      "titleJa": "デザートパーティー開催！報酬受け取りとイベント報酬について",
+      "bodyJa": "デザートパーティー\n\n⏰8月22日 09:00 - 8月29日 05:00 UTC\n\n[報酬受け取り]\n8月22日 09:00 - 8月30日 05:00 UTC\n\n[イベント報酬]\nイベント期間中に獲得したポイントは、★4セット「Secret Blossom」、キュートエフェクト「Glorious Crown」など、多くのアイテムと交換できます。\n\n#LifeMakeover",
+      "summaryJa": "・イベント名: デザートパーティー\n・イベント期間: 8月22日 09:00 - 8月29日 05:00 UTC\n・報酬受け取り期間: 8月22日 09:00 - 8月30日 05:00 UTC\n・イベント報酬: 獲得ポイントで★4セット「Secret Blossom」やキュートエフェクト「Glorious Crown」などと交換可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788007297
     }
   },
   "failures": {
