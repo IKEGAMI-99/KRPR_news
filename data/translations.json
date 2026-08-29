@@ -1505,6 +1505,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788020027
+    },
+    "https://www.bilibili.com/video/BV12bgv6iEwD": {
+      "contentHash": "7146cc12ecc2b26de660d396",
+      "titleJa": "新しいポーズ固定モードが実装されました",
+      "bodyJa": "着せ替え後に気に入った専用ポーズがシステムによってリセットされ、コーディネート体験が損なわれることに悩んでいませんか？より自由で便利な外見の着こなし体験を提供し、唯一無二のキャラクタースタイルを構築するため、ポーズ固定切り替えモード機能が実装されました！\nプレイヤーは【クローゼット】の【ポーズ変更】から新しいポーズモードを切り替えることができ、通常のポーズモードと固定ポーズモードの2つのモードから選択できます。固定ポーズモードを使用し、カスタムポーズを保存すると、任意の衣装やアクセサリーに切り替えてもポーズがリセットされず、衣装変更時にデフォルトポーズに強制リセットされるという悩みを解消できます。\n\nプレイヤーへの感謝：\n淡水梨花\n红茶栗\nAnnie？\n不明下落",
+      "summaryJa": "・追加: ポーズ固定切り替えモード機能が実装されました\n・機能: 【クローゼット】の【ポーズ変更】から通常のポーズモードと固定ポーズモードを選択可能\n・仕様: 固定ポーズモードでカスタムポーズを保存すると、衣装やアクセサリーを切り替えてもポーズがリセットされません",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788020931
+    },
+    "https://www.youtube.com/watch?v=667Q4xYRSvc": {
+      "contentHash": "f75ec425a975e70348d74005",
+      "titleJa": "5★『罪の安息』予告 - ゲーム内映像",
+      "bodyJa": "永遠の夜、禁断の誘惑が花開きます。\n\n赤い炎が魂を包み込み、\n甘い囁きが深い深淵へと誘います。\n\n欲望と破滅が出会う果てで、\n禁断の美しさが咲き誇ります。\n\n7月30日（木）、5★コスチューム『罪の安息』が期間限定で登場！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #月の審判",
+      "summaryJa": "・追加: 5★コスチューム『罪の安息』が期間限定で登場\n・期間: 7月30日（木）から登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788020968
+    },
+    "https://www.youtube.com/watch?v=_r0KeBJjsMs": {
+      "contentHash": "e7edb04cc763cdea7ceb74c6",
+      "titleJa": "5★『月の戒律』予告 - ゲーム内映像",
+      "bodyJa": "月明かりの下、隠された真実が明らかになります。\n\n神聖な誓いは裁きとなり、\n揺るぎない鎌は嘘と罪を分かつ。\n\n闇を切り裂く一筋の光。\n彼女の裁きが今始まります。\n\n7月30日（木）、5★コスチューム『月の戒律』が期間限定で登場！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #月の審判",
+      "summaryJa": "・追加: 5★コスチューム『月の戒律』が期間限定で登場\n・期間: 7月30日（木）から",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788021004
     }
   },
   "failures": {
