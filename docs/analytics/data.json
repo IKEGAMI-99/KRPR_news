@@ -1,11 +1,11 @@
 {
   "ready": true,
-  "updatedAt": "2026-08-29T12:08:27.927753+00:00",
+  "updatedAt": "2026-08-29T13:05:38.728091+00:00",
   "summary": {
-    "todayViews": 55,
-    "weekViews": 315,
-    "monthViews": 314,
-    "monthUsers": 29
+    "todayViews": 70,
+    "weekViews": 329,
+    "monthViews": 329,
+    "monthUsers": 32
   },
   "trend": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "label": "08/29",
-      "value": 56
+      "value": 70
     },
     {
       "label": "08/27",
@@ -24,7 +24,7 @@
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 313
+      "value": 327
     },
     {
       "label": "/docs/",
@@ -34,7 +34,7 @@
   "referrers": [
     {
       "label": "(direct)",
-      "value": 27
+      "value": 30
     },
     {
       "label": "t.co",
@@ -42,7 +42,7 @@
     },
     {
       "label": "(not set)",
-      "value": 11
+      "value": 13
     },
     {
       "label": "github.com",
@@ -56,7 +56,7 @@
   "regions": [
     {
       "label": "Japan",
-      "value": 25
+      "value": 28
     },
     {
       "label": "(not set)",
@@ -66,7 +66,7 @@
   "devices": [
     {
       "label": "mobile",
-      "value": 24
+      "value": 27
     },
     {
       "label": "desktop",
