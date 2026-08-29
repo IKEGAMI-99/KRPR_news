@@ -765,6 +765,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788002771
+    },
+    "https://x.com/LifeMakeover510/status/2093654906465079748": {
+      "contentHash": "aad3fbc82e0203ad10d7b4b2",
+      "titleJa": "植物の世話イベント ⏰8月30日 09:00 - 9月3日 05:00 UTC [報酬受け取り] 8月30日 09:00 - 9月3日 05:00 UTC [イベント報酬]",
+      "bodyJa": "植物の世話\n\n⏰8月30日 09:00 - 9月3日 05:00 UTC\n\n[報酬受け取り]\n8月30日 09:00 - 9月3日 05:00 UTC\n\n[イベント報酬]\n植物の世話をすることで素材報酬を獲得でき、★5アクセサリー「Auction Passion」、ダイヤ×30、トレンドカラーチャート×9など、その他多数の報酬を獲得できます！\n\n#LifeMakeover",
+      "summaryJa": "・イベント名: 植物の世話\n・期間: 8月30日 09:00 - 9月3日 05:00 UTC\n・報酬: ★5アクセサリー「Auction Passion」、ダイヤ×30、トレンドカラーチャート×9など",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788002909
     }
   },
   "failures": {
@@ -774,6 +784,20 @@
       "failedRuns": 1,
       "lastFailureAtEpoch": 1788002130,
       "retryAfterEpoch": 1788023730
+    },
+    "https://www.bilibili.com/opus/1241854577097048066": {
+      "contentHash": "63cbfc66c000e120cbcc04f4",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788003169,
+      "retryAfterEpoch": 1788024769
+    },
+    "https://www.taptap.cn/moment/842461141631240483": {
+      "contentHash": "058fab4030fdb5741e56caa3",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788003396,
+      "retryAfterEpoch": 1788024996
     }
   }
 }
