@@ -7,6 +7,8 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - 'scripts/fetch_news.py'
       - 'scripts/run_refresh_pipeline.py'
@@ -18,6 +20,7 @@ on:
       - 'scripts/enrich_weibo_images.py'
       - 'scripts/normalize_weibo_cdn.py'
       - 'scripts/mirror_weibo_images.py'
+      - 'scripts/bilibili_image_urls.py'
       - 'scripts/enrich_bilibili_images.py'
       - 'scripts/upgrade_x_images.py'
       - 'scripts/fetch_taptap_official.py'

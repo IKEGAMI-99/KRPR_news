@@ -36,6 +36,7 @@ class CrawlStatusTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
         self.assertIn("cron: '0 * * * *'", workflow)
+        self.assertRegex(workflow, r"push:\s+branches:\s+- main\s+paths:")
         self.assertIn('Record completed crawl time', workflow)
         self.assertIn('data/crawl_status.json', workflow)
         self.assertIn('毎時 :00', menu)

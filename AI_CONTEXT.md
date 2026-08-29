@@ -219,6 +219,8 @@ LiteRT-LM Engineは `max_num_tokens=8192`、各生成は `max_output_tokens=3000
 - `scripts/repair_social_sources.py` で動態・記事・動画を別々に収集し、複数Feedの結果を統合します。
 - live Feedがすべて失敗した場合は、Git履歴にある直近のBilibili行をlast known goodとして復元します。
 - 同じCHINA地域のWeibo / TapTap等が成功しても、Bilibili取得成功とはみなしません。媒体単位の障害を地域単位の成功で上書きしないでください。
+- BFS CDNの画像処理suffix（例: `.jpg@316w_560h_1e_1c`）はサムネイル派生です。`scripts/bilibili_image_urls.py` でsuffixを除去し、`i0` / `i1` / `i2.hdslb.com` を同一aliasへ正規化して原寸画像を1件だけ残します。
+- この正規化は `scripts/enrich_bilibili_images.py` と最終段の `scripts/normalize_news.py` の両方で行います。Feed/API障害時にも縮小版が復活しないための二重防御なので、片方だけに戻さないでください。
 
 ### Weibo
 
