@@ -835,6 +835,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788004268
+    },
+    "https://www.bilibili.com/opus/1241840403708116995": {
+      "contentHash": "0120f380af89f22d1da6128d",
+      "titleJa": "VME | 最新ステージ画像公開 #トップスターの卵生# 全新4.4バージョン・神迹初诞 9月1日〜9月21日期間限定ログイン",
+      "bodyJa": "VME | 最新ステージ画像公開\n#トップスターの卵生# 全新4.4バージョン・神迹初诞 9月1日〜9月21日期間限定ログイン！\n\n✨夢の孵化募集が満員となりました\n🎤デビュー初舞台の独占ステージがアンロック\n⚡スポットライトが会場の熱狂を照らす\n✨彼女は光の中に立つ星のように\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・追加: 全新4.4バージョン「神迹初诞」が実装\n・期間: 9月1日〜9月21日\n・内容: デビュー初舞台の独占ステージがアンロックされる\n・その他: 夢の孵化募集が満員となったことが報告されている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788004712
+    },
+    "https://www.taptap.cn/moment/842473966244200657": {
+      "contentHash": "9d61662797cf68fbe7ae17c0",
+      "titleJa": "VME | 最新ステージの返り画像が公開",
+      "bodyJa": "#トップスターの卵生# 全新4.4バージョン「神迹初诞」が9月1日から9月21日まで期間限定で登場！\n✨ドリームハッチングの募集が満員御礼で終了\n🎤デビュー初披露の独占ステージがアンロック\n⚡スポットライトが会場の熱狂を照らす\n✨彼女は光の中に立つ星のよう",
+      "summaryJa": "・イベント名: 神迹初诞\n・期間: 9月1日〜9月21日\n・内容: 全新4.4バージョンの期間限定登場\n・内容: ドリームハッチングの募集が満員御礼で終了\n・内容: デビュー初披露の独占ステージがアンロック",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788004774
+    },
+    "https://www.bilibili.com/opus/1241839115217928193": {
+      "contentHash": "28cbc0557593b445b6d3c28d",
+      "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」先行公開",
+      "bodyJa": "新バージョン4.4｜★6セット「聖翎祈世」先行公開！\n#トップ層の卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n\n彼女はかつて、がらんとしたリハーサル室に立ち、\n同じ歌を何度も何度も歌い続けた。\n光は明るかったが、それは他者だけを照らしていた。\n隅で彼女は古いマイクを握りしめ、\nまだ孵化していない夢を握っているようだった。\nその日、夢に導かれた幸運がついに訪れた。\n彩蛋が開き、旋律が溢れ出す。\nそれは彼女自身の声だった。\n彼女の努力は、見られる価値があるのだ。\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイへ",
+      "summaryJa": "・新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・★6セット「聖翎祈世」が先行公開\n・ゲームジャンルはロールプレイング/高画質/シミュレーション経営",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788004859
     }
   },
   "failures": {
