@@ -234,6 +234,9 @@ class ProjectStructureTests(unittest.TestCase):
         cache = engine.normalized_cache({"model": "old", "items": {}})
         self.assertEqual(f"{gemma.MODEL_ID}:{gemma.MODEL_VARIANT}", cache["model"])
         self.assertEqual(gemma.MODEL_REVISION, cache["modelRevision"])
+        self.assertEqual(8192, gemma.CONTEXT_TOKEN_LIMIT)
+        self.assertEqual(3000, gemma.OUTPUT_TOKEN_LIMIT)
+        self.assertIn("failures", cache)
 
     def test_removed_legacy_layers_are_not_referenced(self):
         combined = "\n".join(
@@ -261,6 +264,9 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertIn("github.event.workflow_run.conclusion == 'success'", workflow)
         self.assertIn("python scripts/merge_translation_results.py", workflow)
         self.assertIn("LLM_MAX_ITEMS: '3'", workflow)
+        self.assertIn("id: gemma_translate", workflow)
+        self.assertIn("continue-on-error: true", workflow)
+        self.assertIn("steps.gemma_translate.outcome == 'failure'", workflow)
 
 
     def test_parallel_data_writers_merge_translation_results(self):
