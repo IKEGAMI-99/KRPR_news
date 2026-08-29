@@ -1175,6 +1175,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788012753
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7674936529696918805": {
+      "contentHash": "66038efff22d786490bb9032",
+      "titleJa": "テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リンク：",
+      "bodyJa": "テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リンク：",
+      "summaryJa": "・テーマ「#キラパラ」と「#ノスタルジック」を付けて作品を投稿した方の中から抽選でAmazonギフト券が当たるキャンペーンが実施されます",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788012842
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7674925307157138709": {
+      "contentHash": "f9e053bda18c014670be67b3",
+      "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+      "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+      "summaryJa": "・追加: イベント『孤刃帰鞘』に登場する新SSR絆💞レイ『揺るがぬ錨』の動画が公開されました\n・対象ゲーム: キラパラ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788012873
+    },
+    "https://x.com/stylight_kr/status/2089276054288679324": {
+      "contentHash": "9971a425dfc82e776305d3c5",
+      "titleJa": "『森の旋律』壁紙共有 🎶 月明かりが降り注ぐ森、ハープの旋律と共に神秘的な妖精の世界が広がります。銀色の髪と青いレース、星のように輝く...",
+      "bodyJa": "『森の旋律』壁紙共有\n\n🎶 月明かりが降り注ぐ森、\nハープの旋律と共に神秘的な妖精の世界が広がります。\n\n銀色の髪と青いレース、\n星のように輝く蝶が調和した\n『森の旋律』の美しい瞬間を壁紙でご覧ください。\n\nPCの壁紙に設定して\n日常の中でも森の旋律が伝える幻想とときめきを感じてみてください。✨\n\n今日もStylightと共に\n夢のような一日をお過ごしください！ 💙\n\n#Stylight #Stylight降臨 #Stylightアップデート #森の旋律",
+      "summaryJa": "・追加: 『森の旋律』の美しい瞬間を壁紙として共有\n・内容: 月明かりが降り注ぐ森、ハープの旋律、銀色の髪と青いレース、星のように輝く蝶がテーマ\n・利用方法: PCの壁紙として設定可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788012943
     }
   },
   "failures": {

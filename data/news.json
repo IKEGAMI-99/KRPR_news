@@ -1654,7 +1654,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -2009,7 +2009,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -3542,7 +3542,13 @@
         "url": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674936529696918805"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リンク：",
+    "bodyJa": "テーマ ✨ #キラパラ と #ノスタルジック ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リンク：",
+    "summaryJa": "・テーマ「#キラパラ」と「#ノスタルジック」を付けて作品を投稿した方の中から抽選でAmazonギフト券が当たるキャンペーンが実施されます",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3e917c104097d602ae9eea59",
@@ -3564,7 +3570,13 @@
         "url": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674925307157138709"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+    "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する 新SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #...",
+    "summaryJa": "・追加: イベント『孤刃帰鞘』に登場する新SSR絆💞レイ『揺るがぬ錨』の動画が公開されました\n・対象ゲーム: キラパラ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "eeb5cd41ae5fbf1b71619790",
@@ -3586,7 +3598,13 @@
         "url": "https://x.com/stylight_kr/status/2089276054288679324"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "『森の旋律』壁紙共有 🎶 月明かりが降り注ぐ森、ハープの旋律と共に神秘的な妖精の世界が広がります。銀色の髪と青いレース、星のように輝く...",
+    "bodyJa": "『森の旋律』壁紙共有\n\n🎶 月明かりが降り注ぐ森、\nハープの旋律と共に神秘的な妖精の世界が広がります。\n\n銀色の髪と青いレース、\n星のように輝く蝶が調和した\n『森の旋律』の美しい瞬間を壁紙でご覧ください。\n\nPCの壁紙に設定して\n日常の中でも森の旋律が伝える幻想とときめきを感じてみてください。✨\n\n今日もStylightと共に\n夢のような一日をお過ごしください！ 💙\n\n#Stylight #Stylight降臨 #Stylightアップデート #森の旋律",
+    "summaryJa": "・追加: 『森の旋律』の美しい瞬間を壁紙として共有\n・内容: 月明かりが降り注ぐ森、ハープの旋律、銀色の髪と青いレース、星のように輝く蝶がテーマ\n・利用方法: PCの壁紙として設定可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "4f962f847222399795290b59",
@@ -5097,6 +5115,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
