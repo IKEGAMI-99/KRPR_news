@@ -725,6 +725,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787989882
+    },
+    "https://www.taptap.cn/moment/842535452333310246": {
+      "contentHash": "8ae82226ba5ac0f8751d3780",
+      "titleJa": "新「時空回音」イベント開催",
+      "bodyJa": "#トップクラスの卵生# 全新4.4バージョン「神迹初诞」9月1日〜9月21日限定ログイン！\n【イベント期間】\n9月1日10:00〜9月30日23:59\n【イベント内容】\n今回の「時空回音」イベントでは、プレイヤーはトレンドコードセット「荒原暮歌」と「暗汐星礁」を再度入手できます。\nイベント期間中、プレイヤーが日程のアクティブミッションに積極的に参加することで、最速7日間で「流年回响」の新規無料材料報酬をすべて獲得できます。\nさらに、プレイヤーが「荒原暮歌」と「暗汐星礁」に対応するセットの「光阴溯梦」を購入した場合、",
+      "summaryJa": "・イベント開始: 9月1日10:00\n・イベント終了: 9月30日23:59\n・内容: トレンドコードセット「荒原暮歌」と「暗汐星礁」が再度入手可能になる\n・報酬: イベント期間中、日程アクティブミッションで最速7日間で「流年回响」の新規無料材料報酬をすべて獲得可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787991010
     }
   }
 }
