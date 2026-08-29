@@ -1,10 +1,10 @@
 {
   "ready": true,
-  "updatedAt": "2026-08-29T13:05:38.728091+00:00",
+  "updatedAt": "2026-08-29T14:06:39.564787+00:00",
   "summary": {
-    "todayViews": 70,
-    "weekViews": 329,
-    "monthViews": 329,
+    "todayViews": 71,
+    "weekViews": 330,
+    "monthViews": 330,
     "monthUsers": 32
   },
   "trend": [
@@ -14,7 +14,7 @@
     },
     {
       "label": "08/29",
-      "value": 70
+      "value": 71
     },
     {
       "label": "08/27",
@@ -24,7 +24,7 @@
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 327
+      "value": 328
     },
     {
       "label": "/docs/",
