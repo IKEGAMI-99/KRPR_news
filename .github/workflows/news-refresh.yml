@@ -9,6 +9,7 @@ on:
   push:
     paths:
       - 'scripts/fetch_news.py'
+      - 'scripts/run_refresh_pipeline.py'
       - 'scripts/preserve_official_x_history.py'
       - 'scripts/merge_direct_official.py'
       - 'scripts/enrich_sources.py'
@@ -49,6 +50,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # A second, workflow-level fuse protects against runner or child-process
+    # failures that outlive the per-collector hard deadlines.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -60,29 +64,10 @@ jobs:
           python-version: '3.12'
 
       - name: Fetch public news in original languages
-        run: |
-          python scripts/fetch_news.py
-          python scripts/preserve_official_x_history.py
-          python scripts/merge_direct_official.py
-          python scripts/enrich_sources.py
-          # Recover X/Bilibili through independent public RSSHub hosts and keep
-          # the last known Bilibili rows when a temporary upstream outage occurs.
-          python scripts/repair_social_sources.py
-          python scripts/enrich_social_images.py
-          python scripts/enrich_weibo_images.py
-          python scripts/normalize_weibo_cdn.py
-          python scripts/enrich_bilibili_images.py
-          python scripts/fetch_taptap_official.py
-          python scripts/fetch_haoyoukuaibao.py
-          python scripts/fetch_wechat_official.py
-          python scripts/merge_duplicate_sources.py
-          python scripts/discover_web_news.py
-          python scripts/enrich_images.py
-          # X URLs can be reintroduced by later enrichment passes, so normalize
-          # them only after every collector/enricher has finished.
-          python scripts/upgrade_x_images.py
-          python scripts/filter_small_images.py
-          python scripts/normalize_news.py
+        # Each network collector has a hard wall-clock deadline. Optional-step
+        # failures restore their pre-step data snapshot and continue with the
+        # last-known-good cache instead of blocking the whole hourly refresh.
+        run: python -u scripts/run_refresh_pipeline.py
 
       - name: Merge Sol supplemental news and reviewed translations
         run: python scripts/apply_sol_edits.py

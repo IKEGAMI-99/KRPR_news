@@ -37,7 +37,10 @@ jobs:
           from datetime import datetime, timezone
           from pathlib import Path
 
-          threshold_seconds = 90 * 60
+          # The refresh job has a 15-minute workflow fuse. If the previous
+          # successful crawl is still older than 70 minutes, the current hourly
+          # cycle has missed that fuse and should be recovered immediately.
+          threshold_seconds = 70 * 60
           status_path = Path('data/crawl_status.json')
           last_crawl_at = ''
           age_seconds = threshold_seconds + 1

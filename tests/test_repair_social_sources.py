@@ -102,9 +102,10 @@ class RepairSocialSourcesTests(unittest.TestCase):
         self.assertEqual(2, len(rows))
 
     def test_news_refresh_runs_social_repair_before_image_enrichment(self):
-        workflow = (ROOT / ".github" / "workflows" / "news-refresh.yml").read_text(encoding="utf-8")
-        repair = workflow.index("python scripts/repair_social_sources.py")
-        images = workflow.index("python scripts/enrich_social_images.py")
+        runner = importlib.import_module("run_refresh_pipeline")
+        scripts = [step.script for step in runner.PIPELINE_STEPS]
+        repair = scripts.index("repair_social_sources.py")
+        images = scripts.index("enrich_social_images.py")
         self.assertLess(repair, images)
 
 

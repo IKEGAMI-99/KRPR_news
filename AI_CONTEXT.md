@@ -32,6 +32,7 @@ runtime_model:
 
 schedules:
   news_refresh: "hourly at minute 00"
+  news_refresh_watchdog: "hourly at minutes 17 and 47 plus after translation; recover when last success is at least 70 minutes old"
   ai_translate: "hourly at minutes 07,22,37,52 and after successful Refresh News Cache workflow completion; max 3 articles/run"
   gap_analysis: "daily 06:30 JST"
   analytics_refresh: "every 6 hours"
@@ -89,6 +90,7 @@ AIが変更を始める前に、対象機能について少なくとも以下を
 | プライバシーポリシー | `docs/privacy.html` |
 | 法的ページ共通スタイル | `docs/legal.css` |
 | ニュース収集Workflow | `.github/workflows/news-refresh.yml` |
+| 収集ステップの上限・ロールバック | `scripts/run_refresh_pipeline.py` |
 | AI Workflow | `.github/workflows/ai-translate.yml` |
 | Stable Release gate | `.github/workflows/release-stable.yml` |
 | 構造上の回帰防止 | `tests/test_project.py` |
@@ -102,15 +104,16 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 1. **原文ニュース収集はAIに依存しない。** AIが失敗しても原文タイムラインは更新可能であること。
 2. **元記事URLを失わない。** 同一ニュースを統合しても各媒体URLは `sources` に保持すること。
 3. **一時的な取得障害を削除と解釈しない。** last known good を優先し、公式X / Bilibiliなど媒体単位の履歴を不必要に消さないこと。
-4. **手動監査済み翻訳を自動処理で破壊しない。** `managedBySol` / `solLocked` を尊重すること。
-5. **異なる地域の記事を自動統合しない。** JAPAN / CHINA / KOREA / GLOBAL の境界を保持すること。
-6. **ニュースJSONを固定キャッシュしない。** PWAは新しいニュースを取りに行けること。
-7. **Service Worker更新後に古い実装が残留し続けないこと。** 現行のcontroller変更時リロード設計を壊さないこと。
-8. **並行するニュース収集とAI書き込みの結果を失わない。** 分離concurrency group、`merge_translation_results.py`、監査済み翻訳優先、最大4回のpush再試行を維持すること。
-9. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
-10. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
-11. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
-12. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
+4. **外部取得を無期限に待たない。** `run_refresh_pipeline.py` の処理別ハードタイムアウト、失敗時スナップショット復元、Workflow全体15分上限を維持すること。
+5. **手動監査済み翻訳を自動処理で破壊しない。** `managedBySol` / `solLocked` を尊重すること。
+6. **異なる地域の記事を自動統合しない。** JAPAN / CHINA / KOREA / GLOBAL の境界を保持すること。
+7. **ニュースJSONを固定キャッシュしない。** PWAは新しいニュースを取りに行けること。
+8. **Service Worker更新後に古い実装が残留し続けないこと。** 現行のcontroller変更時リロード設計を壊さないこと。
+9. **並行するニュース収集とAI書き込みの結果を失わない。** 分離concurrency group、`merge_translation_results.py`、監査済み翻訳優先、最大4回のpush再試行を維持すること。
+10. **Stable Releaseをテストなしで作らない。** gateを迂回しないこと。
+11. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
+12. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
+13. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
 
 ## Explicitly removed / deprecated behavior
 
@@ -156,7 +159,8 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 
 ```text
 external public sources
-  -> source-specific collectors
+  -> source-specific collectors (hard deadline per step)
+  -> restore pre-step snapshot and continue on optional timeout
   -> normalization
   -> source/history preservation
   -> duplicate merge

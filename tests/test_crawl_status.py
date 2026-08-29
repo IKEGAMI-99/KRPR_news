@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 WORKFLOW = ROOT / ".github" / "workflows" / "news-refresh.yml"
+WATCHDOG = ROOT / ".github" / "workflows" / "news-refresh-watchdog.yml"
 
 
 class CrawlStatusTests(unittest.TestCase):
@@ -39,8 +40,19 @@ class CrawlStatusTests(unittest.TestCase):
         self.assertIn('data/crawl_status.json', workflow)
         self.assertIn('毎時 :00', menu)
         self.assertIn('毎時 :00  news-refresh.yml', readme)
-        self.assertNotIn('毎時 :17', menu)
+        self.assertNotIn('<strong>ニュース収集</strong><small>毎時 :17', menu)
         self.assertNotIn('毎時 :17  news-refresh.yml', readme)
+
+    def test_refresh_has_bounded_collectors_and_fast_recovery(self):
+        workflow = WORKFLOW.read_text(encoding="utf-8")
+        watchdog = WATCHDOG.read_text(encoding="utf-8")
+        runner = (ROOT / "scripts" / "run_refresh_pipeline.py").read_text(encoding="utf-8")
+
+        self.assertIn("timeout-minutes: 15", workflow)
+        self.assertIn("python -u scripts/run_refresh_pipeline.py", workflow)
+        self.assertIn("threshold_seconds = 70 * 60", watchdog)
+        self.assertIn("PIPELINE_STEPS", runner)
+        self.assertIn("restored last-known-good state", runner)
 
 
 if __name__ == "__main__":

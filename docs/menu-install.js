@@ -125,8 +125,8 @@
       </div>
       <div class="menu-schedule-row">
         <span class="menu-schedule-icon">⚡</span>
-        <div><strong>更新監視</strong><small>毎時 :30・異常時のみ再起動</small></div>
-        <b>1時間ごと</b>
+        <div><strong>更新監視</strong><small>毎時 :17 / :47・70分以上未更新なら再起動</small></div>
+        <b>30分ごと</b>
       </div>
     </div>
     <p class="menu-schedule-note">GitHub Actionsの混雑状況により、実際の開始時刻は数分以上遅れる場合があります。</p>`;
