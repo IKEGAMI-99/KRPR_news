@@ -685,6 +685,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787985910
+    },
+    "https://www.taptap.cn/moment/842465539660973249": {
+      "contentHash": "cd5364a2ce8d7b36140d1fb0",
+      "titleJa": "全く新しいエッジスペクトルテーマの家具が追加",
+      "bodyJa": "#トップクラスの卵生# 全新4.4バージョン「神迹初誕」が9月1日から9月21日まで期間限定で登場！\nホームに「エッジスペクトル」テーマの家具が追加されました。ネオンの喧騒から離れた裏側こそが、この街の真の模様です。\n見上げると、【赤外監視】が宙に浮かび、その視線は決して離れません。それはあなたの顔を認識せず、データ上の番号だけを知っています。\n壁の隅で錆びついた【障害警報灯】がまだ点滅し、赤い光が街路の裂けた光ファイバーを映し出しています。誰も修理に来ることはないでしょうが、それは灯り続けています。\nテーブルの上には数箱の【充電缶詰】が積み重なり、ラベルはすでにぼやけています。開けた時の味が分かっているでしょう――塩辛い",
+      "summaryJa": "・追加: 「エッジスペクトル」テーマの家具がホームに追加\n・期間: 9月1日〜9月21日\n・イベント名: 神迹初誕（バージョン4.4）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787986750
     }
   }
 }
