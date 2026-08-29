@@ -108,7 +108,13 @@
         "url": "https://t.bilibili.com/1241861019556380680"
       }
     ],
-    "sourceCount": 3
+    "sourceCount": 3,
+    "titleJa": "新機能「全景カメラ」が追加！#頂流の卵生# 全新4.4バージョン「神迹初诞」9月1日〜9月21日期間限定開催",
+    "bodyJa": "新機能「全景カメラ」が追加されました。\n#頂流の卵生# 全新4.4バージョン「神迹初诞」が9月1日から9月21日まで期間限定で登場します！\n\n染色画面に新機能「全景カメラ」モードが追加されました。全景カメラモードに切り替えると、カメラを上下左右に自由に動かしたり、遠近を調整したりできるようになり、従来の視点の制限を打破し、様々な角度から衣装のディテールや全体の染色効果を細かく確認できるようになります。また、染色画面にポーズのオン/オフ切り替えボタンが追加され、現在使用している特殊なポーズを一時的にオフにできます。染色画面の体験も最適化され、アップデート後、染色画面で衣装に関連するダイナミックな動作がデフォルトでトリガーされなくなります。プレイヤーはゲームシステム設定からこれをオン/オフできます。\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+    "summaryJa": "・追加: 染色画面に新機能「全景カメラ」モードが追加され、カメラの自由な操作が可能に\n・追加: 染色画面にポーズのオン/オフ切り替えボタンが追加され、特殊ポーズを一時的にオフにできる\n・変更: アップデート後、染色画面で衣装関連のダイナミックな動作がデフォルトでトリガーされなくなる（設定で変更可能）\n・期間: 全新4.4バージョン「神迹初诞」は9月1日から9月21日まで期間限定で登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e879cca06351747d0bd033c2",
@@ -1375,7 +1381,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -1736,7 +1742,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5179,6 +5185,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
