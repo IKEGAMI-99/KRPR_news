@@ -1625,6 +1625,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788023472
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7662322532866968848": {
+      "contentHash": "1cbd9d3c69f7f04b6383f51c",
+      "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「香りの饗宴」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームR...",
+      "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「香りの饗宴」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームR...",
+      "summaryJa": "・追加: イベント「七宝庭の香り」に登場する新星5セット「香りの饗宴」の動画が公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788023590
+    },
+    "https://www.youtube.com/watch?v=TT2iqQF9tMs": {
+      "contentHash": "73b2ad0912c15dc27773c9d2",
+      "titleJa": "『きらめきパラダイス』新星6セット『春酔う蕃神』のPVを公開",
+      "bodyJa": "新イベント『蔓守の誓い』が7月16日にスタート！\n『きらめきパラダイス』の新星6イベントのPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+      "summaryJa": "・新イベント「蔓守の誓い」が7月16日にスタート\n・キラパラの新星6イベントのPVが公開された\n・キラパラは次世代ガールズドリームRPGとして好評配信中",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788023624
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7659996356949413136": {
+      "contentHash": "c1cad01630552fe7608894eb",
+      "titleJa": "『夢巡る広野』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #自由な私 ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リン...",
+      "bodyJa": "『夢巡る広野』特別投稿キャンペーン開催👗 テーマ ✨ #キラパラ と #自由な私 ハッシュタグをつけて作品を投稿した方へ 抽選でAmazonギフト券を🎁 応募リン...",
+      "summaryJa": "・イベント名: 『夢巡る広野』特別投稿キャンペーンが開催されます\n・テーマ: #キラパラ と #自由な私\n・参加方法: 作品を投稿し、指定のハッシュタグを付ける\n・特典: 抽選でAmazonギフト券が当たる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788023658
     }
   },
   "failures": {
