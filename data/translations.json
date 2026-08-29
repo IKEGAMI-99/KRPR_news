@@ -1355,6 +1355,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788016345
+    },
+    "https://www.youtube.com/shorts/fTCpwS5bfaU": {
+      "contentHash": "63aae6cc59668df75bcf3840",
+      "titleJa": "『薔薇の星宮』背景パッケージが明日リリース",
+      "bodyJa": "薔薇色のステンドグラスが空間を赤く染め、鏡の中の存在は真実を隠したまま甘い囁きを届けてくれます。美しい女王の星宮へあなたを招待します。🌹\n\n🕙 8/11 10:30 〜 8/24 23:59\n\n[パッケージ情報]\n- ライブ撮影ポーズ「ナイトサンバ」\n- 撮影背景「女王の部屋」\n- 撮影ポーズ「心のサイン」\n- チャット吹き出し「声なき告白」\n- トレンドカラーカード ×26\n- 出会いのかぎ ×40\n\n※ 詳細については、リリース後にゲーム内にてご確認ください。\n\n#Stylight #스타일라잇강림 #스타일라잇업데이트 #달의심판",
+      "summaryJa": "・追加: 『薔薇の星宮』背景パッケージが明日リリース\n・期間: 8/11 10:30 〜 8/24 23:59\n・内容: ライブ撮影ポーズ「ナイトサンバ」、撮影背景「女王の部屋」、撮影ポーズ「心のサイン」、チャット吹き出し「声なき告白」、トレンドカラーカード ×26、出会いのかぎ ×40が含まれる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788017346
+    },
+    "https://www.bilibili.com/video/BV1nPuh65E3C": {
+      "contentHash": "d0109bba1147f5fa2c17e737",
+      "titleJa": "新バージョン4.3｜★5セット「花間茶約」実機展示",
+      "bodyJa": "#以闪亮之名怪美的# 新バージョン4.3「花庭绮宴」8月11日〜8月31日限定ログイン！\n\n❗巨大なパニエスカートの具現化❗ドレスの芸術的革新：18世紀ロココ時代の誇張されたパニエの要素をファッションデザインに組み込み、「スカート」と「ティーテーブル」を有機的に融合させ、優雅さを倍増させました。\n❗31種類の複雑な暗紋レース模様❗全セットのファッションは31種類の重厚な紋様ディテールを融合させ、複雑な美学を極限まで表現しています。\n❗スイーツのような重厚レースのシューズ❗シューズは独創的なケーキカットの防水台を採用し、重厚なレース生地とリボンレースのソックスを囲むことで、ロココ時代の甘美な幻想をファッションデザインに投影しています。\n\n🍰【巨大パニエスカート、フランスの優雅さを表現】\nロココ時代は、18世紀フランス芸術の最も...",
+      "summaryJa": "・追加: ★5セット「花間茶約」が登場\n・期間: 8月11日〜8月31日\n・特徴: 18世紀ロココ時代の巨大パニエスカートをドレスに融合させたデザイン\n・特徴: 31種類の複雑な暗紋レース模様と、ケーキカットの防水台を採用したシューズ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788017428
+    },
+    "https://www.bilibili.com/video/BV1ZFu468E4s": {
+      "contentHash": "5ae8934fd44501e4effe729e",
+      "titleJa": "新4.3バージョン｜花庭綺宴PV初公開、蜡影缭香、茶歇栖梦",
+      "bodyJa": "#以闪亮之名怪美的# 全新4.3バージョンが8月11日から8月31日まで期間限定で登場！\n🎁フォロー＆巻き髪を完了すると、Summerがランダムで10名の幸運なプレイヤーに【200元ショッピングカード×1】をプレゼントします。\n\nそこには、永遠にアフタヌーンティーの時間に留まる庭園があります。\nそこには、消える直前のキャンドルが灯っています。\n\n彼女たちは世界の両端で、\n同じ夢を共有しながらも、\n常に異なる空間で目覚めています。\n繁花の中でそっと顔を上げ、\nキャンドルの光の中でゆっくりと振り返る。\n彼女たちは決して互いを掴むことはありませんでしたが、\n自分の心の中に、\nまるで別の季節が住んでいるような気がしていました。\n\n風が吹き抜け、\n光と影が交換され始めたとき。\nティーパーティーのキャンドルの炎が咲き誇り、\n運命はついに彼女たちを分ける方法を忘れてしまったのです。",
+      "summaryJa": "・追加: 全新4.3バージョンが8月11日から8月31日まで期間限定で登場\n・イベント: 「花庭綺宴」が期間限定で開催\n・特典: フォロー＆巻き髪を完了すると、Summerがランダムで10名のプレイヤーに【200元ショッピングカード×1】をプレゼント",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788017512
     }
   },
   "failures": {
