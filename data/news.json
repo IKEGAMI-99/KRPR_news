@@ -599,7 +599,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -925,7 +925,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -1568,7 +1568,13 @@
         "url": "https://x.com/stylight_kr/status/2091812776150786051"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【イベント】『バニートラベル』ウサギと一緒に様々な地域と特別名所を旅して、旅の途中でサプライズ報酬をゲットしよう。🎁メイン報酬: - 5★セット「ピーチシャルトレット」",
+    "bodyJa": "【イベント】『バニートラベル』\n\nウサギと一緒に様々な地域と特別名所を旅して、\n旅の途中でサプライズ報酬をゲットしよう。\n\n🎁メイン報酬:\n- 5★セット「ピーチシャルトレット」\n\n🕙 8/25 10:30 〜 9/8 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+    "summaryJa": "・追加: イベント『バニートラベル』が開催\n・内容: ウサギと一緒に様々な地域と特別名所を旅し、サプライズ報酬を獲得できる\n・メイン報酬: 5★セット「ピーチシャルトレット」\n・期間: 8/25 10:30 〜 9/8 5:00",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "8b0a9b074bb4d57d8b52e52e",
@@ -4412,6 +4418,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]

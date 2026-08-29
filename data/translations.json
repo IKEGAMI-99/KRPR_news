@@ -515,6 +515,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787964445
+    },
+    "https://x.com/stylight_kr/status/2091812776150786051": {
+      "contentHash": "2fe8ca63c2cc98345eced1b9",
+      "titleJa": "【イベント】『バニートラベル』ウサギと一緒に様々な地域と特別名所を旅して、旅の途中でサプライズ報酬をゲットしよう。🎁メイン報酬: - 5★セット「ピーチシャルトレット」",
+      "bodyJa": "【イベント】『バニートラベル』\n\nウサギと一緒に様々な地域と特別名所を旅して、\n旅の途中でサプライズ報酬をゲットしよう。\n\n🎁メイン報酬:\n- 5★セット「ピーチシャルトレット」\n\n🕙 8/25 10:30 〜 9/8 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: イベント『バニートラベル』が開催\n・内容: ウサギと一緒に様々な地域と特別名所を旅し、サプライズ報酬を獲得できる\n・メイン報酬: 5★セット「ピーチシャルトレット」\n・期間: 8/25 10:30 〜 9/8 5:00",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787965428
     }
   }
 }
