@@ -84,8 +84,11 @@
 
   window.addEventListener('popstate', () => {
     const kind = currentOverlay();
-    if (kind) closeOverlay(kind);
-    else active = null;
-    requestAnimationFrame(restoreOverlayScroll);
+    if (kind) {
+      closeOverlay(kind);
+      requestAnimationFrame(restoreOverlayScroll);
+    } else {
+      active = null;
+    }
   });
 })();

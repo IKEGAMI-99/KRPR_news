@@ -89,6 +89,7 @@ AIが変更を始める前に、対象機能について少なくとも以下を
 | 実装差分析 | `data/gap_analysis.json` |
 | Stable基準 | `data/stable_release.json` |
 | PWA本体 | `docs/index.html` / `docs/app.js` / 関連CSS・JS |
+| 20件ページングの計算 | `docs/pagination.js` / `tests/test_pagination.js` |
 | Service Worker | `docs/sw.js` |
 | 利用規約 | `docs/terms.html` |
 | プライバシーポリシー | `docs/privacy.html` |
@@ -119,6 +120,7 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 12. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
 13. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
 14. **1件の生成失敗で翻訳backlog全体を止めない。** 3回の生成試行を使い切った記事は失敗状態を保存して6時間後まで後回しにし、後続記事へ進むこと。
+15. **タイムライン全件を一度にDOMへ戻さない。** `docs/pagination.js` の20件単位を維持し、地域・ページをURLへ保存すること。記事更新で件数が増減した場合は総ページ数を再計算し、範囲外ページを最後の有効ページへ補正すること。
 
 ## Explicitly removed / deprecated behavior
 
