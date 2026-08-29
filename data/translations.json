@@ -505,6 +505,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787963813
+    },
+    "https://x.com/stylight_kr/status/2091814017094270990": {
+      "contentHash": "a6d39b728cfa83a6b179671f",
+      "titleJa": "【予告】『奇妙な森』背景パックが明日リリース",
+      "bodyJa": "【予告】『奇妙な森』背景パックが明日リリース\n\n「一歩足を踏み入れた瞬間、平凡だった森が未知の姿へと変わります。\n巨大な花と名もなき草むらの中、奇妙な旅を始めてみませんか。」\n\n🕙 8/25 10:30 〜 9/7 23:59\n\n[パック情報]\n撮影背景「アリスの森」、ライブポーズ「花道散歩」など、様々なアイテムが含まれた美しいパックです。\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨",
+      "summaryJa": "・追加: 『奇妙な森』背景パックが明日リリース\n・期間: 8/25 10:30 〜 9/7 23:59\n・内容: 撮影背景「アリスの森」、ライブポーズ「花道散歩」など様々なアイテムを含むパック",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787964445
     }
   }
 }
