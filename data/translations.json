@@ -875,6 +875,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788005265
+    },
+    "https://www.bilibili.com/video/BV1Bp8v6gEZo": {
+      "contentHash": "d8c1e60b153191b3c225cb85",
+      "titleJa": "復刻イベント「追光」開催｜棱彩幻夢が間もなくスタート",
+      "bodyJa": "棱彩幻夢 | 晶芯裂变，时茧新生。8月25日10:00から9月14日23:59まで期間限定で開催！\n\n「夢や光錐以外の答えを問う必要はない」\n未完成の詩稿は次元の崩壊によって再演され、別の次元で新生し、花開きます。\nすべての時間の媒体が今、土から芽吹き、回転する水晶の各面がパラレルワールドのミサとなります――\n過去を映し出し、既に存在する未来を予感させるのです。",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 8月25日10:00〜9月14日23:59\n・イベント名: 棱彩幻夢",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788006180
+    },
+    "https://www.youtube.com/watch?v=wZc65lxjJ1o": {
+      "contentHash": "3177ed090c7910997c3bb07d",
+      "titleJa": "『きらめきパラダイス』新星6セット『修羅帰鞘』のPVを公開",
+      "bodyJa": "新イベント『孤刃帰鞘』が8月27日にスタート！\n『きらめきパラダイス』の新星6イベントのPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+      "summaryJa": "・新イベント『孤刃帰鞘』が8月27日にスタート\n・新星6セット「修羅帰鞘」のPVが公開\n・キラパラは次世代ガールズドリームRPGとして好評配信中\n・関連サイトとして公式X、公式Instagram、公式サイト、公式TikTokが紹介されている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788006216
+    },
+    "https://www.youtube.com/watch?v=z2FvMqDJCpg": {
+      "contentHash": "4b9f6537467aa8e5ec7adc07",
+      "titleJa": "『きらめきパラダイス』星5セットコーデ動画『占心の誓い』の実録動画を公開✨",
+      "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+      "summaryJa": "・追加: イベント「孤刃帰鞘」に登場する新星5セット「占心の誓い」の動画が公開されました\n・ゲームタイトル: キラパラ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788006247
     }
   },
   "failures": {
