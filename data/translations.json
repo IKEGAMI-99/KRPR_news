@@ -1655,15 +1655,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788023658
+    },
+    "https://www.taptap.cn/moment/821067872284446124": {
+      "contentHash": "27005764403493ede123401c",
+      "titleJa": "#以闪亮之名盛夏美学館# 創作コンテストが開始！",
+      "bodyJa": "これは『以闪亮之名盛夏美学館』からの招待状です。\n夏の盛典のキュレーターとなり、作品でコレクションを豊かにし、情熱で芸術を築き上げましょう。\n情報解説やレビュー系のカテゴリーが追加されました！本日より、ハッシュタグ「#以闪亮之名创作者激励」と「#以闪亮之名盛夏美学馆」を付けて、『以闪亮之名』の最新バージョンに関する素晴らしい創作物を共有すると、現金賞品を獲得するチャンスがあります。優秀な作品は『以闪亮之名』公式サイトに掲載され、多くのプレイヤーに愛される輝かしい作品になる可能性があります！優秀なクリエイターは、公式クリエイターチームに参加し、特別な創作イベントに参加して報酬を獲得するチャンスもあります。",
+      "summaryJa": "・追加: 情報解説やレビュー系のカテゴリーが追加された創作コンテストが開始\n・期間: 即日より開始\n・参加条件: ハッシュタグ「#以闪亮之名创作者激励」と「#以闪亮之名盛夏美学馆」を付けて創作物を共有すること\n・報酬: 現金賞品、公式サイトでの作品展示、公式クリエイターチームへの参加チャンス",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788025536
+    },
+    "https://www.tiktok.com/@stylightofficial/video/7598162863231995143": {
+      "contentHash": "6285c423d035df6f0ba8f9b2",
+      "titleJa": "【予告】『妖精の森』パッケージ明日リリース",
+      "bodyJa": "【予告】『妖精の森』パッケージが明日リリースされます！📜「風に乗った囁きが道を照らし、冒険者たちは広げられた地図に自らの信念を刻む。」🕙 2/3(火) 10:30...",
+      "summaryJa": "・追加: 『妖精の森』パッケージが明日リリースされることが予告された\n・日時: 2/3(火) 10:30",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788025575
     }
   },
   "failures": {
     "https://www.bilibili.com/opus/1241862310188810276": {
       "contentHash": "6379e58723e58b86adb551e3",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788002130,
-      "retryAfterEpoch": 1788023730
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788025461,
+      "retryAfterEpoch": 1788047061
     },
     "https://www.bilibili.com/opus/1241854577097048066": {
       "contentHash": "63cbfc66c000e120cbcc04f4",
