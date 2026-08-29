@@ -599,7 +599,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -925,7 +925,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -1367,7 +1367,13 @@
         "url": "https://x.com/kirapara_JP/status/2092165079798050874"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🔔分解ショップアイテム公開🔔 最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放",
+    "bodyJa": "🔔分解ショップアイテム公開🔔\n\n最新ガチャイベント開催と同時に、 分解ショップ『孤刃分解』も開放！\n星5浮遊やワンピースなどを手に入れよう✨\n\n詳細はゲーム内をチェックしてね👀\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・分解ショップ『孤刃分解』が最新ガチャイベントと同時に開放\n・分解ショップで星5浮遊やワンピースなどを入手可能\n・詳細はゲーム内を確認",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c80453468c860161b120b9fc",
@@ -1392,7 +1398,13 @@
     "sourceCount": 1,
     "imageMirrorUrls": [
       "https://ikegami-99.github.io/KRPR_news/media/weibo/d0a12faaf27e23900561.jpg"
-    ]
+    ],
+    "titleJa": "【200元ショッピングカード】を10名にプレゼント！当選者発表",
+    "bodyJa": "@芋泥草莓椰冻奶三分糖 などの10名に【200元ショッピングカード】が贈呈されました。本抽選は、微博公式の唯一の抽選ツールである@微博抽奖平台が公正かつ有効に監督しました。公示リンク：[Webリンク] \n - 以闪亮之名 をリポストし、以闪亮之名 #以闪亮之名# #以闪亮之名怪美的# をつけてください。\n\n新バージョン4.3「花庭绮宴」が8月11日から8月31日まで期間限定で登場！\n🎁フォロー＆「卷发」を完了すると、Summerがランダムに10名の幸運なプレイヤーを抽出し、各1名に【200元ショッピングカード*1】をプレゼントします。\n\nある庭園は、永遠にアフタヌーンティーの時間に留まります。\nある蝋燭の火は、消える直前に留まります。\n\n彼女たちは世界の両端で、\n同じ夢を分かち合いながらも、\n常に異なる空間で目覚めています。\n繁花の中でそっと顔を上げ、\n蝋燭の光の中でゆっくりと振り返る。\n彼女たちは決して互いを掴むことはありませんでしたが、\n自分の心の中に、\nまるで別の季節が住んでいるように感じていました。\n\n風が吹き抜け、\n光と影が交換され始めたとき。\nティーパーティーの蝋燭の炎が満開になり、\n運命はついに彼女たちを分けることを忘れてしまいました。\n\n💎ダウンロードはこちら：[Webリンク] \n💎以闪亮之名 華麗な作品上映シーズンイベントはこちら：[Webリンク] 以闪亮之名の微博動画（動画は表示できません。微博動画へアクセスしてください）。",
+    "summaryJa": "・プレゼント: 【200元ショッピングカード】を10名に贈呈\n・期間: 8月11日〜8月31日\n・参加条件: 以闪亮之名 をリポストし、以闪亮之名 #以闪亮之名# #以闪亮之名怪美的# をつける\n・入手方法: 关注+卷发を完了すると、Summerがランダムに10名のプレイヤーを抽選し、各1名にプレゼント",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b761daa769775c2c4476eea8",
@@ -4379,6 +4391,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
