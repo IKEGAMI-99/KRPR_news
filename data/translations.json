@@ -965,6 +965,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788007297
+    },
+    "https://x.com/LifeMakeover510/status/2090748244867637521": {
+      "contentHash": "739eee26bd2ef8c69e3cce43",
+      "titleJa": "クリエイター限定ファッションインスピレーションパックのアンロックおめでとうございます",
+      "bodyJa": "クリエイター限定ファッションインスピレーションパックのアンロックおめでとうございます！\n\n⏰報酬受け取り期間: 8月21日 00:00 - 11月21日 23:59 (UTC+0)\n📌受け取り方法: 報酬受け取り期間中にLife Makeoverにログインすると、メールで報酬を受け取ることができます。\n\n#LifeMakeover",
+      "summaryJa": "・追加: クリエイター限定ファッションインスピレーションパックのアンロック\n・期間: 8月21日 00:00 - 11月21日 23:59 (UTC+0)\n・入手: 報酬受け取り期間中にLife Makeoverにログインし、メールで受け取る",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788008298
+    },
+    "https://www.youtube.com/shorts/aiLVXYE29S8": {
+      "contentHash": "320420b1cd0ff6bc60806b06",
+      "titleJa": "『魔女の密会』フローティング明日リリース",
+      "bodyJa": "「怪しく神秘的な紫色のスープ、魔界の秘密スープの秘伝が気になりますか？さあ、一口飲んでみてください。レシピは味わった者だけが知っているそうです。」\n\n🕙 8/22 10:30 〜 9/4 23:59\n\n [イベント詳細] \n- クエストをクリアして「魔界の秘密スープ」の所持品が含まれる魔女の密会を破格の割引価格で手に入れましょう！\n\n※ 詳細については、リリース後にゲーム内でご確認ください。\n\n#Stylight #Stylightアップデート",
+      "summaryJa": "・追加: 「魔女の密会」がフローティングで明日リリース\n・期間: 8/22 10:30 〜 9/4 23:59\n・入手: クエストをクリアして「魔界の秘密スープ」の所持品が含まれる魔女の密会を破格の割引価格で獲得",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788008361
+    },
+    "https://x.com/stylight_kr/status/2090725606615069029": {
+      "contentHash": "bf040dbf2d3788fd052512dd",
+      "titleJa": "【予告】『魔女の密会』フローティング明日リリース「怪しげで神秘的な紫色のスープ、魔界の秘密スープの秘伝が知りたいですか」",
+      "bodyJa": "【予告】『魔女の密会』フローティング明日リリース\n\n「怪しげで神秘的な紫色のスープ、\n魔界の秘密スープの秘伝が知りたいですか？\nさあ、一口飲んでみてください。レシピは味わった人だけが知っているそうです。」\n\n🕙 8/22 10:30 〜 9/4 23:59\n\n [イベント詳細] \n- クエストをクリアして『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で手に入れましょう！\n\n※詳細はリリース後にゲーム内でご確認ください。\n\n#Stylight #Stylightアップデート",
+      "summaryJa": "・追加: 『魔女の密会』フローティングが明日リリース\n・期間: 8/22 10:30 〜 9/4 23:59\n・入手: クエストをクリアして『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で獲得可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788008430
     }
   },
   "failures": {
