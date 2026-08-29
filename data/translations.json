@@ -1685,6 +1685,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788026182
+    },
+    "https://www.tiktok.com/@stylightofficial/video/7598162253593988370": {
+      "contentHash": "ef11a3b3d9ce3e101c63edbe",
+      "titleJa": "【予告】『アラビアンファンタジー』フローティングパッケージが明日リリース",
+      "bodyJa": "【予告】『アラビアンファンタジー』フローティングパッケージが明日リリース！幻想的なアラビアンの世界へ旅立つ時間です！『アラビアンファンタジー』パッケージが期間限定でオープン✨ 🕙 1/24(土) 10:30...",
+      "summaryJa": "・追加: 『アラビアンファンタジー』フローティングパッケージが明日リリースされる\n・期間: 1/24(土) 10:30から",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788026302
+    },
+    "https://www.tiktok.com/@stylightofficial/video/7597722361009392914": {
+      "contentHash": "b5b0d51397c36702c4fd283f",
+      "titleJa": "深淵から目覚めた宝石、その光は災厄か奇跡か。砂漠の息吹を辿り、封印された千年の夢へと一歩踏み出す。- スギ期間限定SSR『太陽神の...』",
+      "bodyJa": "深淵から目覚めた宝石、その光は災厄か奇跡か。砂漠の息吹を辿り、封印された千年の夢へと一歩踏み出す。- スギ期間限定SSR『太陽神の...』",
+      "summaryJa": "・追加: スギ期間限定SSR『太陽神の...』が登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788026332
+    },
+    "https://www.tiktok.com/@stylightofficial/video/7595843282261822741": {
+      "contentHash": "9638d5cd8cba02562f97b6f0",
+      "titleJa": "【アップデート】『運命の矢』予告編動画「運命の矢が触れる瞬間、心臓は花のように咲き誇る。」Hymne à l’Amour—誰にも逃れられない賛歌、残酷ならば…",
+      "bodyJa": "【アップデート】『運命の矢』予告編動画「運命の矢が触れる瞬間、心臓は花のように咲き誇る。」Hymne à l’Amour—誰にも逃れられない賛歌、残酷ならば…",
+      "summaryJa": "・追加: 『運命の矢』予告編動画が公開されました\n・内容: 「運命の矢が触れる瞬間、心臓は花のように咲き誇る。」Hymne à l’Amour—誰にも逃れられない賛歌、残酷ならば…",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788026368
     }
   },
   "failures": {
