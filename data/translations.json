@@ -350,9 +350,9 @@
       "bodyJa": "以闪亮之名 #以闪亮之名# #キラキラニャ語屋# #全ネットで私のOOTDの相棒を募集# \n\nプレイヤーの絶美な作品を全方位で展示\n\n🔮全ネットで私のOOTDの相棒を募集「真夜中編」\n🔮プレイヤーの絶美な作品展示\n🔮これらの作品をどう思いますか？\n✅世界中から、美神の降臨を感じてください\n✅まるで小さなケーキのようです\n✅通りかかっただけで萌えちゃいます\n\n❤️今期の展示作品は以下のプレイヤーから提供されています：\nWildest\n沐沐想星星\n炸鱼狂奔\nPenguin💠\n胡云zhen\nfoooooliao_\n吃鱼丸不（气愤版）\n哇叽吧唧呱啦哈\n南漪(限限限~流中)\n\n💎ダウンロードはこちら： Webリンク \n💎キラキラ作品上映シーズンイベントはこちら： Webリンク",
       "summaryJa": "・イベント: 全ネットで私のOOTDの相棒を募集「真夜中編」が開催\n・内容: プレイヤーの絶美な作品を全方位で展示\n・参加: プレイヤーが作品を投稿し、展示される\n・情報: 展示作品のダウンロードリンクおよびイベントリンクが提供されている",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v1",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1787879995
+      "updatedAtEpoch": 1787961732
     },
     "https://www.taptap.cn/game-event/5122": {
       "contentHash": "7a312c7dc611a1bf025b54c9",
@@ -455,6 +455,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787960610
+    },
+    "https://x.com/kirapara_JP/status/2092167598372958331": {
+      "contentHash": "04756e9127b67fb569eb6de2",
+      "titleJa": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #着せ替えゲーム",
+      "bodyJa": "SSR絆💞レイ『揺るがぬ錨』の動画をいち早く公開🎞️\nぜひGETしてみてください🥰\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・追加: SSR絆💞レイ『揺るがぬ錨』の動画が公開されました\n・入手: キラパラにてGET可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787961756
     }
   }
 }
