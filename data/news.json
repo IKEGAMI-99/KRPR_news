@@ -3382,7 +3382,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7675641951676321045"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残る。消えゆくキャンドルの光が記憶の反射をぼかす中...",
+    "bodyJa": "白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残る。消えゆくキャンドルの光が記憶の反射をぼかす中...",
+    "summaryJa": "・追加: 白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残るという内容のコンテンツが追加されました",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "be299545a7d8067a3341b0ac",
@@ -3404,7 +3410,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "🎁 愛に満ちた贈り物",
+    "bodyJa": "🎁 愛に満ちた！特別なプレゼント！\n\n星の光が愛に染まる特別な日を迎え、\nStylightのパートナーの皆様へサプライズギフトをご用意しました✨\n\n🕙 8/19 00:00 〜 8/21 23:59\n\nイベント期間中にゲームにログインすると、\nメールボックスから以下の報酬を受け取ることができます。\n\n🎁 特別プレゼント\nダイヤ ×200\nトレンドカラーカード ×77\nゴールド ×30,000\n\n大切な人と想いを分かち合い、\n今日もStylightと共に輝く一日をお過ごしください！\n\n#Stylight #Stylightイベント",
+    "summaryJa": "・追加: 特別プレゼントが配布される\n・期間: 8/19 00:00 〜 8/21 23:59\n・入手: イベント期間中のゲームログイン\n・報酬: ダイヤ×200、トレンドカラーカード×77、ゴールド×30,000",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "9f9ea3291c57f0162be5aeaa",
@@ -3426,7 +3438,13 @@
         "url": "https://www.bilibili.com/video/BV1rBbr6bE2N"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "復刻イベント「追光」開催｜谲舞缚厄が間もなくスタート",
+    "bodyJa": "「歌を踏み、誘惑を祭りに捧げ、この世の盛宴へ私を誘うのか？」\n「身を正して神魔を招き入れる。お前は私の舞踏の下の無数の影の一つに過ぎない。」\n「影？傩師大人、よく見えたか？一体誰の舞踏が、誰の魂を引いているのだ？」\n「私の舞踏は止まらない。この神聖な饗宴は私が主宰する。」\n「そうか？では、お前が祭品を捧げた時、お前自身も……祭品の一部になることを考えたことはあるか？」\n「この世の全ての彼女たちのために、身を捧げ、共に堕ちてゆこう。」\n\n子時三刻、陰陽の道が通じ、\n私は魂を誘う幽かな火を灯す；\nお前は祭典の鼓動を辿り、この世の至高の美しき光景に魅了される。\n志怪伝の言葉で私を誘惑しようとするな；\n歌を踏み、地を牢獄とせよ。",
+    "summaryJa": "・復刻イベント「追光」が間もなく開催される\n・イベントのテーマは「谲舞缚厄」である",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "dd4b3cc7b2c84f02d525a7b4",
