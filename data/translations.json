@@ -1025,6 +1025,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788008913
+    },
+    "https://x.com/LifeMakeover510/status/2090015931934408922": {
+      "contentHash": "65ecb64ae46a60a4eb15b430",
+      "titleJa": "キャンドルの光に映る真夜中の招待状 新バージョン「ガーデン・ソワレ」8月19日から9月8日まで開催",
+      "bodyJa": "キャンドルの光に映る真夜中の招待状\n新バージョン「ガーデン・ソワレ」が8月19日から9月8日まで開催されます！\n\n✨ 真夜中のティーパーティーへの招待状が届きました\n✨ 皆様が最高の装いでご参加くださり、ありがとうございます\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
+      "summaryJa": "・追加: 新バージョン「ガーデン・ソワレ」が追加\n・期間: 8月19日〜9月8日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788009037
+    },
+    "https://x.com/LifeMakeover510/status/2090008371608858833": {
+      "contentHash": "0f834ba1cefc8071a7a6b4d3",
+      "titleJa": "Life Makeover × 官大洲：新テーマソング登場",
+      "bodyJa": "Life Makeoverが官大洲と再びタッグを組み、張熙雲の美しい歌声による新テーマソング「故郷の頌歌（Homeland Ode）」をリリースしました。\n\nパネルミュージックをタップして、将軍が故郷へ帰る旅路を感じてください。",
+      "summaryJa": "・追加: 新テーマソング「故郷の頌歌（Homeland Ode）」が追加\n・出演: 張熙雲の歌声による楽曲",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788009075
+    },
+    "https://x.com/stylight_kr/status/2090005853076344992": {
+      "contentHash": "7f413682aa20e6eca04831e8",
+      "titleJa": "トレンドコード『太陽の神託』明日リリース 🏜️ 古代王国の廃墟に神託の歌が響き渡り、果てしない黄金の砂漠を横断します。StylightのN...",
+      "bodyJa": "トレンドコード『太陽の神託』明日リリース\n\n🏜️ 古代王国の廃墟に神託の歌が響き渡り、\n果てしない黄金の砂漠を横断します。\n\nStylightのNEWトレンドコードが登場！\n\n🕙 8/20 10:30 - 9/30 23:59\n\n[イベント詳細]\n- 様々なデイリーミッションをこなすと無料報酬を獲得できます\n- アドバンスパスを購入すると、2,000個のダイヤと限定衣装「太陽の神託」、そして特別な専用報酬など、豊富な報酬を追加で獲得できます\n\n※詳細はゲーム内にてご確認ください。\n\n#Stylight #Stylightアップデート",
+      "summaryJa": "・追加: トレンドコード『太陽の神託』が明日リリース\n・期間: 8/20 10:30〜9/30 23:59\n・入手: トレンドコードの利用\n・報酬: デイリーミッションで無料報酬、アドバンスパス購入でダイヤ2,000個と限定衣装「太陽の神託」など",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788009147
     }
   },
   "failures": {

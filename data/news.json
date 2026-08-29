@@ -1667,7 +1667,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -2022,7 +2022,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -3124,7 +3124,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HQDgXcWbMAAyENb?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "キャンドルの光に映る真夜中の招待状 新バージョン「ガーデン・ソワレ」8月19日から9月8日まで開催",
+    "bodyJa": "キャンドルの光に映る真夜中の招待状\n新バージョン「ガーデン・ソワレ」が8月19日から9月8日まで開催されます！\n\n✨ 真夜中のティーパーティーへの招待状が届きました\n✨ 皆様が最高の装いでご参加くださり、ありがとうございます\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
+    "summaryJa": "・追加: 新バージョン「ガーデン・ソワレ」が追加\n・期間: 8月19日〜9月8日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e7198cbc048370ec4c4f1f8a",
@@ -3146,7 +3152,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Life Makeover × 官大洲：新テーマソング登場",
+    "bodyJa": "Life Makeoverが官大洲と再びタッグを組み、張熙雲の美しい歌声による新テーマソング「故郷の頌歌（Homeland Ode）」をリリースしました。\n\nパネルミュージックをタップして、将軍が故郷へ帰る旅路を感じてください。",
+    "summaryJa": "・追加: 新テーマソング「故郷の頌歌（Homeland Ode）」が追加\n・出演: 張熙雲の歌声による楽曲",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "aa5ee0a3a212b47e1ab447bd",
@@ -3168,7 +3180,13 @@
         "url": "https://x.com/stylight_kr/status/2090005853076344992"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "トレンドコード『太陽の神託』明日リリース 🏜️ 古代王国の廃墟に神託の歌が響き渡り、果てしない黄金の砂漠を横断します。StylightのN...",
+    "bodyJa": "トレンドコード『太陽の神託』明日リリース\n\n🏜️ 古代王国の廃墟に神託の歌が響き渡り、\n果てしない黄金の砂漠を横断します。\n\nStylightのNEWトレンドコードが登場！\n\n🕙 8/20 10:30 - 9/30 23:59\n\n[イベント詳細]\n- 様々なデイリーミッションをこなすと無料報酬を獲得できます\n- アドバンスパスを購入すると、2,000個のダイヤと限定衣装「太陽の神託」、そして特別な専用報酬など、豊富な報酬を追加で獲得できます\n\n※詳細はゲーム内にてご確認ください。\n\n#Stylight #Stylightアップデート",
+    "summaryJa": "・追加: トレンドコード『太陽の神託』が明日リリース\n・期間: 8/20 10:30〜9/30 23:59\n・入手: トレンドコードの利用\n・報酬: デイリーミッションで無料報酬、アドバンスパス購入でダイヤ2,000個と限定衣装「太陽の神託」など",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "364d0d3f32c21d47c3a3c078",
@@ -5290,6 +5308,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
