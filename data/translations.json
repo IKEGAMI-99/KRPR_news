@@ -1675,6 +1675,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788025575
+    },
+    "https://www.tiktok.com/@stylightofficial/video/7598162590203792647": {
+      "contentHash": "3df4b7e930354cee40f93b27",
+      "titleJa": "【予告】『ラストワールド』パッケージが明日リリース",
+      "bodyJa": "【予告】『ラストワールド』パッケージが明日リリース！機械都市の黄昏に閃光が走り、混沌の隙間から新たな存在たちが目覚める。🕙 1/27(火) 10:30 〜 2/9(月) 2...",
+      "summaryJa": "・追加: 『ラストワールド』パッケージが明日リリースされる\n・期間: 1/27(火) 10:30 〜 2/9(月) 2...",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788026182
     }
   },
   "failures": {
@@ -1687,17 +1697,17 @@
     },
     "https://www.bilibili.com/opus/1241854577097048066": {
       "contentHash": "63cbfc66c000e120cbcc04f4",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788003169,
-      "retryAfterEpoch": 1788024769
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788025908,
+      "retryAfterEpoch": 1788047508
     },
     "https://www.taptap.cn/moment/842461141631240483": {
       "contentHash": "058fab4030fdb5741e56caa3",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788003396,
-      "retryAfterEpoch": 1788024996
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788026142,
+      "retryAfterEpoch": 1788047742
     },
     "https://www.bilibili.com/opus/1241187139140452373": {
       "contentHash": "f5562842f14a2337c3b0adf1",
