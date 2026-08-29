@@ -555,6 +555,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787967391
+    },
+    "https://www.bilibili.com/opus/1240026209509703687": {
+      "contentHash": "0d37f19eca84fbdb37b1fc54",
+      "titleJa": "復刻「追光」イベント｜★4セット「暖霧絨心」プレビュー",
+      "bodyJa": "復刻「追光」イベント｜★4セット「暖霧絨心」プレビュー！\nPrism Dream | Crystal Core Fission, Time Cocoon Rebirth. 8月25日10:00〜9月14日23:59に期間限定で開催！\n\n繊細で柔らかい触感、温かみと安心感~\nコピー＆ペーストの世界で、追うこと以外に、\n自分だけの欠片を集めるべきだ。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 8月25日10:00〜9月14日23:59\n・追加: ★4セット「暖霧絨心」がプレビューされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787968041
     }
   }
 }
