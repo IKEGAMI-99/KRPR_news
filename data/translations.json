@@ -1325,6 +1325,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788016104
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7673076334717046037": {
+      "contentHash": "6067525d7ff5f79775caf605",
+      "titleJa": "Life Makeover 新バージョン4.2 | ★5セット「Phantom Candle」のゲーム内映像！",
+      "bodyJa": "Life Makeover 新バージョン4.2 | ★5セット「Phantom Candle」のゲーム内映像！蝋、炎、蜘蛛の巣、そしてクリスタルが融合したこの衣装が、皆様の心を捉えることを願っています…",
+      "summaryJa": "・追加: ★5セット「Phantom Candle」が登場\n・内容: 衣装のゲーム内映像が公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788016209
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7673049036307418388": {
+      "contentHash": "3c6c86348517d1001aa20cb4",
+      "titleJa": "Life Makeover 新バージョン 4.2 | ガーデン・ソワレ トレイルー キャンドルの影が香りの渦の中で踊り、夢が安らぎを見つける場所",
+      "bodyJa": "Life Makeover 新バージョン 4.2 | ガーデン・ソワレ トレイルー キャンドルの影が香りの渦の中で踊り、夢が安らぎを見つける場所。ティーブレイクで新しいバージョンが...",
+      "summaryJa": "・追加: 新バージョン 4.2 が登場\n・内容: ガーデン・ソワレ トレイルーのトレーラー公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788016235
+    },
+    "https://cms.zulong.com:443/jeecms/yslzmxw/4473.jhtml": {
+      "contentHash": "5762699de2c1cc079199f981",
+      "titleJa": "『以闪亮之名』新4.3花庭绮宴バージョン本日更新",
+      "bodyJa": "『以闪亮之名』が新4.3花庭绮宴バージョンを本日更新しました。蜡影缭香，茶歇栖梦（蝋影缭香、茶歇栖夢）をテーマに、視覚的な衝撃と楽しい体験を兼ね備えた夏の夢の旅をプレイヤーに提供します。\n\n【新4.3バージョン 花庭绮宴】\n・期間: 2026年8月11日より8月31日まで\n・内容: 新しい双5星限定衣装「烛魇幽歌」と「花间茶约」の登場、新しい狐の萌宠、カジュアルな牌局ゲームプレイ、大量の福利イベントが同時解放されました。\n\n【5星セット「烛魇幽歌」】\n・デザイン: 白哥特美学を核とし、蝋燭、蜘蛛の巣、幽霊などの古典的なイメージを再構築。白を基調とした色調とゴシックアートの雰囲気を融合させています。\n・特徴: 腿のない浮遊する双形態を実現。腿は隠したり現したりでき、燃焼と再生、虚幻と現実の間に漂うようなデザインです。\n・ヘアスタイル: 風に吹かれる炎を模した非対称なデザインで、静止時にも流動的な美しさを表現しています。\n・シューズ: 幽霊が漂うような無重力感を模した浮遊状態のシューズです。\n・装飾: 蜘蛛の巣は束縛ではなく幻想世界を繋ぐ精巧な模様として再解釈され、髪飾りや面飾りに施されています。蝋燭の滴る液は衣装の輪郭を形成し、花苞状のアウターは燃焼後の霧を表現しています。\n\n【5星セット「花间茶约」】\n・デザイン: 18世紀ロココ時代の誇張されたパニエスカートの構造を衣装デザインに組み込んだ、ロココ風のスタイルです。\n・特徴: 巨大なパニエスカートの構造を実体化し、繊細なレースの骨組みが華麗な質感を演出しています。",
+      "summaryJa": "・追加: 新4.3花庭绮宴バージョンが本日更新され、2026年8月31日まで期間限定でプレイ可能\n・追加: 双5星限定衣装「烛魇幽歌」（白哥特風）と「花间茶约」（ロココ風）が登場\n・追加: 新しい狐の萌宠、カジュアルな牌局ゲームプレイ、大量の福利イベントが同時解放された\n・衣装「烛魇幽歌」: 腿のない浮遊する双形態や、蝋燭、蜘蛛の巣をモチーフにした白哥特美学が特徴\n・衣装「花间茶约」: 18世紀ロココ時代の巨大なパニエスカートの構造を衣装に組み込んだデザイン",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788016345
     }
   },
   "failures": {
