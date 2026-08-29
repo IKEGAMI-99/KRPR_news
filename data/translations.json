@@ -1565,6 +1565,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788021998
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7664867764099665168": {
+      "contentHash": "ec0ff066c91f3b0f94cf7bf0",
+      "titleJa": "新イベント『七宝庭の香り』が8月6日より開催",
+      "bodyJa": "新イベント『七宝庭の香り』が8月6日より開催！ 『きらめきパラダイス』の新星5イベントPVを公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+      "summaryJa": "・新イベント『七宝庭の香り』が8月6日より開催\n・キラパラの新星5イベントPVが公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788022685
+    },
+    "https://www.taptap.cn/moment/828260941740116010": {
+      "contentHash": "3476a7a95d23487cce4f4dd4",
+      "titleJa": "7月21日4.3バージョン更新後、ゲーム内に以下のイベントが追加されます。",
+      "bodyJa": "7月21日4.3バージョン更新後、ゲーム内に以下のイベントが追加されます。\n#以闪亮之名と一緒にお家に帰ろう# 全新4.3バージョン・万世平戎 7月21日〜8月10日限定ログイン！\n🎪イベント告知\nイベント1：全新追光活動【孤刃归鞘】期間限定開催\n7月21日10:00、限定追光活動【孤刃归鞘】が開始！全新★6セットおよびSSR絆が期間限定で登場！この追光活動は、登場25回以内に必ず新しい限定★6セットのパーツを入手できます（限定★6セットを揃えるまで）。限定★6セットを揃えると、専用の登場アクション（カメラのレンズが動く）が解放されます。",
+      "summaryJa": "・追加: 全新追光活動【孤刃归鞘】が期間限定で開始\n・期間: 7月21日10:00〜8月10日\n・内容: 限定★6セットおよびSSR絆が期間限定で登場\n・条件: この追光活動は、登場25回以内に必ず新しい限定★6セットのパーツを入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788022760
+    },
+    "https://www.bilibili.com/video/BV1jWNZ66E7Q": {
+      "contentHash": "9d057c8f27d38231655cb01b",
+      "titleJa": "【ライブ配信アーカイブ】生生不息「帰途」有光 2026年7月17日18時開催分",
+      "bodyJa": "【ライブ配信アーカイブ】生生不息「帰途」有光 2026年7月17日18時開催分",
+      "summaryJa": "・内容: 生生不息「帰途」有光のライブ配信アーカイブが公開されました\n・日時: 2026年7月17日18時開催分",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788022807
     }
   },
   "failures": {
