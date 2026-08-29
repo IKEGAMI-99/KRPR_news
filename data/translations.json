@@ -1205,6 +1205,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788012943
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7674843162795396373": {
+      "contentHash": "f4ccd4b4f222c717830320dc",
+      "titleJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+      "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+      "summaryJa": "・追加: キラパラのイベント「孤刃帰鞘」に登場する新星5セット「占心の誓い」の動画が公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788013679
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7674837363520015637": {
+      "contentHash": "8b87ff1ace1d56fde07dd36f",
+      "titleJa": "新イベント『孤刃帰鞘』が8月27日にスタート",
+      "bodyJa": "新イベント『孤刃帰鞘』が8月27日にスタート！ 『きらめきパラダイス』の新星6イベントのPVを公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『...",
+      "summaryJa": "・新イベント『孤刃帰鞘』が8月27日にスタート\n・『キラパラ』の新星6イベントのPVが公開された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788013708
+    },
+    "https://www.youtube.com/watch?v=ZNuBqOOs-dU": {
+      "contentHash": "f37a650bf502ccc12d7b990e",
+      "titleJa": "Life Makeover 新バージョン | ★5セット「Petal Tea Time」ゲーム内映像公開",
+      "bodyJa": "新バージョン | ★5セット「Petal Tea Time」のゲーム内映像が公開されました！\n\n❗スカートとティーテーブルを融合させた巨大なパニエ❗ 18世紀の誇張されたスカートのシルエットを完璧に具現化し、「スカート」と「ティーテーブル」を一つに融合させた、ファッションにおける革命的な革新です！\n❗31種類のテクスチャレース❗ 歴史的なファッションの貴重な復刻であり、31種類の異なる複雑なオートクチュールディテールを単一の衣装に融合させています！\n❗デザートを模した複雑なレースのフットウェア❗ ケーキスライスのようなプラットフォームヒール、複雑な巻きレース、リボンをあしらったストッキングが一体となり、ロココ時代の甘美なファンタジーを具現化しています！\n\n🍰 [巨大パニエ：18世紀フランス宮廷ガウンの優雅な魅力を解釈する] \nロココ時代は、18世紀フランス美術の最も輝かしい時代の一つです。\n\n洗練され、ロマンチックで豪華な美学を追求した時代において、衣服は単に体を覆う手段ではなく、地位、趣味、ライフスタイルを示す重要な芸術媒体でした。その中でも、18世紀フランス宮廷で生まれた「パニエ」のスカートホープは、その時代の最も象徴的なファッション構造の一つです。\n\n19世紀のヴィクトリア朝のクリンリンが丸みを帯びた膨らみを強調したのに対し、パニエの決定的な特徴は、前部と後部は比較的平らでありながら、側面に向かって劇的に広がる独自のシルエットです。広い裾が側方に広がり、非常にドラマチックな視覚的プロポーションを生み出し、着用者に宮廷貴族のような優雅でゆったりとした佇まいを与えます。\n\nこのデザインは、パニエを衣装の視覚的な中心として使用し、その古典的な構造を細部まで再現しています。この歴史的なシルエットを通じて、18世紀フランスの宮廷からそのまま抜け出たような物語的な雰囲気を再現したいと考えています。",
+      "summaryJa": "・追加: ★5セット「Petal Tea Time」のゲーム内映像が公開\n・衣装の特徴: 18世紀の巨大パニエとスカート・ティーテーブルの融合\n・衣装の特徴: 31種類の異なる複雑なオートクチュールディテールを融合したテクスチャレース\n・衣装の特徴: ケーキスライスのようなプラットフォームヒールと複雑なレースのフットウェア",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788013828
     }
   },
   "failures": {
