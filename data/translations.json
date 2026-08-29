@@ -1265,6 +1265,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788014554
+    },
+    "https://x.com/stylight_kr/status/2088190138820206754": {
+      "contentHash": "b1d6134ed71c78270ca79d06",
+      "titleJa": "【新着】『奇妙な森』背景パックの予告「一歩足を踏み入れた瞬間、普通の森が見知らぬ姿に変わります。巨大な花と名もなき草むらの中で奇妙な旅を…」",
+      "bodyJa": "【新着】『奇妙な森』背景パックの予告\n\n「一歩足を踏み入れた瞬間、普通の森が見知らぬ姿に変わります。\n巨大な花と名もなき草むらの中で奇妙な旅を始めてみませんか。」\n\n🕙 8/25 10:30 〜 9/7 23:59\n\n[パック情報]\n撮影背景「アリスの森」、ライブポーズ「花道散歩」など、様々なアイテムが含まれた美しいパックです。\n\n※詳細については、リリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 『奇妙な森』背景パックが予告された\n・期間: 8/25 10:30 〜 9/7 23:59\n・内容: 撮影背景「アリスの森」、ライブポーズ「花道散歩」など様々なアイテムを含むパック",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788015519
+    },
+    "https://x.com/stylight_kr/status/2088188891929207045": {
+      "contentHash": "7da4ab59648d2959f808ca25",
+      "titleJa": "【イベント】『魔女の密会』所持品パッケージ予告「怪しく神秘的な紫色のスープ、魔界の秘密スープの秘伝が知りたいですか」",
+      "bodyJa": "【イベント】『魔女の密会』所持品パッケージ予告\n\n「怪しく神秘的な紫色のスープ、\n魔界の秘密スープの秘伝が知りたいですか？\nさあ、一口食べてみてください。レシピは食べた人だけが知っているそうです。」\n\n🕙 8/22 10:30 〜 9/4 23:59\n\n [イベント詳細] \n- クエストを完了して『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で手に入れましょう！\n\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・イベント『魔女の密会』所持品パッケージが予告された\n・期間: 8/22 10:30 〜 9/4 23:59\n・内容: クエストを完了すると、『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で入手可能になる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788015566
+    },
+    "https://www.youtube.com/watch?v=DKBt-sRbqOo": {
+      "contentHash": "1b2985b3f5bf54ab566694f6",
+      "titleJa": "5★「星の航海記」インゲーム映像公開",
+      "bodyJa": "「まだ描かれていない航路を辿り、新しい世界へ旅立ちませんか？」\n\n広いつばの帽子から羽が軽やかに舞い、背後には星の航路が広がります。精巧なレースと丈夫なレザー、柔らかな生地が調和し、クラシックな優雅さと自由な旅人の雰囲気を完成させています。\n\n動くたびに髪と羽が風に揺れ、星の光は彼女が通り過ぎた場所に新しい道を残します。目的地が決まっていないため、彼女の旅はどこへでも続きます。\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #스타일라잇강림 #스타일라잇업데이트 #숲의선율",
+      "summaryJa": "・追加: 5★「星の航海記」のインゲーム映像が公開されました\n・衣装の特徴: 精巧なレースと丈夫なレザー、柔らかな生地が調和したクラシックで自由な旅人の雰囲気を持つ衣装です\n・映像内容: 広いつばの帽子と羽、星の航路が描かれたデザインが特徴です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788015613
     }
   },
   "failures": {
