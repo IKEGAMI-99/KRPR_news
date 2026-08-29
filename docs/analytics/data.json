@@ -1,10 +1,10 @@
 {
   "ready": true,
-  "updatedAt": "2026-08-29T07:05:42.884220+00:00",
+  "updatedAt": "2026-08-29T08:05:44.153450+00:00",
   "summary": {
-    "todayViews": 40,
-    "weekViews": 299,
-    "monthViews": 299,
+    "todayViews": 42,
+    "weekViews": 301,
+    "monthViews": 301,
     "monthUsers": 29
   },
   "trend": [
@@ -14,7 +14,7 @@
     },
     {
       "label": "08/29",
-      "value": 40
+      "value": 42
     },
     {
       "label": "08/27",
@@ -24,7 +24,7 @@
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 297
+      "value": 299
     },
     {
       "label": "/docs/",
@@ -34,7 +34,7 @@
   "referrers": [
     {
       "label": "(direct)",
-      "value": 24
+      "value": 26
     },
     {
       "label": "t.co",
