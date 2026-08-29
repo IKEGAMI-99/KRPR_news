@@ -485,6 +485,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1787962296
+    },
+    "https://www.taptap.cn/moment/840966649447187268": {
+      "contentHash": "fce081e98b303121918eabcf",
+      "titleJa": "雪城夜話外観パックが近日登場",
+      "bodyJa": "【パック期間】\n8月25日10:00〜9月7日23:59\n【パック内容】\n期間限定パック販売期間中、プレイヤーは「雪城夜話外観パック」を通常価格の54%OFFで購入できます。内容には、カメラレンズの動的アクション【舞夢咏雪】、撮影シーン【雪落琉庭】、撮影アクション【倚夢而息】、撮影カメラワーク【舞夢咏雪】、チャット吹き出し【旋舞协奏】、BGM【舞夢咏雪】、トレンドカラーカード*26、そして遇之钥*40が含まれます。本パックは永久に1回のみ購入可能です。\nTAPTAP：以闪亮之名\n公式微博：@以闪亮之名\n公式WeChat公众号",
+      "summaryJa": "・追加: 「雪城夜話外観パック」が期間限定で販売開始\n・期間: 8月25日10:00〜9月7日23:59\n・入手: 期間限定パック販売期間中に購入可能\n・内容: カメラレンズ動的アクション【舞夢咏雪】、撮影シーン【雪落琉庭】、撮影アクション【倚夢而息】、撮影カメラワーク【舞夢咏雪】、チャット吹き出し【旋舞协奏】、BGM【舞夢咏雪】、トレンドカラーカード*26、遇之钥*40を含む\n・価格: 通常価格の54%OFF（永久1回限定購入）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1787962910
     }
   }
 }
