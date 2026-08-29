@@ -1085,6 +1085,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788010268
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7675644901232495893": {
+      "contentHash": "bf56c27a8ec7c06d0bf1094f",
+      "titleJa": "Life Makeover「Lone Lotus Pack」が8月24日09:00から9月6日23:59まで登場",
+      "bodyJa": "Life Makeoverにて「Lone Lotus Pack」が8月24日09:00から9月6日23:59（UTC）まで登場します。このパックには、★5限定の「Floating [Layered Petals]」や★5のMak...が含まれています。",
+      "summaryJa": "・追加: 「Lone Lotus Pack」が登場\n・期間: 8月24日09:00〜9月6日23:59 (UTC)\n・内容: ★5限定「Floating [Layered Petals]」や★5のMak...を含む",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788010783
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7675643024772271380": {
+      "contentHash": "755bea7e26e5c74d6dfbc020",
+      "titleJa": "Life Makeover 新しいLightchase | SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…」",
+      "bodyJa": "Life Makeover 新しいLightchase | SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…どうだろうか…」",
+      "summaryJa": "・追加: SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…」がLightchaseに追加",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788010810
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7675642670835830037": {
+      "contentHash": "7bfd3a3c0dc180a7e9048aff",
+      "titleJa": "✨真夜中のティーパーティーへの招待状が送付されました✨ 最上級の装いでご参加いただきありがとうございます。#LifeMakeover",
+      "bodyJa": "✨真夜中のティーパーティーへの招待状が送付されました✨ 最上級の装いでご参加いただきありがとうございます。#LifeMakeover 新バージョン - ガーデン・ソワレ...",
+      "summaryJa": "・追加: 新バージョン「ガーデン・ソワレ...」が公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788010858
     }
   },
   "failures": {
