@@ -1775,6 +1775,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788027125
+    },
+    "https://x.com/stylight_kr/status/1989148523359805872": {
+      "contentHash": "c9c6007c5d3d504eea7a61d5",
+      "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
+      "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788028860
     }
   },
   "failures": {
@@ -1801,17 +1811,17 @@
     },
     "https://www.bilibili.com/opus/1241187139140452373": {
       "contentHash": "f5562842f14a2337c3b0adf1",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788005694,
-      "retryAfterEpoch": 1788027294
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788028478,
+      "retryAfterEpoch": 1788050078
     },
     "https://www.bilibili.com/opus/1240073883666612227": {
       "contentHash": "799c0f22aa6bdb75c24423a2",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788006039,
-      "retryAfterEpoch": 1788027639
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788028823,
+      "retryAfterEpoch": 1788050423
     }
   }
 }
