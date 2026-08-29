@@ -1815,6 +1815,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788029052
+    },
+    "https://x.com/kirapara_JP/status/1977298201414701539": {
+      "contentHash": "faabd40c40c45078c95fa7d0",
+      "titleJa": "限定ガチャイベント『焦土の花』まもなく開催",
+      "bodyJa": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『焦土の花』がまもなく開催される\n・星5セット「落羽聖花」と「融解の冥焔」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーンの締め切りは10月16日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788029900
+    },
+    "https://www.msn.com/ko-kr/news/other/스타일라잇-정식-출시일-공개와-더불어-서울-지하철-역사-ooh-눈길/ar-AA1Lt6bd": {
+      "contentHash": "edb461a4348a4a0fa41cdfce",
+      "titleJa": "Stylight、正式リリース日を公開し、ソウル地下鉄駅のOOH広告で注目を集める",
+      "bodyJa": "[提供：Stylight] AAA級3Dスタイリングゲーム『Stylight』が9月10日の正式リリースを確定しました。この発表と同時に、事前予約者数が50万人を突破し、正式ローンチ前からヒットの可能性を証明しました。また、正式リリースと同時に、弘大入口駅や江南駅などソウルの主要な拠点で大規模な屋外広告キャンペーンを展開します。",
+      "summaryJa": "・ゲーム『Stylight』が9月10日の正式リリースを確定した\n・事前予約者数が50万人を突破した\n・正式リリースと同時に、弘大入口駅や江南駅などソウルの主要な拠点で大規模な屋外広告キャンペーンを展開する",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788030001
+    },
+    "https://kotaku.com/games/life-makeover": {
+      "contentHash": "55a11f04ae2892e914db4b9d",
+      "titleJa": "Life Makeover - Kotaku",
+      "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供しています。",
+      "summaryJa": "・情報提供: Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788030034
     }
   },
   "failures": {

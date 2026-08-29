@@ -5431,7 +5431,13 @@
       }
     ],
     "sourceCount": 1,
-    "imageUrls": []
+    "imageUrls": [],
+    "titleJa": "限定ガチャイベント『焦土の花』まもなく開催",
+    "bodyJa": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・限定ガチャイベント『焦土の花』がまもなく開催される\n・星5セット「落羽聖花」と「融解の冥焔」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーンの締め切りは10月16日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f259ee9f5a144fa43e3b3d59",
@@ -5443,7 +5449,13 @@
     "publishedLabel": "2025-08-29",
     "publishedAtEpoch": 1756431377,
     "imageUrl": null,
-    "imageUrls": []
+    "imageUrls": [],
+    "titleJa": "Stylight、正式リリース日を公開し、ソウル地下鉄駅のOOH広告で注目を集める",
+    "bodyJa": "[提供：Stylight] AAA級3Dスタイリングゲーム『Stylight』が9月10日の正式リリースを確定しました。この発表と同時に、事前予約者数が50万人を突破し、正式ローンチ前からヒットの可能性を証明しました。また、正式リリースと同時に、弘大入口駅や江南駅などソウルの主要な拠点で大規模な屋外広告キャンペーンを展開します。",
+    "summaryJa": "・ゲーム『Stylight』が9月10日の正式リリースを確定した\n・事前予約者数が50万人を突破した\n・正式リリースと同時に、弘大入口駅や江南駅などソウルの主要な拠点で大規模な屋外広告キャンペーンを展開する",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bb73523b0968606bda103e17",
@@ -5476,7 +5488,13 @@
       "https://kotaku.com/app/uploads/2026/08/fields-of-mistria-review.jpg",
       "https://kotaku.com/app/uploads/2026/08/donuts2-1.jpg",
       "https://i.ytimg.com/vi/ID/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeover - Kotaku",
+    "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供しています。",
+    "summaryJa": "・情報提供: Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "174dc18156c0c29181e2587d",
