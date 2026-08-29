@@ -1656,7 +1656,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -2011,7 +2011,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -4437,7 +4437,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://i2.ytimg.com/vi/532Ki9VfzbE/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "SRナシオン「廃墟に咲いた花」明日リリース",
+    "bodyJa": "「それでも私は君のそばにいたい。そして君も、私のそばにいてくれたら嬉しいな。」\n\n廃墟の中で散った花は\n彼の瞳の中で再び咲き誇ります。\n\nその奇跡の名は、\n「ロマンス」です。\n\n- ナシオン期間限定 SR「廃墟に咲いた花」\n彼の特別な物語に会ってみませんか！\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+    "summaryJa": "・追加: ナシオン期間限定 SR「廃墟に咲いた花」が明日リリースされる\n・内容: 廃墟で散った花が彼の瞳の中で再び咲き誇る物語\n・詳細: ゲーム内で確認可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b2897b5d4c014e8a87a6a1c9",
@@ -4459,7 +4465,13 @@
         "url": "https://www.bilibili.com/video/BV1Pf3Y6wEWw"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "復刻イベント「追光」開催｜鏡海迷途・まもなく開始",
+    "bodyJa": "鏡海迷途｜マストの影が縛り、永遠の追跡。7月29日10:00から8月18日23:59まで期間限定で開催！\n\n🔮「私の血の呪いを解き、過去の出来事を再び埋葬する？」\n🚢「あなたが破棄した航海日誌の13ページには、私たちの共同冒険の予言が書かれている」\n🔮「見て、私たちの憎しみさえも双子なんだ」\n🚢「あなたは私を300年間憎み続けてもいい――永遠こそが、私たちが合意したことだから」\n\nすべての予言は、あなたが私の運命の舵手であることを指し示している\n私はあえて、あなたにとって最も完璧な欠陥になることを選んだ\n船板の悲鳴が勝利の序曲だとあなたが聞き取ったとき\nそれは深淵があなたの魂の反響を咀嚼していることなど知らなかった\n\n誇りを魚の餌に鍛え、羅針盤を網へと捻じ曲げる\nマストに絡みつくのは、単なるロープではない\nあなたが永久にここに留まる運命にある魂そのものだ\n\n永遠に沈まない時、",
+    "summaryJa": "・復刻イベント「追光」が開催される\n・期間は7月29日10:00から8月18日23:59まで\n・イベント名: 鏡海迷途",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e3e19523fb1b19ddd232d475",
@@ -4481,7 +4493,13 @@
         "url": "https://www.bilibili.com/video/BV1gs3F6jE5H"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "关大洲 x 以闪亮之名｜万世平戎版テーマソング『望乡吟』MV公開",
+    "bodyJa": "十三关，是征途。\n归家路，是答案。\n愿所有奔赴，终有归处。\n\n「万世平戎」版テーマソング『望乡吟』は、「国楽大师」关大洲が制作を担当し、「国風音楽人」张曦匀が歌唱を担当しました。風が山河を染め、古い記憶の塵を払うように、天下の旅人たちが帰路を歌のように辿り、古い夢が叶うことを願っています。\n————————\n歌唱：张曦匀\n作詞：田带鱼\n作曲：关大洲\n制作人：关大洲\n編曲：关大洲/郭林京运\n古筝：丁雪儿\n笛箫：丁晓逵\n管弦乐团：国际首席爱乐乐团\n配唱制作人：关大洲\n音频编辑：罗锦程@KME 李嘉彬\n录音棚：M1-A Studio\n録音/ミキシング/マスタリング：罗锦程@KME",
+    "summaryJa": "・追加: 「万世平戎」版テーマソング『望乡吟』のMVが公開されました\n・制作: 「国楽大师」关大洲が制作を担当\n・歌唱: 「国風音楽人」张曦匀が歌唱を担当",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "6756bc47c330bfd8665e59bb",
@@ -5270,6 +5288,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
