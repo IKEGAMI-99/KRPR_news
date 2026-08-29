@@ -1445,6 +1445,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788019234
+    },
+    "https://www.youtube.com/shorts/55c2ooEPOPs": {
+      "contentHash": "77f71d6d5157786f7cb3d8ff",
+      "titleJa": "『サンシャインキャッスル』リリース",
+      "bodyJa": "波が留まった場所に砂を積み、世界に一つだけの自分だけの城を作ってみませんか。\n日差しと風が留まるその場所には、いつまでも忘れられない夏が待っています。☀️🏖️\n\n🕙 8/1 10:30 〜 8/14 23:59\n\n [イベント詳細] \n- 限定ミッションを完了すると、「サンシャイン砂の城」の所持品が含まれたサンシャインキャッスルパッケージを破格の割引価格で手に入れることができます！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 『サンシャインキャッスル』がリリース\n・期間: 8/1 10:30 〜 8/14 23:59\n・入手: 限定ミッションを完了することでサンシャインキャッスルパッケージを入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788019654
+    },
+    "https://www.youtube.com/shorts/cdNvNjPPxiQ": {
+      "contentHash": "3e152171ece77c1bffc9052c",
+      "titleJa": "SSRアライ [Shawn - Absolute Anchor] プレビュー - デフォルト",
+      "bodyJa": "SSRアライ [Shawn - Absolute Anchor] プレビュー - デフォルト\n\n「君が私を連れてきてくれると分かっていたよ。」\n\n新バージョン「Everlasting Peace」が7月29日から8月18日まで登場！\n#LifeMakeoverWorld #EverlastingPeace #ValorSheathed #PactofHeart",
+      "summaryJa": "・追加: SSRアライ [Shawn - Absolute Anchor] プレビュー - デフォルト\n・期間: 7月29日〜8月18日\n・イベント名: Everlasting Peace",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788019700
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7668217389774900496": {
+      "contentHash": "965bcf1aab3477cfa89b7f3a",
+      "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する 新SR絆💞ゲン『風と残り火』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+      "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する 新SR絆💞ゲン『風と残り火』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパ...",
+      "summaryJa": "・追加: イベント「七宝庭の香り」に登場する新SR絆💞ゲン「風と残り火」の動画が公開されました\n・入手: キラパラのイベント「七宝庭の香り」にて\n・ハッシュタグ: #キラパ...",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788019733
     }
   },
   "failures": {
