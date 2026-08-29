@@ -43,6 +43,14 @@
     </header>
     <main>
       <section id="newsGrid" class="news-grid" aria-live="polite" aria-busy="true"></section>
+      <nav id="paginationNav" class="pagination" aria-label="ニュースページ" hidden>
+        <button id="previousPageButton" class="pagination-button" type="button" aria-label="前の20件">← 前へ</button>
+        <span class="pagination-status">
+          <strong id="pageStatus" aria-live="polite">1 / 1</strong>
+          <small id="pageRange">0件</small>
+        </span>
+        <button id="nextPageButton" class="pagination-button" type="button" aria-label="次の20件">次へ →</button>
+      </nav>
       <div id="emptyState" class="empty-state" hidden><div class="empty-mark">◇</div><h2>ニュースが見つかりません</h2><p id="emptyMessage">地域タブを変えてみてください。</p></div>
       <div id="errorState" class="error-state" hidden><div class="empty-mark">!</div><h2>読み込みに失敗しました</h2><p id="errorMessage">通信状態を確認して、もう一度更新してください。</p><button id="retryButton" class="primary-button" type="button">再読み込み</button></div>
     </main>
@@ -61,6 +69,7 @@
   </script>
   <script src="./analytics-config.js"></script>
   <script src="./analytics-track.js" defer></script>
+  <script src="./pagination.js" defer></script>
   <script src="./app.js" defer></script>
   <script src="./x-image-fix.js?v=50" defer></script>
   <script src="./source-buttons.js" defer></script>

@@ -6,10 +6,12 @@ const CACHE_KEY = 'kirapara-news-cache-v4';
 const THEME_KEY = 'kirapara-news-theme';
 const MIN_IMAGE_SHORT_SIDE = 260;
 const MIN_IMAGE_AREA = 150000;
+const { PAGE_SIZE, normalizeRegion, normalizePage, paginate } = globalThis.KiraparaPagination;
 
 const state = {
   items: [],
   region: 'ALL',
+  page: 1,
   installPrompt: null,
 };
 
@@ -22,6 +24,11 @@ const els = {
   theme: document.querySelector('#themeButton'),
   install: document.querySelector('#installButton'),
   status: document.querySelector('#statusText'),
+  pagination: document.querySelector('#paginationNav'),
+  previousPage: document.querySelector('#previousPageButton'),
+  nextPage: document.querySelector('#nextPageButton'),
+  pageStatus: document.querySelector('#pageStatus'),
+  pageRange: document.querySelector('#pageRange'),
   empty: document.querySelector('#emptyState'),
   emptyMessage: document.querySelector('#emptyMessage'),
   error: document.querySelector('#errorState'),
@@ -63,6 +70,40 @@ function storageSet(key, value) {
 
 function filteredItems() {
   return state.items.filter((item) => state.region === 'ALL' || item.region === state.region);
+}
+
+function navigationStateFromUrl() {
+  const params = new URLSearchParams(location.search);
+  return {
+    region: normalizeRegion(params.get('region')),
+    page: normalizePage(params.get('page')),
+  };
+}
+
+function updateActiveRegionTab() {
+  for (const tab of els.tabs.querySelectorAll('.region-tab')) {
+    tab.classList.toggle('is-active', tab.dataset.region === state.region);
+  }
+}
+
+function writeNavigationUrl({ replace = false } = {}) {
+  try {
+    const url = new URL(location.href);
+    if (state.region === 'ALL') url.searchParams.delete('region');
+    else url.searchParams.set('region', state.region);
+    if (state.page === 1) url.searchParams.delete('page');
+    else url.searchParams.set('page', String(state.page));
+    const nextState = { ...(history.state || {}), kiraparaNavigation: { region: state.region, page: state.page } };
+    history[replace ? 'replaceState' : 'pushState'](nextState, '', `${url.pathname}${url.search}${url.hash}`);
+  } catch {}
+}
+
+function scrollToNews(behavior = 'smooth') {
+  requestAnimationFrame(() => {
+    const topbarHeight = document.querySelector('.topbar')?.offsetHeight || 0;
+    const top = els.grid.getBoundingClientRect().top + window.scrollY - topbarHeight - 12;
+    window.scrollTo({ top: Math.max(0, top), behavior });
+  });
 }
 
 function safeHttpUrl(value) {
@@ -439,8 +480,22 @@ function repairOverflowButtons() {
   }
 }
 
+function updatePagination(paged) {
+  state.page = paged.page;
+  els.pageStatus.textContent = `${paged.page} / ${paged.totalPages}`;
+  els.pageRange.textContent = paged.totalItems
+    ? `${paged.startNumber}〜${paged.endNumber} / ${paged.totalItems}件`
+    : '0件';
+  els.previousPage.disabled = !paged.hasPrevious;
+  els.nextPage.disabled = !paged.hasNext;
+  els.pagination.hidden = paged.totalItems === 0 || paged.totalPages <= 1;
+  els.pagination.setAttribute('aria-label', `ニュースページ ${paged.page} / ${paged.totalPages}`);
+}
+
 function render() {
-  const items = filteredItems();
+  const allFilteredItems = filteredItems();
+  const paged = paginate(allFilteredItems, state.page, PAGE_SIZE);
+  const items = paged.items;
   const fragment = document.createDocumentFragment();
   let previousDay = null;
   for (const item of items) {
@@ -453,17 +508,28 @@ function render() {
   }
   els.grid.replaceChildren(fragment);
   els.grid.setAttribute('aria-busy', 'false');
-  els.empty.hidden = items.length !== 0 || state.items.length === 0;
+  els.empty.hidden = allFilteredItems.length !== 0 || state.items.length === 0;
   els.emptyMessage.textContent = '地域タブを変えてみてください。';
   els.error.hidden = true;
+  updatePagination(paged);
   updateCounts();
   document.dispatchEvent(new CustomEvent('kirapara:rendered', {
-    detail: { items, region: state.region },
+    detail: {
+      items,
+      filteredItems: allFilteredItems,
+      region: state.region,
+      page: paged.page,
+      pageSize: paged.pageSize,
+      totalItems: paged.totalItems,
+      totalPages: paged.totalPages,
+    },
   }));
   requestAnimationFrame(repairOverflowButtons);
+  return paged;
 }
 
 function renderSkeletons() {
+  els.pagination.hidden = true;
   els.grid.replaceChildren();
   els.grid.setAttribute('aria-busy', 'true');
   const fragment = document.createDocumentFragment();
@@ -508,16 +574,19 @@ async function loadNews({ force = false } = {}) {
     storageSet(CACHE_KEY, JSON.stringify({ savedAt: Date.now(), items: state.items }));
     els.status.textContent = latestUpdateLabel(state.items);
     render();
+    writeNavigationUrl({ replace: true });
   } catch (error) {
     const cached = loadCachedNews();
     if (cached.length) {
       state.items = cached;
       els.status.textContent = `${cached.length}件 · オフラインキャッシュ`;
       render();
+      writeNavigationUrl({ replace: true });
     } else {
       state.items = [];
       els.grid.replaceChildren();
       els.grid.setAttribute('aria-busy', 'false');
+      els.pagination.hidden = true;
       els.error.hidden = false;
       els.empty.hidden = true;
       els.errorMessage.textContent = `ニュースを取得できませんでした (${error.message})`;
@@ -541,14 +610,23 @@ function initTheme() {
   setTheme(saved === 'light' || saved === 'dark' ? saved : preferred);
 }
 
+function navigateToPage(page, { replace = false, behavior = 'smooth' } = {}) {
+  state.page = normalizePage(page);
+  render();
+  writeNavigationUrl({ replace });
+  scrollToNews(behavior);
+}
+
 els.tabs.addEventListener('click', (event) => {
   const button = event.target.closest('[data-region]');
   if (!button) return;
-  state.region = button.dataset.region;
-  for (const tab of els.tabs.querySelectorAll('.region-tab')) tab.classList.toggle('is-active', tab === button);
-  render();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  state.region = normalizeRegion(button.dataset.region);
+  state.page = 1;
+  updateActiveRegionTab();
+  navigateToPage(1);
 });
+els.previousPage.addEventListener('click', () => navigateToPage(state.page - 1));
+els.nextPage.addEventListener('click', () => navigateToPage(state.page + 1));
 els.refresh.addEventListener('click', () => loadNews({ force: true }));
 els.retry.addEventListener('click', () => loadNews({ force: true }));
 els.theme.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
@@ -568,9 +646,27 @@ window.addEventListener('appinstalled', () => {
   state.installPrompt = null;
   els.install.hidden = true;
 });
+window.addEventListener('popstate', () => {
+  const viewer = document.querySelector('#imageViewer');
+  const overlayIsOpen = Boolean((viewer && !viewer.hidden) || document.querySelector('.link-menu.is-open'));
+  if (overlayIsOpen) return;
+  const navigation = navigationStateFromUrl();
+  state.region = navigation.region;
+  state.page = navigation.page;
+  updateActiveRegionTab();
+  if (state.items.length) {
+    render();
+    writeNavigationUrl({ replace: true });
+    scrollToNews('auto');
+  }
+});
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').then((registration) => registration.update()).catch(() => {}));
 }
 
+const initialNavigation = navigationStateFromUrl();
+state.region = initialNavigation.region;
+state.page = initialNavigation.page;
+updateActiveRegionTab();
 initTheme();
 loadNews();

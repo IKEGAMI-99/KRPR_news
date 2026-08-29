@@ -188,6 +188,33 @@ class ProjectStructureTests(unittest.TestCase):
         )
         self.assertEqual(0, result.returncode, result.stdout + result.stderr)
 
+    def test_news_pagination_is_wired_and_update_safe(self):
+        html = (DOCS / "index.html").read_text(encoding="utf-8")
+        app = (DOCS / "app.js").read_text(encoding="utf-8")
+        pagination = (DOCS / "pagination.js").read_text(encoding="utf-8")
+        back_navigation = (DOCS / "back-navigation.js").read_text(encoding="utf-8")
+        sw = (DOCS / "sw.js").read_text(encoding="utf-8")
+
+        self.assertIn('id="paginationNav"', html)
+        self.assertLess(html.index('./pagination.js'), html.index('./app.js'))
+        self.assertIn("const PAGE_SIZE = 20", pagination)
+        self.assertIn("Math.max(1, Math.ceil(totalItems / size))", pagination)
+        self.assertIn("Math.min(normalizePage(requestedPage), totalPages)", pagination)
+        self.assertIn("paginate(allFilteredItems, state.page, PAGE_SIZE)", app)
+        self.assertIn("writeNavigationUrl({ replace: true })", app)
+        self.assertIn("window.addEventListener('popstate'", app)
+        self.assertIn("if (kind) {", back_navigation)
+        self.assertIn("'./pagination.js'", sw)
+
+        result = subprocess.run(
+            ["node", str(ROOT / "tests" / "test_pagination.js")],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stdout + result.stderr)
+
     def test_search_and_advance_info_features_are_removed(self):
         html = (DOCS / "index.html").read_text(encoding="utf-8")
         app = (DOCS / "app.js").read_text(encoding="utf-8")
