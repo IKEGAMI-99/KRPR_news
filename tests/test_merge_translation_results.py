@@ -67,6 +67,66 @@ class TranslationCacheMergeTests(unittest.TestCase):
         self.assertIn("article", merged["items"])
         self.assertEqual(1, stats["added"])
 
+    def test_newer_failure_cooldown_survives_parallel_writer_merge(self):
+        current = {
+            "items": {},
+            "failures": {
+                "article": {
+                    "lastFailureAtEpoch": 10,
+                    "retryAfterEpoch": 20,
+                }
+            },
+        }
+        incoming = {
+            "items": {},
+            "failures": {
+                "article": {
+                    "lastFailureAtEpoch": 30,
+                    "retryAfterEpoch": 40,
+                }
+            },
+        }
+
+        merged, stats = merge_caches(current, incoming)
+
+        self.assertEqual(40, merged["failures"]["article"]["retryAfterEpoch"])
+        self.assertEqual(1, stats["failure_replaced"])
+
+    def test_new_translation_clears_older_failure_cooldown(self):
+        current = {
+            "items": {"article": entry(10, "old")},
+            "failures": {
+                "article": {
+                    "lastFailureAtEpoch": 20,
+                    "retryAfterEpoch": 99,
+                }
+            },
+        }
+        incoming = {
+            "items": {"article": entry(30, "translated")},
+            "failures": {},
+        }
+
+        merged, stats = merge_caches(current, incoming)
+
+        self.assertNotIn("article", merged["failures"])
+        self.assertEqual(1, stats["failure_cleared"])
+
+    def test_failure_newer_than_old_translation_is_kept(self):
+        current = {
+            "items": {"article": entry(10, "old")},
+            "failures": {
+                "article": {
+                    "lastFailureAtEpoch": 20,
+                    "retryAfterEpoch": 99,
+                }
+            },
+        }
+
+        merged, _stats = merge_caches(current, {"items": {}})
+
+        self.assertIn("article", merged["failures"])
+
 
 if __name__ == "__main__":
     unittest.main()

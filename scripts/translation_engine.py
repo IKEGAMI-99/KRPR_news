@@ -74,11 +74,18 @@ def normalized_cache(raw) -> dict:
     items = raw.get("items")
     if not isinstance(items, dict):
         items = {}
+    failures = raw.get("failures")
+    if not isinstance(failures, dict):
+        failures = {}
     return {
         "version": CACHE_VERSION,
         "model": f"{MODEL_ID}:{MODEL_VARIANT}",
         "modelRevision": MODEL_REVISION,
         "items": items,
+        # Failed generation is operational state, not a valid translation.
+        # Keeping it beside the cache lets the scheduled worker defer one bad
+        # article without allowing it to starve every newer queue run.
+        "failures": failures,
     }
 
 
