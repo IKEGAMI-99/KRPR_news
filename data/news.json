@@ -5349,7 +5349,13 @@
       }
     ],
     "sourceCount": 1,
-    "imageUrls": []
+    "imageUrls": [],
+    "titleJa": "限定ガチャイベント『綺想の扉』まもなく開催",
+    "bodyJa": "限定ガチャイベント『綺想の扉』まもなく開催！\n星6セット「綺夢の旅」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆11月6日\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・限定ガチャイベント『綺想の扉』がまもなく開催される\n・星6セット「綺夢の旅」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は11月6日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b160a329ccbbcef0486b6a68",
@@ -5371,7 +5377,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G38dwxMWwAAcGAm?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布！",
+    "bodyJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布されます！\n\n11月6日から11月12日まで、「Popping Gifts」イベントに参加して、Life Makeover × カードキャプターさくらコラボセットを入手してください！\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "summaryJa": "・追加: Life Makeover × カードキャプターさくらコラボセットが無料配布\n・期間: 11月6日〜11月12日\n・入手: 「Popping Gifts」イベントに参加して獲得",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d2300868e94d4198fb1b7e15",
@@ -5393,7 +5405,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G38b0mzXoAAWxMv?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "新バージョン | ★5セット [封印解放] プレビュー",
+    "bodyJa": "新バージョン | ★5セット [封印解放] プレビュー！\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで入手可能！\n\n#LifeMakeover #CardcaptorSakura",
+    "summaryJa": "・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクトが追加\n・期間: 10月29日〜11月18日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "088c7870dfe2a05592ec9df0",

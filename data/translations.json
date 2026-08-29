@@ -1785,6 +1785,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788028860
+    },
+    "https://x.com/kirapara_JP/status/1984908337800986985": {
+      "contentHash": "9d7ad9de506547fcdccbb4fc",
+      "titleJa": "限定ガチャイベント『綺想の扉』まもなく開催",
+      "bodyJa": "限定ガチャイベント『綺想の扉』まもなく開催！\n星6セット「綺夢の旅」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆11月6日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『綺想の扉』がまもなく開催される\n・星6セット「綺夢の旅」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は11月6日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788028965
+    },
+    "https://x.com/LifeMakeover510/status/1982356524555968856": {
+      "contentHash": "04eed87120e671ef6c6efa74",
+      "titleJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布！",
+      "bodyJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布されます！\n\n11月6日から11月12日まで、「Popping Gifts」イベントに参加して、Life Makeover × カードキャプターさくらコラボセットを入手してください！\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+      "summaryJa": "・追加: Life Makeover × カードキャプターさくらコラボセットが無料配布\n・期間: 11月6日〜11月12日\n・入手: 「Popping Gifts」イベントに参加して獲得",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788029010
+    },
+    "https://x.com/LifeMakeover510/status/1982341426303451516": {
+      "contentHash": "5c0f0fe166ca439e7e9db42a",
+      "titleJa": "新バージョン | ★5セット [封印解放] プレビュー",
+      "bodyJa": "新バージョン | ★5セット [封印解放] プレビュー！\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで入手可能！\n\n#LifeMakeover #CardcaptorSakura",
+      "summaryJa": "・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクトが追加\n・期間: 10月29日〜11月18日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788029052
     }
   },
   "failures": {
