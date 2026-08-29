@@ -1656,7 +1656,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -2011,7 +2011,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5239,7 +5239,13 @@
         "url": "https://www.tiktok.com/@stylightofficial/video/7591710171974372616"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【予告】『星に閉じ込められた夜』パックが明日リリース！",
+    "bodyJa": "【予告】『星に閉じ込められた夜』パックが明日リリース！星が消えた夜、想い出の中に隠されたミステリアスな階段を辿れば、そこで新たな運命が展開される。🕙 1/6(火)...",
+    "summaryJa": "・追加: 『星に閉じ込められた夜』パックが明日リリースされる\n・期間: 1/6(火)から開始",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5f55efab1f3ab4ecb68e9ca5",
@@ -5261,7 +5267,13 @@
         "url": "https://www.tiktok.com/@stylightofficial/video/7589944269771754770"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【予告】『フローラルワールド』など装飾パッケージが明日リリース",
+    "bodyJa": "【予告】『フローラルワールド』など装飾パッケージが明日リリース！花の王国から吹く風が、花の香りと共に幸運を届けます。🕙 1/3(土) 10:30 〜 1/16(金) 23:59 [...",
+    "summaryJa": "・追加: 『フローラルワールド』など装飾パッケージが明日リリースされる\n・期間: 1/3(土) 10:30 〜 1/16(金) 23:59",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d58bf5031e6e47e91abf6ca0",
@@ -5283,7 +5295,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Stylightアップデートのネタバレ キーワード：神秘の書",
+    "bodyJa": "Stylightアップデートのネタバレ\n\nキーワード：神秘の書\n\n謎の風が作業室を通り過ぎ、テーブルの上のデザインスケッチがまるで踊るかのように舞い散ります。隅に置かれた古い本が目に留まり、その本が何かを呼び寄せているような感覚になります。\n\n近づいて手を伸ばすと、本がゆっくりと開き、その中から輝かしいプリズムの光が広がります。光が消えた場所に、「ケーキ、ケーキ！」と歌う小さな姿が羽をひらひらさせながら現れ、神秘的な鍵をあなたに差し出します...\n\n輝く世界\nGUESS WHO'S NEXT?\n\n▶ ゲームダウンロード\n\n#Stylight #Stylightアップデート #Stylightカーキャプチャー #カーキャプチャー",
+    "summaryJa": "・キーワード：神秘の書\n・内容：謎の風が作業室を通り過ぎ、古い本からプリズムの光が広がる\n・内容：光が消えた場所に「ケーキ、ケーキ！」と歌う小さな姿が現れ、神秘的な鍵を渡す",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c5dd49257aa19252902640c3",
@@ -5452,6 +5470,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
