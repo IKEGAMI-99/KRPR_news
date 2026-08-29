@@ -28,6 +28,10 @@ runtime_model:
   revision: gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2
   summary_format_version: 4
   runtime: LiteRT-LM 0.16.1
+  context_token_limit: 8192
+  output_token_limit: 3000
+  failed_article_attempts: 3
+  failed_article_cooldown: "6 hours"
   role: Japanese translation and summary
 
 schedules:
@@ -42,7 +46,7 @@ write_coordination:
   translator_concurrency_group: kirapara-ai-translate
   manual_regeneration_concurrency_group: kirapara-data-writer
   merge_script: scripts/merge_translation_results.py
-  conflict_policy: "reviewed translation first; otherwise newest updatedAtEpoch"
+  conflict_policy: "reviewed translation first; otherwise newest updatedAtEpoch; failure cooldown uses newest lastFailureAtEpoch and is cleared by a newer successful translation"
   push_retry: "merge latest main semantically and retry up to 4 times"
 
 legal:
@@ -114,6 +118,7 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 11. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
 12. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
 13. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
+14. **1件の生成失敗で翻訳backlog全体を止めない。** 3回の生成試行を使い切った記事は失敗状態を保存して6時間後まで後回しにし、後続記事へ進むこと。
 
 ## Explicitly removed / deprecated behavior
 
@@ -173,6 +178,7 @@ external public sources
 new/invalid translation backlog
   -> Gemma 4 E4B
   -> quality validation
+  -> failed 3 attempts: persist cooldown and continue with later articles
   -> data/translations.json
   -> next news refresh / PWA rendering
 ```
@@ -190,6 +196,8 @@ summaryFormatVersion: 4
 ```
 
 古いrevisionは表示され続ける場合がありますが、backlogから順次再処理される対象です。
+
+LiteRT-LM Engineは `max_num_tokens=8192`、各生成は `max_output_tokens=3000` で実行します。`data/translations.json` の `failures` は翻訳本文ではなく運用状態です。現在の `contentHash` に対して3回の生成試行がすべて失敗した記事を6時間deferし、次のRunで後続記事を選べるようにします。原文変更、現行翻訳の成功、Sol管理結果の適用時は対応するfailureを破棄します。
 
 `managedBySol` またはSol管理モデルとして明示されたエントリは別扱いで、有効な手動監査結果として保持されます。
 

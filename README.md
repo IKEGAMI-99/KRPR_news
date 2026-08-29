@@ -140,13 +140,15 @@ AI処理はGitHub Actions上で **Gemma 4 E4B** を **LiteRT-LM 0.16.1** から�
 
 記事本文のハッシュと翻訳revisionで再処理要否を判断し、古いrevisionの結果はbacklogとして順次置き換えます。生成後は日本語以外の文章が残っていないかなどを品質検査し、不適切な出力は有効な翻訳として採用しません。
 
+LiteRT-LMの総コンテキストは8,192トークン、1回の最大出力は3,000トークンです。長いBilibili記事でもJSONが途中で切れにくい余裕を持たせています。1記事で3回の生成試行を使い切っても成功しない場合は、失敗状態を翻訳キャッシュへ記録して6時間後まで後回しにし、次回Runでは後続記事へ進みます。
+
 15分ごとに最大3件をまとめて処理するのは、5分ごとにモデルを起動する方式よりrunner起動、checkout、モデル復元の回数を減らしながら、同等の最大処理量を維持するためです。
 
 ### 書き込み競合対策
 
 ニュース収集とAI翻訳は、長いGemma処理中も原文ニュース収集を止めないため、それぞれ `kirapara-news-refresh` と `kirapara-ai-translate` の別concurrency groupで並行実行します。
 
-両方が `data/news.json` と `data/translations.json` を更新し得るため、push前に最新`main`をmergeし、`scripts/merge_translation_results.py` で翻訳キャッシュを意味的に統合します。`managedBySol` の監査済み結果を最優先し、それ以外は新しい `updatedAtEpoch` を採用します。競合時は、収集側が新しい原文記事セットを保持して最新翻訳を再適用し、翻訳側は最新の収集結果へ生成済み翻訳を再適用します。pushは最大4回再試行するため、同時実行でも一方の結果を失いません。
+両方が `data/news.json` と `data/translations.json` を更新し得るため、push前に最新`main`をmergeし、`scripts/merge_translation_results.py` で翻訳キャッシュを意味的に統合します。`managedBySol` の監査済み結果を最優先し、それ以外は新しい `updatedAtEpoch` を採用します。失敗記事のクールダウン状態も `lastFailureAtEpoch` が新しい方を保持し、後から成功した翻訳があれば解除します。競合時は、収集側が新しい原文記事セットを保持して最新翻訳を再適用し、翻訳側は最新の収集結果へ生成済み翻訳を再適用します。pushは最大4回再試行するため、同時実行でも一方の結果を失いません。
 
 ### PWAとキャッシュ戦略
 
@@ -255,6 +257,8 @@ WeChatは既存の公開Web探索による収集を継続しつつ、中国の�
 - 記事本文のハッシュで再処理の要否を判定
 - 現行revision以外のGemma結果はbacklogとして順次再処理
 - 日本語以外の文章が残った出力を品質検査で無効化
+- 総コンテキスト8,192トークン、最大出力3,000トークン
+- 3回の生成試行に失敗した記事は6時間後まで後回しにして後続記事を処理
 - 固有名詞は `data/translation_glossary.json` を優先
 - Sol管理の修正は `managedBySol` / `solLocked` で再上書きを防止
 

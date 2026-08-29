@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TARGET = ROOT / "data" / "translations.json"
 TIME_FIELDS = ("updatedAtEpoch", "solUpdatedAtEpoch", "reviewedAtEpoch")
+TRANSLATION_FIELDS = ("titleJa", "bodyJa", "summaryJa")
 
 
 def read_json(path: Path, default):
@@ -53,6 +54,22 @@ def entry_epoch(entry) -> int:
     return max(epochs, default=0)
 
 
+def failure_epoch(record) -> int:
+    if not isinstance(record, dict):
+        return 0
+    try:
+        return int(record.get("lastFailureAtEpoch") or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def complete_translation_entry(entry) -> bool:
+    return isinstance(entry, dict) and all(
+        isinstance(entry.get(field), str) and entry.get(field).strip()
+        for field in TRANSLATION_FIELDS
+    )
+
+
 def choose_entry(current, incoming):
     """Prefer reviewed data first, then the newest automatic result.
 
@@ -70,6 +87,16 @@ def choose_entry(current, incoming):
     if current_reviewed != incoming_reviewed:
         return deepcopy(incoming if incoming_reviewed else current)
     if entry_epoch(incoming) > entry_epoch(current):
+        return deepcopy(incoming)
+    return deepcopy(current)
+
+
+def choose_failure(current, incoming):
+    if not isinstance(current, dict):
+        return deepcopy(incoming)
+    if not isinstance(incoming, dict):
+        return deepcopy(current)
+    if failure_epoch(incoming) > failure_epoch(current):
         return deepcopy(incoming)
     return deepcopy(current)
 
@@ -107,7 +134,51 @@ def merge_caches(current, incoming):
             replaced += 1
 
     result["items"] = merged_items
-    return result, {"added": added, "replaced": replaced, "kept": kept}
+
+    current_failures = current_doc.get("failures")
+    incoming_failures = incoming_doc.get("failures")
+    if not isinstance(current_failures, dict):
+        current_failures = {}
+    if not isinstance(incoming_failures, dict):
+        incoming_failures = {}
+
+    merged_failures = deepcopy(current_failures)
+    failure_added = 0
+    failure_replaced = 0
+    failure_kept = 0
+    for key, incoming_failure in incoming_failures.items():
+        if key not in merged_failures:
+            merged_failures[key] = deepcopy(incoming_failure)
+            failure_added += 1
+            continue
+        chosen = choose_failure(merged_failures[key], incoming_failure)
+        if chosen == merged_failures[key]:
+            failure_kept += 1
+        else:
+            merged_failures[key] = chosen
+            failure_replaced += 1
+
+    failure_cleared = 0
+    for key in list(merged_failures):
+        entry = merged_items.get(key)
+        failure = merged_failures[key]
+        if is_reviewed(entry) or (
+            complete_translation_entry(entry)
+            and entry_epoch(entry) >= failure_epoch(failure)
+        ):
+            merged_failures.pop(key, None)
+            failure_cleared += 1
+
+    result["failures"] = merged_failures
+    return result, {
+        "added": added,
+        "replaced": replaced,
+        "kept": kept,
+        "failure_added": failure_added,
+        "failure_replaced": failure_replaced,
+        "failure_kept": failure_kept,
+        "failure_cleared": failure_cleared,
+    }
 
 
 def main() -> int:
@@ -124,7 +195,11 @@ def main() -> int:
     write_json(args.target, merged)
     print(
         "translation cache merge: "
-        f"added={stats['added']} replaced={stats['replaced']} kept={stats['kept']}"
+        f"added={stats['added']} replaced={stats['replaced']} kept={stats['kept']} "
+        f"failureAdded={stats['failure_added']} "
+        f"failureReplaced={stats['failure_replaced']} "
+        f"failureKept={stats['failure_kept']} "
+        f"failureCleared={stats['failure_cleared']}"
     )
     return 0
 

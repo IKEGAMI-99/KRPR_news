@@ -9,6 +9,7 @@ from glossary_schema import active_entries, read_glossary
 
 
 STRICT_MODEL_REVISION = "translation-quality-strict-ja-v1"
+STRICT_MAX_OUTPUT_TOKENS = 3000
 URL_HASH_RE = re.compile(r"https?://\S+|#[^\s#]+")
 KANA_RE = re.compile(r"[ぁ-ゖァ-ヺー]")
 HANGUL_RE = re.compile(r"[가-힣] ")
@@ -198,7 +199,7 @@ def strict_infer_one(llm, row: dict):
                 messages=strict_build_messages(row, retry_note),
                 temperature=0.0,
                 top_p=0.85,
-                max_tokens=1000,
+                max_tokens=STRICT_MAX_OUTPUT_TOKENS,
                 seed=42 + attempt,
             )
             text = response["choices"][0]["message"]["content"]

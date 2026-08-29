@@ -125,8 +125,10 @@ jobs:
           python -m pip install --disable-pip-version-check --prefer-binary \
             "litert-lm==0.16.1"
 
-      - name: Translate and summarize exactly up to three articles with Gemma 4 E4B
+      - name: Translate and summarize up to three runnable articles with Gemma 4 E4B
+        id: gemma_translate
         if: steps.llm_plan.outputs.pending != '0'
+        continue-on-error: true
         env:
           LLM_MAX_ITEMS: '3'
         run: |
@@ -200,4 +202,11 @@ jobs:
           done
 
           echo "Translation push failed after retries"
+          exit 1
+
+      - name: Report exhausted Gemma batch
+        if: steps.gemma_translate.outcome == 'failure'
+        run: |
+          echo "Every attempted article failed after three generations." >&2
+          echo "Their cooldown state was saved; the next run will advance the queue." >&2
           exit 1
