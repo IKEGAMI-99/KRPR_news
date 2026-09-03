@@ -3037,7 +3037,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640926717398292"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | ★5セット「Misty Maple」プレビュー！",
+    "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Misty Maple」プレビュー！金色のドームの下、咲き誇る花々のタイルの上で一緒に踊りませんか？ #Prismat...",
+    "summaryJa": "・追加: ★5セット「Misty Maple」のプレビュー公開\n・イベント名: Lightchase Encore",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "2056ec418d483017cdda9ea2",
@@ -3059,7 +3065,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640617441807636"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | ★5セット「Vitrum Talk」プレビュー",
+    "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Vitrum Talk」プレビュー！💎 無機質なクリスタルが織りなす共生的な美学で、次元の限界を超越する：Vitrum Talk",
+    "summaryJa": "・追加: ★5セット「Vitrum Talk」がLightchase Encoreでプレビュー公開\n・内容: 無機質なクリスタルが織りなす共生的な美学をテーマとしたセット",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a76b24195ab3a3767030709c",
@@ -3081,7 +3093,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640272770714900"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | Prismatic Fantasy Coming Soon",
+    "bodyJa": "Life Makeover Lightchase Encore | Prismatic Fantasy Coming Soon! 「夢や光の円錐の向こう側、答えのない問いがある」 #PrismaticFanta...",
+    "summaryJa": "・追加: Lightchase Encore イベントの開催が間近に迫っている\n・追加: Prismatic Fantasy の登場が間近に迫っている",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a6737bab0251e76923da4756",
@@ -3202,7 +3220,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0ef9b2f461b0e1647d0dc4be",
@@ -3356,7 +3374,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5716,6 +5734,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]

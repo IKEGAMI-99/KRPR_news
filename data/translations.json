@@ -2515,6 +2515,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788433059
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678640926717398292": {
+      "contentHash": "f99aebefa3f91d6b0cc41b64",
+      "titleJa": "Life Makeover Lightchase Encore | ★5セット「Misty Maple」プレビュー！",
+      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Misty Maple」プレビュー！金色のドームの下、咲き誇る花々のタイルの上で一緒に踊りませんか？ #Prismat...",
+      "summaryJa": "・追加: ★5セット「Misty Maple」のプレビュー公開\n・イベント名: Lightchase Encore",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788433171
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678640617441807636": {
+      "contentHash": "2e6327afa700a97d83db99cd",
+      "titleJa": "Life Makeover Lightchase Encore | ★5セット「Vitrum Talk」プレビュー",
+      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Vitrum Talk」プレビュー！💎 無機質なクリスタルが織りなす共生的な美学で、次元の限界を超越する：Vitrum Talk",
+      "summaryJa": "・追加: ★5セット「Vitrum Talk」がLightchase Encoreでプレビュー公開\n・内容: 無機質なクリスタルが織りなす共生的な美学をテーマとしたセット",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788433200
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678640272770714900": {
+      "contentHash": "87ce48b58787d2f11ef40c6b",
+      "titleJa": "Life Makeover Lightchase Encore | Prismatic Fantasy Coming Soon",
+      "bodyJa": "Life Makeover Lightchase Encore | Prismatic Fantasy Coming Soon! 「夢や光の円錐の向こう側、答えのない問いがある」 #PrismaticFanta...",
+      "summaryJa": "・追加: Lightchase Encore イベントの開催が間近に迫っている\n・追加: Prismatic Fantasy の登場が間近に迫っている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788433224
     }
   },
   "failures": {
