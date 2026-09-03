@@ -1,5 +1,6 @@
 (() => {
   const SHARE_STATUS_IDLE = '文章＋紹介画像を共有します';
+  const SHARE_IMAGE_WIDTH = 1536;
   const SHARE_IMAGE_PARTS = Array.from(
     { length: 6 },
     (_, index) => `./media/share/kirapara-news-share.b64.${index}`
@@ -60,6 +61,54 @@
     return bytes;
   }
 
+  function loadImage(blob) {
+    return new Promise((resolve, reject) => {
+      const url = URL.createObjectURL(blob);
+      const image = new Image();
+
+      image.onload = () => {
+        URL.revokeObjectURL(url);
+        resolve(image);
+      };
+      image.onerror = () => {
+        URL.revokeObjectURL(url);
+        reject(new Error('share image decode failed'));
+      };
+      image.src = url;
+    });
+  }
+
+  async function upscaleShareImage(bytes) {
+    const sourceBlob = new Blob([bytes], { type: 'image/jpeg' });
+    const image = await loadImage(sourceBlob);
+
+    if (!image.naturalWidth || image.naturalWidth >= SHARE_IMAGE_WIDTH) {
+      return sourceBlob;
+    }
+
+    const scale = SHARE_IMAGE_WIDTH / image.naturalWidth;
+    const canvas = document.createElement('canvas');
+    canvas.width = SHARE_IMAGE_WIDTH;
+    canvas.height = Math.round(image.naturalHeight * scale);
+
+    const context = canvas.getContext('2d');
+    if (!context) throw new Error('share image canvas unavailable');
+
+    context.imageSmoothingEnabled = true;
+    context.imageSmoothingQuality = 'high';
+    context.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+    return new Promise((resolve, reject) => {
+      canvas.toBlob((blob) => {
+        if (blob) {
+          resolve(blob);
+        } else {
+          reject(new Error('share image encode failed'));
+        }
+      }, 'image/jpeg', 0.94);
+    });
+  }
+
   async function buildShareImageFile() {
     const responses = await Promise.all(
       SHARE_IMAGE_PARTS.map(async (path) => {
@@ -71,7 +120,8 @@
 
     const base64 = responses.map((part) => part.trim()).join('');
     const bytes = decodeBase64(base64);
-    return new File([bytes], 'kirapara-news.jpg', { type: 'image/jpeg' });
+    const shareBlob = await upscaleShareImage(bytes);
+    return new File([shareBlob], 'kirapara-news.jpg', { type: 'image/jpeg' });
   }
 
   // Preload before the user taps Share. Calling navigator.share directly from
