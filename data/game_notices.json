@@ -1,0 +1,98 @@
+[
+  {
+    "id": "game-notice-5903",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "event",
+    "title": "8月6日イベント開催のお知らせ",
+    "body": "新バージョンで開催されるイベント、期間限定ガチャ、復刻イベント、各種パックなどのお知らせです。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpevent/5903.jhtml",
+    "publishedLabel": "2026-08-02",
+    "publishedAtEpoch": 1785679200,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5875",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "news",
+    "title": "7月16日アップデートのお知らせ",
+    "body": "ネイルコピー機能の最適化など、新しいバージョンで追加・改善された機能のお知らせです。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpnews/5875.jhtml",
+    "publishedLabel": "2026-07-12",
+    "publishedAtEpoch": 1783864800,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5876",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "event",
+    "title": "7月16日イベント開催のお知らせ",
+    "body": "期間限定ガチャ『蔓守の誓い』など、新バージョンのイベント開催情報です。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpevent/5876.jhtml",
+    "publishedLabel": "2026-07-12",
+    "publishedAtEpoch": 1783864800,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5852",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "event",
+    "title": "6月25日イベント開催のお知らせ",
+    "body": "期間限定ガチャ『幻霊の古巻』など、新バージョンのイベント開催情報です。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpevent/5852.jhtml",
+    "publishedLabel": "2026-06-21",
+    "publishedAtEpoch": 1782050400,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5832",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "event",
+    "title": "6月4日イベント開催のお知らせ",
+    "body": "期間限定ガチャ『無垢なる蕊』など、新バージョンのイベント開催情報です。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpevent/5832.jhtml",
+    "publishedLabel": "2026-05-31",
+    "publishedAtEpoch": 1780236000,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5677",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "event",
+    "title": "4月2日イベント開催のお知らせ",
+    "body": "期間限定ガチャ『鈴鳴る綺舞』など、イベント開催情報です。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpevent/5677.jhtml",
+    "publishedLabel": "2026-03-29",
+    "publishedAtEpoch": 1774792800,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5570",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "news",
+    "title": "2月19日アップデートのお知らせ",
+    "body": "コーデメモ2.0など、新しいバージョンで追加・改善された機能のお知らせです。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpnews/5570.jhtml",
+    "publishedLabel": "2026-02-15",
+    "publishedAtEpoch": 1771164000,
+    "imageUrl": null
+  },
+  {
+    "id": "game-notice-5528",
+    "region": "JAPAN",
+    "platform": "ゲーム内お知らせ",
+    "noticeType": "news",
+    "title": "1月29日アップデートのお知らせ",
+    "body": "クローゼット整理機能など、新しいバージョンで追加・改善された機能のお知らせです。",
+    "sourceUrl": "https://cms.archosaur.com/jeecms/smhwjpnews/5528.jhtml",
+    "publishedLabel": "2026-01-25",
+    "publishedAtEpoch": 1769349600,
+    "imageUrl": null
+  }
+]
