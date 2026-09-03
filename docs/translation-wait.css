@@ -1,0 +1,21 @@
+.translation-wait-badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  border: 1px solid color-mix(in srgb, #f0b45f 55%, var(--line));
+  border-radius: 999px;
+  padding: 3px 7px;
+  color: color-mix(in srgb, #f0b45f 88%, var(--text));
+  background: color-mix(in srgb, #f0b45f 10%, transparent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+.translation-wait-badge::before {
+  content: '◷';
+  margin-right: 4px;
+  font-size: 10px;
+}
