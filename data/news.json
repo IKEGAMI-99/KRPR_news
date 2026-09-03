@@ -1080,7 +1080,13 @@
         "url": "https://x.com/LifeMakeover510/status/2094591072001253714"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Lightchase Encore | Prismatic Fantasyが近日登場",
+    "bodyJa": "Lightchase Encore | Prismatic Fantasyが近日登場！\nPrismatic Fantasyイベントは9月2日09:00から9月22日23:59まで開催されます！\n\n「夢や光の円錐の向こう側には、答えを出さない方が良い問いがある」\n\nPrismatic Fantasy | Fission and newborn. #LifeMakeover #VitrumTalk #MistyMaple",
+    "summaryJa": "・イベント名: Prismatic Fantasy\n・期間: 9月2日09:00〜9月22日23:59\n・内容: Lightchase Encore | Prismatic Fantasyが近日登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "989af820b69c6f9a6c6fa591",
@@ -1120,7 +1126,13 @@
     "sourceCount": 4,
     "imageMirrorUrls": [
       "https://ikegami-99.github.io/KRPR_news/media/weibo/f0c1d150ddc7aabc4907.jpg"
-    ]
+    ],
+    "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# 全新4.4バージョン｜★6セット「聖翎祈世」デザイン短編 全新4.4バージョン・神迹初誕 9月1日〜9月21日期間限定ログイン",
+    "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\n全新4.4バージョン｜★6セット「聖翎祈世」デザイン短編\n全新4.4バージョン・神迹初誕 9月1日〜9月21日期間限定ログイン！\n今回、2億の価値を持つ「法貝熱彩蛋」の要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極彩色の美を表現します。\n手に持った多層構造の開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋の要素が組み込まれています。これは、全体のスタイルが常に統一された完全な芸術的表現を保つだけでなく、彩蛋のイメージが持つ幸運の寓意がプレイヤーに幸運をもたらすことを期待しています。\n今、すべてが準備が整いました。この視覚的な盛宴を共に始めましょう。\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク 以闪亮之名の微博動画 動画は表示できません。微博動画へ移動してご覧ください。",
+    "summaryJa": "・追加: ★6セット「聖翎祈世」のデザイン短編が公開\n・イベント: 全新4.4バージョン・神迹初誕が期間限定でログイン可能\n・期間: 9月1日〜9月21日\n・内容: 「法貝熱彩蛋」の要素を再構築し、19世紀末〜20世紀初頭のロシア風情を融合させた極彩色の美を表現",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "aed666ab44f909289e967f7a",
@@ -1143,7 +1155,13 @@
         "url": "https://x.com/kirapara_JP/status/2094364589114736708"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "いくぶん残暑も和らぎ、過ごしやすい日が増えてきました",
+    "bodyJa": "いくぶん残暑も和らぎ、過ごしやすい日が増えてきました。\n皆様の秋が実り多きものになりますように！\n\n9月のカレンダーを送ります。\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・9月のカレンダーが公開されました\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "ef2327a94c8ec48759a0719a",
@@ -2942,7 +2960,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0ef9b2f461b0e1647d0dc4be",
@@ -3096,7 +3114,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5489,6 +5507,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]

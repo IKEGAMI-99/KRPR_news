@@ -2175,6 +2175,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788424347
+    },
+    "https://x.com/LifeMakeover510/status/2094591072001253714": {
+      "contentHash": "5d43a81d9b08fa69b283c13b",
+      "titleJa": "Lightchase Encore | Prismatic Fantasyが近日登場",
+      "bodyJa": "Lightchase Encore | Prismatic Fantasyが近日登場！\nPrismatic Fantasyイベントは9月2日09:00から9月22日23:59まで開催されます！\n\n「夢や光の円錐の向こう側には、答えを出さない方が良い問いがある」\n\nPrismatic Fantasy | Fission and newborn. #LifeMakeover #VitrumTalk #MistyMaple",
+      "summaryJa": "・イベント名: Prismatic Fantasy\n・期間: 9月2日09:00〜9月22日23:59\n・内容: Lightchase Encore | Prismatic Fantasyが近日登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424464
+    },
+    "https://weibo.com/7521830234/RfYzdApcZ": {
+      "contentHash": "eaeb4a672096328292a67f10",
+      "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# 全新4.4バージョン｜★6セット「聖翎祈世」デザイン短編 全新4.4バージョン・神迹初誕 9月1日〜9月21日期間限定ログイン",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\n全新4.4バージョン｜★6セット「聖翎祈世」デザイン短編\n全新4.4バージョン・神迹初誕 9月1日〜9月21日期間限定ログイン！\n今回、2億の価値を持つ「法貝熱彩蛋」の要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極彩色の美を表現します。\n手に持った多層構造の開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋の要素が組み込まれています。これは、全体のスタイルが常に統一された完全な芸術的表現を保つだけでなく、彩蛋のイメージが持つ幸運の寓意がプレイヤーに幸運をもたらすことを期待しています。\n今、すべてが準備が整いました。この視覚的な盛宴を共に始めましょう。\n\n💎ダウンロードポータル： Webリンク \n💎閃亮作品上映季イベントポータル： Webリンク 以闪亮之名の微博動画 動画は表示できません。微博動画へ移動してご覧ください。",
+      "summaryJa": "・追加: ★6セット「聖翎祈世」のデザイン短編が公開\n・イベント: 全新4.4バージョン・神迹初誕が期間限定でログイン可能\n・期間: 9月1日〜9月21日\n・内容: 「法貝熱彩蛋」の要素を再構築し、19世紀末〜20世紀初頭のロシア風情を融合させた極彩色の美を表現",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424536
+    },
+    "https://x.com/kirapara_JP/status/2094364589114736708": {
+      "contentHash": "344b9724ebbb4d8cc55baf17",
+      "titleJa": "いくぶん残暑も和らぎ、過ごしやすい日が増えてきました",
+      "bodyJa": "いくぶん残暑も和らぎ、過ごしやすい日が増えてきました。\n皆様の秋が実り多きものになりますように！\n\n9月のカレンダーを送ります。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・9月のカレンダーが公開されました\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424550
     }
   },
   "failures": {
