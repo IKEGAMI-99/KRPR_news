@@ -1892,6 +1892,13 @@
       "lastFailureAtEpoch": 1788025908,
       "retryAfterEpoch": 1788047508
     },
+    "https://www.taptap.cn/moment/842461141631240483": {
+      "contentHash": "058fab4030fdb5741e56caa3",
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788026142,
+      "retryAfterEpoch": 1788047742
+    },
     "https://www.bilibili.com/opus/1241187139140452373": {
       "contentHash": "f5562842f14a2337c3b0adf1",
       "failedAttempts": 6,
