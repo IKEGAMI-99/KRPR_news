@@ -50,8 +50,22 @@ def text_match(
     return difflib.SequenceMatcher(None, a, b).ratio() >= threshold
 
 
+def platform_key(row: dict) -> str:
+    value = str(row.get("platform") or "").casefold().strip()
+    value = re.sub(r"\s*·\s*rsshub$", "", value).strip()
+    return value
+
+
+def same_platform_different_posts(a: dict, b: dict) -> bool:
+    if not platform_key(a) or platform_key(a) != platform_key(b):
+        return False
+    ua = str(a.get("sourceUrl") or "").strip()
+    ub = str(b.get("sourceUrl") or "").strip()
+    return bool(ua and ub and ua != ub)
+
+
 def is_taptap(row: dict) -> bool:
-    return "taptap" in str(row.get("platform") or "").casefold()
+    return "taptap" in platform_key(row)
 
 
 def is_taptap_cross_source_pair(a: dict, b: dict) -> bool:
@@ -74,10 +88,16 @@ def same_story(a: dict, b: dict) -> bool:
     if not time_close(a, b):
         return False
 
+    # Different posts on the same platform are independent articles, even when
+    # a campaign uses nearly identical template text (e.g. Korean X award series).
+    # Exact duplicate URLs are already handled upstream and are not blocked here.
+    if same_platform_different_posts(a, b):
+        return False
+
     ta = normalize_title(a.get("title"))
     tb = normalize_title(b.get("title"))
 
-    # Default rule for every platform: keep the original conservative matcher.
+    # Default rule for every cross-platform pair: keep the original conservative matcher.
     if text_match(ta, tb, TITLE_SIMILARITY_THRESHOLD):
         return True
 

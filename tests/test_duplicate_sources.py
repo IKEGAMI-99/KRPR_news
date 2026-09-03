@@ -103,6 +103,54 @@ class DuplicateSourceMergeTests(unittest.TestCase):
         self.assertEqual(1, len(merged))
         self.assertEqual(2, merged[0]["sourceCount"])
 
+    def test_same_platform_korean_x_series_does_not_merge(self):
+        rows = [
+            {
+                "id": "k4",
+                "region": "KOREA",
+                "platform": "公式X",
+                "title": "『달의 심판』 창작대회 수상작 공유 4탄 멋진 작품을 선사해 주신 Pale, 안냐링, Jane, 뚜둔님께 진심으로 감사드립니다",
+                "body": "수상하신 모든 분들께 다시 한 번 축하드립니다. 앞으로도 멋진 작품을 기대하겠습니다.",
+                "sourceUrl": "https://x.com/stylight_kr/status/2095417762495791512",
+                "publishedAtEpoch": 1788420600,
+            },
+            {
+                "id": "k3",
+                "region": "KOREA",
+                "platform": "公式X",
+                "title": "『달의 심판』 창작대회 수상작 공유 3탄 멋진 작품을 선사해 주신 다른 수상자 여러분께 진심으로 감사드립니다",
+                "body": "수상하신 모든 분들께 다시 한 번 축하드립니다. 앞으로도 멋진 작품을 기대하겠습니다.",
+                "sourceUrl": "https://x.com/stylight_kr/status/2095416504325984566",
+                "publishedAtEpoch": 1788420000,
+            },
+        ]
+        merged = merger.merge_rows(rows)
+        self.assertEqual(2, len(merged))
+        self.assertTrue(all(row["sourceCount"] == 1 for row in merged))
+
+    def test_same_platform_identical_titles_with_different_urls_do_not_merge(self):
+        rows = [
+            {
+                "id": "x1",
+                "region": "KOREA",
+                "platform": "公式X",
+                "title": "같은 캠페인 제목",
+                "body": "same body",
+                "sourceUrl": "https://x.com/stylight_kr/status/1",
+                "publishedAtEpoch": 1788420000,
+            },
+            {
+                "id": "x2",
+                "region": "KOREA",
+                "platform": "公式X",
+                "title": "같은 캠페인 제목",
+                "body": "same body",
+                "sourceUrl": "https://x.com/stylight_kr/status/2",
+                "publishedAtEpoch": 1788420060,
+            },
+        ]
+        self.assertEqual(2, len(merger.merge_rows(rows)))
+
     def test_nearby_but_different_titles_do_not_merge(self):
         rows = [
             {
