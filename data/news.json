@@ -827,7 +827,13 @@
         "url": "https://www.taptap.cn/moment/843867814962921896"
       }
     ],
-    "sourceCount": 7
+    "sourceCount": 7,
+    "titleJa": "🎵新バージョン4.4「神迹初诞」テーマ曲《The Light Within》正式リリース #頂流の卵生# 新バージョン4.4「神迹初诞」9月1日〜9月21日期間限定ログイン！",
+    "bodyJa": "🎵新バージョン4.4「神迹初诞」テーマ曲《The Light Within》が正式にリリースされました。\n#頂流の卵生# 新バージョン4.4「神迹初诞」は9月1日から9月21日まで期間限定でログイン可能です！\n\n「神迹初诞」バージョンのテーマ曲《The Light Within》は、QQ音乐、酷狗音乐、酷我音乐、网易云音乐、ゲーム内看板音楽にて正式に公開されました。\n\n「神迹初诞」バージョンのテーマ曲《The Light Within》は、歌手ZINA BLESS（Zina Kuprianovich）が歌唱を担当しています。夢が決して失われず、勇敢な心すべてが幸運に恵まれ、輝かしい未来を切り拓けるよう願っています。この曲を借りて、夢に執着し続ける旅人一人ひとりが、心に導きを見つけ、未来に希望が満ちることをお祈り申し上げます。\n\n以闪亮之名（以闪亮之名）の新しいバージョン4.4の素晴らしい体験が続きます……❤️ \n\nQQ音乐：  \n酷狗音乐：  \n酷我音乐：  \n网易云音乐： \n\n————————\n《The Light Within》\nVocal : Zina Bless\nLyrics : Anna Kotova\nComposer : Mikhail Kotov/Snowight@3Realm\nProduced by：VVANNA GIRLS 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画質/シミュレーション経営\n \n すべての女性が夢中になる3A級シミュレーションライフゲーム\n \n 入場",
+    "summaryJa": "・追加: 新バージョン4.4「神迹初诞」のテーマ曲《The Light Within》が正式にリリースされました\n・期間: 新バージョン4.4「神迹初诞」は9月1日〜9月21日まで期間限定でログイン可能です\n・楽曲情報: 《The Light Within》はZINA BLESS（Zina Kuprianovich）が歌唱を担当しています\n・配信先: QQ音乐、酷狗音乐、酷我音乐、网易云音乐、ゲーム内看板音楽で公開されています",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d86c4100f3df430f9205e4f3",
@@ -886,7 +892,13 @@
         "url": "https://x.com/LifeMakeover510/status/2094603647938150895"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Lightchase Encore | Prismatic Decom Shop",
+    "bodyJa": "Lightchase Encore | Prismatic Decom Shop\n\nPrismatic Decomショップは、9月2日09:00から9月23日23:59まで開催されます。期間限定イベントで入手したファッションを分解することで、限定ファッションアイテム「Drifting Love/Unknown Poem/Red Rose Plume」などを交換できます！",
+    "summaryJa": "・追加: Prismatic Decomショップがオープン\n・期間: 9月2日09:00〜9月23日23:59\n・内容: 期間限定イベントで入手したファッションを分解し、限定ファッションアイテム「Drifting Love/Unknown Poem/Red Rose Plume」などを交換可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "1219817e650194a6d0cafc16",
@@ -2857,7 +2869,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "0ef9b2f461b0e1647d0dc4be",
@@ -3011,7 +3023,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -5645,6 +5657,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]
