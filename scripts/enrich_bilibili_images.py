@@ -7,12 +7,16 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from bilibili_image_urls import (
+    canonicalize_bilibili_image_url,
+    is_bilibili_image_host,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"
 
 BILIBILI_HOSTS = ("bilibili.com", "b23.tv")
-IMAGE_HOST_SUFFIXES = ("hdslb.com", "bilivideo.com")
 GOOD_PATH_HINTS = (
     "/bfs/new_dyn/",
     "/bfs/article/",
@@ -107,15 +111,13 @@ def normalize_image(raw, base: str = "https://www.bilibili.com/") -> str | None:
         value = "https:" + value
     try:
         value = urllib.parse.urljoin(base, value)
+        value = canonicalize_bilibili_image_url(value)
         parsed = urllib.parse.urlparse(value)
-        host = parsed.netloc.lower()
+        host = (parsed.hostname or "").lower()
         if parsed.scheme not in ("http", "https") or not host:
             return None
-        if any(host.endswith(suffix) for suffix in IMAGE_HOST_SUFFIXES) and parsed.scheme == "http":
-            parsed = parsed._replace(scheme="https")
-            value = urllib.parse.urlunparse(parsed)
         low = urllib.parse.unquote(value).lower()
-        if not any(host.endswith(suffix) for suffix in IMAGE_HOST_SUFFIXES):
+        if not is_bilibili_image_host(host):
             return None
         if any(token in low for token in BAD_PATH_HINTS):
             return None

@@ -8,6 +8,8 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+from bilibili_image_urls import unique_canonical_image_urls
+
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 DATE_CACHE_PATH = ROOT / "data" / "article_dates.json"
@@ -41,6 +43,18 @@ def canonical(url: str) -> str:
         return urllib.parse.urlunparse((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/") or "/", "", urllib.parse.urlencode(query), ""))
     except Exception:
         return url
+
+
+def normalize_image_fields(row: dict) -> bool:
+    """Remove Bilibili resize derivatives while preserving real gallery images."""
+
+    before_urls = list(row.get("imageUrls") or []) if isinstance(row.get("imageUrls"), list) else []
+    before_primary = row.get("imageUrl")
+    values = before_urls + ([before_primary] if before_primary else [])
+    images = unique_canonical_image_urls(values)
+    row["imageUrls"] = images
+    row["imageUrl"] = images[0] if images else None
+    return images != before_urls or row.get("imageUrl") != before_primary
 
 
 def parse_date(value: str) -> int:
@@ -134,11 +148,13 @@ def main():
                 pass
 
     corrected = 0
+    image_rows_corrected = 0
     seen_urls = set()
     normalized = []
     for row in kept:
         for field in LEGACY_REMOVED_FIELDS:
             row.pop(field, None)
+        image_rows_corrected += int(normalize_image_fields(row))
 
         url = str(row.get("sourceUrl") or "")
         key = canonical(url)
@@ -167,6 +183,7 @@ def main():
     write_json(NEWS_PATH, normalized)
     write_json(DATE_CACHE_PATH, cache)
     print(f"Google News proxy rows removed: {removed_google}")
+    print(f"Bilibili image rows canonicalized: {image_rows_corrected}")
     print(f"article dates stabilized/corrected: {corrected}")
     print(f"normalized news rows: {len(normalized)}")
 
