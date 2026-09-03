@@ -2784,6 +2784,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788443927
+    },
+    "https://x.com/LifeMakeover510/status/1974799226556014646": {
+      "contentHash": "831ea617a958fa0e01393400",
+      "titleJa": "SSR [Ashley - Tale of Tails] プレビュー\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催",
+      "bodyJa": "SSR [Ashley - Tale of Tails] プレビュー\n\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催されます！\n\n「運命は残酷なのかもしれない。少なくとも、私たちは本当にお別れを告げるこの機会を与えられているのだから、そうではないだろうか？」\n\n#LifeMakeover",
+      "summaryJa": "・追加: SSR [Ashley - Tale of Tails] プレビュー\n・イベント: #PrincessAllAboard 新バージョン - Wonder Lullabyが開催\n・期間: 10月8日〜10月28日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445061
+    },
+    "https://x.com/LifeMakeover510/status/1974701081986011485": {
+      "contentHash": "2fa7845624cdf18d243ffa4c",
+      "titleJa": "新バージョン | ★6セット「ドリームアドベンチャー」プレビュー",
+      "bodyJa": "新バージョン | ★6セット「ドリームアドベンチャー」プレビュー！\n\n#PrincessAllAboard 新バージョン - Wonder Lullaby は10月8日から10月28日まで開催されます！\n\n<真夜中前：自由と夢の玉>\n隅では、振り子がしつこくささやき、時間を真夜中の鐘の音へと急かしている…",
+      "summaryJa": "・追加: ★6セット「ドリームアドベンチャー」のプレビュー公開\n・イベント: #PrincessAllAboard 新バージョン - Wonder Lullaby が開催\n・期間: 10月8日〜10月28日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445095
+    },
+    "https://x.com/LifeMakeover510/status/1971185414066102430": {
+      "contentHash": "1c3c0c79d21672a77a7848ef",
+      "titleJa": "Lightchase Encore | ★6セット - オーシャンネビュラプレビュー！",
+      "bodyJa": "Lightchase Encore | ★6セット - オーシャンネビュラプレビュー！\n\nOcean Slumber | 「私の物語を語り合う貝殻を、聞いたことはありますか？」\nイベント期間は9月26日9:00から10月16日23:59まで！\n\n❗️★6セットトップ[Lost Song Ripple]の新しいフォームが登場❗️\n\n#LifeMakeover",
+      "summaryJa": "・追加: ★6セットトップ[Lost Song Ripple]の新しいフォームが登場\n・イベント名: Ocean Slumber\n・期間: 9月26日9:00〜10月16日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445131
     }
   },
   "failures": {
