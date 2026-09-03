@@ -47,7 +47,13 @@
         "url": "https://x.com/stylight_kr/status/2095413988280639501"
       }
     ],
-    "sourceCount": 6
+    "sourceCount": 6,
+    "titleJa": "『月の審判』創作大会受賞作品共有 第4弾 🎉素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様、心より感謝申し上げます。受賞された皆様にも改めてお祝いを申し上げます！",
+    "bodyJa": "『月の審判』創作大会受賞作品共有 第4弾 🎉\n\n素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様、心より感謝申し上げます。\n受賞された全ての皆様にも改めてお祝いの言葉を申し上げます！\n\n今後もStylightのスタイルパートナーの皆様の\n素晴らしく多様な作品を期待しております！💖\n\n#Stylight #月の審判創作大会 #受賞作品",
+    "summaryJa": "・追加: 『月の審判』創作大会の受賞作品共有 第4弾が公開されました\n・感謝: 素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様へ感謝を表明\n・今後の期待: 今後もStylightのスタイルパートナーの皆様の作品を期待する",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "fa8265506a39a6d8ce795dda",
@@ -74,7 +80,13 @@
     "sourceCount": 2,
     "imageUrls": [
       "https://i4.ytimg.com/vi/_Ys5GvAvE-Y/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト",
+    "bodyJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト\n\n「かつて私たちは、切り離せないほど親密だった。あなたは私を、あなた自身のものと同じくらい深く知っていた。」\n\n#PrismaticFantasy | イベント期間は9月2日09:00から9月22日23:59まで！\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
+    "summaryJa": "・追加: SRアライ [ジェラルド - Our Way Home] - デフォルトが登場\n・期間: 9月2日09:00から9月22日23:59まで",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "01bf2c7012ad2710a58bb998",
@@ -605,7 +617,13 @@
         "url": "https://www.taptap.cn/moment/843802325314178463"
       }
     ],
-    "sourceCount": 4
+    "sourceCount": 4,
+    "titleJa": "歌声で輝くステージを照らせ ✨楽譜の旋律と鼓動が共鳴し、✨あなたと共に華やかな花道を歩もう",
+    "bodyJa": "歌声で輝くステージを照らせ\n✨楽譜の旋律と鼓動が共鳴し、\n✨あなたと共に華やかな花道を歩もう！\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+    "summaryJa": "・ゲームタイトル: 以闪亮之名\n・ジャンル: ロールプレイング/高画質/シミュレーション経営\n・内容: すべての女性が夢中になる3A級シミュレーションライフゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e090e19702d2236dedf438e5",
@@ -2717,7 +2735,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -4989,6 +5007,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]
