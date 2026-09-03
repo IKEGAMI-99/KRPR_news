@@ -45,6 +45,7 @@ PIPELINE_STEPS = (
     Step("source enrichment", "enrich_sources.py", 60),
     Step("X and Bilibili resilient repair", "repair_social_sources.py", 90),
     Step("social image enrichment", "enrich_social_images.py", 70),
+    Step("direct X image repair", "repair_x_images_direct.py", 55),
     Step("Weibo native image enrichment", "enrich_weibo_images.py", 55),
     Step("Weibo CDN normalization", "normalize_weibo_cdn.py", 20, False),
     Step("Bilibili native image enrichment", "enrich_bilibili_images.py", 45),
