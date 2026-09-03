@@ -264,11 +264,11 @@
     "sourceUrl": "https://www.bilibili.com/opus/1243011641270861858",
     "publishedLabel": "1日前",
     "publishedAtEpoch": 1788249600,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg",
+    "imageUrl": "https://i1.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg@316w_560h_1e_1c",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg",
       "https://i1.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg@316w_560h_1e_1c",
-      "https://i1.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg"
+      "https://i1.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/1ea29a2e1421052695d6eeeaf10e5d2a676200579.jpg"
     ],
     "sources": [
       {
@@ -1090,24 +1090,8 @@
     "sourceUrl": "https://www.bilibili.com/opus/1242632825186811908",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1788161400,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/975adb871b4d4b966f4f55484d1a92e5676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/975adb871b4d4b966f4f55484d1a92e5676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/d2bd4333b14e498ff67e2b1122ef9615676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/ebb2210959673edb2224b3090d9a9360676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/a003ceb07522263a27e40042856ca80f676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/a221d1e7818accea4e4346abdf75420d676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/171bc10d2d221d08a7cb5cb06c72a488676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/c1849381802a926bcfaa7777807c50f6676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/54cbba95df37c38c1b4d2be45752829a676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/31ffc12841beed2ffb4797dc06980245676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/a49284babdff80deace4a93c10952fc7676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/e49b18856b690a8407eedd6264ac2b53676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/b1b1973364ab77c0b8edc215b1a19635676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/8b62513bf61810f90e6864da8d15f8e5676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/63e6c93906fd572a533f10d021b60eb1676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/9d95c70bc8c09cd8944337bcca6ede59676200579.jpg"
-    ],
+    "imageUrl": null,
+    "imageUrls": [],
     "sources": [
       {
         "platform": "公式Bilibili · 記事",
@@ -2217,88 +2201,26 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "da8e741caf495be92a4735a0",
+    "id": "8ced6105286df0f343f7868a",
     "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "VME | 最新舞台返图释出 #顶流的蛋生# 全新4.4版本·神迹初诞9月1日-9月21日限时登陆",
-    "body": "VME | 最新舞台返图释出\n #顶流的蛋生# 全新4.4版本·神迹初诞9月1日-9月21日限时登陆！\n\n✨梦想孵化招募圆满结束\n🎤出道首秀独家舞台解锁\n⚡当追光点亮满场热情\n✨她就像站在光里的星辰 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241840403708116995",
-    "publishedLabel": "5日前",
-    "publishedAtEpoch": 1787976900,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/0ab46a87dc4aa2150d20f5a3381ee45d676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/0ab46a87dc4aa2150d20f5a3381ee45d676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/ad896498a3263e47c9f578ff7521818b676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/e8e70b75318552e827313ab070194e2a676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241840403708116995"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "VME | 最新ステージ画像公開 #トップスターの卵生# 全新4.4バージョン・神迹初诞 9月1日〜9月21日期間限定ログイン",
-    "bodyJa": "VME | 最新ステージ画像公開\n#トップスターの卵生# 全新4.4バージョン・神迹初诞 9月1日〜9月21日期間限定ログイン！\n\n✨夢の孵化募集が満員となりました\n🎤デビュー初舞台の独占ステージがアンロック\n⚡スポットライトが会場の熱狂を照らす\n✨彼女は光の中に立つ星のように\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
-    "summaryJa": "・追加: 全新4.4バージョン「神迹初诞」が実装\n・期間: 9月1日〜9月21日\n・内容: デビュー初舞台の独占ステージがアンロックされる\n・その他: 夢の孵化募集が満員となったことが報告されている",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "97289226cd2beb2ec92afb66",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "全新4.4版本｜六星套装「圣翎祈世」抢先看",
-    "body": "全新4.4版本｜六星套装「圣翎祈世」抢先看！\n #顶流的蛋生# 全新4.4版本·神迹初诞9月1日-9月21日限时登陆！\n\n她曾站在空荡的排练室里，\n将同一首歌唱了一遍又一遍。\n光很亮，可只照向旁人。\n角落里的她握着旧麦克风，\n像握着一颗尚未孵化的梦。\n直到那天，被梦想指引的幸运终于降临。\n彩蛋开启，旋律倾泻而出。\n是她自己的声音。\n她的努力，值得被看见。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241839115217928193",
+    "platform": "公式Bilibili · 動画",
+    "title": "全新4.4版本｜六星套装「圣翎祈世」实机展示",
+    "body": "#顶流的蛋生# 全新4.4版本·神迹初诞9月1日-9月21日限时登陆！\n\n❗双形态连衣裙❗连衣裙采用了双形态设计，一形态为常规腹部版中长裙，可以与腹腔镂空的短裙二形态自由切换，适配多种穿搭场景。\n❗价值2亿华丽巨蛋演绎双形态座驾❗座驾一形态，灵感取自法贝热彩蛋，整体呈现展开姿态，蛋壳如初绽花瓣环绕角色，营造华贵氛围；二形态蛋壳下移，角色成为画面里绝对的视觉中心，更凸显人物造型。坐凳的金属扶手以天使翅膀为设计元素，实现了神圣感与实用性有机结合。\n❗有史以来最大翅膀❗背饰首次采用包裹羽翼造型，双形态设计将会契",
+    "sourceUrl": "https://www.bilibili.com/video/BV19HtN66EN6",
     "publishedLabel": "5日前",
     "publishedAtEpoch": 1787976300,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/5b0e3ef96b4fabb61ea8053549978a21676200579.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/archive/d53f53135155f13119a194cde7a5edec9bcf87a1.jpg",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/5b0e3ef96b4fabb61ea8053549978a21676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/8b1f44f97289d3b8a9b78564f89abcbe676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/b1ba8042317dfc98d0586f2365cffe92676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/6e991f2a6b7b4cb886b4b37b23fa6392676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/4d54d4658fbae1074e1e279577450c73676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/29449b542aacdeece467391d67ab7bfd676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/9aa033b8ac55bf062b346a1cd665f71a676200579.jpg"
+      "https://i0.hdslb.com/bfs/archive/d53f53135155f13119a194cde7a5edec9bcf87a1.jpg"
     ],
     "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241839115217928193"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/842471156979075777"
-      },
       {
         "platform": "公式Bilibili · 動画",
         "label": "Bilibili · 動画",
         "url": "https://www.bilibili.com/video/BV19HtN66EN6"
-      },
-      {
-        "platform": "官方好游快爆",
-        "label": "好游快爆",
-        "url": "https://m.bbs.3839.com/thread-9117233.htm"
-      },
-      {
-        "platform": "官方好游快爆",
-        "label": "好游快爆",
-        "url": "https://m.bbs.3839.com/thread-9117229.htm"
       }
     ],
-    "sourceCount": 5,
-    "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」先行公開",
-    "bodyJa": "新バージョン4.4｜★6セット「聖翎祈世」先行公開！\n#トップ層の卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n\n彼女はかつて、がらんとしたリハーサル室に立ち、\n同じ歌を何度も何度も歌い続けた。\n光は明るかったが、それは他者だけを照らしていた。\n隅で彼女は古いマイクを握りしめ、\nまだ孵化していない夢を握っているようだった。\nその日、夢に導かれた幸運がついに訪れた。\n彩蛋が開き、旋律が溢れ出す。\nそれは彼女自身の声だった。\n彼女の努力は、見られる価値があるのだ。\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイへ",
-    "summaryJa": "・新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・★6セット「聖翎祈世」が先行公開\n・ゲームジャンルはロールプレイング/高画質/シミュレーション経営",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
+    "sourceCount": 1
   },
   {
     "id": "d692e107085d057e1b162c73",
@@ -2323,14 +2245,9 @@
         "platform": "公式Bilibili · 動画",
         "label": "Bilibili · 動画",
         "url": "https://www.bilibili.com/video/BV1xQtw6WEiQ"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/842446479250425774"
       }
     ],
-    "sourceCount": 3,
+    "sourceCount": 2,
     "titleJa": "新バージョン4.4登場｜神迹初诞PV初公開、VME新星が重磅発表",
     "bodyJa": "新バージョン4.4「神迹初诞」が9月1日から9月21日まで期間限定で登場します。\n#頂流の卵生#\n🎁フォロー＆巻き毛で、Summerがランダムに10名の幸運なプレイヤーに【200元ショッピングカード×1】をプレゼントします。\n🎬「神迹初诞」のデビューPVが初公開されました！\n✨「VME新星」の超凡なデビュー初記念！\n🎵「デビューシングル」のデビュー曲を誠意を込めて歌唱！\n🌟「数年かけて蓄積」したデビューは完全体！\n💖「運命の神降臨」の幸運な卵が輝かしい星の道を歩む！\n過去の潜伏期間を経て、熱意は冷めない。\nこの初秋、彼女の時代へようこそ。\n\n動画アドレス：",
     "summaryJa": "・新バージョン4.4「神迹初诞」が9月1日〜9月21日まで期間限定で登場\n・フォロー＆巻き毛で、Summerがランダムに10名のプレイヤーに【200元ショッピングカード×1】をプレゼント\n・「神迹初诞」のデビューPVが初公開\n・「VME新星」のデビュー初記念と「デビューシングル」の歌唱が実施される",
@@ -2460,80 +2377,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "f88f766d20abf824dee93975",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "VME | 爆料早班机：首发艺人即将启程 💘超级新星降临音乐宇宙 ⭐独家出道应援即将开启 💗让我们共同创造☆✮⁺⊹ ✨这命运般的相遇☆✮⁺⊹ 以闪亮之名全新4...",
-    "body": "VME | 爆料早班机：首发艺人即将启程\n\n💘超级新星降临音乐宇宙\n⭐独家出道应援即将开启\n💗让我们共同创造☆✮⁺⊹\n✨这命运般的相遇☆✮⁺⊹\n以闪亮之名全新4.4版本即将开启，敬请期待…… 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241465453027524644",
-    "publishedLabel": "6日前",
-    "publishedAtEpoch": 1787889600,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg@316w_560h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg@316w_560h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg@316w_560h_1e_1c",
-      "https://i2.hdslb.com/bfs/new_dyn/38d65ad8cfa6cd0766bcf9144037fceb676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241465453027524644"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/RfsQDmbtc"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/842032893923427818"
-      },
-      {
-        "platform": "官方好游快爆",
-        "label": "好游快爆",
-        "url": "https://m.bbs.3839.com/thread-9114444.htm"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1241465453027524644"
-      }
-    ],
-    "sourceCount": 5,
-    "titleJa": "VME | 独占情報：初登場アーティストが旅立つ、超新星が音楽宇宙に降臨💘\n⭐独占デビュー応援が始まります💗\n✨運命的な出会いを共に創り上げましょう☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します……",
-    "bodyJa": "VME | 独占情報：初登場アーティストが旅立つ\n\n💘超新星が音楽宇宙に降臨\n⭐独占デビュー応援が始まります\n💗共に創造しましょう☆✮⁺⊹\n✨運命的な出会いを☆✮⁺⊹\n以闪亮之名、新バージョン4.4が間もなく始動します。ご期待ください……\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
-    "summaryJa": "・新バージョン4.4が間もなく始動する\n・初登場アーティストが旅立つ\n・超新星が音楽宇宙に降臨する\n・独占デビュー応援が開始される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "314b31776a8aad41f6629edb",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "【复刻】星夜神谕礼包限时开启 【礼包时间】 8月28日10:00-9月3日23:59 【礼包说明】 星夜神谕礼包售卖期间，合伙人可以完成限定任务获取礼包折扣",
-    "body": "【复刻】星夜神谕礼包限时开启\n\n【礼包时间】\n8月28日10:00-9月3日23:59\n【礼包说明】\n星夜神谕礼包售卖期间，合伙人可以完成限定任务获取礼包折扣。完成全部4个任务可降至最低折扣2.2折！超值优惠不容错过！礼包内含五星精美手持【星祈绘卷】、五星妆容【裂隙霞金】、精美家具【深渊呢喃】、逐光邀请函*3、体力*300和潮流色卡*45，该礼包永久限购1次。\n【任务说明】\n4个限定任务共分为两组，活动期间完成以下任意一组任务即可降价一次，完成全部两组任务后即可享受最低折扣2.2折！\n第一组任务\n1. 完成一次追光\n2. 给好友赠送5次体力\n第二组任务\n1. 累计消耗1000点体力\n2. 进行协会应援获得90点会员积分\n【特别说明】\n五星精美手持【星祈绘卷】带有专属主界面互动动作，在主界面穿戴并点击该手持即可触发~合伙人们快来体验全新专属互动吧！\n【复刻说明】\n本次礼包活动会记录您上一次的购买情况，若您之前已经购买过该礼包，则本次将无法重复购买。本次礼包活动还会记录您上一次活动开启时限定折扣任务的完成情况，已经完成的任务本次不需要重复完成，上次活动开启期间消耗的体力和协会应援获得的会员积分也会累计在任务进度中。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241187139140452373",
-    "publishedLabel": "6日前",
-    "publishedAtEpoch": 1787824800,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/1ff8fa3683290c49e61cdb3420e91589676200579.jpg@420w_560h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/1ff8fa3683290c49e61cdb3420e91589676200579.jpg@420w_560h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/1ff8fa3683290c49e61cdb3420e91589676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241187139140452373"
-      }
-    ],
-    "sourceCount": 1
-  },
-  {
     "id": "890b86c00936d53072152725",
     "region": "GLOBAL",
     "platform": "公式TikTok",
@@ -2578,28 +2421,28 @@
     "sourceCount": 1
   },
   {
-    "id": "a341e6ada280958d072f08a5",
+    "id": "2056ec418d483017cdda9ea2",
     "region": "GLOBAL",
     "platform": "公式TikTok",
-    "title": "#LifeMakeover Lightchase Encore | 5-Star Set [Misty Maple] Preview",
-    "body": "#LifeMakeover Lightchase Encore | 5-Star Set [Misty Maple] Preview! Shall we dance together beneath gilded domes, upon blooming floral tiles? #Prismat...",
-    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640926717398292",
+    "title": "#LifeMakeover Lightchase Encore | 5-Star Set [Vitrum Talk] Preview",
+    "body": "#LifeMakeover Lightchase Encore | 5-Star Set [Vitrum Talk] Preview! 💎 Transcending dimensional limits with symbiotic aesthetics: inorganic crystal ...",
+    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640617441807636",
     "publishedLabel": "6日前",
     "publishedAtEpoch": 1787822837,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQyCofAQOgdVDyAIAOfEAnCQABkFEGVBqDMbAC~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=H%2FITL47oBewmGSeDFLMaCj3o440%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogDLqEESIyrgEXAPye8egQAbVcABLGe8IAIAAD~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=210lTwc4pvIMtVZJvalqcQU4mz4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQyCofAQOgdVDyAIAOfEAnCQABkFEGVBqDMbAC~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=H%2FITL47oBewmGSeDFLMaCj3o440%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogDLqEESIyrgEXAPye8egQAbVcABLGe8IAIAAD~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=210lTwc4pvIMtVZJvalqcQU4mz4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
         "platform": "公式TikTok",
         "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640926717398292"
+        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640617441807636"
       },
       {
         "platform": "公式TikTok",
         "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640617441807636"
+        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678640926717398292"
       }
     ],
     "sourceCount": 2
@@ -2656,47 +2499,6 @@
       }
     ],
     "sourceCount": 1
-  },
-  {
-    "id": "c215f29ccd873dd60580211f",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "VME | 孵化幸运💖助力顶流蛋生💥 📢在 Vvanna.Music.Entertainment 的神秘蛋壳上 📢每多一个点赞就多一缕欧气凝结 📢每多一次转发就多一分幸运闪亮 ✨...",
-    "body": "VME | 孵化幸运💖助力顶流蛋生💥\n\n📢在 Vvanna.Music.Entertainment 的神秘蛋壳上\n📢每多一个点赞就多一缕欧气凝结\n📢每多一次转发就多一分幸运闪亮\n✨让幸运为你 「蛋生」！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241171677259235393",
-    "publishedLabel": "6日前",
-    "publishedAtEpoch": 1787821200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg@560w_560h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg@560w_560h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg@560w_560h_1e_1c",
-      "https://i2.hdslb.com/bfs/new_dyn/607f8197fcdfecb84ecab60bc69635b1676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241171677259235393"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/RflnUkx2m"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1241171677259235393"
-      }
-    ],
-    "sourceCount": 3,
-    "titleJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨...",
-    "bodyJa": "VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n\n📢Vvanna.Music.Entertainmentの神秘的な卵殻で\n📢いいねを一つ増やすごとに幸運のオーラが凝縮\n📢リツイートを一つ増やすごとに幸運の輝きが増す✨\n\n幸運をあなたに「卵生」させましょう！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
-    "summaryJa": "・イベント: VME | 幸運を孵化させて💖トップスターの卵を育てる💥\n・参加方法: Vvanna.Music.Entertainmentの神秘的な卵殻で参加\n・参加条件: いいねを一つ増やすごとに幸運のオーラが凝縮\n・参加条件: リツイートを一つ増やすごとに幸運の輝きが増す",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d20c10b98f06f46d44fc359d",
@@ -2782,52 +2584,6 @@
       }
     ],
     "sourceCount": 1
-  },
-  {
-    "id": "46509284a14b8ceaa1a8f1e6",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "Vvanna.Music.Entertainment官宣 👏🏻Vvanna.Music.Entertainment正式官宣 ✨聚光灯下，VME新星为你闪亮 📢梦想孵化招募即日起同步启动 🌟欢迎持续关注...",
-    "body": "Vvanna.Music.Entertainment官宣\n\n👏🏻Vvanna.Music.Entertainment正式官宣\n✨聚光灯下，VME新星为你闪亮\n📢梦想孵化招募即日起同步启动\n🌟欢迎持续关注以闪亮之名全新4.4版本\n💖大事很妙，敬请期待 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1241094367904530448",
-    "publishedLabel": "2026-08-27",
-    "publishedAtEpoch": 1787803200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/ef09a5cd995ab0a5af04a1cd20cfb90f676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/ef09a5cd995ab0a5af04a1cd20cfb90f676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/4ccdcff7be3709c8aeef4e37b14d1350676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/ef09a5cd995ab0a5af04a1cd20cfb90f676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/4ccdcff7be3709c8aeef4e37b14d1350676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1241094367904530448"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/Rfjq8fJXD"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/841996392720236819"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1241094367904530448"
-      }
-    ],
-    "sourceCount": 4,
-    "titleJa": "Vvanna.Music.Entertainmentが正式発表 👏🏻Vvanna.Music.Entertainmentが正式に発表 ✨スポットライトの下で、VMEの新星があなたを輝かせる 📢ドリームインキュベーション（夢の孵化）の募集が本日より開始 🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください...",
-    "bodyJa": "Vvanna.Music.Entertainmentが正式発表\n\n👏🏻Vvanna.Music.Entertainmentが正式に発表\n✨スポットライトの下で、VMEの新星があなたを輝かせる\n📢ドリームインキュベーションの募集が本日より開始\n🌟以闪亮之名（以閃亮之名）の全新4.4バージョンをぜひご注目ください\n💖素晴らしいことが起こりますので、ご期待ください\n\n以闪亮之名\n \n ゲーム\n \n ロールプレイング/高画質/シミュレーション経営\n \n 全ての女性が夢中になる3A級シミュレーションライフゲーム\n \n 入場",
-    "summaryJa": "・追加: Vvanna.Music.Entertainmentが正式に発表\n・イベント: ドリームインキュベーションの募集が本日より開始\n・バージョン: 以闪亮之名（以閃亮之名）の全新4.4バージョンが予定されている",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3c01de80d76097ef95460dcc",
@@ -3506,47 +3262,6 @@
     "sourceCount": 1
   },
   {
-    "id": "5f80c1040580753eac3c4d02",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "关于游戏内配音调整情况说明 亲爱的合伙人： 感谢您长久以来对《以闪亮之名》的喜爱和支持",
-    "body": "关于游戏内配音调整情况说明\n\n亲爱的合伙人：\n\n感谢您长久以来对《以闪亮之名》的喜爱和支持。因配音老师身体状况影响，项目组在充分尊重配音老师的意愿下，双方协商决定，后续将不再担任顾苏澄的配音相关工作。感谢配音老师一直以来对角色的精彩演绎与辛勤付出。\n项目组现已着手推进顾苏澄后续相关语音内容的筹备，并全面开启新任配音演员的试音工作。目前，「顾苏澄新CV试音问卷」已正式上线，希望合伙人能亲自聆听并投出宝贵的一票。随着游戏内容的不断推进，我们将与合伙人一起在新版本中，共同见证顾苏澄的未来。游戏内目前已实装的所有顾苏澄历史配音内容，均会进行永久保留，大家依然可以随时前往游戏内，重温那些珍贵的陪伴时光。\n在后续的新增版本中，我们将正式启用大家选出的新语音内容，确保合伙人拥有平滑与连贯的剧情体验。相伴的旅途仍将继续，感谢各位合伙人一直以来的支持与陪伴。关于顾苏澄新配音内容的后续筹备进展，我们会第一时间与合伙人同步。\n\n《以闪亮之名》项目组 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240707820837404690",
-    "publishedLabel": "2026-08-26",
-    "publishedAtEpoch": 1787713200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg@720w_406h_1e_1c",
-      "https://i2.hdslb.com/bfs/new_dyn/8b9110b1c9e8b118cc26dbaa7adb444d676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240707820837404690"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/Rf9BhoCFS"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240707820837404690"
-      }
-    ],
-    "sourceCount": 3,
-    "titleJa": "ゲーム内ボイスの調整に関するお知らせ",
-    "bodyJa": "プレイヤーの皆様へ：\n\n長きにわたり『以闪亮之名』を愛し、ご支援いただきありがとうございます。\n\nボイス担当者の体調不良の影響により、プロジェクトチームはボイス担当者の意向を十分に尊重した上で、双方の協議により、今後、顧苏澄のボイス関連の仕事は担当されなくなると決定いたしました。これまでキャラクターを素晴らしい演技で演じ、多大な貢献をしてくださったボイス担当者の方に感謝申し上げます。\n\nプロジェクトチームは現在、顧苏澄の今後の音声コンテンツの準備を進めており、新しいボイスキャストの試聴作業を全面的に開始しました。「顧苏澄新CV試音问卷」が正式に公開されましたので、プレイヤーの皆様にぜひご自身で聴き比べ、貴重な一票を投じていただきたく存じます。ゲームコンテンツが進行するにつれて、私たちはプレイヤーの皆様と共に新バージョンで顧苏澄の未来を共に目撃してまいります。現在ゲーム内に実装されている顧苏澄の過去のボイス内容はすべて永久に保持されますので、いつでもゲーム内へお越しいただき、貴重な思い出の時間を再びお楽しみいただけます。\n\n今後の新バージョンでは、皆様が選んでくださった新しい音声コンテンツを正式に採用し、プレイヤーの皆様にスムーズで一貫性のあるストーリー体験をお届けします。共に歩む旅は続きます。皆様の変わらぬご支援とご愛顧に感謝いたします。顧苏澄の新しいボイスコンテンツの今後の準備の進捗については、いち早く皆様にご報告いたします。\n\n『以闪亮之名』プロジェクトチーム",
-    "summaryJa": "・変更: 顧苏澄のボイス担当者が体調不良のため、今後担当しないことが決定した\n・公開: 「顧苏澄新CV試音问卷」が正式に公開された\n・対応: 現在実装されている顧苏澄の過去のボイス内容は永久に保持される\n・予定: 今後の新バージョンで、プレイヤーが選んだ新しいボイスコンテンツが正式に採用される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "5bf87acffdfa3c58786a3616",
     "region": "GLOBAL",
     "platform": "公式X",
@@ -3601,43 +3316,6 @@
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "b761daa769775c2c4476eea8",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "雪城夜话外观礼包即将上架 【礼包时间】 8月25日10:00-9月7日23:59 【礼包说明】 限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像...",
-    "body": "雪城夜话外观礼包即将上架\n\n【礼包时间】\n8月25日10:00-9月7日23:59\n【礼包说明】\n限时礼包售卖期间，合伙人可以4.6折的价格直接购买雪城夜话外观礼包，内含摄像机镜头动态动作【舞梦咏雪】、拍照场景【雪落琉庭】、拍照动作【倚梦而息】、拍照运镜【舞梦咏雪】、聊天气泡【旋舞协奏】、背景音乐【舞梦咏雪】、潮流色卡*26和遇之钥*40，该礼包永久限购1次。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240073883666612227",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787565600,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/711ccf78e38e5437e7868a2285f8e7a1676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/711ccf78e38e5437e7868a2285f8e7a1676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/19bbddd34a75d36ff618bd699c51fc99676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/5f4517dd7445d2c79e6fa8f3644579b3676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/711ccf78e38e5437e7868a2285f8e7a1676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/19bbddd34a75d36ff618bd699c51fc99676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/5f4517dd7445d2c79e6fa8f3644579b3676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240073883666612227"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/ReTuLsMw2"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240073883666612227"
-      }
-    ],
-    "sourceCount": 3
   },
   {
     "id": "d99a1f06150353d89ccd693c",
@@ -3724,230 +3402,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "8b0a9b074bb4d57d8b52e52e",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "参与山神的园林，获取五星限定套装",
-    "body": "参与山神的园林，获取五星限定套装！\n\n❄️枝堆绯雪，风送幽香。\n\n获得足够园艺凭证，可以换取五星限定套装【绯雪浸香】、拍照相框【浮生有闲】、拍照萌拍【雪域有痕】、钻石*100及多种材料道具！获得足够神奇种子，还可在园林小铺换取封面聊天背景【专注时刻】、静态拍照动作【伺机而动】、称号【奖励自己一杯茶】和金币奖励！ \n\n【活动时间】\n8月25日10:00-9月8日5:00\n【领奖时间】\n8月25日10:00-9月9日5:00\n【活动规则】\n风拂新绿，花落满阶，帮助山神购买装园艺工具达成心愿吧！四种山神随机造访，沉迷园艺的山神、偶尔摸鱼的山神、心不在焉的山神、迷迷糊糊的山神，不同合伙人家园里的山神每天都有可能是不一样的哦~有三种园艺工具可供选择，如果出售给山神它喜爱的园艺工具，它会给予更多的园艺凭证！活动期间每日最多购买3个园艺工具，最多出售6个园艺工具，寻找喜爱它们的山神并努力卖出更高的价格吧！此外，参与日程活动提高活跃度也可获取园艺凭证。特别地，售卖给穿戴奇特的沉迷园艺的山神它喜爱的园艺工具，会额外获赠神奇种子哦。\n更多规则请在游戏内活动界面的帮助说明中查看。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240042959866429440",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787558400,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg@316w_560h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg@316w_560h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg@316w_560h_1e_1c",
-      "https://i2.hdslb.com/bfs/new_dyn/14671348941aa28f94e47dca757276dc676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240042959866429440"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/ReSI3zeEz"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/839947208617887317"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240042959866429440"
-      }
-    ],
-    "sourceCount": 4,
-    "titleJa": "山神の庭園に参加して★5限定セットを入手しよう",
-    "bodyJa": "山神の庭園に参加して、★5限定セットを入手しましょう！\n\n❄️枝に緋雪、風に幽香を運ぶ。\n\n十分な園芸証を入手すると、★5限定セット【绯雪浸香】、フォトフレーム【浮生有闲】、フォト萌え撮影【雪域有痕】、ダイヤ×100、および各種素材道具と交換できます！十分な神奇種を入手すると、庭園の小店でカバーチャット背景【专注时刻】、静止フォトアクション【伺机而动】、称号【奖励自己一杯茶】、金貨報酬と交換することも可能です！\n\n【イベント期間】\n8月25日10:00〜9月8日5:00\n【報酬受け取り期間】\n8月25日10:00〜9月9日5:00\n【イベントルール】\n風が新緑を吹き、花が段々に散る。山神が園芸道具を購入して願いを叶えるのを手伝いましょう！4種類の山神がランダムに訪問します。園芸に夢中な山神、たまにサボる山神、上の空な山神、ぼんやりしている山神など、プレイヤーの家に来る山神は毎日異なる可能性があります。3種類の園芸道具から選択できます。山神が好む園芸道具を売却すると、より多くの園芸証がもらえます！イベント期間中、毎日最大3個の園芸道具を購入でき、最大6個の園芸道具を売却できます。好きな山神を見つけて、より高い価格で売却しましょう！また、日程イベントに参加してアクティビティ度を高めることで園芸証を入手できます。特に、奇抜な装いを身に着けた園芸に夢中な山神が好む園芸道具を売却すると、神奇種が追加で贈られます。\n詳細なルールはゲーム内のイベント画面のヘルプ説明をご覧ください。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
-    "summaryJa": "・追加: ★5限定セット【绯雪浸香】、フォトフレーム【浮生有闲】、フォト萌え撮影【雪域有痕】、ダイヤ×100、各種素材道具、カバーチャット背景【专注时刻】、静止フォトアクション【伺机而动】、称号【奖励自己一杯茶】、金貨報酬が獲得可能\n・期間: 8月25日10:00〜9月8日5:00\n・報酬受け取り期間: 8月25日10:00〜9月9日5:00\n・入手方法: 山神の庭園に参加し、園芸道具の購入や売却を行うことで園芸証や神奇種を入手し、交換可能\n・ルール: 4種類の山神がランダムに訪問し、好みの園芸道具を売却すると園芸証や神奇種が追加で付与される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "ee4669a11810ba349b1fe89d",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "复刻追光活动｜棱彩分解商店限定兑换单品爆料 棱彩幻梦 | 晶芯裂变，时茧新生",
-    "body": "复刻追光活动｜棱彩分解商店限定兑换单品爆料\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n【棱彩分解】商店将于8月25日10:00–9月15日23:59限时开启，通过分解该限时追光活动内的服饰，可获得限定时装部件【洋流情书】、【无名诗】、【红玫覆羽】、动态拍照动作【拂花揽月】、拍照动作【月下倾辉】及头像框、棱彩风向标、心念之蝶、知之钥、金币等材料道具！ 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240028786514198552",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787546100,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/bf0e7a3d98dfcf222616e0d87762513b676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/bf0e7a3d98dfcf222616e0d87762513b676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/3ad703d74102e95d33c606e68d4abc56676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/1146f1dd955d9ae95bd7c94299186614676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/bf0e7a3d98dfcf222616e0d87762513b676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/3ad703d74102e95d33c606e68d4abc56676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/1146f1dd955d9ae95bd7c94299186614676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240028786514198552"
-      },
-      {
-        "platform": "公式Weibo",
-        "label": "Weibo",
-        "url": "https://weibo.com/7521830234/ReRmQwbXi"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/839946139229753196"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240028786514198552"
-      }
-    ],
-    "sourceCount": 4,
-    "titleJa": "復刻「追光」イベント｜プリズム分解ショップ限定交換アイテム情報 プリズム幻夢 | 晶芯裂变，時茧新生",
-    "bodyJa": "復刻「追光」イベント｜プリズム分解ショップ限定交換アイテム情報\nプリズム幻夢 | 晶芯裂变，時茧新生。8月25日10:00〜9月14日23:59に期間限定で開催！\n\n【プリズム分解】ショップは8月25日10:00〜9月15日23:59に期間限定でオープンします。この期間限定の「追光」イベント内で衣装を分解することで、限定衣装パーツ【洋流情書】、【無名詩】、【紅玫覆羽】、動的撮影アクション【拂花揽月】、撮影アクション【月下倾辉】、アバターフレーム、プリズム風向標、心念之蝶、知之钥、金貨などの素材アイテムを入手できます！\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
-    "summaryJa": "・復刻イベント「追光」が期間限定で開催\n・期間: 8月25日10:00〜9月14日23:59\n・限定ショップ「プリズム分解」が8月25日10:00〜9月15日23:59に期間限定でオープン\n・衣装を分解することで、限定衣装パーツや動的撮影アクションなどのアイテムを入手可能",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "d3ac88cabd861324ccae9ad8",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览",
-    "body": "复刻追光活动｜SR羁绊「顾苏澄·长夜归途」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n「我们曾经亲密无间，我身体的每一处你都无比熟悉」\n那夜之后，你再也没见过顾先生，关于他的传闻也逐渐散去。\n直到你再次迷失在雪夜，恍惚中听到他的声音，正一遍遍呼唤着你…… \n 长图\n \n 长图\n 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240027497997795353",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787545800,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/d740472a07c85c2a6c25c5b50f818948676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/d740472a07c85c2a6c25c5b50f818948676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/c2b36996e5c7f57e264b4747cea59163676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/d740472a07c85c2a6c25c5b50f818948676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/c2b36996e5c7f57e264b4747cea59163676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240027497997795353"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/839945782227373526"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240027497997795353"
-      }
-    ],
-    "sourceCount": 3,
-    "titleJa": "復刻追光イベント｜SR絆「顧蘇澄・長夜帰途」プレビュー",
-    "bodyJa": "復刻追光イベント｜SR絆「顧蘇澄・長夜帰途」プレビュー！\nPrism Dream | Crystal Core Fission, Time Cocoon Rebirth. 8月25日10:00〜9月14日23:59に期間限定で開催！\n\n「私たちはかつて親密無間だった、私の体の隅々まであなたはよく知っていた」\nあの夜の後、あなたは顧先生に二度と会うことはなくなり、彼の噂も徐々に消えていった。\n雪の夜に再び迷い込み、ぼんやりと彼の声が何度もあなたを呼んでいるのを聞くまで…… \n長图\n\n長图\n閉じる 大図を見る 左に回転 右に回転 \n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n入場",
-    "summaryJa": "・イベント: 復刻追光イベントが開催される\n・期間: 8月25日10:00〜9月14日23:59\n・内容: SR絆「顧蘇澄・長夜帰途」のプレビューが公開される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "4183a635c66d413555f86a88",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "复刻追光活动｜四星套装「暖雾绒心」预览",
-    "body": "复刻追光活动｜四星套装「暖雾绒心」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n细腻柔软的触感，温暖又有安全感~\n在复制粘贴的世界，追逐之外，\n总该收集一些属于自己的碎片。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240026209509703687",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787545500,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c",
-      "https://i0.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg@720w_406h_1e_1c",
-      "https://i2.hdslb.com/bfs/new_dyn/b1b931d72d37823bde467d04a8c2bfb1676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240026209509703687"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/839945504732220794"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240026209509703687"
-      }
-    ],
-    "sourceCount": 3,
-    "titleJa": "復刻「追光」イベント｜★4セット「暖霧絨心」プレビュー",
-    "bodyJa": "復刻「追光」イベント｜★4セット「暖霧絨心」プレビュー！\nPrism Dream | Crystal Core Fission, Time Cocoon Rebirth. 8月25日10:00〜9月14日23:59に期間限定で開催！\n\n繊細で柔らかい触感、温かみと安心感~\nコピー＆ペーストの世界で、追うこと以外に、\n自分だけの欠片を集めるべきだ。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
-    "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 8月25日10:00〜9月14日23:59\n・追加: ★4セット「暖霧絨心」がプレビューされる",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "33da8797a4c421bf8d1dce95",
-    "region": "CHINA",
-    "platform": "公式Bilibili · 記事",
-    "title": "复刻追光活动｜五星套装「枫露晨祷」预览",
-    "body": "复刻追光活动｜五星套装「枫露晨祷」预览！\n棱彩幻梦 | 晶芯裂变，时茧新生。8月25日10:00–9月14日23:59限时开启！\n\n《战争与和平》经典美学再现！华美帝政裙不惧繁工！带来极致视觉体验！\n珍珠百合披帛可独立拆分外套，可开合扇面与裙身繁复百合蕾丝相呼应！\n超真实面料升级！极致柔滑垂坠物理效果，真丝缎面光泽感十足！\n在盛放的花砖之上、鎏金蔓延的穹顶之下，要共舞一曲吗？\n\n------时尚设计手札📓------\n【艺术灵感来源经典】\n裙身版型参考欧式帝政长裙以及奥黛丽赫本出演的《战争与和平》，帝政裙的设计深受古希腊与古罗马文化影响，体现了对古典美的追求，并反映了对简约、纯粹与和谐的乌托邦理想。\n在19世纪，这种服装成为上层社会女性的象征，其精致面料与细腻工艺彰显了财富与地位。穿着帝政裙的女性往往备受尊重与欢迎。其流动轮廓与轻盈材质使穿着者显得优雅自如，传递出浪漫与自由的气息，同时也反映了当时社会对女性解放与个性自由的期待。\n【面料材质物理效果新升级】\n面料的呈现是本次面料材质升级的重大表现，以柔滑垂坠的真丝缎为主体面料，极致细腻的光泽感，增加刺绣点缀，烘托细节高贵优雅。裙子上加入立体百合和珍珠等元素，保留了帝政长裙的典雅风范，又融入了现代设计的精致与细腻。\n【致美版型打造】\n为了完美呈现帝政裙，我们采取了高腰线的长裙版型设计，袖子肩部、下摆缀上层层的荷叶边装饰，丰富视觉层次与细节。大量的金色刺绣和珍珠镶边让裙子整体风格雅致确不失高贵；\n【细节亮点呼应】\n独立拆分的百合珍珠链外套代替传统披帛，百合花散发出粒子特效，更加烘托主题。\n手持扇子可开合，扇面与裙身使用繁复的百合蕾丝花纹相呼应，同时扇子带有蝴蝶飞舞的特效，丰富帝政裙的氛围感。 收起 查看大图 向左旋转 向右旋转 \n 以闪亮之名\n \n 游戏\n \n 角色扮演/高画质/模拟经营\n \n 所有女生都爱玩的3A级模拟生活游戏\n \n 进入",
-    "sourceUrl": "https://www.bilibili.com/opus/1240024921038389251",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787545200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/7606715a5ab905a9875d3c6148d49a73676200579.jpg",
-    "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/7606715a5ab905a9875d3c6148d49a73676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/f6717f78cbb8838406bbb99ab69890df676200579.jpg",
-      "https://i0.hdslb.com/bfs/new_dyn/53deeef7676368a93eed9ae137c88a13676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/7606715a5ab905a9875d3c6148d49a73676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/f6717f78cbb8838406bbb99ab69890df676200579.jpg",
-      "https://i2.hdslb.com/bfs/new_dyn/53deeef7676368a93eed9ae137c88a13676200579.jpg"
-    ],
-    "sources": [
-      {
-        "platform": "公式Bilibili · 記事",
-        "label": "Bilibili",
-        "url": "https://www.bilibili.com/opus/1240024921038389251"
-      },
-      {
-        "platform": "公式TapTap",
-        "label": "TapTap",
-        "url": "https://www.taptap.cn/moment/839945308724003908"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240024921038389251"
-      },
-      {
-        "platform": "公式Bilibili · 動態",
-        "label": "Bilibili",
-        "url": "https://t.bilibili.com/1240023973960351778"
-      }
-    ],
-    "sourceCount": 4,
-    "titleJa": "復刻追光イベント｜★5セット「枫露晨祷」プレビュー",
-    "bodyJa": "復刻追光イベント｜★5セット「枫露晨祷」プレビュー！\n棱彩幻夢 | 晶芯裂變，時繭新生。8月25日10:00〜9月14日23:59に期間限定で開始！\n\n『戦争と平和』のクラシックな美学を再現！豪華な帝政ドレスは手間をかけずに！究極の視覚体験をお届けします！\nパール百合の披帛は独立して取り外すことができ、開閉可能な扇面とドレスの複雑な百合レースが呼応します！\n超リアルな生地のアップグレード！極上の滑らかなドレープ物理効果で、真珠のサテン生地の光沢感が満載です！\n咲き誇る花々のタイルの上、黄金の蔓が広がるドームの下で、共に踊りませんか？\n\n------ファッションデザイン手帳📓------\n【芸術的インスピレーションの源】\nドレスのシルエットは欧州の帝政ロングドレスと、オードリー・ヘプバーンが出演した『戦争と平和』を参考にしています。帝政ドレスのデザインは古希腊と古ローマ文化の影響を深く受けており、古典美への追求と、シンプルで純粋、調和のとれたユートピア的理想を反映しています。\n19世紀、この服装は上流社会の女性の象徴となり、その精巧な生地と繊細な職人技は富と地位を誇示しました。帝政ドレスを着た女性はしばしば尊敬され、歓迎されました。その流れるようなシルエットと軽やかな素材は、着用者に優雅で自由な印象を与え、ロマンスと自由の息吹を伝えると同時に、当時の女性解放と個性の自由への期待を反映していました。\n【生地の物理効果のアップグレード】\n生地の表現は、今回の生地アップグレードの大きな成果です。滑らかにドレープする真珠のサテン生地をメイン素材とし、極めて繊細な光沢感と刺繍のアクセントを加え、細部の高貴でエレガントな雰囲気を高めています。ドレスには立体的な百合やパールなどの要素が加えられ、帝政ロングドレスの典雅な風情を保ちつつ、現代デザインの洗練と繊細さを融合させています。\n【美しさを追求したシルエット作り】\n帝政ドレスを完璧に表現するため、ハイウエストのロングドレスシルエットを採用しました。袖や肩、裾には何層にも重ねた荷葉縁の装飾を施し、視覚的なレイヤーとディテールを豊かにしています。大量の金色の刺繍とパールの縁取りが、ドレス全体に上品でありながらも高貴なスタイルを与えています。\n【ディテールのハイライトと呼応】\n独立して取り外せる百合パールのチェーン外套が伝統的な披帛に代わり、百合の花からはパーティクルエフェクトが放たれ、テーマをより一層引き立てています。\n手持ちの扇子は開閉可能で、扇面とドレスの複雑な百合レースの模様が呼応しています。また、扇子には蝶が舞うエフェクトが付いており、帝政ドレスの雰囲気を豊かにしています。\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
-    "summaryJa": "・復刻追光イベントが期間限定で開催されます\n・期間: 8月25日10:00〜9月14日23:59\n・追加: ★5セット「枫露晨祷」がプレビュー公開されました\n・衣装特徴: 帝政ドレスをモチーフとし、パール百合の披帛や開閉可能な扇子などが特徴です",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "51494617e199f3a4a7d0946a",
     "region": "CHINA",
     "platform": "公式Bilibili · 動画",
@@ -3976,124 +3430,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "4be88e4b5ea5ebef2070a1da",
-    "region": "JAPAN",
-    "platform": "公式YouTube",
-    "title": "『きらめきパラダイス』新星6セット『修羅帰鞘』のPVを公開",
-    "body": "新イベント『孤刃帰鞘』が8月27日にスタート！\n『きらめきパラダイス』の新星6イベントのPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
-    "sourceUrl": "https://www.youtube.com/watch?v=wZc65lxjJ1o",
-    "publishedLabel": "2026-08-24",
-    "publishedAtEpoch": 1787540111,
-    "imageUrl": "https://i4.ytimg.com/vi/wZc65lxjJ1o/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=wZc65lxjJ1o"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i4.ytimg.com/vi/wZc65lxjJ1o/hqdefault.jpg"
-    ],
-    "titleJa": "『きらめきパラダイス』新星6セット『修羅帰鞘』のPVを公開",
-    "bodyJa": "新イベント『孤刃帰鞘』が8月27日にスタート！\n『きらめきパラダイス』の新星6イベントのPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
-    "summaryJa": "・新イベント『孤刃帰鞘』が8月27日にスタート\n・新星6セット「修羅帰鞘」のPVが公開\n・キラパラは次世代ガールズドリームRPGとして好評配信中\n・関連サイトとして公式X、公式Instagram、公式サイト、公式TikTokが紹介されている",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "f42c7812a5b1140d904642a4",
-    "region": "JAPAN",
-    "platform": "公式YouTube",
-    "title": "『きらめきパラダイス』星5セットコーデ動画『占心の誓い』の実録動画を公開✨",
-    "body": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
-    "sourceUrl": "https://www.youtube.com/watch?v=z2FvMqDJCpg",
-    "publishedLabel": "2026-08-23",
-    "publishedAtEpoch": 1787482811,
-    "imageUrl": "https://i3.ytimg.com/vi/z2FvMqDJCpg/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=z2FvMqDJCpg"
-      },
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=VXguQUJvMoU"
-      }
-    ],
-    "sourceCount": 2,
-    "imageUrls": [
-      "https://i3.ytimg.com/vi/z2FvMqDJCpg/hqdefault.jpg"
-    ],
-    "titleJa": "『きらめきパラダイス』星5セットコーデ動画『占心の誓い』の実録動画を公開✨",
-    "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星5セット「占心の誓い」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
-    "summaryJa": "・追加: イベント「孤刃帰鞘」に登場する新星5セット「占心の誓い」の動画が公開されました\n・ゲームタイトル: キラパラ",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "78322b5028d7537771528167",
-    "region": "GLOBAL",
-    "platform": "公式YouTube",
-    "title": "Life Makeover [Lone Lotus Pack] Preview",
-    "body": "Lone Lotus Pack\n\n⏰[Pack Time]\nAug. 24, 09:00 - Sep. 6, 23:59 UTC\n\n[Pack Details]\nThe Lone Lotus Pack is available for a limited time!\nDuring the event, you can complete designated tasks for pack discounts. Completing all the 4 tasks can bring you the lowest price! Don't miss out! The pack contains 5-Star limited Floating [Layered Petals], 5-Star Makeup [Misty Plum], Furniture [Lotus Pedestal], Luster Invitation x3, Energy x300, and Trend Color Chart x45. This pack can only be purchased once. \n\n[Task Details]\nThere will be 4 tasks that are divided into 2 sets. Completing any set will lower the price by one tier, until you get the lowest price!\nTask Set 1\n1. Perform once in Lightchase\n2. Gift friends Energy 5 times\nTask Set 2\n1. Consume 1000 Energy\n2. Get 90 Guild Points from Guild Support\n\n[Special Notes]\nThe 5-Star Floating [Layered Petals] comes with an exclusive main page interaction pose. Tap the floating item on main page to trigger the effect.\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "sourceUrl": "https://www.youtube.com/watch?v=p3LkDQMMzGY",
-    "publishedLabel": "2026-08-23",
-    "publishedAtEpoch": 1787482807,
-    "imageUrl": "https://i1.ytimg.com/vi/p3LkDQMMzGY/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=p3LkDQMMzGY"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i1.ytimg.com/vi/p3LkDQMMzGY/hqdefault.jpg"
-    ],
-    "titleJa": "Life Makeover [Lone Lotus Pack] プレビュー",
-    "bodyJa": "Lone Lotus Pack\n\n⏰[パック期間]\n8月24日 09:00 - 9月6日 23:59 UTC\n\n[パック詳細]\nLone Lotus Packは期間限定で入手可能です！\nイベント期間中、指定されたタスクを完了することでパックの割引が適用されます。全4タスクを完了すると、最安値で購入できます！お見逃しなく！このパックには、★5限定フローティング[Layered Petals]、★5メイクアップ[Misty Plum]、家具[Lotus Pedestal]、Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれています。このパックは1回のみ購入可能です。\n\n[タスク詳細]\nタスクは2つのセットに分かれており、全4タスクがあります。いずれかのセットを完了するごとに、最安値になるまで価格が1段階下がります！\nタスクセット1\n1. Lightchaseで1回実行\n2. 友人にEnergyを5回贈呈\nタスクセット2\n1. Energyを1000消費\n2. Guild Supportで90 Guild Pointsを獲得\n\n[特記事項]\n★5フローティング[Layered Petals]には、専用のメインページインタラクションポーズが付属します。メインページでフローティングアイテムをタップすると効果が発動します。\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "summaryJa": "・追加: Lone Lotus Packが期間限定で登場\n・期間: 8月24日 09:00 - 9月6日 23:59 UTC\n・内容: ★5限定フローティング[Layered Petals]、★5メイクアップ[Misty Plum]、家具[Lotus Pedestal]などを含む\n・入手条件: 指定されたタスク（全4タスク）を完了することでパックの割引が適用される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "e783169fbd012bb83be18745",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "Lone Lotus Pack ⏰Aug. 24, 09:00 - Sep. 6, 23:59 UTC The Lone Lotus Pack is available for a limited time",
-    "body": "Lone Lotus Pack\n\n⏰Aug. 24, 09:00 - Sep. 6, 23:59 UTC\n\nThe Lone Lotus Pack is available for a limited time!\nDuring the event, you can complete designated tasks for pack discounts. Completing all the 4 tasks can bring you the lowest price! Don't miss out!\n\n#LifeMakeover",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2091480574351303051",
-    "publishedLabel": "2026-08-23",
-    "publishedAtEpoch": 1787482801,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089917948144340992/img/Z-JpWK-PjQvJas0q.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089917948144340992/img/Z-JpWK-PjQvJas0q.jpg",
-      "https://pbs.twimg.com/media/HQDhVxUbwAAG_K5?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2091480574351303051"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "【期間限定】Lone Lotus Packが登場 ⏰8月24日 09:00 - 9月6日 23:59 UTC",
-    "bodyJa": "Lone Lotus Pack\n\n⏰8月24日 09:00 - 9月6日 23:59 UTC\n\nLone Lotus Packが期間限定で登場します！\nイベント期間中、指定されたタスクを完了することでパックの割引が適用されます。4つのタスクをすべて完了すると、最安値で購入できます！お見逃しなく！\n\n#LifeMakeover",
-    "summaryJa": "・追加: Lone Lotus Packが期間限定で登場\n・期間: 8月24日 09:00 - 9月6日 23:59 UTC\n・入手: 指定されたタスクを完了することでパック割引が適用される",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "e422454339a78b4ae14e9d5c",
     "region": "KOREA",
     "platform": "公式X",
@@ -4103,9 +3439,6 @@
     "publishedLabel": "2026-08-23",
     "publishedAtEpoch": 1787475600,
     "imageUrl": "https://pbs.twimg.com/media/HQEr-FHaYAA0RUR?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQEr-FHaYAA0RUR?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4114,154 +3447,12 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQEr-FHaYAA0RUR?format=jpg&name=orig"
+    ],
     "titleJa": "【イベント】『占星術ストーリー』に参加して、5★限定アイテムを入手しよう。🎁メイン報酬：- 5★限定所持品「星の泉」",
     "bodyJa": "【イベント】『占星術ストーリー』\n\n占星術ストーリーに参加して、5★限定アイテムを入手してください。\n\n🎁メイン報酬:\n- 5★限定所持品「星の泉」\n\n🕙 8/24 10:30 〜 8/28 5:00\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・追加: 『占星術ストーリー』イベントが開催される\n・報酬: 5★限定所持品「星の泉」\n・期間: 8/24 10:30 〜 8/28 5:00",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "6b3a00204accf950f7763131",
-    "region": "GLOBAL",
-    "platform": "公式YouTube",
-    "title": "SR Ally [Larry - Destined Match] - Default",
-    "body": "SR Ally [Larry - Destined Match] - Default\n\n\"Repaying the bond of our contract with my own body… how does that sound to you, my lady?\"\n\n#GardenSoiree | Event available from Aug. 19 to Sep. 8!\n#LifeMakeoverWorld #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "sourceUrl": "https://www.youtube.com/shorts/MV8zP_9mbsE",
-    "publishedLabel": "2026-08-21",
-    "publishedAtEpoch": 1787313608,
-    "imageUrl": "https://i2.ytimg.com/vi/MV8zP_9mbsE/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/MV8zP_9mbsE"
-      },
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/8eSFiY9OMqM"
-      }
-    ],
-    "sourceCount": 2,
-    "imageUrls": [
-      "https://i2.ytimg.com/vi/MV8zP_9mbsE/hqdefault.jpg"
-    ],
-    "titleJa": "SRアライ [ラリー - 運命の出会い] - デフォルト",
-    "bodyJa": "SRアライ [ラリー - 運命の出会い] - デフォルト\n\n「契約の絆を、この身で返そうと…どうかな、奥様？」\n\n#GardenSoiree | イベントは8月19日から9月8日まで開催中！\n#LifeMakeoverWorld #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "summaryJa": "・追加: SRアライ [ラリー - 運命の出会い] - デフォルトが登場\n・イベント: #GardenSoiree が開催中\n・期間: 8月19日から9月8日まで",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "9c0ce009faaaed3904c60b52",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "⭐Winner Announcement Life Makeover Fashion Guide - Everlasting Peace Version Congratulations to all the winners",
-    "body": "⭐Winner Announcement\nLife Makeover Fashion Guide - Everlasting Peace Version\n\nCongratulations to all the winners!\nPlease submit the prize form before Aug. 24, 2026: \n\n#LifeMakeover",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2090763343543877993",
-    "publishedLabel": "2026-08-21",
-    "publishedAtEpoch": 1787311800,
-    "imageUrl": "https://pbs.twimg.com/media/HQOk-ioakAAzsJh?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQOk-ioakAAzsJh?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2090763343543877993"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "⭐Life Makeoverファッションガイド - Everlasting Peace版 抽選結果発表 - 全ての当選者へおめでとうございます",
-    "bodyJa": "⭐当選者発表\nLife Makeoverファッションガイド - Everlasting Peace版\n\n全ての当選者の皆様、おめでとうございます！\n\n賞品フォームは2026年8月24日までに提出してください。\n\n#LifeMakeover",
-    "summaryJa": "・当選者発表: Life Makeoverファッションガイド - Everlasting Peace版\n・提出期限: 2026年8月24日",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "46f2afdb95ec9be8d8f22d06",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "Dessert Party ⏰Aug. 22, 09:00 - Aug. 29, 05:00 UTC [Reward Claim] Aug. 22, 09:00 - Aug. 30, 05:00 UTC [Event Rewards] Po",
-    "body": "Dessert Party\n\n⏰Aug. 22, 09:00 - Aug. 29, 05:00 UTC\n\n[Reward Claim]\nAug. 22, 09:00 - Aug. 30, 05:00 UTC\n\n[Event Rewards]\nPoints obtained during the event can be exchanged for 4-Star Set [Secret Blossom], Cute Effect [Glorious Crown] and many other items. \n\n#LifeMakeover",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2090755798679109997",
-    "publishedLabel": "2026-08-21",
-    "publishedAtEpoch": 1787310001,
-    "imageUrl": "https://pbs.twimg.com/media/HQDgjSmbMAAfUSW?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQDgjSmbMAAfUSW?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2090755798679109997"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "デザートパーティー開催！報酬受け取りとイベント報酬について",
-    "bodyJa": "デザートパーティー\n\n⏰8月22日 09:00 - 8月29日 05:00 UTC\n\n[報酬受け取り]\n8月22日 09:00 - 8月30日 05:00 UTC\n\n[イベント報酬]\nイベント期間中に獲得したポイントは、★4セット「Secret Blossom」、キュートエフェクト「Glorious Crown」など、多くのアイテムと交換できます。\n\n#LifeMakeover",
-    "summaryJa": "・イベント名: デザートパーティー\n・イベント期間: 8月22日 09:00 - 8月29日 05:00 UTC\n・報酬受け取り期間: 8月22日 09:00 - 8月30日 05:00 UTC\n・イベント報酬: 獲得ポイントで★4セット「Secret Blossom」やキュートエフェクト「Glorious Crown」などと交換可能",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "6793db3b6a9f069b04fd5e53",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "Congratulations on unlocking creator-only fashion inspiration pack",
-    "body": "Congratulations on unlocking creator-only fashion inspiration pack!\n\n⏰Reward Claim: Aug. 21, 00:00 - Nov. 21, 23:59 (UTC+0)\n📌How to claim: During the Reward Claim time period, sign in the game and you can get the reward in Email.\n\n#LifeMakeover",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2090748244867637521",
-    "publishedLabel": "2026-08-21",
-    "publishedAtEpoch": 1787308200,
-    "imageUrl": "https://pbs.twimg.com/media/HQNmGNsakAEVWQ_?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQNmGNsakAEVWQ_?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2090748244867637521"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "クリエイター限定ファッションインスピレーションパックのアンロックおめでとうございます",
-    "bodyJa": "クリエイター限定ファッションインスピレーションパックのアンロックおめでとうございます！\n\n⏰報酬受け取り期間: 8月21日 00:00 - 11月21日 23:59 (UTC+0)\n📌受け取り方法: 報酬受け取り期間中にLife Makeoverにログインすると、メールで報酬を受け取ることができます。\n\n#LifeMakeover",
-    "summaryJa": "・追加: クリエイター限定ファッションインスピレーションパックのアンロック\n・期間: 8月21日 00:00 - 11月21日 23:59 (UTC+0)\n・入手: 報酬受け取り期間中にLife Makeoverにログインし、メールで受け取る",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "813510a89d6267dfa842d08c",
-    "region": "KOREA",
-    "platform": "公式YouTube",
-    "title": "『마녀의 밀회』 플로팅 내일 출시",
-    "body": "“수상하고 신비로운 보랏빛 스프,\n마계 비밀 스프의 비법이 궁금하신가요?\n자, 한입 드셔 보세요. 레시피는 맛본 사람만 알 수 있대요.”\n\n🕙 8/22 10:30 ~ 9/4 23:59\n\n [이벤트 상세] \n- 퀘스트 완성하여 '마계 비밀 스프' 소지품이 포함된 마녀의 밀회를 파격 할인가로 만나보세요!\n\n※ 자세한 내용은 출시 후 게임에서 확인해 주세요.\n\n#스타일라잇 #스타일라잇업데이트",
-    "sourceUrl": "https://www.youtube.com/shorts/aiLVXYE29S8",
-    "publishedLabel": "2026-08-21",
-    "publishedAtEpoch": 1787302810,
-    "imageUrl": "https://i2.ytimg.com/vi/aiLVXYE29S8/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/aiLVXYE29S8"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i2.ytimg.com/vi/aiLVXYE29S8/hqdefault.jpg"
-    ],
-    "titleJa": "『魔女の密会』フローティング明日リリース",
-    "bodyJa": "「怪しく神秘的な紫色のスープ、魔界の秘密スープの秘伝が気になりますか？さあ、一口飲んでみてください。レシピは味わった者だけが知っているそうです。」\n\n🕙 8/22 10:30 〜 9/4 23:59\n\n [イベント詳細] \n- クエストをクリアして「魔界の秘密スープ」の所持品が含まれる魔女の密会を破格の割引価格で手に入れましょう！\n\n※ 詳細については、リリース後にゲーム内でご確認ください。\n\n#Stylight #Stylightアップデート",
-    "summaryJa": "・追加: 「魔女の密会」がフローティングで明日リリース\n・期間: 8/22 10:30 〜 9/4 23:59\n・入手: クエストをクリアして「魔界の秘密スープ」の所持品が含まれる魔女の密会を破格の割引価格で獲得",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -4275,10 +3466,7 @@
     "sourceUrl": "https://x.com/stylight_kr/status/2090725606615069029",
     "publishedLabel": "2026-08-21",
     "publishedAtEpoch": 1787302803,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089998135729020928/img/aGp97FR3CA8uFTL4.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089998135729020928/img/aGp97FR3CA8uFTL4.jpg"
-    ],
+    "imageUrl": null,
     "sources": [
       {
         "platform": "公式X",
@@ -4287,6 +3475,7 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [],
     "titleJa": "【予告】『魔女の密会』フローティング明日リリース「怪しげで神秘的な紫色のスープ、魔界の秘密スープの秘伝が知りたいですか」",
     "bodyJa": "【予告】『魔女の密会』フローティング明日リリース\n\n「怪しげで神秘的な紫色のスープ、\n魔界の秘密スープの秘伝が知りたいですか？\nさあ、一口飲んでみてください。レシピは味わった人だけが知っているそうです。」\n\n🕙 8/22 10:30 〜 9/4 23:59\n\n [イベント詳細] \n- クエストをクリアして『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で手に入れましょう！\n\n※詳細はリリース後にゲーム内でご確認ください。\n\n#Stylight #Stylightアップデート",
     "summaryJa": "・追加: 『魔女の密会』フローティングが明日リリース\n・期間: 8/22 10:30 〜 9/4 23:59\n・入手: クエストをクリアして『魔界の秘密スープ』の所持品が含まれる魔女の密会を破格の割引価格で獲得可能",
@@ -4304,9 +3493,6 @@
     "publishedLabel": "2026-08-20",
     "publishedAtEpoch": 1787216401,
     "imageUrl": "https://pbs.twimg.com/media/HQEocvnbAAAZn7g?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQEocvnbAAAZn7g?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4315,6 +3501,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQEocvnbAAAZn7g?format=jpg&name=orig"
+    ],
     "titleJa": "『青い願いの瓶』宝物釣りで深海の宝物を釣り上げ、限定衣装を入手しよう",
     "bodyJa": "『青い願いの瓶』\n\n宝物釣りフックで深海の宝物を釣り上げ、限定衣装を入手しましょう！\n\n🎁 メイン報酬:\n- 4★限定セット「モノエチケット」\n\n🕙 8/21 10:30 〜 8/28 5:00\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・追加: 限定セット「モノエチケット」（4★）が登場\n・期間: 8/21 10:30 〜 8/28 5:00\n・内容: 宝物釣りフックで深海の宝物を釣り上げ、限定衣装を入手可能",
@@ -4332,9 +3521,6 @@
     "publishedLabel": "2026-08-20",
     "publishedAtEpoch": 1787209894,
     "imageUrl": "https://pbs.twimg.com/media/HQEi4cSaEAA_M2Y?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQEi4cSaEAA_M2Y?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4343,6 +3529,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HQEi4cSaEAA_M2Y?format=jpg&name=orig"
+    ],
     "titleJa": "🎉『森の旋律』創作大会開催！",
     "bodyJa": "🎉『森の旋律』創作大会が開催されます！\n\n本大会は画像・動画部門で開催され、Stylightを愛するどなたでもご参加いただけます💖\n\n🗓 参加期間\n8月20日〜9月9日\n\n🎨 テーマ\n- 『森の旋律』バージョン関連の創作\n※テーマの制限はなく、自由に創作可能です！\n\n🎁 賞品\n💰 現金 ＋ クローバーを支給\n💡 複数回の応募が可能です！\n\n📌 参加方法\n#Stylight #Stylight創作大会 #森の旋律\nハッシュタグを付けてSNSに投稿後、\nカフェの掲示板にリンクを認証してください！\n\n📍 詳細については、公式カフェの告知をご確認ください！ \n👉",
     "summaryJa": "・追加: 『森の旋律』創作大会が開催される\n・期間: 8月20日〜9月9日\n・部門: 画像・動画部門\n・賞品: 現金 ＋ クローバーを支給\n・参加方法: 指定ハッシュタグを付けてSNSに投稿し、カフェ掲示板でリンク認証",
@@ -4360,9 +3549,6 @@
     "publishedLabel": "2026-08-20",
     "publishedAtEpoch": 1787189400,
     "imageUrl": "https://pbs.twimg.com/media/HP_Kk0ebsAAFZG9?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP_Kk0ebsAAFZG9?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4371,66 +3557,12 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP_Kk0ebsAAFZG9?format=jpg&name=orig"
+    ],
     "titleJa": "8月20日(木) 新規アップデート『森の旋律』リリース",
     "bodyJa": "8月20日(木) 新規アップデート『森の旋律』がリリースされました！\n\n数億光年の星の光が深い深淵に降り注ぎ、妖精は芽吹き始めた四季を駆け抜けます。\n\n「あなたの記憶とときめきでこの大地を耕してください。運命が授けた大切な贈り物のように。」\n\n今回選ばれた願いは、すでに定められたすべての運命の流れを新たに変えていくでしょう。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylightアップデート #森の旋律",
     "summaryJa": "・追加: 新規アップデート『森の旋律』がリリース\n・期間: 8月20日(木)より開始",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "d6bb0aec8ee7057baa655655",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "A Midnight Invitation Reflected in Candlelight New Version - Garden Soiree available from Aug. 19 to Sep. 8",
-    "body": "A Midnight Invitation Reflected in Candlelight\nNew Version - Garden Soiree available from Aug. 19 to Sep. 8!\n\n✨ The invitation to the Midnight Tea Party has been sent,\n✨ Thank you for gracing us in your finest attire.\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2090015931934408922",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787133603,
-    "imageUrl": "https://pbs.twimg.com/media/HQDgXcWbMAAyENb?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQDgXcWbMAAyENb?format=jpg&name=orig",
-      "https://pbs.twimg.com/media/HQDgYhibYAAb3b3?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2090015931934408922"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "キャンドルの光に映る真夜中の招待状 新バージョン「ガーデン・ソワレ」8月19日から9月8日まで開催",
-    "bodyJa": "キャンドルの光に映る真夜中の招待状\n新バージョン「ガーデン・ソワレ」が8月19日から9月8日まで開催されます！\n\n✨ 真夜中のティーパーティーへの招待状が届きました\n✨ 皆様が最高の装いでご参加くださり、ありがとうございます\n\n#LifeMakeover #GardenSoiree #PetalTeaTime #PhantomCandle",
-    "summaryJa": "・追加: 新バージョン「ガーデン・ソワレ」が追加\n・期間: 8月19日〜9月8日",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "e7198cbc048370ec4c4f1f8a",
-    "region": "GLOBAL",
-    "platform": "公式X",
-    "title": "Life Makeover x Guan Dazhou: New Theme Song Life Makeover has joined hands with Guan Dazhou once again, featuring the be",
-    "body": "Life Makeover x Guan Dazhou: New Theme Song\n\nLife Makeover has joined hands with Guan Dazhou once again, featuring the beautiful vocals of Zhang Xiyun, to bring you a new theme song: Homeland Ode.\n\nTap Panel Music to listen and feel the General's journey back to her homeland.",
-    "sourceUrl": "https://x.com/LifeMakeover510/status/2090008371608858833",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787131800,
-    "imageUrl": "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HQDgSXmaMAAYSaZ?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/LifeMakeover510/status/2090008371608858833"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "Life Makeover × 官大洲：新テーマソング登場",
-    "bodyJa": "Life Makeoverが官大洲と再びタッグを組み、張熙雲の美しい歌声による新テーマソング「故郷の頌歌（Homeland Ode）」をリリースしました。\n\nパネルミュージックをタップして、将軍が故郷へ帰る旅路を感じてください。",
-    "summaryJa": "・追加: 新テーマソング「故郷の頌歌（Homeland Ode）」が追加\n・出演: 張熙雲の歌声による楽曲",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -4445,9 +3577,6 @@
     "publishedLabel": "2026-08-19",
     "publishedAtEpoch": 1787131200,
     "imageUrl": "https://pbs.twimg.com/media/HP_JfGiaIAAjLKb?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP_JfGiaIAAjLKb?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4456,6 +3585,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP_JfGiaIAAjLKb?format=jpg&name=orig"
+    ],
     "titleJa": "トレンドコード『太陽の神託』明日リリース 🏜️ 古代王国の廃墟に神託の歌が響き渡り、果てしない黄金の砂漠を横断します。StylightのN...",
     "bodyJa": "トレンドコード『太陽の神託』明日リリース\n\n🏜️ 古代王国の廃墟に神託の歌が響き渡り、\n果てしない黄金の砂漠を横断します。\n\nStylightのNEWトレンドコードが登場！\n\n🕙 8/20 10:30 - 9/30 23:59\n\n[イベント詳細]\n- 様々なデイリーミッションをこなすと無料報酬を獲得できます\n- アドバンスパスを購入すると、2,000個のダイヤと限定衣装「太陽の神託」、そして特別な専用報酬など、豊富な報酬を追加で獲得できます\n\n※詳細はゲーム内にてご確認ください。\n\n#Stylight #Stylightアップデート",
     "summaryJa": "・追加: トレンドコード『太陽の神託』が明日リリース\n・期間: 8/20 10:30〜9/30 23:59\n・入手: トレンドコードの利用\n・報酬: デイリーミッションで無料報酬、アドバンスパス購入でダイヤ2,000個と限定衣装「太陽の神託」など",
@@ -4473,9 +3605,6 @@
     "publishedLabel": "2026-08-19",
     "publishedAtEpoch": 1787130900,
     "imageUrl": "https://pbs.twimg.com/media/HP_IqyzbgAA4beh?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP_IqyzbgAA4beh?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4484,6 +3613,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP_IqyzbgAA4beh?format=jpg&name=orig"
+    ],
     "titleJa": "【イベント】『レッドパーティー』毎日ログインして限定報酬を受け取ろう。🎁 メイン報酬：- 5★アクセサリー「レッドラブレター」 - 撮影ポーズ「ハイパービート」 - 撮影フレーム...",
     "bodyJa": "【イベント】『レッドパーティー』\n\n毎日ログインして限定報酬を受け取ろう。\n\n🎁 メイン報酬:\n- 5★アクセサリー「レッドラブレター」\n- 撮影ポーズ「ハイパービート」\n- 撮影フレーム「クリムゾンコード」\n- 撮影ステッカー「ピヤクパーティー」\n- トレンドカラーカード ×10\n\n🕙 8/20 10:30 〜 8/26 5:00\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・イベント名: 『レッドパーティー』が開催される\n・期間: 8/20 10:30 〜 8/26 5:00\n・報酬: 5★アクセサリー「レッドラブレター」、撮影ポーズ「ハイパービート」、撮影フレーム「クリムゾンコード」、撮影ステッカー「ピヤクパーティー」、トレンドカラーカード ×10がメイン報酬として提供される",
@@ -4500,10 +3632,7 @@
     "sourceUrl": "https://x.com/stylight_kr/status/2090003335810294251",
     "publishedLabel": "2026-08-19",
     "publishedAtEpoch": 1787130600,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089607897609302016/img/mA6hhYYPSz6rmR7G.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089607897609302016/img/mA6hhYYPSz6rmR7G.jpg"
-    ],
+    "imageUrl": null,
     "sources": [
       {
         "platform": "公式X",
@@ -4512,6 +3641,7 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [],
     "titleJa": "【アップデート】新機能追加 👗 新しい固定ポーズモード",
     "bodyJa": "【アップデート】新機能追加\n\n👗 新しい固定ポーズモード\n\nコスチュームを変更した際に専用のスタンディングポーズが初期化されてしまう不便を解消するため、新しい「固定ポーズモード」が明日アップデートされます。\n\n「クローゼット」→「ポーズ変更」→「モード変更」から希望のモードを選択してください。\n\n- 通常ポーズモード\n- 固定ポーズモード\n\n固定ポーズモードでポーズを保存すると、コスチュームやアクセサリーを変更しても保存したポーズがそのまま維持されます。これでコスチュームとポーズを自由に組み合わせて自分だけのスタイルを演出できます。\n\n📋 新しいデイリーレポート「一括派遣」機能\n\n明日のアップデートにより、デイリーレポートに「一括派遣」機能が追加されます。ボタン一つで事件に縁を配置し、派遣までを一気に進められます！\n\nより速く便利な新機能をお試しください。\n\n※詳細はアップデート後にゲーム内でご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・追加: 新しい「固定ポーズモード」が追加される\n・機能: 固定ポーズモードでポーズを保存すると、コスチュームやアクセサリーを変更してもポーズが維持される\n・追加: デイリーレポートに「一括派遣」機能が追加される\n・期間: 明日アップデートにて適用",
@@ -4528,139 +3658,19 @@
     "sourceUrl": "https://x.com/stylight_kr/status/2090002077745594382",
     "publishedLabel": "2026-08-19",
     "publishedAtEpoch": 1787130300,
-    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2089605988307640320/img/UHL0pp3OfpVmNRDJ.jpg",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2089605988307640320/img/UHL0pp3OfpVmNRDJ.jpg",
-      "https://pbs.twimg.com/amplify_video_thumb/2089605988307578880/img/2Mq07259H2eAx1t9.jpg"
-    ],
+    "imageUrl": null,
     "sources": [
       {
         "platform": "公式X",
         "label": "X",
         "url": "https://x.com/stylight_kr/status/2090002077745594382"
-      },
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/40HB4PSxR8E"
       }
     ],
-    "sourceCount": 2,
+    "sourceCount": 1,
+    "imageUrls": [],
     "titleJa": "SSR ソイアン『狼の夜』明日リリース「そう。そのように大人しくしていなさい」闇が降りた地下牢獄、燃え盛る炎の向こうにソイアンの怒りに満ちた視線が浮かび上がる…",
     "bodyJa": "SSR ソイアン『狼の夜』が明日リリースされます。\n\n「そう。そのように大人しくしていなさい。」\n\n闇が降りた地下牢獄、燃え盛る炎の向こうにソイアンの怒りに満ちた視線が浮かび上がります。\n\n互いを警戒し向き合ったその瞬間、二人の運命が初めて交差し始めました。\n\n手なずけられない狼と、彼の唯一の主人。\n炎よりも熱い二人の物語を、新しいSSR縁で出会ってください。\n\n#Stylight #Stylightアップデート",
     "summaryJa": "・追加: SSR ソイアン『狼の夜』が明日リリースされる\n・内容: 闇が降りた地下牢獄を舞台にした、ソイアンと彼の唯一の主人との物語\n・テーマ: 手なずけられない狼と彼の主人、炎よりも熱い二人の物語",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "23b0dc883aaf71b3d31a1470",
-    "region": "GLOBAL",
-    "platform": "公式TikTok",
-    "title": "#LifeMakeover Lone Lotus Pack Available from Aug. 24, 09:00 - Sep. 6, 23:59 UTC The pack contains 5-Star limited Floatin",
-    "body": "#LifeMakeover Lone Lotus Pack Available from Aug. 24, 09:00 - Sep. 6, 23:59 UTC The pack contains 5-Star limited Floating [Layered Petals], 5-Star Mak...",
-    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7675644901232495893",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787125342,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogF6EI8nGBAQXgA0Aqi1AK1ACBpwBB8QI4fMFi~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=gXuTueIluyDPKqH65ob9yWl1up8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-    "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogF6EI8nGBAQXgA0Aqi1AK1ACBpwBB8QI4fMFi~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=gXuTueIluyDPKqH65ob9yWl1up8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ],
-    "sources": [
-      {
-        "platform": "公式TikTok",
-        "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7675644901232495893"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "Life Makeover「Lone Lotus Pack」が8月24日09:00から9月6日23:59まで登場",
-    "bodyJa": "Life Makeoverにて「Lone Lotus Pack」が8月24日09:00から9月6日23:59（UTC）まで登場します。このパックには、★5限定の「Floating [Layered Petals]」や★5のMak...が含まれています。",
-    "summaryJa": "・追加: 「Lone Lotus Pack」が登場\n・期間: 8月24日09:00〜9月6日23:59 (UTC)\n・内容: ★5限定「Floating [Layered Petals]」や★5のMak...を含む",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "d7466eb83d2b38de5facec1c",
-    "region": "GLOBAL",
-    "platform": "公式TikTok",
-    "title": "#LifeMakeover New Lightchase | SR Ally [Larry - Destined Match] - Default \"Repaying the bond of our contract with my own",
-    "body": "#LifeMakeover New Lightchase | SR Ally [Larry - Destined Match] - Default \"Repaying the bond of our contract with my own body… how does that sound to...",
-    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7675643024772271380",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787124905,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oolACIY4pqBcVAjqUAATAEamXBF2MQ5iKUioP~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=dEJIhPzRnodboTyr%2FnwpEmTeB5c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-    "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oolACIY4pqBcVAjqUAATAEamXBF2MQ5iKUioP~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=dEJIhPzRnodboTyr%2FnwpEmTeB5c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
-    ],
-    "sources": [
-      {
-        "platform": "公式TikTok",
-        "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7675643024772271380"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "Life Makeover 新しいLightchase | SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…」",
-    "bodyJa": "Life Makeover 新しいLightchase | SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…どうだろうか…」",
-    "summaryJa": "・追加: SR Ally [Larry - Destined Match] - デフォルト「契約の絆を己の体で返すと…」がLightchaseに追加",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "3a8ba4e0a57c65c4b398af21",
-    "region": "GLOBAL",
-    "platform": "公式TikTok",
-    "title": "✨ The invitation to the Midnight Tea Party has been sent, ✨ Thank you for gracing us in your finest attire. #LifeMakeove",
-    "body": "✨ The invitation to the Midnight Tea Party has been sent, ✨ Thank you for gracing us in your finest attire. #LifeMakeover New Version - Garden Soire...",
-    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7675642670835830037",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787124823,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/c7f530c596b840638a45e5d908024876~tplv-photomode-image.jpeg?dr=9616&x-expires=1788206400&x-signature=WYxMrQJer6MXFokhxDq6zkrWp74%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
-    "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/c7f530c596b840638a45e5d908024876~tplv-photomode-image.jpeg?dr=9616&x-expires=1788206400&x-signature=WYxMrQJer6MXFokhxDq6zkrWp74%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
-    ],
-    "sources": [
-      {
-        "platform": "公式TikTok",
-        "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7675642670835830037"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "✨真夜中のティーパーティーへの招待状が送付されました✨ 最上級の装いでご参加いただきありがとうございます。#LifeMakeover",
-    "bodyJa": "✨真夜中のティーパーティーへの招待状が送付されました✨ 最上級の装いでご参加いただきありがとうございます。#LifeMakeover 新バージョン - ガーデン・ソワレ...",
-    "summaryJa": "・追加: 新バージョン「ガーデン・ソワレ...」が公開",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "73f555e792d7880bbf0e4900",
-    "region": "GLOBAL",
-    "platform": "公式TikTok",
-    "title": "White flames conceal a sweet invitation, Wondrous dreams of afternoon tea linger like yesterday. As fading candlelight b",
-    "body": "White flames conceal a sweet invitation, Wondrous dreams of afternoon tea linger like yesterday. As fading candlelight blurs the reflections of memory...",
-    "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7675641951676321045",
-    "publishedLabel": "2026-08-19",
-    "publishedAtEpoch": 1787124656,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/50ce50a749d1449a8fd52d0397469dde~tplv-photomode-image.jpeg?dr=9616&x-expires=1788206400&x-signature=OfvX5n1HcnWXBbM8FzdXL9ATNVA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
-    "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/50ce50a749d1449a8fd52d0397469dde~tplv-photomode-image.jpeg?dr=9616&x-expires=1788206400&x-signature=OfvX5n1HcnWXBbM8FzdXL9ATNVA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
-    ],
-    "sources": [
-      {
-        "platform": "公式TikTok",
-        "label": "TikTok",
-        "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7675641951676321045"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残る。消えゆくキャンドルの光が記憶の反射をぼかす中...",
-    "bodyJa": "白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残る。消えゆくキャンドルの光が記憶の反射をぼかす中...",
-    "summaryJa": "・追加: 白い炎が甘い誘いを隠し、午後のティータイムの素晴らしい夢が昨日のように残るという内容のコンテンツが追加されました",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -4675,9 +3685,6 @@
     "publishedLabel": "2026-08-19",
     "publishedAtEpoch": 1787108402,
     "imageUrl": "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4686,6 +3693,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP_10GsawAA0zTh?format=jpg&name=orig"
+    ],
     "titleJa": "🎁 愛に満ちた贈り物",
     "bodyJa": "🎁 愛に満ちた！特別なプレゼント！\n\n星の光が愛に染まる特別な日を迎え、\nStylightのパートナーの皆様へサプライズギフトをご用意しました✨\n\n🕙 8/19 00:00 〜 8/21 23:59\n\nイベント期間中にゲームにログインすると、\nメールボックスから以下の報酬を受け取ることができます。\n\n🎁 特別プレゼント\nダイヤ ×200\nトレンドカラーカード ×77\nゴールド ×30,000\n\n大切な人と想いを分かち合い、\n今日もStylightと共に輝く一日をお過ごしください！\n\n#Stylight #Stylightイベント",
     "summaryJa": "・追加: 特別プレゼントが配布される\n・期間: 8/19 00:00 〜 8/21 23:59\n・入手: イベント期間中のゲームログイン\n・報酬: ダイヤ×200、トレンドカラーカード×77、ゴールド×30,000",
@@ -4816,8 +3826,7 @@
     "publishedAtEpoch": 1786960412,
     "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1788588000&x-signature=mlm%2FXSwR55z%2FaDH4M%2BxxLoRYCP4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1788588000&x-signature=mlm%2FXSwR55z%2FaDH4M%2BxxLoRYCP4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1788206400&x-signature=7krlkkHYYYOlP0BBxb%2FyKi165o0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1788588000&x-signature=mlm%2FXSwR55z%2FaDH4M%2BxxLoRYCP4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
     ],
     "sources": [
       {
@@ -4845,8 +3854,7 @@
     "publishedAtEpoch": 1786957799,
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=BF8NrOJe8pUNygNWjWswCpxoQx0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=BF8NrOJe8pUNygNWjWswCpxoQx0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=UZ3Ithiizk%2Fc33S1nFL2cn2lwXU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=BF8NrOJe8pUNygNWjWswCpxoQx0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4873,9 +3881,6 @@
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786957202,
     "imageUrl": "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4884,6 +3889,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HP5GTbCa4AA1gn6?format=jpg&name=orig"
+    ],
     "titleJa": "『森の旋律』壁紙共有 🎶 月明かりが降り注ぐ森、ハープの旋律と共に神秘的な妖精の世界が広がります。銀色の髪と青いレース、星のように輝く...",
     "bodyJa": "『森の旋律』壁紙共有\n\n🎶 月明かりが降り注ぐ森、\nハープの旋律と共に神秘的な妖精の世界が広がります。\n\n銀色の髪と青いレース、\n星のように輝く蝶が調和した\n『森の旋律』の美しい瞬間を壁紙でご覧ください。\n\nPCの壁紙に設定して\n日常の中でも森の旋律が伝える幻想とときめきを感じてみてください。✨\n\n今日もStylightと共に\n夢のような一日をお過ごしください！ 💙\n\n#Stylight #Stylight降臨 #Stylightアップデート #森の旋律",
     "summaryJa": "・追加: 『森の旋律』の美しい瞬間を壁紙として共有\n・内容: 月明かりが降り注ぐ森、ハープの旋律、銀色の髪と青いレース、星のように輝く蝶がテーマ\n・利用方法: PCの壁紙として設定可能",
@@ -4902,8 +3910,7 @@
     "publishedAtEpoch": 1786938673,
     "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=3bXrTfV18qg09SG2NH%2BC7Enr35M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=3bXrTfV18qg09SG2NH%2BC7Enr35M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1788206400&x-signature=mSJLbJq2WznKRhUYl748bOzcj4Y%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=3bXrTfV18qg09SG2NH%2BC7Enr35M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4963,11 +3970,6 @@
     "publishedLabel": "2026-08-14",
     "publishedAtEpoch": 1786698900,
     "imageUrl": "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig",
-      "https://pbs.twimg.com/media/HPljayvbgAEjgCi?format=jpg&name=orig",
-      "https://pbs.twimg.com/media/HPljaylaYAALqEi?format=jpg&name=orig"
-    ],
     "sources": [
       {
         "platform": "公式X",
@@ -4976,6 +3978,9 @@
       }
     ],
     "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HPljaymaMAIFDIO?format=jpg&name=orig"
+    ],
     "titleJa": "新メインストーリー第22章予告 💎 新メインストーリー第22章「死のショー・拘束」が8月31日にオープン",
     "bodyJa": "新メインストーリー第22章予告\n\n💎 新メインストーリー第22章「死のショー・拘束」が8月31日にオープンします。\n\n「真実と嘘が絡み合う幻想の中で、懐かしい人が再び目の前に現れます。\n\nこの甘い夢に留まりたいけれど、最後の謎の答えを見つけるためには、『記憶』という名の罠から抜け出す必要があります。\n\nついに幕を開けた『探偵』たちの戦争。\n真実へと向かう鍵を手にするために、一体どのような代償を払うことになるのでしょうか？」\n\n✂️ 第22章セット:\n- 5★イヤリング「出航の日」\n- 撮影ポーズ「シックメッセージ」\n- 撮影フレーム「フローラルインク」\n\n👗 ファッションスタジオ追加セット:\n- 4★コスチュームセット「ハートフラティング」\n- 4★コスチュームセット「シュガマドレーヌ」\n- 4★コスチュームセット「チェリーポップスター」\n\n様々なスタイルのメインストーリーセットを、ファッションスタジオで作成してみてください！\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・追加: 新メインストーリー第22章「死のショー・拘束」がオープン\n・期間: 8月31日オープン\n・追加: 第22章セット（5★イヤリング「出航の日」、撮影ポーズ「シックメッセージ」、撮影フレーム「フローラルインク」）\n・追加: ファッションスタジオ追加セット（4★コスチュームセット「ハートフラティング」、「シュガマドレーヌ」、「チェリーポップスター」）",
@@ -5816,6 +4821,205 @@
     "titleJa": "【予告】『星に閉じ込められた夜』パックが明日リリース！",
     "bodyJa": "【予告】『星に閉じ込められた夜』パックが明日リリース！星が消えた夜、想い出の中に隠されたミステリアスな階段を辿れば、そこで新たな運命が展開される。🕙 1/6(火)...",
     "summaryJa": "・追加: 『星に閉じ込められた夜』パックが明日リリースされる\n・期間: 1/6(火)から開始",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "5f55efab1f3ab4ecb68e9ca5",
+    "region": "KOREA",
+    "platform": "公式TikTok",
+    "title": "[예고] 『플로럴 월드』 등 장식 패키지 내일 출시",
+    "body": "[예고] 『플로럴 월드』 등 장식 패키지 내일 출시! 꽃의 왕국에서 불어온 바람이, 꽃향기와 함께 행운을 전해드립니다. 🕙 1/3(토) 10:30 ~ 1/16(금) 23:59 [...",
+    "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7589944269771754770",
+    "publishedLabel": "2025-12-31",
+    "publishedAtEpoch": 1767171609,
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=swPcpGZzm8OUQQh2p8soLbMArDg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrls": [
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1788588000&x-signature=swPcpGZzm8OUQQh2p8soLbMArDg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+    ],
+    "sources": [
+      {
+        "platform": "公式TikTok",
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@stylightofficial/video/7589944269771754770"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "【予告】『フローラルワールド』など装飾パッケージが明日リリース",
+    "bodyJa": "【予告】『フローラルワールド』など装飾パッケージが明日リリース！花の王国から吹く風が、花の香りと共に幸運を届けます。🕙 1/3(土) 10:30 〜 1/16(金) 23:59 [...",
+    "summaryJa": "・追加: 『フローラルワールド』など装飾パッケージが明日リリースされる\n・期間: 1/3(土) 10:30 〜 1/16(金) 23:59",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "d58bf5031e6e47e91abf6ca0",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "스타일라잇 업데이트 스포일러 KEY WORD: 신비의 책 의문의 바람이 작업실을 지나며, 테이블 위의 디자인 스케치들이 마치 춤을 추듯 흩날린다. 구석에 놓인 오...",
+    "body": "스타일라잇 업데이트 스포일러\n\nKEY WORD: 신비의 책\n\n의문의 바람이 작업실을 지나며, 테이블 위의 디자인 스케치들이 마치 춤을 추듯 흩날린다. \n구석에 놓인 오래된 책이 눈에 띄고, 그 책이 무언가를 부르고 있는 듯한 느낌이 든다. \n\n가까이 다가가 손을 뻗자, 책이 서서히 열리며 그 속에서 찬란한 프리즘 빛이 퍼져 나간다. \n빛이 사라진 자리에 \"케이크, 케이크!\" 노래를 부르는 작은 형체가 \n날개를 퍼덕이며 나타나 신비로운 열쇠를 당신에게 건네는데...\n\n빛나는 세계\nGUESS WHO'S NEXT?\n\n▶ 게임 다운로드 \n- \n\n#스타일라잇 #스타일라잇업데이트 #스타일라잇카캡체 #카캡체",
+    "sourceUrl": "https://x.com/stylight_kr/status/1989166401542656005",
+    "publishedLabel": "2025-11-14",
+    "publishedAtEpoch": 1763089201,
+    "imageUrl": "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1989166401542656005"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "Stylightアップデートのネタバレ キーワード：神秘の書",
+    "bodyJa": "Stylightアップデートのネタバレ\n\nキーワード：神秘の書\n\n謎の風が作業室を通り過ぎ、テーブルの上のデザインスケッチがまるで踊るかのように舞い散ります。隅に置かれた古い本が目に留まり、その本が何かを呼び寄せているような感覚になります。\n\n近づいて手を伸ばすと、本がゆっくりと開き、その中から輝かしいプリズムの光が広がります。光が消えた場所に、「ケーキ、ケーキ！」と歌う小さな姿が羽をひらひらさせながら現れ、神秘的な鍵をあなたに差し出します...\n\n輝く世界\nGUESS WHO'S NEXT?\n\n▶ ゲームダウンロード\n\n#Stylight #Stylightアップデート #Stylightカーキャプチャー #カーキャプチャー",
+    "summaryJa": "・キーワード：神秘の書\n・内容：謎の風が作業室を通り過ぎ、古い本からプリズムの光が広がる\n・内容：光が消えた場所に「ケーキ、ケーキ！」と歌う小さな姿が現れ、神秘的な鍵を渡す",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "c5dd49257aa19252902640c3",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "우와아ㅠㅠㅠㅠ💍💍💍💍",
+    "body": "우와아ㅠㅠㅠㅠ💍💍💍💍 \n\n시안 CYAN シアン🎀: #스타일라잇 #영원한서약 \n💍 오늘 꼭 보러와줘 기다리고있을게 ❤︎",
+    "sourceUrl": "https://x.com/stylight_kr/status/1989148523359805872",
+    "publishedLabel": "2025-11-14",
+    "publishedAtEpoch": 1763084939,
+    "imageUrl": "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/1989148523359805872"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
+    "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
+    "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "1ac300f7234bcfb6171f6f89",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "限定ガチャイベント『綺想の扉』まもなく開催",
+    "body": "限定ガチャイベント『綺想の扉』まもなく開催！\n星6セット「綺夢の旅」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆11月6日\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1984908337800986985",
+    "publishedLabel": "2025-11-02",
+    "publishedAtEpoch": 1762074000,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/1983449860746641408/img/vNx18CoCI_ZpL5b3.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/1983449860746641408/img/vNx18CoCI_ZpL5b3.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1984908337800986985"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "限定ガチャイベント『綺想の扉』まもなく開催",
+    "bodyJa": "限定ガチャイベント『綺想の扉』まもなく開催！\n星6セット「綺夢の旅」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆11月6日\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・限定ガチャイベント『綺想の扉』がまもなく開催される\n・星6セット「綺夢の旅」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は11月6日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "b160a329ccbbcef0486b6a68",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Free Life Makeover x Cardcaptor Sakura Collab Set",
+    "body": "Free Life Makeover x Cardcaptor Sakura Collab Set!\n\nFrom Nov. 6 to Nov. 12, join Popping Gifts event for the Life Makeover x Cardcaptor Sakura Collab set!\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982356524555968856",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761465600,
+    "imageUrl": "https://pbs.twimg.com/media/G38dwxMWwAAcGAm?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G38dwxMWwAAcGAm?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982356524555968856"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布！",
+    "bodyJa": "Life Makeover × カードキャプターさくらコラボセットが無料配布されます！\n\n11月6日から11月12日まで、「Popping Gifts」イベントに参加して、Life Makeover × カードキャプターさくらコラボセットを入手してください！\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "summaryJa": "・追加: Life Makeover × カードキャプターさくらコラボセットが無料配布\n・期間: 11月6日〜11月12日\n・入手: 「Popping Gifts」イベントに参加して獲得",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "d2300868e94d4198fb1b7e15",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Version | 5-Star Set [Seal Release] Preview",
+    "body": "New Version | 5-Star Set [Seal Release] Preview!\n\nLife Makeover x Cardcaptor Sakura New Version - Card Pact available from Oct. 29 to Nov. 18!\n\n#LifeMakeover #CardcaptorSakura",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/1982341426303451516",
+    "publishedLabel": "2025-10-26",
+    "publishedAtEpoch": 1761462000,
+    "imageUrl": "https://pbs.twimg.com/media/G38b0mzXoAAWxMv?format=jpg&name=orig",
+    "imageUrls": [
+      "https://pbs.twimg.com/media/G38b0mzXoAAWxMv?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/G38b4YCX0AAispw?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/G38b5i-WcAAN2wC?format=jpg&name=orig",
+      "https://pbs.twimg.com/media/G38b7DKWsAANiNx?format=jpg&name=orig"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/1982341426303451516"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "新バージョン | ★5セット [封印解放] プレビュー",
+    "bodyJa": "新バージョン | ★5セット [封印解放] プレビュー！\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで入手可能！\n\n#LifeMakeover #CardcaptorSakura",
+    "summaryJa": "・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクトが追加\n・期間: 10月29日〜11月18日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "088c7870dfe2a05592ec9df0",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "限定ガチャイベント『焦土の花』まもなく開催",
+    "body": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/1977298201414701539",
+    "publishedLabel": "2025-10-12",
+    "publishedAtEpoch": 1760259602,
+    "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg"
+    ],
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/1977298201414701539"
+      }
+    ],
+    "sourceCount": 1,
+    "titleJa": "限定ガチャイベント『焦土の花』まもなく開催",
+    "bodyJa": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・限定ガチャイベント『焦土の花』がまもなく開催される\n・星5セット「落羽聖花」と「融解の冥焔」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーンの締め切りは10月16日",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
