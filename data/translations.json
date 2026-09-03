@@ -1845,6 +1845,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788030034
+    },
+    "https://www.bilibili.com/opus/1243444574009950215": {
+      "contentHash": "f8a2b4efc3d2185be30808b2",
+      "titleJa": "定格舞台の絶美な瞬間✨夢幻な配色で極上の雰囲気を作り出し、✨ロマンチックな才能がときめきの頻度を加速させる",
+      "bodyJa": "定格舞台の絶美な瞬間\n\n✨夢幻な配色で極上の雰囲気を作り出し、\n✨ロマンチックな才能がときめきの頻度を加速させます。\n\n❤️今期の展示作品は、以下のプレイヤーによるものです：\n斟酒一\n归零zero.\n甜杏兔兔\n慕斯喲\n朕是一个脆弱的皇帝\n米次得\nLabyrinth（嫦娥版200セット着用）\n灼灼星海\n天才脆薯饼\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・展示作品の紹介：定格舞台の絶美な瞬間をテーマにした展示が行われています\n・展示内容：夢幻な配色による雰囲気作りと、ロマンチックな才能によるときめきの加速がテーマです\n・参加プレイヤー：斟酒一、归零zero.、甜杏兔兔、慕斯喲、朕是一个脆弱的皇帝、米次得、Labyrinth、灼灼星海、天才脆薯饼\n・ゲーム概要：以闪亮之名（以闪亮之名）は、ロールプレイング/高画質/シミュレーション経営の3A級シミュレーションライフゲームです",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788417698
+    },
+    "https://x.com/kirapara_JP/status/2095074261262291030": {
+      "contentHash": "323b75d197cc3a983ae42aa5",
+      "titleJa": "明日よりゲーム内イベント『変装物語・朧な岸辺編』を開催✨ イベント期間⏰ 9月3日10:30～9月17日5:00 イベントに参加して、星5セット『霧雨に笠そえて』をゲッ...",
+      "bodyJa": "明日よりゲーム内イベント『変装物語・朧な岸辺編』を開催✨\n\nイベント期間⏰\n9月3日10:30～9月17日5:00\n\nイベントに参加して、星5セット『霧雨に笠そえて』をゲットしよう！🐱\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ゲーム内イベント「変装物語・朧な岸辺編」が開催される\n・期間: 9月3日10:30～9月17日5:00\n・報酬: イベントに参加することで星5セット「霧雨に笠そえて」を入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788417718
+    },
+    "https://x.com/kirapara_JP/status/2095059157531463764": {
+      "contentHash": "4aa7318a0794e5ad92d7a656",
+      "titleJa": "🛍外観パック『花咲く浮世』販売🛍 パックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖 販売期間⏰ 9月3日～9月23日 詳細はゲーム内でチェ...",
+      "bodyJa": "🛍外観パック『花咲く浮世』販売🛍\n\nパックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖\n\n販売期間⏰\n9月3日～9月23日\n\n詳細はゲーム内でチェックしてね📷\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 外観パック『花咲く浮世』が販売開始\n・内容: パックを購入すると、フォト背景や動作ポーズなどが獲得できる\n・期間: 9月3日～9月23日\n・入手方法: ゲーム内で詳細を確認",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788417734
     }
   },
   "failures": {

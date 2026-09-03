@@ -29,7 +29,13 @@
         "url": "https://t.bilibili.com/1243444574009950215"
       }
     ],
-    "sourceCount": 3
+    "sourceCount": 3,
+    "titleJa": "定格舞台の絶美な瞬間✨夢幻な配色で極上の雰囲気を作り出し、✨ロマンチックな才能がときめきの頻度を加速させる",
+    "bodyJa": "定格舞台の絶美な瞬間\n\n✨夢幻な配色で極上の雰囲気を作り出し、\n✨ロマンチックな才能がときめきの頻度を加速させます。\n\n❤️今期の展示作品は、以下のプレイヤーによるものです：\n斟酒一\n归零zero.\n甜杏兔兔\n慕斯喲\n朕是一个脆弱的皇帝\n米次得\nLabyrinth（嫦娥版200セット着用）\n灼灼星海\n天才脆薯饼\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+    "summaryJa": "・展示作品の紹介：定格舞台の絶美な瞬間をテーマにした展示が行われています\n・展示内容：夢幻な配色による雰囲気作りと、ロマンチックな才能によるときめきの加速がテーマです\n・参加プレイヤー：斟酒一、归零zero.、甜杏兔兔、慕斯喲、朕是一个脆弱的皇帝、米次得、Labyrinth、灼灼星海、天才脆薯饼\n・ゲーム概要：以闪亮之名（以闪亮之名）は、ロールプレイング/高画質/シミュレーション経営の3A級シミュレーションライフゲームです",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "461aca5815cad90a6feb5264",
@@ -52,7 +58,13 @@
         "url": "https://x.com/kirapara_JP/status/2095074261262291030"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "明日よりゲーム内イベント『変装物語・朧な岸辺編』を開催✨ イベント期間⏰ 9月3日10:30～9月17日5:00 イベントに参加して、星5セット『霧雨に笠そえて』をゲッ...",
+    "bodyJa": "明日よりゲーム内イベント『変装物語・朧な岸辺編』を開催✨\n\nイベント期間⏰\n9月3日10:30～9月17日5:00\n\nイベントに参加して、星5セット『霧雨に笠そえて』をゲットしよう！🐱\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: ゲーム内イベント「変装物語・朧な岸辺編」が開催される\n・期間: 9月3日10:30～9月17日5:00\n・報酬: イベントに参加することで星5セット「霧雨に笠そえて」を入手可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "9506a3a486f2c422dbff8f06",
@@ -74,7 +86,13 @@
         "url": "https://x.com/kirapara_JP/status/2095059157531463764"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🛍外観パック『花咲く浮世』販売🛍 パックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖 販売期間⏰ 9月3日～9月23日 詳細はゲーム内でチェ...",
+    "bodyJa": "🛍外観パック『花咲く浮世』販売🛍\n\nパックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖\n\n販売期間⏰\n9月3日～9月23日\n\n詳細はゲーム内でチェックしてね📷\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: 外観パック『花咲く浮世』が販売開始\n・内容: パックを購入すると、フォト背景や動作ポーズなどが獲得できる\n・期間: 9月3日～9月23日\n・入手方法: ゲーム内で詳細を確認",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e18534530f31f1649fddc16e",
@@ -2690,7 +2708,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -3048,7 +3066,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "sources": [
       {
         "platform": "公式X",
@@ -5079,6 +5097,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]
