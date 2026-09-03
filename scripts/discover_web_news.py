@@ -467,7 +467,7 @@ def main():
                 continue
         by_title[key or row["sourceUrl"]] = row
 
-    rows = sorted(by_title.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:260]
+    rows = sorted(by_title.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:800]
     OUT.write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     counts = {}

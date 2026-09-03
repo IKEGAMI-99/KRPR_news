@@ -256,7 +256,7 @@ def merge_rows(existing: list[dict], incoming: list[dict]) -> list[dict]:
         merged.values(),
         key=lambda item: int(item.get("publishedAtEpoch") or 0),
         reverse=True,
-    )[:260]
+    )[:800]
 
 
 def main():

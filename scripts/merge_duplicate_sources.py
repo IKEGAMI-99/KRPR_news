@@ -241,7 +241,7 @@ def merge_rows(rows: list[dict]) -> list[dict]:
 
     merged = [merge_cluster(cluster) for cluster in clusters]
     merged.sort(key=lambda r: int(r.get("publishedAtEpoch") or 0), reverse=True)
-    return merged[:260]
+    return merged[:800]
 
 
 def main():

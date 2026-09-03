@@ -344,7 +344,7 @@ def main():
                     row[key] = old[key]
         merged[row["sourceUrl"]] = row
 
-    final = sorted(merged.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:260]
+    final = sorted(merged.values(), key=lambda x: int(x.get("publishedAtEpoch") or 0), reverse=True)[:800]
     OUT.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"official WeChat articles merged: {len(added)}; total={len(final)}")
 

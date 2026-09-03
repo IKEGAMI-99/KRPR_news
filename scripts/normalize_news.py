@@ -160,7 +160,7 @@ def main():
         normalized.append(row)
 
     normalized.sort(key=lambda r: int(r.get("publishedAtEpoch") or 0), reverse=True)
-    normalized = normalized[:260]
+    normalized = normalized[:800]
     live_keys = {canonical(str(r.get("sourceUrl") or "")) for r in normalized}
     cache = {k: v for k, v in cache.items() if k in live_keys}
 
