@@ -1506,14 +1506,14 @@
       "updatedAtEpoch": 1788020931
     },
     "https://www.youtube.com/watch?v=667Q4xYRSvc": {
-      "contentHash": "f75ec425a975e70348d74005",
-      "titleJa": "5★『罪の安息』予告 - ゲーム内映像",
-      "bodyJa": "永遠の夜、禁断の誘惑が花開きます。\n\n赤い炎が魂を包み込み、\n甘い囁きが深い深淵へと誘います。\n\n欲望と破滅が出会う果てで、\n禁断の美しさが咲き誇ります。\n\n7月30日（木）、5★コスチューム『罪の安息』が期間限定で登場！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #月の審判",
+      "contentHash": "81a8fed2c192b91db098dd40",
+      "titleJa": "5★『罪の安息』インゲーム映像公開",
+      "bodyJa": "永遠の夜、禁断の誘惑が花開きます。\n\n赤い炎が魂を包み込み、\n甘い囁きが深い深淵へと誘います。\n\n欲望と破滅が交差する果てに、\n禁断の美しさが咲き誇ります。\n\n7月30日（木）、5★コスチューム『罪の安息』が期間限定で登場します！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #月の審判",
       "summaryJa": "・追加: 5★コスチューム『罪の安息』が期間限定で登場\n・期間: 7月30日（木）から登場",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788020968
+      "updatedAtEpoch": 1788436180
     },
     "https://www.youtube.com/watch?v=_r0KeBJjsMs": {
       "contentHash": "e7edb04cc763cdea7ceb74c6",
@@ -2614,6 +2614,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788435163
+    },
+    "https://www.youtube.com/shorts/UpHBHQ81TSY": {
+      "contentHash": "5cb6225e7cb6dd86f95854ab",
+      "titleJa": "SRアライ [Larry - Pillow Story] プレビュー - Evolve",
+      "bodyJa": "SRアライ [Larry - Pillow Story] プレビュー - Evolve\n\n「もう私を切り捨てるのですか、陛下？昨夜も、あなたが――」\n\n#OceanLabyrinth | イベントは8月7日09:00から8月27日23:59まで開催中！\n#LifeMakeoverWorld #NauticalWill #UntoldPossession",
+      "summaryJa": "・追加: SRアライ [Larry - Pillow Story] プレビュー - Evolve\n・イベント名: #OceanLabyrinth\n・期間: 8月7日09:00から8月27日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788436098
+    },
+    "https://www.youtube.com/watch?v=dS2zcKkL59w": {
+      "contentHash": "6b4d628fdf9081b11f13ef81",
+      "titleJa": "『きらめきパラダイス』星5セットコーデ動画『香りの饗宴』の実録動画を公開✨",
+      "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「香りの饗宴」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+      "summaryJa": "・追加: キラパラのイベント「七宝庭の香り」に登場する新星5セット「香りの饗宴」の動画が公開されました\n・ゲームタイトル: キラパラ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788436131
     }
   },
   "failures": {
