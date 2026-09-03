@@ -115,7 +115,13 @@
         "url": "https://x.com/kirapara_JP/status/2095044056271475104"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🛍ネイルパック『万象の帰結』販売開始🛍 パックを購入すると、星5ネイルセットやポーズなどが獲得できるよ💖 販売期間⏰ 9月3日10:30～9月16日23:59 詳細...",
+    "bodyJa": "🛍ネイルパック『万象の帰結』販売開始🛍\n\nパックを購入すると、星5ネイルセットやポーズなどが獲得できるよ💖\n\n販売期間⏰\n9月3日10:30～9月16日23:59\n\n詳細はゲーム内でチェックしてね📷\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: ネイルパック『万象の帰結』が販売開始\n・内容: パック購入で星5ネイルセットやポーズなどが獲得可能\n・期間: 9月3日10:30～9月16日23:59\n・入手: ゲーム内にて販売",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "37e80ae1591de1ccf70eb47e",
@@ -155,7 +161,13 @@
     "sourceCount": 4,
     "imageMirrorUrls": [
       "https://ikegami-99.github.io/KRPR_news/media/weibo/1bcc33df6283953cbe1c.jpg"
-    ]
+    ],
+    "titleJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# VME応援企画 | 赴一场闪亮之约 全新4.4バージョン・神迹初诞 9月1日-9月21日期間限定ログイン",
+    "bodyJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# \n\nVME応援企画 | 赴一场闪亮之约\n全新4.4バージョン・神迹初诞 9月1日-9月21日期間限定ログイン！\n\n✨星々が輝き、光が瞬く。\n✨ワンタップで変身、あなたを輝かせる！\n💖プレイヤーの皆様、#頂流の卵生# タグを使用して、あなただけのワンタップ変身動画を投稿してください！\n💖プレイヤーへの感謝：京谕\n\n💎ダウンロードはこちら： Webリンク \n💎闪亮作品上映季イベントはこちら： Webリンク 以闪亮之名の微博動画は表示できませんので、微博動画にてご確認ください。",
+    "summaryJa": "・イベント名「VME応援企画 | 赴一场闪亮之约」が開催\n・期間: 9月1日-9月21日\n・内容: 全新4.4バージョン「神迹初诞」の期間限定ログイン\n・参加方法: #頂流の卵生# タグを使用してワンタップ変身動画を投稿",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d00f039b963da7f8beed8450",
@@ -178,7 +190,13 @@
         "url": "https://x.com/LifeMakeover510/status/2094742065838219313"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【アンコール】Winter Seclusion Pack\n\n9月2日 09:00 - 9月8日 23:59 UTC",
+    "bodyJa": "【アンコール】Winter Seclusion Pack\n\n⏰9月2日 09:00 - 9月8日 23:59 UTC\n\n指定されたイベントタスクを完了すると、パックの割引が解除されます。4つのタスクをすべて完了すると、78%オフになります！このパックには、★5浮遊[Sugar Warm Hut]、★5メイクアップ[Rainbow Plume]などが含まれています！",
+    "summaryJa": "・追加: 【アンコール】Winter Seclusion Pack\n・期間: 9月2日 09:00 - 9月8日 23:59 UTC\n・入手: 指定されたイベントタスクを完了することでパックの割引が解除される\n・特典: 4つのタスクをすべて完了すると78%オフになる\n・内容: ★5浮遊[Sugar Warm Hut]、★5メイクアップ[Rainbow Plume]などを含む",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "59b99001ec2b7346fe0ae600",
@@ -2708,7 +2726,7 @@
     "summaryJa": "・追加: ★4セット「Wander Limit」がプレビュー公開\n・イベント: 「Dance of Deceit」が開催される\n・期間: 8月28日09:00から9月17日23:59まで",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -3066,7 +3084,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5097,6 +5115,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]

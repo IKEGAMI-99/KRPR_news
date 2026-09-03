@@ -1875,6 +1875,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788417734
+    },
+    "https://x.com/kirapara_JP/status/2095044056271475104": {
+      "contentHash": "7c04488c72122d772e77a2bb",
+      "titleJa": "🛍ネイルパック『万象の帰結』販売開始🛍 パックを購入すると、星5ネイルセットやポーズなどが獲得できるよ💖 販売期間⏰ 9月3日10:30～9月16日23:59 詳細...",
+      "bodyJa": "🛍ネイルパック『万象の帰結』販売開始🛍\n\nパックを購入すると、星5ネイルセットやポーズなどが獲得できるよ💖\n\n販売期間⏰\n9月3日10:30～9月16日23:59\n\n詳細はゲーム内でチェックしてね📷\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ネイルパック『万象の帰結』が販売開始\n・内容: パック購入で星5ネイルセットやポーズなどが獲得可能\n・期間: 9月3日10:30～9月16日23:59\n・入手: ゲーム内にて販売",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788417896
+    },
+    "https://weibo.com/7521830234/RgentcQGZ": {
+      "contentHash": "a0ab999c68238e346e3a5fb0",
+      "titleJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# VME応援企画 | 赴一场闪亮之约 全新4.4バージョン・神迹初诞 9月1日-9月21日期間限定ログイン",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# \n\nVME応援企画 | 赴一场闪亮之约\n全新4.4バージョン・神迹初诞 9月1日-9月21日期間限定ログイン！\n\n✨星々が輝き、光が瞬く。\n✨ワンタップで変身、あなたを輝かせる！\n💖プレイヤーの皆様、#頂流の卵生# タグを使用して、あなただけのワンタップ変身動画を投稿してください！\n💖プレイヤーへの感謝：京谕\n\n💎ダウンロードはこちら： Webリンク \n💎闪亮作品上映季イベントはこちら： Webリンク 以闪亮之名の微博動画は表示できませんので、微博動画にてご確認ください。",
+      "summaryJa": "・イベント名「VME応援企画 | 赴一场闪亮之约」が開催\n・期間: 9月1日-9月21日\n・内容: 全新4.4バージョン「神迹初诞」の期間限定ログイン\n・参加方法: #頂流の卵生# タグを使用してワンタップ変身動画を投稿",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788417959
+    },
+    "https://x.com/LifeMakeover510/status/2094742065838219313": {
+      "contentHash": "ad4a355e39170adc8314d78b",
+      "titleJa": "【アンコール】Winter Seclusion Pack\n\n9月2日 09:00 - 9月8日 23:59 UTC",
+      "bodyJa": "【アンコール】Winter Seclusion Pack\n\n⏰9月2日 09:00 - 9月8日 23:59 UTC\n\n指定されたイベントタスクを完了すると、パックの割引が解除されます。4つのタスクをすべて完了すると、78%オフになります！このパックには、★5浮遊[Sugar Warm Hut]、★5メイクアップ[Rainbow Plume]などが含まれています！",
+      "summaryJa": "・追加: 【アンコール】Winter Seclusion Pack\n・期間: 9月2日 09:00 - 9月8日 23:59 UTC\n・入手: 指定されたイベントタスクを完了することでパックの割引が解除される\n・特典: 4つのタスクをすべて完了すると78%オフになる\n・内容: ★5浮遊[Sugar Warm Hut]、★5メイクアップ[Rainbow Plume]などを含む",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788418008
     }
   },
   "failures": {
@@ -1891,27 +1921,6 @@
       "failedRuns": 2,
       "lastFailureAtEpoch": 1788025908,
       "retryAfterEpoch": 1788047508
-    },
-    "https://www.taptap.cn/moment/842461141631240483": {
-      "contentHash": "058fab4030fdb5741e56caa3",
-      "failedAttempts": 6,
-      "failedRuns": 2,
-      "lastFailureAtEpoch": 1788026142,
-      "retryAfterEpoch": 1788047742
-    },
-    "https://www.bilibili.com/opus/1241187139140452373": {
-      "contentHash": "f5562842f14a2337c3b0adf1",
-      "failedAttempts": 6,
-      "failedRuns": 2,
-      "lastFailureAtEpoch": 1788028478,
-      "retryAfterEpoch": 1788050078
-    },
-    "https://www.bilibili.com/opus/1240073883666612227": {
-      "contentHash": "799c0f22aa6bdb75c24423a2",
-      "failedAttempts": 6,
-      "failedRuns": 2,
-      "lastFailureAtEpoch": 1788028823,
-      "retryAfterEpoch": 1788050423
     }
   }
 }
