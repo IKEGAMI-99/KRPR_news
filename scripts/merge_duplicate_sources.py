@@ -29,6 +29,19 @@ def comparison_text(row: dict) -> str:
     return normalize_title(title + body)
 
 
+def body_prefix(row: dict) -> str:
+    return normalize_title(str(row.get("body") or "").strip()[:BODY_PREFIX_LENGTH])
+
+
+def text_match(a: str, b: str, threshold: float) -> bool:
+    if min(len(a), len(b)) < MIN_TITLE_LENGTH:
+        return False
+    short, long = sorted((a, b), key=len)
+    if len(short) >= MIN_CONTAINMENT_LENGTH and short in long:
+        return True
+    return difflib.SequenceMatcher(None, a, b).ratio() >= threshold
+
+
 def time_close(a: dict, b: dict) -> bool:
     ea = int(a.get("publishedAtEpoch") or 0)
     eb = int(b.get("publishedAtEpoch") or 0)
@@ -45,25 +58,21 @@ def same_story(a: dict, b: dict) -> bool:
 
     ta = normalize_title(a.get("title"))
     tb = normalize_title(b.get("title"))
-    if min(len(ta), len(tb)) < MIN_TITLE_LENGTH:
-        return False
-
-    short, long = sorted((ta, tb), key=len)
-    if len(short) >= MIN_CONTAINMENT_LENGTH and short in long:
-        return True
-    if difflib.SequenceMatcher(None, ta, tb).ratio() >= TITLE_SIMILARITY_THRESHOLD:
+    if text_match(ta, tb, TITLE_SIMILARITY_THRESHOLD):
         return True
 
     # TapTap often has a short topic title while Weibo/Bilibili place the
-    # opening sentence in the title too. Use a small body prefix as a fallback.
+    # opening sentence in the title too. Compare title+body against the other
+    # title as well as both body prefixes, rather than only combined texts.
     ca = comparison_text(a)
     cb = comparison_text(b)
-    if min(len(ca), len(cb)) < MIN_TITLE_LENGTH:
-        return False
-    cshort, clong = sorted((ca, cb), key=len)
-    if len(cshort) >= MIN_CONTAINMENT_LENGTH and cshort in clong:
+    if text_match(ca, tb, TITLE_BODY_SIMILARITY_THRESHOLD):
         return True
-    return difflib.SequenceMatcher(None, ca, cb).ratio() >= TITLE_BODY_SIMILARITY_THRESHOLD
+    if text_match(cb, ta, TITLE_BODY_SIMILARITY_THRESHOLD):
+        return True
+    if text_match(body_prefix(a), body_prefix(b), TITLE_BODY_SIMILARITY_THRESHOLD):
+        return True
+    return text_match(ca, cb, TITLE_BODY_SIMILARITY_THRESHOLD)
 
 
 def platform_label(platform: str) -> str:
