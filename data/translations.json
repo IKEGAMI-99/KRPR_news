@@ -2877,10 +2877,10 @@
     },
     "https://weibo.com/7521830234/RgpLKfhau": {
       "contentHash": "ec60f1ca65618b67db9a60cd",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788431004,
-      "retryAfterEpoch": 1788452604
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788453558,
+      "retryAfterEpoch": 1788475158
     }
   }
 }
