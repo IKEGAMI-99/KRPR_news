@@ -2425,6 +2425,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788429529
+    },
+    "https://x.com/kirapara_JP/status/2095433032685801494": {
+      "contentHash": "afa848ca14bd7f80b570ce31",
+      "titleJa": "📢臨時メンテナンスのお知らせ 機能改善およびシステム更新のため、以下の時間に全サーバーの臨時メンテナンスを実施いたします",
+      "bodyJa": "📢臨時メンテナンスのお知らせ\n\n機能改善およびシステム更新のため、以下の時間に全サーバーの臨時メンテナンスを実施いたします。\n\nメンテナンス時間\n 9月3日(木) 17:45 ~ 18:45前後\n\n詳細はゲーム内「お知らせ」をご覧ください👀\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・実施内容: 機能改善およびシステム更新のための全サーバー臨時メンテナンス\n・メンテナンス時間: 9月3日(木) 17:45 〜 18:45前後\n・詳細: ゲーム内「お知らせ」にて確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788431038
+    },
+    "https://t.bilibili.com/1242714002172149880": {
+      "contentHash": "4fd45c125e9271044527ac31",
+      "titleJa": "新4.4バージョン｜★6セット「聖翎祈世」デザイン短編公開",
+      "bodyJa": "新4.4バージョン｜★6セット「聖翎祈世」デザイン短編公開\n#頂流の卵生# 新4.4バージョン・神迹初誕 9月1日〜9月21日期間限定ログイン！\n今回、2億の価値を持つ「法貝熱彩蛋」の要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極繁の美を表現します。\n手持ちアイテムに重ねて装着できる開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋の要素を豊富に盛り込みました。これにより、全体のスタイルが統一された完全な芸術表現を保つだけでなく、彩蛋のイメージが持つ幸運の寓意がプレイヤーに加護をもたらし、幸運値がUPUPUPすることを期待しています。\n今、すべてが準備が整いました。ぜひご覧ください。\n\n動画アドレス：",
+      "summaryJa": "・追加: ★6セット「聖翎祈世」のデザイン短編が公開\n・イベント: 新4.4バージョン・神迹初誕が9月1日〜9月21日まで期間限定ログインで開催\n・衣装特徴: 2億の価値を持つ「法貝熱彩蛋」の要素を再構築し、19世紀末〜20世紀初頭のロシア風情を融合させた極繁の美を表現\n・衣装詳細: 手持ちアイテム、尾の蝶結び、履物などに彩蛋の要素が細部まで組み込まれている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788431133
     }
   },
   "failures": {
@@ -2455,6 +2475,13 @@
       "failedRuns": 1,
       "lastFailureAtEpoch": 1788426817,
       "retryAfterEpoch": 1788448417
+    },
+    "https://weibo.com/7521830234/RgpLKfhau": {
+      "contentHash": "ec60f1ca65618b67db9a60cd",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788431004,
+      "retryAfterEpoch": 1788452604
     }
   }
 }
