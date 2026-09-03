@@ -2205,6 +2205,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788424550
+    },
+    "https://www.bilibili.com/opus/1242671479890378790": {
+      "contentHash": "5369fd98adfdd07109b6c71a",
+      "titleJa": "今日の運勢が届きました 🍅幸運の卵であなただけの幸運磁場を始めよう 🥜もし期限があるなら、1万年がいいな",
+      "bodyJa": "今日の運勢が届きました\n\n🍅幸運の卵であなただけの幸運磁場を始めよう\n🥜もし期限があるなら、1万年がいいな！\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・内容: 幸運の卵であなただけの幸運磁場を始められるイベントの告知\n・ゲーム: 以闪亮之名",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788425457
+    },
+    "https://x.com/stylight_kr/status/2094350732379955211": {
+      "contentHash": "e41e20edc29eda2ec5bfeeb3",
+      "titleJa": "『アンティークサロン』背景パックが明日リリース",
+      "bodyJa": "『アンティークサロン』背景パックが明日リリースされます。\n\n「カチカチと響く蓄音機の旋律と、色褪せた日差しが残る場所。\n時間が積み重なったサロンで、優雅でゆったりとした午後をお楽しみください。」\n\n🕙 9/1 10:30 〜 9/14 23:59\n\n[パック情報]\n撮影背景「芸術の時代」、ライブポーズ「優雅な眼差し」など、様々なアイテムが含まれた美しいパックです。\n\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨",
+      "summaryJa": "・追加: 『アンティークサロン』背景パックが明日リリース\n・期間: 9/1 10:30 〜 9/14 23:59\n・内容: 撮影背景「芸術の時代」、ライブポーズ「優雅な眼差し」などを含むパック",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788425515
+    },
+    "https://x.com/stylight_kr/status/2094349482934603787": {
+      "contentHash": "5a6810384476f19ee27edeb8",
+      "titleJa": "📅 9月ログインボーナス「クリムゾン・イリュージョン」9月累計30日ログインで4★限定コスチューム「クリムゾン・イリュージョン」を入手可能に。また7日間連続ログインでVVパックと...",
+      "bodyJa": "📅 9月ログインボーナス「クリムゾン・イリュージョン」\n\n9月累計30日間ログインで\n4★限定コスチューム「クリムゾン・イリュージョン」を入手できます。\n\nまた、7日間連続ログインで\nVVパックと共にダイヤ、体力、トレンドカラーカードなど様々な報酬を受け取ることができます。\n\nログインボーナスもお見逃しなく、ぜひ受け取ってください！\n\n📌 ログインボーナス復刻案内\n\nログインコスチューム「秋の学校物語」が9月1日から製作可能な衣装として追加されます。\n\n以前入手できなかったスタイルパートナー様は、\n[デザイン室 → ファッションスタジオ → ログインコレクション]から\n「秋の学校物語」を製作できます。\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 9月累計30日間ログインで4★限定コスチューム「クリムゾン・イリュージョン」を入手可能に\n・追加: 7日間連続ログインでVVパック、ダイヤ、体力、トレンドカラーカードなどの報酬を入手可能に\n・復刻: ログインコスチューム「秋の学校物語」が9月1日から製作可能衣装として追加される\n・入手方法: 「秋の学校物語」は[デザイン室 → ファッションスタジオ → ログインコレクション]から製作可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788425596
     }
   },
   "failures": {
