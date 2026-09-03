@@ -2814,6 +2814,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788445131
+    },
+    "https://x.com/kirapara_JP/status/1969688048410779732": {
+      "contentHash": "8f605f2e4e635dc48ee69e2c",
+      "titleJa": "限定ガチャイベント『月狩の神託』まもなく開催",
+      "bodyJa": "限定ガチャイベント『月狩の神託』まもなく開催！\n星6セット「新月降臨」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆9月25日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『月狩の神託』がまもなく開催されます\n・星6セット「新月降臨」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントします\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は9月25日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445319
+    },
+    "https://x.com/kirapara_JP/status/1969219964461523167": {
+      "contentHash": "19282842555a665cb4c53561",
+      "titleJa": "＼#秋分の日 🌾特別抽選キャンペーン開催／ 参加してくれた方から抽選で20名様に#Amazonギフト券 を🎁 ぜひご参加ください✨ 【参加方法】 ①@kirapara_JP ...",
+      "bodyJa": "＼#秋分の日 🌾特別抽選キャンペーン開催／\n参加してくれた方から抽選で20名様に#Amazonギフト券 を🎁\nぜひご参加ください✨\n\n【参加方法】 \n①@kirapara_JP をフォロー \n②本ツイートをリポスト \n\n〆9/24\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・キャンペーン名: #秋分の日 🌾特別抽選キャンペーン\n・内容: 参加者の中から抽選で20名様に#Amazonギフト券をプレゼント\n・参加方法: @kirapara_JPをフォローし、本ツイートをリポスト\n・締切: 9/24",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445338
+    },
+    "https://x.com/LifeMakeover510/status/1967121137038774412": {
+      "contentHash": "3ee1c08a147bc8d946ea2ded",
+      "titleJa": "Life Makeover 新バージョン「Smolder Bloom」が9月17日から10月7日まで開催",
+      "bodyJa": "Life Makeover 新バージョン「Smolder Bloom」が9月17日から10月7日まで開催されます！\n\nLife Makeover 新★5セット「Lava Savage」\n\n[Smolder Bloom] \n9月17日 09:00 - 10月7日 23:59 UTC\n永遠の炎、生命の神聖な種子。\n#LifeMakeover #SmolderBloom",
+      "summaryJa": "・追加: Life Makeover 新★5セット「Lava Savage」が登場\n・期間: 9月17日 09:00 - 10月7日 23:59 UTC",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788445373
     }
   },
   "failures": {
