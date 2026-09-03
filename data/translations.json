@@ -2684,6 +2684,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788441627
+    },
+    "https://x.com/stylight_kr/status/1982784147086078263": {
+      "contentHash": "24936e2d956b2d682c47ca9b",
+      "titleJa": "「みんなこんなに可愛いと、私じゃ選べないよ」",
+      "bodyJa": "「みんなこんなに可愛いと、私じゃ選べないよ！！」\n\n🥭皆さんの爽やかなアイスマンゴーの感想を\n今すぐ引用で自慢してください~\n\n(˶˃ᆺ˂˶) 今日の作品:\n1番の作家様（ゲームニックネーム）：ハヒュー\n2番の作家様（ゲームニックネーム）：リムズ\n\nありがとうございます！\n#Stylight #Stylight_파트너즈",
+      "summaryJa": "・追加: 「みんなこんなに可愛いと、私じゃ選べないよ」というテーマの投稿企画が開始\n・対象: 爽やかなアイスマンゴーの感想\n・参加方法: 引用機能を使って自慢する",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788441753
+    },
+    "https://x.com/LifeMakeover510/status/1982311228002517080": {
+      "contentHash": "27887d7a3c52183672a722cf",
+      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」プレビュー",
+      "bodyJa": "Life Makeover x カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+      "summaryJa": "・追加: ★5セット「クリア・プレリュード」のプレビュー公開\n・期間: 10月29日〜11月18日\n・内容: Life Makeover x カードキャプターさくら 新バージョン - カードパクトが利用可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788441793
+    },
+    "https://x.com/LifeMakeover510/status/1982296128709156892": {
+      "contentHash": "765838b560776b2c3e73a6b2",
+      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン - カードパクト登場",
+      "bodyJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura",
+      "summaryJa": "・追加: ★5セット「クリア・プレリュード」ゲーム内映像\n・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクト\n・期間: 10月29日〜11月18日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788441838
     }
   },
   "failures": {

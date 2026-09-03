@@ -3288,7 +3288,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5653,7 +5653,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G4RAngnWAAA1Aqc?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "「みんなこんなに可愛いと、私じゃ選べないよ」",
+    "bodyJa": "「みんなこんなに可愛いと、私じゃ選べないよ！！」\n\n🥭皆さんの爽やかなアイスマンゴーの感想を\n今すぐ引用で自慢してください~\n\n(˶˃ᆺ˂˶) 今日の作品:\n1番の作家様（ゲームニックネーム）：ハヒュー\n2番の作家様（ゲームニックネーム）：リムズ\n\nありがとうございます！\n#Stylight #Stylight_파트너즈",
+    "summaryJa": "・追加: 「みんなこんなに可愛いと、私じゃ選べないよ」というテーマの投稿企画が開始\n・対象: 爽やかなアイスマンゴーの感想\n・参加方法: 引用機能を使って自慢する",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b160a329ccbbcef0486b6a68",
@@ -5737,7 +5743,13 @@
         "url": "https://x.com/LifeMakeover510/status/1982311228002517080"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "新バージョン | ★5セット「クリア・プレリュード」プレビュー",
+    "bodyJa": "Life Makeover x カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+    "summaryJa": "・追加: ★5セット「クリア・プレリュード」のプレビュー公開\n・期間: 10月29日〜11月18日\n・内容: Life Makeover x カードキャプターさくら 新バージョン - カードパクトが利用可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d491aefe691e5c7ef57861f2",
@@ -5759,7 +5771,13 @@
         "url": "https://x.com/LifeMakeover510/status/1982296128709156892"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン - カードパクト登場",
+    "bodyJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura",
+    "summaryJa": "・追加: ★5セット「クリア・プレリュード」ゲーム内映像\n・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクト\n・期間: 10月29日〜11月18日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "1834e6ddc8475f026ea7b2af",
@@ -5994,6 +6012,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
