@@ -107,6 +107,14 @@ def partition_pending_rows(pending: list, cache: dict, now_epoch: int) -> tuple[
             retry_after = int(record.get("retryAfterEpoch") or 0)
         except (TypeError, ValueError):
             retry_after = 0
+        try:
+            last_failure = int(record.get("lastFailureAtEpoch") or 0)
+        except (TypeError, ValueError):
+            last_failure = 0
+        if last_failure > 0:
+            current_policy_retry = last_failure + FAILURE_COOLDOWN_SECONDS
+            retry_after = min(retry_after, current_policy_retry) if retry_after else current_policy_retry
+            record["retryAfterEpoch"] = retry_after
         if retry_after > now_epoch:
             deferred.append(row)
         else:
