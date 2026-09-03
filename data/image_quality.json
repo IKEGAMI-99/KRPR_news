@@ -2165,12 +2165,6 @@
     "height": 1080,
     "checkedAt": 1788468798
   },
-  "https://kotaku.com/app/uploads/2026/09/ff7-tril-bundle.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1788468798
-  },
   "https://kotaku.com/app/uploads/2026/08/image-2026-08-31T090445.966.jpg": {
     "ok": true,
     "width": 1920,
@@ -2387,54 +2381,6 @@
     "height": 648,
     "checkedAt": 1788473604
   },
-  "https://i0.hdslb.com/bfs/new_dyn/b2ae99ec4918c9049d88f89e8e758622676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/f629918ff9cb4832eda1d6e5e3f8b233676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/5ff49e4649f96961c71038bcb44619de676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/097fa9f2a01431a06e337b033ba8ec15676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/879001f2e879ced74864b8350ec2b8f6676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/77536e939f0017172ca42ee796fe16f6676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/6ccbd864fb04df5d363531e85f248b2b676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/19b64b96e037d2f42a1a47de7427bfcd676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1788473604
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osQgxDVMIApMaoAC7BCEnekAwEBVgAF3qWCV6f~tplv-tiktokx-origin.image?dr=9636&x-expires=1788645600&x-signature=QGZYON1%2BHbaDoB2uDegC1qA0Y%2FQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
@@ -2507,28 +2453,46 @@
     "height": 1440,
     "checkedAt": 1788473604
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=7e085957-d87d-43fa-9515-99de9695e42d&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788473602972&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788473604
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=ad57f1e2-41de-4064-8d1c-f233078940ea&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788473602992&request_path=%2Fmoment%2F821067872284446124": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788473604
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=edcfbeb7-ec4d-42dd-9b04-cac6fb201cef&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788473602988&request_path=%2Fmoment%2F828260941740116010": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788473604
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1788645600&x-signature=JZfJShEQtcOiL%2FEONH54r1hvpTw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 1080,
     "height": 1440,
     "checkedAt": 1788473604
+  },
+  "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1788477145
+  },
+  "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1788477145
+  },
+  "https://kotaku.com/app/uploads/2025/07/b4ff2c07b122ac34dac21b68a0c73577.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1788477145
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=d82a094a-c4b9-49c1-9a7f-b6b4a2664958&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788477144411&request_path=%2Fmoment%2F828260941740116010": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788477145
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=5bff243a-f92b-4b2d-81b7-ba96ea3e233a&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788477144678&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788477145
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=bfdca1f8-2ed7-4895-b2b3-324f6f3856d1&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788477144153&request_path=%2Fmoment%2F827191805966550915": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788477145
   }
 }
