@@ -2115,6 +2115,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788423884
+    },
+    "https://www.youtube.com/shorts/4bauEIHWvPo": {
+      "contentHash": "bf249dad3167e6896578cac7",
+      "titleJa": "SRアライ [ジェラルド - Our Way Home] - 進化",
+      "bodyJa": "「かつて私たちは、離れられないほど親密でした。あなたは私を、あなた自身と同じくらい深く知っていた。」\n\n#PrismaticFantasy | イベント期間は9月2日09:00から9月22日23:59まで！\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
+      "summaryJa": "・追加: SRアライ [ジェラルド - Our Way Home] - 進化が登場\n・期間: 9月2日09:00から9月22日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424011
+    },
+    "https://weibo.com/7521830234/Rg3LUeYsb": {
+      "contentHash": "f1c52cc1c87a372355404072",
+      "titleJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# 全新4.4バージョン「神迹初誕」正式リリース",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #頂流の卵生# \n\n全新4.4バージョン「神迹初誕」が正式にリリースされました。\n全新4.4バージョン「神迹初誕」は9月1日から9月21日まで期間限定でログイン可能です！\n\n✨星々が降り注ぎ、\n✨銀河が集結します。\n✨新進気鋭のトップスターが旅立ち、\n✨輝かしい夜の幕を照らします。\n\n以闪亮之名 全新4.4バージョンの精彩が続きます……❤️\n\n💎ダウンロードはこちら： Webリンク \n💎閃亮作品上映季イベントはこちら： Webリンク",
+      "summaryJa": "・追加: 全新4.4バージョン「神迹初誕」が正式にリリース\n・期間: 9月1日〜9月21日（期間限定ログイン）\n・内容: 新進気鋭のトップスターが旅立ち、輝かしい夜の幕を照らすイベントが開催",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424082
+    },
+    "https://x.com/LifeMakeover510/status/2094601131351556205": {
+      "contentHash": "fd753476d3072d845619be68",
+      "titleJa": "Lightchase Encore | SR [Gerald - Our Way Home] プレビュー | Prismatic Fantasy イベント開催！9月2日 09:00〜9月22日",
+      "bodyJa": "Lightchase Encore | SR [Gerald - Our Way Home] プレビュー\nPrismatic Fantasy | イベントは9月2日 09:00から9月22日 23:59まで開催！\n\n「かつて私たちは、離れられないほど親密だった。あなたは私を、あなた自身と同じくらい深く知っていた。」\n\nPrismatic Fantasy | Fission and newborn. \n#LifeMakeover",
+      "summaryJa": "・追加: Lightchase Encore | SR [Gerald - Our Way Home] プレビューが公開\n・イベント: Prismatic Fantasy が開催される\n・期間: 9月2日 09:00から9月22日 23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424137
     }
   },
   "failures": {
