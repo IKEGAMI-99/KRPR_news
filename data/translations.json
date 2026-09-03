@@ -2335,6 +2335,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788427462
+    },
+    "https://www.bilibili.com/opus/1242594170468565060": {
+      "contentHash": "f18b64015ad035da293fbd7b",
+      "titleJa": "「以闪亮之名」盛大招待イベント開催！プレイヤーを招待して豪華報酬をゲットしよう",
+      "bodyJa": "「以闪亮之名」盛大招待イベントを開催！プレイヤーを招待して豪華報酬をゲットしよう！\n\n【イベント期間】\n9月1日9:10〜9月21日23:59\n【イベント概要】\nイベント期間中、プレイヤーは自身の専用招待コードを共有し、復帰したプレイヤーにゲームへのログインと招待コードのバインドをしてもらうことで、対応回数の招待報酬を獲得できます。\n復帰プレイヤーの判定基準：8月31日0:00時点で連続未ログイン日数21日以上、キャラクターレベル10以上、かつメインストーリー1-12をクリアしているプレイヤー。\n詳細なルールはゲーム内のイベント画面のヘルプ説明でご確認ください。\n【イベント報酬】\nプレイヤーを1人復帰させる：トレンドカラーカード*30\nプレイヤーを2人復帰させる：心念之蝶*5、遇之钥*38\nプレイヤーを3人復帰させる：逐光招待函*1、金貨*68888\n復帰プレイヤーが招待コードをバインドした場合の報酬：トレンドカラーカード*10\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性に愛される3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・イベント開催: 9月1日9:10〜9月21日23:59\n・内容: プレイヤーが専用招待コードを共有し、復帰したプレイヤーにログインとコードのバインドをしてもらうことで報酬を獲得できるイベント\n・復帰条件: 8月31日0:00時点で連続未ログイン日数21日以上、レベル10以上、メインストーリー1-12クリア\n・報酬: 1人復帰でトレンドカラーカード*30、2人復帰で心念之蝶*5、遇之钥*38、3人復帰で逐光招待函*1、金貨*68888",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788428047
+    },
+    "https://x.com/LifeMakeover510/status/2094274227532857604": {
+      "contentHash": "b803a93f0d0c655a90b6adfe",
+      "titleJa": "#LifeMakeover #VVANNACommunity Sweet Tea Party Rendezvousにご参加ください",
+      "bodyJa": "#LifeMakeover #VVANNACommunity\n\nこの甘いティーパーティーの集まりに、ぜひご参加ください！🍰\n \n💎今回のエディションは、VVANNA Community Topic - Garden Soireeの素晴らしい作品をフィーチャーしています\nJoorina\n姬♥︎\nʚIɞ",
+      "summaryJa": "・イベント: Sweet Tea Party Rendezvousが開催されます\n・内容: VVANNA Community Topic - Garden Soireeの素晴らしい作品がフィーチャーされます",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788428088
+    },
+    "https://x.com/LifeMakeover510/status/2094273980018442420": {
+      "contentHash": "04b74635fb5a804d94d791f2",
+      "titleJa": "#LifeMakeover #VVANNACommunity [★5セット - Petal Tea Time] 🔹限定ライトチェイスイベント[Garden Soiree]にて入手可能",
+      "bodyJa": "#LifeMakeover #VVANNACommunity\n\n[★5セット - Petal Tea Time]\n🔹限定ライトチェイスイベント[Garden Soiree]にて入手可能。期間は8月19日から9月8日23:59 UTCまでです。\n \n💎このエディションは、VVANNA Community Topic - Garden Soireeの素晴らしい作品をフィーチャーしています。\nScarlettlzzy\nPhantomhive\npiie",
+      "summaryJa": "・追加: ★5セット「Petal Tea Time」が登場\n・期間: 8月19日〜9月8日 23:59 UTC\n・入手: 限定ライトチェイスイベント「Garden Soiree」から獲得\n・内容: VVANNA Community Topic - Garden Soireeの作品をフィーチャー",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788428144
     }
   },
   "failures": {
