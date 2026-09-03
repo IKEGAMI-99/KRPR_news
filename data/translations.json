@@ -2055,6 +2055,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788423345
+    },
+    "https://x.com/stylight_kr/status/2095421544533315718": {
+      "contentHash": "b00ca5819d6a7d6e8b6a6ccc",
+      "titleJa": "『月の審判』創作コンテスト受賞作品共有 第7弾 🎉素晴らしい作品を届けてくださったLevel、Angja、Ian様に心より感謝申し上げます。受賞された皆様にも改めてお祝いを申し上げます…",
+      "bodyJa": "『月の審判』創作コンテスト受賞作品共有 第7弾 🎉\n\n素晴らしい作品を届けてくださったLevel、Angja、Ian様に心より感謝申し上げます。\n受賞された皆様にも改めてお祝いの言葉をお伝えします！\n\nMueum:\n\n今後もStylightのパートナーの皆様の\n素晴らしく多様な作品を期待しています！💖\n\n#Stylight #月の審判創作コンテスト #受賞作品",
+      "summaryJa": "・追加: 『月の審判』創作コンテスト受賞作品共有 第7弾が公開されました\n・感謝: Level、Angja、Ian様に感謝が述べられています\n・今後の期待: Stylightのパートナーの皆様の多様な作品が期待されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788423483
+    },
+    "https://x.com/stylight_kr/status/2095420279056957670": {
+      "contentHash": "5b5236daa86dd8ad23941837",
+      "titleJa": "『月の審判』創作大会受賞作共有 第6弾 🎉素晴らしい作品を届けてくださった皆様に感謝",
+      "bodyJa": "『月の審判』創作大会受賞作共有 第6弾 🎉\n\n素晴らしい作品を届けてくださったエア、カムジャタンマシッム、ミューミュー、コレル様、心より感謝申し上げます。\n受賞された皆様にも、改めてお祝いの言葉を申し上げます！\n\n今後もStylightのパートナーの皆様の、素晴らしく多様な作品を期待しています！💖\n\n#Stylight #月の審判創作大会 #受賞作",
+      "summaryJa": "・追加: 『月の審判』創作大会の受賞作共有 第6弾が公開されました\n・感謝: エア、カムジャタンマシッム、ミューミュー、コレル様を含む受賞者への感謝が述べられています\n・期待: 今後もStylightのパートナーによる多様な作品が期待されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788423523
+    },
+    "https://x.com/stylight_kr/status/2095419020920947020": {
+      "contentHash": "57fa4902d58ccd383ed22358",
+      "titleJa": "『月の審判』創作大会受賞作共有 第5弾 🎉素晴らしい作品を届けてくださった皆様に感謝を込めて",
+      "bodyJa": "『月の審判』創作大会受賞作共有 第5弾 🎉\n\n素晴らしい作品を届けてくださったイダウム、Kay、irani25297様に心より感謝申し上げます。\n受賞された皆様にも改めてお祝いの言葉を申し上げます！\n\n今後もStylightのパートナーの皆様の\n素晴らしく多様な作品を期待しています！💖\n\n#Stylight #月の審判創作大会 #受賞作",
+      "summaryJa": "・追加: 『月の審判』創作大会の受賞作共有 第5弾が公開されました\n・感謝: 素晴らしい作品を届けてくれたイダウム、Kay、irani25297様に感謝を伝えています\n・今後: 今後もStylightのパートナーの皆様の作品を期待しています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788423562
     }
   },
   "failures": {
