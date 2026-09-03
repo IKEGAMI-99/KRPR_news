@@ -2485,6 +2485,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788432849
+    },
+    "https://www.youtube.com/shorts/AY1gbEcyeik": {
+      "contentHash": "1f9995b1eede146fe17dc021",
+      "titleJa": "SSRアライ [Gerald - Frozen Slumber] - 進化",
+      "bodyJa": "「君を断ることは決してできないよ。」\n\n#DanceofDeceit | イベントは8月28日09:00から9月17日23:59まで開催！\n#LifeMakeoverWorld #CrimsonCleansing #SaccharineSpell",
+      "summaryJa": "・追加: SSRアライ [Gerald - Frozen Slumber] - 進化\n・イベント名: #DanceofDeceit\n・期間: 8月28日09:00から9月17日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788432983
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678642158949109013": {
+      "contentHash": "1bd327c5be239a3500765613",
+      "titleJa": "「かつて私たちはかけがえのない存在だった。あなたは私の全てを、あなた自身のもののように知っていた」#LifeMakeover Lightchase Encore | SR Al",
+      "bodyJa": "「かつて私たちはかけがえのない存在だった。あなたは私の全てを、あなた自身のもののように知っていた」#LifeMakeover Lightchase Encore | SR Ally [Gerald - Our Way Home] #Pr...",
+      "summaryJa": "・追加: Lightchase Encore | SR AlとLightchase Encore | SR Ally [Gerald - Our Way Home]が追加",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788433022
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7678641155638054164": {
+      "contentHash": "0a496a0587660986647c6382",
+      "titleJa": "Life Makeover Lightchase Encore | SR Ally [Gerald - Our Way Home]「かつて私たちは離れられなかった。あなたは私の全てを、あなた自身のもののように知っていた」",
+      "bodyJa": "Life Makeover Lightchase Encore | SR Ally [Gerald - Our Way Home]「かつて私たちは離れられなかった。あなたは私の全てを、あなた自身のもののように知っていた。」 #Pr...",
+      "summaryJa": "・追加: SR Ally [Gerald - Our Way Home]がLightchase Encoreに登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788433059
     }
   },
   "failures": {

@@ -2837,7 +2837,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://i2.ytimg.com/vi/AY1gbEcyeik/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "SSRアライ [Gerald - Frozen Slumber] - 進化",
+    "bodyJa": "「君を断ることは決してできないよ。」\n\n#DanceofDeceit | イベントは8月28日09:00から9月17日23:59まで開催！\n#LifeMakeoverWorld #CrimsonCleansing #SaccharineSpell",
+    "summaryJa": "・追加: SSRアライ [Gerald - Frozen Slumber] - 進化\n・イベント名: #DanceofDeceit\n・期間: 8月28日09:00から9月17日23:59まで",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "da9a4c19adfd77614d27361a",
@@ -2975,7 +2981,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678642158949109013"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "「かつて私たちはかけがえのない存在だった。あなたは私の全てを、あなた自身のもののように知っていた」#LifeMakeover Lightchase Encore | SR Al",
+    "bodyJa": "「かつて私たちはかけがえのない存在だった。あなたは私の全てを、あなた自身のもののように知っていた」#LifeMakeover Lightchase Encore | SR Ally [Gerald - Our Way Home] #Pr...",
+    "summaryJa": "・追加: Lightchase Encore | SR AlとLightchase Encore | SR Ally [Gerald - Our Way Home]が追加",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0c4d0cb5f41c87eadc2c1e23",
@@ -2997,7 +3009,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7678641155638054164"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | SR Ally [Gerald - Our Way Home]「かつて私たちは離れられなかった。あなたは私の全てを、あなた自身のもののように知っていた」",
+    "bodyJa": "Life Makeover Lightchase Encore | SR Ally [Gerald - Our Way Home]「かつて私たちは離れられなかった。あなたは私の全てを、あなた自身のもののように知っていた。」 #Pr...",
+    "summaryJa": "・追加: SR Ally [Gerald - Our Way Home]がLightchase Encoreに登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a341e6ada280958d072f08a5",
@@ -3184,7 +3202,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0ef9b2f461b0e1647d0dc4be",
@@ -3338,7 +3356,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5698,6 +5716,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
