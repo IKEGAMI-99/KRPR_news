@@ -7,6 +7,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 MAX_TIME_GAP = 12 * 60 * 60
+MIN_TITLE_LENGTH = 8
+MIN_CONTAINMENT_LENGTH = 8
+TITLE_SIMILARITY_THRESHOLD = 0.76
+TITLE_BODY_SIMILARITY_THRESHOLD = 0.70
+BODY_PREFIX_LENGTH = 80
 
 
 def normalize_title(value: str) -> str:
@@ -16,6 +21,12 @@ def normalize_title(value: str) -> str:
     text = re.sub(r"(?:官方|公式)(?:微博|weibo|bilibili|taptap|好游快爆)?", "", text)
     text = re.sub(r"[^0-9a-z\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]+", "", text)
     return text[:240]
+
+
+def comparison_text(row: dict) -> str:
+    title = str(row.get("title") or "").strip()
+    body = str(row.get("body") or "").strip()[:BODY_PREFIX_LENGTH]
+    return normalize_title(title + body)
 
 
 def time_close(a: dict, b: dict) -> bool:
@@ -31,14 +42,28 @@ def same_story(a: dict, b: dict) -> bool:
         return False
     if not time_close(a, b):
         return False
+
     ta = normalize_title(a.get("title"))
     tb = normalize_title(b.get("title"))
-    if min(len(ta), len(tb)) < 10:
+    if min(len(ta), len(tb)) < MIN_TITLE_LENGTH:
         return False
+
     short, long = sorted((ta, tb), key=len)
-    if len(short) >= 14 and short in long:
+    if len(short) >= MIN_CONTAINMENT_LENGTH and short in long:
         return True
-    return difflib.SequenceMatcher(None, ta, tb).ratio() >= 0.76
+    if difflib.SequenceMatcher(None, ta, tb).ratio() >= TITLE_SIMILARITY_THRESHOLD:
+        return True
+
+    # TapTap often has a short topic title while Weibo/Bilibili place the
+    # opening sentence in the title too. Use a small body prefix as a fallback.
+    ca = comparison_text(a)
+    cb = comparison_text(b)
+    if min(len(ca), len(cb)) < MIN_TITLE_LENGTH:
+        return False
+    cshort, clong = sorted((ca, cb), key=len)
+    if len(cshort) >= MIN_CONTAINMENT_LENGTH and cshort in clong:
+        return True
+    return difflib.SequenceMatcher(None, ca, cb).ratio() >= TITLE_BODY_SIMILARITY_THRESHOLD
 
 
 def platform_label(platform: str) -> str:
