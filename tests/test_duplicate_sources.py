@@ -53,6 +53,56 @@ class DuplicateSourceMergeTests(unittest.TestCase):
         self.assertEqual("https://www.taptap.cn/moment/1", merged[0]["sourceUrl"])
         self.assertEqual("https://example.com/taptap.jpg", merged[0]["imageUrl"])
 
+    def test_short_taptap_title_merges_with_long_bilibili_title(self):
+        rows = [
+            {
+                "id": "t",
+                "region": "CHINA",
+                "platform": "公式TapTap",
+                "title": "歌声点亮璀璨舞台",
+                "body": "乐符旋律与心跳共振，与你循声共赴绚烂花路！",
+                "sourceUrl": "https://www.taptap.cn/moment/843802325314178463",
+                "publishedAtEpoch": 1788231600,
+            },
+            {
+                "id": "b",
+                "region": "CHINA",
+                "platform": "公式Bilibili · 記事",
+                "title": "歌声点亮璀璨舞台 ✨乐符旋律与心跳共振， ✨与你循声共赴绚烂花路",
+                "body": "歌声点亮璀璨舞台 乐符旋律与心跳共振，与你循声共赴绚烂花路！",
+                "sourceUrl": "https://www.bilibili.com/opus/example",
+                "publishedAtEpoch": 1788231660,
+            },
+        ]
+        merged = merger.merge_rows(rows)
+        self.assertEqual(1, len(merged))
+        self.assertEqual(2, merged[0]["sourceCount"])
+
+    def test_taptap_body_fallback_merges_when_titles_are_not_similar_enough(self):
+        rows = [
+            {
+                "id": "t",
+                "region": "CHINA",
+                "platform": "公式TapTap",
+                "title": "你的今日份幸运已到货",
+                "body": "让幸运蛋为你开启专属好运磁场，如果要有期限，我希望是一万年！",
+                "sourceUrl": "https://www.taptap.cn/moment/843553470001709843",
+                "publishedAtEpoch": 1788171619,
+            },
+            {
+                "id": "b",
+                "region": "CHINA",
+                "platform": "公式Bilibili · 記事",
+                "title": "今日好运开启 🍅让幸运蛋为你开启专属好运磁场， 🥜如果要有期限，我希望是一万年",
+                "body": "让幸运蛋为你开启专属好运磁场，如果要有期限，我希望是一万年！",
+                "sourceUrl": "https://www.bilibili.com/opus/example-2",
+                "publishedAtEpoch": 1788171670,
+            },
+        ]
+        merged = merger.merge_rows(rows)
+        self.assertEqual(1, len(merged))
+        self.assertEqual(2, merged[0]["sourceCount"])
+
     def test_nearby_but_different_titles_do_not_merge(self):
         rows = [
             {
