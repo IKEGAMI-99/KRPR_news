@@ -2,12 +2,14 @@
   const BATCH_SIZE = 3;
   const RUN_INTERVAL_MINUTES = 15;
   const RUN_MINUTES_UTC = [7, 22, 37, 52];
+  const QUEUE_REFRESH_MS = 60 * 1000;
   const IS_LOCAL = ['localhost', '127.0.0.1'].includes(location.hostname);
   const NEWS_URL = IS_LOCAL
     ? '../data/news.json'
     : 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json';
 
   let queueItems = [];
+  let queueFetchedAt = 0;
   let latestRenderedItems = [];
 
   function text(value) {
@@ -25,6 +27,7 @@
     const translatedTitle = text(item.titleJa);
     const translatedBody = text(item.bodyJa);
     if (!translatedTitle && !translatedBody) return false;
+    if (item.aiProcessed && text(item.summaryJa)) return true;
     return Boolean(
       (translatedTitle && translatedTitle !== originalTitle) ||
       (translatedBody && translatedBody !== originalBody)
@@ -104,9 +107,10 @@
       queueItems = json
         .filter((item) => item && typeof item === 'object')
         .sort((a, b) => (Number(b.publishedAtEpoch) || 0) - (Number(a.publishedAtEpoch) || 0));
+      queueFetchedAt = Date.now();
       decorate();
     } catch {
-      queueItems = latestRenderedItems.slice();
+      if (!queueItems.length) queueItems = latestRenderedItems.slice();
       decorate();
     }
   }
@@ -114,6 +118,6 @@
   document.addEventListener('kirapara:rendered', (event) => {
     latestRenderedItems = Array.isArray(event.detail?.items) ? event.detail.items : [];
     decorate();
-    refreshQueue();
+    if (!queueItems.length || Date.now() - queueFetchedAt >= QUEUE_REFRESH_MS) refreshQueue();
   });
 })();
