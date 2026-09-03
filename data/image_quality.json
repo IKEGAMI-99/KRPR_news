@@ -1889,18 +1889,6 @@
     "height": 3840,
     "checkedAt": 1788452105
   },
-  "https://clan.akamai.steamstatic.com/images/44706412/d7ad39927d00ae60532c5f1bccb5a0c32100e92e.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1788455606
-  },
-  "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1788455606
-  },
   "https://i0.hdslb.com/bfs/new_dyn/ee71820c22dae124b38563fa15f634f9676200579.jpg@264w_264h_1e_1c": {
     "ok": false,
     "width": 264,
@@ -2489,18 +2477,6 @@
     "height": 1440,
     "checkedAt": 1788466401
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=65252a21-e7c6-4168-9d5a-2a939c6ab565&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788466400287&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788466401
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=db2cd9d6-2860-4f96-abd2-963da55098d5&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788466400306&request_path=%2Fmoment%2F828260941740116010": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788466401
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1788638400&x-signature=D4QC%2BpEia7u4mnypJkHZXL3l%2BKo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 1500,
@@ -2525,10 +2501,52 @@
     "height": 2000,
     "checkedAt": 1788466401
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=63ca4a38-80bd-4e28-a1d5-3033e93da0b0&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788466400274&request_path=%2Fmoment%2F821067872284446124": {
+  "https://kotaku.com/app/uploads/2026/01/unnamed.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1788468798
+  },
+  "https://kotaku.com/app/uploads/2024/10/2cceec8eecb802fffb913c5fd9ccd53b.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1788468798
+  },
+  "https://kotaku.com/app/uploads/2026/09/ff7-tril-bundle.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1788468798
+  },
+  "https://kotaku.com/app/uploads/2026/08/image-2026-08-31T090445.966.jpg": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1788468798
+  },
+  "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1788468798
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=5d52752e-8949-4ab4-85ef-dbc6de8d9d54&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788468797461&request_path=%2Fmoment%2F827191805966550915": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788466401
+    "checkedAt": 1788468798
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=9676266e-1a30-4095-8eba-8a659bc3103e&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788468797417&request_path=%2Fmoment%2F828260941740116010": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788468798
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=e6857fe2-2941-4e32-b08d-9a91ee8f9bb7&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788468797161&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788468798
   }
 }
