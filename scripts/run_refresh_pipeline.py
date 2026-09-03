@@ -25,6 +25,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATHS = (
     Path("data/news.json"),
+    Path("data/game_notices.json"),
     Path("data/article_dates.json"),
     Path("data/image_quality.json"),
 )
@@ -42,6 +43,7 @@ PIPELINE_STEPS = (
     Step("base public news", "fetch_news.py", 90),
     Step("official X history preservation", "preserve_official_x_history.py", 20, False),
     Step("known official pages", "merge_direct_official.py", 45),
+    Step("game app notices", "fetch_game_notices.py", 50),
     Step("source enrichment", "enrich_sources.py", 60),
     Step("X and Bilibili resilient repair", "repair_social_sources.py", 90),
     Step("social image enrichment", "enrich_social_images.py", 70),
