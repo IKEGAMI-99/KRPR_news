@@ -2395,6 +2395,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788429206
+    },
+    "https://x.com/kirapara_JP/status/2093987088945594810": {
+      "contentHash": "7512a8b76abb066faaa317b2",
+      "titleJa": "【復刻】限定ガチャイベント『鏡海の迷路』まもなく復刻",
+      "bodyJa": "【復刻】限定ガチャイベント『鏡海の迷路』まもなく復刻！\n\n星5セット「絢爛の影」、「禁忌の呪い」の動画を公開🎦\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定ガチャイベント『鏡海の迷路』がまもなく復刻する\n・公開: 星5セット「絢爛の影」と「禁忌の呪い」の動画が公開された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429409
+    },
+    "https://x.com/stylight_kr/status/2093987087062286542": {
+      "contentHash": "07e13cdf56c3e434b6cb525d",
+      "titleJa": "新メインストーリー第22章が明日オープン「真実と嘘が絡み合う幻想の中で、懐かしい人が再び目の前に現れます。この甘い夢に留まりたいけれど、最後の謎を解くためには『記憶』という名の罠から抜け出さなければなりません。ついに幕を開けた『探偵』たちの戦争。真実へ向かう鍵を手にするために、一体どんな代償を払うのでしょうか？」",
+      "bodyJa": "新メインストーリー第22章が明日オープン\n\n「真実と嘘が絡み合う幻想の中で、\n懐かしい人が再び目の前に現れます。\n\nこの甘い夢に留まりたいけれど、\n最後の謎の答えを見つけるためには\n『記憶』という名の罠から抜け出さなければなりません。\n\nついに幕を開けた『探偵』たちの戦争。\n真実へ向かう鍵を手にするために\n一体どんな代償を払うのでしょうか？」\n\n✂️ 第22章セット:\n- 5★イヤリング「出航の日」\n- 撮影ポーズ「シックメッセージ」\n- 撮影フレーム「フローラルインク」\n\n👗 ファッションスタジオ追加セット:\n- 4★コスチュームセット「ハートフラティング」\n- 4★コスチュームセット「シュガマドレーヌ」\n- 4★コスチュームセット「チェリーポップスター」\n\n様々なスタイルのメインストーリーセットを、ファッションスタジオで作成してください！\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 新メインストーリー第22章が明日オープン\n・追加: 第22章セット（5★イヤリング「出航の日」、撮影ポーズ「シックメッセージ」、撮影フレーム「フローラルインク」）\n・追加: ファッションスタジオ追加セット（4★コスチュームセット「ハートフラティング」、「シュガマドレーヌ」、「チェリーポップスター」）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429498
+    },
+    "https://x.com/kirapara_JP/status/2093971988616237362": {
+      "contentHash": "b2173e327926ad9d8256cfbf",
+      "titleJa": "明日よりゲーム内イベント『名探偵の目』を開催✨ イベント期間⏰ 8月31日10:30～9月4日5:00 イベントに参加して、星5アクセ『花の便り』をゲットしよう",
+      "bodyJa": "明日よりゲーム内イベント『名探偵の目』を開催✨\n\nイベント期間⏰\n8月31日10:30～9月4日5:00\n\nイベントに参加して、星5アクセ『花の便り』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ゲーム内イベント『名探偵の目』が開催される\n・期間: 8月31日10:30～9月4日5:00\n・報酬: イベントに参加することで星5アクセ『花の便り』を入手できる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429529
     }
   },
   "failures": {
