@@ -1,17 +1,15 @@
-name: One-time set article cap to 800
+name: Set article cap to 800
 
 on:
   push:
     paths:
       - '.github/workflows/set-article-cap-800.yml'
 
-permissions:
-  contents: write
-
 jobs:
   apply:
-    if: ${{ github.event.head_commit.message == 'chore: set article cap to 800' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,9 +37,7 @@ jobs:
               print(f'updated {path}')
           PY
 
-          rm .github/workflows/set-article-cap-800.yml
-
-      - name: Commit article-cap update and remove one-time workflow
+      - name: Commit article-cap update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -49,7 +45,6 @@ jobs:
                   scripts/discover_web_news.py \
                   scripts/merge_duplicate_sources.py \
                   scripts/fetch_wechat_official.py \
-                  scripts/fetch_haoyoukuaibao.py \
-                  .github/workflows/set-article-cap-800.yml
+                  scripts/fetch_haoyoukuaibao.py
           git commit -m "chore: raise article cap to 800"
           git push origin HEAD:main
