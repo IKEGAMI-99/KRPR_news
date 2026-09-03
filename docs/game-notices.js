@@ -7,8 +7,8 @@
 
   const IS_LOCAL_PREVIEW = ['localhost', '127.0.0.1'].includes(location.hostname);
   const DATA_URL = IS_LOCAL_PREVIEW
-    ? '../data/news.json'
-    : 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/news.json';
+    ? '../data/game_notices.json'
+    : 'https://raw.githubusercontent.com/IKEGAMI-99/KRPR_news/main/data/game_notices.json';
   const MAX_ITEMS = 8;
   const NOTICE_URL_RE = /^https:\/\/cms\.archosaur\.com\/jeecms\/smhwjp(?:news|event)\/\d+\.jhtml(?:[?#].*)?$/i;
 
@@ -21,8 +21,10 @@
     }
   }
 
-  function noticeType(url) {
-    return /\/smhwjpevent\//i.test(url) ? 'イベント' : 'お知らせ';
+  function noticeType(item) {
+    if (item.noticeType === 'event') return 'イベント';
+    if (item.noticeType === 'news') return 'お知らせ';
+    return /\/smhwjpevent\//i.test(item.sourceUrl) ? 'イベント' : 'お知らせ';
   }
 
   function formatDate(epoch, fallback = '') {
@@ -43,7 +45,7 @@
   function normalizedNotices(items) {
     const seen = new Set();
     return items
-      .filter((item) => item && typeof item === 'object' && item.region === 'JAPAN')
+      .filter((item) => item && typeof item === 'object' && (!item.region || item.region === 'JAPAN'))
       .map((item) => ({ ...item, sourceUrl: safeHttpUrl(item.sourceUrl) }))
       .filter((item) => item.sourceUrl && NOTICE_URL_RE.test(item.sourceUrl))
       .filter((item) => {
@@ -67,7 +69,7 @@
 
     const type = document.createElement('span');
     type.className = 'game-notice-type';
-    type.textContent = noticeType(item.sourceUrl);
+    type.textContent = noticeType(item);
 
     const date = document.createElement('time');
     date.className = 'game-notice-date';
@@ -123,7 +125,7 @@
   async function load({ force = false } = {}) {
     status.textContent = '取得中…';
     try {
-      const suffix = force ? `?t=${Date.now()}` : '?game-notices=1';
+      const suffix = force ? `?t=${Date.now()}` : '?game-notices=2';
       const response = await fetch(`${DATA_URL}${suffix}`, { cache: force ? 'no-store' : 'no-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const json = await response.json();
