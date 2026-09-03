@@ -2634,6 +2634,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788436131
+    },
+    "https://www.tiktok.com/@kiramekiparadise_jp/video/7662322046377987344": {
+      "contentHash": "335be19a2a4b27244c9b54a5",
+      "titleJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「七宝の蜻蛉夢」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリー...",
+      "bodyJa": "『きらめきパラダイス』のイベント『七宝庭の香り』に登場する新星5セット「七宝の蜻蛉夢」の動画を公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリー...",
+      "summaryJa": "・追加: イベント「七宝庭の香り」に登場する新星5セット「七宝の蜻蛉夢」の動画が公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788436563
+    },
+    "https://m.bbs.3839.com/thread-9124286.htm": {
+      "contentHash": "fdf4fced8c20195d1e32215c",
+      "titleJa": "バージョンテーマ曲「The Light Within」がリリース",
+      "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが利用するゲームコミュニティです。国内外の高品質で面白いゲームを毎日共有しています。また、実用的なゲームツール、オリジナルの攻略解説、生きた動画解説を提供し、プレイヤーがゲームを素早く習得し、迅速にクリアできるようサポートします。",
+      "summaryJa": "・追加: バージョンテーマ曲「The Light Within」がリリース",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788436609
     }
   },
   "failures": {
