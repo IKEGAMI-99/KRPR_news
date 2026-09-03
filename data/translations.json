@@ -2554,6 +2554,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788434206
+    },
+    "https://www.youtube.com/watch?v=VXguQUJvMoU": {
+      "contentHash": "2a8a77652faa7aedec5a5232",
+      "titleJa": "『きらめきパラダイス』星6セットコーデ動画『修羅帰鞘』の実録動画を公開✨",
+      "bodyJa": "『きらめきパラダイス』のイベント『孤刃帰鞘』に登場する新星6セット「修羅帰鞘」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+      "summaryJa": "・追加: キラパラのイベント「孤刃帰鞘」に登場する新星6セット「修羅帰鞘」の動画を公開\n・ゲームタイトル: キラパラ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788434334
+    },
+    "https://www.youtube.com/shorts/8eSFiY9OMqM": {
+      "contentHash": "da9b10346b0cc2557b7dccd4",
+      "titleJa": "SRアライ [Larry - Destined Match] - 進化",
+      "bodyJa": "SRアライ [Larry - Destined Match] - 進化\n\n「契約の絆を、私自身の体で返します…どうでしょう、奥様？」\n\n#GardenSoiree | イベントは8月19日から9月8日まで開催中！\n#LifeMakeoverWorld #GardenSoiree #PetalTeaTime #PhantomCandle",
+      "summaryJa": "・追加: SRアライ [Larry - Destined Match] - 進化\n・イベント: #GardenSoiree が開催中\n・期間: 8月19日から9月8日まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788434361
+    },
+    "https://www.youtube.com/shorts/40HB4PSxR8E": {
+      "contentHash": "63a6e718d2ee624d7c6301df",
+      "titleJa": "SSR ソイアン『狼の夜』明日リリース",
+      "bodyJa": "「そう、大人しくしていなさい。」\n\n闇が降りた地下牢獄、\n燃え盛る炎の向こうにソイアンの怒りに満ちた視線が浮かび上がります。\n\n互いを警戒し向き合ったその瞬間、\n二人の運命が初めて交差し始めました。\n\n手懐けられない狼と、その唯一の主人。\n炎よりも熱い二人の物語を\n新しいSSR縁で出会ってください。\n\n#Stylight #Stylightアップデート",
+      "summaryJa": "・追加: SSR縁「ソイアン『狼の夜』」が明日リリースされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788434392
     }
   },
   "failures": {
