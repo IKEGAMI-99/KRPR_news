@@ -7,8 +7,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "data" / "news.json"
 MAX_TIME_GAP = 12 * 60 * 60
-MIN_TITLE_LENGTH = 8
-MIN_CONTAINMENT_LENGTH = 8
+STRICT_MIN_TITLE_LENGTH = 10
+STRICT_MIN_CONTAINMENT_LENGTH = 14
+TAPTAP_MIN_TITLE_LENGTH = 8
+TAPTAP_MIN_CONTAINMENT_LENGTH = 8
 TITLE_SIMILARITY_THRESHOLD = 0.76
 TITLE_BODY_SIMILARITY_THRESHOLD = 0.70
 BODY_PREFIX_LENGTH = 80
@@ -33,13 +35,29 @@ def body_prefix(row: dict) -> str:
     return normalize_title(str(row.get("body") or "").strip()[:BODY_PREFIX_LENGTH])
 
 
-def text_match(a: str, b: str, threshold: float) -> bool:
-    if min(len(a), len(b)) < MIN_TITLE_LENGTH:
+def text_match(
+    a: str,
+    b: str,
+    threshold: float,
+    min_length: int = STRICT_MIN_TITLE_LENGTH,
+    containment_length: int = STRICT_MIN_CONTAINMENT_LENGTH,
+) -> bool:
+    if min(len(a), len(b)) < min_length:
         return False
     short, long = sorted((a, b), key=len)
-    if len(short) >= MIN_CONTAINMENT_LENGTH and short in long:
+    if len(short) >= containment_length and short in long:
         return True
     return difflib.SequenceMatcher(None, a, b).ratio() >= threshold
+
+
+def is_taptap(row: dict) -> bool:
+    return "taptap" in str(row.get("platform") or "").casefold()
+
+
+def is_taptap_cross_source_pair(a: dict, b: dict) -> bool:
+    # Relaxed matching exists only to compensate for TapTap's short topic titles.
+    # Do not apply it to X-vs-X, Bilibili-vs-Bilibili, or TapTap-vs-TapTap.
+    return is_taptap(a) != is_taptap(b)
 
 
 def time_close(a: dict, b: dict) -> bool:
@@ -58,21 +76,41 @@ def same_story(a: dict, b: dict) -> bool:
 
     ta = normalize_title(a.get("title"))
     tb = normalize_title(b.get("title"))
+
+    # Default rule for every platform: keep the original conservative matcher.
     if text_match(ta, tb, TITLE_SIMILARITY_THRESHOLD):
         return True
 
     # TapTap often has a short topic title while Weibo/Bilibili place the
-    # opening sentence in the title too. Compare title+body against the other
-    # title as well as both body prefixes, rather than only combined texts.
+    # opening sentence in the title too. Only a TapTap-vs-other-platform pair
+    # gets the relaxed short-title/body fallback. This prevents templated X
+    # posts (notably Korean campaign series) from collapsing into one article.
+    if not is_taptap_cross_source_pair(a, b):
+        return False
+
+    if text_match(
+        ta,
+        tb,
+        TITLE_SIMILARITY_THRESHOLD,
+        TAPTAP_MIN_TITLE_LENGTH,
+        TAPTAP_MIN_CONTAINMENT_LENGTH,
+    ):
+        return True
+
     ca = comparison_text(a)
     cb = comparison_text(b)
-    if text_match(ca, tb, TITLE_BODY_SIMILARITY_THRESHOLD):
+    match_args = (
+        TITLE_BODY_SIMILARITY_THRESHOLD,
+        TAPTAP_MIN_TITLE_LENGTH,
+        TAPTAP_MIN_CONTAINMENT_LENGTH,
+    )
+    if text_match(ca, tb, *match_args):
         return True
-    if text_match(cb, ta, TITLE_BODY_SIMILARITY_THRESHOLD):
+    if text_match(cb, ta, *match_args):
         return True
-    if text_match(body_prefix(a), body_prefix(b), TITLE_BODY_SIMILARITY_THRESHOLD):
+    if text_match(body_prefix(a), body_prefix(b), *match_args):
         return True
-    return text_match(ca, cb, TITLE_BODY_SIMILARITY_THRESHOLD)
+    return text_match(ca, cb, *match_args)
 
 
 def platform_label(platform: str) -> str:
