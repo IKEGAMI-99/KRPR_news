@@ -1,0 +1,217 @@
+.game-notices-wrap {
+  margin: 7px 18px 12px;
+}
+
+.game-notices {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 94%, var(--accent) 6%), color-mix(in srgb, var(--surface) 97%, transparent));
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .16);
+}
+
+.game-notices[hidden] {
+  display: none;
+}
+
+.game-notice-summary {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.game-notice-summary::-webkit-details-marker {
+  display: none;
+}
+
+.game-notice-icon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: #17121d;
+  background: linear-gradient(135deg, #f3d7ff, #a7dcff);
+  box-shadow: 0 7px 20px color-mix(in srgb, var(--accent) 20%, transparent);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.game-notice-copy {
+  min-width: 0;
+  flex: 1;
+  display: grid;
+  gap: 2px;
+}
+
+.game-notice-heading {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+}
+
+.game-notice-count {
+  min-width: 22px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 6px;
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.game-notice-status {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.game-notice-chevron {
+  flex: none;
+  color: var(--muted);
+  font-size: 14px;
+  transition: transform .18s ease;
+}
+
+.game-notices[open] .game-notice-chevron {
+  transform: rotate(180deg);
+}
+
+.game-notice-list {
+  border-top: 1px solid var(--line);
+  display: grid;
+  max-height: min(56vh, 520px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.game-notice-item {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding: 12px 42px 12px 14px;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  transition: background .16s ease, transform .16s ease;
+}
+
+.game-notice-item:last-child {
+  border-bottom: 0;
+}
+
+.game-notice-item:hover {
+  background: color-mix(in srgb, var(--surface-2) 88%, var(--accent) 12%);
+}
+
+.game-notice-item:active {
+  transform: scale(.995);
+}
+
+.game-notice-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.game-notice-type {
+  padding: 3px 7px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface-2));
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  font-weight: 800;
+}
+
+.game-notice-date {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.game-notice-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.game-notice-body {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.game-notice-link-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.game-notice-empty {
+  margin: 0;
+  padding: 15px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .game-notices-wrap {
+    margin: 5px 12px 10px;
+  }
+
+  .game-notices {
+    border-radius: 16px;
+  }
+
+  .game-notice-summary {
+    min-height: 50px;
+    padding: 9px 11px;
+  }
+
+  .game-notice-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  .game-notice-heading,
+  .game-notice-title {
+    font-size: 12px;
+  }
+
+  .game-notice-list {
+    max-height: 48vh;
+  }
+}
