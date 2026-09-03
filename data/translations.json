@@ -2714,6 +2714,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788441838
+    },
+    "https://x.com/stylight_kr/status/1982286866771775676": {
+      "contentHash": "cbe7642ee2cdbca531f2b68c",
+      "titleJa": "「必ず守るから…君だけは」ナシオンとの美しい物語が始まります - 期間限定イベント「影の誓い」10月30日(木)リリース",
+      "bodyJa": "「必ず守るから…君だけは」\n\nナシオンとの美しい物語が間もなく始まります。\n\n- 期間限定イベント「影の誓い」\n10月30日(木)にリリース！\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #永遠の誓約 #ナシオン",
+      "summaryJa": "・追加: 期間限定イベント「影の誓い」が追加\n・開始日時: 10月30日(木)",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788442366
+    },
+    "https://x.com/LifeMakeover510/status/1982281039390429594": {
+      "contentHash": "a9928b34afd403e073e670c9",
+      "titleJa": "新バージョン | カードパクトプレビュー：心は共鳴し、契約は永遠に響き渡る。Life Makeover x カードキャプターさくら 新バージョン",
+      "bodyJa": "新バージョン | カードパクトプレビュー：心は共鳴し、契約は永遠に響き渡る。\nLife Makeover x カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで利用可能！\n\n「星の力を隠す鍵よ、私の前で真の姿を現せ――解放！」\n\n#LifeMakeover",
+      "summaryJa": "・追加: Life Makeover x カードキャプターさくら 新バージョン - カードパクトが追加\n・期間: 10月29日〜11月18日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788442397
+    },
+    "https://x.com/LifeMakeover510/status/1982039446787600496": {
+      "contentHash": "93b6953cd160ae16399da036",
+      "titleJa": "封印が解け、契約が迫る。Life Makeoverの世界を襲うハリケーンとは？",
+      "bodyJa": "封印が解け、契約が迫っています。\n\nLife Makeoverの世界全体を吹き荒れようとしているこのハリケーンの正体とは一体何なのでしょうか…？\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+      "summaryJa": "・Life Makeoverの世界を襲うハリケーンに関する告知\n・ハッシュタグ: #LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788442424
     }
   },
   "failures": {
