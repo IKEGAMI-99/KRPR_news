@@ -1935,6 +1935,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788420773
+    },
+    "https://x.com/kirapara_JP/status/2094698020277498124": {
+      "contentHash": "5cb10ffd74779edb033c2773",
+      "titleJa": "✍️紹介コーナー 【復刻】限定星5セット『禁忌の呪い』 禁じられた咒が唇から零れ、終わりなき夢魘を招く",
+      "bodyJa": "✍️紹介コーナー\n【復刻】限定星5セット『禁忌の呪い』\n\n禁じられた咒が唇から零れ、終わりなき夢魘を招く。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定星5セット『禁忌の呪い』が紹介コーナーで登場\n・セットの説明: 禁じられた呪いが唇から零れ、終わりなき夢魘を招く",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788421764
+    },
+    "https://www.bilibili.com/opus/1243011641270861858": {
+      "contentHash": "cd36c41ff6bc7831655b2aa7",
+      "titleJa": "新都市周遊イベントに参加して★4限定セットを入手しよう",
+      "bodyJa": "新都市周遊イベントに参加して、★4限定セットを入手しましょう！\n\n🏖️潮風は塩辛く、レモンは酸っぱくて甘い。この夏の一杯は、まずはこの子に乾杯。\n\n周遊ポイントを貯めることで、★4セット【海塩冰柠】、フォトフレーム【霓光绛色】、トレンドカラーカード*13、逐光招待状、および様々な素材アイテムを入手できます！イベントの最終3日間は、★5アクセサリー【绯心映像】、フォト萌拍【箱中小喵】、ダイヤ*30、および様々な素材アイテムを含む記念パックを毎日配布しますので、お見逃しなく！\n\n【イベント期間】\n9月2日10:00〜9月9日5:00\n【報酬受け取り期間】\n9月2日10:00〜9月10日5:00\n【イベント説明】\nイベント期間中、日程イベントに参加してアクティビティを高めることで、普通サイコロと万能サイコロを獲得できます。毎日最大で普通サイコロ8個と万能サイコロ1個を獲得可能です。この2種類のサイコロはイベント期間中リセットされないので、忘れずに使用してください。サイコロを投げることで漫旅マップ上を移動でき、移動中に周遊ポイントを獲得できます。異なるマスに止まると異なる報酬や効果があります。周遊しながらゆっくり発見してみてください。\n詳細なルールはゲーム内のイベント画面のヘルプ説明をご確認ください。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+      "summaryJa": "・追加: ★4限定セット【海塩冰柠】、フォトフレーム【霓光绛色】、トレンドカラーカード*13、逐光招待状、各種素材アイテムが周遊ポイントで入手可能に\n・追加: イベント最終3日間は、★5アクセサリー【绯心映像】、フォト萌拍【箱中小喵】、ダイヤ*30、各種素材アイテムを含む記念パックを毎日配布\n・期間: イベント期間は9月2日10:00から9月9日5:00まで\n・期間: 報酬受け取り期間は9月2日10:00から9月10日5:00まで\n・仕様: イベント期間中、日程イベント参加で普通サイコロ（最大8個/日）と万能サイコロ（最大1個/日）を獲得可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788421894
+    },
+    "https://x.com/kirapara_JP/status/2094696764653949271": {
+      "contentHash": "cc6e358c990b1b32b114f60f",
+      "titleJa": "✍️紹介コーナー 【復刻】限定星5セット『絢爛の影』 緋色の異光が漂い、刹那に消える幻影は、古の魔法の残響のようだ",
+      "bodyJa": "✍️紹介コーナー\n【復刻】限定星5セット『絢爛の影』\n\n緋色の異光が漂い、刹那に消える幻影は、古の魔法の残響のようだ。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定星5セット『絢爛の影』が紹介コーナーで登場\n・特徴: 緋色の異光が漂い、刹那に消える幻影が古の魔法の残響のようである",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788421926
     }
   },
   "failures": {
