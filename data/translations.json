@@ -2365,6 +2365,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788428144
+    },
+    "https://www.bilibili.com/opus/1242578708550647817": {
+      "contentHash": "1f43077bf2dcc5f959779e98",
+      "titleJa": "9月ログインボーナス「雲海清夢」先行公開",
+      "bodyJa": "9月のログインボーナス「雲海清夢」を先行公開します！\n\n☁️雲海の上で、清らかな夢が目覚めます。\n\n🎁今月中に30日間連続でログインすると、★4限定衣装「雲海清夢」を入手できます。\nさらに7日間連続でログインすると、大量の素材や道具、ダイヤ、体力、トレンドカラーカードなどの報酬が入った「玩呐パック」を受け取ることができます。プレイヤーの皆様、ログインして報酬を受け取るのを忘れないでください！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性に愛される3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・追加: 9月ログインボーナス「雲海清夢」が公開\n・報酬: 今月中に30日間連続ログインで★4限定衣装「雲海清夢」を入手可能\n・報酬: 7日間連続ログインで「玩呐パック」を獲得可能（ダイヤ、体力、トレンドカラーカード等を含む）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429028
+    },
+    "https://www.bilibili.com/opus/1242570977616855064": {
+      "contentHash": "cf3f75fe029d00a403b05704",
+      "titleJa": "カレンダー放送｜9月30日、雨音は別れの秋のよう",
+      "bodyJa": "カレンダー放送｜9月30日、雨音は別れの秋のよう\n\n9月が訪れ、涼しさが秋風と細雨から生まれます。木々の葉は次第に黄色くなり、秋の露は白み始めます。\n\nプレイヤーの皆様が、黄金色の秋の日々の中で、実り豊かな収穫を迎えることを願っています。\n\n2026年9月のカレンダーが配信中です📮\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・カレンダー放送が配信中\n・配信日: 2026年9月30日\n・ゲームタイトル: 以闪亮之名\n・ゲームジャンル: ロールプレイング/高画質/シミュレーション経営",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429158
+    },
+    "https://x.com/LifeMakeover510/status/2094017292929491386": {
+      "contentHash": "7d9fefd0980001744f7abce8",
+      "titleJa": "新ストーリークエスト第42章「血痕の調べ - 声の向こう側」が8月31日に開始",
+      "bodyJa": "新ストーリークエスト第42章「血痕の調べ - 声の向こう側」が8月31日に開始されます。\n檻の外には、さらに大きな檻があり、古い弦は上がり下がりを繰り返しています。\nああ、親切な「Flora」よ――\n霧の中で苦しむ魂を救ってください。\n\n第42章「Vvanna Challenge」も開始されます！\n\n#LifeMakeover",
+      "summaryJa": "・追加: 新ストーリークエスト第42章「血痕の調べ - 声の向こう側」が開始\n・追加: 第42章「Vvanna Challenge」が開始\n・開始日: 8月31日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788429206
     }
   },
   "failures": {
