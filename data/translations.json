@@ -2475,22 +2475,32 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788431300
+    },
+    "https://www.bilibili.com/video/BV19HtN66EN6": {
+      "contentHash": "b16a508700a3faf363fd4a90",
+      "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」実機展示",
+      "bodyJa": "#トップクラスの卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n\n❗二形態ドレス❗ドレスは二形態デザインを採用しており、通常腹部版のミディ丈と、腹部がカットされたショート丈の二形態を自由に切り替えることができ、様々なコーディネートシーンに対応します。\n❗2億の価値を持つ華麗な巨大卵が二形態の乗り物を演出❗乗り物は、一形態はフェベアの彩り卵から着想を得て、全体が展開した姿で、卵の殻が初咲きの花びらのようにキャラクターを囲み、豪華な雰囲気を醸し出します。二形態では卵の殻が下がり、キャラクターが画面の絶対的な視覚的中心となり、人物のスタイルをより際立たせます。座席の金属製アームレストは天使の翼をデザイン要素として採用し、神聖感と実用性を有機的に融合させています。\n❗史上最大の翼❗バックアクセサリーは初めて翼を包み込む形状を採用し、二形態デザインが契り、",
+      "summaryJa": "・イベント名「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・新衣装「聖翎祈世」は★6セットで登場\n・ドレスは通常腹部版と腹部カットのショート丈の二形態デザイン\n・乗り物はフェベアの彩り卵をモチーフにした二形態デザイン",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788432849
     }
   },
   "failures": {
     "https://www.bilibili.com/opus/1241862310188810276": {
       "contentHash": "6379e58723e58b86adb551e3",
-      "failedAttempts": 6,
-      "failedRuns": 2,
-      "lastFailureAtEpoch": 1788025461,
-      "retryAfterEpoch": 1788047061
+      "failedAttempts": 9,
+      "failedRuns": 3,
+      "lastFailureAtEpoch": 1788432500,
+      "retryAfterEpoch": 1788454100
     },
     "https://www.bilibili.com/opus/1241854577097048066": {
       "contentHash": "63cbfc66c000e120cbcc04f4",
-      "failedAttempts": 6,
-      "failedRuns": 2,
-      "lastFailureAtEpoch": 1788025908,
-      "retryAfterEpoch": 1788047508
+      "failedAttempts": 9,
+      "failedRuns": 3,
+      "lastFailureAtEpoch": 1788432764,
+      "retryAfterEpoch": 1788454364
     },
     "https://www.bilibili.com/opus/1242648287020843016": {
       "contentHash": "5bc6d20913a23ee316f1a51e",
