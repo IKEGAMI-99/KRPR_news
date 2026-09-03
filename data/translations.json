@@ -1995,6 +1995,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788422473
+    },
+    "https://x.com/stylight_kr/status/2095417762495791512": {
+      "contentHash": "f253028442ef984c6fe16b44",
+      "titleJa": "『月の審判』創作大会受賞作品共有 第4弾 🎉素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様、心より感謝申し上げます。受賞された皆様にも改めてお祝いを申し上げます！",
+      "bodyJa": "『月の審判』創作大会受賞作品共有 第4弾 🎉\n\n素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様、心より感謝申し上げます。\n受賞された全ての皆様にも改めてお祝いの言葉を申し上げます！\n\n今後もStylightのスタイルパートナーの皆様の\n素晴らしく多様な作品を期待しております！💖\n\n#Stylight #月の審判創作大会 #受賞作品",
+      "summaryJa": "・追加: 『月の審判』創作大会の受賞作品共有 第4弾が公開されました\n・感謝: 素晴らしい作品を届けてくださったPale、Annyaring、Jane、Tudun様へ感謝を表明\n・今後の期待: 今後もStylightのスタイルパートナーの皆様の作品を期待する",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788422719
+    },
+    "https://www.youtube.com/shorts/_Ys5GvAvE-Y": {
+      "contentHash": "894ffd1426f9b5320f18560a",
+      "titleJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト",
+      "bodyJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト\n\n「かつて私たちは、切り離せないほど親密だった。あなたは私を、あなた自身のものと同じくらい深く知っていた。」\n\n#PrismaticFantasy | イベント期間は9月2日09:00から9月22日23:59まで！\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
+      "summaryJa": "・追加: SRアライ [ジェラルド - Our Way Home] - デフォルトが登場\n・期間: 9月2日09:00から9月22日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788422754
+    },
+    "https://www.bilibili.com/opus/1242934331887845413": {
+      "contentHash": "1bfc9feffe1dc5ab080c3744",
+      "titleJa": "歌声で輝くステージを照らせ ✨楽譜の旋律と鼓動が共鳴し、✨あなたと共に華やかな花道を歩もう",
+      "bodyJa": "歌声で輝くステージを照らせ\n✨楽譜の旋律と鼓動が共鳴し、\n✨あなたと共に華やかな花道を歩もう！\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+      "summaryJa": "・ゲームタイトル: 以闪亮之名\n・ジャンル: ロールプレイング/高画質/シミュレーション経営\n・内容: すべての女性が夢中になる3A級シミュレーションライフゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788422797
     }
   },
   "failures": {
