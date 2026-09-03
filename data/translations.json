@@ -2774,6 +2774,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788443473
+    },
+    "https://m.bbs.3839.com/thread-9128286.htm": {
+      "contentHash": "4e01664254caef13883cb460",
+      "titleJa": "夢を追う牧歌パックが期間限定で登場",
+      "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが利用するゲームコミュニティです。毎日、国内外の最新で面白いゲーム情報を発信しています。実用的なゲームツール、オリジナルの攻略解説、生きた動画解説などを通じて、プレイヤーがゲームを素早く始め、迅速にクリアできるようサポートします。",
+      "summaryJa": "・追加: 夢を追う牧歌パックが期間限定で登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788443927
     }
   },
   "failures": {

@@ -6004,7 +6004,13 @@
         "url": "https://m.bbs.3839.com/thread-9128286.htm"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "夢を追う牧歌パックが期間限定で登場",
+    "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが利用するゲームコミュニティです。毎日、国内外の最新で面白いゲーム情報を発信しています。実用的なゲームツール、オリジナルの攻略解説、生きた動画解説などを通じて、プレイヤーがゲームを素早く始め、迅速にクリアできるようサポートします。",
+    "summaryJa": "・追加: 夢を追う牧歌パックが期間限定で登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0dd4ec6160fced5339d0f912",
