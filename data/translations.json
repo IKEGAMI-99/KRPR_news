@@ -1766,14 +1766,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
-      "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+      "contentHash": "851117a5bacb325e13b0e444",
+      "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788028860
+      "updatedAtEpoch": 1788449358
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -2863,17 +2863,17 @@
     },
     "https://www.bilibili.com/opus/1242648287020843016": {
       "contentHash": "5bc6d20913a23ee316f1a51e",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788425954,
-      "retryAfterEpoch": 1788447554
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788448841,
+      "retryAfterEpoch": 1788470441
     },
     "https://www.bilibili.com/opus/1242625094214221825": {
       "contentHash": "481e9f8829cf970788141056",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788426817,
-      "retryAfterEpoch": 1788448417
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788449322,
+      "retryAfterEpoch": 1788470922
     },
     "https://weibo.com/7521830234/RgpLKfhau": {
       "contentHash": "ec60f1ca65618b67db9a60cd",
