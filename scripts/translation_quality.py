@@ -176,24 +176,79 @@ JSONキーは指定どおりにし、値だけを日本語化してください�
     return messages
 
 
-def strict_validate_result(row: dict, obj):
+def strict_validate_result_with_reason(row: dict, obj):
+    """Return both the validated result and a machine-generated retry reason."""
     result = _ORIGINAL_VALIDATE_RESULT(row, obj)
     if not result:
-        return None
+        return None, "JSON形式が不正、必須フィールドが欠落、またはsummaryJaの形式が不正です"
     reason = japanese_failure_reason(row, result)
     if reason:
         print(f"  rejected non-Japanese output: {engine.cache_key(row)}: {reason}", file=sys.stderr)
-        return None
+        return None, reason
+    return result, ""
+
+
+def strict_validate_result(row: dict, obj):
+    result, _reason = strict_validate_result_with_reason(row, obj)
     return result
 
 
+def retry_instruction(attempt: int, failure_reason: str) -> str:
+    """Turn the previous validator failure into a precise correction prompt."""
+    if attempt <= 1 or not failure_reason:
+        return (
+            "日本語への完全翻訳を最優先してください。原文言語の一般語を残さず、"
+            "日本のゲームニュースとして自然な表現にしてください。中国語の○折は必ず正確な○%OFFへ換算してください。"
+        )
+
+    prefix = (
+        f"前回の出力は品質チェックで失敗しました。失敗理由: {failure_reason}。"
+        "同じ誤りを繰り返さず、前回の出力ではなく原文からJSON全体を作り直してください。"
+    )
+
+    if failure_reason.startswith("中国語の一般語が残っています:"):
+        terms = failure_reason.split(":", 1)[1].strip()
+        correction = (
+            f"特に前回残った一般語「{terms}」を titleJa / bodyJa / summaryJa の全フィールドから探し、"
+            "文脈に合う自然な日本語へ必ず置換してください。固有名詞だけは原語保持できます。"
+        )
+    elif "中国式の割引表記" in failure_reason:
+        correction = (
+            "出力全体から「○折」表記を除去してください。○折は通常価格に対する支払割合なので、"
+            "例として2.2折=22%=78%OFF、5折=50%OFF、8折=20%OFFです。数値を正確に換算してください。"
+        )
+    elif "原文がほぼそのまま" in failure_reason:
+        correction = "固有名詞・URL・ハッシュタグ以外を原文コピーせず、説明文を一から自然な日本語へ翻訳してください。"
+    elif "日本語かな文字が不足" in failure_reason or "中国語原文が多く" in failure_reason:
+        correction = (
+            "漢字語を並べただけの直訳を避け、助詞・活用を含む自然な日本語文へ書き直してください。"
+            "固有名詞以外の中国語の説明語は残さないでください。"
+        )
+    elif "韓国語が多く" in failure_reason:
+        correction = "固有名詞以外の韓国語を残さず、説明文を自然な日本語へ完全に翻訳してください。"
+    elif "英語文が多く" in failure_reason:
+        correction = "固有名詞以外の英語文を残さず、説明文を自然な日本語へ完全に翻訳してください。"
+    elif "JSON形式" in failure_reason:
+        correction = (
+            "前置き・Markdown・コードブロックを付けず、指定されたJSONオブジェクトだけを返してください。"
+            "summaryJaは各行が必ず「・」で始まる2〜5個の箇条書きにしてください。"
+        )
+    else:
+        correction = "品質チェックの失敗理由を解消してから、指定形式のJSONだけを返してください。"
+
+    final_note = "これは最終再試行です。" if attempt >= 3 else ""
+    return prefix + correction + final_note
+
+
 def strict_infer_one(llm, row: dict):
-    attempts = [
-        "日本語への完全翻訳を最優先してください。原文言語の一般語を残さず、日本のゲームニュースとして自然な表現にしてください。中国語の○折は必ず正確な○%OFFへ換算してください。",
-        "前回は日本語化が不十分でした。固有名詞・URL・ハッシュタグ以外の中国語・韓国語・英語文をすべて自然な日本語へ翻訳し直してください。礼包・活动・任务・合伙人・网页链接・○折などの中国語一般語や中国式表記を残さないでください。JSONだけを返してください。",
-        "最終再試行です。bodyJaとsummaryJaが日本語として読めない出力は失敗です。原文コピーは禁止。固有名詞以外を必ず日本語にし、中国式割引表記も日本式の%OFFへ換算してください。",
-    ]
-    for attempt, retry_note in enumerate(attempts, 1):
+    failure_reason = ""
+    for attempt in range(1, 4):
+        retry_note = retry_instruction(attempt, failure_reason)
+        if attempt > 1:
+            print(
+                f"  error-aware retry {attempt}/3 {engine.cache_key(row)}: {failure_reason}",
+                file=sys.stderr,
+            )
         try:
             response = llm.create_chat_completion(
                 messages=strict_build_messages(row, retry_note),
@@ -203,10 +258,12 @@ def strict_infer_one(llm, row: dict):
                 seed=42 + attempt,
             )
             text = response["choices"][0]["message"]["content"]
-            result = strict_validate_result(row, engine.parse_json_object(text))
+            obj = engine.parse_json_object(text)
+            result, failure_reason = strict_validate_result_with_reason(row, obj)
             if result:
                 return result
         except Exception as exc:
+            failure_reason = f"LLM実行中に例外が発生しました（attempt={attempt}）"
             print(f"LLM strict attempt {attempt} failed {engine.cache_key(row)}: {exc}", file=sys.stderr)
     return None
 
