@@ -2744,6 +2744,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788442424
+    },
+    "https://x.com/stylight_kr/status/1981931221065048303": {
+      "contentHash": "cbf977105cff5844d2d0f261",
+      "titleJa": "【イベント】トレンドコード『銀の月の伝説』予告「伝説の赤い目の少女、もしかして彼女を知っていますか」",
+      "bodyJa": "【イベント】トレンドコード『銀の月の伝説』予告\n\n「伝説の赤い目の少女、もしかして彼女を知っていますか？」\n\n🐺ユニークなヘアスタイルと多様な再解釈が可能なワンピース、\n輝く年末の雰囲気に完璧に合うStylightのNEWトレンドコード！\n\n🕙 10/30(木) 〜 12/11(木)\n\n[イベント詳細]\n- 様々なデイリーアイテム",
+      "summaryJa": "・追加: トレンドコード『銀の月の伝説』が予告された\n・期間: 10/30(木) 〜 12/11(木)\n・内容: ユニークなヘアスタイルと多様な再解釈が可能なワンピースを含むNEWトレンドコードの登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788443394
+    },
+    "https://x.com/stylight_kr/status/1981929207958565051": {
+      "contentHash": "22407a9ff892cabb9e82cbb8",
+      "titleJa": "SSR縁カード、ナシオンの『死のキス』進化「誓いの口づけ、命を賭して守る約束」🤍あなたの手に握られた彼の運命、その物語が今始まります。 - 期間...",
+      "bodyJa": "SSR縁カード、ナシオンの『死のキス』進化\n\n「誓いの口づけ、\n命を賭して守る約束」\n\n🤍あなたの手に握られた彼の運命\nその物語が今始まります。\n\n- 期間限定イベント「影の誓い」10月30日(木)より開催！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #永遠の誓約",
+      "summaryJa": "・追加: SSR縁カード、ナシオンの『死のキス』が進化\n・イベント: 期間限定イベント「影の誓い」が10月30日(木)より開催",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788443432
+    },
+    "https://x.com/stylight_kr/status/1981928704583537134": {
+      "contentHash": "6248474b6e282529b2f5cf6f",
+      "titleJa": "SSR縁カード、ナシオンの『死のキス』初期\n何かに待つかのように止まらない雨\nナシオンは神女の前で誓いを立てます。🖤あなたの手に握られた彼の運命、その物語が今始まります。",
+      "bodyJa": "SSR縁カード、ナシオンの『死のキス』初期\n\n何かに待つかのように止まらない雨\nナシオンは神女の前で誓いを立てます。\n\n🖤あなたの手に握られた彼の運命、\nその物語が今始まります。\n\n- 期間限定イベント「影の誓い」10月30日(木)よりリリース！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #永遠の誓い",
+      "summaryJa": "・追加: SSR縁カード「ナシオンの『死のキス』初期」が登場\n・イベント: 期間限定イベント「影の誓い」が10月30日(木)より開催",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788443473
     }
   },
   "failures": {
