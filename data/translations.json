@@ -2145,6 +2145,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788424137
+    },
+    "https://x.com/LifeMakeover510/status/2094598615151120424": {
+      "contentHash": "10d2cc5a73e7025affbc6b66",
+      "titleJa": "Lightchase Encore | ★4セット「Soft Fondness」プレビュー",
+      "bodyJa": "Lightchase Encore | ★4セット「Soft Fondness」プレビュー\n\n繊細で柔らかなタッチが、温かく安心感を与えてくれます。\n\nコピー＆ペーストの世界で、絶え間ない追いかけっこを続ける中で、\n私たちは常に自分自身のものとなる断片を集めるべきです。\n\nイベント期間は9月2日 09:00から9月22日 23:59までです。",
+      "summaryJa": "・追加: ★4セット「Soft Fondness」のプレビュー公開\n・期間: 9月2日 09:00〜9月22日 23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424279
+    },
+    "https://x.com/LifeMakeover510/status/2094596098325172612": {
+      "contentHash": "bc65b7c649f344535926e641",
+      "titleJa": "Lightchase Encore | ★5セット「Misty Maple」プレビュー",
+      "bodyJa": "Lightchase Encore | ★5セット「Misty Maple」プレビュー！\n\n★5セット「Misty Maple」の染色エリアが最適化され、新しいフォームが追加されました！ドレス「Misty Maple」の染色エリア#1は#14に最適化され、エリア#2は#15-16に最適化されました。\n\nイベント期間は9月2日09:00から9月22日23:59までです！",
+      "summaryJa": "・追加: ★5セット「Misty Maple」のプレビュー\n・変更: ドレス「Misty Maple」の染色エリアが最適化され、新しいフォームが追加\n・期間: 9月2日09:00〜9月22日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424315
+    },
+    "https://x.com/LifeMakeover510/status/2094593581889532243": {
+      "contentHash": "ebe1e5e003bc8391c9c40738",
+      "titleJa": "Lightchase Encore | ★5セット「Vitrum Talk」プレビュー",
+      "bodyJa": "Lightchase Encore | ★5セット「Vitrum Talk」プレビュー！\nPrismatic Fantasy | イベントは9月2日09:00から9月22日23:59まで開催！\n\n★5セット「Vitrum Talk」のために染色エリアが最適化され、新しいフォームが追加されました！コート「Crystal Thread」にはシンプルなフォームが利用可能です。\n\n#LifeMakeover",
+      "summaryJa": "・追加: ★5セット「Vitrum Talk」のプレビューと新しいフォームの追加\n・期間: Prismatic Fantasyイベントは9月2日09:00から9月22日23:59まで開催",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788424347
     }
   },
   "failures": {
