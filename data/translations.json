@@ -2235,6 +2235,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788425596
+    },
+    "https://www.bilibili.com/opus/1242656017961975810": {
+      "contentHash": "86b61d485758326db17933c3",
+      "titleJa": "VME応援企画 | トップスターの舞台裏大公開 ✨最新回SHAN・エンタメファッション ✨トップスターの舞台裏を大公開！",
+      "bodyJa": "VME応援企画 | トップスターの舞台裏大公開\n\n✨最新回SHAN・エンタメファッション\n✨トップスターの舞台裏を大公開！\n✨インタラクティブコーナー：セシリアの応援カラー大募集！\n✅流光金\n✅月光銀\n✅ダイヤモンドピンク\n✅貝母白\n📌あなたはどの色で新進気鋭のトップスターを応援したいですか？\n💖コメント欄にあなたの答えを残してください！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイへ",
+      "summaryJa": "・イベント: VME応援企画 | トップスターの舞台裏大公開が開催\n・インタラクティブコーナー: セシリアの応援カラー大募集を実施\n・選択肢: 流光金、月光銀、ダイヤモンドピンク、貝母白から応援カラーを選択\n・ゲーム: 以闪亮之名",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788425735
+    },
+    "https://x.com/kirapara_JP/status/2094334373806125257": {
+      "contentHash": "f7f8690a5404128ddcd4c8e6",
+      "titleJa": "🔔9月の連続ログインイベント開催🔔 イベント期間⏰ 9月1日から9月30日まで 毎日ログインすると、ダイヤやゴールド、またはスタミナなどを獲得できます",
+      "bodyJa": "🔔9月の連続ログインイベント開催🔔\n\nイベント期間⏰\n9月1日から9月30日まで \n\n毎日ログインすると、ダイヤやゴールド、またはスタミナなどを獲得できます。ぜひチェックしてみてください💖\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・イベント名: 9月の連続ログインイベント\n・期間: 9月1日から9月30日まで\n・内容: 毎日ログインすることで、ダイヤ、ゴールド、またはスタミナなどを獲得できる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788425971
     }
   },
   "failures": {
@@ -2251,6 +2271,13 @@
       "failedRuns": 2,
       "lastFailureAtEpoch": 1788025908,
       "retryAfterEpoch": 1788047508
+    },
+    "https://www.bilibili.com/opus/1242648287020843016": {
+      "contentHash": "5bc6d20913a23ee316f1a51e",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788425954,
+      "retryAfterEpoch": 1788447554
     }
   }
 }

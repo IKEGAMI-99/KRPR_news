@@ -1310,7 +1310,13 @@
         "url": "https://t.bilibili.com/1242656017961975810"
       }
     ],
-    "sourceCount": 3
+    "sourceCount": 3,
+    "titleJa": "VME応援企画 | トップスターの舞台裏大公開 ✨最新回SHAN・エンタメファッション ✨トップスターの舞台裏を大公開！",
+    "bodyJa": "VME応援企画 | トップスターの舞台裏大公開\n\n✨最新回SHAN・エンタメファッション\n✨トップスターの舞台裏を大公開！\n✨インタラクティブコーナー：セシリアの応援カラー大募集！\n✅流光金\n✅月光銀\n✅ダイヤモンドピンク\n✅貝母白\n📌あなたはどの色で新進気鋭のトップスターを応援したいですか？\n💖コメント欄にあなたの答えを残してください！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイへ",
+    "summaryJa": "・イベント: VME応援企画 | トップスターの舞台裏大公開が開催\n・インタラクティブコーナー: セシリアの応援カラー大募集を実施\n・選択肢: 流光金、月光銀、ダイヤモンドピンク、貝母白から応援カラーを選択\n・ゲーム: 以闪亮之名",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a6a78fea05701ff7be659bb8",
@@ -1372,7 +1378,13 @@
         "url": "https://x.com/kirapara_JP/status/2094334373806125257"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🔔9月の連続ログインイベント開催🔔 イベント期間⏰ 9月1日から9月30日まで 毎日ログインすると、ダイヤやゴールド、またはスタミナなどを獲得できます",
+    "bodyJa": "🔔9月の連続ログインイベント開催🔔\n\nイベント期間⏰\n9月1日から9月30日まで \n\n毎日ログインすると、ダイヤやゴールド、またはスタミナなどを獲得できます。ぜひチェックしてみてください💖\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・イベント名: 9月の連続ログインイベント\n・期間: 9月1日から9月30日まで\n・内容: 毎日ログインすることで、ダイヤ、ゴールド、またはスタミナなどを獲得できる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c8d01444047f2e9ab36e5a76",
@@ -2978,7 +2990,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0ef9b2f461b0e1647d0dc4be",
@@ -3132,7 +3144,7 @@
     "summaryJa": "・追加: 特別イベント『Makeover Story』が明日オープン\n・期間: 8/27 10:30 〜 9/10 5:00\n・報酬: 5★セット「댓잎의 연서」がメイン報酬として提供",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "sources": [
       {
         "platform": "公式X",
@@ -5525,6 +5537,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
