@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./layout-fixes.css?v=50">
   <link rel="stylesheet" href="./gallery-strip.css">
   <link rel="stylesheet" href="./day-sections.css">
+  <link rel="stylesheet" href="./game-notices.css?v=67">
   <link rel="stylesheet" href="./menu.css">
   <link rel="stylesheet" href="./menu-install.css">
   <link rel="stylesheet" href="./source-buttons.css">
@@ -41,6 +42,19 @@
         <button class="region-tab" type="button" data-region="GLOBAL">🌐 Global <span data-count="GLOBAL">0</span></button>
       </nav>
     </header>
+    <section class="game-notices-wrap" aria-label="ゲームアプリ内お知らせ">
+      <details id="gameNoticePanel" class="game-notices" hidden>
+        <summary class="game-notice-summary">
+          <span class="game-notice-icon" aria-hidden="true">◇</span>
+          <span class="game-notice-copy">
+            <span class="game-notice-heading">ゲームアプリ内お知らせ <span id="gameNoticeCount" class="game-notice-count">0</span></span>
+            <span id="gameNoticeStatus" class="game-notice-status">取得中…</span>
+          </span>
+          <span class="game-notice-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div id="gameNoticeList" class="game-notice-list"></div>
+      </details>
+    </section>
     <main>
       <section id="newsGrid" class="news-grid" aria-live="polite" aria-busy="true"></section>
       <nav id="paginationNav" class="pagination" aria-label="ニュースページ" hidden>
@@ -71,6 +85,7 @@
   <script src="./analytics-track.js" defer></script>
   <script src="./pagination.js" defer></script>
   <script src="./app.js" defer></script>
+  <script src="./game-notices.js?v=67" defer></script>
   <script src="./x-image-fix.js?v=50" defer></script>
   <script src="./source-buttons.js" defer></script>
   <script src="./crawl-status.js" defer></script>
