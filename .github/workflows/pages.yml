@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+      - "data/news.json"
+      - "scripts/generate_seo.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
   workflow_run:
@@ -34,6 +36,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate SEO article pages and sitemap
+        env:
+          SEO_MAX_ARTICLES: '800'
+        run: python scripts/generate_seo.py
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
