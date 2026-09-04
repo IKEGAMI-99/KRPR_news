@@ -21,6 +21,7 @@ on:
       - 'scripts/audit_translations.py'
       - 'scripts/apply_sol_edits.py'
       - 'scripts/glossary_schema.py'
+      - 'scripts/auto_glossary_feedback.py'
       - 'data/translation_glossary.json'
       - 'data/sol_news.json'
       - 'data/sol_overrides.json'
@@ -132,28 +133,43 @@ jobs:
         env:
           LLM_MAX_ITEMS: '3'
         run: |
+          set +e
           python -u scripts/strict_gemma_translate.py translate \
-            --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm"
+            --model "$HOME/.cache/kirapara-models/gemma-4-E4B-it.litertlm" \
+            2>&1 | tee "${RUNNER_TEMP}/gemma-translate.log"
+          status=${PIPESTATUS[0]}
+          set -e
+          exit "$status"
 
       - name: Reapply Sol locks after Gemma 4
         if: steps.llm_plan.outputs.pending != '0'
         run: python scripts/apply_sol_edits.py
 
+      - name: Record recurring automatic glossary corrections
+        if: steps.llm_plan.outputs.pending != '0'
+        run: |
+          if [ -f "${RUNNER_TEMP}/gemma-translate.log" ]; then
+            python scripts/auto_glossary_feedback.py record \
+              --log "${RUNNER_TEMP}/gemma-translate.log"
+          fi
+
       - name: Commit Gemma translations with semantic retry
         if: steps.llm_plan.outputs.pending != '0'
         run: |
-          if [ -z "$(git status --porcelain -- data/news.json data/translations.json)" ]; then
-            echo "No translation changes"
+          if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/translation_glossary.json)" ]; then
+            echo "No translation or glossary changes"
             exit 0
           fi
 
           incoming_cache="${RUNNER_TEMP}/gemma-translations.json"
+          incoming_glossary="${RUNNER_TEMP}/gemma-translation-glossary.json"
           cp data/translations.json "$incoming_cache"
+          cp data/translation_glossary.json "$incoming_glossary"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/translations.json
-          git commit -m "chore: translate news with Gemma 4 E4B LiteRT"
+          git add data/news.json data/translations.json data/translation_glossary.json
+          git commit -m "chore: translate news with Gemma 4 E4B LiteRT [skip ai]"
 
           for attempt in 1 2 3 4; do
             echo "Translation push attempt ${attempt}/4"
@@ -166,7 +182,7 @@ jobs:
               set -e
 
               conflicts="$(git diff --name-only --diff-filter=U)"
-              unexpected_conflicts="$(printf '%s\n' "$conflicts" | grep -vFx -e '' -e 'data/news.json' -e 'data/translations.json' || true)"
+              unexpected_conflicts="$(printf '%s\n' "$conflicts" | grep -vFx -e '' -e 'data/news.json' -e 'data/translations.json' -e 'data/translation_glossary.json' || true)"
               if [ -n "$unexpected_conflicts" ]; then
                 echo "Unexpected merge conflicts:"
                 printf '%s\n' "$unexpected_conflicts"
@@ -179,13 +195,15 @@ jobs:
                 exit 1
               fi
 
-              # The newest main owns the collected article set. Reapply this
-              # run's generated cache entries semantically on top of it.
-              git checkout origin/main -- data/news.json data/translations.json
+              # The newest main owns the collected article set and any Sol-reviewed
+              # glossary changes. Reapply this run's generated translations and
+              # automatic glossary observations semantically on top of it.
+              git checkout origin/main -- data/news.json data/translations.json data/translation_glossary.json
               python scripts/merge_translation_results.py --incoming "$incoming_cache"
+              python scripts/auto_glossary_feedback.py merge --incoming "$incoming_glossary"
               python scripts/apply_sol_edits.py
               python scripts/strict_gemma_translate.py prepare
-              git add data/news.json data/translations.json
+              git add data/news.json data/translations.json data/translation_glossary.json
 
               if git diff --name-only --diff-filter=U | grep -q .; then
                 echo "Unresolved merge conflicts remain"
