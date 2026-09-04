@@ -61,10 +61,16 @@ device_r = report("29daysAgo", "today", ["activeUsers"], ["deviceCategory"], 10,
 trend = []
 for row in trend_r.rows:
     raw = row.dimension_values[0].value
-    label = raw
     if len(raw) == 8 and raw.isdigit():
+        date_iso = f"{raw[:4]}-{raw[4:6]}-{raw[6:8]}"
         label = f"{raw[4:6]}/{raw[6:8]}"
-    trend.append({"label": label, "value": int(float(row.metric_values[0].value))})
+    else:
+        date_iso = raw
+        label = raw
+    trend.append({"date": date_iso, "label": label, "value": int(float(row.metric_values[0].value))})
+
+# GA4 does not guarantee dimension row order here. Always emit the trend chronologically.
+trend.sort(key=lambda item: item["date"])
 
 payload = {
     "ready": True,
