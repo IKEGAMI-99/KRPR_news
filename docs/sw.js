@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v74';
+const CACHE_NAME = 'kirapara-pwa-shell-v75';
 const APP_SHELL = [
   './',
   './index.html',
@@ -68,7 +68,7 @@ self.addEventListener('activate', (event) => {
 
 async function navigationResponse(request) {
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: 'no-store' });
     if (response?.ok) {
       const cache = await caches.open(CACHE_NAME);
       await cache.put(request, response.clone());
@@ -80,9 +80,16 @@ async function navigationResponse(request) {
 }
 
 async function shellResponse(request) {
-  const cached = await caches.match(request, { ignoreSearch: true });
-  if (cached) return cached;
-  return fetch(request);
+  try {
+    const response = await fetch(request, { cache: 'no-store' });
+    if (response?.ok) {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch {
+    return caches.match(request, { ignoreSearch: true });
+  }
 }
 
 self.addEventListener('fetch', (event) => {
