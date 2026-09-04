@@ -3014,15 +3014,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788510197
+    },
+    "https://x.com/kirapara_JP/status/1954467758219137044": {
+      "contentHash": "75321b9400385127f7177dc4",
+      "titleJa": "限定ガチャイベント『浄化の舞』まもなく開催",
+      "bodyJa": "限定ガチャイベント『浄化の舞』まもなく開催！\n星6セット「黒舞の厄払」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆8月14日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『浄化の舞』がまもなく開催されます\n・星6セット「黒舞の厄払」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名様にAmazonギフト券をプレゼントします\n・キャンペーン参加条件は、@kirapara_JPのフォローと本ポストのRPで、締切は8月14日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511037
+    },
+    "https://x.com/kirapara_JP/status/1953999674685464777": {
+      "contentHash": "312acad9885022cb55b9622e",
+      "titleJa": "＼#お盆 🍉連休特別抽選キャンペーン／ 参加してくれた方の中から抽選で20名様に #Amazonギフト券 を🎁 ぜひご参加ください✨ 【参加方法】 ①@kirapara_JP ...",
+      "bodyJa": "＼#お盆 🍉連休特別抽選キャンペーン／\n参加してくれた方の中から抽選で20名様に #Amazonギフト券 を🎁\nぜひご参加ください✨\n\n【参加方法】 \n①@kirapara_JP をフォロー \n②本ツイートをリポスト\n\n⏰開催期間⏰\n8月9日～8月17日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・キャンペーン名: お盆連休特別抽選キャンペーン\n・内容: 参加者の中から抽選で20名様にAmazonギフト券をプレゼント\n・参加方法: @kirapara_JPをフォローし、本ツイートをリポスト\n・期間: 8月9日～8月17日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511057
     }
   },
   "failures": {
     "https://www.bilibili.com/opus/1241862310188810276": {
       "contentHash": "6379e58723e58b86adb551e3",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788499397,
-      "retryAfterEpoch": 1788510197
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788511017,
+      "retryAfterEpoch": 1788521817
     }
   }
 }
