@@ -2974,6 +2974,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788495660
+    },
+    "https://x.com/stylight_kr/status/2095769128980422877": {
+      "contentHash": "71fb0b352c0b564a1e4278aa",
+      "titleJa": "🎉 Stylight 1周年コンテスト開催！",
+      "bodyJa": "🎉 Stylight 1周年コンテスト開催！\n\nStylightの1周年に関連する作品であれば、画像・動画などジャンルや形式に制限なく誰でも参加できます。出作品数に制限はありませんので、自由にご参加ください！✨\n\n🗓️ 9/4 〜 10/4\n🏆 結果発表: 終了後4週間以内\n\n🎁 優秀賞（20名）: 現金10万円 + リッチニャンモランイ\n🎁 奨励賞（30名）: リッチニャンぬいぐるみ\n\n作品をSNSにアップロードし、#스타일라잇 #스타일라잇1주년 のハッシュタグを付けて、カフェのコンテスト掲示板に作品リンクを認証してください。\n\n📌 詳細な参加方法と注意事項は公式カフェでご確認ください！\n👉 \n\n#스타일라잇 #스타일라잇1주년",
+      "summaryJa": "・追加: Stylight 1周年コンテストが開催される\n・期間: 9/4 〜 10/4\n・参加条件: Stylight 1周年に関連する作品（画像・動画など）をSNSにアップロードし、指定ハッシュタグを付けてカフェのコンテスト掲示板にリンクを認証すること\n・賞品: 優秀賞（20名）は現金10万円 + リッチニャンモランイ、奨励賞（30名）はリッチニャンぬいぐるみ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788506203
     }
   },
   "failures": {
