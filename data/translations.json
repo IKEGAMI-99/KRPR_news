@@ -3159,10 +3159,10 @@
   "failures": {
     "https://www.bilibili.com/opus/1241862310188810276": {
       "contentHash": "6379e58723e58b86adb551e3",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1788525113,
-      "retryAfterEpoch": 1788535913
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1788537427,
+      "retryAfterEpoch": 1788548227
     }
   }
 }
