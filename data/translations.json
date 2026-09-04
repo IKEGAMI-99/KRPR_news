@@ -3064,6 +3064,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788511242
+    },
+    "https://x.com/kirapara_JP/status/1931637327366967611": {
+      "contentHash": "2a84669653cf536ef544e058",
+      "titleJa": "限定ガチャイベント『鏡海の迷路』まもなく開催",
+      "bodyJa": "限定ガチャイベント『鏡海の迷路』まもなく開催！\n星5セット「禁忌の呪い」、「絢爛の影」の動画公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n20名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆6月12日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『鏡海の迷路』がまもなく開催される\n・星5セット「禁忌の呪い」と「絢爛の影」の動画が公開された\n・リポスト＆いいねキャンペーンを実施し、20名に#Amazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのリポストで、締切は6月12日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511816
+    },
+    "https://x.com/kirapara_JP/status/1924027178301194652": {
+      "contentHash": "30e384919ae54718d5b8dbaf",
+      "titleJa": "限定ガチャイベント『星に願う』まもなく開催",
+      "bodyJa": "限定ガチャイベント『星に願う』まもなく開催！\n星6セット「森で祈る歌」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆5月22日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『星に願う』がまもなく開催されます\n・星6セット「森で祈る歌」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントします\n・キャンペーン参加条件は、@kirapara_JPをフォローし、本ポストをRPすることです\n・キャンペーン締切は5月22日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511851
+    },
+    "https://x.com/kirapara_JP/status/1916417031597117506": {
+      "contentHash": "c17976b43c320a6f0b9eb8ae",
+      "titleJa": "限定ガチャイベント『幻夢の彩』まもなく開催",
+      "bodyJa": "限定ガチャイベント『幻夢の彩』まもなく開催！\n星5セット「心璃の囁き」、「朝露の祈り」の動画公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n20名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆5月1日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『幻夢の彩』がまもなく開催される\n・星5セット「心璃の囁き」と「朝露の祈り」の動画が公開された\n・リポスト＆いいねキャンペーンを実施し、20名に#Amazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのリポストで、締切は5月1日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511886
     }
   },
   "failures": {
