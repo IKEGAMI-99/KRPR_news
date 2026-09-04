@@ -18,8 +18,12 @@ CONTEXT_TOKEN_LIMIT = 8192
 OUTPUT_TOKEN_LIMIT = 3000
 FAILED_ATTEMPTS_PER_ARTICLE = 3
 FAILURE_COOLDOWN_SECONDS = 3 * 60 * 60
+BILIBILI_FALLBACK_AFTER_FAILED_RUNS = 3
+BILIBILI_FALLBACK_MODE = "bilibili-relaxed"
 
 _BASE_VALID_ENTRY = engine.valid_entry
+_BASE_BUILD_MESSAGES = engine.build_messages
+_BASE_VALIDATE_RESULT = engine.validate_result
 
 
 def gemma_entry_valid(row: dict, entry) -> bool:
@@ -88,8 +92,37 @@ def prune_failure_records(rows: list, cache: dict) -> int:
     return len(stale)
 
 
+def is_bilibili_row(row: dict) -> bool:
+    source_url = str(row.get("sourceUrl") or "").lower()
+    platform = str(row.get("platform") or "").lower()
+    return "bilibili.com" in source_url or "bilibili" in platform
+
+
+def failed_runs_for_row(cache: dict, row: dict) -> int:
+    record = failure_records(cache).get(engine.cache_key(row))
+    if not isinstance(record, dict):
+        return 0
+    if record.get("contentHash") != engine.source_hash(row):
+        return 0
+    try:
+        return max(0, int(record.get("failedRuns") or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def should_use_bilibili_fallback(cache: dict, row: dict) -> bool:
+    return (
+        is_bilibili_row(row)
+        and failed_runs_for_row(cache, row) >= BILIBILI_FALLBACK_AFTER_FAILED_RUNS
+    )
+
+
 def partition_pending_rows(pending: list, cache: dict, now_epoch: int) -> tuple[list, list]:
-    """Keep cooling articles behind runnable work without changing base priority."""
+    """Keep cooling articles behind runnable work without changing base priority.
+
+    Bilibili rows that already exhausted three full strict runs bypass cooldown so
+    the relaxed fallback can resolve them instead of being deferred indefinitely.
+    """
     records = failure_records(cache)
     runnable = []
     deferred = []
@@ -101,6 +134,9 @@ def partition_pending_rows(pending: list, cache: dict, now_epoch: int) -> tuple[
             continue
         if record.get("contentHash") != engine.source_hash(row):
             records.pop(key, None)
+            runnable.append(row)
+            continue
+        if should_use_bilibili_fallback(cache, row):
             runnable.append(row)
             continue
         try:
@@ -151,6 +187,40 @@ def defer_failed_row(cache: dict, row: dict, now_epoch: int) -> dict:
 
 def clear_failure_record(cache: dict, row: dict) -> None:
     failure_records(cache).pop(engine.cache_key(row), None)
+
+
+def fallback_infer_one(llm, row: dict) -> dict | None:
+    """Retry a chronically failing Bilibili row with the base format validator.
+
+    The normal strict path rejects output that still looks insufficiently Japanese.
+    After three failed runs, this fallback keeps the same Gemma model, prompt rules,
+    glossary and JSON contract but accepts the engine's baseline validation. This
+    prevents one stubborn source post from remaining untranslated forever while
+    still requiring all display fields and a valid bullet summary.
+    """
+    attempts = [
+        "厳格品質チェックを複数回通過できなかったためフォールバック処理です。原文の事実だけを使い、自然な日本語のJSONを返してください。",
+        "前回のフォールバック出力はJSON形式または必須フィールドを満たしませんでした。前置きなしで指定JSONだけを返してください。",
+    ]
+    for retry_note in attempts:
+        try:
+            response = llm.create_chat_completion(
+                messages=_BASE_BUILD_MESSAGES(row, retry_note),
+                temperature=0.05,
+                top_p=0.9,
+                max_tokens=OUTPUT_TOKEN_LIMIT,
+                seed=42,
+            )
+            text = response["choices"][0]["message"]["content"]
+            result = _BASE_VALIDATE_RESULT(row, engine.parse_json_object(text))
+            if result:
+                return result
+        except Exception as exc:
+            print(
+                f"Bilibili fallback attempt failed {engine.cache_key(row)}: {exc}",
+                file=sys.stderr,
+            )
+    return None
 
 
 class LiteRTChatAdapter:
@@ -264,21 +334,26 @@ def cmd_translate_litert(args) -> int:
     llm = LiteRTChatAdapter(str(model_path))
     successes = 0
     failures = 0
+    fallback_successes = 0
     try:
         for index, row in enumerate(selected, 1):
             key = engine.cache_key(row)
+            use_fallback = should_use_bilibili_fallback(cache, row)
+            failed_runs_before = failed_runs_for_row(cache, row)
+            mode = "Bilibili fallback" if use_fallback else "Gemma4/LiteRT"
             print(
-                f"[{index}/{len(selected)}] Gemma4/LiteRT "
+                f"[{index}/{len(selected)}] {mode} "
                 f"{row.get('region')} {row.get('platform')}: "
                 f"{str(row.get('title') or '')[:70]}"
             )
-            result = engine.infer_one(llm, row)
+            result = fallback_infer_one(llm, row) if use_fallback else engine.infer_one(llm, row)
             if not result:
                 failures += 1
                 failure = defer_failed_row(cache, row, int(time.time()))
                 print(
                     f"  failed and deferred: {key} "
                     f"attempts={failure['failedAttempts']} "
+                    f"failedRuns={failure['failedRuns']} "
                     f"retryAfterEpoch={failure['retryAfterEpoch']}",
                     file=sys.stderr,
                 )
@@ -293,6 +368,13 @@ def cmd_translate_litert(args) -> int:
                 "summaryFormatVersion": SUMMARY_FORMAT_VERSION,
                 "updatedAtEpoch": int(time.time()),
             }
+            if use_fallback:
+                entry["fallbackMode"] = BILIBILI_FALLBACK_MODE
+                entry["fallbackAfterFailedRuns"] = failed_runs_before
+                fallback_successes += 1
+                print(
+                    f"  fallback accepted after failedRuns={failed_runs_before}: {key}"
+                )
             cache["items"][key] = entry
             clear_failure_record(cache, row)
             successes += 1
@@ -314,7 +396,7 @@ def cmd_translate_litert(args) -> int:
     )
     print(
         f"Gemma4/LiteRT processed: success={successes} failed={failures} "
-        f"deferred={len(deferred)} remaining={remaining}"
+        f"fallbackSuccess={fallback_successes} deferred={len(deferred)} remaining={remaining}"
     )
     return 0 if successes or not selected else 1
 
