@@ -144,27 +144,17 @@
   }
 
   async function persistShared(articleId, reaction, selected) {
-    const clientId = getClientId();
-    if (selected) {
-      await apiFetch('article_reactions', {
-        method: 'POST',
-        headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' },
-        body: JSON.stringify({
-          article_id: articleId,
-          reaction_key: reaction.key,
-          emoji: reaction.emoji,
-          label: reaction.label || '',
-          client_id: clientId,
-        }),
-      });
-      return;
-    }
-    const query = new URLSearchParams({
-      article_id: `eq.${articleId}`,
-      reaction_key: `eq.${reaction.key}`,
-      client_id: `eq.${clientId}`,
+    await apiFetch('rpc/kirapara_set_article_reaction', {
+      method: 'POST',
+      body: JSON.stringify({
+        p_article_id: articleId,
+        p_reaction_key: reaction.key,
+        p_emoji: reaction.emoji,
+        p_label: reaction.label || '',
+        p_client_id: getClientId(),
+        p_selected: selected,
+      }),
     });
-    await apiFetch(`article_reactions?${query}`, { method: 'DELETE' });
   }
 
   function showTransientError(card) {
