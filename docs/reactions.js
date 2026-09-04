@@ -13,7 +13,8 @@
   ];
   const STORAGE_KEY = 'kirapara-article-reactions-v1';
   const CLIENT_KEY = 'kirapara-reaction-client-v1';
-  const stateByArticle = new Map();
+  const countsByArticle = new Map();
+  const pendingArticles = new Set();
   let renderGeneration = 0;
 
   function storageGet(key) {
@@ -39,17 +40,6 @@
     return /^https:\/\//.test(url) && key ? { url, key } : null;
   }
 
-  function emptyArticleState() {
-    const map = new Map();
-    for (const preset of PRESETS) map.set(preset.key, { ...preset, count: 0, mine: false });
-    return map;
-  }
-
-  function ensureArticleState(articleId) {
-    if (!stateByArticle.has(articleId)) stateByArticle.set(articleId, emptyArticleState());
-    return stateByArticle.get(articleId);
-  }
-
   function localData() {
     try {
       const parsed = JSON.parse(storageGet(STORAGE_KEY) || '{}');
@@ -57,108 +47,23 @@
     } catch { return {}; }
   }
 
-  function saveLocalData(data) {
+  function localArticle(articleId) {
+    const data = localData();
+    return data[articleId] && typeof data[articleId] === 'object' ? data[articleId] : {};
+  }
+
+  function setLocalReaction(articleId, reaction, selected) {
+    const data = localData();
+    const article = data[articleId] && typeof data[articleId] === 'object' ? data[articleId] : {};
+    if (selected) article[reaction.key] = { emoji: reaction.emoji, label: reaction.label || '' };
+    else delete article[reaction.key];
+    if (Object.keys(article).length) data[articleId] = article;
+    else delete data[articleId];
     storageSet(STORAGE_KEY, JSON.stringify(data));
   }
 
-  function loadLocal(articleIds) {
-    const data = localData();
-    for (const articleId of articleIds) {
-      const map = emptyArticleState();
-      const saved = data[articleId] && typeof data[articleId] === 'object' ? data[articleId] : {};
-      for (const [key, value] of Object.entries(saved)) {
-        if (!value || typeof value !== 'object') continue;
-        const emoji = String(value.emoji || '').slice(0, 32);
-        const label = String(value.label || '').slice(0, 32);
-        if (!emoji) continue;
-        map.set(key, { key, emoji, label, count: 1, mine: true });
-      }
-      stateByArticle.set(articleId, map);
-    }
-  }
-
-  async function apiFetch(path, options = {}) {
-    const config = supabaseConfig();
-    if (!config) throw new Error('Supabase is not configured');
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 7000);
-    try {
-      const response = await fetch(`${config.url}/rest/v1/${path}`, {
-        ...options,
-        signal: controller.signal,
-        headers: {
-          apikey: config.key,
-          Authorization: `Bearer ${config.key}`,
-          'X-Client-ID': getClientId(),
-          ...(options.body ? { 'Content-Type': 'application/json' } : {}),
-          ...(options.headers || {}),
-        },
-      });
-      if (!response.ok) throw new Error(`Supabase HTTP ${response.status}`);
-      if (response.status === 204 || response.headers.get('content-length') === '0') return null;
-      const text = await response.text();
-      return text ? JSON.parse(text) : null;
-    } finally {
-      clearTimeout(timeout);
-    }
-  }
-
-  function inFilter(values) {
-    return `in.(${values.map((value) => JSON.stringify(String(value))).join(',')})`;
-  }
-
-  async function loadShared(articleIds) {
-    if (!articleIds.length) return;
-    const ids = inFilter(articleIds);
-    const clientId = getClientId();
-    const countsQuery = new URLSearchParams({
-      select: 'article_id,reaction_key,emoji,label,count',
-      article_id: ids,
-    });
-    const mineQuery = new URLSearchParams({
-      select: 'article_id,reaction_key,emoji,label',
-      article_id: ids,
-      client_id: `eq.${clientId}`,
-    });
-    const [counts, mine] = await Promise.all([
-      apiFetch(`article_reaction_counts?${countsQuery}`),
-      apiFetch(`article_reactions?${mineQuery}`),
-    ]);
-
-    for (const articleId of articleIds) stateByArticle.set(articleId, emptyArticleState());
-    for (const row of Array.isArray(counts) ? counts : []) {
-      const articleId = String(row.article_id || '');
-      const key = String(row.reaction_key || '');
-      const emoji = String(row.emoji || '');
-      if (!articleId || !key || !emoji || !stateByArticle.has(articleId)) continue;
-      stateByArticle.get(articleId).set(key, {
-        key,
-        emoji,
-        label: String(row.label || ''),
-        count: Math.max(0, Number(row.count) || 0),
-        mine: false,
-      });
-    }
-    for (const row of Array.isArray(mine) ? mine : []) {
-      const articleId = String(row.article_id || '');
-      const key = String(row.reaction_key || '');
-      if (!articleId || !key || !stateByArticle.has(articleId)) continue;
-      const map = stateByArticle.get(articleId);
-      const existing = map.get(key) || {
-        key,
-        emoji: String(row.emoji || ''),
-        label: String(row.label || ''),
-        count: 1,
-        mine: false,
-      };
-      existing.mine = true;
-      if (!existing.count) existing.count = 1;
-      map.set(key, existing);
-    }
-  }
-
   function reactionFromEmoji(emoji) {
-    return { key: `emoji:${emoji}`, emoji, label: '' };
+    return PRESETS.find((preset) => preset.emoji === emoji) || { key: `emoji:${emoji}`, emoji, label: '' };
   }
 
   function firstGrapheme(value) {
@@ -179,57 +84,87 @@
     catch { return value.codePointAt(0) > 0x2000; }
   }
 
-  async function sharedToggle(articleId, reaction, currentlyMine) {
-    const clientId = getClientId();
-    if (currentlyMine) {
-      const query = new URLSearchParams({
-        article_id: `eq.${articleId}`,
-        reaction_key: `eq.${reaction.key}`,
-        client_id: `eq.${clientId}`,
+  function reactionCount(articleId, reactionKey) {
+    if (!supabaseConfig()) return localArticle(articleId)[reactionKey] ? 1 : 0;
+    return Number(countsByArticle.get(articleId)?.get(reactionKey)?.count) || 0;
+  }
+
+  function isMine(articleId, reactionKey) {
+    return Boolean(localArticle(articleId)[reactionKey]);
+  }
+
+  async function apiFetch(path, options = {}) {
+    const config = supabaseConfig();
+    if (!config) throw new Error('Supabase is not configured');
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 7000);
+    try {
+      const response = await fetch(`${config.url}/rest/v1/${path}`, {
+        ...options,
+        signal: controller.signal,
+        headers: {
+          apikey: config.key,
+          ...(options.body ? { 'Content-Type': 'application/json' } : {}),
+          ...(options.headers || {}),
+        },
       });
-      await apiFetch(`article_reactions?${query}`, { method: 'DELETE' });
+      if (!response.ok) throw new Error(`Supabase HTTP ${response.status}`);
+      if (response.status === 204 || response.headers.get('content-length') === '0') return null;
+      const text = await response.text();
+      return text ? JSON.parse(text) : null;
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+
+  function inFilter(values) {
+    return `in.(${values.map((value) => JSON.stringify(String(value))).join(',')})`;
+  }
+
+  async function loadSharedCounts(articleIds) {
+    if (!articleIds.length) return;
+    const query = new URLSearchParams({
+      select: 'article_id,reaction_key,emoji,label,count',
+      article_id: inFilter(articleIds),
+    });
+    const rows = await apiFetch(`article_reaction_counts?${query}`);
+    for (const articleId of articleIds) countsByArticle.set(articleId, new Map());
+    for (const row of Array.isArray(rows) ? rows : []) {
+      const articleId = String(row.article_id || '');
+      const key = String(row.reaction_key || '');
+      const emoji = String(row.emoji || '');
+      if (!articleId || !key || !emoji || !countsByArticle.has(articleId)) continue;
+      countsByArticle.get(articleId).set(key, {
+        key,
+        emoji,
+        label: String(row.label || ''),
+        count: Math.max(0, Number(row.count) || 0),
+      });
+    }
+  }
+
+  async function persistShared(articleId, reaction, selected) {
+    const clientId = getClientId();
+    if (selected) {
+      await apiFetch('article_reactions', {
+        method: 'POST',
+        headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' },
+        body: JSON.stringify({
+          article_id: articleId,
+          reaction_key: reaction.key,
+          emoji: reaction.emoji,
+          label: reaction.label || '',
+          client_id: clientId,
+        }),
+      });
       return;
     }
-    await apiFetch('article_reactions', {
-      method: 'POST',
-      headers: { Prefer: 'resolution=ignore-duplicates,return=minimal' },
-      body: JSON.stringify({
-        article_id: articleId,
-        reaction_key: reaction.key,
-        emoji: reaction.emoji,
-        label: reaction.label || '',
-        client_id: clientId,
-      }),
+    const query = new URLSearchParams({
+      article_id: `eq.${articleId}`,
+      reaction_key: `eq.${reaction.key}`,
+      client_id: `eq.${clientId}`,
     });
-  }
-
-  function localToggle(articleId, reaction, currentlyMine) {
-    const data = localData();
-    const article = data[articleId] && typeof data[articleId] === 'object' ? data[articleId] : {};
-    if (currentlyMine) delete article[reaction.key];
-    else article[reaction.key] = { emoji: reaction.emoji, label: reaction.label || '' };
-    if (Object.keys(article).length) data[articleId] = article;
-    else delete data[articleId];
-    saveLocalData(data);
-  }
-
-  function currentReaction(articleId, reaction) {
-    return ensureArticleState(articleId).get(reaction.key) || {
-      ...reaction,
-      count: 0,
-      mine: false,
-    };
-  }
-
-  function updateOptimistically(articleId, reaction, nextMine) {
-    const map = ensureArticleState(articleId);
-    const current = currentReaction(articleId, reaction);
-    map.set(reaction.key, {
-      ...current,
-      ...reaction,
-      mine: nextMine,
-      count: Math.max(0, (Number(current.count) || 0) + (nextMine ? 1 : -1)),
-    });
+    await apiFetch(`article_reactions?${query}`, { method: 'DELETE' });
   }
 
   function showTransientError(card) {
@@ -244,41 +179,36 @@
   }
 
   async function toggleReaction(card, articleId, reaction) {
-    const bar = card.querySelector('.article-reactions');
-    if (!bar || bar.dataset.busy === 'true') return;
-    const before = currentReaction(articleId, reaction);
-    const nextMine = !before.mine;
-    updateOptimistically(articleId, reaction, nextMine);
+    if (pendingArticles.has(articleId)) return;
+    const nextSelected = !isMine(articleId, reaction.key);
+    pendingArticles.add(articleId);
     renderReactionBar(card, articleId);
-    bar.dataset.busy = 'true';
     try {
       if (supabaseConfig()) {
-        await sharedToggle(articleId, reaction, before.mine);
-        await loadShared([articleId]);
+        await persistShared(articleId, reaction, nextSelected);
+        setLocalReaction(articleId, reaction, nextSelected);
+        await loadSharedCounts([articleId]);
       } else {
-        localToggle(articleId, reaction, before.mine);
-        loadLocal([articleId]);
+        setLocalReaction(articleId, reaction, nextSelected);
       }
     } catch {
-      const map = ensureArticleState(articleId);
-      map.set(reaction.key, before);
       showTransientError(card);
     } finally {
-      const liveBar = card.querySelector('.article-reactions');
-      if (liveBar) liveBar.dataset.busy = 'false';
+      pendingArticles.delete(articleId);
       renderReactionBar(card, articleId);
     }
   }
 
   function createReactionButton(card, articleId, reaction) {
-    const state = currentReaction(articleId, reaction);
+    const countValue = reactionCount(articleId, reaction.key);
+    const mine = isMine(articleId, reaction.key);
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = `reaction-chip${state.mine ? ' is-selected' : ''}`;
+    button.className = `reaction-chip${mine ? ' is-selected' : ''}`;
     button.dataset.reactionKey = reaction.key;
-    button.setAttribute('aria-pressed', state.mine ? 'true' : 'false');
+    button.setAttribute('aria-pressed', mine ? 'true' : 'false');
     const name = reaction.label ? `${reaction.emoji} ${reaction.label}` : reaction.emoji;
-    button.setAttribute('aria-label', `${name}${state.count ? ` ${state.count}件` : ''}`);
+    button.setAttribute('aria-label', `${name}${countValue ? ` ${countValue}件` : ''}`);
 
     const emoji = document.createElement('span');
     emoji.className = 'reaction-emoji';
@@ -290,14 +220,26 @@
       label.textContent = reaction.label;
       button.appendChild(label);
     }
-    if (state.count > 0) {
+    if (countValue > 0) {
       const count = document.createElement('span');
       count.className = 'reaction-count';
-      count.textContent = String(state.count);
+      count.textContent = String(countValue);
       button.appendChild(count);
     }
     button.addEventListener('click', () => toggleReaction(card, articleId, reaction));
     return button;
+  }
+
+  function customReactions(articleId) {
+    const merged = new Map();
+    const local = localArticle(articleId);
+    for (const [key, value] of Object.entries(local)) {
+      if (!key.startsWith('preset:') && value?.emoji) merged.set(key, { key, emoji: String(value.emoji), label: String(value.label || '') });
+    }
+    for (const [key, value] of countsByArticle.get(articleId) || []) {
+      if (!key.startsWith('preset:') && Number(value.count) > 0) merged.set(key, value);
+    }
+    return [...merged.values()];
   }
 
   function closeAllPickers(except = null) {
@@ -374,22 +316,18 @@
     if (!bar) {
       bar = document.createElement('div');
       bar.className = 'article-reactions';
-      bar.dataset.articleId = articleId;
       const actions = card.querySelector('.card-actions');
       if (actions) actions.insertAdjacentElement('beforebegin', bar);
       else card.querySelector('.card-content')?.appendChild(bar);
     }
-    const wasBusy = bar.dataset.busy === 'true';
-    const map = ensureArticleState(articleId);
     bar.replaceChildren();
-    bar.dataset.busy = wasBusy ? 'true' : 'false';
+    bar.dataset.articleId = articleId;
+    bar.dataset.busy = pendingArticles.has(articleId) ? 'true' : 'false';
 
     const chips = document.createElement('div');
     chips.className = 'reaction-chips';
     for (const preset of PRESETS) chips.appendChild(createReactionButton(card, articleId, preset));
-    for (const reaction of [...map.values()].filter((item) => !item.key.startsWith('preset:') && item.count > 0)) {
-      chips.appendChild(createReactionButton(card, articleId, reaction));
-    }
+    for (const reaction of customReactions(articleId)) chips.appendChild(createReactionButton(card, articleId, reaction));
 
     const add = document.createElement('button');
     add.type = 'button';
@@ -425,18 +363,10 @@
     const articleIds = [...new Set(cards.map((card) => card.dataset.articleId || card.dataset.sourceUrl || '').filter(Boolean))];
     for (const card of cards) {
       const articleId = card.dataset.articleId || card.dataset.sourceUrl || '';
-      if (!articleId) continue;
-      ensureArticleState(articleId);
-      renderReactionBar(card, articleId);
+      if (articleId) renderReactionBar(card, articleId);
     }
-    if (!articleIds.length) return;
-
-    try {
-      if (supabaseConfig()) await loadShared(articleIds);
-      else loadLocal(articleIds);
-    } catch {
-      loadLocal(articleIds);
-    }
+    if (!articleIds.length || !supabaseConfig()) return;
+    try { await loadSharedCounts(articleIds); } catch {}
     if (generation !== renderGeneration) return;
     for (const card of cards) {
       const articleId = card.dataset.articleId || card.dataset.sourceUrl || '';
