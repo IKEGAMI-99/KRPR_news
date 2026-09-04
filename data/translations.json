@@ -2976,5 +2976,20 @@
       "updatedAtEpoch": 1788495660
     }
   },
-  "failures": {}
+  "failures": {
+    "https://www.bilibili.com/opus/1242648287020843016": {
+      "contentHash": "5bc6d20913a23ee316f1a51e",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788498472,
+      "retryAfterEpoch": 1788509272
+    },
+    "https://www.bilibili.com/opus/1241862310188810276": {
+      "contentHash": "6379e58723e58b86adb551e3",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788499397,
+      "retryAfterEpoch": 1788510197
+    }
+  }
 }
