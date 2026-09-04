@@ -2189,40 +2189,10 @@
     "height": 3840,
     "checkedAt": 1788545721
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1981701649505669120/img/YGrDJIK0LiHtb3DC.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788545721
-  },
-  "https://pbs.twimg.com/media/G1qIgpVaAAEV9wI?format=jpg&name=orig": {
-    "ok": true,
-    "width": 675,
-    "height": 1200,
-    "checkedAt": 1788545721
-  },
-  "https://pbs.twimg.com/media/G38bZypWkAAh4SM?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2400,
-    "height": 3840,
-    "checkedAt": 1788545721
-  },
-  "https://pbs.twimg.com/media/G0nW1hVaMAEPNVd?format=jpg&name=orig": {
-    "ok": true,
-    "width": 750,
-    "height": 1200,
-    "checkedAt": 1788545721
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIEB8i1ChBAAgzBNIf2MAUAwirJ1iP7xMBKAKW~tplv-tiktokx-origin.image?dr=9636&x-expires=1788717600&x-signature=6tUUbFY21OX9YjUiJYq%2FIuuGbz0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788545721
-  },
-  "https://pbs.twimg.com/media/G2FPr-KakAE3bW4?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2400,
-    "height": 3840,
     "checkedAt": 1788545721
   },
   "https://kotaku.com/app/uploads/2026/09/image-2026-09-04T100400.919.jpg": {
@@ -2243,46 +2213,82 @@
     "height": 1080,
     "checkedAt": 1788545721
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1981704465230012416/img/3KqR0DcqCpnf-WsC.jpg": {
+  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788545721
+    "width": 1010,
+    "height": 505,
+    "checkedAt": 1788549124
   },
-  "https://pbs.twimg.com/media/G38adAsXcAAurfG?format=jpg&name=orig": {
+  "https://media.pocketgamer.com/images/notifs-track-this.jpg": {
     "ok": true,
-    "width": 2160,
-    "height": 3840,
-    "checkedAt": 1788545721
+    "width": 900,
+    "height": 295,
+    "checkedAt": 1788549124
   },
-  "https://pbs.twimg.com/media/G2FRwDybQAATBWy?format=jpg&name=orig": {
+  "https://media.pocketgamer.com/artwork/na-34037-1691144933/pocketgamer-top-re_jpg_820.jpg": {
     "ok": true,
-    "width": 2133,
-    "height": 4096,
-    "checkedAt": 1788545721
+    "width": 820,
+    "height": 410,
+    "checkedAt": 1788549124
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=e999ad3b-2a7f-4385-bb96-8316689465bb&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788545719386&request_path=%2Fmoment%2F843800593246981927": {
+  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab_jpg_820.jpg": {
+    "ok": true,
+    "width": 820,
+    "height": 410,
+    "checkedAt": 1788549124
+  },
+  "https://www.youtube.com/embed/IKHhRj_v4mw": {
+    "ok": false,
+    "width": 0,
+    "height": 0,
+    "checkedAt": 1788549124
+  },
+  "https://media.pocketgamer.com/artwork/na-34037-1687424977/life-makeover-ios-android-ocean-update-cover_jpg_820.jpg": {
+    "ok": true,
+    "width": 820,
+    "height": 410,
+    "checkedAt": 1788549124
+  },
+  "https://media.pocketgamer.com/artwork/na-34037-1682679349/lifemakeover-launch-date-keyart_jpg_820.jpg": {
+    "ok": true,
+    "width": 820,
+    "height": 410,
+    "checkedAt": 1788549124
+  },
+  "https://media.pocketgamer.com/artwork/na-34037-1678465382/life-makeover-keyart_jpg_820.jpg": {
+    "ok": true,
+    "width": 820,
+    "height": 410,
+    "checkedAt": 1788549124
+  },
+  "https://media.pocketgamer.com/artwork/na-34037-1683719376/life-makeover-launch-keyart-upscaled_jpg_820.jpg": {
+    "ok": true,
+    "width": 820,
+    "height": 461,
+    "checkedAt": 1788549124
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=26fb82ec-cbb7-44dc-9b91-2983dc651d0f&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788549122833&request_path=%2Fmoment%2F843800593246981927": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788545721
+    "checkedAt": 1788549124
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=9550ebfe-e708-4492-a349-697e2d08c261&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788545719405&request_path=%2Fmoment%2F827191805966550915": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=186b51c6-d9fc-473d-94e0-5db09a486d29&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788549122789&request_path=%2Fmoment%2F828260941740116010": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788545721
+    "checkedAt": 1788549124
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=cf751118-b2c1-4ccb-a185-1dc550efb102&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788545719852&request_path=%2Fmoment%2F828260941740116010": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=2d4c47f1-f882-4a73-8b80-9a8e76afa6be&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788549122852&request_path=%2Fmoment%2F827191805966550915": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788545721
+    "checkedAt": 1788549124
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=f570668e-b1b1-4ebc-a643-5df11fc090c3&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788545719870&request_path=%2Fmoment%2F821067872284446124": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=0922c4a8-aef6-45f2-9a30-9b52c13c045b&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788549122747&request_path=%2Fmoment%2F821067872284446124": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788545721
+    "checkedAt": 1788549124
   }
 }
