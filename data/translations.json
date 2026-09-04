@@ -2864,6 +2864,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788475838
+    },
+    "https://www.bilibili.com/opus/1244032125492002840": {
+      "contentHash": "8eee55840434173528d794a1",
+      "titleJa": "「天使の卵育成計画」期間限定イベントが正式に開始 #トップ層の卵生# 全新4.4バージョン・神迹初誕 9月1日〜9月21日限定ログイン",
+      "bodyJa": "「天使の卵育成計画」期間限定イベントが正式に開始されました。\n#トップ層の卵生# 全新4.4バージョン・神迹初誕 9月1日〜9月21日限定ログイン！\n\n🎊あなただけの運命の天使の卵を育成しましょう🎊\n⏰【イベント期間】\n9月4日10:00〜 9月13日23:59\n📍【イベント入口】\n1.ゲーム内-福利-天使の卵育成\n2.ゲーム外入口：\n🎁【イベント報酬】\nイベント期間中、イベントページに入り「天使の卵育成計画」に参加し、指定されたイベントミッションを完了すると、限定手持ちアイテム「雪覆穹星」、限定称号「天使のプレイヤー」、トレンドカラーカードなどのゲーム内アイテムが獲得できます！イベントをシェアすると、「トップ層の誕生」シリーズの限定デザインアイテムやフォトステッカーがサプライズでドロップする特典もあります！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・イベント開始: 「天使の卵育成計画」が正式に開始\n・イベント期間: 9月4日10:00〜 9月13日23:59\n・イベント内容: イベントページでミッションを完了し、限定手持ちアイテム「雪覆穹星」や限定称号「天使のプレイヤー」などを獲得\n・特典: イベントシェアで「トップ層の誕生」シリーズの限定デザインアイテムやフォトステッカーがドロップする",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788488230
+    },
+    "https://www.bilibili.com/opus/1244024394534092817": {
+      "contentHash": "01971184de92942cf2ece959",
+      "titleJa": "VME応援計画 | 応援告知 #トップスターの卵生# 全新4.4バージョン・神跡初誕9月1日〜9月21日期間限定ログイン",
+      "bodyJa": "VME応援計画 | 応援告知\n#トップスターの卵生# 全新4.4バージョン・神跡初誕9月1日〜9月21日期間限定ログイン！\n✨美しい音楽と輝く星々が、\n✨世界中の万物に響き渡る。\n✨セシリア専用の応援ボードを心を込めてお届けします——さらに多くの応援形式があなたを待っています！\n📌本日より、プレイヤーの皆様は「応援リレー | xxxx」というタイトル形式で、神跡初誕・セシリア専用の応援コンテンツを投稿してください。ハッシュタグ #トップスターの卵生48h応援リレー# を付けてください。summerがハッシュタグの下で、質の高い作品をランダムにピックアップします。\n以閃亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイする",
+      "summaryJa": "・イベント: 神跡初誕・セシリア専用応援イベントが開催\n・期間: 9月1日〜9月21日（期間限定ログイン）\n・参加方法: 「応援リレー | xxxx」の形式で応援コンテンツを投稿し、ハッシュタグ #トップスターの卵生48h応援リレー# を付ける\n・特典: summerが投稿された作品から質の高いものをランダムにピックアップする",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788488317
+    },
+    "https://www.pocketgamer.com/life-makeover/sanrio-collab/": {
+      "contentHash": "137a0a03f41af468023be298",
+      "titleJa": "Life Makeoverがサンリオのハローキティとコラボレーション",
+      "bodyJa": "着せ替え・ソーシャルシミュレーションゲーム『Life Makeover』が、ハローキティの製造元であるサンリオと再びコラボレーションを行います。このコラボレーションでは、多数の新しい衣装セットやアライアンスなどが登場します。衣装はサンリオからインスピレーションを得ています。",
+      "summaryJa": "・追加: サンリオのハローキティとのコラボレーションが実施される\n・内容: 新しい衣装セットやアライアンスなどが登場する\n・衣装のインスピレーション: サンリオから得られている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788488358
     }
   },
   "failures": {
