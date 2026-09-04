@@ -1,38 +1,45 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-04T21:13:51.168367+00:00",
+  "updatedAt": "2026-09-04T21:23:20.029174+00:00",
   "summary": {
     "todayViews": 1,
-    "weekViews": 230,
-    "monthViews": 584,
+    "weekViews": 231,
+    "monthViews": 585,
     "monthUsers": 49
   },
   "trend": [
     {
-      "label": "08/28",
-      "value": 255
-    },
-    {
-      "label": "09/04",
-      "value": 118
-    },
-    {
-      "label": "08/29",
-      "value": 95
-    },
-    {
-      "label": "09/03",
-      "value": 87
-    },
-    {
-      "label": "08/30",
-      "value": 24
-    },
-    {
+      "date": "2026-08-27",
       "label": "08/27",
       "value": 4
     },
     {
+      "date": "2026-08-28",
+      "label": "08/28",
+      "value": 255
+    },
+    {
+      "date": "2026-08-29",
+      "label": "08/29",
+      "value": 95
+    },
+    {
+      "date": "2026-08-30",
+      "label": "08/30",
+      "value": 24
+    },
+    {
+      "date": "2026-09-03",
+      "label": "09/03",
+      "value": 87
+    },
+    {
+      "date": "2026-09-04",
+      "label": "09/04",
+      "value": 119
+    },
+    {
+      "date": "2026-09-05",
       "label": "09/05",
       "value": 1
     }
@@ -40,7 +47,7 @@
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 575
+      "value": 576
     },
     {
       "label": "/docs/",
