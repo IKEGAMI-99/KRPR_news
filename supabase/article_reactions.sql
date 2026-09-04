@@ -1,5 +1,5 @@
 -- Kirapara News article reactions
--- Browser clients may read aggregate counts, but raw reaction rows are visible only to the matching client id.
+-- Public clients can read aggregate counts, but raw browser identifiers are not readable.
 
 create extension if not exists pgcrypto;
 
@@ -32,41 +32,23 @@ create index if not exists article_reactions_client_id_idx
 alter table public.article_reactions enable row level security;
 alter table public.article_reaction_counts enable row level security;
 
-create or replace function public.kirapara_request_client_id()
-returns uuid
-language sql
-stable
-set search_path = ''
-as $$
-  select nullif(
-    coalesce(current_setting('request.headers', true), '{}')::jsonb ->> 'x-client-id',
-    ''
-  )::uuid;
-$$;
-
-revoke all on function public.kirapara_request_client_id() from public;
-grant execute on function public.kirapara_request_client_id() to anon, authenticated;
-
+-- Raw rows intentionally have no SELECT policy/grant. This keeps client UUIDs private.
+drop policy if exists "article reactions are readable" on public.article_reactions;
 drop policy if exists "clients can read own article reactions" on public.article_reactions;
-create policy "clients can read own article reactions"
-on public.article_reactions
-for select
-to anon, authenticated
-using (client_id = public.kirapara_request_client_id());
-
 drop policy if exists "clients can insert own article reactions" on public.article_reactions;
-create policy "clients can insert own article reactions"
+drop policy if exists "clients can delete own article reactions" on public.article_reactions;
+
+create policy "clients can insert article reactions"
 on public.article_reactions
 for insert
 to anon, authenticated
-with check (client_id = public.kirapara_request_client_id());
+with check (client_id is not null);
 
-drop policy if exists "clients can delete own article reactions" on public.article_reactions;
-create policy "clients can delete own article reactions"
+create policy "clients can delete article reactions"
 on public.article_reactions
 for delete
 to anon, authenticated
-using (client_id = public.kirapara_request_client_id());
+using (true);
 
 drop policy if exists "reaction counts are public" on public.article_reaction_counts;
 create policy "reaction counts are public"
@@ -75,7 +57,9 @@ for select
 to anon, authenticated
 using (true);
 
-grant select, insert, delete on public.article_reactions to anon, authenticated;
+revoke all on public.article_reactions from anon, authenticated;
+revoke all on public.article_reaction_counts from anon, authenticated;
+grant insert, delete on public.article_reactions to anon, authenticated;
 grant select on public.article_reaction_counts to anon, authenticated;
 
 create or replace function public.kirapara_sync_reaction_count()
@@ -100,8 +84,11 @@ begin
     update public.article_reaction_counts
     set count = greatest(0, count - 1)
     where article_id = old.article_id and reaction_key = old.reaction_key;
+
     delete from public.article_reaction_counts
-    where article_id = old.article_id and reaction_key = old.reaction_key and count <= 0;
+    where article_id = old.article_id
+      and reaction_key = old.reaction_key
+      and count <= 0;
     return old;
   end if;
 
@@ -133,6 +120,6 @@ do update set
   count = excluded.count;
 
 comment on table public.article_reactions is
-  'Discord-style reactions for Kirapara News articles. Raw rows are scoped to the requesting browser client id.';
+  'Discord-style Kirapara News reactions. Raw rows are write-only for public browser clients.';
 comment on table public.article_reaction_counts is
-  'Public aggregate counts for Kirapara News article reactions.';
+  'Public aggregate reaction counts for Kirapara News articles.';
