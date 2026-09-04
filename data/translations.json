@@ -1766,14 +1766,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
+      "contentHash": "851117a5bacb325e13b0e444",
       "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
-      "summaryJa": "・追加: シアン CYANが「#Stylight #永遠の誓い」の投稿を実施",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788452230
+      "updatedAtEpoch": 1788517114
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -3114,6 +3114,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788513431
+    },
+    "https://x.com/kirapara_JP/status/2095814133036024067": {
+      "contentHash": "0b8110d68a96d495e419ceb9",
+      "titleJa": "多数のペットウェア期間限定で復刻 パックにはペットウェアの他、動作ポーズやペットお世話アイテムも",
+      "bodyJa": "多数のペットウェア期間限定で復刻\n\nパックにはペットウェアの他、動作ポーズやペットお世話アイテムも。\n早速チェックしてくださいね👀\n\n販売期間⏰\n9月5日10:30～9月16日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 多数のペットウェアが期間限定で復刻\n・内容: ペットウェアの他、動作ポーズやペットお世話アイテムも含まれる\n・期間: 9月5日10:30〜9月16日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788516991
+    },
+    "https://weibo.com/7521830234/RgvRdv7Gq": {
+      "contentHash": "60f128c552f704ae721718c7",
+      "titleJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# VME応援計画 | 応援告知 新バージョン4.4「神迹初诞」9月1日〜9月21日期間限定ログイン",
+      "bodyJa": "以闪亮之名 #以闪亮之名# #トップスターの卵生# \n\nVME応援計画 | 応援告知\n新バージョン4.4「神迹初诞」が9月1日から9月21日まで期間限定で登場！\n✨美しい音楽と輝く星々が、\n✨世界中の万物に響き渡る。\n✨セシリア専用の応援ボードを心を込めてお届けします——さらに多くの応援形式があなたを待っています！\n📌本日より、プレイヤーは「応援リレー | xxxx」というタイトル形式で「神迹初诞」セシリア専用の応援コンテンツを投稿できます。ハッシュタグ #トップスターの卵生48h応援リレー# を付けてください。summerがハッシュタグの下でランダムに優れた作品をピックアップします。\n\n💎ダウンロードはこちら： Webリンク \n💎輝く作品上映シーズンイベントはこちら： Webリンク",
+      "summaryJa": "・新バージョン4.4「神迹初诞」が9月1日から9月21日まで期間限定で登場\n・セシリア専用の応援ボードが提供される\n・プレイヤーは「応援リレー | xxxx」の形式で応援コンテンツを投稿可能\n・ハッシュタグ #トップスターの卵生48h応援リレー# を付けて投稿すると、summerが優れた作品をランダムにピックアップする",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788517079
     }
   },
   "failures": {
