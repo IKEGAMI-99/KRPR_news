@@ -3406,7 +3406,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "d99a1f06150353d89ccd693c",
@@ -5795,6 +5795,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]
