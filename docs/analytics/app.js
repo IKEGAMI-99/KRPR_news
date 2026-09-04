@@ -2,6 +2,22 @@ const byId = (id) => document.getElementById(id);
 const formatNumber = (value) => new Intl.NumberFormat('ja-JP').format(Number(value || 0));
 const safeItems = (items) => Array.isArray(items) ? items : [];
 
+const LABELS = {
+  '(direct)': '直接アクセス',
+  '(not set)': '不明',
+  '(data not available)': '取得不可',
+  mobile: 'モバイル',
+  desktop: 'PC',
+  tablet: 'タブレット',
+  Japan: '日本',
+  'United States': 'アメリカ合衆国',
+};
+
+function displayLabel(value) {
+  const label = String(value || '—');
+  return LABELS[label] || label;
+}
+
 function showEmpty(root) {
   const message = document.createElement('p');
   message.className = 'muted';
@@ -16,12 +32,13 @@ function renderBars(id, items) {
   root.replaceChildren();
   const max = Math.max(...values.map((item) => Number(item?.value || 0)), 1);
   for (const item of values) {
-    const labelText = String(item?.label || '—');
+    const rawLabel = String(item?.label || '—');
+    const labelText = displayLabel(rawLabel);
     const value = Math.max(0, Number(item?.value || 0));
     const row = document.createElement('div');
     row.className = 'bar-row';
     const label = document.createElement('span');
-    label.title = labelText;
+    label.title = rawLabel === labelText ? labelText : `${labelText} (${rawLabel})`;
     label.textContent = labelText;
     const track = document.createElement('div');
     track.className = 'bar-track';
@@ -61,9 +78,31 @@ function renderPages(items) {
   });
 }
 
-function renderTrend(items) {
+function trendTime(item, updatedAt) {
+  const explicit = Date.parse(String(item?.date || ''));
+  if (Number.isFinite(explicit)) return explicit;
+
+  const match = String(item?.label || '').match(/^(\d{2})\/(\d{2})$/);
+  if (!match) return Number.MAX_SAFE_INTEGER;
+
+  const anchor = new Date(updatedAt || Date.now());
+  const month = Number(match[1]);
+  const day = Number(match[2]);
+  let year = anchor.getUTCFullYear();
+  let candidate = Date.UTC(year, month - 1, day);
+  if (candidate > anchor.getTime() + 86400000) {
+    year -= 1;
+    candidate = Date.UTC(year, month - 1, day);
+  }
+  return candidate;
+}
+
+function renderTrend(items, updatedAt) {
   const root = byId('trendChart');
-  const values = safeItems(items);
+  const values = safeItems(items)
+    .map((item, index) => ({ item, index, time: trendTime(item, updatedAt) }))
+    .sort((a, b) => a.time - b.time || a.index - b.index)
+    .map(({ item }) => item);
   if (!values.length) { showEmpty(root); return; }
   root.replaceChildren();
   const max = Math.max(...values.map((item) => Number(item?.value || 0)), 1);
@@ -73,7 +112,7 @@ function renderTrend(items) {
     bar.className = 'trend-bar';
     bar.style.height = `${Math.min(100, Math.max(3, value / max * 100))}%`;
     const tooltip = document.createElement('span');
-    tooltip.textContent = `${String(item?.label || '—')}: ${formatNumber(value)}`;
+    tooltip.textContent = `${String(item?.label || '—')}: ${formatNumber(value)} PV`;
     bar.appendChild(tooltip);
     root.appendChild(bar);
   }
@@ -92,7 +131,7 @@ async function load() {
     byId('updatedAt').textContent = data?.updatedAt
       ? `最終更新 ${new Date(data.updatedAt).toLocaleString('ja-JP')}`
       : 'データ取得中…';
-    renderTrend(data?.trend);
+    renderTrend(data?.trend, data?.updatedAt);
     renderPages(data?.pages);
     renderBars('referrers', data?.referrers);
     renderBars('regions', data?.regions);
