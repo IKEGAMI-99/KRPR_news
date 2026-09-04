@@ -1,5 +1,5 @@
 -- Kirapara News article reactions
--- Public clients can read aggregate counts, but raw browser identifiers are not readable.
+-- Public clients can read aggregate counts. Raw browser identifiers stay private.
 
 create extension if not exists pgcrypto;
 
@@ -32,23 +32,15 @@ create index if not exists article_reactions_client_id_idx
 alter table public.article_reactions enable row level security;
 alter table public.article_reaction_counts enable row level security;
 
--- Raw rows intentionally have no SELECT policy/grant. This keeps client UUIDs private.
+-- Raw rows have no public policies or grants. Browsers write through the RPC below.
 drop policy if exists "article reactions are readable" on public.article_reactions;
 drop policy if exists "clients can read own article reactions" on public.article_reactions;
 drop policy if exists "clients can insert own article reactions" on public.article_reactions;
 drop policy if exists "clients can delete own article reactions" on public.article_reactions;
+drop policy if exists "clients can insert article reactions" on public.article_reactions;
+drop policy if exists "clients can delete article reactions" on public.article_reactions;
 
-create policy "clients can insert article reactions"
-on public.article_reactions
-for insert
-to anon, authenticated
-with check (client_id is not null);
-
-create policy "clients can delete article reactions"
-on public.article_reactions
-for delete
-to anon, authenticated
-using (true);
+revoke all on public.article_reactions from anon, authenticated;
 
 drop policy if exists "reaction counts are public" on public.article_reaction_counts;
 create policy "reaction counts are public"
@@ -57,10 +49,54 @@ for select
 to anon, authenticated
 using (true);
 
-revoke all on public.article_reactions from anon, authenticated;
 revoke all on public.article_reaction_counts from anon, authenticated;
-grant insert, delete on public.article_reactions to anon, authenticated;
 grant select on public.article_reaction_counts to anon, authenticated;
+
+create or replace function public.kirapara_set_article_reaction(
+  p_article_id text,
+  p_reaction_key text,
+  p_emoji text,
+  p_label text,
+  p_client_id uuid,
+  p_selected boolean
+)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if p_article_id is null or char_length(p_article_id) not between 1 and 512 then
+    raise exception 'invalid article id';
+  end if;
+  if p_reaction_key is null or char_length(p_reaction_key) not between 1 and 128 then
+    raise exception 'invalid reaction key';
+  end if;
+  if p_emoji is null or char_length(p_emoji) not between 1 and 32 then
+    raise exception 'invalid emoji';
+  end if;
+  if p_label is null or char_length(p_label) > 32 then
+    raise exception 'invalid label';
+  end if;
+  if p_client_id is null then
+    raise exception 'invalid client id';
+  end if;
+
+  if p_selected then
+    insert into public.article_reactions(article_id, reaction_key, emoji, label, client_id)
+    values (p_article_id, p_reaction_key, p_emoji, p_label, p_client_id)
+    on conflict (article_id, reaction_key, client_id) do nothing;
+  else
+    delete from public.article_reactions
+    where article_id = p_article_id
+      and reaction_key = p_reaction_key
+      and client_id = p_client_id;
+  end if;
+end;
+$$;
+
+revoke all on function public.kirapara_set_article_reaction(text, text, text, text, uuid, boolean) from public;
+grant execute on function public.kirapara_set_article_reaction(text, text, text, text, uuid, boolean) to anon, authenticated;
 
 create or replace function public.kirapara_sync_reaction_count()
 returns trigger
@@ -120,6 +156,8 @@ do update set
   count = excluded.count;
 
 comment on table public.article_reactions is
-  'Discord-style Kirapara News reactions. Raw rows are write-only for public browser clients.';
+  'Discord-style Kirapara News reactions. Raw rows are private and changed only through a public RPC.';
 comment on table public.article_reaction_counts is
   'Public aggregate reaction counts for Kirapara News articles.';
+comment on function public.kirapara_set_article_reaction(text, text, text, text, uuid, boolean) is
+  'Sets or clears one reaction for a browser UUID without exposing raw reaction rows.';
