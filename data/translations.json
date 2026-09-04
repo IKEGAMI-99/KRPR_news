@@ -2936,10 +2936,10 @@
     },
     "https://www.bilibili.com/opus/1242648287020843016": {
       "contentHash": "5bc6d20913a23ee316f1a51e",
-      "failedAttempts": 12,
-      "failedRuns": 4,
-      "lastFailureAtEpoch": 1788482589,
-      "retryAfterEpoch": 1788493389
+      "failedAttempts": 15,
+      "failedRuns": 5,
+      "lastFailureAtEpoch": 1788493963,
+      "retryAfterEpoch": 1788504763
     }
   }
 }
