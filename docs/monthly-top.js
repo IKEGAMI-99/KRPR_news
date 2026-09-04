@@ -11,6 +11,13 @@
     GLOBAL: '🌐 Global',
   };
   const RANKS = ['🥇', '🥈', '🥉'];
+  const publishedFormatter = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    month: 'numeric',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
   let cachedRows = [];
   let lastLoadedAt = 0;
   let loading = null;
@@ -39,6 +46,14 @@
       key: `${year}-${month}-01`,
       label: `${Number(year)}年${Number(month)}月`,
     };
+  }
+
+  function publishedDate(item) {
+    const seconds = Number(item?.publishedAtEpoch);
+    if (Number.isFinite(seconds) && seconds > 0) {
+      try { return publishedFormatter.format(new Date(seconds * 1000)); } catch {}
+    }
+    return String(item?.publishedLabel || '').trim();
   }
 
   function safeImageUrls(item) {
@@ -131,7 +146,11 @@
     copy.className = 'monthly-top-copy';
     const meta = document.createElement('div');
     meta.className = 'monthly-top-meta';
-    meta.textContent = [REGION[item.region] || item.region, item.platform || '公式'].filter(Boolean).join(' · ');
+    meta.textContent = [
+      REGION[item.region] || item.region,
+      item.platform || '公式',
+      publishedDate(item),
+    ].filter(Boolean).join(' · ');
     const heading = document.createElement('h3');
     heading.className = 'monthly-top-card-title';
     heading.textContent = title;
