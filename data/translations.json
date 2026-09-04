@@ -1766,14 +1766,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "851117a5bacb325e13b0e444",
+      "contentHash": "c9c6007c5d3d504eea7a61d5",
       "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYANが「#Stylight #永遠の誓い」の投稿を実施",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788517114
+      "updatedAtEpoch": 1788525133
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -3144,7 +3144,25 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788520525
+    },
+    "https://x.com/LifeMakeover510/status/2095836773473534094": {
+      "contentHash": "83378ff02cdad89e97e78944",
+      "titleJa": "VME | 運命の卵を孵化させよう 💖 トップスターの誕生を見届けよう",
+      "bodyJa": "VME | 運命の卵を孵化させよう 💖 トップスターの誕生を見届けよう！💥\n\n📢Vvanna Music Entertainmentの謎の卵殻で...\n📢「いいね」が一つ増えるごとに幸運のエネルギーが蓄積されます！\n📢「シェア」が一つ増えるごとに幸運の輝きが生まれます！\n✨そして、あなたの運命が「孵化」するのを見届けましょう！\n\n#LifeMakeover",
+      "summaryJa": "・イベント名: VME | Hatch Your Luck 💖 Watch as A Top Star is Hatched\n・内容: Vvanna Music Entertainmentの謎の卵殻で、いいねやシェアによって幸運のエネルギーが蓄積され、運命が孵化するイベント\n・ハッシュタグ: #LifeMakeover",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788524370
     }
   },
-  "failures": {}
+  "failures": {
+    "https://www.bilibili.com/opus/1241862310188810276": {
+      "contentHash": "6379e58723e58b86adb551e3",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788525113,
+      "retryAfterEpoch": 1788535913
+    }
+  }
 }
