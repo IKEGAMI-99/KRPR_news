@@ -3034,6 +3034,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788511057
+    },
+    "https://x.com/kirapara_JP/status/1953418346109837522": {
+      "contentHash": "5c8bab7a48948ad9fe7b289d",
+      "titleJa": "＼#キラパラ×#ドラブラ コラボイイベント開催中／ イベント『ライチツアー』の動画を公開✨ リポスト&いいねキャンペーンを実施🥰 5名様に #Amazonギフト券 ...",
+      "bodyJa": "＼#キラパラ×#ドラブラ コラボイイベント開催中／\nイベント『ライチツアー』の動画を公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n5名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆8月10日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・イベント『ライチツアー』の動画が公開されました\n・リポスト＆いいねキャンペーンを実施中\n・参加条件は@kirapara_JPのフォローと本ポストのリポスト\n・キャンペーン締切は8月10日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511172
+    },
+    "https://x.com/kirapara_JP/status/1946857617462378939": {
+      "contentHash": "e480233c3f3ec1120d133686",
+      "titleJa": "限定ガチャイベント『絡み合う心』まもなく開催",
+      "bodyJa": "限定ガチャイベント『絡み合う心』まもなく開催！\n星5セット「クモノイト」、「ブラッドソーン」の動画公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n20名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆7月24日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント「絡み合う心」がまもなく開催される\n・星5セット「クモノイト」と「ブラッドソーン」の動画が公開された\n・リポスト＆いいねキャンペーンを実施し、20名に#Amazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのリポストで、締切は7月24日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511208
+    },
+    "https://x.com/kirapara_JP/status/1938839782127468641": {
+      "contentHash": "9ddc19874caacf483faf41f7",
+      "titleJa": "限定ガチャイベント『時墟の聖域』まもなく開催",
+      "bodyJa": "限定ガチャイベント『時墟の聖域』まもなく開催！\n星6セット「聖権の領域」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆7月3日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『時墟の聖域』がまもなく開催されます\n・星6セット「聖権の領域」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は7月3日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788511242
     }
   },
   "failures": {
