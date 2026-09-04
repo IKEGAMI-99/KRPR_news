@@ -2954,6 +2954,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788495492
+    },
+    "https://x.com/LifeMakeover510/status/1959480792347713715": {
+      "contentHash": "90e9cbfef286dc7682a4a40c",
+      "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... ★6セット「Invincible Moon」登場",
+      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」が近日公開されます。\n\nLife Makeover 新バージョン | ★6セット「Invincible Moon」\n\n【Time of Hunt】\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+      "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC\n・イベント名: Time of Hunt",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788495609
+    },
+    "https://x.com/LifeMakeover510/status/1957744354157633567": {
+      "contentHash": "f1e72365a505188583ab4e6a",
+      "titleJa": "Life Makeover 新バージョン [Dawning Aroma] が登場",
+      "bodyJa": "Life Makeover 新バージョン [Dawning Aroma] が登場しました！\n\nGreedy Bearを見つけてください。\nイベント期間中に獲得したSweet Vouchersは、★5セット「Unfinished Form」と交換できます。\n\n[イベント期間]\n8月20日 09:00 - 9月3日 05:00 UTC\n#LifeMakeover",
+      "summaryJa": "・追加: Life Makeover 新バージョン [Dawning Aroma] が登場\n・イベント: Greedy Bearを見つけるとSweet Vouchersを獲得可能\n・交換: Sweet Vouchersで★5セット「Unfinished Form」と交換可能\n・期間: 8月20日 09:00 - 9月3日 05:00 UTC",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788495660
     }
   },
   "failures": {
