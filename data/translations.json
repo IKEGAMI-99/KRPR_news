@@ -3396,6 +3396,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788592759
+    },
+    "https://www.bilibili.com/opus/1244495981985136648": {
+      "contentHash": "de4f069500db84f34f73107c",
+      "titleJa": "ティータイムに参加して★4限定セットを入手しよう",
+      "bodyJa": "ティータイムに参加して、★4限定セットを入手しましょう！\n\n🌹バラ咲く夜、すべての願いが叶います。\n\nティータイムポイントを貯めることで、★4セット【瑰梦奇迹】、写真撮影萌拍【森野欢宴】、および様々な素材アイテムの報酬を獲得できます！\n【イベント期間】\n9月6日10:00〜9月13日5:00\n【報酬受け取り期間】\n9月6日10:00〜9月14日5:00\n【イベントルール】\nイベント期間中、日程イベントに参加してアクティビティ度を高めることで「甜梦次数」を獲得できます。1日あたり最大6回まで獲得可能です。甜梦次数はイベント期間中にリセットされないので、忘れずに使用してください。1回ごとにランダムなマスをめくることで甜梦次数が1減り、同時に報酬を獲得できます。全マスをめくると、異なる額の甜梦ポイント、潮流色卡、逐光邀请函などの様々な素材アイテムの報酬が追加で獲得できます！\n詳細なルールはゲーム内のイベント画面のヘルプ説明でご確認ください。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+      "summaryJa": "・追加: ★4限定セット【瑰梦奇迹】と★4セット【森野欢宴】が登場\n・期間: 9月6日10:00〜9月13日5:00\n・報酬受け取り期間: 9月6日10:00〜9月14日5:00\n・入手方法: ティータイムポイントを貯めることで獲得可能\n・ルール: 日程イベントで「甜梦次数」を獲得し、マスをめくることで報酬を獲得",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788596219
+    },
+    "https://x.com/kirapara_JP/status/2096146315386491350": {
+      "contentHash": "efec79bf4badf738dfd5128a",
+      "titleJa": "明日よりゲーム内イベント『バルーンダーツ』を開催✨ イベント期間⏰ 9月6日10:30～9月13日5:00 イベントに参加して、 星4セット『風が拾った心』をゲットしよ...",
+      "bodyJa": "明日よりゲーム内イベント『バルーンダーツ』を開催✨\n\nイベント期間⏰\n9月6日10:30～9月13日5:00\n\nイベントに参加して、 星4セット『風が拾った心』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ゲーム内イベント『バルーンダーツ』が開催される\n・期間: 9月6日10:30から9月13日5:00まで\n・入手: イベントに参加することで星4セット『風が拾った心』を入手できる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788596252
     }
   },
   "failures": {
