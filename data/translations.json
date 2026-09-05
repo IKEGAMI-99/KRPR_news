@@ -1755,14 +1755,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
+      "contentHash": "851117a5bacb325e13b0e444",
       "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
-      "summaryJa": "・追加: シアン CYANが「#Stylight #永遠の誓い」の投稿を実施",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788584861
+      "updatedAtEpoch": 1788599818
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -3427,6 +3427,26 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788599098,
       "managedBySol": true
+    },
+    "https://x.com/stylight_kr/status/2096162671968076135": {
+      "contentHash": "2760bc5c9be26011952429ce",
+      "titleJa": "【NEW】『終焉の庭園』背景パック予告",
+      "bodyJa": "【NEW】『終焉の庭園』背景パック予告\n\n赤く濃い装飾の間から儚いシルエットが浮かび上がり、\n終焉を前にした庭園で最後の舞が始まります。\n\n🕙 9/15 10:30 〜 9/28 23:59\n\n[パック情報]\n- ライブ撮影ポーズ「サロメの舞」\n- 撮影背景「赤い黙示録」\n- 撮影ポーズ「風の招待」\n- カメラムーブ「サロメの舞」\n- チャット吹き出し「夜の密書」\n- BGM「サロメの舞」\n- トレンドカラーカード ×26\n- 出会いのもとめる鍵 ×40\n\n※詳細については、リリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『終焉の庭園』背景パックが予告された\n・期間: 9/15 10:30 〜 9/28 23:59\n・内容: ライブ撮影ポーズ「サロメの舞」、撮影背景「赤い黙示録」などを含む\n・特典: トレンドカラーカード ×26、出会いのもとめる鍵 ×40",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788599714
+    },
+    "https://x.com/stylight_kr/status/2096161417749733433": {
+      "contentHash": "84f7b652dde440ac7b117615",
+      "titleJa": "【NEW】『ルーレットファンタジー』パッケージ予告：幸運のルーレットを回して、特別な報酬の主役になろう",
+      "bodyJa": "【NEW】『ルーレットファンタジー』パッケージ予告\n\n幸運のルーレットを回して、特別な報酬の主役になってみませんか！\n\n🕙 9/12 10:30 〜 9/25 23:59\n\n [イベント詳細] \n- 限定ミッションを完了すると、「ラッキーパステル」フローティングが含まれたルーレットファンタジーパッケージを破格の割引価格で手に入れることができます！\n\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『ルーレットファンタジー』パッケージの予告\n・期間: 9/12 10:30 〜 9/25 23:59\n・入手: 限定ミッションを完了することで「ラッキーパステル」フローティングを含むルーレットファンタジーパッケージを破格の割引価格で入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788599780
     }
   },
   "failures": {}
