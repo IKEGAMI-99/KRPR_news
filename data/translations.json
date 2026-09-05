@@ -3244,6 +3244,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788582375
+    },
+    "https://x.com/stylight_kr/status/2096080882348269669": {
+      "contentHash": "bb9228270cc5e44eaca77cb3",
+      "titleJa": "SR縁カード、ナシオンの『忘却花』「ここから抜け出せ。前だけを見て走り続けろ、決して振り返るな。」鏡の中の血の涙は致命的な招待状か、それとも静かに送り出す切実な訴えか…",
+      "bodyJa": "SR縁カード、ナシオンの『忘却花』\n\n「ここから抜け出せ。\n前だけを見て走り続けろ、決して振り返るな。」\n\n鏡の中の血の涙は致命的な招待状なのか、\nそれとも静かに送り出す切実な訴えなのか？\n\n眩い花びらがナシオンの体を切り裂く瞬間、\n今度は彼を信じることができるだろうか？\n\n- 期間限定イベント「深淵の花」9月10日(木)にリリース！\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: SR縁カード「ナシオンの『忘却花』」が登場\n・イベント: 期間限定イベント「深淵の花」が9月10日(木)にリリース",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788582684
+    },
+    "https://x.com/stylight_kr/status/2096079624300318883": {
+      "contentHash": "a1cc1cab552593246a603824",
+      "titleJa": "4★『ノストス航路』紹介 全ての航路は騒がしい港へと続き、太陽の痕跡を抱いて深い海へと沈んでいく。その先に待つのは一体誰の運命だろうか…",
+      "bodyJa": "4★『ノストス航路』紹介\n\n全ての航路は騒がしい港へと続き、\n太陽の痕跡を抱いて深い海へと沈んでいきます。\n\nその先に待つのは\n一体誰の運命なのでしょうか？\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 4★『ノストス航路』が紹介される\n・内容: 全ての航路は騒がしい港へと続き、太陽の痕跡を抱いて深い海へと沈んでいく物語が展開される\n・詳細: 詳細についてはゲーム内にて確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788582742
+    },
+    "https://x.com/stylight_kr/status/2096078368177521082": {
+      "contentHash": "426f27826e4bac7dbe4b4614",
+      "titleJa": "5★『創世の炎』着色ガイド：闇に咲く灰色の炎の残響『黒曜の残り火』、純白の溶岩に舞う赤い火花『紅蓮の噴火』、黒い大地に流れる黄金の熱気『黄金龍脈』",
+      "bodyJa": "5★『創世の炎』着色ガイド\n\n闇に咲く灰色の炎の残響『黒曜の残り火』\n純白の溶岩に舞う赤い火花『紅蓮の噴火』\n黒い大地に流れる黄金の熱気『黄金龍脈』\n\n強烈な色彩と新しい雰囲気で生まれ変わった『創世の炎』、\nあなたの心を捉えた色はどれですか？\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 5★『創世の炎』の着色ガイドが公開\n・内容: 『黒曜の残り火』『紅蓮の噴火』『黄金龍脈』の着色情報\n・確認方法: ゲーム内にて詳細を確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788582812
     }
   },
   "failures": {
