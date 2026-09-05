@@ -3316,6 +3316,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788584941
+    },
+    "https://x.com/kirapara_JP/status/1908806894485110905": {
+      "contentHash": "81359afdf4cca0800b874ac3",
+      "titleJa": "限定ガチャイベント『祈夜の宴』まもなく開催",
+      "bodyJa": "限定ガチャイベント『祈夜の宴』まもなく開催！\n星6セット「燃ゆる薔薇」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆4月10日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『祈夜の宴』がまもなく開催されます\n・星6セット「燃ゆる薔薇」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのRPで、締切は4月10日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788589065
+    },
+    "https://x.com/kirapara_JP/status/1901196745520078882": {
+      "contentHash": "402d52103e68f422171844e6",
+      "titleJa": "限定ガチャイベント『反転天国』まもなく開催",
+      "bodyJa": "限定ガチャイベント『反転天国』まもなく開催！\n星5セット「葬りの天使」、「魔狩バトラー」の動画公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n20名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆3月20日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント「反転天国」がまもなく開催されます\n・星5セット「葬りの天使」、「魔狩バトラー」の動画が公開されました\n・リポスト＆いいねキャンペーンを実施し、20名に#Amazonギフト券をプレゼント\n・キャンペーン参加条件は@kirapara_JPのフォローと本ポストのリポストで、締切は3月20日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788589086
+    },
+    "https://x.com/kirapara_JP/status/1900366270236684359": {
+      "contentHash": "7ae2631a00976c9157f34dce",
+      "titleJa": "🤍3月14日は #ホワイトデー 🤍 バレンタインデーに、みなさんからたくさんの愛をありがとう❤ キラパラから抽選で20名に、アマギフのお返し",
+      "bodyJa": "🤍3月14日は #ホワイトデー 🤍\n\nバレンタインデーに、みなさんからたくさんの愛をありがとう❤\nキラパラから抽選で20名に、アマギフのお返し！\n\n【応募方法】\n① @kirapara_JP をフォロー\n②このツイートをRP\n\n3月18日23:59まで\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・イベント: ホワイトデー記念キャンペーンの実施\n・内容: キラパラから抽選で20名にアマギフをプレゼント\n・応募方法: @kirapara_JP をフォローし、このツイートをリポストすること\n・応募締切: 3月18日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788589107
     }
   },
   "failures": {
