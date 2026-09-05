@@ -189,6 +189,27 @@ def clear_failure_record(cache: dict, row: dict) -> None:
     failure_records(cache).pop(engine.cache_key(row), None)
 
 
+def cmd_prepare_gemma(args) -> int:
+    """Report total backlog separately from work eligible to run now."""
+    rows = engine.read_json(engine.NEWS_PATH, [])
+    if not isinstance(rows, list):
+        rows = []
+    cache = engine.normalized_cache(engine.read_json(engine.CACHE_PATH, {}))
+    applied = engine.apply_cache(rows, cache)
+    prune_failure_records(rows, cache)
+    pending = engine.pending_rows(rows, cache)
+    runnable, deferred = partition_pending_rows(pending, cache, int(time.time()))
+    engine.write_json(engine.NEWS_PATH, rows)
+    engine.write_json(engine.CACHE_PATH, cache)
+    engine.write_github_output(args.github_output, len(pending), applied)
+    if args.github_output:
+        with open(args.github_output, "a", encoding="utf-8") as fh:
+            fh.write(f"runnable={len(runnable)}\ndeferred={len(deferred)}\n")
+    print(f"translation cache applied: {applied}/{len(rows)}")
+    print(f"translation pending: {len(pending)} runnable={len(runnable)} deferred={len(deferred)}")
+    return 0
+
+
 def fallback_infer_one(llm, row: dict) -> dict | None:
     """Retry a chronically failing Bilibili row with the base format validator.
 
@@ -462,6 +483,7 @@ def main() -> int:
     if len(sys.argv) >= 2 and sys.argv[1] == "regenerate":
         return run_regenerate_litert(sys.argv[2:])
     engine.cmd_translate = cmd_translate_litert
+    engine.cmd_prepare = cmd_prepare_gemma
     return strict.main()
 
 

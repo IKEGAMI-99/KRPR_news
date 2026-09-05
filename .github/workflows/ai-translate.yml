@@ -40,6 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pending: ${{ steps.llm_plan.outputs.pending }}
+      runnable: ${{ steps.llm_plan.outputs.runnable }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -62,7 +63,7 @@ jobs:
 
   translate:
     needs: plan
-    if: ${{ needs.plan.result == 'success' && needs.plan.outputs.pending != '0' }}
+    if: ${{ needs.plan.result == 'success' && needs.plan.outputs.runnable != '0' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -85,14 +86,14 @@ jobs:
         run: python -u scripts/strict_gemma_translate.py prepare --github-output "$GITHUB_OUTPUT"
 
       - name: Cache Gemma 4 E4B LiteRT model
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         uses: actions/cache@v4
         with:
           path: ~/.cache/kirapara-models
           key: kirapara-gemma4-e4b-litertlm-v1
 
       - name: Cache pip packages
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
@@ -101,7 +102,7 @@ jobs:
             kirapara-pip-${{ runner.os }}-${{ runner.arch }}-py312-
 
       - name: Verify or download Gemma 4 E4B LiteRT model
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         run: |
           set -e
           MODEL_DIR="$HOME/.cache/kirapara-models"
@@ -121,14 +122,14 @@ jobs:
           echo "$SHA256  $MODEL" | sha256sum -c -
 
       - name: Install LiteRT-LM runtime
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         run: |
           python -m pip install --disable-pip-version-check --prefer-binary \
             "litert-lm==0.16.1"
 
       - name: Translate and summarize up to three runnable articles with Gemma 4 E4B
         id: gemma_translate
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         continue-on-error: true
         env:
           LLM_MAX_ITEMS: '3'
@@ -142,11 +143,11 @@ jobs:
           exit "$status"
 
       - name: Reapply Sol locks after Gemma 4
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         run: python scripts/apply_sol_edits.py
 
       - name: Record recurring automatic glossary corrections
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         run: |
           if [ -f "${RUNNER_TEMP}/gemma-translate.log" ]; then
             python scripts/auto_glossary_feedback.py record \
@@ -154,7 +155,7 @@ jobs:
           fi
 
       - name: Commit Gemma translations with semantic retry
-        if: steps.llm_plan.outputs.pending != '0'
+        if: steps.llm_plan.outputs.runnable != '0'
         run: |
           if [ -z "$(git status --porcelain -- data/news.json data/translations.json data/translation_glossary.json)" ]; then
             echo "No translation or glossary changes"

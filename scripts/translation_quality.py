@@ -2,6 +2,7 @@
 """Shared Japanese-output validation used by the active Gemma pipeline."""
 import re
 import sys
+from decimal import Decimal
 from pathlib import Path
 
 import translation_engine as engine
@@ -181,11 +182,47 @@ def strict_validate_result_with_reason(row: dict, obj):
     result = _ORIGINAL_VALIDATE_RESULT(row, obj)
     if not result:
         return None, "JSON形式が不正、必須フィールドが欠落、またはsummaryJaの形式が不正です"
+    result = normalize_chinese_notation(row, result)
     reason = japanese_failure_reason(row, result)
     if reason:
         print(f"  rejected non-Japanese output: {engine.cache_key(row)}: {reason}", file=sys.stderr)
         return None, reason
     return result, ""
+
+
+def normalize_chinese_notation(row: dict, result: dict) -> dict:
+    """Repair unambiguous notation, then still require strict Japanese validation.
+
+    Only discount values present in the source may be converted. URLs, hashtags
+    and glossary-preserved names are never rewritten; other residue still fails.
+    """
+    if str(row.get("region") or "").upper() != "CHINA":
+        return result
+    source = URL_HASH_RE.sub(" ", str(row.get("title") or "") + "\n" + str(row.get("body") or ""))
+    rates = {Decimal(m.group()[:-1]) for m in CHINESE_DISCOUNT_RE.finditer(source)}
+    protected = [URL_HASH_RE.pattern, *[re.escape(t) for t in scoped_preserved_terms(row)]]
+    pattern = re.compile("(" + "|".join(protected) + ")", re.IGNORECASE)
+
+    def discount(match):
+        rate = Decimal(match.group()[:-1])
+        if rate not in rates or not Decimal(0) < rate < Decimal(10):
+            return match.group()
+        # Decimal formatting must retain integer zeros (e.g. 5折 = 50%OFF).
+        percent = format((100 - rate * 10).normalize(), "f")
+        return percent + "%OFF"
+
+    normalized = dict(result)
+    for field in engine.TRANSLATION_FIELDS:
+        parts = pattern.split(str(result.get(field) or ""))
+        for index in range(0, len(parts), 2):
+            text = parts[index]
+            if "活动" in source:
+                text = text.replace("活动", "イベント")
+            parts[index] = CHINESE_DISCOUNT_RE.sub(discount, text)
+        normalized[field] = "".join(parts)
+    if normalized != result:
+        print(f"  normalized Chinese notation: {engine.cache_key(row)}")
+    return normalized
 
 
 def strict_validate_result(row: dict, obj):

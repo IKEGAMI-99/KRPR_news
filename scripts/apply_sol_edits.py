@@ -113,7 +113,10 @@ def merge_sol_news(rows: list, sol_items: list) -> int:
 def find_override(row: dict, overrides: dict):
     for key in (row.get("sourceUrl"), row.get("id"), cache_key(row)):
         if key and isinstance(overrides.get(str(key)), dict):
-            return overrides[str(key)]
+            override = overrides[str(key)]
+            if override.get("contentHash") and override["contentHash"] != source_hash(row):
+                continue
+            return override
     return None
 
 
@@ -184,18 +187,19 @@ def main() -> int:
             "titleJa": row["titleJa"],
             "bodyJa": row["bodyJa"],
             "summaryJa": row["summaryJa"],
-            "model": SOL_MODEL,
+            "model": (override or {}).get("reviewerModel") or SOL_MODEL,
             "modelRevision": SOL_REVISION,
             "summaryFormatVersion": SUMMARY_FORMAT_VERSION,
             "updatedAtEpoch": updated,
             "managedBySol": True,
         }
         cache_items[key] = entry
+        cache.get("failures", {}).pop(key, None)
         locked_keys.add(key)
 
         row["solLocked"] = True
         row["aiProcessed"] = True
-        row["aiModel"] = SOL_MODEL
+        row["aiModel"] = entry["model"]
         row["aiSummaryFormat"] = "facts-v2"
         applied += 1
 

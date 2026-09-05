@@ -325,3 +325,11 @@ UI改善のために1〜5を犠牲にしないでください。
 - Image viewer keyboard handling is registered once and resolves the current viewer; the lifecycle layer removes closed viewer nodes.
 - Service Worker network-first responses fall back to the current shell cache on network/HTTP errors. Cache write failures must not discard successful responses. Query strings do not prevent offline navigation cache matches. Activation removes only obsolete `kirapara-pwa-shell-` caches.
 - `tests/test_frontend_runtime.js` exercises these failure paths and is run by the Python suite. The index asset test generates deploy-time SEO assets in a temporary directory.
+
+## Stuck translation repair (2026-09-05)
+
+- Bilibili `1241862310188810276` failed strict validation on `活动` and Chinese discount notation; run `33950130863` exhausted three attempts and deferred it until 09:50:13 UTC. Subsequent successful workflows were skipping this cooling article, not translating it.
+- `translation_quality.normalize_chinese_notation` deterministically converts source-backed discount rates using Decimal and repairs the general word `活动`, protecting URLs, hashtags and glossary-preserved terms. Strict validation still runs afterward.
+- Gemma `prepare` reports `pending`, `runnable`, and `deferred`. The workflow gates expensive work on `runnable`, retaining the true backlog count.
+- The affected article has a reviewed override covering the acquired source text; its truncated ending is disclosed. Optional override `contentHash` invalidates that review when the source changes. `reviewerModel` records provenance, and applying a reviewed translation clears its failure record.
+- Regression coverage: `tests/test_translation_stuck_article.py` (real rejection patterns, percentage arithmetic, protected text, strict rejection, cooldown planning, review invalidation and failure cleanup).
