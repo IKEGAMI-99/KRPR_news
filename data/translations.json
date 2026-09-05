@@ -3154,6 +3154,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788524370
+    },
+    "https://www.bilibili.com/opus/1244403210696785923": {
+      "contentHash": "bd2c2d773139d5c65e0aab55",
+      "titleJa": "以闪亮之名：対局装飾が追加され、自分だけの個性的な対局を演出",
+      "bodyJa": "以闪亮之名で対局装飾機能が追加され、自分だけの個性的な対局を演出できます！\n\n対局装飾機能が追加され、多種多様な新しい装飾が対局ショップに登場しました。装飾はテーブル、カード面、カード裏の3つのカテゴリに分かれており、対局ショップで購入してアンロックする必要があります。登場する装飾は以下の通りです：\nテーブル：【海岸未合】【随风舞空】【高山遥祝】【月相之章】【星月低语】\nカード面：【金色秘契】\nカード裏：【年年有榆】【薇薇安娜】【命运之谕】\n対応する装飾を購入してアンロックすると、装飾設定ページで自由に選択し、自分だけの個性的な対局を演出できます！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が愛する3A級シミュレーションライフゲーム\n\nプレイへ",
+      "summaryJa": "・追加: 対局装飾機能が追加され、テーブル、カード面、カード裏の装飾が対局ショップに登場\n・装飾カテゴリ: テーブル（【海岸未合】他5種）、カード面（【金色秘契】）、カード裏（【年年有榆】他2種）\n・入手方法: 対局ショップで購入してアンロックする必要がある",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788574585
     }
   },
   "failures": {
