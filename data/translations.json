@@ -3164,7 +3164,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788574585
+    },
+    "https://x.com/stylight_kr/status/2096073332944748773": {
+      "contentHash": "38b107a78616bc1e4c697e8d",
+      "titleJa": "5★『起源の花』詳細カット - 風化した石膏と剥がれた金箔で表現した時の痕跡 - 亀裂から生えた若草が伝える再生の象徴 - 軽やかに舞う...",
+      "bodyJa": "5★『起源の花』詳細カット\n\n- 風化した石膏と剥がれた金箔で表現した時の痕跡\n- 亀裂から生えた若草が伝える再生の象徴\n- 軽やかに舞うシアー素材と重厚な彫刻パーツの対比\n- 開閉する石膏の花の蔓とハート型の亀裂の生き生きとした演出\n- 袖と金箔のドロートレインを分離して完成させる多様なスタイル\n\n傷や欠損を抱えながらも、\n新たな生命として再び花開く美しさ。🌿\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 5★『起源の花』の詳細カットが公開\n・特徴: 風化した石膏と剥がれた金箔で表現された時の痕跡\n・特徴: 亀裂から生えた若草が再生の象徴として描かれている\n・特徴: 袖と金箔のドロートレインを分離して着こなせる多様なスタイル",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788578149
+    },
+    "https://x.com/stylight_kr/status/2096072074657992970": {
+      "contentHash": "898bf24079b5f2b5ab5ecb42",
+      "titleJa": "5★『起源の花』インゲーム映像公開：冷たい石膏像に刻まれた亀裂から芽吹く生命",
+      "bodyJa": "5★『起源の花』インゲーム映像\n\n冷たい石膏像に時間が刻んだ亀裂が花開きます。\n割れた隙間から若草色の新芽が芽吹き、\n止まっていた存在が再び息を吹き返します。\n\n風化した翼と色褪せた金箔は、過ぎ去った時を抱きしめながら、\n閉ざされていた花蔓を自ら広げ、新たな生命を迎えます。\n\n完璧な姿に戻るのではなく、\n傷や欠損を抱えながら咲き誇る新たな美しさ。\n\n9月10日（木）、5★コスチューム『起源の花』が期間限定で登場します！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 5★コスチューム『起源の花』のインゲーム映像が公開\n・登場日: 9月10日（木）\n・内容: 傷や欠損を抱えながら咲き誇る新たな美しさを持つコスチュームの期間限定販売",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788578196
     }
   },
-  "failures": {}
+  "failures": {
+    "https://www.bilibili.com/opus/1241862310188810276": {
+      "contentHash": "6379e58723e58b86adb551e3",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788578952,
+      "retryAfterEpoch": 1788589752
+    }
+  }
 }
