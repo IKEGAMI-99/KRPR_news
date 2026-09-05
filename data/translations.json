@@ -3376,6 +3376,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788592575
+    },
+    "https://www.youtube.com/watch?v=LjxhZOlcKcw": {
+      "contentHash": "e38a824e84efd268495104c4",
+      "titleJa": "[Stylight]『深淵の花』ストーリー映像",
+      "bodyJa": "冷たい石に眠っていた生命が目覚め、深い大地の炎が新しい世界を創り出します。\n割れた隙間から青い葉が芽吹き、燃え盛る溶岩は固まって新しい大地となります。\n異なる二つの存在の指先が触れ合う瞬間、再生と創造の物語が始まります。\n9月10日（木）、Stylightが新規アップデートされます！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『深淵の花』ストーリー映像が公開\n・更新日: 9月10日（木）にStylightが新規アップデートされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788592716
+    },
+    "https://www.youtube.com/shorts/xVxZmxaJkpQ": {
+      "contentHash": "147e94d265f36ddbf2d2f99f",
+      "titleJa": "『アンティークサロン』背景パックが明日リリース",
+      "bodyJa": "「カチカチと響く蓄音機の旋律と、色褪せた日差しが残る場所。\n時間が積み重なったサロンで、優雅でゆったりとした午後をお楽しみください。」\n\n🕙 9/1 10:30 〜 9/14 23:59\n\n[パック情報]\n撮影背景「芸術の時代」、ライブポーズ「優雅な眼差し」など、様々なアイテムが含まれた美しいパックです。\n\n※詳細はリリース後にゲーム内でご確認ください。\n\n#Stylight #Stylight降臨",
+      "summaryJa": "・追加: 背景パック「アンティークサロン」が明日リリース\n・期間: 9/1 10:30 〜 9/14 23:59\n・内容: 撮影背景「芸術の時代」、ライブポーズ「優雅な眼差し」などを含む\n・入手: リリース後にゲーム内で確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788592759
     }
   },
   "failures": {
