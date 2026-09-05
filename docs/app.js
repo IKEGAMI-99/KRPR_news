@@ -59,6 +59,7 @@ const dayLabel = new Intl.DateTimeFormat('ja-JP', {
 let viewerImages = [];
 let viewerIndex = 0;
 let viewerOpener = null;
+let newsRequestId = 0;
 
 function storageGet(key) {
   try { return localStorage.getItem(key); } catch { return null; }
@@ -261,14 +262,18 @@ function ensureViewer() {
   viewer.querySelector('.viewer-prev').addEventListener('click', () => moveViewer(-1));
   viewer.querySelector('.viewer-next').addEventListener('click', () => moveViewer(1));
   viewer.addEventListener('click', (event) => { if (event.target === viewer) closeViewer(); });
-  document.addEventListener('keydown', (event) => {
-    if (viewer.hidden) return;
-    if (event.key === 'Escape') closeViewer();
-    if (event.key === 'ArrowLeft') moveViewer(-1);
-    if (event.key === 'ArrowRight') moveViewer(1);
-  });
   return viewer;
 }
+
+// The lifecycle layer removes closed viewers. Keep one document handler and
+// resolve the live viewer each time instead of retaining every detached node.
+document.addEventListener('keydown', (event) => {
+  const viewer = document.querySelector('#imageViewer');
+  if (!viewer || viewer.hidden) return;
+  if (event.key === 'Escape') closeViewer();
+  if (event.key === 'ArrowLeft') moveViewer(-1);
+  if (event.key === 'ArrowRight') moveViewer(1);
+});
 
 function updateViewer() {
   const viewer = ensureViewer();
@@ -560,6 +565,7 @@ function loadCachedNews() {
 }
 
 async function loadNews({ force = false } = {}) {
+  const requestId = ++newsRequestId;
   document.body.classList.toggle('refreshing', force);
   els.error.hidden = true;
   if (!state.items.length) renderSkeletons();
@@ -568,6 +574,7 @@ async function loadNews({ force = false } = {}) {
     const response = await fetch(url, { cache: force ? 'no-store' : 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const json = await response.json();
+    if (requestId !== newsRequestId) return;
     if (!Array.isArray(json)) throw new Error('ニュースデータの形式が不正です');
     state.items = json.filter((item) => item && typeof item === 'object')
       .sort((a, b) => (Number(b.publishedAtEpoch) || 0) - (Number(a.publishedAtEpoch) || 0));
@@ -576,7 +583,9 @@ async function loadNews({ force = false } = {}) {
     render();
     writeNavigationUrl({ replace: true });
   } catch (error) {
-    const cached = loadCachedNews();
+    if (requestId !== newsRequestId) return;
+    // localStorage may be unavailable, full, or older than the displayed data.
+    const cached = state.items.length ? state.items : loadCachedNews();
     if (cached.length) {
       state.items = cached;
       els.status.textContent = `${cached.length}件 · オフラインキャッシュ`;
@@ -593,7 +602,7 @@ async function loadNews({ force = false } = {}) {
       els.status.textContent = '読み込み失敗';
     }
   } finally {
-    document.body.classList.remove('refreshing');
+    if (requestId === newsRequestId) document.body.classList.remove('refreshing');
   }
 }
 

@@ -4,7 +4,9 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
+from unittest import mock
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
@@ -124,12 +126,27 @@ class ProjectStructureTests(unittest.TestCase):
     def test_index_local_assets_exist(self):
         parser = AssetParser()
         parser.feed((DOCS / "index.html").read_text(encoding="utf-8"))
-        for asset in parser.assets:
-            if not asset.startswith("./"):
-                continue
-            path = DOCS / asset[2:].split("?", 1)[0]
-            with self.subTest(asset=asset):
-                self.assertTrue(path.exists(), f"missing index asset: {asset}")
+        # Pages generates the sitemap at deployment; validate that output in an
+        # isolated directory rather than requiring stale generated files in Git.
+        seo = importlib.import_module("generate_seo")
+        with tempfile.TemporaryDirectory() as temporary:
+            generated = Path(temporary)
+            with mock.patch.object(seo, "DOCS_DIR", generated), mock.patch.object(seo, "ARTICLES_DIR", generated / "articles"):
+                seo.main()
+            for asset in parser.assets:
+                if not asset.startswith("./"):
+                    continue
+                relative = asset[2:].split("?", 1)[0]
+                path = (generated if relative == "sitemap.xml" else DOCS) / relative
+                with self.subTest(asset=asset):
+                    self.assertTrue(path.exists(), f"missing index asset: {asset}")
+
+    def test_frontend_runtime_regressions(self):
+        result = subprocess.run(
+            ["node", "--test", str(ROOT / "tests" / "test_frontend_runtime.js")],
+            cwd=ROOT, text=True, capture_output=True, check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stdout + result.stderr)
 
     def test_service_worker_shell_assets_exist(self):
         source = (DOCS / "sw.js").read_text(encoding="utf-8")
@@ -234,7 +251,7 @@ class ProjectStructureTests(unittest.TestCase):
         self.assertNotIn("early-info.css", sw)
         self.assertNotIn("tag_early_info.py", news_workflow)
         self.assertNotIn("tag_early_info.py", ai_workflow)
-        self.assertIn("検索バーと旧トップ3予測UIは2026-08-28に完全削除", readme)
+        self.assertIn("検索バー、旧「先行情報トップ3」、予測タグ", readme)
         self.assertNotIn("FORECAST", gap_html)
         self.assertNotIn("forecasts", gap_js)
 

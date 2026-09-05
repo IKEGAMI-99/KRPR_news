@@ -39,7 +39,7 @@ class CrawlStatusTests(unittest.TestCase):
         self.assertIn('Record completed crawl time', workflow)
         self.assertIn('data/crawl_status.json', workflow)
         self.assertIn('毎時 :00', menu)
-        self.assertIn('毎時 :00  news-refresh.yml', readme)
+        self.assertIn('| News Refresh | 毎時 `:00` |', readme)
         self.assertNotIn('<strong>ニュース収集</strong><small>毎時 :17', menu)
         self.assertNotIn('毎時 :17  news-refresh.yml', readme)
 
