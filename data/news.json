@@ -3498,7 +3498,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d99a1f06150353d89ccd693c",
@@ -4960,7 +4960,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
+    "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+    "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "fb52b98fd1225f5b512bb91c",
@@ -5213,6 +5219,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   }
 ]
