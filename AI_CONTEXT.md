@@ -31,7 +31,7 @@ runtime_model:
   context_token_limit: 8192
   output_token_limit: 3000
   failed_article_attempts: 3
-  failed_article_cooldown: "6 hours"
+  failed_article_cooldown: "3 hours"
   role: Japanese translation and summary
 
 schedules:
@@ -119,7 +119,7 @@ READMEの文章だけで現在仕様を推測しないでください。README�
 11. **表示上の最終更新は記事日時ではなくクロール成功時刻。** `data/crawl_status.json` を使用すること。
 12. **利用規約とプライバシーポリシーへの導線を消さない。** `docs/terms.html` / `docs/privacy.html` をメニューとフッターから到達可能にし、Service Workerのshellにも保持すること。
 13. **GA4の実装を変えたらプライバシーポリシーも更新する。** 新しいイベント、識別子、外部解析サービスを追加・削除した場合、`docs/privacy.html` とREADMEの説明を同期すること。
-14. **1件の生成失敗で翻訳backlog全体を止めない。** 3回の生成試行を使い切った記事は失敗状態を保存して6時間後まで後回しにし、後続記事へ進むこと。
+14. **1件の生成失敗で翻訳backlog全体を止めない。** 3回の生成試行を使い切った記事は失敗状態を保存して3時間後まで後回しにし、後続記事へ進むこと。
 15. **タイムライン全件を一度にDOMへ戻さない。** `docs/pagination.js` の20件単位を維持し、地域・ページをURLへ保存すること。記事更新で件数が増減した場合は総ページ数を再計算し、範囲外ページを最後の有効ページへ補正すること。
 
 ## Explicitly removed / deprecated behavior
@@ -199,7 +199,7 @@ summaryFormatVersion: 4
 
 古いrevisionは表示され続ける場合がありますが、backlogから順次再処理される対象です。
 
-LiteRT-LM Engineは `max_num_tokens=8192`、各生成は `max_output_tokens=3000` で実行します。`data/translations.json` の `failures` は翻訳本文ではなく運用状態です。現在の `contentHash` に対して3回の生成試行がすべて失敗した記事を6時間deferし、次のRunで後続記事を選べるようにします。原文変更、現行翻訳の成功、Sol管理結果の適用時は対応するfailureを破棄します。
+LiteRT-LM Engineは `max_num_tokens=8192`、各生成は `max_output_tokens=3000` で実行します。`data/translations.json` の `failures` は翻訳本文ではなく運用状態です。現在の `contentHash` に対して3回の生成試行がすべて失敗した記事を3時間deferし、次のRunで後続記事を選べるようにします。原文変更、現行翻訳の成功、Sol管理結果の適用時は対応するfailureを破棄します。
 
 `managedBySol` またはSol管理モデルとして明示されたエントリは別扱いで、有効な手動監査結果として保持されます。
 
@@ -318,3 +318,10 @@ UI改善のために1〜5を犠牲にしないでください。
 7. 過去Releaseや旧Androidコード
 
 古い実装や過去Releaseの存在だけを理由に、現行mainへ機能を戻さないでください。
+
+## Frontend runtime fixes — v77 (2026-09-05)
+
+- `loadNews` applies only the latest request and retains in-memory news on failure before consulting persistent storage. Storage failure must not erase displayed articles.
+- Image viewer keyboard handling is registered once and resolves the current viewer; the lifecycle layer removes closed viewer nodes.
+- Service Worker network-first responses fall back to the current shell cache on network/HTTP errors. Cache write failures must not discard successful responses. Query strings do not prevent offline navigation cache matches. Activation removes only obsolete `kirapara-pwa-shell-` caches.
+- `tests/test_frontend_runtime.js` exercises these failure paths and is run by the Python suite. The index asset test generates deploy-time SEO assets in a temporary directory.

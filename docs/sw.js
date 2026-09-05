@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kirapara-pwa-shell-v76';
+const CACHE_NAME = 'kirapara-pwa-shell-v77';
 const APP_SHELL = [
   './',
   './index.html',
@@ -61,35 +61,47 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith('kirapara-pwa-shell-') && key !== CACHE_NAME).map((key) => caches.delete(key))))
       .then(() => self.clients.claim())
   );
 });
 
 async function navigationResponse(request) {
+  let response;
   try {
-    const response = await fetch(request, { cache: 'no-store' });
+    response = await fetch(request, { cache: 'no-store' });
     if (response?.ok) {
-      const cache = await caches.open(CACHE_NAME);
-      await cache.put(request, response.clone());
+      await rememberResponse(request, response);
+      return response;
     }
-    return response;
-  } catch {
-    return (await caches.match(request)) || caches.match('./index.html');
-  }
+  } catch {}
+  return (await cachedResponse(request)) || (await cachedResponse('./index.html')) || response || Response.error();
+}
+
+async function rememberResponse(request, response) {
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.put(request, response.clone());
+  } catch {} // Cache storage failure must not discard a successful response.
+}
+
+async function cachedResponse(request) {
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    return await cache.match(request, { ignoreSearch: true });
+  } catch { return undefined; }
 }
 
 async function shellResponse(request) {
+  let response;
   try {
-    const response = await fetch(request, { cache: 'no-store' });
+    response = await fetch(request, { cache: 'no-store' });
     if (response?.ok) {
-      const cache = await caches.open(CACHE_NAME);
-      await cache.put(request, response.clone());
+      await rememberResponse(request, response);
+      return response;
     }
-    return response;
-  } catch {
-    return caches.match(request, { ignoreSearch: true });
-  }
+  } catch {}
+  return (await cachedResponse(request)) || response || Response.error();
 }
 
 self.addEventListener('fetch', (event) => {
