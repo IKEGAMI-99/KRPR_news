@@ -25,7 +25,7 @@
     "summaryJa": "・追加: Stylight 1周年を記念した初回チャージボーナスがリセットされます\n・期間: 9月10日(木) 10:30 アップデート後\n・内容: アップデート後、すべてのチャージ商品で初回チャージボーナスが適用され、初めて購入するとクローバーと同量のダイヤが追加で獲得できます\n・注意点: リセット前の未使用ボーナスは繰り越されず、リセット後同一商品で2回受け取ることはできません",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "現行翻訳エンジンはハッシュタグを原文のまま保持する仕様だが、既存bodyJaで韓国語ハッシュタグが日本語表示向け表記へ改変されていたため、原文のハッシュタグへ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -57,7 +57,7 @@
     "summaryJa": "・復刻: 人気限定セット＆パッケージが期間限定で再登場\n・復刻アイテム: Stylight初の限定光追跡『깊은 바다의 꿈』\n・復刻セット: 6★セット『세이렌 변주곡』と限定SSR絆\n・復刻パッケージ: 『미스틱 파티』を含む人気パッケージが発売以来初めて再登場",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "現行翻訳エンジンは用語集に公式対応がない固有名詞を創作翻訳せず原語保持し、ハッシュタグも原文保持する仕様。既存翻訳で韓国公式のイベント／セット名とハッシュタグが翻訳・改変されていたため原語へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -91,7 +91,7 @@
     "summaryJa": "・追加: 『드림 파티』イベント開催\n・期間: 9/10 10:30 〜 9/26 5:00\n・入手: 毎日ログインでパーティー会場を飾る回数1回獲得\n・報酬: 1周年限定6★セット「꿈결 무도회」など多数",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "現行翻訳エンジンは用語集に公式対応がない固有名詞を創作翻訳せず原語保持し、ハッシュタグも原文保持する仕様。既存翻訳で韓国公式のイベント名・報酬固有名詞・ハッシュタグが翻訳・改変されていたため原語へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -5653,6 +5653,6 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   }
 ]
