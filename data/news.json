@@ -945,7 +945,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7681599482106105108"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "💘音楽の世界に超新星が降臨！",
+    "bodyJa": "💘音楽の世界に超新星が降臨します！⭐限定デビューサポートがまもなく開始されます！💗一緒に創造しましょう...✨この運命的な出会いを...",
+    "summaryJa": "・追加: 限定デビューサポートがまもなく開始される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "1f057e2267760fbdf9da5bc0",
