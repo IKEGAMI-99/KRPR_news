@@ -3477,6 +3477,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788603396
+    },
+    "https://x.com/LifeMakeover510/status/2096191612582080803": {
+      "contentHash": "a2b27ca590f5d67ac6dfac34",
+      "titleJa": "VME | 早期情報公開：デビューアーティストがステージに登場",
+      "bodyJa": "VME | 早期情報公開：デビューアーティストがステージに登場！\n\n💘音楽の世界に超新星が降り注ぎます！\n⭐限定デビューサポートがまもなく開始されます！\n💗一緒に作り上げましょう...\n✨この運命的な出会いを！\n\n#LifeMakeover の全く新しいバージョンがまもなく登場します...",
+      "summaryJa": "・Life Makeoverの新しいバージョンがまもなく登場する\n・限定デビューサポートがまもなく開始される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788606856
     }
   },
   "failures": {}
