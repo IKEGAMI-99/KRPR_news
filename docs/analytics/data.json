@@ -1,10 +1,10 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-05T12:15:57.246289+00:00",
+  "updatedAt": "2026-09-05T13:13:37.559782+00:00",
   "summary": {
-    "todayViews": 33,
-    "weekViews": 263,
-    "monthViews": 617,
+    "todayViews": 34,
+    "weekViews": 264,
+    "monthViews": 618,
     "monthUsers": 50
   },
   "trend": [
@@ -41,13 +41,13 @@
     {
       "date": "2026-09-05",
       "label": "09/05",
-      "value": 33
+      "value": 34
     }
   ],
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 607
+      "value": 608
     },
     {
       "label": "/docs/",
@@ -65,7 +65,7 @@
     },
     {
       "label": "(not set)",
-      "value": 16
+      "value": 17
     },
     {
       "label": "go.bsky.app",
