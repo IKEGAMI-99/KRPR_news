@@ -2117,12 +2117,6 @@
     "height": 264,
     "checkedAt": 1788621170
   },
-  "https://img2-tc.tapimg.com/moment/etag/FiUOjqsjz_XWgzF_2GMtA8nF27uo_20260901110446.jpg/_tap_ugc_m.jpg": {
-    "ok": true,
-    "width": 720,
-    "height": 1567,
-    "checkedAt": 1788624836
-  },
   "https://i0.hdslb.com/bfs/new_dyn/68bdbb3294045819284cd7a9ef939f95676200579.jpg@264w_264h_1e_1c": {
     "ok": false,
     "width": 264,
@@ -2393,12 +2387,6 @@
     "height": 648,
     "checkedAt": 1788632079
   },
-  "https://pbs.twimg.com/media/G5o_efiacAAdFVl?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1788632079
-  },
   "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig": {
     "ok": true,
     "width": 2160,
@@ -2415,42 +2403,6 @@
     "ok": true,
     "width": 2736,
     "height": 3648,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/media/G5NXoIgbIAQ9KWD?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1024,
-    "height": 1024,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1981704465230012416/img/3KqR0DcqCpnf-WsC.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/media/G4J_YTEWQAA1tat?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/media/G38adAsXcAAurfG?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2160,
-    "height": 3840,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1981701649505669120/img/YGrDJIK0LiHtb3DC.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/media/G4RAngnWAAA1Aqc?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2870,
-    "height": 4096,
     "checkedAt": 1788632079
   },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1788804000&x-signature=usPCGzylKdg8VGdARYBvgspRwOc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
@@ -2483,24 +2435,6 @@
     "height": 505,
     "checkedAt": 1788632079
   },
-  "https://pbs.twimg.com/media/G4COR92W8AAaGTW?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1788632079
-  },
-  "https://pbs.twimg.com/media/G5CcHIjbIAUUpM4?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1788632079
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=26492e03-7827-4ec5-883b-b3fa19b4d45e&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788632077869&request_path=%2Fmoment%2F843800593246981927": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788632079
-  },
   "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab_jpg_820.jpg": {
     "ok": true,
     "width": 820,
@@ -2511,12 +2445,6 @@
     "ok": true,
     "width": 820,
     "height": 410,
-    "checkedAt": 1788632079
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=35caa730-142f-4035-8dbc-f302b267f036&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788632077946&request_path=%2Fmoment%2F843867814962921896": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
     "checkedAt": 1788632079
   },
   "https://media.pocketgamer.com/artwork/na-34037-1682679349/lifemakeover-launch-date-keyart_jpg_820.jpg": {
@@ -2537,40 +2465,52 @@
     "height": 410,
     "checkedAt": 1788632079
   },
-  "https://pbs.twimg.com/media/G38bZypWkAAh4SM?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2400,
-    "height": 3840,
-    "checkedAt": 1788632079
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1788804000&x-signature=UJaGcPPy9wNV4Zx1EC2%2FhiZUKws%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 1500,
     "height": 2000,
     "checkedAt": 1788632079
   },
-  "https://pbs.twimg.com/media/G4CKWxmXIAA56Y-?format=jpg&name=orig": {
+  "https://img2-tc.tapimg.com/moment/etag/FgHSuxOj8gjll7q3NyGyGKYf1IAd_20260831104104.jpg/_tap_ugc_m.jpg": {
     "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1788632079
+    "width": 720,
+    "height": 1280,
+    "checkedAt": 1788635539
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=cb2c11f6-af11-4e8d-9271-e4d1a68885a7&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788632077880&request_path=%2Fmoment%2F828260941740116010": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=834b0e4c-1a8a-44af-9d27-11e754d23f1e&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788635537600&request_path=%2Fmoment%2F843867814962921896": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788632079
+    "checkedAt": 1788635539
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=af9b3c47-b7b8-4f8a-9722-e8569dda5d9f&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788632077812&request_path=%2Fmoment%2F827191805966550915": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=476c6880-eba4-45f0-ac4b-659649db3100&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788635538261&request_path=%2Fmoment%2F843800593246981927": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788632079
+    "checkedAt": 1788635539
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=12bfdc5d-4a27-4f3b-8914-b672902510ed&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788632077994&request_path=%2Fmoment%2F821067872284446124": {
+  "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1788635539
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=3153fb0f-6ace-4b46-a416-52909dfd328d&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788635537832&request_path=%2Fmoment%2F828260941740116010": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788632079
+    "checkedAt": 1788635539
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=68a20287-0f72-4237-bb49-213f6fbd763b&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788635537813&request_path=%2Fmoment%2F827191805966550915": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788635539
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=b7f43bc5-e532-4d39-878c-e5233f7e015a&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788635537650&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788635539
   }
 }
