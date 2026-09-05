@@ -1755,14 +1755,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "851117a5bacb325e13b0e444",
+      "contentHash": "c9c6007c5d3d504eea7a61d5",
       "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYANが「#Stylight #永遠の誓い」の投稿を実施",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788599818
+      "updatedAtEpoch": 1788603417
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -3457,6 +3457,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788600021
+    },
+    "https://x.com/stylight_kr/status/2096165188416508118": {
+      "contentHash": "02a4a66424c61c42f2ca014a",
+      "titleJa": "新章「心の季節」『そのままの最初』予告「感情に流されれば、皆の時間を浪費するだけだ」初めて会った時、ただ冷たく聞こえた言葉。今のカン・ソジュンは...",
+      "bodyJa": "新章「心の季節」『そのままの最初』予告\n\n「感情に流されれば、皆の時間を浪費するだけだ。」\n初めて会った時、ただ冷たく聞こえた言葉。\n今のカン・ソジュンは、あの時とどれほど変わったのでしょうか？\n\n過去の影と再び向き合うカン・ソジュン。今回はどのような選択をするのでしょうか？\n幸い、星の光の下、最初の心を共に守ってくれる誰かが彼のそばにいます。\n\n新章「心の季節」『そのままの最初』が9月21日にオープンします。\n章のオープン後、ファッションスタジオに5★セット「ベアココア」の制作が追加されます。\n材料を集めて自分で制作してみてください！\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 新章「心の季節」『そのままの最初』が9月21日にオープン\n・追加: 章のオープン後、ファッションスタジオに5★セット「ベアココア」の制作が追加される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788603336
+    },
+    "https://x.com/stylight_kr/status/2096163929638723866": {
+      "contentHash": "f6c42f62776db667e7a8720a",
+      "titleJa": "【NEW】『クライン・ベルク』背景パック予告：黄金に染まる森に自然の優雅な協奏曲が響き渡る。眩い黄金の旋律に浸ってみませんか。",
+      "bodyJa": "【NEW】『クライン・ベルク』背景パック予告\n\n黄金に染まる森に自然の優雅な協奏曲が響き渡ります。\n眩い黄金の旋律に浸ってみてください。\n\n🕙 9/22 10:30 〜 10/5 23:59\n\n[パック情報]\n- ライブ撮影ポーズ「ライトワルツ」\n- 撮影背景「秋の協奏曲」\n- 撮影ポーズ「落ち葉の招待」\n- カメラムーブ「ライトワルツ」\n- チャット吹き出し「カエルヒーリングポーション」\n- 背景音楽「ライトワルツ」\n- トレンドカラーカード ×26\n- 出会いのもと鍵 ×40\n\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『クライン・ベルク』背景パックが予告された\n・期間: 9/22 10:30 〜 10/5 23:59\n・内容: ライブ撮影ポーズ「ライトワルツ」、撮影背景「秋の協奏曲」などを含む\n・報酬: トレンドカラーカード ×26、出会いのもと鍵 ×40",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788603396
     }
   },
   "failures": {}
