@@ -284,7 +284,15 @@
       "translationHash": "f9d401dad870eca843e8a670",
       "auditedAtEpoch": 1788584144,
       "result": "override"
+    },
+    "https://www.bilibili.com/opus/1244805219643031554": {
+      "id": "bc06a667fb19227af5b3b732",
+      "publishedAtEpoch": 1788667200,
+      "sourceContentHash": "4bd13521e375217f3d05fb30",
+      "translationHash": "839ceb49aa5597fb0ca6fbe7",
+      "auditedAtEpoch": 1788670537,
+      "result": "ok"
     }
   },
-  "lastRunAt": 1788584144
+  "lastRunAt": 1788670537
 }
