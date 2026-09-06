@@ -3737,6 +3737,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788668563
+    },
+    "https://x.com/stylight_kr/status/2096439495377949015": {
+      "contentHash": "1927004b58741f2e3cfec60e",
+      "titleJa": "新規常時光追『開花』｜5★『昼の画帖』紹介",
+      "bodyJa": "新規常時光追『開花』｜5★『昼の画帖』紹介\n\n「軒下のスズメの影を眺め、\n絵巻物の中の四季を鑑賞する。」\n\n東洋的な美しさを現代的に再解釈したデザインに、\n洗練されたディテールと繊細な工程を加えました。\n\n半透明にきらめく袖口の装飾が\n古典的なシルエットに爽やかな生命力を加え、\n柔らかなシフォンレースとシルクアウターが優雅に調和します。\n\n亭子、ツバメ、桃の花と柳の葉をあしらったパターンが\n春の軽やかで快活な情緒を一枚の画帖のように広げます。\n\n9月10日（木）にリリース！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 新規常時光追『開花』と5★『昼の画帖』が登場\n・特徴: 東洋的な美しさを現代的に再解釈したデザイン\n・特徴: 亭子、ツバメ、桃の花と柳の葉をあしらったパターン\n・リリース日: 9月10日（木）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788669141
+    },
+    "https://x.com/stylight_kr/status/2096438237132956101": {
+      "contentHash": "0706c1a8e342b4c866af2e79",
+      "titleJa": "新規常時光追『開花』｜5★『バイオレットシルク』紹介",
+      "bodyJa": "新規常時光追『開花』｜5★『バイオレットシルク』紹介\n\n放浪するロリータの感性と東洋風水墨画が融合し、愛らしくユニークなスタイルを完成させます。\n\nレースやフリル、リボンストラップを非対称に重ねることで、豊かでありながら軽快なシルエットを演出しました。\n\n伝統的な藍染めと水墨画の余白を表現したパターン、 은은하게 반짝이는 장갑과 코르셋 레이스가 『バイオレットシルク』ならではの魅力を加えています。\n\n9月10日（木）にリリース！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 新規常時光追『開花』および5★衣装『バイオレットシルク』が登場\n・特徴: 放浪するロリータの感性と東洋風水墨画を融合させたデザイン\n・リリース日: 9月10日（木）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788669210
+    },
+    "https://x.com/LifeMakeover510/status/2096436978992455867": {
+      "contentHash": "9734dadf1540377c0af9fa3c",
+      "titleJa": "新バージョン4.3 | Hymn Decomショップオープン",
+      "bodyJa": "新バージョン4.3 | Hymn Decomショップ\n\nHymn Decomショップは9月9日09:00から9月30日23:59までオープンします。期間限定イベントで入手したファッションを分解することで、限定の★5ファッションアイテム「Song of Ink」「Vivid Charm」「Blessful Wind」などと交換できます！",
+      "summaryJa": "・追加: Hymn Decomショップがオープン\n・期間: 9月9日09:00〜9月30日23:59\n・内容: 期間限定イベントで入手したファッションを分解し、限定の★5ファッションアイテムと交換可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788669259
     }
   },
   "failures": {}
