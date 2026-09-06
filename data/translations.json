@@ -3607,6 +3607,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788664708
+    },
+    "https://www.youtube.com/watch?v=sCO_d0qYYbA": {
+      "contentHash": "d8b4e1ab5bb8cf5aa849e5a3",
+      "titleJa": "星6「新緑の加護」動画公開",
+      "bodyJa": "「森が深いと鹿に出会い、小川が流れる昼下がりには鐘の音さえ聞こえない。」\n\n遠くの五色の雲の間から、幸運と吉兆を宿した神秘的な鹿の角が輝きます。\n\n透明な光の流れと燦爛たる緑龍が調和した衣装は、敦煌の芸術的感性を込めた東洋風ドレスで、あなたを遥かなる東方の神話へと誘います。\n\n神秘的な福禄の鹿と交感し、黄金色の夢のような瞬間を体験してください。\n\n9月10日（木）、星6コスチューム「新緑の加護」がリリースされます！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 星6コスチューム「新緑の加護」がリリース\n・期間: 9月10日（木）より\n・内容: 神秘的な鹿の角をモチーフにした東洋風ドレス\n・入手: ゲーム内での入手（詳細未記載）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664847
+    },
+    "https://x.com/LifeMakeover510/status/2096433208963543501": {
+      "contentHash": "7f6b565cadfa04967e8aa301",
+      "titleJa": "新バージョン4.3更新 | SSRアライ [Roy - Ocean's Oath] プレビュー\n新バージョン - Dawn of Miraclesが9月9日から9月29日まで登場！",
+      "bodyJa": "新バージョン4.3更新 | SSRアライ [Roy - Ocean's Oath] プレビュー\n新バージョン - Dawn of Miraclesが9月9日から9月29日まで登場します！\n\n「君はいつも自由だ。私が君を愛しているからといって、君が私を愛しなくてもいい。」\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: SSRアライ [Roy - Ocean's Oath] プレビュー\n・イベント: 新バージョン - Dawn of Miraclesが開催\n・期間: 9月9日から9月29日まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664899
+    },
+    "https://x.com/stylight_kr/status/2096433203800064294": {
+      "contentHash": "98645dab198106651e95436e",
+      "titleJa": "新規常時光追『開花』｜6★『新緑の加護』動画「森が深ければ鹿に出会い、小川が流れる昼下がりには鐘の音さえ聞こえない」遠い五色の雲...",
+      "bodyJa": "新規常時光追『開花』｜6★『新緑の加護』動画\n\n「森が深ければ鹿に出会い、\n小川が流れる昼下がりには鐘の音さえ聞こえない。」\n\n遠い五色の雲の間を\n福と吉兆を宿した神秘的な鹿の角が輝きます。\n\n透明な光の流れと燦爛たる緑龍が調和した衣装、\n敦煌の芸術的感性を込めた東洋風ドレスが\n遠い東方の神話の世界へとあなたを誘います。\n\n神秘的な福禄の鹿と交感し\n黄金色の夢のような瞬間を体験してください。\n\n9月10日(木)、6★コスチューム『新緑の加護』がリリース！\n\n▶ ゲームダウンロード \n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 新規常時光追『開花』と6★コスチューム『新緑の加護』が追加\n・リリース日: 9月10日(木)",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664970
     }
   },
   "failures": {}
