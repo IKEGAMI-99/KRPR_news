@@ -3796,6 +3796,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788584144,
       "managedBySol": true
+    },
+    "https://x.com/stylight_kr/status/1981556257975914780": {
+      "contentHash": "f192feb7c047eea22a4c7500",
+      "titleJa": "[Stylight アップデート予告編] キーワード：BURN “燃え尽きた心も、まだ痛むことができるでしょうか”",
+      "bodyJa": "[Stylight アップデート予告編]\n\nキーワード：BURN\n\n“燃え尽きた心も、まだ痛むことができるでしょうか?”\n\n世界で最も美しい悲劇\n焼き尽くし、再び生まれ変わる眩いばかりの始まり\n\nWe burn,\nWe bloom\n\n<GUESS WHO'S NEXT? 引用で当ててみてください！>\n\n#Stylight #Stylight降臨 #lifemakeover #Stylightアップデート",
+      "summaryJa": "・キーワード：BURN\n・テーマ：「燃え尽きた心も、まだ痛むことができるでしょうか」\n・内容：世界で最も美しい悲劇を焼き尽くし、再び生まれ変わる眩いばかりの始まりをテーマとした予告編の公開\n・企画：GUESS WHO'S NEXT? 引用で当ててみてください！",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788725984
     }
   },
   "failures": {}
