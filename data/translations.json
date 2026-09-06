@@ -3497,6 +3497,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788610642
+    },
+    "https://x.com/LifeMakeover510/status/2096420620464480279": {
+      "contentHash": "ed47cc89cb4f280da850657f",
+      "titleJa": "VME | 最新ステージ写真が公開✨「ドリームドリームインキュベーター」の募集が終了しました",
+      "bodyJa": "VME | 最新ステージ写真が公開\n\n✨「ドリームドリームインキュベーター」の募集が無事に終了しました！\n🎤 彼女の独占デビューステージが正式にアンロックされました！\n⚡スポットライトが観客の情熱を灯す中、\n✨彼女は光に包まれ、真のスターのように輝きます。\n\n#LifeMakeover",
+      "summaryJa": "・「ドリームドリームインキュベーター」の募集が終了しました\n・VMEの独占デビューステージが正式にアンロックされました\n・最新のステージ写真が公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788660925
+    },
+    "https://www.youtube.com/watch?v=krJ51wlDaQc": {
+      "contentHash": "24122b915ec535330dac91a4",
+      "titleJa": "Life Makeover 新バージョン 4.3 | ★6セット「Grace of Plume」ゲーム内映像公開",
+      "bodyJa": "新バージョン 4.3 | ★6セット「Grace of Plume」ゲーム内映像が公開されました！\n新バージョン「Dawn of Miracles」は9月9日から9月29日まで利用可能です。\n\n❗デュアルフォームドレス❗ このドレスはデュアルフォームデザインを採用しています。フォーム1は腹部が覆われた標準的なミディ丈のドレスで、フォーム2の腹部が空いたショートスカートに自由に切り替えることができ、様々なスタイリングシーンに完璧に対応します。\n❗2億の傑作：デュアルフォームエッグマウント❗ ファベルジェの卵にインスパイアされたこのマウントは、フォーム1では豪華な開花ポーズを呈します。卵の殻が花びらのようにキャラクターを包み込み、究極の贅沢な雰囲気を醸し出します。フォーム2では卵の殻が下がり、キャラクターがスタイリングを際立たせる絶対的な視覚的焦点となります。座席の金属製アームレストには天使の翼がデザイン要素として使用されており、神聖な感覚と実用性をシームレスに融合させています。\n❗ゲーム史上最大の翼❗ このバックアクセサリーは初めてラッピング翼デザインを導入し、そのデュアルフォームがさらなるスタイリングのアイデアを刺激します！フォーム1は巨大で自由に広がる翼が特徴で、ゲーム史上最大の翼です。キャラクターをフレームに収めると、スケールの際立った視覚的コントラストが生まれ、羽の要素のロマンチックな美しさが完全に表現されます。翼の先端はリボンのように優雅に垂れ下がり、幻想的な視覚効果を生み出します。フォーム2はラッピング状態であり、軽い翼が中心に向かって集まり、キャラクターを優しく包み込み、神聖な視覚的ロマンスを着用可能なファッションアートへと変貌させます。\n❗デュアルフォーム特殊ポーズ❗ デュアルフォーム特殊ポーズは、新しい座りポーズと新しい飛行ポーズの両方を備えています。これらを自由に切り替えることで、全体のルックに多様な芸術的表現を加えることができます。\n❗デュアルフォームフェイスアクセサリー❗ このアイテムをデザインする際、私たちはバランスを考慮しました。",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」が追加\n・期間: 新バージョン「Dawn of Miracles」は9月9日から9月29日まで利用可能\n・特徴: ドレス、エッグマウント、バックアクセサリー、フェイスアクセサリーにデュアルフォーム機能が搭載\n・特徴: バックアクセサリーはゲーム史上最大の翼をフォーム1で展開可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661044
+    },
+    "https://x.com/LifeMakeover510/status/2096414329281400908": {
+      "contentHash": "94ea466736fa6f8e3d806dcd",
+      "titleJa": "新バージョン4.3更新 | ★6セット「Grace of Plume」のゲーム内映像公開",
+      "bodyJa": "新バージョン4.3更新！★6セット「Grace of Plume」のゲーム内映像を公開しました！\n新バージョン「Dawn of Miracles」は9月9日から9月29日までプレイ可能です！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」のゲーム内映像が公開\n・期間: 新バージョン「Dawn of Miracles」は9月9日から9月29日までプレイ可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661089
     }
   },
   "failures": {}
