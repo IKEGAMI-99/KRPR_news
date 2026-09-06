@@ -3557,6 +3557,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788661300
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7681599993186241813": {
+      "contentHash": "3420a6db69a7e43b84708675",
+      "titleJa": "彼女はかつて、誰もいないリハーサル室に立ち、同じ歌を何度も歌っていた。ステージの照明は明るかったが、それらは他のものを照らすだけだった…",
+      "bodyJa": "彼女はかつて、誰もいないリハーサル室に立ち、同じ歌を何度も歌っていた。ステージの照明は明るかったが、それらは他のものを照らすだけだった…",
+      "summaryJa": "・追加: なし\n・期間: なし\n・入手: なし\n・報酬: なし\n・変更点: なし",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661869
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7680854149625285909": {
+      "contentHash": "ea01c23b8a1b8dd801d5cf0e",
+      "titleJa": "Life Makeover 新バージョン4.3 | 奇跡の夜明けトレーラー：VMEライジングスター新バージョン「奇跡の夜明け」の重大発表",
+      "bodyJa": "Life Makeover 新バージョン4.3 | 奇跡の夜明けトレーラー：VMEライジングスター新バージョン「奇跡の夜明け」が9月より提供開始",
+      "summaryJa": "・追加: VMEライジングスター新バージョン「奇跡の夜明け」が提供開始\n・バージョン: 4.3",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661910
     }
   },
   "failures": {}
