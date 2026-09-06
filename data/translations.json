@@ -3527,6 +3527,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788661089
+    },
+    "https://www.youtube.com/watch?v=RGFsF0fXaiw": {
+      "contentHash": "4e41a3382ceb5c43eecea099",
+      "titleJa": "Life Makeover 新バージョン4.3「奇跡の夜明け」トレーラー公開",
+      "bodyJa": "新バージョン4.3「奇跡の夜明け」PV：VMEライジングスターに関する重要なお知らせ\n新バージョン「奇跡の夜明け」は9月9日から9月29日まで利用可能です！\n\n🎬 [奇跡の夜明け] デビューPV初公開！\n✨ [VMEライジングスター] 壮大なデビューを祝う！\n🎵 [リードシングル] 専用のデビュー曲！\n🌟 [長年の努力] 初日から完璧なアイドル！\n💖 [運命の到来] 輝かしい旅路のためのラッキーエッグが誕生！\n\n影での長い待ち時間は、彼女の燃える情熱を冷ますことはできませんでした。この初秋、彼女の時代へようこそ。\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: 新バージョン4.3「奇跡の夜明け」が公開\n・期間: 9月9日〜9月29日\n・内容: 「奇跡の夜明け」デビューPV、VMEライジングスターの紹介、リードシングル、ラッキーエッグの登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661216
+    },
+    "https://x.com/LifeMakeover510/status/2096410555309539779": {
+      "contentHash": "fb0da8809e40fba61bc34734",
+      "titleJa": "新バージョン4.3「奇跡の夜明け」PV公開：VMEライジングスター新バージョンに関する重要なお知らせ",
+      "bodyJa": "新バージョン4.3「奇跡の夜明け」PV公開：VMEライジングスター\n新バージョン「奇跡の夜明け」が9月9日から9月29日まで利用可能になります！\n\n影の中で長く待っていた彼女の燃える情熱は、決して冷めることはありません。\nこの初秋、彼女の時代へようこそ。\n\n#LifeMakeover",
+      "summaryJa": "・新バージョン「奇跡の夜明け」が利用可能に\n・期間: 9月9日〜9月29日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661263
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7681600285952806164": {
+      "contentHash": "2f61a541d23fb34dc71846e7",
+      "titleJa": "✨ ドリームドリームインキュベーターの募集が終了しました",
+      "bodyJa": "✨ ドリームドリームインキュベーターの募集が終了しました！🎤 彼女の独占デビューステージが正式にアンロックされました！⚡ スポットライトが灯る中...",
+      "summaryJa": "・ドリームドリームインキュベーターの募集が終了した\n・彼女の独占デビューステージが正式にアンロックされた",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788661300
     }
   },
   "failures": {}
