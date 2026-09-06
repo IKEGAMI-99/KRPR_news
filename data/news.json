@@ -1271,7 +1271,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7681602059304471829"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "彼女が銀河を初めて見た時。上から光が降り注ぎ、まるで砕いたダイヤモンドが夜空に散りばめられたかのようだった。彼女は望んだ…",
+    "bodyJa": "彼女が銀河を初めて見た時。上から光が降り注ぎ、まるで砕いたダイヤモンドが夜空に散りばめられたかのようだった。彼女は望んだ…",
+    "summaryJa": "・追加: 彼女が銀河を初めて見た時のシーンが公開された",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "140f26cb673c17c69a63d967",
