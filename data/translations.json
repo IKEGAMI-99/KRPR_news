@@ -3577,6 +3577,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788661910
+    },
+    "https://www.youtube.com/watch?v=OtzktQHaJkA": {
+      "contentHash": "1183f4ef66e8899d6aee6077",
+      "titleJa": "星6衣装「ティタニア序曲」のゲーム内映像公開",
+      "bodyJa": "「物語は最もロマンチックな願いであり、すべての美しい物語はより完璧な結末を迎えます。」\n\n妖精は人間の願いを代わりに叶えてくれる存在ではありません。勇気と善き心こそが妖精を呼ぶ真の力です。\n\n満開の花は簡単に手に入る戦利品ではなく、精と努力で育て上げた末に結実する大切な成果です。\n\nスカートの裾の上で、指先で、お互いの手が触れ合う瞬間ごとに、おとぎ話のような花が咲き誇ります。\n\n10枚の翼が純粋な愛を歌い、温かい春の開花を待ち望んでいます。\n\n9月10日（木）、星6衣装「ティタニア序曲」がリリースされます！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 星6衣装「ティタニア序曲」がリリース\n・期間: 9月10日（木）より\n・内容: 衣装のゲーム内映像が公開された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664578
+    },
+    "https://x.com/stylight_kr/status/2096435720202096843": {
+      "contentHash": "c0cb8027f08a862e6676aba4",
+      "titleJa": "新規常時光追『開花』｜6★『ティタニア序曲』インゲーム動画公開",
+      "bodyJa": "「おとぎ話は最もロマンチックな願い、すべての美しい物語はより完璧な結末を迎えます。」\n\n妖精は人間の願いを代わりに叶えてくれる存在ではありません。勇気と善意こそが妖精を呼ぶ真の力です。\n\n満開の花は簡単に手に入る戦利品ではなく、精と努力で育て上げた末に結実する大切な成果です。\n\nスカートの裾の上で、指先で、お互いの手が触れ合う瞬間ごとに、おとぎ話のような花が咲き誇ります。\n\n10枚の翼が純粋な愛を歌い、温かい春の開花を待ち望んでいます。\n\n9月10日（木）、6★コスチューム『ティタニア序曲』がリリースされます！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 新規常時光追『開花』と6★コスチューム『ティタニア序曲』が追加\n・リリース日: 9月10日（木）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664635
+    },
+    "https://x.com/stylight_kr/status/2096434462812999720": {
+      "contentHash": "7e1c5cb49129fad44c9abc5e",
+      "titleJa": "新規常時光追『開花』｜6★『新緑の加護』ディテールカット - 半透明クリスタルと金属で完成した神秘的な鹿角ヘッド装飾 - 敦煌壁画の色彩と九色龍文...",
+      "bodyJa": "新規常時光追『開花』｜6★『新緑の加護』ディテールカット\n\n- 半透明クリスタルと金属で完成した神秘的な鹿角ヘッド装飾\n- 敦煌壁画の色彩と九色龍文を込めた華やかなトレイン\n- 観珠・金糸刺繍・平織り刺繍とジャカードサテンで表現した高級感のある素材感\n- レース刺繍と真珠の装飾が加わる優雅で華やかな東洋風オートクチュール\n- 福鹿と金色の光流、カラーオーラ、黄金色の丘が広がるインタラクション効果\n\n神話の中の神獣が目の前に現れる瞬間、\n燦爛たる光と祝福の気配が黄金色の夢のように広がります。🦌✨\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #Stylight1周年",
+      "summaryJa": "・追加: 新規常時光追『開花』および6★『新緑の加護』が登場\n・特徴: 半透明クリスタルと金属の鹿角ヘッド装飾、敦煌壁画の色彩と九色龍文を込めたトレイン\n・特徴: 観珠・金糸刺繍・平織り刺繍とジャカードサテンによる高級感のある素材感\n・特徴: 福鹿と金色の光流、カラーオーラ、黄金色の丘が広がるインタラクション効果",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788664708
     }
   },
   "failures": {}
