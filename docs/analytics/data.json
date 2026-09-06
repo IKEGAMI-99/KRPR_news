@@ -1,8 +1,8 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-06T14:14:04.394800+00:00",
+  "updatedAt": "2026-09-06T15:13:54.203980+00:00",
   "summary": {
-    "todayViews": 5,
+    "todayViews": 0,
     "weekViews": 249,
     "monthViews": 627,
     "monthUsers": 50
@@ -74,7 +74,7 @@
     },
     {
       "label": "(not set)",
-      "value": 12
+      "value": 13
     },
     {
       "label": "github.com",
