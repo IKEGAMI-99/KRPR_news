@@ -3826,6 +3826,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788747853
+    },
+    "https://www.bilibili.com/opus/1242918869986705412": {
+      "contentHash": "757775a22a6926a4d5fa98f6",
+      "titleJa": "新バージョン4.4「神迹初诞」が正式リリース #頂流の卵生# 9月1日〜9月21日限定ログイン",
+      "bodyJa": "以闪亮之名 新バージョン4.4「神迹初诞」が正式にリリースされました。\n#頂流の卵生# 新バージョン4.4「神迹初诞」が9月1日から9月21日まで期間限定で登場します！\n\n✨星々が降り注ぎ、\n✨銀河があなたに集まります。\n✨新進気鋭の頂流が旅立ち、\n✨輝く夜空を照らします。\n\n以闪亮之名 の新バージョン4.4の精彩が続きます……❤️\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・追加: 新バージョン4.4「神迹初诞」が正式にリリース\n・期間: 9月1日〜9月21日（期間限定ログイン）\n・ゲームジャンル: ロールプレイング/高画質/シミュレーション経営",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788748391
     }
   },
   "failures": {}
