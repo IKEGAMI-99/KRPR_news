@@ -1,11 +1,11 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-07T17:13:20.129425+00:00",
+  "updatedAt": "2026-09-07T18:10:39.180843+00:00",
   "summary": {
-    "todayViews": 1,
-    "weekViews": 252,
-    "monthViews": 630,
-    "monthUsers": 50
+    "todayViews": 2,
+    "weekViews": 253,
+    "monthViews": 631,
+    "monthUsers": 51
   },
   "trend": [
     {
@@ -56,13 +56,13 @@
     {
       "date": "2026-09-08",
       "label": "09/08",
-      "value": 1
+      "value": 2
     }
   ],
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 620
+      "value": 621
     },
     {
       "label": "/docs/",
@@ -89,12 +89,16 @@
     {
       "label": "github.com",
       "value": 5
+    },
+    {
+      "label": "(data not available)",
+      "value": 1
     }
   ],
   "regions": [
     {
       "label": "Japan",
-      "value": 45
+      "value": 46
     },
     {
       "label": "(not set)",
@@ -108,7 +112,7 @@
   "devices": [
     {
       "label": "mobile",
-      "value": 42
+      "value": 43
     },
     {
       "label": "desktop",
