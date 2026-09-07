@@ -20,7 +20,13 @@
         "url": "https://x.com/kirapara_JP/status/2096840892464210017"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🔔【復刻】イベント開催のお知らせ🔔 ガチャイベント『星海を旅して』、9月10日より復刻予定",
+    "bodyJa": "🔔【復刻】イベント開催のお知らせ🔔\n\nガチャイベント『星海を旅して』、9月10日より復刻予定！\nイベントに参加して、\nセットコーデやダイヤ、限定アイテムなどの\n様々な豪華報酬をゲットしよう💖\n\n詳細は下記画像をチェックしてね👀\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・復刻: ガチャイベント『星海を旅して』が復刻予定\n・開始日時: 9月10日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "2b898537e2ec46e04228ec2d",
@@ -5488,7 +5494,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G3YUB8QaAAA_fSP?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "「Stylightの山神様です。人間たちは山神様と呼んでください。タメ口禁止。山神イベントをクリアすればその日はタメ口OKです。」",
+    "bodyJa": "「Stylightの山神様です。人間たちは山神様と呼んでください。タメ口禁止。山神イベントをクリアすればその日はタメ口OKです。」",
+    "summaryJa": "・追加: 山神イベントが開催される\n・条件: 山神イベントをクリアすることで、その日はタメ口が可能になる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b6db6ee82e04adeb2869d1a0",
@@ -5510,7 +5522,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G3ISRxSaoAAmBSo?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【予告】『ドキドキ』背景パックが明日リリース！全カットがロマンチックなフォトブックになる美しいバラの背景",
+    "bodyJa": "【予告】『ドキドキ』背景パックが明日リリース\n\n全カットがロマンチックなフォトブックになる美しいバラの背景！\n\n🕙 10/14 (火) 10:30 〜 10/27 (月) 23:59\n\n[パック情報]: \n撮影背景「ロマンチックな誓い」、ライブポーズ「ドナウ川の愛」など、様々なアイテムが含まれた美しいパックです。\n\n※詳細はリリース後にゲーム内ショップでご確認ください。",
+    "summaryJa": "・追加: 『ドキドキ』背景パックが明日リリース\n・期間: 10/14 (火) 10:30 〜 10/27 (月) 23:59\n・内容: 撮影背景「ロマンチックな誓い」、ライブポーズ「ドナウ川の愛」など様々なアイテムを含む美しいパック",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "088c7870dfe2a05592ec9df0",
