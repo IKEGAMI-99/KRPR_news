@@ -46,7 +46,8 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
-      "https://clan.fastly.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png",
+      "https://clan.akamai.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png"
     ],
     "titleJa": "メンテナンスのお知らせ",
     "bodyJa": "夢の創造者様へ\nより良い体験を提供するため、9月9日 03:00 UTCよりメンテナンスを開始いたします。メンテナンスに備え、不要な損失を避けるためにもご自身のスケジュールを調整してください。\n\n【メンテナンス時間】9月9日 03:00 - 08:30 UTC\n【対象サーバー】全サーバー\n【主な内容】イベント告知およびバージョンアップについてご確認ください\n\nサーバーの再開時間は実際の運用状況により変動する場合があります。メンテナンス終了後、全プレイヤーの皆様にメンテナンス補償をお送りします。9月12日 23:59 UTCまでに必ず受け取りを忘れないでください。\n\n皆様のご支援とご理解に感謝いたします。Life Makeover チームより",
@@ -1151,10 +1152,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1244495981985136648",
     "publishedLabel": "1日前",
     "publishedAtEpoch": 1788595200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg@316w_560h_1e_1c",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg@316w_560h_1e_1c",
       "https://i0.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg@316w_560h_1e_1c",
       "https://i2.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg@316w_560h_1e_1c",
       "https://i2.hdslb.com/bfs/new_dyn/3c019979c8c1a92d9e4b7d0bd1db099c676200579.jpg"
     ],
@@ -1712,10 +1713,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1244032125492002840",
     "publishedLabel": "3日前",
     "publishedAtEpoch": 1788487200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg@280w_560h_!header",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg@280w_560h_!header",
       "https://i0.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg@280w_560h_!header",
       "https://i2.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg@280w_560h_!header",
       "https://i2.hdslb.com/bfs/new_dyn/e8fef67167dd10b8b11da8b08382aec9676200579.jpg"
     ],
@@ -1940,10 +1941,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1243769273479856135",
     "publishedLabel": "3日前",
     "publishedAtEpoch": 1788426000,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg@426w_560h_1e_1c",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg",
       "https://i0.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg@426w_560h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg",
       "https://i2.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg@426w_560h_1e_1c",
       "https://i2.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg",
       "https://i1.hdslb.com/bfs/new_dyn/651558be1aaf04a62f64daa671e88a28676200579.jpg@426w_560h_1e_1c",
@@ -3064,10 +3065,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1242625094214221825",
     "publishedLabel": "6日前",
     "publishedAtEpoch": 1788159600,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg@720w_406h_1e_1c",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg",
       "https://i0.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg@720w_406h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg",
       "https://i2.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg@720w_406h_1e_1c",
       "https://i2.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg",
       "https://i1.hdslb.com/bfs/new_dyn/9dd3ad0863fbfa042bc1898a1b900c1c676200579.jpg@720w_406h_1e_1c",
@@ -3247,10 +3248,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1242594170468565060",
     "publishedLabel": "2026-08-31",
     "publishedAtEpoch": 1788152400,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg@314w_560h_1e_1c",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg@314w_560h_1e_1c",
       "https://i0.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg@314w_560h_1e_1c",
       "https://i1.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg@314w_560h_1e_1c",
       "https://i1.hdslb.com/bfs/new_dyn/06a9650410da562b4c15c66f71b2c0fe676200579.jpg"
     ],
@@ -3931,7 +3932,8 @@
     ],
     "sourceCount": 1,
     "imageUrls": [
-      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
+      "https://clan.fastly.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png",
+      "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png"
     ],
     "titleJa": "イベント告知",
     "bodyJa": "8月19日のアップデート後、新しいイベントが追加されます。\nイベント1# 新規＆期間限定ライトチェイス - ガーデンソワレ\n8月19日09:00 UTCより、期間限定ライトチェイスイベント【ガーデンソワレ】が開催されます。新しい★5期間限定セットとSRアライが登場します！10回プレイするごとに、SRアライまたは期間限定★5ファッションアイテムが確定で入手でき、期間限定★5ファッションセットを全て揃えるまで続きます！\n期間限定★5セット「Petal Tea Time」を収集すると、専用の入場ポーズ【Floral Chitchat】がアンロックされます。期間限定★5セット「Phantom Candle」を収集すると、Photo > Dynamic Poseで使用できる専用入場ポーズ【White Fire Elegy】がアンロックされます。さらに、Decomショップが利用可能になります。期間限定イベントで入手したファッションを分解することで、期間限定ファッションアイテム【Cherry Drift】、【Endless Bloom】、【Heart's Alert】、Dynamic Pose【Breezy Twirl】、【Dancing Echoes】、アバターフレーム、Garden Wind Vane、Yearning Wings、アライEXPキーIII、ゴールドなどと交換できます！\n【期間限定セット】★5セット「Petal Tea Time」はシーズンを通して利用可能です。旅人よ、私のティーパーティーに参加しませんか？\n★5セット「Phantom Candle」は、この終わりのないティーパーティーで、夜明けから夕暮れまで、年を重ねても待ち続けます。\n【特別注記】★5ドレス「Phantom Candle」は、霧の影のフォルムとキャンドルの光の斑点フォルムが特徴です。彼女が魅力的であろうと、幻想的な霧と光の領域を歌い上げます。\n★4セット「Pure Jade Bamboo」は、静かな森の孤独な旅人で、束の間の思いに誘われて現世に惹きつけられます。\n【期間限定アイテム】★6アイテム：【Innocent Heart】、【Star Pocket】、【Oracle's Gaze】\n★5アイテム：【Muse Cinema】、【Luminous Silk】、【Evening Whisper】、【Innocent Pearl】\n【期間限定メイクアップ】★5メイクアップセット：【Baked Maple Tea】、【Purple Mist Fall】、【Rime-kissed Maple】、【Plum】",
@@ -5446,36 +5448,6 @@
     "titleJa": "限定ガチャイベント『焦土の花』まもなく開催",
     "bodyJa": "限定ガチャイベント『焦土の花』まもなく開催！\n星5セット「落羽聖花」、「融解の冥焔」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆10月16日\n\n#キラパラ\n#着せ替えゲーム",
     "summaryJa": "・限定ガチャイベント『焦土の花』がまもなく開催される\n・星5セット「落羽聖花」と「融解の冥焔」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーンの締め切りは10月16日",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "7e6f2c0aa54a9035edefc885",
-    "region": "GLOBAL",
-    "platform": "Webニュース · pocketgamer",
-    "title": "Life Makeover to collab with Hello Kitty manufacturers Sanrio",
-    "body": "Life Makeover, the dress-up and social sim, is set to once more collaborate with Hello Kitty manufacturers Sanrio. The collaboration will include a number of new clothing sets, allies and more. The outfits are inspired by Sanrio",
-    "sourceUrl": "https://www.pocketgamer.com/life-makeover/sanrio-collab/",
-    "publishedLabel": "2024-03-20",
-    "publishedAtEpoch": 1710943680,
-    "imageUrl": "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab.jpg",
-    "imageUrls": [
-      "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab.jpg",
-      "https://media.pocketgamer.com/artwork/na-34037-1687424977/life-makeover-ios-android-ocean-update-cover_jpg_820.jpg",
-      "https://media.pocketgamer.com/images/notifs-track-this.jpg",
-      "https://media.pocketgamer.com/media/${t[n].adv_img}",
-      "https://media.pocketgamer.com/media/${t.mobile[n].adv_img}",
-      "https://media.pocketgamer.com/media/${t.desktop[n].adv_img}",
-      "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab_jpg_820.jpg",
-      "https://media.pocketgamer.com/artwork/na-34037-1691144933/pocketgamer-top-re_jpg_820.jpg",
-      "https://media.pocketgamer.com/artwork/na-34037-1683719376/life-makeover-launch-keyart-upscaled_jpg_820.jpg",
-      "https://media.pocketgamer.com/artwork/na-34037-1682679349/lifemakeover-launch-date-keyart_jpg_820.jpg",
-      "https://media.pocketgamer.com/artwork/na-34037-1678465382/life-makeover-keyart_jpg_820.jpg"
-    ],
-    "titleJa": "Life Makeoverがサンリオのハローキティとコラボレーション",
-    "bodyJa": "着せ替え・ソーシャルシミュレーションゲーム『Life Makeover』が、ハローキティの製造元であるサンリオと再びコラボレーションを行います。このコラボレーションでは、多数の新しい衣装セットやアライアンスなどが登場します。衣装はサンリオからインスピレーションを得ています。",
-    "summaryJa": "・追加: サンリオのハローキティとのコラボレーションが実施される\n・内容: 新しい衣装セットやアライアンスなどが登場する\n・衣装のインスピレーション: サンリオから得られている",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
