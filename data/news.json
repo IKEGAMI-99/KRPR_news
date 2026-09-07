@@ -154,7 +154,7 @@
     "summaryJa": "・内容: 白露の節気に合わせた季節の挨拶\n・メッセージ: 秋が深まる中で、自分だけの芳香を見つけられるよう願う\n・ゲームタイトル: 以闪亮之名",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "原文は白露の節気に合わせた季節投稿で、イベント開催の記述はない。既存summaryJaが『イベント名』『イベント告知』と誤認して原文にないイベント情報を追加していたため修正。",
     "solReviewed": true,
     "solLocked": true
@@ -1309,7 +1309,7 @@
     "summaryJa": "・追加: Stylight 1周年を記念した初回チャージボーナスがリセットされます\n・期間: 9月10日(木) 10:30 アップデート後\n・内容: アップデート後、すべてのチャージ商品で初回チャージボーナスが適用され、初回購入時にクローバーと同量のダイヤが追加で付与されます\n・注意点: リセット前の未使用ボーナスは繰り越されず、リセット後同一商品で2回ボーナスを受け取ることはできません",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solLocked": true
   },
   {
@@ -1341,7 +1341,7 @@
     "summaryJa": "・復刻: 人気限定セット＆パッケージが期間限定で再登場\n・復刻アイテム: Stylight初の限定光追跡『깊은 바다의 꿈』\n・復刻セット: 6★セット『세이렌 변주곡』と限定SSR絆\n・復刻パッケージ: 『미스틱 파티』を含む人気パッケージが発売以来初めて再登場",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solLocked": true
   },
   {
@@ -5578,7 +5578,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/G2-fKSmbwAMPd0A?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【イベント】『ワイン色の夜』願いランダムボックス予告",
+    "bodyJa": "【イベント】『ワイン色の夜』願いランダムボックス予告！\n\n魅惑的な5★限定コスチューム『ワイン色の夜』が明日午前、皆様のもとへやってきます。\n\n🕙2025/10/13 10:30 〜 2026/1/8 23:59まで\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n- \n\n#Stylight #Stylight降臨 #Stylightアップデート",
+    "summaryJa": "・追加: 5★限定コスチューム『ワイン色の夜』が登場\n・期間: 2025/10/13 10:30 〜 2026/1/8 23:59",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "7e6f2c0aa54a9035edefc885",

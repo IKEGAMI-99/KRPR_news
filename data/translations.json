@@ -3895,6 +3895,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788762138
+    },
+    "https://x.com/stylight_kr/status/1977207604301451345": {
+      "contentHash": "b8093a860d3d39aac0d499cd",
+      "titleJa": "【イベント】『ワイン色の夜』願いランダムボックス予告",
+      "bodyJa": "【イベント】『ワイン色の夜』願いランダムボックス予告！\n\n魅惑的な5★限定コスチューム『ワイン色の夜』が明日午前、皆様のもとへやってきます。\n\n🕙2025/10/13 10:30 〜 2026/1/8 23:59まで\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n- \n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 5★限定コスチューム『ワイン色の夜』が登場\n・期間: 2025/10/13 10:30 〜 2026/1/8 23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788762481
     }
   },
   "failures": {}
