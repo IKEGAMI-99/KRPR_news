@@ -45,7 +45,11 @@
     "https://www.bilibili.com/opus/1244805219643031554": {"id":"bc06a667fb19227af5b3b732","publishedAtEpoch":1788667200,"sourceContentHash":"4bd13521e375217f3d05fb30","translationHash":"839ceb49aa5597fb0ca6fbe7","auditedAtEpoch":1788670537,"result":"ok"},
     "https://store.steampowered.com/news/app/2626940/view/681886390551578055": {"id":"c2bb3b53359f29f9b37bf706","publishedAtEpoch":1788752208,"sourceContentHash":"6e1124934ff677751213b3e2","translationHash":"90545916b083c61580b3421a","auditedAtEpoch":1788756912,"result":"ok"},
     "https://x.com/stylight_kr/status/2096795603304894951": {"id":"4249f7ad085889b19af69ecc","publishedAtEpoch":1788750003,"sourceContentHash":"2f5d5b7b68a1e1c54ad57f98","translationHash":"83d8ca8d443979a160a74298","auditedAtEpoch":1788756912,"result":"ok"},
-    "https://www.bilibili.com/opus/1245160842891100217": {"id":"cf3d9dd46dfbf7eaf02c19ff","publishedAtEpoch":1788750000,"sourceContentHash":"f6eef0526719e7ac7d06207c","translationHash":"8acd7ffa9b3713ad1e0d2f99","auditedAtEpoch":1788756912,"result":"override"}
+    "https://www.bilibili.com/opus/1245160842891100217": {"id":"cf3d9dd46dfbf7eaf02c19ff","publishedAtEpoch":1788750000,"sourceContentHash":"f6eef0526719e7ac7d06207c","translationHash":"8acd7ffa9b3713ad1e0d2f99","auditedAtEpoch":1788756912,"result":"override"},
+    "https://x.com/LifeMakeover510/status/2096901292614640105": {"id":"29dd9399a73cae3b28e8dae5","publishedAtEpoch":1788775201,"sourceContentHash":"43188d151bec6a832dd67ab6","translationHash":"79f2b6f970c1e1bf61e1dd0a","auditedAtEpoch":1788779076,"result":"ok"},
+    "https://www.bilibili.com/opus/1245269076058570808": {"id":"406ba599f57d540e1f59e11e","publishedAtEpoch":1788775200,"sourceContentHash":"ae44f837ca4f9254aea7daad","translationHash":"7c31de3b95ee1f9d2a9b53b4","auditedAtEpoch":1788779076,"result":"override"},
+    "https://www.bilibili.com/opus/1245238152312913941": {"id":"4b10e6e881a0ab732759a9e6","publishedAtEpoch":1788768000,"sourceContentHash":"b83ad0b3713d55dd9ee0dce2","translationHash":"8c6dbaa64871fd129db87875","auditedAtEpoch":1788779076,"result":"ok"},
+    "https://x.com/kirapara_JP/status/2096840892464210017": {"id":"f5405bc57c85939add16e46a","publishedAtEpoch":1788760800,"sourceContentHash":"e75b9aa7e6bf103e727a7e72","translationHash":"49741785e1a4c12e9d40acf4","auditedAtEpoch":1788779076,"result":"ok"}
   },
-  "lastRunAt": 1788756912
+  "lastRunAt": 1788779076
 }
