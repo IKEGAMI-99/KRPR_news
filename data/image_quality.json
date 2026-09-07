@@ -2261,12 +2261,6 @@
     "height": 1920,
     "checkedAt": 1788750873
   },
-  "https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
-    "ok": false,
-    "width": 244,
-    "height": 212,
-    "checkedAt": 1788754448
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQA0EigD4pY2ABBAEURaQFlEMhNACHHMLIivD~tplv-tiktokx-origin.image?dr=9636&x-expires=1788926400&x-signature=MBG8bO1lQPKxh9uSWe%2FQ2Xihgos%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 2160,
@@ -2277,12 +2271,6 @@
     "ok": true,
     "width": 2160,
     "height": 3840,
-    "checkedAt": 1788754448
-  },
-  "https://clan.akamai.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
     "checkedAt": 1788754448
   },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/5740f75d3c2a4d0e8758192ada3bc084~tplv-photomode-image.jpeg?dr=9616&x-expires=1788926400&x-signature=%2Fg%2FKHrRHZY%2BsiINa9YNaLiHLkIM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1": {
@@ -2339,12 +2327,6 @@
     "height": 648,
     "checkedAt": 1788754448
   },
-  "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
-    "ok": true,
-    "width": 616,
-    "height": 353,
-    "checkedAt": 1788754448
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/64ac17ad602343d8b43197c34220047d~tplv-photomode-image.jpeg?dr=9616&x-expires=1788926400&x-signature=uvwkwu5mcVWTbSuJzW%2FPhIgEI8I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1": {
     "ok": true,
     "width": 2304,
@@ -2391,12 +2373,6 @@
     "ok": true,
     "width": 1080,
     "height": 1440,
-    "checkedAt": 1788754448
-  },
-  "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
     "checkedAt": 1788754448
   },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1788926400&x-signature=9UzFiIdxcVGRzYbvPheBcbc2SEw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
@@ -2465,22 +2441,34 @@
     "height": 1440,
     "checkedAt": 1788754448
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=4984549f-a6ec-4fcc-98a1-57e720812983&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788754446953&request_path=%2Fmoment%2F828260941740116010": {
+  "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
     "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788754448
+    "width": 244,
+    "height": 212,
+    "checkedAt": 1788757574
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=d2e2ed41-bdea-4243-b673-45afa6844013&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788754446966&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1788754448
+  "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
+    "ok": true,
+    "width": 616,
+    "height": 353,
+    "checkedAt": 1788757574
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=8d617100-6481-4df5-8597-22eabc900d34&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788754446918&request_path=%2Fmoment%2F821067872284446124": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=11b0d78f-15b1-41ce-87fd-fe61c2ce1610&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788757573172&request_path=%2Fmoment%2F828260941740116010": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788754448
+    "checkedAt": 1788757574
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=b4451f6d-1e34-41bf-ab94-27ae7860f5fb&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788757573142&request_path=%2Fmoment%2F827191805966550915": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788757574
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=d4ce9e48-d1bb-4371-b328-9ebb73d82203&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788757573240&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1788757574
   }
 }
