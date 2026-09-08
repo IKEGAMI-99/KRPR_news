@@ -4029,6 +4029,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788842068
+    },
+    "https://www.bilibili.com/opus/1245556409371721734": {
+      "contentHash": "b771b1f5de209d29302b623b",
+      "titleJa": "復刻「追光」イベント｜烬土分解商店限定交換アイテムプレビュー",
+      "bodyJa": "復刻「追光」イベント｜烬土分解商店限定交換アイテムプレビュー\n烬土生花| 神火永焚，圣骨绿芽。9月9日10:00から9月29日23:59まで期間限定で開催！\n\n【追光・烬土分解】商店は9月9日10:00から9月30日23:59まで開催されます。この期間限定の「追光」イベント内で服飾を分解することで、限定衣装パーツ【月语森歌】、【香槟夜宴】、【祈露梵音】、動的撮影アクション【游丝弄影】、撮影アクション【翠扇引风】、アバター枠、烬土風向標、心念之蝶、知之钥、金貨などの素材アイテムを入手できます。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 9月9日10:00〜9月29日23:59\n・入手方法: 期間限定の「追光」イベント内で服飾を分解することで限定アイテムを入手可能\n・入手アイテム: 限定衣装パーツ、動的撮影アクション、撮影アクション、アバター枠、素材アイテムなど",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788844416
+    },
+    "https://www.bilibili.com/opus/1245555120939204626": {
+      "contentHash": "e9ee88c5dd959c98c7104b88",
+      "titleJa": "復刻追光イベント｜SR絆「藍殊・殊途花引」 燼土生花| 神火永焚，聖骨綠芽",
+      "bodyJa": "復刻追光イベント｜SR絆「藍殊・殊途花引」\n燼土生花| 神火永焚，聖骨綠芽。9月9日10:00から9月29日23:59まで期間限定で開催！\n\n「ここを離れて、前へ走れ、振り返るな。」\n鏡の中の血涙は、致命的な誘いか、それとも声なき祈りか？\n繁花が藍殊の体を引き裂く時、今回、あなたは彼を信じることができるだろうか？\n\n以閃亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・復刻追光イベントが期間限定で開催される\n・イベント期間は9月9日10:00から9月29日23:59まで\n・登場するSR絆は「藍殊・殊途花引」\n・イベントのテーマは「燼土生花| 神火永焚，聖骨綠芽」",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788844494
+    },
+    "https://www.bilibili.com/opus/1245553832409169927": {
+      "contentHash": "8bc7102209c69ecdd7c393d3",
+      "titleJa": "復刻「追光」イベント｜★4セット「孤島航線」プレビュー",
+      "bodyJa": "復刻「追光」イベント｜★4セット「孤島航線」プレビュー！\n烬土生花| 神火永焚，圣骨绿芽。9月9日10:00から9月29日23:59まで期間限定で開催！\n\n全ての航路は喧騒の港へと通じます。\n太陽の口づけの跡を携え、深海へと墜ちていく。\nこれは一体誰の運命の終着点なのでしょうか？\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\n全ての女性が夢中になる3A級シミュレーションライフゲーム\n\n開始",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 9月9日10:00〜9月29日23:59\n・追加: ★4セット「孤島航線」がプレビューされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788844562
     }
   },
   "failures": {}
