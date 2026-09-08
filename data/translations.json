@@ -4107,6 +4107,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788859082
+    },
+    "https://x.com/stylight_kr/status/2097248582722019730": {
+      "contentHash": "cf55a7520d8ab22df0859087",
+      "titleJa": "『深淵の花』壁紙共有 第1弾",
+      "bodyJa": "『深淵の花』壁紙共有 第1弾\n\n時を経て傷跡が刻まれた石膏像に、新たな生命の芽が宿ります。🌿\n\nひび割れた亀裂から生えた葉と、風に舞う軽やかなベールが調和した神秘的な瞬間を体験してください。\n\n傷を抱えながらも再び咲き誇る美しさを、壁紙としてお持ち帰りください。✨\n\n#Stylight #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『深淵の花』壁紙共有 第1弾が公開\n・内容: 時を経て傷跡が刻まれた石膏像に新たな生命の芽が宿る神秘的な壁紙が追加\n・ハッシュタグ: #Stylight #Stylightアップデート #深淵の花",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788859283
+    },
+    "https://x.com/kirapara_JP/status/2097241026411040874": {
+      "contentHash": "73cf8aac206fe785be6e2611",
+      "titleJa": "🛍外観パック『蘿垂るる風月』販売🛍 パックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖 販売期間⏰ 9月10日～9月30日 詳細はゲーム内でチ...",
+      "bodyJa": "🛍外観パック『蘿垂るる風月』販売🛍\n\nパックを購入すると、フォト背景や動作ポーズなどが獲得できるよ💖\n\n販売期間⏰\n9月10日～9月30日\n\n詳細はゲーム内でチェックしてね📷\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 外観パック『蘿垂るる風月』が販売開始\n・内容: パックを購入すると、フォト背景や動作ポーズなどが獲得できる\n・期間: 9月10日～9月30日\n・入手: ゲーム内で詳細を確認",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788859315
+    },
+    "https://x.com/kirapara_JP/status/2097237251977773126": {
+      "contentHash": "9a4613326fe3b8fd085e3ed5",
+      "titleJa": "🔔【復刻】分解ショップアイテム公開🔔 復刻ガチャイベント開催と同時に、 分解ショップ『星海分解』も再開放",
+      "bodyJa": "🔔【復刻】分解ショップアイテム公開🔔\n\n復刻ガチャイベント開催と同時に、 分解ショップ『星海分解』も再開放！\n星5バッグや所持品などを手に入れよう✨\n\n詳細はゲーム内をチェックしてね～\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・復刻ガチャイベント開催と同時に、分解ショップ『星海分解』が再開放されました\n・星5バッグや所持品などを入手できます\n・詳細はゲーム内を確認してください",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788859344
     }
   },
   "failures": {}
