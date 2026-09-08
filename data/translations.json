@@ -4047,6 +4047,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788844828
+    },
+    "https://x.com/kirapara_JP/status/2097235993388793966": {
+      "contentHash": "9f87436393e83f75f7d3783c",
+      "titleJa": "✍️紹介コーナー 【復刻】限定星4セット『時代の影』 彼女こそこの時代のヒロインだ",
+      "bodyJa": "✍️紹介コーナー\n【復刻】限定星4セット『時代の影』\n\n彼女こそこの時代のヒロインだ。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定星4セット『時代の影』が登場\n・キャッチコピー: 彼女こそこの時代のヒロインだ\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788855422
+    },
+    "https://x.com/kirapara_JP/status/2097234735206424726": {
+      "contentHash": "a116f5ebb803b59866340c07",
+      "titleJa": "✍️紹介コーナー 【復刻】限定星5セット『甘い悪夢』 彼女は甘いキャンディーに誘惑され、悪夢に陥った",
+      "bodyJa": "✍️紹介コーナー\n【復刻】限定星5セット『甘い悪夢』\n\n彼女は甘いキャンディーに誘惑され、悪夢に陥った。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定星5セット『甘い悪夢』が紹介コーナーで登場\n・内容: 彼女は甘いキャンディーに誘惑され、悪夢に陥ったという設定のセット",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788855451
+    },
+    "https://x.com/kirapara_JP/status/2097233483768721728": {
+      "contentHash": "e837a4372d344c3754c76a99",
+      "titleJa": "✍️紹介コーナー 【復刻】限定星6セット『綺夢の銀河』 流れる星の海からエルフの夢を拾い上げ、蝶々の間で繭から生まれる彼女の伝説に耳を傾ける",
+      "bodyJa": "✍️紹介コーナー\n【復刻】限定星6セット『綺夢の銀河』\n\n流れる星の海からエルフの夢を拾い上げ、蝶々の間で繭から生まれる彼女の伝説に耳を傾ける。\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻: 限定星6セット『綺夢の銀河』が紹介コーナーで登場\n・内容: 流れる星の海からエルフの夢を拾い上げ、蝶々の間で繭から生まれる彼女の伝説に耳を傾ける",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788855482
     }
   },
   "failures": {}
