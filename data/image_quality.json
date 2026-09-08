@@ -1613,18 +1613,6 @@
     "height": 360,
     "checkedAt": 1788851718
   },
-  "https://kotaku.com/app/uploads/2026/01/unnamed.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1788851718
-  },
-  "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1788851718
-  },
   "https://kotaku.com/app/uploads/2026/08/image-2026-08-31T090445.966.jpg": {
     "ok": true,
     "width": 1920,
@@ -1707,12 +1695,6 @@
     "ok": true,
     "width": 1920,
     "height": 1080,
-    "checkedAt": 1788855292
-  },
-  "https://kotaku.com/app/uploads/2025/11/LEGOStarWarsTheDarkFalcon.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1280,
     "checkedAt": 1788855292
   },
   "https://pbs.twimg.com/amplify_video_thumb/2089553344620838912/img/pzJ2Nz7HU7BgoUdC.jpg": {
@@ -1857,12 +1839,6 @@
     "ok": true,
     "width": 1024,
     "height": 1300,
-    "checkedAt": 1788865996
-  },
-  "https://kotaku.com/app/uploads/2024/10/9e237efb29857f2246e0428f3be9d316.jpg": {
-    "ok": true,
-    "width": 1315,
-    "height": 740,
     "checkedAt": 1788865996
   },
   "https://pbs.twimg.com/media/HRl97DgaoAAa0et?format=jpg&name=orig": {
@@ -2153,12 +2129,6 @@
     "height": 3648,
     "checkedAt": 1788887657
   },
-  "https://kotaku.com/app/uploads/2026/02/mew-and-mewtwo.jpg": {
-    "ok": true,
-    "width": 1280,
-    "height": 720,
-    "checkedAt": 1788887657
-  },
   "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig": {
     "ok": true,
     "width": 2160,
@@ -2195,352 +2165,274 @@
     "height": 1744,
     "checkedAt": 1788887657
   },
-  "https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
-    "ok": false,
-    "width": 244,
-    "height": 212,
-    "checkedAt": 1788891371
-  },
-  "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
+  "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
     "ok": true,
     "width": 616,
     "height": 353,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://clan.akamai.steamstatic.com/images/44706412/1b1dc8e7784dba37b5bf76738efbbeb47ba79a4d.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1788891371
-  },
-  "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=29b8kv63aZmvd7nidwKQ8hdLxlw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 486,
-    "height": 648,
-    "checkedAt": 1788891371
-  },
-  "https://clan.akamai.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oAsCOfAgKgqVDvAQAY1EAlCQBBkFIrf5q9NJAE~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=q5bo%2BuYGY8EML2RTEmuZZZ4m7vE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 486,
-    "height": 648,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/5740f75d3c2a4d0e8758192ada3bc084~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=A%2F7bO1s06AjlseUsyBU5cWElPLo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
+  "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=zsTPViPUuGmwinzRgkth6iBKZjo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
     "ok": true,
     "width": 2400,
     "height": 3840,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=MCoVyeHcwBVglFRD92dVq3J51rU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
+  "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
+    "ok": false,
+    "width": 244,
+    "height": 212,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=bNV85FX4MI10Jdp8Y%2FaTEdywOyY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oQA0EigD4pY2ABBAEURaQFlEMhNACHHMLIivD~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=ZVImjCfMpXq39DHk9OxepWN%2Fgx0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 2160,
+    "height": 3840,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=j1qMxpm6FUE0EfY4z3XspMTAXmE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/1bd3d028bcf8459c87e6b96b8bafbf02~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=ulsjAJm8%2F1vUv%2FkEbant98W5Jzg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
+    "ok": true,
+    "width": 2160,
+    "height": 3840,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=P%2B3uSyoZpq%2Fdho1e5YNgvTs0Utc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
     "ok": true,
     "width": 1920,
     "height": 1080,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIEB8i1ChBAAgzBNIf2MAUAwirJ1iP7xMBKAKW~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=9UqHTK4hJ7%2BEkkYewnUNc%2BbVpVo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/5740f75d3c2a4d0e8758192ada3bc084~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=kajReGo1M4rleJ4kBGC229wuxvw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
     "ok": true,
-    "width": 486,
-    "height": 648,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=BjMCS236kCLScKOIyEORoPRVZpw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 486,
-    "height": 648,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=S05uG1Yya%2BStT1khI89HZUuXXrU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 486,
-    "height": 648,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/1bd3d028bcf8459c87e6b96b8bafbf02~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=dcAzRTR2KGoo5otr19ODQLpTrhU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
-    "ok": true,
-    "width": 2160,
+    "width": 2400,
     "height": 3840,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=zskgrC2IpO3Lszww5B%2FHnUHOw%2FA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=FMhVPew3rceAQe6jcPMdjyd5FDc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oQA0EigD4pY2ABBAEURaQFlEMhNACHHMLIivD~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=hLGZ0fDnKbFrv%2BjUoGClei56S%2Fw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 2160,
-    "height": 3840,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=UPXYt8Wj%2BIOzFctEpDBK7xMXjUM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=Rnz%2B8ouFHws4eUWsIs4domDBE0U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=ZrD2rMa%2BbmKLwT%2B9vg0774vfJUY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osIAfqoCCCxA5gVFqMQACFEBQFDR9XAPFf4jCQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=IfIOewg2jK%2F6nD73uJ3sxNqkadY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/c320a475efbe4ec2b7f5a269f27e4df3~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=jFNxXdrdtA7dM6DzRQr0S7dx%2BOY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=WLs85S13ekcfvXBxR1ESht9zTRA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/c320a475efbe4ec2b7f5a269f27e4df3~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=Z14YCqV9%2FcwWBhnDPYoqQAb5s4U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
     "ok": true,
     "width": 1080,
     "height": 1920,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/64ac17ad602343d8b43197c34220047d~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=t72hhP6UFbcViTgm1HncJNkd0jo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/64ac17ad602343d8b43197c34220047d~tplv-photomode-image.jpeg?dr=10375&x-expires=1789066800&x-signature=9bTx%2Ffz8NZU12HxzNXa4tDYacck%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
     "ok": true,
     "width": 2304,
     "height": 4096,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=10375&x-expires=1789063200&x-signature=zhB%2FWsSpoqbtrTLKgst6Edcu1iU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=no1a&ftpl=1": {
-    "ok": true,
-    "width": 2400,
-    "height": 3840,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osIAfqoCCCxA5gVFqMQACFEBQFDR9XAPFf4jCQ~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=q3ZXUT6fXxGT5ajGvIR6EdTFccI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oAsCOfAgKgqVDvAQAY1EAlCQBBkFIrf5q9NJAE~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=tPKtHFYDMduyV1EpqGDzYVp7hDk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ocUCYAAu1BAcWjGWB4iiwTBGBKAKu0AIEyfEIw~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=T5HSZb%2BehiO0oY9g8CLkxxNTdsA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oEjUEViEAjIYcjWNAABAIMJ4Kj1wxBBBAui5f1~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=hMJY5V9C83mSXIy7%2BlfNR%2FX6BUE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oEjUEViEAjIYcjWNAABAIMJ4Kj1wxBBBAui5f1~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=9eRubCaJx3G5Lap%2FPC0uLHQ7OZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osQgxDVMIApMaoAC7BCEnekAwEBVgAF3qWCV6f~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=YeiZGKZrhDtweDGwuQlo%2B5iSDyQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osQgxDVMIApMaoAC7BCEnekAwEBVgAF3qWCV6f~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=RxH3cHWoseibgYpJr%2FfW1i5n6Ug%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ocUCYAAu1BAcWjGWB4iiwTBGBKAKu0AIEyfEIw~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=XMS9B%2F9TdhvI1z6i2NjOi2ySk6U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=jrXuFI9mu3p5UBmu1BxGSF%2BvIDs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=VQa3l%2Bu6qlvpkpVq8yQv0MY66pE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
-    "width": 1080,
-    "height": 1440,
-    "checkedAt": 1788891371
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=%2Fsa9fsl3mcLMZVmVCjatNLTnZ7o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 1080,
-    "height": 1440,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=ykSTFB3FWWblw7zuBfdt%2F5zve50%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 1080,
-    "height": 1440,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=0bJz5EA3jvfQhpACKZA7xCptpvI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 1080,
-    "height": 1440,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=I9HQa4Br3J9fMkUM7bsM%2BZG77w4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=1xNTTCZKKV5u19HqWz0CBIPIv2g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 1500,
     "height": 2000,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=fqT0vnd9EbIqtwvmBvzfXPQ7BgA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=OZ9Fcti3WmeL4uwRyVSzPmsQzZ4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 1080,
+    "height": 1440,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=nD79f0PlYYAHTkaSxLDoUQAJH3M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 1080,
+    "height": 1440,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=iH9DIG2S5U3AIuWux5jSwzJyv5I%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
     "width": 1500,
     "height": 2000,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=TNYbChb24F3oE6ixEFl3QHe6cbU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=YN2kzm6%2FEgcGeATL8eLak9QEIKQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
-    "width": 2160,
-    "height": 2880,
-    "checkedAt": 1788891371
+    "width": 1080,
+    "height": 1440,
+    "checkedAt": 1788894792
   },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=rXr8A4XVObGKpKZyAl26mT9GBuU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=Om4VBEyYh%2F5upkeUI3Igk24irXU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
-    "width": 1500,
-    "height": 2000,
-    "checkedAt": 1788891371
+    "width": 1080,
+    "height": 1440,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1968998639378010112/img/X7NQ4IhnL4gnsaRL.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=P8SqsCOGlh9XDk8YdzHwA5UqkM0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1788891371
-  },
-  "https://pbs.twimg.com/media/G1NVeW9b0AAN-mM?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
-  },
-  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=10395&x-expires=1789063200&x-signature=yg0YYEdmv%2FDPXLzSHp7oaEkTMSs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
-    "ok": true,
-    "width": 2160,
-    "height": 2880,
-    "checkedAt": 1788891371
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1961009104190857216/img/5c8hvm-A3UnttABz.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1952924515518038016/img/D1mcFt-b8ZvljmY-.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
-  },
-  "https://pbs.twimg.com/media/Gx0R_QQbsAE8AvH?format=jpg&name=orig": {
+  "https://kotaku.com/app/uploads/2026/09/fps-2000s-sprawl-zero.jpg": {
     "ok": true,
     "width": 1920,
     "height": 1080,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1953414158558629888/img/GU3pOD1ifgrAnSZP.jpg": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=%2FnoyDuisMRD2Y9hN3D0bJjxleMo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 2160,
+    "height": 2880,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1945757610428559360/img/Psi2ISvomOJ7rJ8r.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/coc44k.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1930531398995320832/img/prjme-zDdb0tbbXT.jpg": {
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=y8yRlOBRVmUZRyDpgTtHumGznkE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 2160,
+    "height": 2880,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1937758501822173184/img/pyf9PhvRKmmFblFx.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_720p/sci84f.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 405,
+    "height": 720,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1922924049832812545/img/e0UO0szwEhJQj8FT.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_720p/sci84g.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 405,
+    "height": 720,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/amplify_video_thumb/1914564930248040448/img/pDwJD_oy2my3iCzj.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co2pz0.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/ext_tw_video_thumb/1907350653833510913/pu/img/RaAPtE0OIvS1Jv13.jpg?name=orig": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co4wjm.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://pbs.twimg.com/ext_tw_video_thumb/1899774347855970305/pu/img/nWh_rjx_9xRLo9zW.jpg?name=orig": {
+  "https://kotaku.com/igdb/image/upload/t_720p/sci84h.jpg": {
     "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1788891371
+    "width": 405,
+    "height": 720,
+    "checkedAt": 1788894792
   },
-  "https://www.youtube.com/embed/IKHhRj_v4mw": {
-    "ok": false,
-    "width": 0,
-    "height": 0,
-    "checkedAt": 1788891371
-  },
-  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co57cj.jpg": {
     "ok": true,
-    "width": 1010,
-    "height": 505,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://media.pocketgamer.com/artwork/na-34037-1687424977/life-makeover-ios-android-ocean-update-cover_jpg_820.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co6o6g.jpg": {
     "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://media.pocketgamer.com/images/notifs-track-this.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co2hhh.jpg": {
     "ok": true,
-    "width": 900,
-    "height": 295,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 703,
+    "checkedAt": 1788894792
   },
-  "https://media.pocketgamer.com/artwork/na-34037-1683719376/life-makeover-launch-keyart-upscaled_jpg_820.jpg": {
+  "https://kotaku.com/igdb/image/upload/t_cover_big_2x/cocs4m.jpg": {
     "ok": true,
-    "width": 820,
-    "height": 461,
-    "checkedAt": 1788891371
+    "width": 528,
+    "height": 704,
+    "checkedAt": 1788894792
   },
-  "https://media.pocketgamer.com/artwork/na-34037-1678465382/life-makeover-keyart_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1788891371
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1691144933/pocketgamer-top-re_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1788891371
-  },
-  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1788891371
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1682679349/lifemakeover-launch-date-keyart_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1788891371
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=04e8ce16-c615-496a-bbb3-a7548dd77490&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788891366304&request_path=%2Fmoment%2F827191805966550915": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=c5e3e9fd-b7ce-42a6-a999-dbe1f9e67d8f&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788894790848&request_path=%2Fmoment%2F821067872284446124": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=80a989d6-f61a-4409-8cc7-1fe11ce8d405&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788891366756&request_path=%2Fmoment%2F821067872284446124": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=709f00c2-bf6a-46ae-b4ef-37aab010cd51&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788894790840&request_path=%2Fmoment%2F828260941740116010": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=fd47b9ac-4bf4-45c3-ac04-60461e57edc5&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788891366312&request_path=%2Fmoment%2F828260941740116010": {
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=9b58bf59-3fde-4619-8698-74fae1df8cd3&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1788894790758&request_path=%2Fmoment%2F827191805966550915": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1788891371
+    "checkedAt": 1788894792
+  },
+  "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=lTkVmWYLVbdvCxHt38U2sMGmVsA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 1500,
+    "height": 2000,
+    "checkedAt": 1788894792
+  },
+  "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oIEB8i1ChBAAgzBNIf2MAUAwirJ1iP7xMBKAKW~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=fB71eEkg%2FtQrnjJXdhobhUM9H5o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1788894792
+  },
+  "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=10395&x-expires=1789066800&x-signature=nBd0SW6CpIh%2BWc2f6abaiKZsZh8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=no1a": {
+    "ok": true,
+    "width": 1440,
+    "height": 1920,
+    "checkedAt": 1788894792
   }
 }
