@@ -356,7 +356,23 @@
       "translationHash": "685535b8440b2967f3cab1c9",
       "auditedAtEpoch": 1788821816,
       "result": "override"
+    },
+    "https://weibo.com/7521830234/Rh8y6lTYa": {
+      "id": "5d43925bfe293e4cb29810a4",
+      "publishedAtEpoch": 1788840002,
+      "sourceContentHash": "d02a3d717f738e956889094b",
+      "translationHash": "3ba38c4693c7eaf284ddd8ce",
+      "auditedAtEpoch": 1788843506,
+      "result": "override"
+    },
+    "https://t.bilibili.com/1245547495217430544": {
+      "id": "7eb2f9958035ab17d79d731c",
+      "publishedAtEpoch": 1788840000,
+      "sourceContentHash": "2c6182716ff0d842a3f0bd09",
+      "translationHash": "6a25de6522c560ed5b84fbc1",
+      "auditedAtEpoch": 1788843506,
+      "result": "override"
     }
   },
-  "lastRunAt": 1788821816
+  "lastRunAt": 1788843506
 }
