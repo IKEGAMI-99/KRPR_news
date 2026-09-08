@@ -4167,6 +4167,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788862773
+    },
+    "https://weibo.com/7521830234/RhaG6iMAF": {
+      "contentHash": "15956b0fed39fcf8f53e320f",
+      "titleJa": "以闪亮之名：本イベントの報酬獲得者発表",
+      "bodyJa": "以闪亮之名 #以闪亮之名#\n\n本イベントの報酬獲得者を以下の通り発表します。\n\n【優良賞】\n@琶鹭 税前1000元\n@小羊000sheep 税前500元\n@六塊董事長66 税前500元\n@小豆子本豆i 税前500元\n@梦枕茶眠 税前300元\n@紫薯布丁鲨 税前300元\n@豆腐炖鱼_ 税前300元\n@朕是一个脆弱的皇帝Oo 税前300元\n@予弈寄相思_ 税前300元\n\n【幸運賞】\n@_灼愿之诗 税前100元\n@木只vagabond 税前100元\n@甜杏兔兔 税前100元\n@是虚浮阿 税前100元\n@joluo_罗妈妈 税前100元\n@·蝶衣· 税前100元\n@啾啾企鹅爆弹 税前100元\n@半生绘 税前100元\n@不会起名的弦 税前100元\n@蝶羽Cerys 税前100元\n\n受賞者発表の締め切りは9月14日です。受賞者が獲得した現金報酬は、発表終了後20営業日以内に送付される予定です。詳細は【微博-激励中心】にてご確認いただけます。\n\nなお、上記賞金はすべて税引き前額です。微博プラットフォームは国の規定に従い税金を源泉徴収します。受賞者が最終的に受け取る報酬額は、実際に手元に届く金額を基準とします。\n\nイベントポータル： Webリンク\n\n💎ダウンロードポータル： Webリンク\n💎閃亮作品上映季イベントポータル： Webリンク",
+      "summaryJa": "・優良賞の受賞者と税引き前報酬額が発表されました\n・幸運賞の受賞者と税引き前報酬額が発表されました\n・受賞者発表の締め切りは9月14日です\n・現金報酬は発表終了後20営業日以内に送付されます\n・イベントポータル、ダウンロードポータル、閃亮作品上映季イベントポータルが公開されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788862987
     }
   },
   "failures": {}
