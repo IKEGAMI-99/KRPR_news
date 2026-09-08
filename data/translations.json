@@ -4212,10 +4212,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 12,
-      "failedRuns": 4,
-      "lastFailureAtEpoch": 1788900696,
-      "retryAfterEpoch": 1788911496
+      "failedAttempts": 15,
+      "failedRuns": 5,
+      "lastFailureAtEpoch": 1788911919,
+      "retryAfterEpoch": 1788922719
     }
   }
 }
