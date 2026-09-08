@@ -4177,7 +4177,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788862987
+    },
+    "https://x.com/LifeMakeover510/status/2097271227551232008": {
+      "contentHash": "ea87ec7138c9ae8a9efc657f",
+      "titleJa": "約束の黄昏アピアランスパック ⏰9月9日 09:00 - 9月22日 23:59 UTC [パック詳細]",
+      "bodyJa": "約束の黄昏アピアランスパック\n\n⏰9月9日 09:00 - 9月22日 23:59 UTC\n\n[パック詳細]\nイベント期間中、約束の黄昏パックを54%割引で購入できます。このパックには、ダイナミックカメラポーズ「Breezy Invite」、シーン「Dusk Sea Breeze」、ポーズ「Veiled Gaze」などが含まれています！",
+      "summaryJa": "・追加: 約束の黄昏アピアランスパックが登場\n・期間: 9月9日 09:00 - 9月22日 23:59 UTC\n・内容: ダイナミックカメラポーズ「Breezy Invite」、シーン「Dusk Sea Breeze」、ポーズ「Veiled Gaze」などが含まれる\n・特典: イベント期間中、パックを54%割引で購入可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788866311
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7681599154224696596": {
+      "contentHash": "118117a9bcfe4d272a1173f6",
+      "titleJa": "👏🏻Vvanna Music Entertainmentが正式に登場！",
+      "bodyJa": "👏🏻Vvanna Music Entertainmentが正式に登場しました！✨スポットライトを浴びる、新進気鋭のVMEスターがあなたのために輝きます！📢Dream Incubatorのメンバーが...",
+      "summaryJa": "・追加: Vvanna Music Entertainmentが正式に登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788866347
     }
   },
-  "failures": {}
+  "failures": {
+    "https://x.com/LifeMakeover510/status/2097278782822625779": {
+      "contentHash": "be634349601fe921ceab16d1",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1788866248,
+      "retryAfterEpoch": 1788877048
+    }
+  }
 }
