@@ -4227,15 +4227,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788913422
+    },
+    "https://x.com/kirapara_JP/status/1893586605811851357": {
+      "contentHash": "58322c56439861ea5fafbdeb",
+      "titleJa": "限定ガチャイベント『青羽酔華』まもなく開催",
+      "bodyJa": "限定ガチャイベント『青羽酔華』まもなく開催！\n星6セット「酔いし青鸞」の動画公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆2月27日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『青羽酔華』がまもなく開催されます\n・星6セット「酔いし青鸞」の動画が公開されました\n・RP&いいねキャンペーンを実施し、20名様にAmazonギフト券をプレゼントします\n・キャンペーン参加条件は、@kirapara_JPをフォローし、本ポストをRPすることです\n・キャンペーン締切は2月27日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788923937
+    },
+    "https://x.com/kirapara_JP/status/1885976457933119558": {
+      "contentHash": "6217b5756f3975c3ac7b452f",
+      "titleJa": "限定ガチャイベント『雪映す心波』まもなく開催",
+      "bodyJa": "限定ガチャイベント『雪映す心波』まもなく開催！\n星5セット「深紅の雪」、「カナイロガゼル」の動画公開✨\n\nリポスト&いいねキャンペーンを実施🥰\n20名様に #Amazonギフト券 をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをリポスト\n\n〆2月6日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『雪映す心波』がまもなく開催されます\n・星5セット「深紅の雪」、「カナイロガゼル」の動画が公開されました\n・リポスト＆いいねキャンペーンを実施し、20名様に #Amazonギフト券 をプレゼントします\n・キャンペーン参加条件は、@kirapara_JPをフォローし、本ポストをリポストすることです\n・キャンペーン締切は2月6日です",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788923975
     }
   },
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 15,
-      "failedRuns": 5,
-      "lastFailureAtEpoch": 1788911919,
-      "retryAfterEpoch": 1788922719
+      "failedAttempts": 18,
+      "failedRuns": 6,
+      "lastFailureAtEpoch": 1788923899,
+      "retryAfterEpoch": 1788934699
     }
   }
 }
