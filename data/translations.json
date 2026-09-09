@@ -1744,14 +1744,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
-      "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+      "contentHash": "851117a5bacb325e13b0e444",
+      "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿したメッセージ\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788891500
+      "updatedAtEpoch": 1788927406
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -4247,6 +4247,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788923975
+    },
+    "https://x.com/LifeMakeover510/status/2097535470859075702": {
+      "contentHash": "2b6666dc5b281c45f9bb24a3",
+      "titleJa": "新バージョン4.3更新 | ★6セット「Grace of Plume」デザインショートフィルム新バージョン - Dawn of Miraclesが9月9日から登場！",
+      "bodyJa": "新バージョン4.3更新 | ★6セット「Grace of Plume」デザインショートフィルム\n新バージョン - Dawn of Miraclesが9月9日から9月29日まで登場します！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」デザインショートフィルム新バージョン\n・イベント: Dawn of Miraclesが追加\n・期間: 9月9日から9月29日まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788927365
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7683109671518866709": {
+      "contentHash": "2e044461cdfd015476e7a538",
+      "titleJa": "Life Makeover 新バージョン4.3 | ★6セット「Grace of Plume」デザインショートフィルム公開",
+      "bodyJa": "Life Makeover 新バージョン4.3 | ★6セット「Grace of Plume」デザインショートフィルム。今回は、2億の...の要素を解体し、再構築しました。",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」のデザインショートフィルムが公開されました",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788927385
     }
   },
   "failures": {
