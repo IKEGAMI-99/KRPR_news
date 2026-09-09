@@ -372,7 +372,31 @@
       "translationHash": "6a25de6522c560ed5b84fbc1",
       "auditedAtEpoch": 1788843506,
       "result": "override"
+    },
+    "https://x.com/stylight_kr/status/2097622288862412824": {
+      "id": "bacf270780ef12cbe501cf6a",
+      "publishedAtEpoch": 1788947100,
+      "sourceContentHash": "10a5d39e69b6218c9c938a24",
+      "translationHash": "22fd9594877d07ccde731aef",
+      "auditedAtEpoch": 1788951373,
+      "result": "override"
+    },
+    "https://x.com/stylight_kr/status/2097621030479045052": {
+      "id": "02452696c6fd8af88295fc86",
+      "publishedAtEpoch": 1788946800,
+      "sourceContentHash": "a50aa2756d4df86b63629da0",
+      "translationHash": "80dbcf847d5e2ffc621a1291",
+      "auditedAtEpoch": 1788951373,
+      "result": "override"
+    },
+    "https://x.com/stylight_kr/status/2097619772376506528": {
+      "id": "e2118275eb37d65d698f11d8",
+      "publishedAtEpoch": 1788946500,
+      "sourceContentHash": "197e97a0543e18c493bcecc6",
+      "translationHash": "0324c4cf57026425ee175fb7",
+      "auditedAtEpoch": 1788951373,
+      "result": "override"
     }
   },
-  "lastRunAt": 1788843506
+  "lastRunAt": 1788951373
 }
