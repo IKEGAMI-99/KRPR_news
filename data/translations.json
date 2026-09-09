@@ -4207,6 +4207,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788870006
+    },
+    "https://x.com/stylight_kr/status/1976973067823046959": {
+      "contentHash": "8f6043792ad70844b574d43b",
+      "titleJa": "「魔女の花」ファンアート制作コンテスト開催！",
+      "bodyJa": "Stylightにて「魔女の花」ファンアート制作コンテストが開催されます！\n\n✨温かい年末を祝して、アークネマフラー、ケーキギフト券、そしてラッキー賞の景品をご用意しました！皆様のたくさんのご参加をお待ちしております~\n\n[参加案内]\n- 参加期間: 10月28日（火）まで\n- 参加対象: 全ユーザー\n- 参加方法: 魔法をテーマにしたStylightのファンアートを制作し、SNSにアップロード＆提出\n\n- 詳細については公式カフェをご確認ください！\nLINK: \n\n#Stylight #Stylight創作コンテスト #Stylight魔法カーニバル",
+      "summaryJa": "・開催: 「魔女の花」ファンアート制作コンテストが開催\n・期間: 10月28日（火）まで\n・参加対象: 全ユーザー\n・参加方法: 魔法をテーマにしたStylightのファンアートを制作し、SNSにアップロード＆提出\n・特典: アークネマフラー、ケーキギフト券、ラッキー賞の景品あり",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788913371
+    },
+    "https://x.com/stylight_kr/status/1974791689064640722": {
+      "contentHash": "5d0b80e21cdf429331d91f6a",
+      "titleJa": "Stylightのパートナーの皆様へ。月明かりが降り注ぎ、温かい光が集まる特別な瞬間",
+      "bodyJa": "Stylightのパートナーの皆様、こんにちは。\n\n月明かりが降り注ぎ、温かい光が集まる特別な瞬間です！\n\n近づく秋夕（チュソク）を迎え、パートナーの皆様へプレゼントをご用意しました。\n\n秋夕プレゼントの受取期間内にゲームにアクセスすると、メールボックスにてダイヤ200個、トレンドカラーカード77個、ゴールド30,000個のプレゼントを受け取ることができます。\n\nプレゼント受取期間: 10/6(月) 0:00 〜 10/8(水) 23:59 まで\n\n▶ ゲームダウンロード \n- \n\n豊かな秋夕をお過ごしいただき、今日もStylightと共に輝く一日をお過ごしください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #lifemakeover",
+      "summaryJa": "・追加: 秋夕プレゼントが配布される\n・期間: 10/6(月) 0:00 〜 10/8(水) 23:59\n・入手: 秋夕プレゼント受取期間内にゲームにアクセスし、メールボックスで受け取る\n・報酬: ダイヤ200個、トレンドカラーカード77個、ゴールド30,000個",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788913422
     }
   },
   "failures": {
