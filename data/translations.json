@@ -4297,6 +4297,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788945517
+    },
+    "https://x.com/stylight_kr/status/2097610974610268443": {
+      "contentHash": "25bf3205d29c30ad5e1b5f7f",
+      "titleJa": "【アップデート】利便性機能および地形システム改修のお知らせ 🎨 染色画面の改善",
+      "bodyJa": "【アップデート】利便性機能および地形システム改修のお知らせ\n\n🎨 染色画面の改善\n\n染色画面に「ランダム設定」ボタンが追加されます。\nボタン一つで様々なランダム染色を簡単に設定できるようになります。\n\n🍳 パーティキッチン等級の拡張\n\nパーティキッチンに新しい等級20개가追加されます。\nより高い目標に挑戦してみてください！\n\n🏡 地形機能の大規模改修\n\n邸宅建築モードにおいて、地形と建築物の衝突・重なり制限を自由に設定できるようになります。地形の表示有無も選択可能となり、建築物や家具をより便利に配置できます。\n\n従来1階のみで可能だった地形編集が全階に拡大され、様々な形状の新規ブラシも追加されます。\n新しいブラシで山や谷を自由に作り、自分で作った池やプールで自由に泳いでみてください！\n\nより強力になった地形編集機能で、想像していた自分だけの邸宅を完成させてください。✨\n\n※ ペット家族および委託スロット拡張機能は、より安定したサービス提供のため、今回のアップデートからは除外され、今後の別バージョンアップデートで適用される予定です。\n\nお待ちいただいていたパートナーの皆様にはご迷惑をおかけし申し訳ございません。正確な適用スケジュールは確定次第改めてご案内いたします。\nご利用の際にご参考いただき、何卒ご理解をお願い申し上げます。\n\n※詳細については、明日のアップデート後にゲーム内でご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: 染色画面に「ランダム設定」ボタンが追加され、ランダム染色を簡単に設定可能に\n・追加: パーティキッチンに新しい等級20개가追加され、目標設定が可能に\n・変更: 邸宅建築モードで地形と建築物の衝突・重なり制限を自由に設定可能に\n・変更: 地形編集機能が全階に拡大され、新規ブラシが追加され、山や谷の作成が可能に\n・除外: ペット家族および委託スロット拡張機能は、安定性向上のため今回のアップデートからは除外され、今後のアップデートで適用予定",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945697
+    },
+    "https://x.com/LifeMakeover510/status/2097610965109895457": {
+      "contentHash": "aafc61bb6ea3b5ec9527e1a7",
+      "titleJa": "新バージョン4.3「奇跡の夜明け」が配信開始！9月9日から9月29日まで開催",
+      "bodyJa": "新バージョン4.3「奇跡の夜明け」が配信開始されました。\n新バージョン「奇跡の夜明け」は9月9日から9月29日までプレイ可能です！\n\n✨ 星が空に散りばめられ、\n✨ あなただけの銀河を織りなします。\n✨ 輝きを増すスーパースターがステージに立ち、\n✨ 眩い夜を照らします。\n\n#LifeMakeover",
+      "summaryJa": "・追加: 新バージョン4.3「奇跡の夜明け」が配信開始\n・期間: 9月9日〜9月29日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945745
+    },
+    "https://store.steampowered.com/news/app/2626940/view/681886390551578059": {
+      "contentHash": "cdc0b0932b0f2922649edf0c",
+      "titleJa": "イベント告知",
+      "bodyJa": "9月9日のアップデート後、新しいイベントが開催されます。イベント1# 期間限定ライトチェイス - Hymn of Feathers Onが9月9日09:00 UTCより開始されます。この期間限定ライトチェイスイベントでは、新しい★6限定セットとSSRアライが登場します。25回プレイするごとに、限定★6ファッションアイテムが確定で入手でき、限定★6ファッションセットを全て集めると、フォト-ダイナミックポーズで使用できる限定入場ポーズ（ダイナミックカメラポーズ）「Plume Divinity」がアンロックされます。また、Hymn Decomショップが利用可能になります。期間限定イベントで入手したファッションを分解することで、限定★5ファッションアイテム「Song of Ink」、「Vivid Charm」、「Blessful Wind」、シーン「Tour of Light」、限定家具、アバター装飾、チャット装飾、フォトアイテム、Hymn Wind Vane、Yearning Wings、アライEXPキーIII、ゴールドなどが交換できます。\n\n【限定セット】★6セット - Grace of Plume\n私の歌が全ての痛みを癒し、壊れた心を人生のリズムへと調律します。\n\n【特別仕様】\n★6ドレス「Grace of Plume」は、Luminous SplendorとHeart of Reverieの2つの形態があります。その旋律の歌が全ての落ち着かない心を癒し、絶え間ないダンスが全ての迷える魂にインスピレーションを与えます。\n★6バックアクセサリー「Dawn Wings」は、Soaring FlightとGuardian of Yearningの2つの形態があります。要塞を守り、全ての願いを保護します。\n★6フェイスアクセサリー「Faith's Descent」は、Pearls of VowとLucent Clarityの2つの形態があります。信仰と願いが輝く真珠となり、私の最も深い憧れを繋ぎ合わせます。\n★6マウント「Miracle Vow」は、Vow of RebirthとPristine Dreamの2つの形態でデザインされています。私の憧れは、願いが最初に始まった時と同じように純粋な、守護の要塞へと変貌します。\n\n「Grace of Plume」は2つの限定ポーズを特徴としています。",
+      "summaryJa": "・追加: 期間限定ライトチェイスイベント「Hymn of Feathers On」が開催\n・期間: 9月9日 09:00 UTCより開始\n・内容: 新しい★6限定セットとSSRアライが登場\n・特典: 限定★6ファッションセットを全て集めると、限定入場ポーズ「Plume Divinity」がアンロックされる\n・その他: Hymn Decomショップが利用可能となり、限定アイテムの交換が可能になる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945861
     }
   },
   "failures": {
