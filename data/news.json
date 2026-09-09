@@ -19,7 +19,13 @@
         "url": "https://x.com/LifeMakeover510/status/2097716672421355811"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "新バージョン4.3「奇跡の夜明け」が配信開始！9月9日から9月29日まで開催",
+    "bodyJa": "新バージョン4.3「奇跡の夜明け」が配信開始されました。\n新バージョン「奇跡の夜明け」は9月9日から9月29日までプレイ可能です！\n\n✨ 星が空に散りばめられ、\n✨ あなただけの銀河を織りなします。\n✨ 輝きを増すスーパースターがステージに立ち、\n✨ 眩い夜を照らします。\n\n#LifeMakeover",
+    "summaryJa": "・追加: 新バージョン4.3「奇跡の夜明け」が配信開始\n・期間: 9月9日〜9月29日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bacf270780ef12cbe501cf6a",
@@ -190,7 +196,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7683463152083963156"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "✨星屑が空に散り、✨あなただけの銀河を織りなす。✨新進気鋭のスターがステージに立つ✨、輝く夜を照らす。",
+    "bodyJa": "✨星屑が空に散り、✨あなただけの銀河を織りなす。✨新進気鋭のスターがステージに立つ✨、輝く夜を照らす。L...",
+    "summaryJa": "・追加: 新進気鋭のスターが登場し、輝く夜を照らすイベントが開催される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bfd62a4bbe9dd165a81073e8",

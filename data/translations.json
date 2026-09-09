@@ -4390,6 +4390,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788950072
     },
+    "https://x.com/LifeMakeover510/status/2097716672421355811": {
+      "contentHash": "aafc61bb6ea3b5ec9527e1a7",
+      "titleJa": "新バージョン4.3「奇跡の夜明け」が配信開始！9月9日から9月29日まで開催",
+      "bodyJa": "新バージョン4.3「奇跡の夜明け」が配信開始されました。\n新バージョン「奇跡の夜明け」は9月9日から9月29日までプレイ可能です！\n\n✨ 星が空に散りばめられ、\n✨ あなただけの銀河を織りなします。\n✨ 輝きを増すスーパースターがステージに立ち、\n✨ 眩い夜を照らします。\n\n#LifeMakeover",
+      "summaryJa": "・追加: 新バージョン4.3「奇跡の夜明け」が配信開始\n・期間: 9月9日〜9月29日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788970604
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4400,6 +4410,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7683463152083963156": {
+      "contentHash": "e78367f4d9cdf085625a93c8",
+      "titleJa": "✨星屑が空に散り、✨あなただけの銀河を織りなす。✨新進気鋭のスターがステージに立つ✨、輝く夜を照らす。",
+      "bodyJa": "✨星屑が空に散り、✨あなただけの銀河を織りなす。✨新進気鋭のスターがステージに立つ✨、輝く夜を照らす。L...",
+      "summaryJa": "・追加: 新進気鋭のスターが登場し、輝く夜を照らすイベントが開催される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788970721
     }
   },
   "failures": {
