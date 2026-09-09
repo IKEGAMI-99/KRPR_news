@@ -4405,10 +4405,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 27,
-      "failedRuns": 9,
-      "lastFailureAtEpoch": 1788957800,
-      "retryAfterEpoch": 1788968600
+      "failedAttempts": 30,
+      "failedRuns": 10,
+      "lastFailureAtEpoch": 1788969202,
+      "retryAfterEpoch": 1788980002
     }
   }
 }
