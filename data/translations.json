@@ -1744,14 +1744,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
-      "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+      "contentHash": "851117a5bacb325e13b0e444",
+      "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1788946620
+      "updatedAtEpoch": 1788950110
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -4387,6 +4387,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788949479
+    },
+    "https://x.com/stylight_kr/status/2097614739132109075": {
+      "contentHash": "111409e6f1f7837fb839570e",
+      "titleJa": "🎁 1周年記念特別プレゼント",
+      "bodyJa": "Stylightのパートナーの皆様、こんにちは。Stylightが1周年を迎えました！🎉\n\nこの1年間、Stylightと共に温かい愛と応援をくださった全てのパートナーの皆様に心から感謝申し上げます。\n\n感謝の気持ちを込めて、1周年を記念する特別なプレゼントをご用意しました。🎁\n\n🕙 9/10 10:30 〜 9/12 23:59\n\nイベント期間中にゲームにログインすると、メールボックスから以下の報酬を受け取ることができます。\n\n🎁 特別プレゼント\nダイヤ ×888\n体力 ×666\nゴールド ×66,666\nフラワー招待状 ×10\n\n1周年アップデートと共に、多彩な記念イベントもスタートします。限定6★セットやライブポーズ、撮影背景など、充実した無料報酬をご用意しておりますので、Stylightの輝かしい1周年祭を一緒に楽しみましょう！✨\n\n#Stylight #Stylight1周年",
+      "summaryJa": "・追加: 1周年記念特別プレゼントが配布\n・期間: 9/10 10:30 〜 9/12 23:59\n・入手: イベント期間中にゲームにログインし、メールボックスから受領\n・報酬: ダイヤ×888、体力×666、ゴールド×66,666、フラワー招待状×10",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788950072
     }
   },
   "failures": {
