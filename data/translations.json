@@ -4267,6 +4267,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788927385
+    },
+    "https://x.com/stylight_kr/status/2097613480795001091": {
+      "contentHash": "c82c92abf27a73967663bad7",
+      "titleJa": "【イベント】『店長体験・高級シーズン』店長になって商品を販売し、限定5★セットを入手しよう。🎁メイン報酬：5★セット「バーガンディレシピ」",
+      "bodyJa": "【イベント】『店長体験・高級シーズン』\n\n店長になって商品を販売し、\n限定5★セットを入手してください。\n\n🎁メイン報酬：\n5★セット「バーガンディレシピ」\n\n🕙 9/10 10:30 〜 9/24 5:00\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード：\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・追加: イベント『店長体験・高級シーズン』が開催\n・内容: 店長になり商品を販売することで限定5★セットを入手可能\n・メイン報酬: 5★セット「バーガンディレシピ」\n・期間: 9/10 10:30 〜 9/24 5:00",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945402
+    },
+    "https://www.youtube.com/shorts/D9YOo1VRhKA": {
+      "contentHash": "44a659914ee47d915f201f8a",
+      "titleJa": "SRナシオン『忘却花』明日リリース",
+      "bodyJa": "「ここから抜け出せ。前だけを見て走り続けろ、決して振り返るな。」\n\n鏡の中の血の涙は、致命的な招待状なのか、それとも言葉なく送られる切実な訴えなのか？\n\n眩い花びらがナシオンの体を切り裂く瞬間、今回は彼を信じることができるだろうか？\n\n- 期間限定イベント「深淵の花」9月10日（木）リリース！\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: SRナシオンの衣装『忘却花』が明日リリース\n・イベント: 期間限定イベント「深淵の花」が9月10日（木）にリリース\n・詳細: 詳細についてはゲーム内で確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945455
+    },
+    "https://x.com/stylight_kr/status/2097612223476539540": {
+      "contentHash": "499c480c03925cd50628e778",
+      "titleJa": "SRナシオン『忘却花』明日リリース「ここから抜け出せ。前だけを見て走り続けろ、決して振り返るな。」鏡の中の血涙は致命的な招待状か、それとも静かに送る切実な訴えか…",
+      "bodyJa": "SRナシオン『忘却花』が明日リリースされます。\n\n「ここから抜け出せ。\n前だけを見て走り続けろ、決して振り返るな。」\n\n鏡の中の血涙は致命的な招待状なのでしょうか、それとも静かに送る切実な訴えなのでしょうか？\n\n眩い花びらがナシオンの体を切り裂く瞬間、今度は彼を信じることができるでしょうか？\n\n- 期間限定イベント「深淵の花」が9月10日（木）にリリースされます！\n\n※詳細はゲーム内でご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: SRナシオン『忘却花』が明日リリースされる\n・追加: 期間限定イベント「深淵の花」が9月10日（木）にリリースされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1788945517
     }
   },
   "failures": {
