@@ -4529,16 +4529,35 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789028209
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
+    "https://www.youtube.com/shorts/1y-MDgZcJVU": {
+      "contentHash": "799d71f299427b7ad03e0660",
+      "titleJa": "SSRアライ [Roy - Ocean's Oath] - デフォルト",
+      "bodyJa": "SSRアライ [Roy - Ocean's Oath] - デフォルト\n\n「君はいつも自由だ。僕が君を愛しているからといって、君が僕を愛しなくてもいいんだ。」\n\n新バージョン「Dawn of Miracles」が9月9日から9月29日まで登場！\n#LifeMakeoverWorld #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: SSRアライ [Roy - Ocean's Oath] - デフォルトが登場\n・期間: 9月9日〜9月29日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789042759
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7683793156084600085": {
+      "contentHash": "91ef3770da272d28d0a429e9",
+      "titleJa": "「君はいつだって自由だ。私が愛しているからといって、君が私を愛さなければならないわけじゃない」#LifeMakeover 新Lightchase | SSR Ally [Roy]",
+      "bodyJa": "「君はいつだって自由だ。私が愛しているからといって、君が私を愛さなければならないわけじゃない」#LifeMakeover 新Lightchase | SSR Ally [Roy - Ocean's Oath] 新バージョン -...",
+      "summaryJa": "・追加: 新Lightchase | SSR Ally [Roy - Ocean's Oath] 新バージョンが登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789042802
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7683792992850709780": {
+      "contentHash": "f872ce06336330231519d0d4",
+      "titleJa": "Life Makeover 新しいLightchase | SSRアライ [Roy - Ocean's Oath]「君はいつも自由だ。僕が君を愛しているからといって、君が僕を愛さなくてもいい」",
+      "bodyJa": "Life Makeover 新しいLightchase | SSRアライ [Roy - Ocean's Oath]「君はいつも自由だ。僕が君を愛しているからといって、君が僕を愛さなくてもいい」 新バージョン -...",
+      "summaryJa": "・追加: 新しいLightchaseとしてSSRアライ [Roy - Ocean's Oath]が登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789042845
     }
   },
   "failures": {
