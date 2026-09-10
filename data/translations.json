@@ -1744,14 +1744,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "c9c6007c5d3d504eea7a61d5",
-      "titleJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が「#Stylight #永遠の誓い」の投稿を実施",
+      "contentHash": "851117a5bacb325e13b0e444",
+      "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYAN🎀が投稿したメッセージ\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789046500
+      "updatedAtEpoch": 1789057079
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -4578,6 +4578,17 @@
       "modelRevision": "sol-reviewed-v1",
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
+      "managedBySol": true
+    },
+    "https://x.com/LifeMakeover510/status/2096908840281457067": {
+      "contentHash": "d5c28451b10076eb66276ae4",
+      "titleJa": "今日の幸運の配達が届きました",
+      "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788821816,
       "managedBySol": true
     }
   },
