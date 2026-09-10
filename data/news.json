@@ -19,7 +19,13 @@
         "url": "https://x.com/kirapara_JP/status/2097958257130086489"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "明日よりゲーム内イベント『山水の軌跡』を開催✨ イベント期間⏰ 9月11日10:30～9月18日5:00 イベントに参加して、星4セット『おはよう日和』や星5アクセ『甘く...",
+    "bodyJa": "明日よりゲーム内イベント『山水の軌跡』を開催✨\n\nイベント期間⏰\n9月11日10:30～9月18日5:00\n\nイベントに参加して、星4セット『おはよう日和』や星5アクセ『甘く疼く傷痕』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: ゲーム内イベント『山水の軌跡』が開催される\n・期間: 9月11日10:30～9月18日5:00\n・入手: イベントに参加することで、星4セット『おはよう日和』や星5アクセ『甘く疼く傷痕』を入手できる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c7037426ddba502dd04f7664",
@@ -1719,7 +1725,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
