@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRw7Ca4aUAA6-k-?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "クオイッツゲーム開催！報酬受け取りとイベント報酬の獲得",
+    "bodyJa": "クオイッツゲーム\n\n⏰開催期間: 9月10日 09:00 - 9月17日 05:00 UTC\n\n[報酬受け取り]\n9月10日 09:00 - 9月18日 05:00 UTC\n\n[イベント報酬]\nイベントポイントを獲得し、★4セット「Boundary Walker」、キュートエフェクト「Reef Crest」、トレンドカラーチャート×13、Luster Invitationなど、多くのアイテムを入手できます！",
+    "summaryJa": "・追加: クオイッツゲームが開催される\n・期間: 9月10日 09:00 - 9月17日 05:00 UTC\n・報酬受け取り期間: 9月10日 09:00 - 9月18日 05:00 UTC\n・報酬: イベントポイントで★4セット「Boundary Walker」、キュートエフェクト「Reef Crest」、トレンドカラーチャート×13、Luster Invitationなどを入手可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bf52c8dcef6a975be2f2952f",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRw6_WXaoAAdTS8?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "歌声が輝くステージ✨音楽の調べが鼓動と共鳴する、✨メロディにのせて華やかな花道へ！",
+    "bodyJa": "歌声が輝くステージ\n✨音楽の調べが鼓動と共鳴する、\n✨メロディにのせて華やかな花道へ！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・イベント名: DawnofMiracles\n・ハッシュタグ: #LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "39cd49cbf91ba434794b1e62",

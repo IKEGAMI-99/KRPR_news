@@ -4410,6 +4410,26 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1788970721
     },
+    "https://x.com/LifeMakeover510/status/2097855072608895055": {
+      "contentHash": "a8d7501d7ca24e2b3b4e4f7d",
+      "titleJa": "クオイッツゲーム開催！報酬受け取りとイベント報酬の獲得",
+      "bodyJa": "クオイッツゲーム\n\n⏰開催期間: 9月10日 09:00 - 9月17日 05:00 UTC\n\n[報酬受け取り]\n9月10日 09:00 - 9月18日 05:00 UTC\n\n[イベント報酬]\nイベントポイントを獲得し、★4セット「Boundary Walker」、キュートエフェクト「Reef Crest」、トレンドカラーチャート×13、Luster Invitationなど、多くのアイテムを入手できます！",
+      "summaryJa": "・追加: クオイッツゲームが開催される\n・期間: 9月10日 09:00 - 9月17日 05:00 UTC\n・報酬受け取り期間: 9月10日 09:00 - 9月18日 05:00 UTC\n・報酬: イベントポイントで★4セット「Boundary Walker」、キュートエフェクト「Reef Crest」、トレンドカラーチャート×13、Luster Invitationなどを入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789002958
+    },
+    "https://x.com/LifeMakeover510/status/2097852564574290348": {
+      "contentHash": "966f2bce6c39a5191daae8e6",
+      "titleJa": "歌声が輝くステージ✨音楽の調べが鼓動と共鳴する、✨メロディにのせて華やかな花道へ！",
+      "bodyJa": "歌声が輝くステージ\n✨音楽の調べが鼓動と共鳴する、\n✨メロディにのせて華やかな花道へ！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・イベント名: DawnofMiracles\n・ハッシュタグ: #LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789002999
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
