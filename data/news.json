@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRwhkhDbsAALeep?format=png&name=orig"
-    ]
+    ],
+    "titleJa": "【クリエイターアイコンとの交流会】今日はお一人[qiqi_yunlei]さんとLife Makeoverでの物語についてお話しします。#LifeMakeover ぜひご参加ください",
+    "bodyJa": "【クリエイターアイコンとの交流会】\n\n今日はお一人[qiqi_yunlei]さんとLife Makeoverでの物語についてお話しします。\n\n#LifeMakeover\n\n最新情報については、公式Discordサーバーにご参加ください！\n>>>公式Discord:",
+    "summaryJa": "・イベント: クリエイターアイコンとの交流会が開催される\n・対象: [qiqi_yunlei]さんとそのLife Makeoverでの物語について紹介される\n・情報入手: 公式Discordサーバーで最新情報が提供される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d10b69f2494b1bea7670554d",
