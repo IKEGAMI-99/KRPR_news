@@ -4509,6 +4509,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7683465757015035156": {
+      "contentHash": "2e044461cdfd015476e7a538",
+      "titleJa": "Life Makeover 新4.3バージョン | ★6セット「Grace of Plume」デザインショートフィルム",
+      "bodyJa": "Life Makeover 新4.3バージョン | ★6セット「Grace of Plume」デザインショートフィルム 今回は、2億...の要素を解体し、再構築しました。",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」のデザインショートフィルムが公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789008667
     }
   },
   "failures": {
