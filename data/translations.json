@@ -4510,13 +4510,14 @@
     },
     "https://x.com/stylight_kr/status/2097943153068396866": {
       "contentHash": "55f22cf3258df5256758c693",
-      "titleJa": "🎉『深淵の花』創作大会OPEN！",
-      "bodyJa": "🎉『深淵の花』創作大会が開催されます！\n\n本大会は画像・動画部門で開催され、Stylightを愛するどなたでも参加できます。\n\n🗓 参加期間\n9月10日〜9月30日\n\n🎨 テーマ\n- 『深淵の花』バージョン関連の創作物\n※テーマや形式に制限なく自由に創作できます！\n\n🎁 賞品\n💰 現金＋クローバーを支給\n💡 複数作品の応募が可能です！\n\n📌 参加方法\n\n#Stylight #Stylight創作大会 #深淵の花\nハッシュタグを付けてSNSに作品をアップロードした後、カフェの掲示板で作品リンクを認証してください！\n\n📍 詳細については公式カフェの告知をご確認ください！\n👉 \n\nStylightの1周年を共に祝い、皆様の素晴らしい作品をお待ちしています！✨",
-      "summaryJa": "・追加: 『深淵の花』創作大会が開催されます\n・期間: 9月10日〜9月30日\n・部門: 画像・動画部門\n・賞品: 現金＋クローバー（複数作品の応募が可能）\n・参加方法: 指定ハッシュタグを付けてSNSに作品を投稿し、カフェ掲示板でリンクを認証する",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789024680
+      "titleJa": "🎉『심연의 꽃』創作大会OPEN！",
+      "bodyJa": "🎉『심연의 꽃』創作大会が開催されます！\n\n本大会は画像・動画部門で開催され、Stylightを愛するどなたでも参加できます。\n\n🗓 参加期間\n9月10日〜9月30日\n\n🎨 テーマ\n- 『심연의 꽃』バージョン関連の創作物\n※テーマや形式に制限なく自由に創作できます！\n\n🎁 賞品\n💰 現金＋クローバーを支給\n💡 複数作品の応募が可能です！\n\n📌 参加方法\n\n#스타일라잇 #스타일라잇창작대회 #심연의꽃\nハッシュタグを付けてSNSに作品をアップロードした後、カフェの掲示板で作品リンクを認証してください！\n\n📍 詳細については公式カフェの告知をご確認ください！\n👉 \n\nStylightの1周年を共に祝い、皆様の素晴らしい作品をお待ちしています！✨",
+      "summaryJa": "・追加: 『심연의 꽃』創作大会が開催される\n・期間: 9月10日〜9月30日\n・部門: 画像・動画部門\n・賞品: 現金＋クローバー（複数作品の応募が可能）\n・参加方法: 指定ハッシュタグを付けてSNSに作品を投稿し、カフェ掲示板でリンクを認証する",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1789038061,
+      "managedBySol": true
     },
     "https://x.com/kirapara_JP/status/2097958257130086489": {
       "contentHash": "093626a665db09719e2886e6",
@@ -4527,17 +4528,6 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789028209
-    },
-    "https://x.com/LifeMakeover510/status/2096908840281457067": {
-      "contentHash": "d5c28451b10076eb66276ae4",
-      "titleJa": "今日の幸運の配達が届きました",
-      "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-      "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788821816,
-      "managedBySol": true
     },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
