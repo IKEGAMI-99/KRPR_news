@@ -4419,17 +4419,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789002999
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://x.com/stylight_kr/status/2097870172316999874": {
       "contentHash": "a4c24bd0297a9c133c7216e9",
       "titleJa": "🎉 Stylight 1周年お祝いコメントイベント",
@@ -4459,6 +4448,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789006775
+    },
+    "https://www.bilibili.com/opus/1246258636548734980": {
+      "contentHash": "711051a4e06c3dda9f4560a7",
+      "titleJa": "師は夜を照らし光を追い求め、師は弟子を育て花開かせる「流を飲む者は源を懐かしみ、成る時を学ぶ者は師を想う」",
+      "bodyJa": "師は夜を照らし光を追い求め、師は弟子を育て花開かせる。\n\n「流を飲む者は源を懐かしみ、成る時を学ぶ者は師を想う。」\n知識で迷いを払い、忍耐で航路を導く皆様へ――\n先生方、お祝いのメッセージを贈ります！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n起動",
+      "summaryJa": "・内容: 先生方への感謝を込めたメッセージが公開されました\n・ゲーム: 以闪亮之名",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789006907
+    },
+    "https://x.com/LifeMakeover510/status/2097867657521541155": {
+      "contentHash": "81032fc155ce69737bd01449",
+      "titleJa": "全プレイヤーへのテーマイベント告知！",
+      "bodyJa": "全プレイヤーの皆様へテーマイベントのお知らせです！\nLife Makeoverセンターデビュー募集 - バージョン [Dawn of Miracles]\n\n対象となるすべてのDream Makerが賞金プールを共有できます！\n\n➤イベントのルールについては、公式Discordの #theme-events チャンネルをご覧ください。",
+      "summaryJa": "・イベント: Life Makeoverセンターデビュー募集 - バージョン [Dawn of Miracles]が開催\n・参加条件: 対象となるすべてのDream Makerが賞金プールを共有可能\n・詳細: イベントのルールは公式Discordの #theme-events チャンネルで確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789006951
+    },
+    "https://x.com/LifeMakeover510/status/2097860107803725873": {
+      "contentHash": "2b6666dc5b281c45f9bb24a3",
+      "titleJa": "新バージョン4.3更新 | ★6セット「Grace of Plume」デザインショートフィルム新バージョン - Dawn of Miraclesが9月9日から登場！",
+      "bodyJa": "新バージョン4.3更新 | ★6セット「Grace of Plume」デザインショートフィルム\n新バージョン - Dawn of Miraclesが9月9日から9月29日まで登場します！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」デザインショートフィルムの新バージョンが登場\n・期間: 9月9日〜9月29日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789006995
     }
   },
   "failures": {
