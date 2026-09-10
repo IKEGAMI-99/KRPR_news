@@ -19,7 +19,13 @@
         "url": "https://x.com/stylight_kr/status/2097943153068396866"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🎉『深淵の花』創作大会OPEN！",
+    "bodyJa": "🎉『深淵の花』創作大会が開催されます！\n\n本大会は画像・動画部門で開催され、Stylightを愛するどなたでも参加できます。\n\n🗓 参加期間\n9月10日〜9月30日\n\n🎨 テーマ\n- 『深淵の花』バージョン関連の創作物\n※テーマや形式に制限なく自由に創作できます！\n\n🎁 賞品\n💰 現金＋クローバーを支給\n💡 複数作品の応募が可能です！\n\n📌 参加方法\n\n#Stylight #Stylight創作大会 #深淵の花\nハッシュタグを付けてSNSに作品をアップロードした後、カフェの掲示板で作品リンクを認証してください！\n\n📍 詳細については公式カフェの告知をご確認ください！\n👉 \n\nStylightの1周年を共に祝い、皆様の素晴らしい作品をお待ちしています！✨",
+    "summaryJa": "・追加: 『深淵の花』創作大会が開催されます\n・期間: 9月10日〜9月30日\n・部門: 画像・動画部門\n・賞品: 現金＋クローバー（複数作品の応募が可能）\n・参加方法: 指定ハッシュタグを付けてSNSに作品を投稿し、カフェ掲示板でリンクを認証する",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "efa5228e793a7842967205d2",
@@ -1691,7 +1697,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
