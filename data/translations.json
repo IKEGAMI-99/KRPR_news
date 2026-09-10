@@ -4478,6 +4478,37 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789006995
+    },
+    "https://x.com/stylight_kr/status/2097860106247655502": {
+      "contentHash": "0234700ce7e9174aa3aca0dc",
+      "titleJa": "9月10日(木) 新規アップデート「深淵の花」リリース",
+      "bodyJa": "9月10日(木) 新規アップデート「深淵の花」がリリースされます！\n\n冷たい石に眠っていた生命が目覚め、\n深い大地の炎が新しい世界を創り出します。\n\n割れた隙間から咲いた青い葉、\n固まった溶岩の上に広がる新しい大地。\n\n異なる二つの存在が出会った瞬間、\n再生と創造の物語が始まります。\n\n新しく広がる『深淵の花』の世界と\nあなただけの特別な物語に出会ってみてください。✨\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 新規アップデート「深淵の花」がリリース\n・期間: 9月10日(木)より開始",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789007592
+    },
+    "https://x.com/LifeMakeover510/status/2097857589786693996": {
+      "contentHash": "a8ebbb606952b8f6728a39b7",
+      "titleJa": "クリアグローブ開催：限定★5ファッション、ダイナミックポーズ、豪華報酬が勢揃い！",
+      "bodyJa": "クリアグローブ開催！限定★5ファッション、ダイナミックポーズ、そして豪華報酬が勢揃いしました！\n\n⏰開催期間：9月10日 09:00 - 9月18日 05:00 UTC\n\n[イベント報酬]\n報酬トラックには、★5ハット「Wilderness Ranger」、ダイナミックポーズ「Foam Chaser」、フォトフレーム「Ocean's Reply」、キュートエフェクト「Bag Artisan」などが含まれています！",
+      "summaryJa": "・イベント名：クリアグローブ\n・期間：9月10日 09:00 - 9月18日 05:00 UTC\n・報酬内容：★5ハット「Wilderness Ranger」、ダイナミックポーズ「Foam Chaser」、フォトフレーム「Ocean's Reply」、キュートエフェクト「Bag Artisan」などが報酬トラックに含まれる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789007653
+    },
+    "https://x.com/stylight_kr/status/2097619772376506528": {
+      "contentHash": "197e97a0543e18c493bcecc6",
+      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
+      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
+      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788951373,
+      "managedBySol": true
     }
   },
   "failures": {
