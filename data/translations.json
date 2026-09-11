@@ -2934,14 +2934,14 @@
       "updatedAtEpoch": 1789107792
     },
     "https://x.com/LifeMakeover510/status/1959480792347713715": {
-      "contentHash": "9d61a6feb23e400c62743add",
-      "titleJa": "Life Makeover 新バージョン [狩りの時間] 開催間近... Life Makeover 新バージョン | ★6セット [Invincible Moon]",
-      "bodyJa": "Life Makeover 新バージョン [狩りの時間] 開催間近...\n\nLife Makeover 新バージョン | ★6セット [Invincible Moon]\n\n[狩りの時間]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
-      "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・イベント名: [狩りの時間]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
+      "contentHash": "90e9cbfef286dc7682a4a40c",
+      "titleJa": "Life Makeover 新バージョン [狩りの時間] 開催間近... Life Makeover 新バージョン | ★6セット [無敵の月]",
+      "bodyJa": "Life Makeover 新バージョン [狩りの時間] 開催間近...\n\nLife Makeover 新バージョン | ★6セット [無敵の月]\n\n[狩りの時間]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+      "summaryJa": "・追加: ★6セット「無敵の月」が登場\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC\n・イベント名: [狩りの時間]",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789100572
+      "updatedAtEpoch": 1789107958
     },
     "https://x.com/LifeMakeover510/status/1957744354157633567": {
       "contentHash": "f1e72365a505188583ab4e6a",
