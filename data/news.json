@@ -5871,7 +5871,13 @@
         "url": "https://x.com/LifeMakeover510/status/1959556289320591828"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日登場... 新SSRアライ「Shawn - Dance of Prayer」登場",
+    "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日登場...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+    "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: [Time of Hunt]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f845cae7a9ddb37b25057728",
