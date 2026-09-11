@@ -4645,10 +4645,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 69,
-      "failedRuns": 23,
-      "lastFailureAtEpoch": 1789119340,
-      "retryAfterEpoch": 1789130140
+      "failedAttempts": 72,
+      "failedRuns": 24,
+      "lastFailureAtEpoch": 1789130469,
+      "retryAfterEpoch": 1789141269
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
