@@ -4599,6 +4599,26 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789114746
     },
+    "https://x.com/kirapara_JP/status/2098335756775518325": {
+      "contentHash": "6c3205a321bc305a4c0516d6",
+      "titleJa": "🔔イベント予告🔔 限定ガチャイベント、来週中に登場予定",
+      "bodyJa": "🔔イベント予告🔔\n\n限定ガチャイベント、来週中に登場予定！\n\n引き続き、公式Ｘからチェックしてね✨\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベントが来週中に登場予定\n・公式Xから詳細をチェック可能\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789118099
+    },
+    "https://www.youtube.com/shorts/kYmcUbQ8T5g": {
+      "contentHash": "49c55c4a7445d127ba6046e1",
+      "titleJa": "『ルーレットファンタジー』明日リリース",
+      "bodyJa": "幸運のルーレットを回し、特別な報酬の主役になりましょう！\n\n🕙 9/12 10:30 〜 9/25 23:59\n\n [イベント詳細] \n- 限定ミッションをクリアして、「ラッキーパステル」フローティングを含むルーレットファンタジーパッケージを破格の割引価格で手に入れましょう！\n\n※詳細はリリース後にゲーム内でご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+      "summaryJa": "・追加: 『ルーレットファンタジー』が明日リリース\n・期間: 9/12 10:30 〜 9/25 23:59\n・内容: 限定ミッションをクリアすると、「ラッキーパステル」フローティングを含むルーレットファンタジーパッケージを割引価格で入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789118157
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
