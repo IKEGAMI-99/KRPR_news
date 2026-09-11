@@ -4605,10 +4605,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 60,
-      "failedRuns": 20,
-      "lastFailureAtEpoch": 1789084171,
-      "retryAfterEpoch": 1789094971
+      "failedAttempts": 63,
+      "failedRuns": 21,
+      "lastFailureAtEpoch": 1789095574,
+      "retryAfterEpoch": 1789106374
     }
   }
 }
