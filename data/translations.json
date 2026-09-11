@@ -4652,10 +4652,10 @@
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 9,
-      "failedRuns": 3,
-      "lastFailureAtEpoch": 1789148027,
-      "retryAfterEpoch": 1789158827
+      "failedAttempts": 12,
+      "failedRuns": 4,
+      "lastFailureAtEpoch": 1789159880,
+      "retryAfterEpoch": 1789170680
     }
   }
 }
