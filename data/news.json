@@ -1752,7 +1752,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
@@ -4892,6 +4898,12 @@
         "url": "https://m.bbs.3839.com/thread-9145408.htm"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "新着情報｜刺繍ギフト＆尾の輪",
+    "bodyJa": "好游快爆APPは8000万人のゲームプレイヤーが利用するゲームコミュニティです。毎日、国内外の最新で面白いゲーム情報を発信しています。また、実用的なゲームツール、オリジナルの攻略解説、生動な動画解説を提供し、プレイヤーがゲームを素早く習得し、迅速にクリアできるようサポートします。",
+    "summaryJa": "・追加: 新着情報として「刺绣ギフト」と「衔尾之环」が紹介された",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   }
 ]
