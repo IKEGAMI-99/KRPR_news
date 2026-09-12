@@ -4669,16 +4669,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789197246
     },
-    "https://x.com/stylight_kr/status/2098698140564234332": {
-      "contentHash": "10842ff6dc456a3001afe545",
-      "titleJa": "【イベント】『深夜の密会』絵を完成させて4★限定セットをゲットしよう🎁",
-      "bodyJa": "【イベント】『深夜の密会』\n\n絵のマスを一つずつめくって絵を完成させ、4★限定セットを入手してください。\n\n🎁 メイン報酬:\n4★セット「碧羅春密会」\n\n🕙 9/13 10:30 〜 9/20 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
-      "summaryJa": "・イベント名: 『深夜の密会』が開催\n・内容: 絵のマスをめくって絵を完成させ、4★限定セットを入手できる\n・メイン報酬: 4★セット「碧羅春密会」\n・期間: 9/13 10:30 〜 9/20 5:00",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789211719
-    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4689,6 +4679,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://x.com/stylight_kr/status/2098698140564234332": {
+      "contentHash": "10842ff6dc456a3001afe545",
+      "titleJa": "【イベント】『深夜の密会』絵を完成させて4★限定セットをゲットしよう🎁",
+      "bodyJa": "【イベント】『深夜の密会』\n\n絵のマスを一つずつめくって絵を完成させ、4★限定セットを入手してください。\n\n🎁 メイン報酬:\n4★セット「碧羅春密会」\n\n🕙 9/13 10:30 〜 9/20 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード:\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・イベント名: 『深夜の密会』が開催\n・内容: 絵のマスをめくって絵を完成させ、4★限定セットを入手できる\n・メイン報酬: 4★セット「碧羅春密会」\n・期間: 9/13 10:30 〜 9/20 5:00",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789211719
     }
   },
   "failures": {
