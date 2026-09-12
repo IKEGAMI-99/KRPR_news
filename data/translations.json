@@ -4716,10 +4716,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 102,
-      "failedRuns": 34,
-      "lastFailureAtEpoch": 1789246365,
-      "retryAfterEpoch": 1789257165
+      "failedAttempts": 105,
+      "failedRuns": 35,
+      "lastFailureAtEpoch": 1789257573,
+      "retryAfterEpoch": 1789268373
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
