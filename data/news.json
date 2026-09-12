@@ -341,7 +341,7 @@
     "summaryJa": "・追加: 『심연의 꽃』創作大会が開催される\n・期間: 9月10日〜9月30日\n・部門: 画像・動画部門\n・賞品: 現金＋クローバー（複数作品の応募が可能）\n・参加方法: 指定ハッシュタグを付けてSNSに作品を投稿し、カフェ掲示板でリンクを認証する",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "韓国公式原文の固有名詞『심연의 꽃』は現行用語集に公式日本語対応がなく、ハッシュタグは翻訳エンジンの保護対象。既存翻訳が『深淵の花』および日本語タグへ創作・改変していたため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -805,7 +805,7 @@
     "summaryJa": "・追加: 新規常時光追『개화』が明日オープン\n・追加: 新規6★・5★セットとSSR縁が常時光追『개화』に登場\n・プレゼント: 1周年感謝としてフラワー招待状10個をメールボックスで配布\n・期間: フラワー招待状の受領期間は9月10日 10:30 〜 9月12日 23:59",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "韓国公式原文の固有名詞『개화』は現行用語集に公式日本語対応がなく、ハッシュタグは翻訳エンジンの保護対象のため、創作訳せず原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -836,7 +836,7 @@
     "summaryJa": "・Stylightの1周年を記念し、初回チャージボーナスがリセットされます\n・リセット日時: 9月10日(木) 10:30 アップデート後\n・リセット後、すべてのチャージ商品に初回チャージダイヤボーナスが適用されます\n・リセット前の未使用の初回チャージボーナスは繰り越されません",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "韓国公式原文のハッシュタグは現行翻訳エンジンの保護対象のため、翻訳・改変されていたタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -869,7 +869,7 @@
     "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solLocked": true
   },
   {
@@ -1827,7 +1827,7 @@
     "summaryJa": "・告知: 復刻追光イベント「烬土生花」がまもなく開催\n・期間: 9月9日10:00〜9月29日23:59\n・テーマ文: 「神火永焚，圣骨绿芽」",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "中国公式Bilibiliの固有名詞は「烬土生花」、テーマ文は「神火永焚，圣骨绿芽」。既存翻訳が未登録固有名詞を「燼土生花」「神火永焚、聖骨緑芽」と日本語字形へ創作置換していたため、原語保持へ修正。",
     "solReviewed": true,
     "solLocked": true
@@ -1892,14 +1892,7 @@
       "https://pbs.twimg.com/media/HRmMwzSbQAAYqk0?format=jpg&name=orig"
     ],
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
-    "solReviewed": true,
-    "titleJa": "今日の幸運の配達が届きました",
-    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "solReviewed": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
@@ -1978,7 +1971,7 @@
     "summaryJa": "・追加: 「长夏弥咏」外観パックが近日登場\n・期間: 9月8日10:00〜9月21日23:59\n・価格: 通常価格の46%（54%OFF）\n・内容: 撮影関連アイテム、チャット吹き出し、BGM、トレンドカラーカード×26、遇之钥×40\n・購入上限: 永久1回",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "中国公式原文の固有名詞「长夏弥咏」に公式日本語名の根拠がないため創作訳「夏至の歌」を原語保持へ修正。原文の「即将上架」は販売開始ではなく近日登場を意味するためsummaryも修正し、4.6折は通常価格の46%（54%OFF）として重複表記を整理。",
     "solReviewed": true,
     "solLocked": true
@@ -2195,7 +2188,7 @@
     "summaryJa": "・内容: 白露の節気に合わせた季節の挨拶\n・メッセージ: 秋が深まる中で、自分だけの芳香を見つけられるよう願う\n・ゲームタイトル: 以闪亮之名",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "原文は白露の節気に合わせた季節投稿で、イベント開催の記述はない。既存summaryJaが『イベント名』『イベント告知』と誤認して原文にないイベント情報を追加していたため修正。",
     "solReviewed": true,
     "solLocked": true
