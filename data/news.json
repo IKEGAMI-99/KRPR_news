@@ -2033,7 +2033,13 @@
     ],
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
