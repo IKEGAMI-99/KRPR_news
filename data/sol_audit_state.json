@@ -404,7 +404,15 @@
       "translationHash": "43e4c7834c423a95ad84555a",
       "auditedAtEpoch": 1789038061,
       "result": "override"
+    },
+    "https://x.com/stylight_kr/status/2098698140564234332": {
+      "id": "51a594983bd546a27a8d6b55",
+      "publishedAtEpoch": 1789203603,
+      "sourceContentHash": "10842ff6dc456a3001afe545",
+      "translationHash": "565eff50097d6b0352c1e4e5",
+      "auditedAtEpoch": 1789253798,
+      "result": "override"
     }
   },
-  "lastRunAt": 1789038061
+  "lastRunAt": 1789253798
 }
