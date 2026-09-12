@@ -1804,14 +1804,14 @@
       "updatedAtEpoch": 1788030001
     },
     "https://kotaku.com/games/life-makeover": {
-      "contentHash": "23277dc5d18d83ff80fae2a4",
-      "titleJa": "Life Makeoverの最新ゲーム映像と画像",
-      "bodyJa": "Life Makeoverはソーシャルシミュレーションゲームです。自分だけの分身を作成し、着せ替えやメイクをカスタマイズすることができます。さらに、あなたは...",
-      "summaryJa": "・追加: 最新のゲーム映像と画像が公開されました\n・ゲーム概要: Life Makeoverはソーシャルシミュレーションゲームです\n・機能: アバターの作成、着せ替え、メイクのカスタマイズが可能です",
+      "contentHash": "55a11f04ae2892e914db4b9d",
+      "titleJa": "Life Makeover - Kotaku",
+      "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供しています。",
+      "summaryJa": "・情報提供: Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789240739
+      "updatedAtEpoch": 1789244231
     },
     "https://www.bilibili.com/opus/1243444574009950215": {
       "contentHash": "f8a2b4efc3d2185be30808b2",
@@ -4698,6 +4698,17 @@
       "modelRevision": "sol-reviewed-v1",
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
+      "managedBySol": true
+    },
+    "https://x.com/LifeMakeover510/status/2096908840281457067": {
+      "contentHash": "d5c28451b10076eb66276ae4",
+      "titleJa": "今日の幸運の配達が届きました",
+      "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788821816,
       "managedBySol": true
     }
   },
