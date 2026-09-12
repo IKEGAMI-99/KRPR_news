@@ -6117,7 +6117,13 @@
       "https://kotaku.com/app/uploads/2026/09/Star-Wars-ZC-top.jpg",
       "https://kotaku.com/app/uploads/2026/08/image-2026-08-31T090445.966.jpg",
       "https://i.ytimg.com/vi/ID/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeoverの最新ゲーム映像と画像",
+    "bodyJa": "Life Makeoverはソーシャルシミュレーションゲームです。自分だけの分身を作成し、着せ替えやメイクをカスタマイズすることができます。さらに、あなたは...",
+    "summaryJa": "・追加: 最新のゲーム映像と画像が公開されました\n・ゲーム概要: Life Makeoverはソーシャルシミュレーションゲームです\n・機能: アバターの作成、着せ替え、メイクのカスタマイズが可能です",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e0d6bd8cef0d70d7b00c3ab4",
