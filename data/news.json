@@ -5929,7 +5929,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/Gy761yIboAIMZNo?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... 新SSRアライ「Shawn - Dance of Prayer」登場",
+    "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。#LifeMakeover",
+    "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: [Time of Hunt]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f845cae7a9ddb37b25057728",
@@ -5951,7 +5957,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/Gy7z2dKboAEpD3g?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... ★6セット「Invincible Moon」登場",
+    "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新バージョン | ★6セット「Invincible Moon」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+    "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC\n・イベント名: Time of Hunt",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a95f77a8c27cd334ecde6963",
