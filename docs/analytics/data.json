@@ -1,11 +1,11 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-12T18:15:27.947903+00:00",
+  "updatedAt": "2026-09-12T19:12:23.006742+00:00",
   "summary": {
-    "todayViews": 0,
-    "weekViews": 14,
-    "monthViews": 641,
-    "monthUsers": 52
+    "todayViews": 3,
+    "weekViews": 17,
+    "monthViews": 644,
+    "monthUsers": 53
   },
   "trend": [
     {
@@ -72,12 +72,17 @@
       "date": "2026-09-11",
       "label": "09/11",
       "value": 2
+    },
+    {
+      "date": "2026-09-13",
+      "label": "09/13",
+      "value": 3
     }
   ],
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 631
+      "value": 634
     },
     {
       "label": "/docs/",
@@ -87,7 +92,7 @@
   "referrers": [
     {
       "label": "(direct)",
-      "value": 55
+      "value": 56
     },
     {
       "label": "t.co",
@@ -109,7 +114,7 @@
   "regions": [
     {
       "label": "Japan",
-      "value": 47
+      "value": 48
     },
     {
       "label": "(not set)",
@@ -123,7 +128,7 @@
   "devices": [
     {
       "label": "mobile",
-      "value": 44
+      "value": 45
     },
     {
       "label": "desktop",
