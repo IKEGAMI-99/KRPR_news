@@ -1744,14 +1744,14 @@
       "updatedAtEpoch": 1788027125
     },
     "https://x.com/stylight_kr/status/1989148523359805872": {
-      "contentHash": "851117a5bacb325e13b0e444",
+      "contentHash": "c9c6007c5d3d504eea7a61d5",
       "titleJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍",
-      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍 シアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
-      "summaryJa": "・追加: シアン CYAN🎀が投稿した内容\n・内容: #Stylight #永遠の誓い のハッシュタグと共に、今日見に来てほしいというメッセージ",
+      "bodyJa": "わぁぁㅠㅠㅠㅠ💍💍💍💍\n\nシアン CYAN🎀: #Stylight #永遠の誓い\n💍 今日はぜひ見に来てね、待ってるよ❤︎",
+      "summaryJa": "・追加: シアン CYANが「#Stylight #永遠の誓い」の投稿を実施",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789186919
+      "updatedAtEpoch": 1789190167
     },
     "https://x.com/kirapara_JP/status/1984908337800986985": {
       "contentHash": "9d7ad9de506547fcdccbb4fc",
@@ -4660,6 +4660,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.bilibili.com/video/BV1eCtb6CE1r": {
+      "contentHash": "e0a7c8a67534ecbce46ef037",
+      "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開",
+      "bodyJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開\n#トップクラスの卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n今回は、価値2億の「法贝熱彩蛋」要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極彩色の美を表現します。\n手持ちアイテムに重ねて装着できる開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋要素が組み込まれています。これにより、全体のスタイルが常に統一された完全な芸術表現を保つだけでなく、彩蛋の象徴する幸運の願いがプレイヤーに加わり、幸運値が上昇することを期待しています。\n現在、すべてが準備万端です。皆様を招待します。",
+      "summaryJa": "・新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・★6セット「聖翎祈世」が追加される\n・「法贝熱彩蛋」要素を再構築し、19世紀末から20世紀初頭のロシア風情を取り入れたデザインが特徴",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789190154
     }
   },
   "failures": {
