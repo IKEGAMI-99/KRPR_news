@@ -4650,6 +4650,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789186759
     },
+    "https://www.bilibili.com/video/BV1eCtb6CE1r": {
+      "contentHash": "e0a7c8a67534ecbce46ef037",
+      "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開",
+      "bodyJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開\n#トップクラスの卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n今回は、価値2億の「法贝熱彩蛋」要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極彩色の美を表現します。\n手持ちアイテムに重ねて装着できる開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋要素が組み込まれています。これにより、全体のスタイルが常に統一された完全な芸術表現を保つだけでなく、彩蛋の象徴する幸運の願いがプレイヤーに加わり、幸運値が上昇することを期待しています。\n現在、すべてが準備万端です。皆様を招待します。",
+      "summaryJa": "・新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・★6セット「聖翎祈世」が追加される\n・「法贝熱彩蛋」要素を再構築し、19世紀末から20世紀初頭のロシア風情を取り入れたデザインが特徴",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789190154
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4660,16 +4670,6 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
-    },
-    "https://www.bilibili.com/video/BV1eCtb6CE1r": {
-      "contentHash": "e0a7c8a67534ecbce46ef037",
-      "titleJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開",
-      "bodyJa": "新バージョン4.4｜★6セット「聖翎祈世」デザイン短編公開\n#トップクラスの卵生# 新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場！\n今回は、価値2億の「法贝熱彩蛋」要素を分解し再構築し、19世紀末から20世紀初頭のロシア風情を浸透させ、各衣装パーツのデザインコンセプトに融合させ、極彩色の美を表現します。\n手持ちアイテムに重ねて装着できる開閉可能な彩蛋、尾の蝶結びの装飾彩蛋、履物に揺れる卵型のペンダントなど、細部に至るまで彩蛋要素が組み込まれています。これにより、全体のスタイルが常に統一された完全な芸術表現を保つだけでなく、彩蛋の象徴する幸運の願いがプレイヤーに加わり、幸運値が上昇することを期待しています。\n現在、すべてが準備万端です。皆様を招待します。",
-      "summaryJa": "・新バージョン4.4「神迹初誕」が9月1日から9月21日まで期間限定で登場\n・★6セット「聖翎祈世」が追加される\n・「法贝熱彩蛋」要素を再構築し、19世紀末から20世紀初頭のロシア風情を取り入れたデザインが特徴",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789190154
     }
   },
   "failures": {
