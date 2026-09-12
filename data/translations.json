@@ -4659,16 +4659,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789193880
     },
-    "https://x.com/kirapara_JP/status/2098667929953001827": {
-      "contentHash": "1e483cc18325690a6bde0c16",
-      "titleJa": "SR絆💞シュウ『運命の契り』 限定ガチャイベント『花園の祝宴』に登場予定✨ #キラパラ #着せ替えゲーム",
-      "bodyJa": "SR絆💞シュウ『運命の契り』\n\n限定ガチャイベント『花園の祝宴』に登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
-      "summaryJa": "・追加: SR絆💞シュウ『運命の契り』が限定ガチャイベント『花園の祝宴』に登場予定\n・イベント名: 花園の祝宴\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789197246
-    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4680,16 +4670,15 @@
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
     },
-    "https://x.com/LifeMakeover510/status/2096908840281457067": {
-      "contentHash": "d5c28451b10076eb66276ae4",
-      "titleJa": "今日の幸運の配達が届きました",
-      "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-      "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788821816,
-      "managedBySol": true
+    "https://x.com/kirapara_JP/status/2098667929953001827": {
+      "contentHash": "1e483cc18325690a6bde0c16",
+      "titleJa": "SR絆💞シュウ『運命の契り』 限定ガチャイベント『花園の祝宴』に登場予定✨ #キラパラ #着せ替えゲーム",
+      "bodyJa": "SR絆💞シュウ『運命の契り』\n\n限定ガチャイベント『花園の祝宴』に登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: SR絆💞シュウ『運命の契り』が限定ガチャイベント『花園の祝宴』に登場予定\n・イベント名: 花園の祝宴\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789197246
     }
   },
   "failures": {
