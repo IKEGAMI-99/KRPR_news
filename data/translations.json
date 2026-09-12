@@ -4722,10 +4722,10 @@
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 24,
-      "failedRuns": 8,
-      "lastFailureAtEpoch": 1789205586,
-      "retryAfterEpoch": 1789216386
+      "failedAttempts": 27,
+      "failedRuns": 9,
+      "lastFailureAtEpoch": 1789216677,
+      "retryAfterEpoch": 1789227477
     }
   }
 }
