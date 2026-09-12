@@ -4660,6 +4660,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789190154
     },
+    "https://x.com/kirapara_JP/status/2098645279851659317": {
+      "contentHash": "0d8a66777cab9e898b2efc9d",
+      "titleJa": "🔔イベント予告🔔 最新セットコーデの情報をお届け",
+      "bodyJa": "🔔イベント予告🔔\n\n最新セットコーデの情報をお届け！\n\n限定ガチャイベント『花園の祝宴』、9月17日より開催！\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント『花園の祝宴』が9月17日より開催される\n・最新セットコーデの情報が提供される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789193880
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",

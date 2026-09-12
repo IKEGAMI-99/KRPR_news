@@ -19,7 +19,13 @@
         "url": "https://x.com/kirapara_JP/status/2098645279851659317"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🔔イベント予告🔔 最新セットコーデの情報をお届け",
+    "bodyJa": "🔔イベント予告🔔\n\n最新セットコーデの情報をお届け！\n\n限定ガチャイベント『花園の祝宴』、9月17日より開催！\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・限定ガチャイベント『花園の祝宴』が9月17日より開催される\n・最新セットコーデの情報が提供される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c65ae1bd3ddfe3821de0ed6d",
