@@ -20,7 +20,13 @@
         "url": "https://x.com/kirapara_JP/status/2098667929953001827"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "SR絆💞シュウ『運命の契り』 限定ガチャイベント『花園の祝宴』に登場予定✨ #キラパラ #着せ替えゲーム",
+    "bodyJa": "SR絆💞シュウ『運命の契り』\n\n限定ガチャイベント『花園の祝宴』に登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: SR絆💞シュウ『運命の契り』が限定ガチャイベント『花園の祝宴』に登場予定\n・イベント名: 花園の祝宴\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "0f20ec65595af788b70cad18",
@@ -2029,7 +2035,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
