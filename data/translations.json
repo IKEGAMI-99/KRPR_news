@@ -2924,14 +2924,14 @@
       "updatedAtEpoch": 1788495446
     },
     "https://x.com/LifeMakeover510/status/1959556289320591828": {
-      "contentHash": "30efdee04443e45c8e191fbc",
+      "contentHash": "8a1465a423142e54018d700e",
       "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... 新SSRアライ「Shawn - Dance of Prayer」登場",
-      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。#LifeMakeover",
+      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
       "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: [Time of Hunt]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789254593
+      "updatedAtEpoch": 1789269476
     },
     "https://x.com/LifeMakeover510/status/1959480792347713715": {
       "contentHash": "9d61a6feb23e400c62743add",
@@ -4736,10 +4736,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 105,
-      "failedRuns": 35,
-      "lastFailureAtEpoch": 1789257573,
-      "retryAfterEpoch": 1789268373
+      "failedAttempts": 108,
+      "failedRuns": 36,
+      "lastFailureAtEpoch": 1789269453,
+      "retryAfterEpoch": 1789280253
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
