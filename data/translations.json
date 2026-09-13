@@ -4711,6 +4711,26 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://t.bilibili.com/1245640275098861570": {
+      "contentHash": "999265a8a51c928ed3f7a944",
+      "titleJa": "VME応援企画 | 「7城」オフライン応援記念",
+      "bodyJa": "VME応援企画 | 「7城」オフライン応援記念\n#トップスターの卵生# 全新4.4バージョン・神迹初誕 9月1日〜9月21日限定ログイン！\n\n✨星の光が夢に冠を飾る。\n✨記憶に永遠を刻む。\n💘あなたに感謝します。共に\n💗この初秋の美しい思い出を残してくれてありがとう。\n\n動画アドレス：",
+      "summaryJa": "・イベント: VME応援企画「7城」オフライン応援記念\n・期間: 9月1日〜9月21日\n・内容: 全新4.4バージョン「神迹初誕」の限定ログインイベント",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789265815
+    },
+    "https://t.bilibili.com/1245551433684615177": {
+      "contentHash": "84e07c93500664a1263230cd",
+      "titleJa": "復刻追光イベント｜★5セット「冥焰熔骨」の動的実写展示",
+      "bodyJa": "復刻追光イベント｜★5セット「冥焰熔骨」の動的実写展示\n//リポスト元: @以闪亮之名: 全新バージョン｜★5セット「冥焰熔骨」の動的実機展示\n#以闪亮之名に参加しよう #新バージョン・燼土生花 9月9日〜9月29日限定ログイン！\n\n黒曜石が嵌め込まれた節節の竜骨、岩漿が背骨の隙間を灼熱に流れる。\n尾の先端の琥珀ダイヤモンドの輝きは絶えず、揺れるたびに地心の脈動を描き出す。\n風骨の権威と溶岩の力が邂逅し、竜裔女爵の燃えるような冠を鋳造する。\n❗アートのオマージュ❗「冥焰熔骨」の動作と「羽陨圣卉」の動作を揃えると、二人でインタラクティブな記念撮影動作が発動する。これはミケランジェロのシスティーナ礼拝堂天井画の不朽の名作『アダムの創造』に敬意を表したものだ。\n\n【地心から生まれ、彼女は原初の火山を纏う】\n創造の力は常に穏やかなものではない。混沌と熱の中から生まれ、地心の中で鍛え上げられた。黒曜石は彼女の筋骨となり…\n\n動画アドレス：",
+      "summaryJa": "・復刻追光イベントが開催される\n・★5セット「冥焰熔骨」の動的実機展示が公開された\n・新バージョン「燼土生花」は9月9日〜9月29日まで限定ログイン可能\n・「冥焰熔骨」と「羽陨圣卉」の動作を揃えると、二人でインタラクティブな記念撮影動作が発動する",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789265914
     }
   },
   "failures": {
