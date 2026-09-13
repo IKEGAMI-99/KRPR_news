@@ -4740,6 +4740,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789287468
     },
+    "https://x.com/kirapara_JP/status/2099060524973470115": {
+      "contentHash": "1c31cf25dcc84ecf9140ce70",
+      "titleJa": "限定ガチャイベント『花園の祝宴』まもなく開催",
+      "bodyJa": "限定ガチャイベント『花園の祝宴』まもなく開催！\n星5セット「花間の茶会」、「夢灯りの歌」の動画を公開✨\n\nRP&いいねキャンペーンを実施🥰\n20名様にAmazonギフト券をプレゼント🎁\n\n参加方法\n①@kirapara_JPをフォロー\n②本ポストをRP\n\n〆9月17日\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・限定ガチャイベント「花園の祝宴」がまもなく開催される\n・星5セット「花間の茶会」と「夢灯りの歌」の動画が公開された\n・RP&いいねキャンペーンを実施し、20名にAmazonギフト券をプレゼントする\n・キャンペーンの締め切りは9月17日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789292561
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4755,10 +4765,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 111,
-      "failedRuns": 37,
-      "lastFailureAtEpoch": 1789280716,
-      "retryAfterEpoch": 1789291516
+      "failedAttempts": 114,
+      "failedRuns": 38,
+      "lastFailureAtEpoch": 1789292797,
+      "retryAfterEpoch": 1789303597
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
