@@ -2091,7 +2091,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
@@ -5600,7 +5606,13 @@
         "url": "https://m.bbs.3839.com/thread-9153728.htm"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "夢を抱き歌い、光り輝く",
+    "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが運営するゲームコミュニティです。国内外の高品質で面白いゲームを毎日共有しています。また、実用的なゲームツール、オリジナルの攻略解説、生動的な動画解説を提供し、プレイヤーがゲームを素早く習得し、迅速にクリアできるようサポートします。",
+    "summaryJa": "・好游快爆APPは8000万人のゲームプレイヤーが運営するゲームコミュニティである\n・国内外の高品質で面白いゲームを毎日共有している\n・実用的なゲームツール、オリジナルの攻略解説、生動的な動画解説を提供している",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "e0d6bd8cef0d70d7b00c3ab4",
