@@ -2119,7 +2119,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
@@ -3449,7 +3455,13 @@
         "url": "https://www.tiktok.com/@kiramekiparadise_jp/video/7681197788734246164"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "新イベント『花園の祝宴』が9月17日より開催",
+    "bodyJa": "新イベント『花園の祝宴』が9月17日より開催！ 『きらめきパラダイス』の新星5イベントPVを公開✨ ーーーーーーーーーーーーーー 次世代ガールズドリームRPG『き...",
+    "summaryJa": "・新イベント「花園の祝宴」が9月17日より開催\n・キラパラの新星5イベントPVが公開された",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "7b7394138a0b3f33942cd410",
