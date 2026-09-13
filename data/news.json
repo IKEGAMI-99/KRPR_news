@@ -1194,8 +1194,13 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
+    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "7753865a18691d07cb260784",
@@ -1502,7 +1507,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7683455459075853589"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover「フローラル・パーチパック」が9月14日09:00〜9月27日23:59 UTCより登場",
+    "bodyJa": "Life Makeoverにて「フローラル・パーチパック」が9月14日09:00から9月27日23:59 UTCまで提供されます。このパックには、★5限定ハンド「Wandering Plum」や、その他の★5アイテムが含まれています。",
+    "summaryJa": "・追加: 「フローラル・パーチパック」が登場\n・期間: 9月14日09:00〜9月27日23:59 UTC\n・内容: ★5限定ハンド「Wandering Plum」を含む",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "228f26cce72a2f9051572241",
@@ -2333,7 +2344,13 @@
     "sourceCount": 1,
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に賞味期限をつけるとしたら、1万年がいいですね！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "29dd9399a73cae3b28e8dae5",
