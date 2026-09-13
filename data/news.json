@@ -43,7 +43,13 @@
       "https://ikegami-99.github.io/KRPR_news/media/weibo/361f1cd18395691e870d.jpg",
       "https://ikegami-99.github.io/KRPR_news/media/weibo/e85c26ef5ac9bf41161b.jpg",
       "https://ikegami-99.github.io/KRPR_news/media/weibo/462406a1b48a035b3655.jpg"
-    ]
+    ],
+    "titleJa": "以闪亮之名 #以闪亮之名# 夢を歌い光り輝く万丈✨人波が押し寄せ歓声絶えない✨星の舞台は昼のように輝く",
+    "bodyJa": "以闪亮之名 #以闪亮之名#\n\n夢を歌い光り輝く万丈\n\n✨人波が押し寄せ歓声絶えない✨\n✨星の舞台は昼のように輝く。\n\n❤️今期の展示作品は以下のプレイヤーから提供されています：\n朕是一个脆弱的皇帝\n闲人罢聊\nv花卷卷v\n排骨隊長\n\n💎ダウンロードはこちら： Webリンク\n💎以闪亮之名作品上映季イベントはこちら： Webリンク",
+    "summaryJa": "・イベント名：以闪亮之名作品上映季イベント\n・内容：プレイヤーが制作した作品が展示される\n・提供プレイヤー：朕是一个脆弱的皇帝、闲人罢聊、v花卷卷v、排骨隊長\n・詳細情報：Webリンクから確認可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "bdad471ccb92525eac518632",
@@ -5220,7 +5226,13 @@
         "url": "https://x.com/stylight_kr/status/1981931221065048303"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "【イベント】トレンドコード『銀月の伝説』予告「伝説の赤い瞳の少女、もしかして彼女を知っていますか」",
+    "bodyJa": "【イベント】トレンドコード『銀月の伝説』予告\n\n「伝説の赤い瞳の少女、もしかして彼女を知っていますか？」\n\n🐺ユニークなヘアスタイルと多様な再解釈が可能なワンピース、\n輝く年末の雰囲気に完璧に合うStylightのNEWトレンドコード！\n\n🕙 10/30(木) 〜 12/11(木)\n\n[イベント詳細]\n- 様々なデイリーアイテム",
+    "summaryJa": "・追加: トレンドコード『銀月の伝説』が予告された\n・期間: 10/30(木) 〜 12/11(木)\n・内容: ユニークなヘアスタイルと多様な再解釈が可能なワンピースを含むNEWトレンドコードの登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "4a09786e309aff4cf3f9a843",
