@@ -4731,6 +4731,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789273926
     },
+    "https://weibo.com/7521830234/RhTGzufw6": {
+      "contentHash": "78c9e4b07b93e6f6ec78b8a3",
+      "titleJa": "以闪亮之名 #以闪亮之名# 夢を歌い光り輝く万丈✨人波が押し寄せ歓声絶えない✨星の舞台は昼のように輝く",
+      "bodyJa": "以闪亮之名 #以闪亮之名#\n\n夢を歌い光り輝く万丈\n\n✨人波が押し寄せ歓声絶えない✨\n✨星の舞台は昼のように輝く。\n\n❤️今期の展示作品は以下のプレイヤーから提供されています：\n朕是一个脆弱的皇帝\n闲人罢聊\nv花卷卷v\n排骨隊長\n\n💎ダウンロードはこちら： Webリンク\n💎以闪亮之名作品上映季イベントはこちら： Webリンク",
+      "summaryJa": "・イベント名：以闪亮之名作品上映季イベント\n・内容：プレイヤーが制作した作品が展示される\n・提供プレイヤー：朕是一个脆弱的皇帝、闲人罢聊、v花卷卷v、排骨隊長\n・詳細情報：Webリンクから確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789276553
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4741,16 +4751,6 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
-    },
-    "https://weibo.com/7521830234/RhTGzufw6": {
-      "contentHash": "78c9e4b07b93e6f6ec78b8a3",
-      "titleJa": "以闪亮之名 #以闪亮之名# 夢を歌い光り輝く万丈✨人波が押し寄せ歓声絶えない✨星の舞台は昼のように輝く",
-      "bodyJa": "以闪亮之名 #以闪亮之名#\n\n夢を歌い光り輝く万丈\n\n✨人波が押し寄せ歓声絶えない✨\n✨星の舞台は昼のように輝く。\n\n❤️今期の展示作品は以下のプレイヤーから提供されています：\n朕是一个脆弱的皇帝\n闲人罢聊\nv花卷卷v\n排骨隊長\n\n💎ダウンロードはこちら： Webリンク\n💎以闪亮之名作品上映季イベントはこちら： Webリンク",
-      "summaryJa": "・イベント名：以闪亮之名作品上映季イベント\n・内容：プレイヤーが制作した作品が展示される\n・提供プレイヤー：朕是一个脆弱的皇帝、闲人罢聊、v花卷卷v、排骨隊長\n・詳細情報：Webリンクから確認可能",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789276553
     }
   },
   "failures": {
