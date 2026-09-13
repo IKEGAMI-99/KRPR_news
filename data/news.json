@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://i4.ytimg.com/vi/CXtOxgrV-Zo/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeover [Floral Perch Pack] プレビュー",
+    "bodyJa": "Floral Perch Pack\n\n⏰[パック期間]\n9月14日 09:00 - 9月27日 23:59 UTC\n\n[パック詳細]\nイベント期間中、指定されたタスクを完了することでパックの割引が適用されます。全4タスクを完了すると、最安値で購入できます！お見逃しなく！このパックには、★5限定ハンドヘルド「Wandering Plum」、★5メイク「Pad Rescue」、家具「Violet Corridor」、Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれています。このパックは1回のみ購入可能です。\n[タスク詳細]\nタスクは2セットに分かれており、全4タスクがあります。いずれかのセットを完了すると、最安値になるまで価格が1段階下がります！\nタスクセット1\n1. Lightchaseで1回実行する\n2. 友達にEnergyを5回贈る\nタスクセット2\n1. Energyを1000消費する\n2. Guild SupportからGuild Pointsを90獲得する\n[特記事項]\n★5限定ハンドヘルド「Wandering Plum」には、特別なメインページインタラクションポーズが付属します。メインページでアイテムをタップすると効果が発動します。\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・追加: ★5限定ハンドヘルド「Wandering Plum」を含む「Floral Perch Pack」が登場\n・期間: 9月14日 09:00 - 9月27日 23:59 UTC\n・入手: 指定タスクを完了することでパック割引が適用され、最安値で購入可能\n・内容: ★5限定ハンドヘルド「Wandering Plum」、★5メイク「Pad Rescue」、家具「Violet Corridor」などを含む\n・タスク: 2セットのタスク（Lightchase実行、Energy贈呈、Energy消費、Guild Points獲得）があり、セット完了で価格が段階的に下がる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "eb85e0bf2fea5c09f5cc9160",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://i3.ytimg.com/vi/fWx5AgvaFQo/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "『きらめきパラダイス』星5セットコーデ動画『夢灯りの歌』の実録動画を公開✨",
+    "bodyJa": "『きらめきパラダイス』のイベント『花園の祝宴』に登場する新星5セット「夢灯りの歌」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+    "summaryJa": "・追加: キラパラのイベント「花園の祝宴」に登場する新星5セット「夢灯りの歌」の動画が公開されました\n・関連情報: 公式X、公式Instagram、公式サイト、公式TikTokへのリンクが掲載されています\n・ハッシュタグ: #ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "4dfc7ba89e661115d5803929",
@@ -63,7 +75,13 @@
         "url": "https://x.com/kirapara_JP/status/2099090720804008273"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "🎦『夢灯りの歌』ゲーム内効果を紹介 星5セット「夢灯りの歌」の実録動画を公開✨ #キラパラ #着せ替えゲーム",
+    "bodyJa": "🎦『夢灯りの歌』ゲーム内効果を紹介\n\n星5セット「夢灯りの歌」の実録動画を公開✨\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・星5セット「夢灯りの歌」のゲーム内効果を紹介する実録動画が公開されました\n・ハッシュタグ「#キラパラ」「#着せ替えゲーム」が使用されています",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "a14e9e294cca057afb851c56",
@@ -1158,13 +1176,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",
