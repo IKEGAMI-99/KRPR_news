@@ -4770,17 +4770,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789294914
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://www.youtube.com/watch?v=CXtOxgrV-Zo": {
       "contentHash": "0f4965a01f2a5887d8b8dba9",
       "titleJa": "Life Makeover [Floral Perch Pack] プレビュー",
@@ -4810,6 +4799,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789298206
+    },
+    "https://x.com/LifeMakeover510/status/2099090718107037786": {
+      "contentHash": "cdc38010e82d59d1d5f1d4d1",
+      "titleJa": "フローラル・パーチパック ⏰9月14日 09:00 - 9月27日 23:59 UTC",
+      "bodyJa": "フローラル・パーチパック\n\n⏰9月14日 09:00 - 9月27日 23:59 UTC\n\nこのパックには、★5限定ハンドヘルド[Wandering Plum]、★5メイク[Pad Rescue]、家具[Violet Corridor]、Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれています。このパックは1回のみ購入可能です。",
+      "summaryJa": "・追加: ★5限定ハンドヘルド[Wandering Plum]、★5メイク[Pad Rescue]、家具[Violet Corridor]を含むフローラル・パーチパックが登場\n・期間: 9月14日 09:00 - 9月27日 23:59 UTC\n・内容: Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれる\n・購入条件: このパックは1回のみ購入可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789298344
+    },
+    "https://x.com/LifeMakeover510/status/2099083164832727414": {
+      "contentHash": "0e5f5f8bd6300c0886fce5dc",
+      "titleJa": "Popping Gifts ⏰9月14日 09:00 - 9月21日 05:00 UTC [報酬受け取り] 9月14日 09:00 - 9月22日 05:00 UTC Poppingポイントを貯める",
+      "bodyJa": "Popping Gifts\n\n⏰9月14日 09:00 - 9月21日 05:00 UTC\n\n[報酬受け取り]\n9月14日 09:00 - 9月22日 05:00 UTC\n\nPoppingポイントを貯めて、限定の★4セット「Woven Nocturne」、フォトフレーム「Citrus Pink」、トレンドカラーチャート×13、Luster Invitation、および各種素材報酬を獲得できます。",
+      "summaryJa": "・イベント名: Popping Gifts\n・期間: 9月14日 09:00 - 9月21日 05:00 UTC\n・報酬受け取り期間: 9月14日 09:00 - 9月22日 05:00 UTC\n・報酬: 限定★4セット「Woven Nocturne」、フォトフレーム「Citrus Pink」、トレンドカラーチャート×13、Luster Invitation、各種素材報酬",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789298411
+    },
+    "https://x.com/kirapara_JP/status/2099075614976471263": {
+      "contentHash": "85d8333174f68f6fc7adcca8",
+      "titleJa": "🎦『花間の茶会』ゲーム内効果を紹介 星5セット「花間の茶会」の実録動画を公開✨ #キラパラ #着せ替えゲーム",
+      "bodyJa": "🎦『花間の茶会』ゲーム内効果を紹介\n\n星5セット「花間の茶会」の実録動画を公開✨\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・星5セット「花間の茶会」のゲーム内効果を紹介する実録動画が公開されました\n・ハッシュタグ「#キラパラ」「#着せ替えゲーム」が使用されています",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789298440
     }
   },
   "failures": {
