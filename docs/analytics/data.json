@@ -1,10 +1,10 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-13T02:14:06.840195+00:00",
+  "updatedAt": "2026-09-13T03:14:38.823391+00:00",
   "summary": {
-    "todayViews": 4,
-    "weekViews": 18,
-    "monthViews": 645,
+    "todayViews": 8,
+    "weekViews": 22,
+    "monthViews": 649,
     "monthUsers": 54
   },
   "trend": [
@@ -76,13 +76,13 @@
     {
       "date": "2026-09-13",
       "label": "09/13",
-      "value": 4
+      "value": 8
     }
   ],
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 635
+      "value": 639
     },
     {
       "label": "/docs/",
@@ -92,7 +92,7 @@
   "referrers": [
     {
       "label": "(direct)",
-      "value": 56
+      "value": 57
     },
     {
       "label": "t.co",
@@ -104,7 +104,7 @@
     },
     {
       "label": "(not set)",
-      "value": 11
+      "value": 12
     },
     {
       "label": "github.com",
