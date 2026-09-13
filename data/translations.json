@@ -4896,10 +4896,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 117,
-      "failedRuns": 39,
-      "lastFailureAtEpoch": 1789304103,
-      "retryAfterEpoch": 1789314903
+      "failedAttempts": 120,
+      "failedRuns": 40,
+      "lastFailureAtEpoch": 1789315155,
+      "retryAfterEpoch": 1789325955
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
