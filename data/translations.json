@@ -4870,16 +4870,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789301862
     },
-    "https://weibo.com/7521830234/Ri2kmoqjE": {
-      "contentHash": "0a1a09f8ed24a9540f2d0714",
-      "titleJa": "以闪亮之名 #以闪亮之名# VME応援計画 | 12星座今週の「卵」で小さな幸せ🔮12星座の今週の幸運序曲が公開、🔮幸運の卵があなたの幸運を途切れさせないように！",
-      "bodyJa": "以闪亮之名 #以闪亮之名# \n\nVME応援計画 | 12星座今週の「卵」で小さな幸せ\n\n🔮12星座の今週の幸運序曲が公開されました。\n🔮幸運の卵があなたの幸運を途切れさせないように願っています！\n\n💎ダウンロードはこちら： Webリンク \n💎以闪亮之名上映シーズンイベントはこちら： Webリンク",
-      "summaryJa": "・追加: VME応援計画「12星座今週の「卵」で小さな幸せ」が開催\n・内容: 12星座の今週の幸運序曲が公開され、幸運の卵が提供される\n・リンク: ダウンロード用Webリンクと、以闪亮之名上映シーズンイベントのWebリンクが提供",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789352209
-    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4891,16 +4881,15 @@
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
     },
-    "https://x.com/LifeMakeover510/status/2096908840281457067": {
-      "contentHash": "d5c28451b10076eb66276ae4",
-      "titleJa": "今日の幸運の配達が届きました",
-      "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-      "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788821816,
-      "managedBySol": true
+    "https://weibo.com/7521830234/Ri2kmoqjE": {
+      "contentHash": "0a1a09f8ed24a9540f2d0714",
+      "titleJa": "以闪亮之名 #以闪亮之名# VME応援計画 | 12星座今週の「卵」で小さな幸せ🔮12星座の今週の幸運序曲が公開、🔮幸運の卵があなたの幸運を途切れさせないように！",
+      "bodyJa": "以闪亮之名 #以闪亮之名# \n\nVME応援計画 | 12星座今週の「卵」で小さな幸せ\n\n🔮12星座の今週の幸運序曲が公開されました。\n🔮幸運の卵があなたの幸運を途切れさせないように願っています！\n\n💎ダウンロードはこちら： Webリンク \n💎以闪亮之名上映シーズンイベントはこちら： Webリンク",
+      "summaryJa": "・追加: VME応援計画「12星座今週の「卵」で小さな幸せ」が開催\n・内容: 12星座の今週の幸運序曲が公開され、幸運の卵が提供される\n・リンク: ダウンロード用Webリンクと、以闪亮之名上映シーズンイベントのWebリンクが提供",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789352209
     }
   },
   "failures": {
