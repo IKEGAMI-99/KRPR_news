@@ -40,7 +40,13 @@
       "https://ikegami-99.github.io/KRPR_news/media/weibo/d8d5c560b73bad363aa8.jpg",
       "https://ikegami-99.github.io/KRPR_news/media/weibo/c4cd098f18422f77575b.jpg",
       "https://ikegami-99.github.io/KRPR_news/media/weibo/3d0bdd0d4f5f77993723.jpg"
-    ]
+    ],
+    "titleJa": "以闪亮之名 #以闪亮之名# VME応援計画 | 12星座今週の「卵」で小さな幸せ🔮12星座の今週の幸運序曲が公開、🔮幸運の卵があなたの幸運を途切れさせないように！",
+    "bodyJa": "以闪亮之名 #以闪亮之名# \n\nVME応援計画 | 12星座今週の「卵」で小さな幸せ\n\n🔮12星座の今週の幸運序曲が公開されました。\n🔮幸運の卵があなたの幸運を途切れさせないように願っています！\n\n💎ダウンロードはこちら： Webリンク \n💎以闪亮之名上映シーズンイベントはこちら： Webリンク",
+    "summaryJa": "・追加: VME応援計画「12星座今週の「卵」で小さな幸せ」が開催\n・内容: 12星座の今週の幸運序曲が公開され、幸運の卵が提供される\n・リンク: ダウンロード用Webリンクと、以闪亮之名上映シーズンイベントのWebリンクが提供",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "ba449b27696a5bb0e5d704a3",
@@ -2437,7 +2443,13 @@
     ],
     "solEditReason": "原文は幸運をテーマにしたメッセージで、ゲーム機能やアイテムの「実装」を告知していない。既存summaryJaが「幸運の卵が実装されました」と原文にない機能追加を作っていたため、原文にある内容だけへ修正。",
     "solReviewed": true,
-    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい"
+    "titleJa": "今日の幸運の配達が届きました",
+    "bodyJa": "今日の幸運の配達が届きました！\n\n🍅 幸運の卵を起動して、あなた自身の幸運のオーラを活性化させましょう。\n🥜 この幸運に期限をつけなければならないとしたら、1万年だといいのですが！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・内容: 幸運の卵で自分だけの幸運のオーラを活性化\n・メッセージ: この幸運の期限が1万年であってほしい",
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2",
+    "solLocked": true
   },
   {
     "id": "406ba599f57d540e1f59e11e",
