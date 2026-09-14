@@ -6083,7 +6083,13 @@
       "https://kotaku.com/app/uploads/2026/09/Marvels-Wolverine_20260828004817-3.jpg",
       "https://kotaku.com/app/uploads/2026/09/Star-Wars-ZC-top.jpg",
       "https://i.ytimg.com/vi/ID/hqdefault.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeover - Kotaku",
+    "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報をお届けします。",
+    "summaryJa": "・対象ゲーム: Life Makeover\n・提供情報: ニュース、レビュー、発売日、トレーラー、ゲームプレイなど",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d143e1d10a472f196f9280fb",
