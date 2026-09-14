@@ -5000,6 +5000,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789367184
+    },
+    "https://www.bilibili.com/opus/1247804824808849440": {
+      "contentHash": "bd6710524d3c3621ffb5f61f",
+      "titleJa": "復刻追光イベント｜SSR絆「藍殊・比翼連枝」 山河绣景｜若揮錦布繡，望芒兮無幅",
+      "bodyJa": "復刻追光イベント｜SSR絆「藍殊・比翼連枝」\n山河绣景｜若揮錦布繡，望芒兮無幅。9月15日10:00から10月5日23:59まで期間限定で開催！\n\n「結局、君を見つけたんだ――僕の運命の翼を持つ眷属。」\n囚われた宮殿にいる一翼の鳥が、どうやって重層の宮壁を越えて飛ぶのか？\n月下の縁起、すべては運命。この芝居は、藍殊と君が共演する。\n\n以閃亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・復刻追光イベントが期間限定で開催される\n・期間は9月15日10:00から10月5日23:59まで\n・登場するSSR絆は「藍殊・比翼連枝」\n・イベントのテーマは「山河绣景｜若揮錦布繡，望芒兮無幅」",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789367326
+    },
+    "https://www.bilibili.com/opus/1247803536314466321": {
+      "contentHash": "a8ce6445f5298799aeb29bf7",
+      "titleJa": "復刻「追光」イベント｜★4セット「紀元余音」プレビュー",
+      "bodyJa": "復刻「追光」イベント｜★4セット「紀元余音」プレビュー！\n山河绣景| 若揮錦布繡，望芒兮無幅。9月15日10:00〜10月5日23:59まで期間限定で開催！\n\n千禧狂騒をccdカメラの粒子に刻み込み、\n喜びは時間で溶けず、見た輝かしい花火を忘れることもないように、\n新世紀からの約束を結び、全ての瞬間が美しい総和となるように、\n流行に敬意を表し、流行を再構築する。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\n全ての女性に愛される3A級シミュレーションライフゲーム\n\n入場",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間: 9月15日10:00〜10月5日23:59\n・追加: ★4セット「紀元余音」がプレビューされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789367398
+    },
+    "https://www.bilibili.com/opus/1247802247815888915": {
+      "contentHash": "9a0ad82845fe08130745f703",
+      "titleJa": "復刻追光イベント｜★5セット「風憶佳期」プレビュー",
+      "bodyJa": "復刻追光イベント｜★5セット「風憶佳期」プレビュー！\n山河绣景| 若揮錦布繡，望芒兮無幅。9月15日10:00から10月5日23:59まで期間限定で開催！\n\n時を証人として、私は永遠に燃える初心を抱き、信仰のために走り続ける。\n生まれながらにして自由を求め、悦びが私の基準、妥協しないことが基調。\nむしろ、今この瞬間をより愛し、明日を愛する。この輝きを永遠に身に宿し、\n花を持つだけでなく、宇宙をも抱きしめる。\n風のように、霧のように、雲のように、天のように。この世界で、誰にも私の燃える情熱を消させはしない。\n「風憶佳期 佳期属我」\n以閃亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n起動",
+      "summaryJa": "・復刻追光イベントが開催される\n・期間: 9月15日10:00〜10月5日23:59\n・追加: ★5セット「風憶佳期」がプレビューされる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789367480
     }
   },
   "failures": {
