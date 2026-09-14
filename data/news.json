@@ -6110,6 +6110,12 @@
         "url": "https://m.bbs.3839.com/thread-9156355.htm"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "光域回音アバターパックが近日登場",
+    "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが利用するゲームコミュニティです。毎日、国内外の高品質で面白いゲームの最新情報を共有しています。また、実用的なゲームツール、オリジナルの攻略解説、生動な動画解説を提供し、プレイヤーがゲームを素早く習得し、迅速にクリアできるようサポートします。",
+    "summaryJa": "・追加: 光域回音アバターパックが近日登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   }
 ]
