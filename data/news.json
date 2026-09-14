@@ -4084,7 +4084,13 @@
         "url": "https://www.bilibili.com/video/BV1pUtE68EL3"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "VME応援企画 | 輝く約束へ",
+    "bodyJa": "#トップスターの卵生# 全新4.4バージョン・神迹初誕が9月1日から9月21日まで期間限定で登場！\n\n✨星々が輝き、光が瞬く。\n✨ワンタップで変身、あなたを輝かせる！\n💖プレイヤーの皆様は「#トップスターの卵生#」タグを使用して、あなただけのワンタップ変身動画を投稿してください！\n💖プレイヤーへの感謝：京谕",
+    "summaryJa": "・追加: 全新4.4バージョン「神迹初誕」が期間限定で登場\n・期間: 9月1日〜9月21日\n・内容: 「#トップスターの卵生#」タグを使用したワンタップ変身動画の投稿キャンペーン",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "7953d3413080e170af63f60a",
