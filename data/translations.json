@@ -5051,6 +5051,16 @@
       "updatedAtEpoch": 1788821816,
       "managedBySol": true
     },
+    "https://www.bilibili.com/video/BV1pUtE68EL3": {
+      "contentHash": "aaa7e850126d41a613641de9",
+      "titleJa": "VME応援企画 | 輝く約束へ",
+      "bodyJa": "#トップスターの卵生# 全新4.4バージョン・神迹初誕が9月1日から9月21日まで期間限定で登場！\n\n✨星々が輝き、光が瞬く。\n✨ワンタップで変身、あなたを輝かせる！\n💖プレイヤーの皆様は「#トップスターの卵生#」タグを使用して、あなただけのワンタップ変身動画を投稿してください！\n💖プレイヤーへの感謝：京谕",
+      "summaryJa": "・追加: 全新4.4バージョン「神迹初誕」が期間限定で登場\n・期間: 9月1日〜9月21日\n・内容: 「#トップスターの卵生#」タグを使用したワンタップ変身動画の投稿キャンペーン",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789370702
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -5061,16 +5071,6 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
-    },
-    "https://www.bilibili.com/video/BV1pUtE68EL3": {
-      "contentHash": "aaa7e850126d41a613641de9",
-      "titleJa": "VME応援企画 | 輝く約束へ",
-      "bodyJa": "#トップスターの卵生# 全新4.4バージョン・神迹初誕が9月1日から9月21日まで期間限定で登場！\n\n✨星々が輝き、光が瞬く。\n✨ワンタップで変身、あなたを輝かせる！\n💖プレイヤーの皆様は「#トップスターの卵生#」タグを使用して、あなただけのワンタップ変身動画を投稿してください！\n💖プレイヤーへの感謝：京谕",
-      "summaryJa": "・追加: 全新4.4バージョン「神迹初誕」が期間限定で登場\n・期間: 9月1日〜9月21日\n・内容: 「#トップスターの卵生#」タグを使用したワンタップ変身動画の投稿キャンペーン",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789370702
     }
   },
   "failures": {
