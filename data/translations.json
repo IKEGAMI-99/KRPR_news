@@ -4950,6 +4950,37 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789363173
+    },
+    "https://weibo.com/7521830234/Ri3fbzF0i": {
+      "contentHash": "83feb37e48f9ffce4f0efc01",
+      "titleJa": "以闪亮之名 #以闪亮之名# 復刻追光イベント｜★5セット「風憶佳期」プレビュー",
+      "bodyJa": "以闪亮之名 #以闪亮之名#\n\n復刻追光イベント｜★5セット「風憶佳期」プレビュー！\n山河绣景| 錦布を振るい、望む光は尽きることなく。9月15日10:00〜10月5日23:59に期間限定で開始！\n\n時を証人とし、私は永遠に燃える初心を抱き、信仰のために走り続ける。\n生まれながらにして自由を求め、私自身を悦びの基準とし、妥協しないことを土台とする。\nむしろ、今この瞬間に明日をもっと愛し、この輝きを永遠に身に宿す。\n花を持つだけでなく、宇宙をも抱きしめたい。\n風のように、霧のように、雲のように、天よりも高く。この世界で、誰にも私の熱を消させはしない。\n「風憶佳期 佳期属我」\n\n💎ダウンロード用リンク： Webリンク\n💎閃光作品上映季イベント用リンク： Webリンク",
+      "summaryJa": "・復刻追光イベントが期間限定で開始\n・期間: 9月15日10:00〜10月5日23:59\n・追加: ★5セット「風憶佳期」のプレビュー公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789363338
+    },
+    "https://www.bilibili.com/opus/1247742977222115331": {
+      "contentHash": "6cac154e0f4df0ec08e382c9",
+      "titleJa": "VME応援企画 | 12星座の今週の「卵」で小さな幸せを 🔮12星座の今週の幸運序曲が公開されました 🔮幸運の卵があなたの幸運を途切れさせません！",
+      "bodyJa": "VME応援企画 | 12星座の今週の「卵」で小さな幸せを\n\n🔮12星座の今週の幸運序曲が公開されました。\n🔮幸運の卵があなたの幸運を途切れさせません！\n\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\nプレイ",
+      "summaryJa": "・追加: VME応援企画「12星座の今週の幸運序曲」が公開されました\n・内容: 12星座の幸運の卵が提供され、幸運をサポートします",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789363401
+    },
+    "https://x.com/stylight_kr/status/2097619772376506528": {
+      "contentHash": "197e97a0543e18c493bcecc6",
+      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
+      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
+      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788951373,
+      "managedBySol": true
     }
   },
   "failures": {
