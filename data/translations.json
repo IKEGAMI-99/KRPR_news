@@ -4880,6 +4880,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789352209
     },
+    "https://www.youtube.com/watch?v=U_HZ5ATgKTM": {
+      "contentHash": "0ac3450a2d1e436de8b4f40e",
+      "titleJa": "『きらめきパラダイス』星5セットコーデ動画「花間の茶会」と「夢灯りの歌」の動画を公開✨",
+      "bodyJa": "新イベント『花園の祝宴』が9月17日スタート！\n『きらめきパラダイス』の新星5イベントPVを公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #rpg",
+      "summaryJa": "・新イベント「花園の祝宴」が9月17日にスタート\n・キラパラの新星5イベントPVが公開\n・公開された動画は星5セットコーデ「花間の茶会」と「夢灯りの歌」",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789355754
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -4902,10 +4912,10 @@
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 60,
-      "failedRuns": 20,
-      "lastFailureAtEpoch": 1789343907,
-      "retryAfterEpoch": 1789354707
+      "failedAttempts": 63,
+      "failedRuns": 21,
+      "lastFailureAtEpoch": 1789355932,
+      "retryAfterEpoch": 1789366732
     }
   }
 }
