@@ -5120,6 +5120,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.droidgamers.com/news/life-makeover-x-sanrio-characters/": {
+      "contentHash": "2366f338a3837b065a30f94b",
+      "titleJa": "Life Makeover x サンリオキャラクターズコラボでシナモロールとクロミのセットが登場",
+      "bodyJa": "Life Makeover x サンリオキャラクターズコラボが4月16日まで開催されます。イベントには「Whispering Sweetheart」や「Lightchase」などがあります。",
+      "summaryJa": "・追加: Life Makeover x サンリオキャラクターズコラボが開催\n・期間: 4月16日まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789456698
     }
   },
   "failures": {
