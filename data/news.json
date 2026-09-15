@@ -6063,7 +6063,13 @@
       "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co2hhh.jpg",
       "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co2pz0.jpg",
       "https://kotaku.com/igdb/image/upload/t_cover_big_2x/co57cj.jpg"
-    ]
+    ],
+    "titleJa": "Life Makeover - Kotaku",
+    "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供しています。",
+    "summaryJa": "・情報提供: Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報を提供",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d143e1d10a472f196f9280fb",
