@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSKhlvsbwAAnPOO?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "9月16日5:00から9月23日5:00まで、限定レシピとNPC「Chirpy」が登場",
+    "bodyJa": "限定レシピが登場します。\n\n9月16日5:00から9月23日5:00まで、限定NPC「Chirpy」が購入可能なレシピ「Gilded Sparrow」を持ってあなたのホームに現れます。お見逃しなく！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+    "summaryJa": "・追加: 限定レシピ「Gilded Sparrow」が登場\n・期間: 9月16日5:00〜9月23日5:00\n・登場: 限定NPC「Chirpy」がホームに登場（購入可能なレシピを所持）",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "2266a89c770271118b47b6c8",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSKhIhqb0AAXNLn?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "スタイリングウィザード - レモンサマー ⏰9月16日 09:00 - 9月30日 05:00 UTC [報酬受け取り] 9月16日 09:00 - 10月1日 05:00 UTC [イベント]",
+    "bodyJa": "スタイリングウィザード - レモンサマー\n\n⏰9月16日 09:00 - 9月30日 05:00 UTC\n\n[報酬受け取り]\n9月16日 09:00 - 10月1日 05:00 UTC\n\n[イベント報酬]\nスタイリングウィザードポイントを十分に獲得して、限定★5セット「Lemon Glow」、フォトフレーム、キュートエフェクト、合計100ダイヤなどを獲得しましょう！",
+    "summaryJa": "・イベント名: スタイリングウィザード - レモンサマー\n・イベント期間: 9月16日 09:00 - 9月30日 05:00 UTC\n・報酬受け取り期間: 9月16日 09:00 - 10月1日 05:00 UTC\n・報酬内容: 限定★5セット「Lemon Glow」、フォトフレーム、キュートエフェクト、合計100ダイヤなど",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "3945e8e8d7071a72a797d58d",
