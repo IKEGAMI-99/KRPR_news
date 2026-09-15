@@ -5215,10 +5215,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
-      "failedAttempts": 156,
-      "failedRuns": 52,
-      "lastFailureAtEpoch": 1789453756,
-      "retryAfterEpoch": 1789464556
+      "failedAttempts": 159,
+      "failedRuns": 53,
+      "lastFailureAtEpoch": 1789465300,
+      "retryAfterEpoch": 1789476100
     },
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
