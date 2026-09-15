@@ -5230,6 +5230,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.youtube.com/watch?v=sKpt3Ht0C2A": {
+      "contentHash": "bc89511c828fe3f28105665f",
+      "titleJa": "ドリームパーティー | 『夢の舞踏会』ゲーム内動画",
+      "bodyJa": "ドキドキする1周年パーティーが明日始まります！✨\n\n自分だけのパーティー会場を飾り付け、新しい装飾エリアを一つずつ開けて、特別な1周年パーティー会場を完成させてみましょう！\n\n毎日ログインするとパーティー会場の飾り付け回数1回を獲得でき、好きな装飾品を自分で選んで自分だけのパーティーを作ることができます。🎈\n\n🕙 9/10 10:30 〜 9/26 5:00\n\n🎁 メイン報酬\n- 1周年限定 6★セット「夢の舞踏会」\n- 1周年限定 5★フローティング「ルル・携帯型」\n- 1周年限定 プロフィール枠「甘い思い出」\n- 1周年限定 タイトル「輝く1周年」\n- 体力、トレンドカラーカード、トレンド風向計\n- 縁成長素材、ゴールド 88,888 など\n\n※詳細はゲーム内をご確認ください。\n\n#Stylight #Stylight1周年 #ドリームパーティー #Stylightアップデート",
+      "summaryJa": "・追加: 1周年限定イベント「ドリームパーティー」が開催される\n・期間: 9/10 10:30 〜 9/26 5:00\n・入手: 毎日ログインすることでパーティー会場の飾り付け回数1回を獲得できる\n・報酬: 1周年限定 6★セット「夢の舞踏会」や5★フローティング「ルル・携帯型」などが獲得可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789481909
     }
   },
   "failures": {
