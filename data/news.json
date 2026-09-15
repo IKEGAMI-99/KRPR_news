@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2099329727362424832/img/bJvWdqPYg05GIz4w.jpg"
-    ]
+    ],
+    "titleJa": "SR絆💞シュウ『運命の契り』の動画をいち早く公開🎞️ ぜひGETしてみてください🥰 #キラパラ #着せ替えゲーム",
+    "bodyJa": "SR絆💞シュウ『運命の契り』の動画をいち早く公開🎞️\nぜひGETしてみてください🥰\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・追加: SR絆💞シュウ『運命の契り』の動画が公開されました\n・入手: キラパラにてご確認いただけます",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "edde38cd1712316bdc80bd58",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRC56yub0AAlIZX?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "🔔分解ショップアイテム公開🔔 最新ガチャイベント開催と同時に、 分解ショップ『花園分解』も開放",
+    "bodyJa": "🔔分解ショップアイテム公開🔔\n\n最新ガチャイベント開催と同時に、 分解ショップ『花園分解』も開放！\n星5髪型や所持品などを手に入れよう✨\n\n詳細はゲーム内をチェックしてね👀\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・追加: 分解ショップ「花園分解」が開放\n・内容: 星5髪型や所持品などを入手可能\n・関連: 最新ガチャイベントと同時に開放",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "7f3e0db4e4252d47247824b3",
@@ -63,7 +75,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRC5bnraIAAHdAA?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "✍️紹介コーナー 星5セットコーデ『夢灯りの歌』2️⃣ 風に吹き散る火花をイメージしたアシンメトリーなヘアスタイルは、静止した状態でも、まるで揺らめき流れ...",
+    "bodyJa": "✍️紹介コーナー\n星5セットコーデ『夢灯りの歌』2️⃣\n\n風に吹き散る火花をイメージしたアシンメトリーなヘアスタイルは、静止した状態でも、まるで揺らめき流れるような躍動感を演出します。\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・紹介コーナーにて星5セットコーデ『夢灯りの歌』2️⃣が紹介されています\n・このコーデは風に吹き散る火花をイメージしたアシンメトリーなヘアスタイルが特徴です\n・このヘアスタイルは静止状態でも揺らめき流れるような躍動感を演出します",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "838cd7b49e6bab3ac5475486",
@@ -2012,13 +2030,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",
