@@ -1427,12 +1427,6 @@
     "height": 1300,
     "checkedAt": 1789297975
   },
-  "https://pbs.twimg.com/media/HP-SOzPaMAAIF0z?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1080,
-    "height": 1600,
-    "checkedAt": 1789297975
-  },
   "https://pbs.twimg.com/amplify_video_thumb/2089551023992176641/img/-83w1VkFy1MdZ-b1.jpg": {
     "ok": true,
     "width": 1200,
@@ -1443,18 +1437,6 @@
     "ok": true,
     "width": 675,
     "height": 1200,
-    "checkedAt": 1789297975
-  },
-  "https://pbs.twimg.com/media/HP-R_ocaoAAoqE1?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1080,
-    "height": 1600,
-    "checkedAt": 1789297975
-  },
-  "https://pbs.twimg.com/media/HQtd4MbbEAAzLz2?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1024,
-    "height": 1300,
     "checkedAt": 1789297975
   },
   "https://pbs.twimg.com/media/HRwjeLgbIAAwPLf?format=jpg&name=orig": {
@@ -2183,12 +2165,6 @@
     "height": 450,
     "checkedAt": 1789434854
   },
-  "https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
-    "ok": false,
-    "width": 244,
-    "height": 212,
-    "checkedAt": 1789434854
-  },
   "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
     "ok": true,
     "width": 616,
@@ -2693,22 +2669,70 @@
     "height": 648,
     "checkedAt": 1789442124
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=7aa29a3b-fee6-4c04-8382-5be19753af33&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789442123468&request_path=%2Fmoment%2F828260941740116010": {
+  "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
     "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789442124
+    "width": 244,
+    "height": 212,
+    "checkedAt": 1789445677
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=a8e05776-155e-488e-a479-92b3c61b9712&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789442123021&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789442124
+  "https://clan.fastly.steamstatic.com/images/44706412/f458c3dbe155bba7d70dbf3aef09680bb74dcaa4.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1789445677
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=8eed7616-e8b2-4758-952d-a373cb6e6eca&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789442123436&request_path=%2Fmoment%2F821067872284446124": {
+  "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2626940/capsule_616x353.jpg": {
+    "ok": true,
+    "width": 616,
+    "height": 353,
+    "checkedAt": 1789445677
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1930531398995320832/img/prjme-zDdb0tbbXT.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789445677
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1922924049832812545/img/e0UO0szwEhJQj8FT.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789445677
+  },
+  "https://clan.fastly.steamstatic.com/images/44706412/45166920ddf6274ccf05299a00c52936ce7b9737.png": {
+    "ok": true,
+    "width": 800,
+    "height": 450,
+    "checkedAt": 1789445677
+  },
+  "https://pbs.twimg.com/media/G2-b7HAbwAIciLn?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1080,
+    "height": 1350,
+    "checkedAt": 1789445677
+  },
+  "https://pbs.twimg.com/media/G2GPAEXbAAAcTnR?format=jpg&name=orig": {
+    "ok": true,
+    "width": 3840,
+    "height": 2160,
+    "checkedAt": 1789445677
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=0d47c189-c251-44df-b7f6-10d7369e8aa8&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789445677110&request_path=%2Fmoment%2F827191805966550915": {
     "ok": false,
     "width": 1,
     "height": 1,
-    "checkedAt": 1789442124
+    "checkedAt": 1789445677
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=dc40715b-414d-4fa0-bbb4-6f4fca64159a&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789445676771&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789445677
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=a91f2d05-e11b-4c7f-a1a0-71e4fc91cf44&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789445676782&request_path=%2Fmoment%2F828260941740116010": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789445677
   }
 }
