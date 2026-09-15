@@ -1804,14 +1804,14 @@
       "updatedAtEpoch": 1788030001
     },
     "https://kotaku.com/games/life-makeover": {
-      "contentHash": "55a11f04ae2892e914db4b9d",
-      "titleJa": "Life Makeover - Kotaku",
-      "bodyJa": "Life Makeoverに関するニュース、レビュー、発売日、トレーラー、ゲームプレイなどの情報をお届けします。",
-      "summaryJa": "・対象ゲーム: Life Makeover\n・提供情報: ニュース、レビュー、発売日、トレーラー、ゲームプレイなど",
+      "contentHash": "23277dc5d18d83ff80fae2a4",
+      "titleJa": "Life Makeoverの最新ゲーム映像と画像",
+      "bodyJa": "Life Makeoverはソーシャルシミュレーションゲームです。自分だけの分身を作成し、着せ替えやメイクをカスタマイズすることができます。さらに、あなたは...",
+      "summaryJa": "・追加: Life Makeoverの最新ゲーム映像と画像が公開されました\n・内容: Life Makeoverはソーシャルシミュレーションゲームで、アバターの作成、着せ替え、メイクのカスタマイズが可能です",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789424217
+      "updatedAtEpoch": 1789496248
     },
     "https://www.bilibili.com/opus/1243444574009950215": {
       "contentHash": "f8a2b4efc3d2185be30808b2",
