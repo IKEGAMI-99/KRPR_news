@@ -5110,6 +5110,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7681596942580829460": {
+      "contentHash": "6178f0cb61edb2224d31843e",
+      "titleJa": "Life Makeover 新バージョン4.3 | ★6セット「Grace of Plume」のゲーム内映像！",
+      "bodyJa": "Life Makeover 新バージョン4.3 | ★6セット「Grace of Plume」のゲーム内映像！🎊 [2億個の美しい卵の芸術的拡張] この衣装は...",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」が登場\n・内容: ゲーム内映像が公開",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789438721
     }
   },
   "failures": {
