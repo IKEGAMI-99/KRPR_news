@@ -5260,17 +5260,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789543027
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://x.com/kirapara_JP/status/2100147680458793368": {
       "contentHash": "63db977a2fbd3df6d9573829",
       "titleJa": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
@@ -5300,6 +5289,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789550243
+    },
+    "https://x.com/kirapara_JP/status/2100140129289699499": {
+      "contentHash": "c7e62e9e7268212c63666d2d",
+      "titleJa": "＼パックがサプライズ復刻💃／ 6つのパックが期間限定で復刻します",
+      "bodyJa": "＼パックがサプライズ復刻💃／ \n\n6つのパックが期間限定で復刻します！\nこの他にも、流行カラーカードやスタミナなど、用途に応じたお得なパックを多数販売！\nモールの『割引セット』からご確認くださいね！👀\n\n復刻期間⏰\n9月17日10:30～10月7日23:59\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・追加: 6つのパックが期間限定で復刻\n・期間: 9月17日10:30〜10月7日23:59\n・入手: モールの「割引セット」から確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550420
+    },
+    "https://x.com/kirapara_JP/status/2100136354491277598": {
+      "contentHash": "2301ddc631624501314aee2c",
+      "titleJa": "☀️独り座す蓮心パック特別販売☀️ 指定されたクエストを完了すると、最大78%OFFで購入できます",
+      "bodyJa": "☀️独り座す蓮心パック特別販売☀️\n\n指定されたクエストを完了すると、最大78%OFFで購入できます！\n\n星5浮遊『千の花弁重ね』には専属のメイン画面ポーズも。\n早速をチェックしてね✨\n\n販売期間⏰\n9月17日10:30～9月30日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・特別販売: 独り座す蓮心パックが最大78%OFFで購入可能\n・対象: 指定されたクエストを完了することで割引が適用される\n・内容: 星5浮遊『千の花弁重ね』に専属のメイン画面ポーズが含まれる\n・期間: 9月17日10:30〜9月30日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550441
+    },
+    "https://x.com/kirapara_JP/status/2100132589948260757": {
+      "contentHash": "df36fc1045e30651161b75ea",
+      "titleJa": "アプリ内課金（金額指定なし）で🎁 イベント期間中にアプリ内課金をすると『光纏う羽』画面で星5つばさ・星染めの羽を 受け取れるよ",
+      "bodyJa": "アプリ内課金（金額指定なし）で🎁\n\nイベント期間中にアプリ内課金をすると『光纏う羽』画面で星5つばさ・星染めの羽を 受け取れるよ！\n\nさらに還元Expで追加の報酬も！\n\nイベント期間⏰\n9月17日10:30～10月7日23:59\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・イベント期間中にアプリ内課金（金額指定なし）を行うと、『光纏う羽』画面で星5つばさ・星染めの羽を受け取れる\n・追加報酬として還元Expも獲得できる\n・期間: 9月17日10:30～10月7日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550462
     }
   },
   "failures": {
