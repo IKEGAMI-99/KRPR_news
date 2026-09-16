@@ -5390,16 +5390,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789557392
     },
-    "https://www.youtube.com/watch?v=OdFjnWg1Bkg": {
-      "contentHash": "425d34cc60e7fe1b82cee18c",
-      "titleJa": "Life Makeover 新バージョン 4.3 | ★6セット「Grace of Plume」デザインショートフィルム",
-      "bodyJa": "新バージョン「Dawn of Miracles」が9月9日から9月29日まで登場します！\n\n今回は、2億個のファベルジェ卵の要素を解体し、19世紀後半から20世紀初頭のロシアファッションを融合させて再構築しました。これらの要素は、すべての衣装パーツのデザインコンセプトに織り込まれ、マキシマリズムの真の美しさを表現しています。\n\n開くことができる多層構造のハンドヘルドエッグ、テールボウの装飾的なエッグ、靴の揺れるエッグ型のペンダントなど、エッグのモチーフが豊富に取り入れられています。これは、全体のルックの芸術的表現を統一するだけでなく、エッグのイメージが持つ幸運の象徴が、すべてのDream Makerの幸運を最大限に高めることを願っています！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-      "summaryJa": "・追加: ★6セット「Grace of Plume」のデザインショートフィルムが公開\n・期間: 9月9日〜9月29日\n・内容: 2億個のファベルジェ卵の要素と19世紀後半〜20世紀初頭のロシアファッションを融合させたデザイン\n・モチーフ: 多層構造のハンドヘルドエッグ、テールボウの装飾的なエッグ、靴の揺れるエッグ型ペンダントなど、エッグモチーフが豊富に採用されている",
-      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
-      "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789561204
-    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
@@ -5410,6 +5400,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://www.youtube.com/watch?v=OdFjnWg1Bkg": {
+      "contentHash": "425d34cc60e7fe1b82cee18c",
+      "titleJa": "Life Makeover 新バージョン 4.3 | ★6セット「Grace of Plume」デザインショートフィルム",
+      "bodyJa": "新バージョン「Dawn of Miracles」が9月9日から9月29日まで登場します！\n\n今回は、2億個のファベルジェ卵の要素を解体し、19世紀後半から20世紀初頭のロシアファッションを融合させて再構築しました。これらの要素は、すべての衣装パーツのデザインコンセプトに織り込まれ、マキシマリズムの真の美しさを表現しています。\n\n開くことができる多層構造のハンドヘルドエッグ、テールボウの装飾的なエッグ、靴の揺れるエッグ型のペンダントなど、エッグのモチーフが豊富に取り入れられています。これは、全体のルックの芸術的表現を統一するだけでなく、エッグのイメージが持つ幸運の象徴が、すべてのDream Makerの幸運を最大限に高めることを願っています！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」のデザインショートフィルムが公開\n・期間: 9月9日〜9月29日\n・内容: 2億個のファベルジェ卵の要素と19世紀後半〜20世紀初頭のロシアファッションを融合させたデザイン\n・モチーフ: 多層構造のハンドヘルドエッグ、テールボウの装飾的なエッグ、靴の揺れるエッグ型ペンダントなど、エッグモチーフが豊富に採用されている",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789561204
     }
   },
   "failures": {
