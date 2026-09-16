@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSTn4MGaQAACWfS?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "バイラル動画作成チャレンジ | Life Makeoverのグランドクリエーションガラ",
+    "bodyJa": "バイラル動画作成チャレンジ | Life Makeoverのグランドクリエーションガラ\n\n今から10月11日まで、あなたの創造性がどれほど輝くかを見せてください！\n\nイベントの詳細については、公式Discordにご参加ください：\n\n#LifeMakeover",
+    "summaryJa": "・イベント名: バイラル動画作成チャレンジ | Life Makeoverのグランドクリエーションガラ\n・期間: 今から10月11日まで\n・詳細: 公式Discordで確認可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d6233ced868640af8bab77da",
@@ -3684,7 +3690,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7681598815002004756"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover 新バージョン4.3 | ★5セット「Zero-G Sweet」ゲーム内映像公開",
+    "bodyJa": "Life Makeover 新バージョン4.3 | ★5セット「Zero-G Sweet」ゲーム内映像公開！🚀 [磁気浮上SFが随所に織り込まれた] 磁気浮上は核となる技術です...",
+    "summaryJa": "・追加: ★5セット「Zero-G Sweet」が登場\n・内容: 磁気浮上SFが随所に織り込まれたデザインが特徴",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "2f3d470d90be03a1efe6f66c",
