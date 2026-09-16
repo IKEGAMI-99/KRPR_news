@@ -5370,6 +5370,26 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789554086
     },
+    "https://x.com/LifeMakeover510/status/2100178130484756934": {
+      "contentHash": "b36a297b21a4027888447413",
+      "titleJa": "#LifeMakeover #VVANNACommunity [★6セット - Grace of Plume] 🔹限定ライトチェイスイベント[Hymn of Feathers]から入手",
+      "bodyJa": "#LifeMakeover #VVANNACommunity\n\n[★6セット - Grace of Plume]\n🔹限定ライトチェイスイベント[Hymn of Feathers]にて9月9日から9月29日まで入手可能。\n\n💎このエディションは、VVANNA Community Topic - Hymn of Feathersより素晴らしい作品をフィーチャーしています。\nRikaP (Instagram: rikap1_)\nDovelia\nLolarine",
+      "summaryJa": "・追加: ★6セット「Grace of Plume」が登場\n・期間: 9月9日〜9月29日\n・入手: 限定ライトチェイスイベント「Hymn of Feathers」から獲得\n・内容: VVANNA Community Topic - Hymn of Feathersの作品をフィーチャー",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789557364
+    },
+    "https://x.com/LifeMakeover510/status/2100177883876520191": {
+      "contentHash": "710f654db3fee701eb81be9c",
+      "titleJa": "#LifeMakeover #VVANNACommunity 彼女は自然な輝きを纏っている",
+      "bodyJa": "#LifeMakeover #VVANNACommunity\n\n彼女は自然な輝きを纏っているのは誰でしょう？すべてを凌駕する存在は誰でしょう？\nもう探す必要はありません—それはあなたです！\n \n💎今回のエディションでは、VVANNA Community Topic - Hymn of Feathersから素晴らしい作品が紹介されています。\nYoruTsume\nfaé\n*Siren*",
+      "summaryJa": "・追加: VVANNA Community Topic - Hymn of Feathersの作品が紹介されるエディションが開催",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789557392
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
