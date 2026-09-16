@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRmn0AbaMAAeMoC?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
+    "bodyJa": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・追加: 星5セット「花間の茶会」が登場\n・追加: 星5セット「夢灯りの歌」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "8bf3b4b66a050c9638d4dc88",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HR6i6aKbYAA_riN?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【イベント】『猫星探検』で天体に隠された宝物を釣り上げ、4★限定セットを入手しよう。🎁メイン報酬：4★セット「猫座」",
+    "bodyJa": "【イベント】『猫星探検』\n\nクリップで天体に隠された宝物を釣り上げ、4★限定セットを入手してください。\n\n🎁メイン報酬：\n4★セット「猫座」\n\n🕙 9/17 10:30 〜 9/24 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード：\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+    "summaryJa": "・イベント名：『猫星探検』が開催される\n・内容：クリップで天体に隠された宝物を釣り上げ、4★限定セットを入手できる\n・メイン報酬：4★セット「猫座」\n・期間：9/17 10:30 〜 9/24 5:00",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "33b66798808c9003e7542961",
@@ -63,7 +75,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRmnpD0bEAA0Tnz?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "＼イベントファッション復刻／ イベント制作復刻『花園の祝宴』が期間限定開放",
+    "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『花園の祝宴』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・イベント制作復刻『花園の祝宴』が期間限定で開放される\n・見逃したイベントファッションや外観が制作可能になる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "31211983786d7577c92ec394",
@@ -2250,13 +2268,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",

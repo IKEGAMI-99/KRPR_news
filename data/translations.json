@@ -5260,16 +5260,35 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789543027
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
+    "https://x.com/kirapara_JP/status/2100147680458793368": {
+      "contentHash": "63db977a2fbd3df6d9573829",
+      "titleJa": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
+      "bodyJa": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・追加: 星5セット「花間の茶会」が登場\n・追加: 星5セット「夢灯りの歌」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550158
+    },
+    "https://x.com/stylight_kr/status/2100147679758323914": {
+      "contentHash": "09814f55e9f13ae3cd4a24e5",
+      "titleJa": "【イベント】『猫星探検』で天体に隠された宝物を釣り上げ、4★限定セットを入手しよう。🎁メイン報酬：4★セット「猫座」",
+      "bodyJa": "【イベント】『猫星探検』\n\nクリップで天体に隠された宝物を釣り上げ、4★限定セットを入手してください。\n\n🎁メイン報酬：\n4★セット「猫座」\n\n🕙 9/17 10:30 〜 9/24 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード：\n\n#Stylight #Stylight降臨 #Stylightアップデート",
+      "summaryJa": "・イベント名：『猫星探検』が開催される\n・内容：クリップで天体に隠された宝物を釣り上げ、4★限定セットを入手できる\n・メイン報酬：4★セット「猫座」\n・期間：9/17 10:30 〜 9/24 5:00",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550216
+    },
+    "https://x.com/kirapara_JP/status/2100143904482033915": {
+      "contentHash": "b740f8e876630ce0e2bf12ec",
+      "titleJa": "＼イベントファッション復刻／ イベント制作復刻『花園の祝宴』が期間限定開放",
+      "bodyJa": "＼イベントファッション復刻／\n\nイベント制作復刻『花園の祝宴』が期間限定開放！\n見逃したイベントファッションや外観が制作可能\n\nこの機会に是非ゲットしてくださいね💖\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・イベント制作復刻『花園の祝宴』が期間限定で開放される\n・見逃したイベントファッションや外観が制作可能になる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789550243
     }
   },
   "failures": {
