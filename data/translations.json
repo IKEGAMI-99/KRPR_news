@@ -5245,10 +5245,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 105,
-      "failedRuns": 35,
-      "lastFailureAtEpoch": 1789518092,
-      "retryAfterEpoch": 1789528892
+      "failedAttempts": 108,
+      "failedRuns": 36,
+      "lastFailureAtEpoch": 1789529702,
+      "retryAfterEpoch": 1789540502
     },
     "https://x.com/LifeMakeover510/status/2097278782822625779": {
       "contentHash": "be634349601fe921ceab16d1",
