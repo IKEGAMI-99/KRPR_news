@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRmj525aQAAAQsc?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "🔔新内容実装のお知らせ🔔 ◆新ペット「キツネ」がまもなく登場 ◆ペットスロット/預けスロット上限拡大 ◆交換ショップに新たな報酬を追加 など #キラパラ ...",
+    "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新ペット「キツネ」がまもなく登場\n◆ペットスロット/預けスロット上限拡大\n◆交換ショップに新たな報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・新ペット「キツネ」がまもなく登場\n・ペットスロットおよび預けスロットの上限が拡大\n・交換ショップに新たな報酬が追加される",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b461e02031ea2deb30871f6f",

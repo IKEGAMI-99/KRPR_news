@@ -5250,6 +5250,16 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789532286
     },
+    "https://x.com/kirapara_JP/status/2100117488956580318": {
+      "contentHash": "c6090bbbf94fa6eff0634138",
+      "titleJa": "🔔新内容実装のお知らせ🔔 ◆新ペット「キツネ」がまもなく登場 ◆ペットスロット/預けスロット上限拡大 ◆交換ショップに新たな報酬を追加 など #キラパラ ...",
+      "bodyJa": "🔔新内容実装のお知らせ🔔\n\n◆新ペット「キツネ」がまもなく登場\n◆ペットスロット/預けスロット上限拡大\n◆交換ショップに新たな報酬を追加\nなど\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・新ペット「キツネ」がまもなく登場\n・ペットスロットおよび預けスロットの上限が拡大\n・交換ショップに新たな報酬が追加される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789543027
+    },
     "https://x.com/stylight_kr/status/2097619772376506528": {
       "contentHash": "197e97a0543e18c493bcecc6",
       "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
