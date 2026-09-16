@@ -5410,6 +5410,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://beta.gamespress.com/en-US/Ultimate-Lifestyle-Simulation-RPG-Life-Makeover-is-Available-Now-on-PC": {
+      "contentHash": "0fa44e7e6dbf9bcef6183a2e",
+      "titleJa": "究極のライフスタイルシミュレーションRPG『Life Makeover』がPCで無料配信開始",
+      "bodyJa": "あなたのバーチャルワールドは、これまでにないほどリアルになりました。\n\nニューヨーク、2023年11月15日 - 『Dragon Raja』を開発した著名なゲームデベロッパーであるArchosaur Gamesは、人気のライフスタイルシミュレーションRPG『Life Makeover』の待望のPC版リリースを発表しました。Life Makeoverは、Steam、Epic Games Store、およびLife Makeover公式サイトで無料でダウンロード可能です。Life Makeoverは、データ共有による無料のクロスプラットフォームプレイに対応しています。\n\nリリースをより盛り上げるため、Life Makeoverでは5つ星のダブルバージョンである「Rose Prayer」が登場します！12月5日まで、アフロディテの願いやレイクスピンといった新しい5つ星セット、そして魅力的な4つ星セット「Tranquil Dream」など、最新のファッションブームを体験できます。さらに、SRボンドの期間限定登場も見逃せません。あなたのスタイルを次のレベルに引き上げましょう！\n\nモバイルプラットフォームで既に人気を博しているLife Makeoverは、深いキャラクターカスタマイズ、衣装作成、そして謎めいたストーリーを伴うハウスデザインを特徴とする無料プレイのソーシャルシミュレーションRPGです。目覚ましいグラフィックのアップグレード、リアルな気象システム、そして多数の新機能により、ライフスタイルの変革を次のレベルへと進めましょう。究極のLife Makeover体験に浸る準備をしてください！",
+      "summaryJa": "・追加: PC版『Life Makeover』がSteam、Epic Games Store、公式サイトで無料配信開始\n・機能: データ共有による無料のクロスプラットフォームプレイに対応\n・追加: 5つ星セット「Rose Prayer」が登場\n・期間: 12月5日まで、5つ星セット「Aphrodite's Wish」や「Lake Spin」、4つ星セット「Tranquil Dream」が利用可能\n・追加: SRボンドの期間限定登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789583078
     }
   },
   "failures": {
