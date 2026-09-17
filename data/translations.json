@@ -5733,10 +5733,10 @@
   "failures": {
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 3,
-      "failedRuns": 1,
-      "lastFailureAtEpoch": 1789647706,
-      "retryAfterEpoch": 1789658506
+      "failedAttempts": 6,
+      "failedRuns": 2,
+      "lastFailureAtEpoch": 1789659217,
+      "retryAfterEpoch": 1789670017
     }
   }
 }
