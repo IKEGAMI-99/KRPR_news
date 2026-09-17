@@ -5698,6 +5698,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789633116
+    },
+    "https://x.com/kirapara_JP/status/2100510076473917633": {
+      "contentHash": "7fce2e561fcc7852f6b343f1",
+      "titleJa": "🔔【復刻】イベント予告🔔 セットコーデの情報をお届け",
+      "bodyJa": "🔔【復刻】イベント予告🔔\n\nセットコーデの情報をお届け！\n\n限定ガチャイベント『浄化の舞』、9月24日より復刻\n\n#キラパラ\n#着せ替えゲーム",
+      "summaryJa": "・復刻イベント: 限定ガチャイベント『浄化の舞』が復刻\n・開始日時: 9月24日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789636578
     }
   },
   "failures": {

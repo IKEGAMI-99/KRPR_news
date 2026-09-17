@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRC6XFiaEAAS5H2?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "🔔【復刻】イベント予告🔔 セットコーデの情報をお届け",
+    "bodyJa": "🔔【復刻】イベント予告🔔\n\nセットコーデの情報をお届け！\n\n限定ガチャイベント『浄化の舞』、9月24日より復刻\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・復刻イベント: 限定ガチャイベント『浄化の舞』が復刻\n・開始日時: 9月24日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "74bc8a99ddc190ab775ea331",
