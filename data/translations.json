@@ -5658,6 +5658,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789618973
+    },
+    "https://x.com/kirapara_JP/status/2100479869356322833": {
+      "contentHash": "2c8633e7d6548acffd8aa713",
+      "titleJa": "明後日よりゲーム内イベント『秘蔵の伝説』を開催✨ イベント期間⏰ 9月19日10:30～9月30日5:00 イベントに参加して、 星5イヤーアクセ『こぐまの甘い夢』や静止...",
+      "bodyJa": "明後日よりゲーム内イベント『秘蔵の伝説』を開催✨\n\nイベント期間⏰\n9月19日10:30～9月30日5:00\n\nイベントに参加して、 星5イヤーアクセ『こぐまの甘い夢』や静止ポーズ『星をつかまえて』をゲットしよう！🐱\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ゲーム内イベント『秘蔵の伝説』が開催されます\n・期間: 9月19日10:30〜9月30日5:00\n・入手: イベントに参加することで、星5イヤーアクセ『こぐまの甘い夢』や静止ポーズ『星をつかまえて』を入手可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789629462
+    },
+    "https://www.youtube.com/watch?v=SgCg5mnvwT0": {
+      "contentHash": "18036801145ccba789633388",
+      "titleJa": "【復刻】『人魚の歌』ストーリー映像",
+      "bodyJa": "深く青い深海で再び繰り広げられる、海の守護者と封印された記憶の物語。\n\n「私がすべき選択をするだけだ。」\n\n忘れられない縁と美しい水中世界を再び出会ってください。\n\n9月19日（土）、『人魚の歌』限定復刻！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: 『人魚の歌』ストーリー映像が復刻\n・期間: 9月19日（土）",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789629483
     }
   },
   "failures": {
