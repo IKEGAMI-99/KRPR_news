@@ -5610,17 +5610,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789615222
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://www.bilibili.com/opus/1248887156552761344": {
       "contentHash": "5db48962f124b941d0e6b00c",
       "titleJa": "#夏休みの情報解禁# 秋葉の透かし花、薔薇の追悼影",
@@ -5650,6 +5639,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789618743
+    },
+    "https://x.com/stylight_kr/status/2100425762071249335": {
+      "contentHash": "9eaae7d7fb99954b38dcbb0e",
+      "titleJa": "【復刻】4★『チェックシルエット』 夕焼けのピンク色の夕日を纏い、交差するチェック柄に時が織りなす質感を込めました。全ての準備は整いました。胸が高鳴る小さな集まりに、あなたも参加してください。",
+      "bodyJa": "【復刻】4★『チェックシルエット』\n\n夕焼けのピンク色の夕日を纏い、\n交差するチェック柄に時が織りなす質感を込めました。\n\n全ての準備は整いました。\n胸が高鳴る小さな集まりに\nあなたも参加してください。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n- \n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: 4★衣装『チェックシルエット』が復刻\n・衣装の特徴: 夕焼けのピンク色の夕日を纏い、交差するチェック柄に時が織りなす質感を表現\n・詳細: ゲーム内にて確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618880
+    },
+    "https://x.com/stylight_kr/status/2100424503763300835": {
+      "contentHash": "b8a3353fc40dad014f3ca0cd",
+      "titleJa": "【復刻】5★『モルフェウスの仮面』仮面の下に隠された感情と、華やかな金色の舞踏会の中の密かな欲望。",
+      "bodyJa": "【復刻】5★『モルフェウスの仮面』\n\n仮面の下に隠された感情と\n華やかな金色の舞踏会の中の密かな欲望。\n\nお互いを探り合いながらも、容易に心を開くことのできない夜、\n黄金のリンゴが誘惑と禁じられた秘密を囁きます。\n\n仮面を被る瞬間、\n隠してきた真実がゆっくりと姿を現します。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: 5★『モルフェウスの仮面』が復刻\n・内容: 仮面の下に隠された感情と、華やかな金色の舞踏会の中の密かな欲望をテーマとしたコンテンツ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618927
+    },
+    "https://x.com/stylight_kr/status/2100423245048791445": {
+      "contentHash": "fea58dd7a9920eccc12e1aab",
+      "titleJa": "【復刻】5★『モルフェウスの仮面』インゲーム映像　華やかな仮面とバロック風ドレスが調和した神秘的な舞会が再び登場...",
+      "bodyJa": "【復刻】5★『モルフェウスの仮面』インゲーム映像\n\n<黄金の仮面を超えて、再び始まる舞会>\n\n華やかな仮面とバロック風ドレスが調和した神秘的な舞会が再びやってきます。\n\n仮面の奥に隠された物語に触れてみてください。\n\n5★コスチューム『モルフェウスの仮面』が期間限定で復刻！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: 5★コスチューム『モルフェウスの仮面』が期間限定で復刻\n・内容: 華やかな仮面とバロック風ドレスが調和した神秘的な舞会がテーマ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618973
     }
   },
   "failures": {

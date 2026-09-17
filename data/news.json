@@ -119,7 +119,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSJYnu9akAAVL82?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【復刻】4★『チェックシルエット』 夕焼けのピンク色の夕日を纏い、交差するチェック柄に時が織りなす質感を込めました。全ての準備は整いました。胸が高鳴る小さな集まりに、あなたも参加してください。",
+    "bodyJa": "【復刻】4★『チェックシルエット』\n\n夕焼けのピンク色の夕日を纏い、\n交差するチェック柄に時が織りなす質感を込めました。\n\n全ての準備は整いました。\n胸が高鳴る小さな集まりに\nあなたも参加してください。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n- \n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+    "summaryJa": "・復刻: 4★衣装『チェックシルエット』が復刻\n・衣装の特徴: 夕焼けのピンク色の夕日を纏い、交差するチェック柄に時が織りなす質感を表現\n・詳細: ゲーム内にて確認可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "c1f0500dd69717c2ce67e1cf",
@@ -141,7 +147,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSJYHRaaQAAmAJ0?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【復刻】5★『モルフェウスの仮面』仮面の下に隠された感情と、華やかな金色の舞踏会の中の密かな欲望。",
+    "bodyJa": "【復刻】5★『モルフェウスの仮面』\n\n仮面の下に隠された感情と\n華やかな金色の舞踏会の中の密かな欲望。\n\nお互いを探り合いながらも、容易に心を開くことのできない夜、\n黄金のリンゴが誘惑と禁じられた秘密を囁きます。\n\n仮面を被る瞬間、\n隠してきた真実がゆっくりと姿を現します。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+    "summaryJa": "・復刻: 5★『モルフェウスの仮面』が復刻\n・内容: 仮面の下に隠された感情と、華やかな金色の舞踏会の中の密かな欲望をテーマとしたコンテンツ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "ee4b91d7e719103819916a30",
@@ -163,7 +175,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2099334967922987009/img/8yKYCztQNKyQg1Ct.jpg"
-    ]
+    ],
+    "titleJa": "【復刻】5★『モルフェウスの仮面』インゲーム映像　華やかな仮面とバロック風ドレスが調和した神秘的な舞会が再び登場...",
+    "bodyJa": "【復刻】5★『モルフェウスの仮面』インゲーム映像\n\n<黄金の仮面を超えて、再び始まる舞会>\n\n華やかな仮面とバロック風ドレスが調和した神秘的な舞会が再びやってきます。\n\n仮面の奥に隠された物語に触れてみてください。\n\n5★コスチューム『モルフェウスの仮面』が期間限定で復刻！\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+    "summaryJa": "・復刻: 5★コスチューム『モルフェウスの仮面』が期間限定で復刻\n・内容: 華やかな仮面とバロック風ドレスが調和した神秘的な舞会がテーマ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "378ad1e9646998f5e33349be",
@@ -2030,7 +2048,7 @@
     "summaryJa": "・イベント名: 『심야 밀회』が開催\n・内容: 絵のマスをめくって絵を完成させ、4★限定セットを入手できる\n・メイン報酬: 4★セット「벽라춘 밀회」\n・期間: 9/13 10:30 〜 9/20 5:00",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "韓国公式原文の固有名詞『심야 밀회』『벽라춘 밀회』は現行用語集に公式日本語対応がなく、ハッシュタグは現行翻訳エンジンの保護対象。既存翻訳が『深夜の密会』『碧羅春密会』および日本語・英字タグへ創作・改変していたため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -2208,7 +2226,7 @@
     "summaryJa": "・追加: 『심연의 꽃』創作大会が開催される\n・期間: 9月10日〜9月30日\n・部門: 画像・動画部門\n・賞品: 現金＋クローバー（複数作品の応募が可能）\n・参加方法: 指定ハッシュタグを付けてSNSに作品を投稿し、カフェ掲示板でリンクを認証する",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "韓国公式原文の固有名詞『심연의 꽃』は現行用語集に公式日本語対応がなく、ハッシュタグは翻訳エンジンの保護対象。既存翻訳が『深淵の花』および日本語タグへ創作・改変していたため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -2501,7 +2519,7 @@
     "summaryJa": "・追加: 新規常時光追『개화』が明日オープン\n・追加: 新規6★・5★セットとSSR縁が常時光追『개화』に登場\n・プレゼント: 1周年感謝としてフラワー招待状10個をメールボックスで配布\n・期間: フラワー招待状の受領期間は9月10日 10:30 〜 9月12日 23:59",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "韓国公式原文の固有名詞『개화』は現行用語集に公式日本語対応がなく、ハッシュタグは翻訳エンジンの保護対象のため、創作訳せず原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -2532,7 +2550,7 @@
     "summaryJa": "・Stylightの1周年を記念し、初回チャージボーナスがリセットされます\n・リセット日時: 9月10日(木) 10:30 アップデート後\n・リセット後、すべてのチャージ商品に初回チャージダイヤボーナスが適用されます\n・リセット前の未使用の初回チャージボーナスは繰り越されません",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "韓国公式原文のハッシュタグは現行翻訳エンジンの保護対象のため、翻訳・改変されていたタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -2560,13 +2578,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",
@@ -3192,7 +3205,7 @@
     "summaryJa": "・告知: 復刻追光イベント「烬土生花」がまもなく開催\n・期間: 9月9日10:00〜9月29日23:59\n・テーマ文: 「神火永焚，圣骨绿芽」",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "中国公式Bilibiliの固有名詞は「烬土生花」、テーマ文は「神火永焚，圣骨绿芽」。既存翻訳が未登録固有名詞を「燼土生花」「神火永焚、聖骨緑芽」と日本語字形へ創作置換していたため、原語保持へ修正。",
     "solReviewed": true,
     "solLocked": true
@@ -3284,7 +3297,7 @@
     "summaryJa": "・追加: 「长夏弥咏」外観パックが近日登場\n・期間: 9月8日10:00〜9月21日23:59\n・価格: 通常価格の46%（54%OFF）\n・内容: 撮影関連アイテム、チャット吹き出し、BGM、トレンドカラーカード×26、遇之钥×40\n・購入上限: 永久1回",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "中国公式原文の固有名詞「长夏弥咏」に公式日本語名の根拠がないため創作訳「夏至の歌」を原語保持へ修正。原文の「即将上架」は販売開始ではなく近日登場を意味するためsummaryも修正し、4.6折は通常価格の46%（54%OFF）として重複表記を整理。",
     "solReviewed": true,
     "solLocked": true
@@ -3475,7 +3488,7 @@
     "summaryJa": "・内容: 白露の節気に合わせた季節の挨拶\n・メッセージ: 秋が深まる中で、自分だけの芳香を見つけられるよう願う\n・ゲームタイトル: 以闪亮之名",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "原文は白露の節気に合わせた季節投稿で、イベント開催の記述はない。既存summaryJaが『イベント名』『イベント告知』と誤認して原文にないイベント情報を追加していたため修正。",
     "solReviewed": true,
     "solLocked": true
