@@ -5610,16 +5610,35 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789615222
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
+    "https://www.bilibili.com/opus/1248887156552761344": {
+      "contentHash": "5db48962f124b941d0e6b00c",
+      "titleJa": "#夏休みの情報解禁# 秋葉の透かし花、薔薇の追悼影",
+      "bodyJa": "#夏休みの情報解禁# 秋葉の透かし花、薔薇の追悼影。\n\n晩秋の酒の音が暮れに落ち、\n茨の花が尾を引いて揺れる。\n夜が深まり静まり返る中、首を上げて待ち望むと、\n風が吹く時、約束通り再び訪れるだろう。\n\n以闪亮之名（以闪亮之名）の全新4.4バージョンがまもなく開始されます。ご期待ください……",
+      "summaryJa": "・以闪亮之名（以闪亮之名）の全新4.4バージョンがまもなく開始される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618649
+    },
+    "https://x.com/stylight_kr/status/2100428278708261125": {
+      "contentHash": "9f5bdf323e78d82abc7e67d6",
+      "titleJa": "【復刻】『深海分解』分解ショップが期間限定イベントと共に再登場",
+      "bodyJa": "【復刻】『深海分解』分解ショップが再登場\n\n期間限定イベントと共に『深海分解』ショップが再びオープンします。\n\nイベント期間中、限定イベントコスチュームを分解することで以下のアイテムを入手できます。\n\n[主なアイテム]\n- 限定5★コスチュームパーツ: 'Island Glow', 'Origami's Origin', 'Donut World'\n- 撮影背景 'Time's Old Melody'\n- 限定家具、プロフィール装飾、チャット装飾、撮影小道具\n- 深海の夢風見鶏、ハートの蝶、縁の鍵、ゴールドなど様々なアイテム\n\n待ち望んでいたアイテムに再会できる機会をお見逃しなく。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: 『深海分解』分解ショップが期間限定イベントと共に再登場\n・入手: 限定イベントコスチュームを分解することでアイテムを入手可能\n・主な入手アイテム: 限定5★コスチュームパーツ（'Island Glow', 'Origami's Origin', 'Donut World'など）、撮影背景、限定家具、各種装飾品、風見鶏、ハートの蝶、縁の鍵、ゴールドなど",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618699
+    },
+    "https://x.com/stylight_kr/status/2100427022292103250": {
+      "contentHash": "eb801d8757bbfe603b387069",
+      "titleJa": "【復刻】SSR縁・カン・ソジュン『剣の気配』「命を懸けて守るべきものがある瞬間、手に握る剣にも命が宿る。」世に存在しない伝説の剣術、ア...",
+      "bodyJa": "【復刻】SSR縁・カン・ソジュンの『剣の気配』\n\n「命を懸けて守るべきものがある瞬間、\n手に握る剣にも命が宿る。」\n\n世に存在しない伝説の剣術、\n誰にも知られていない侠客の秘密。\n\nカン・ソジュンと共に江湖を駆け抜け、\n爽快な冒険と新たな縁に出会ってみてください。\n\n※詳細はゲーム内にてご確認ください。\n\n▶ ゲームダウンロード \n- \n\n#Stylight #Stylight降臨 #Stylightアップデート #人魚の歌",
+      "summaryJa": "・復刻: SSR縁・カン・ソジュンの『剣の気配』が復刻\n・内容: 世に存在しない伝説の剣術と侠客の秘密を体験できる\n・詳細: 詳細はゲーム内にて確認可能",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789618743
     }
   },
   "failures": {
