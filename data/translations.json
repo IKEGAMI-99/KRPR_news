@@ -5500,17 +5500,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789610134
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://cms.archosaur.com/jeecms/smhwpcinhd/5802.jhtml": {
       "contentHash": "6e9988432e6c74a96c8fd027",
       "titleJa": "3周年記念イベント開催",
@@ -5520,6 +5509,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789610493
+    },
+    "https://x.com/LifeMakeover510/status/2100401853775454433": {
+      "contentHash": "9bbe1791ff5bc7b896e5e704",
+      "titleJa": "Lightchase Encore | Smolder Decomショップ",
+      "bodyJa": "Lightchase Encore | Smolder Decomショップ\n\nSmolder Decomショップは、9月19日09:00から10月9日23:59までオープンします。この期間限定のLightchaseイベントでファッションを分解することで、限定ファッションアイテム「Forest Duet」、「Champagne Dinner」、「Dewy Prayer」などと交換できます！",
+      "summaryJa": "・追加: Smolder Decomショップがオープン\n・期間: 9月19日09:00〜10月9日23:59\n・入手: Lightchaseイベントでファッションを分解して交換",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611373
+    },
+    "https://x.com/LifeMakeover510/status/2100396821361406163": {
+      "contentHash": "a478acdc8481c1e0a2d2b24f",
+      "titleJa": "Lightchase Encore | ★4セット【アイランドルート】プレビュー：Smolder Bloomが9月19日09:00から10月8日23:59まで登場！",
+      "bodyJa": "Lightchase Encore | ★4セット【アイランドルート】プレビュー\nSmolder Bloom | 9月19日09:00から10月8日23:59まで登場！\n\n#SmolderBloom | 永遠の炎、生命の神聖な種子。\n#LifeMakeover #FallandReform #LavaSavage",
+      "summaryJa": "・追加: Lightchase Encore | ★4セット【アイランドルート】プレビュー\n・登場: Smolder Bloom\n・期間: 9月19日09:00から10月8日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611425
+    },
+    "https://x.com/LifeMakeover510/status/2100394304065646954": {
+      "contentHash": "8b6b731b7d45d7697c32d965",
+      "titleJa": "Lightchase Encore | ★5セット[Lava Savage]プレビュー：Smolder Bloom登場 | 9月19日09:00〜10月8日23:59まで",
+      "bodyJa": "Lightchase Encore | ★5セット[Lava Savage]プレビュー\nSmolder Bloomが9月19日09:00から10月8日23:59まで登場します！\n\n★5セット[Lava Savage]に新しいフォームが追加されます！ハット[Sinful Flame]には、シンプルなスタイルの2つ目のフォームが登場します！",
+      "summaryJa": "・追加: ★5セット[Lava Savage]に新しいフォームが追加\n・追加: ハット[Sinful Flame]にシンプルなスタイルの2つ目のフォームが登場\n・期間: 9月19日09:00〜10月8日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611478
     }
   },
   "failures": {

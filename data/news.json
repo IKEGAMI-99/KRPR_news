@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSUaoAabwAAEwcI?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Lightchase Encore | Smolder Decomショップ",
+    "bodyJa": "Lightchase Encore | Smolder Decomショップ\n\nSmolder Decomショップは、9月19日09:00から10月9日23:59までオープンします。この期間限定のLightchaseイベントでファッションを分解することで、限定ファッションアイテム「Forest Duet」、「Champagne Dinner」、「Dewy Prayer」などと交換できます！",
+    "summaryJa": "・追加: Smolder Decomショップがオープン\n・期間: 9月19日09:00〜10月9日23:59\n・入手: Lightchaseイベントでファッションを分解して交換",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "1388754279a82959e9384a83",
@@ -41,7 +47,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSUaOCUboAAfCKh?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Lightchase Encore | ★4セット【アイランドルート】プレビュー：Smolder Bloomが9月19日09:00から10月8日23:59まで登場！",
+    "bodyJa": "Lightchase Encore | ★4セット【アイランドルート】プレビュー\nSmolder Bloom | 9月19日09:00から10月8日23:59まで登場！\n\n#SmolderBloom | 永遠の炎、生命の神聖な種子。\n#LifeMakeover #FallandReform #LavaSavage",
+    "summaryJa": "・追加: Lightchase Encore | ★4セット【アイランドルート】プレビュー\n・登場: Smolder Bloom\n・期間: 9月19日09:00から10月8日23:59まで",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5b57846fa993303a8f5d961d",
@@ -63,7 +75,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSUaC-BaoAASzhu?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "Lightchase Encore | ★5セット[Lava Savage]プレビュー：Smolder Bloom登場 | 9月19日09:00〜10月8日23:59まで",
+    "bodyJa": "Lightchase Encore | ★5セット[Lava Savage]プレビュー\nSmolder Bloomが9月19日09:00から10月8日23:59まで登場します！\n\n★5セット[Lava Savage]に新しいフォームが追加されます！ハット[Sinful Flame]には、シンプルなスタイルの2つ目のフォームが登場します！",
+    "summaryJa": "・追加: ★5セット[Lava Savage]に新しいフォームが追加\n・追加: ハット[Sinful Flame]にシンプルなスタイルの2つ目のフォームが登場\n・期間: 9月19日09:00〜10月8日23:59",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "b0f6d4d9a9614eb0d3f1c8dc",
@@ -2235,13 +2253,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",
