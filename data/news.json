@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HSaHUHSacAA1TJU?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "【受賞者リスト】クリエイターアートコンテスト：Life Makeover Fluffy Little World 参加者各位おめでとうございます",
+    "bodyJa": "【受賞者リスト】\nクリエイターアートコンテスト：Life Makeover Fluffy Little World\n\n受賞された皆様、おめでとうございます！\n賞品受け取りフォームは2026年9月20日までに提出してください。\n個人情報をご記入の上、ご希望の賞品受け取り方法を選択してください。\n\n#LifeMakeover",
+    "summaryJa": "・イベント名: クリエイターアートコンテスト：Life Makeover Fluffy Little World\n・内容: 受賞者リストの発表と賞品受け取りフォームの案内\n・期限: 賞品受け取りフォームの提出期限は2026年9月20日",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "20d9fbe93f462acb985fa0f4",

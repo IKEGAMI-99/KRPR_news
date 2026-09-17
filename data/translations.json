@@ -5718,7 +5718,25 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789643750
+    },
+    "https://x.com/LifeMakeover510/status/2100540281246650372": {
+      "contentHash": "4473be4b8c44d395346cc214",
+      "titleJa": "【受賞者リスト】クリエイターアートコンテスト：Life Makeover Fluffy Little World 参加者各位おめでとうございます",
+      "bodyJa": "【受賞者リスト】\nクリエイターアートコンテスト：Life Makeover Fluffy Little World\n\n受賞された皆様、おめでとうございます！\n賞品受け取りフォームは2026年9月20日までに提出してください。\n個人情報をご記入の上、ご希望の賞品受け取り方法を選択してください。\n\n#LifeMakeover",
+      "summaryJa": "・イベント名: クリエイターアートコンテスト：Life Makeover Fluffy Little World\n・内容: 受賞者リストの発表と賞品受け取りフォームの案内\n・期限: 賞品受け取りフォームの提出期限は2026年9月20日",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789647562
     }
   },
-  "failures": {}
+  "failures": {
+    "https://x.com/LifeMakeover510/status/2098365941927035184": {
+      "contentHash": "d51352f3b53576c57e22a2c3",
+      "failedAttempts": 3,
+      "failedRuns": 1,
+      "lastFailureAtEpoch": 1789647706,
+      "retryAfterEpoch": 1789658506
+    }
+  }
 }
