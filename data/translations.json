@@ -5500,17 +5500,6 @@
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789610134
     },
-    "https://x.com/stylight_kr/status/2097619772376506528": {
-      "contentHash": "197e97a0543e18c493bcecc6",
-      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
-      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
-    },
     "https://cms.archosaur.com/jeecms/smhwpcinhd/5802.jhtml": {
       "contentHash": "6e9988432e6c74a96c8fd027",
       "titleJa": "3周年記念イベント開催",
@@ -5550,6 +5539,36 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789611478
+    },
+    "https://x.com/LifeMakeover510/status/2100391787609415737": {
+      "contentHash": "9e91f085f8d325d0dca9de0e",
+      "titleJa": "Lightchase Encore | ★5セット「秋と改革」プレビュー：Smolder Bloomが9月19日09:00から10月8日23:59まで登場！",
+      "bodyJa": "Lightchase Encore | ★5セット「秋と改革」プレビュー\nSmolder Bloom | 9月19日09:00から10月8日23:59まで登場！\n\n染色エリアは★5セット「秋と改革」に合わせて最適化されました！ドレス「秋と改革」では、染色エリア#3が#17に、#4が#18に最適化されています。",
+      "summaryJa": "・追加: ★5セット「秋と改革」プレビュー「Smolder Bloom」が登場\n・期間: 9月19日09:00から10月8日23:59まで\n・変更: ドレス「秋と改革」の染色エリアが最適化され、#3が#17に、#4が#18に設定された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611612
+    },
+    "https://x.com/LifeMakeover510/status/2100389276277977253": {
+      "contentHash": "1c6c9821dfa85e1f532b5794",
+      "titleJa": "Lightchase Encore | Smolder Bloomが近日登場 Smolder Bloom | 9月19日09:00から10月8日23:59まで開催",
+      "bodyJa": "Lightchase Encore | Smolder Bloomが近日登場\nSmolder Bloom | 9月19日09:00から10月8日23:59まで開催！\n\n#SmolderBloom | 永遠の炎、生命の神聖な種子。\n#LifeMakeover #FallandReform #LavaSavage",
+      "summaryJa": "・追加: Smolder Bloomが近日登場\n・期間: 9月19日09:00から10月8日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611660
+    },
+    "https://x.com/LifeMakeover510/status/2100384237845393503": {
+      "contentHash": "590918abff128ba5baf2bbe1",
+      "titleJa": "Lightchase Encore | SRアライ [Larry - Parting Guidance] プレビュー、Smolder Bloomが9月19日9:00から10月8日まで登場！",
+      "bodyJa": "Lightchase Encore | SRアライ [Larry - Parting Guidance] プレビュー\nSmolder Bloom | 9月19日9:00から10月8日23:59まで登場！\n\n「走れ。振り返るな。」\n\n#SmolderBloom | 永遠の炎、生命の神聖な種子。\n#LifeMakeover #FallandReform #LavaSavage",
+      "summaryJa": "・追加: Lightchase Encore | SRアライ [Larry - Parting Guidance] プレビュー\n・追加: Smolder Bloom\n・期間: 9月19日9:00から10月8日23:59まで",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789611716
     }
   },
   "failures": {
