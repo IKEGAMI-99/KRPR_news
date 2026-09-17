@@ -2684,14 +2684,14 @@
       "updatedAtEpoch": 1788441793
     },
     "https://x.com/LifeMakeover510/status/1982296128709156892": {
-      "contentHash": "ac51f3f73f145e1eafdb4344",
-      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン",
-      "bodyJa": "Life Makeover × カードキャプターさくら 新バージョン - カードパックは10月29日から11月18日まで入手可能！\n\n#LifeMakeover #CardcaptorSakura",
-      "summaryJa": "・追加: ★5セット「クリア・プレリュード」のゲーム内映像が公開\n・期間: 10月29日〜11月18日\n・入手: Life Makeover × カードキャプターさくら 新バージョンのカードパックから獲得",
+      "contentHash": "765838b560776b2c3e73a6b2",
+      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン - カードパクト登場",
+      "bodyJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura",
+      "summaryJa": "・追加: ★5セット「クリア・プレリュード」ゲーム内映像\n・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクト\n・期間: 10月29日〜11月18日",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789610536
+      "updatedAtEpoch": 1789612473
     },
     "https://x.com/stylight_kr/status/1982286866771775676": {
       "contentHash": "cbe7642ee2cdbca531f2b68c",
@@ -5569,6 +5569,17 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789611716
+    },
+    "https://x.com/stylight_kr/status/2097619772376506528": {
+      "contentHash": "197e97a0543e18c493bcecc6",
+      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
+      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
+      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788951373,
+      "managedBySol": true
     }
   },
   "failures": {
