@@ -5708,6 +5708,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789636578
+    },
+    "https://x.com/kirapara_JP/status/2100525180753703257": {
+      "contentHash": "0bce3c412d10a3bbd332ee62",
+      "titleJa": "多数のペットウェア期間限定で登場 パックにはペットウェアの他、動作ポーズやペットお世話アイテムも",
+      "bodyJa": "多数のペットウェア期間限定で登場\n\nパックにはペットウェアの他、動作ポーズやペットお世話アイテムも。\n早速チェックしてくださいね👀\n\n販売期間⏰\n9月19日10:30-9月30日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 多数のペットウェアが期間限定で登場\n・パック内容: ペットウェアの他、動作ポーズやペットお世話アイテムも含まれる\n・販売期間: 9月19日10:30〜9月30日23:59",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789643750
     }
   },
   "failures": {}
