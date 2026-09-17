@@ -2924,14 +2924,14 @@
       "updatedAtEpoch": 1788495446
     },
     "https://x.com/LifeMakeover510/status/1959556289320591828": {
-      "contentHash": "8a1465a423142e54018d700e",
+      "contentHash": "30efdee04443e45c8e191fbc",
       "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... 新SSRアライ「Shawn - Dance of Prayer」登場",
-      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。#LifeMakeover",
       "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: [Time of Hunt]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789269476
+      "updatedAtEpoch": 1789615337
     },
     "https://x.com/LifeMakeover510/status/1959480792347713715": {
       "contentHash": "90e9cbfef286dc7682a4a40c",
@@ -5599,6 +5599,27 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789615088
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7685974332350303509": {
+      "contentHash": "4940003826f0986ece567d9b",
+      "titleJa": "Life Makeover Lightchase Encore | ★5セット「Lava Savage」プレビュー！",
+      "bodyJa": "Life Makeover Lightchase Encore | ★5セット「Lava Savage」プレビュー！愛しい人よ、恐れることはありません。手を伸ばすことはパンドラの箱を開けることではありません。もしかしたら、その中に…",
+      "summaryJa": "・追加: ★5セット「Lava Savage」がプレビュー公開\n・ゲームタイトル: Life Makeover Lightchase Encore",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789615222
+    },
+    "https://x.com/stylight_kr/status/2097619772376506528": {
+      "contentHash": "197e97a0543e18c493bcecc6",
+      "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
+      "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
+      "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
+      "model": "GPT-5.6 Sol",
+      "modelRevision": "sol-reviewed-v1",
+      "summaryFormatVersion": 2,
+      "updatedAtEpoch": 1788951373,
+      "managedBySol": true
     }
   },
   "failures": {
