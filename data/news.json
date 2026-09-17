@@ -434,7 +434,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7685973946428181781"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | ★5セット「秋と改革」プレビュー！",
+    "bodyJa": "Life Makeover Lightchase Encore | ★5セット「秋と改革」プレビュー！私の温もりを感じられないかもしれないけれど、愛の残り火があれば呼吸はできるはず…",
+    "summaryJa": "・追加: ★5セット「秋と改革」がプレビュー公開\n・ゲームタイトル: Life Makeover",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "5e1151b92831232f0ed42933",
@@ -456,7 +462,13 @@
         "url": "https://www.tiktok.com/@lifemakeoverofficial/video/7685973576624688404"
       }
     ],
-    "sourceCount": 1
+    "sourceCount": 1,
+    "titleJa": "Life Makeover Lightchase Encore | Smolder Bloomが近日登場",
+    "bodyJa": "Life Makeover Lightchase Encore | Smolder Bloomが近日登場。最初の洪水による荒廃から、炎の女神が誕生しました。彼女は生の力を宿し、...",
+    "summaryJa": "・追加: Smolder Bloomが近日登場予定",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "d6233ced868640af8bab77da",
@@ -1660,7 +1672,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2097967987366187008/img/f3cw_bNg1i6OJNJw.jpg"
-    ]
+    ],
+    "titleJa": "『ルーレットファンタジー』明日リリース！",
+    "bodyJa": "『ルーレットファンタジー』が明日リリースされます！\n\n幸運のルーレットを回して、特別な報酬の主役になりましょう！\n\n🕙 9/12 10:30 〜 9/25 23:59\n\n [イベント詳細] \n- 限定ミッションを完了すると、「ラッキーパステル」フローティングが含まれたルーレットファンタジーパッケージを破格の割引価格で手に入れることができます！\n\n※詳細はリリース後にゲーム内にてご確認ください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+    "summaryJa": "・追加: 『ルーレットファンタジー』が明日リリース\n・期間: 9/12 10:30 〜 9/25 23:59\n・入手: 限定ミッションを完了することで「ラッキーパステル」フローティングを含むルーレットファンタジーパッケージを破格の割引価格で入手可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "46417800b7d0dd767425a34f",
@@ -2080,13 +2098,8 @@
     "sourceCount": 1,
     "solEditReason": "韓国公式原文のパッケージ名4種は現行用語集に公式日本語対応がなく、ハッシュタグも翻訳エンジンの保護対象のため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
-    "titleJa": "【復刻】背景パッケージが再登場！Stylight 1周年を記念して人気の背景パッケージ4種が期間限定で帰還",
     "bodyJa": "【復刻】背景パッケージ再登場\n\nStylight 1周年を記念して、多くの愛を受けた人気の背景パッケージ4種が期間限定で帰還します！✨\n\n[復刻パッケージ案内]\n- 『미스틱 파티』\n- 『뒤엉킨 시공간』\n- 『두근대는 눈꽃』\n- 『두근거림』\n\n🕙 9/10 10:30 〜 9/30 23:59\n\n待ち望んでいたパッケージがある方は、この機会をお見逃しなく！\n\n※すべてのパッケージはアカウントにつき1回のみ購入可能です。\n\n※詳細はゲーム内にてご確認ください。\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트 #스타일라잇업데이트",
-    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能",
-    "aiProcessed": true,
-    "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
-    "solLocked": true
+    "summaryJa": "・復刻: 人気の背景パッケージ4種が期間限定で再登場\n・対象パッケージ: 『미스틱 파티』、『뒤엉킨 시공간』、『두근대는 눈꽃』、『두근거림』\n・期間: 9/10 10:30 〜 9/30 23:59\n・購入条件: アカウントにつき1回のみ購入可能"
   },
   {
     "id": "7753865a18691d07cb260784",
