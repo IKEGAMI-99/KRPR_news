@@ -5710,13 +5710,5 @@
       "updatedAtEpoch": 1789636578
     }
   },
-  "failures": {
-    "https://x.com/LifeMakeover510/status/2098365941927035184": {
-      "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 135,
-      "failedRuns": 45,
-      "lastFailureAtEpoch": 1789633298,
-      "retryAfterEpoch": 1789644098
-    }
-  }
+  "failures": {}
 }
