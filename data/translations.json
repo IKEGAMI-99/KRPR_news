@@ -5678,15 +5678,35 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789629483
+    },
+    "https://www.bilibili.com/opus/1248949004071338006": {
+      "contentHash": "5f561cdc3a414d74958abdc6",
+      "titleJa": "占星物語・星輪篇が襲来 🌼髪の生え際の花の中に、春の夢が隠されている",
+      "bodyJa": "占星物語・星輪篇が襲来\n\n🌼髪の生え際の花の中に、春の夢が隠されている。\n\n占星ポイントを蓄積することで、★5装飾品【花信栖夢】、ダイヤ×30、トレンドカラーカード×9、および各種素材アイテムの報酬を獲得できます！\n【イベント期間】\n9月19日10:00〜9月23日5:00\n【報酬受け取り期間】\n9月19日10:00〜9月23日5:00\n【イベントルール】\nイベント期間中、日程イベントに参加してアクティビティを高めることで占星コインを獲得できます。1日あたり最大3枚まで獲得可能です。占星コインはイベント期間中にリセットされないので、お早めにご利用ください。占星コインを消費して占星を行うことで、占星パックと異なる量の占星ポイント報酬を獲得できます。占星を行った後、占卜で得られたタロットの心解福籤をチャットチャンネルで共有し、一緒に幸運を分かち合いましょう！\n詳細なルールはゲーム内のイベント画面のヘルプ説明をご確認ください。\n以闪亮之名\n\nゲーム\n\nロールプレイング/高画質/シミュレーション経営\n\nすべての女性が夢中になる3A級シミュレーションライフゲーム\n\n起動",
+      "summaryJa": "・追加: 占星物語・星輪篇が開催される\n・報酬: 占星ポイントを蓄積することで、★5装飾品【花信栖夢】、ダイヤ×30、トレンドカラーカード×9、各種素材アイテムを獲得可能\n・期間: 9月19日10:00〜9月23日5:00\n・入手: 日程イベントへの参加で占星コインを獲得し、占星を行うことで報酬を獲得",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789633079
+    },
+    "https://x.com/kirapara_JP/status/2100494969374962159": {
+      "contentHash": "97e5688b1d5af7aa88132f56",
+      "titleJa": "明後日より花咲く庭めぐりイベントを開催✨ イベント期間中に毎日ログインすると、その日の遊園報酬を獲得できます",
+      "bodyJa": "明後日より花咲く庭めぐりイベントを開催✨\n\nイベント期間中に毎日ログインすると、その日の遊園報酬を獲得できます。\n花摘み報酬を購入すると追加の特権や限定ワンピも解放されるので、ぜひチェックしてね👀\n\nイベント期間⏰\n9月19日10:30～10月18日23:59\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: 「花咲く庭めぐりイベント」が開催される\n・期間: 9月19日10:30〜10月18日23:59\n・内容: イベント期間中に毎日ログインすると、その日の遊園報酬を獲得できる\n・内容: 花摘み報酬を購入すると、追加の特権や限定ワンピが解放される",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789633116
     }
   },
   "failures": {
     "https://x.com/LifeMakeover510/status/2098365941927035184": {
       "contentHash": "d51352f3b53576c57e22a2c3",
-      "failedAttempts": 132,
-      "failedRuns": 44,
-      "lastFailureAtEpoch": 1789621253,
-      "retryAfterEpoch": 1789632053
+      "failedAttempts": 135,
+      "failedRuns": 45,
+      "lastFailureAtEpoch": 1789633298,
+      "retryAfterEpoch": 1789644098
     }
   }
 }
