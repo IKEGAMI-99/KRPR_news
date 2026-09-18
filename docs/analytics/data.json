@@ -1,11 +1,11 @@
 {
   "ready": true,
-  "updatedAt": "2026-09-18T04:14:33.948627+00:00",
+  "updatedAt": "2026-09-18T05:13:55.451076+00:00",
   "summary": {
-    "todayViews": 1,
-    "weekViews": 32,
-    "monthViews": 673,
-    "monthUsers": 55
+    "todayViews": 3,
+    "weekViews": 34,
+    "monthViews": 675,
+    "monthUsers": 56
   },
   "trend": [
     {
@@ -96,13 +96,13 @@
     {
       "date": "2026-09-18",
       "label": "09/18",
-      "value": 1
+      "value": 3
     }
   ],
   "pages": [
     {
       "label": "/KRPR_news/",
-      "value": 663
+      "value": 665
     },
     {
       "label": "/docs/",
@@ -116,7 +116,7 @@
     },
     {
       "label": "t.co",
-      "value": 35
+      "value": 36
     },
     {
       "label": "go.bsky.app",
@@ -134,7 +134,7 @@
   "regions": [
     {
       "label": "Japan",
-      "value": 50
+      "value": 51
     },
     {
       "label": "(not set)",
@@ -148,7 +148,7 @@
   "devices": [
     {
       "label": "mobile",
-      "value": 47
+      "value": 48
     },
     {
       "label": "desktop",
