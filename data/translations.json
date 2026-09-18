@@ -2764,14 +2764,14 @@
       "updatedAtEpoch": 1788443927
     },
     "https://x.com/LifeMakeover510/status/1974799226556014646": {
-      "contentHash": "3f993b5cadbe1eba5229df39",
-      "titleJa": "SSR [Ashley - Tale of Tails] プレビュー\n#PrincessAllAboard 新バージョン - Wonder Lullabyが配信開始",
-      "bodyJa": "SSR [Ashley - Tale of Tails] プレビュー\n\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで配信されます！\n\n「運命は残酷なのかもしれない。少なくとも、私たちは心から別れを告げるこの機会を与えられているのだから、そうではないだろうか？」\n\n#LifeMakeover",
-      "summaryJa": "・追加: SSR [Ashley - Tale of Tails] プレビュー\n・イベント: #PrincessAllAboard 新バージョン - Wonder Lullabyが配信開始\n・期間: 10月8日〜10月28日",
+      "contentHash": "831ea617a958fa0e01393400",
+      "titleJa": "SSR [Ashley - Tale of Tails] プレビュー\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催",
+      "bodyJa": "SSR [Ashley - Tale of Tails] プレビュー\n\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催されます！\n\n「運命は残酷なのかもしれない。少なくとも、私たちは本当にお別れを告げるこの機会を与えられているのだから、そうではないだろうか？」\n\n#LifeMakeover",
+      "summaryJa": "・追加: SSR [Ashley - Tale of Tails] プレビュー\n・イベント: #PrincessAllAboard 新バージョン - Wonder Lullabyが開催\n・期間: 10月8日〜10月28日",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789694335
+      "updatedAtEpoch": 1789701595
     },
     "https://x.com/LifeMakeover510/status/1974701081986011485": {
       "contentHash": "2fa7845624cdf18d243ffa4c",
