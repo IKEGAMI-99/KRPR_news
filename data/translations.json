@@ -2684,14 +2684,14 @@
       "updatedAtEpoch": 1788441793
     },
     "https://x.com/LifeMakeover510/status/1982296128709156892": {
-      "contentHash": "ac51f3f73f145e1eafdb4344",
-      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン",
-      "bodyJa": "Life Makeover × カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで入手可能！\n\n#LifeMakeover #CardcaptorSakura",
-      "summaryJa": "・追加: ★5セット「クリア・プレリュード」のゲーム内映像が公開\n・期間: カードパクトは10月29日から11月18日まで入手可能",
+      "contentHash": "765838b560776b2c3e73a6b2",
+      "titleJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像 Life Makeover × カードキャプターさくら 新バージョン - カードパクト登場",
+      "bodyJa": "新バージョン | ★5セット「クリア・プレリュード」ゲーム内映像\n\nLife Makeover × カードキャプターさくら 新バージョン - カードパクトが10月29日から11月18日まで登場！\n\n#LifeMakeover #CardcaptorSakura",
+      "summaryJa": "・追加: ★5セット「クリア・プレリュード」ゲーム内映像\n・追加: Life Makeover × カードキャプターさくら 新バージョン - カードパクト\n・期間: 10月29日〜11月18日",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789694094
+      "updatedAtEpoch": 1789701374
     },
     "https://x.com/stylight_kr/status/1982286866771775676": {
       "contentHash": "cbe7642ee2cdbca531f2b68c",
@@ -2704,24 +2704,24 @@
       "updatedAtEpoch": 1788442366
     },
     "https://x.com/LifeMakeover510/status/1982281039390429594": {
-      "contentHash": "78ebf50636aeb80bddb56d50",
-      "titleJa": "新バージョン | カードパクトプレビュー：心は共鳴し、契約は永遠に響き渡る。Life Makeover x Cardcaptor Sakura",
-      "bodyJa": "新バージョン | カードパクトプレビュー：心は共鳴し、契約は永遠に響き渡る。\nLife Makeover x Cardcaptor Sakura 新バージョン - カードパクトが10月29日から11月18日まで利用可能に！\n\n「星の力を隠す鍵よ、私に真の姿を現せ――解放！」\n\n#LifeMakeover",
-      "summaryJa": "・追加: Life Makeover x Cardcaptor Sakura 新バージョン - カードパクトが追加\n・期間: 10月29日〜11月18日",
+      "contentHash": "a9928b34afd403e073e670c9",
+      "titleJa": "新バージョン | カードパクトプレビュー：心が共鳴し、契約は永遠に響き渡る。Life Makeover x カードキャプターさくら 新バージョン",
+      "bodyJa": "新バージョン | カードパクトプレビュー：心が共鳴し、契約は永遠に響き渡る。\nLife Makeover x カードキャプターさくら 新バージョン - カードパクトは10月29日から11月18日まで入手可能！\n\n「星の力を隠す鍵よ、私に真の姿を現せ――解放！」\n\n#LifeMakeover",
+      "summaryJa": "・追加: Life Makeover x カードキャプターさくら 新バージョン - カードパクトが登場\n・期間: 10月29日〜11月18日",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789694129
+      "updatedAtEpoch": 1789701419
     },
     "https://x.com/LifeMakeover510/status/1982039446787600496": {
-      "contentHash": "3f5bf9ca1446bb8955310fa8",
-      "titleJa": "封印が解け、契約が迫る。このハリケーンは世界を襲う",
-      "bodyJa": "封印が解け、契約が迫っています。\n\nLife Makeoverの世界全体を襲おうとしているこのハリケーンの正体とは……？\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
-      "summaryJa": "・追加: 特になし\n・期間: 特になし\n・入手: 特になし\n・報酬: 特になし\n・変更点: 特になし",
+      "contentHash": "93b6953cd160ae16399da036",
+      "titleJa": "封印が解け、契約が迫る。Life Makeoverの世界を襲うハリケーンとは？",
+      "bodyJa": "封印が解け、契約が迫っています。\n\nLife Makeoverの世界全体を巻き込むこのハリケーンの正体とは一体何なのでしょうか…？\n\n#LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
+      "summaryJa": "・Life Makeoverの世界を襲うハリケーンに関する告知\n・ハッシュタグ: #LifeMakeover #CardcaptorSakura #LifeMakeover_CCSakura",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789694157
+      "updatedAtEpoch": 1789701459
     },
     "https://x.com/stylight_kr/status/1981931221065048303": {
       "contentHash": "f9d132504fedf8f50c376024",
