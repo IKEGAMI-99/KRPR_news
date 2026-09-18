@@ -1589,18 +1589,6 @@
     "height": 264,
     "checkedAt": 1789665172
   },
-  "https://pbs.twimg.com/media/G5rJtEWacAUu4GC?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2160,
-    "height": 3840,
-    "checkedAt": 1789665172
-  },
-  "https://pbs.twimg.com/media/G5rYGdSacAUvzh_?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2736,
-    "height": 3648,
-    "checkedAt": 1789665172
-  },
   "https://pbs.twimg.com/media/G38b4YCX0AAispw?format=jpg&name=orig": {
     "ok": true,
     "width": 3840,
@@ -1737,72 +1725,6 @@
     "ok": true,
     "width": 616,
     "height": 353,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G5NXoIgbIAQ9KWD?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1024,
-    "height": 1024,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4RAonxXcAE5Kcv?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1080,
-    "height": 1440,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G5CcHIjbIAUUpM4?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4RAngnWAAA1Aqc?format=jpg&name=orig": {
-    "ok": true,
-    "width": 2870,
-    "height": 4096,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G5o_efiacAAdFVl?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1981695646391255041/img/oNemGf_98gE6TrVB.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4J_YTEWQAA1tat?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4COR92W8AAaGTW?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/amplify_video_thumb/1981696953739071488/img/-sWfigfLk7IpjUf9.jpg": {
-    "ok": true,
-    "width": 1200,
-    "height": 675,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4CKWxmXIAA56Y-?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
-    "checkedAt": 1789708393
-  },
-  "https://pbs.twimg.com/media/G4CJEUwWQAACpaR?format=jpg&name=orig": {
-    "ok": true,
-    "width": 1440,
-    "height": 1920,
     "checkedAt": 1789708393
   },
   "https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png": {
@@ -2309,12 +2231,6 @@
     "height": 450,
     "checkedAt": 1789726450
   },
-  "https://img2-tc.tapimg.com/moment/etag/Fo_izISO8pgRb_YL8C_kb0qoaAoW_20260914100743.jpg/_tap_ugc_m.jpg": {
-    "ok": true,
-    "width": 720,
-    "height": 1280,
-    "checkedAt": 1789730008
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789905600&x-signature=xmQBF2OUuLJ5H4IETor7roPo5Ow%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
@@ -2429,94 +2345,10 @@
     "height": 2160,
     "checkedAt": 1789733800
   },
-  "https://i0.hdslb.com/bfs/new_dyn/b95a7aeaebe2c70a2355037be8d6d292676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/da36cfdcfaca3e4881dce5fe380e80ec676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/9f8b19e51db991f6906ae2e2dc0cba6e676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/cb69bf6cbefcc69b0dbfe96546221a74676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/b9a6ada1ff55515975d7202fdf605114676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/e40ebe5b3dcba33783a62affa4cbb0fe676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789905600&x-signature=GebgPlDzqL%2FpvlQpN3cu2pUCD3o%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/303deaf278aee71d5bb9ac71a18b52e9676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/21d6a85461dd6306b8a136ab64cb1c3f676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/e1de1bc4745230177f4f47e0e80ef3c5676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/75796207f152beb4e34cf99f52a406b6676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/bf1edf32a78dbc76410ae7b34368a82c676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/018d7571d5c99218e288b86290a0735c676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/f7db98adca0beeac1ecd226f7cb1dfcf676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789733800
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/f5305503410cc9a5e3ce647ef81d9d75676200579.png@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
     "checkedAt": 1789733800
   },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1789905600&x-signature=vYWKs%2Fm8ZS3LV8lA6nlA9xXCaeI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
@@ -2567,24 +2399,6 @@
     "height": 2000,
     "checkedAt": 1789733800
   },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=ebbac9e8-5552-43ff-ad1b-2236128d1253&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789733792142&request_path=%2Fmoment%2F828260941740116010": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789733800
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=7490aa6a-4ff8-4007-adfc-86bc5afd2c9c&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789733792361&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789733800
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=dd5f03a8-3c0e-4398-a2ee-a473759a98ec&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789733792302&request_path=%2Fmoment%2F821067872284446124": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789733800
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789905600&x-signature=e0WjdEvyFQ0wPc0j%2BoG7dabSTS4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 1500,
@@ -2596,5 +2410,173 @@
     "width": 2160,
     "height": 2880,
     "checkedAt": 1789733800
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1976834173060210688/img/tgFcwa50ZLRXAVsQ.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FPuOTbkAACS15?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2400,
+    "height": 3300,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FRwzpbkAAh07s?format=jpg&name=orig": {
+    "ok": true,
+    "width": 4096,
+    "height": 2133,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1968998639378010112/img/X7NQ4IhnL4gnsaRL.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G1NVeW9b0AAN-mM?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G1qIgpSaEAASmxv?format=jpg&name=orig": {
+    "ok": false,
+    "width": 248,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0nW1h6bMAAr_eG?format=jpg&name=orig": {
+    "ok": true,
+    "width": 675,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0nW1hVa4AAyqya?format=jpg&name=orig": {
+    "ok": true,
+    "width": 675,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FPwqEbkAA8KWB?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1182,
+    "height": 1948,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FPr-KakAE3bW4?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2400,
+    "height": 3840,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0nW1hVaMAEPNVd?format=jpg&name=orig": {
+    "ok": true,
+    "width": 750,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G1qIgpcaIAA4F3l?format=jpg&name=orig": {
+    "ok": false,
+    "width": 225,
+    "height": 1198,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FRwDybQAATBWy?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2133,
+    "height": 4096,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G1qIgpVaAAEV9wI?format=jpg&name=orig": {
+    "ok": true,
+    "width": 675,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1961009104190857216/img/5c8hvm-A3UnttABz.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G2FPu26aEAEEmAp?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2160,
+    "height": 3840,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0SiImaaEAEtxH3?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1789737218
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=6eaf813c-ce7f-4cf1-b7b6-c18afab1fb31&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789737214684&request_path=%2Fmoment%2F828260941740116010": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789737218
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=7b0c0ed5-f44a-4682-945f-44ea0453a261&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789737215103&request_path=%2Fmoment%2F827191805966550915": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/Gz5GXeAbAAIlzcu?format=jpg&name=orig": {
+    "ok": true,
+    "width": 625,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/Gz5GXeEbAAAxPX_?format=jpg&name=orig": {
+    "ok": true,
+    "width": 625,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/Gy761yIboAIMZNo?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2133,
+    "height": 4096,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0nW1hgagAAvpRl?format=jpg&name=orig": {
+    "ok": true,
+    "width": 675,
+    "height": 1200,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/G0SiJLabMAApJz6?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1789737218
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=1ee8ef5b-7a8c-4a4b-9691-03a4ade45290&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789737215080&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789737218
+  },
+  "https://pbs.twimg.com/media/Gy762p6boAEZyuZ?format=jpg&name=orig": {
+    "ok": true,
+    "width": 2133,
+    "height": 4096,
+    "checkedAt": 1789737218
+  },
+  "https://matomo.gamespress.com/matomo.php?idsite=1&rec=1": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789737218
+  },
+  "https://img2-tc.tapimg.com/moment/etag/FqItQwVQ3IwZtx33yGG0EbkuA1wq_20260907105912.jpg/_tap_ugc_m.jpg": {
+    "ok": true,
+    "width": 720,
+    "height": 1280,
+    "checkedAt": 1789737218
   }
 }
