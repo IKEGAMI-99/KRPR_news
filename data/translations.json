@@ -2934,14 +2934,14 @@
       "updatedAtEpoch": 1789805919
     },
     "https://x.com/LifeMakeover510/status/1959480792347713715": {
-      "contentHash": "90e9cbfef286dc7682a4a40c",
-      "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... ★6セット「Invincible Moon」登場",
-      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」が近日公開されます。\n\nLife Makeover 新バージョン | ★6セット「Invincible Moon」\n\n【Time of Hunt】\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
-      "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC\n・イベント名: Time of Hunt",
+      "contentHash": "9d61a6feb23e400c62743add",
+      "titleJa": "Life Makeover 新バージョン [狩りの時間] 開催間近... Life Makeover 新バージョン | ★6セット [Invincible Moon]",
+      "bodyJa": "Life Makeover 新バージョン [狩りの時間] 開催間近...\n\nLife Makeover 新バージョン | ★6セット [Invincible Moon]\n\n[狩りの時間]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+      "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・イベント名: [狩りの時間]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789777400
+      "updatedAtEpoch": 1789820342
     },
     "https://x.com/LifeMakeover510/status/1957744354157633567": {
       "contentHash": "f1e72365a505188583ab4e6a",
@@ -5944,6 +5944,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789812907
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7685975421485141268": {
+      "contentHash": "b387931fd7b702204e8aaa33",
+      "titleJa": "「走れ。振り返るな。」 #LifeMakeover Lightchase Encore | SRアライ [Larry - 別れの導き] #SmolderBloom | イベント開催中",
+      "bodyJa": "「走れ。振り返るな。」 #LifeMakeover Lightchase Encore | SRアライ [Larry - 別れの導き] #SmolderBloom | イベントは9月19日09:00から開催中です。",
+      "summaryJa": "・追加: SRアライ「Larry - 別れの導き」が登場\n・イベント: #LightchaseEncore および #SmolderBloom イベントが開催中\n・期間: 9月19日09:00から開催中",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789820280
+    },
+    "https://www.tiktok.com/@lifemakeoverofficial/video/7685974543566998804": {
+      "contentHash": "94562b49d341dd55c10ba162",
+      "titleJa": "Life Makeover Lightchase Encore | SR Ally [Larry - Parting Guidance]「走れ。振り返るな。」 #SmolderBloom | イベント開催中",
+      "bodyJa": "Life Makeover Lightchase Encore | SR Ally [Larry - Parting Guidance]「走れ。振り返るな。」 #SmolderBloom | イベントは9月19日09:00から開催中です。",
+      "summaryJa": "・追加: SR Ally [Larry - Parting Guidance]「走れ。振り返るな。」が登場\n・イベント: #SmolderBloom が開催中\n・期間: 9月19日09:00から開始",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789820308
     }
   },
   "failures": {}
