@@ -5924,6 +5924,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789805873
+    },
+    "https://m.bbs.3839.com/thread-9166070.htm": {
+      "contentHash": "5af5970341cc6c2f3ee3b16c",
+      "titleJa": "全く新しいファッションコレクションイベントが開催",
+      "bodyJa": "好游快爆APPは、8000万人のゲームプレイヤーが利用するゲームコミュニティです。国内外の最新で質の高いゲームを毎日共有しています。また、実用的なゲームツール、オリジナルの攻略解説、生動的な動画解説を提供し、プレイヤーがゲームを素早く習得し、迅速にクリアできるようサポートします。",
+      "summaryJa": "・好游快爆APPは8000万人のゲームプレイヤーが利用するゲームコミュニティである\n・国内外の最新で質の高いゲームを毎日共有している\n・実用的なゲームツール、オリジナルの攻略解説、生動的な動画解説を提供している",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789809358
     }
   },
   "failures": {}
