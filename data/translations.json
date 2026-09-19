@@ -5768,6 +5768,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789791789
+    },
+    "https://x.com/LifeMakeover510/status/2101159346310910307": {
+      "contentHash": "771145a4d5880ca93ff9970f",
+      "titleJa": "天使の卵から特別な挨拶が届きました",
+      "bodyJa": "Life Makeoverをいつもプレイしてくださっている皆様、ありがとうございます。\n\n💎[ANGELEGGLM]にアクセスして、★5限定の携帯用アイテム「Snowbound Stars」と、限定の特別デザインアイテムおよびフォトステッカーシリーズ「An Idol is Born」を入手してください！",
+      "summaryJa": "・入手: [ANGELEGGLM]にアクセスして限定アイテムを入手\n・追加: ★5限定携帯用アイテム「Snowbound Stars」が登場\n・追加: 限定特別デザインアイテムおよびフォトステッカーシリーズ「An Idol is Born」が登場",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789791893
+    },
+    "https://www.bilibili.com/video/BV1xQtw6WEiQ": {
+      "contentHash": "2fdcfba8452dcd1a9d19ebde",
+      "titleJa": "新バージョン4.4登場｜神迹初诞PV初公開、VME新星が重磅発表",
+      "bodyJa": "#トップクラスの卵生# 新バージョン4.4「神迹初诞」が9月1日から9月21日まで期間限定で登場！\n🎁フォロー＆巻き毛で、Summerがランダムに10名の幸運なプレイヤーに【200元ショッピングカード×1】をプレゼントします。\n🎬「神迹初诞」デビューPVが初公開されました！\n✨「VME新星」の超凡なデビュー記念！\n🎵「デビューシングル」の歌唱が届けられます！\n🌟「数年間の蓄積」を経て、デビューから完全体へ！\n💖「運命の神降臨」が星々の輝きを彩ります！\n過去の潜伏を経て、熱意は冷めません。\nこの初秋、彼女の時代へようこそ。",
+      "summaryJa": "・追加: 新バージョン4.4「神迹初诞」が期間限定で登場\n・期間: 9月1日〜9月21日\n・イベント: フォロー＆巻き毛で、Summerがランダムに10名のプレイヤーに【200元ショッピングカード×1】をプレゼント\n・公開: 「神迹初诞」のデビューPVが初公開された",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789791969
     }
   },
   "failures": {
