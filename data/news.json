@@ -3003,7 +3003,7 @@
     "summaryJa": "・イベント名: 『심야 밀회』が開催\n・内容: 絵のマスをめくって絵を完成させ、4★限定セットを入手できる\n・メイン報酬: 4★セット「벽라춘 밀회」\n・期間: 9/13 10:30 〜 9/20 5:00",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2",
+    "aiSummaryFormat": "legacy",
     "solEditReason": "韓国公式原文の固有名詞『심야 밀회』『벽라춘 밀회』は現行用語集に公式日本語対応がなく、ハッシュタグは現行翻訳エンジンの保護対象。既存翻訳が『深夜の密会』『碧羅春密会』および日本語・英字タグへ創作・改変していたため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -3218,7 +3218,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "f484e55b8df9d9feb669dd1e",
@@ -3503,7 +3503,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "facts-v2"
+    "aiSummaryFormat": "legacy"
   },
   {
     "id": "9bff3713e5b532754afc136c",
