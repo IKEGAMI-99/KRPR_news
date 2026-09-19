@@ -5964,17 +5964,6 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789820308
-    },
-    "https://x.com/stylight_kr/status/2097622288862412824": {
-      "contentHash": "10a5d39e69b6218c9c938a24",
-      "titleJa": "新規常時光追『개화』明日オープン 明日アップデートと同時に新規6★・5★セットとSSR縁が常時光追『개화』に登場します。✨新しい光が咲き誇る...",
-      "bodyJa": "新規常時光追『개화』明日オープン\n\n明日アップデートと同時に\n新規6★・5★セットとSSR縁が常時光追『개화』に登場します。✨\n\n新しい光が咲き誇る瞬間、\n常時光追『개화』をぜひお試しください！\n\n🎁 1周年感謝プレゼント\n1周年を記念して感謝の気持ちを込めて\nメールボックスからフラワー招待状10個を受け取ることができます。\n\n🕙 受領期間\n9月10日 10:30 〜 9月12日 23:59\n\nこの1年間、Stylightとご一緒してくださった\nすべてのスタイルパートナーの皆様に心より感謝申し上げます。\n\n明日、新しい光と共に\nStylightの1周年をより特別なものに楽しんでください。💐\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇업데이트",
-      "summaryJa": "・追加: 新規常時光追『개화』が明日オープン\n・追加: 新規6★・5★セットとSSR縁が常時光追『개화』に登場\n・プレゼント: 1周年感謝としてフラワー招待状10個をメールボックスで配布\n・期間: フラワー招待状の受領期間は9月10日 10:30 〜 9月12日 23:59",
-      "model": "GPT-5.6 Sol",
-      "modelRevision": "sol-reviewed-v1",
-      "summaryFormatVersion": 2,
-      "updatedAtEpoch": 1788951373,
-      "managedBySol": true
     }
   },
   "failures": {}
