@@ -19,7 +19,13 @@
     "sourceCount": 1,
     "imageUrls": [
       "https://pbs.twimg.com/media/HRmpZtJaoAA1TPN?format=jpg&name=orig"
-    ]
+    ],
+    "titleJa": "明日よりゲーム内イベント『のんびり休日』を開催✨ イベント期間⏰ 9月20日10:30～9月27日5:00 イベントに参加して、星4セット『春の花便り』をゲットしよう",
+    "bodyJa": "明日よりゲーム内イベント『のんびり休日』を開催✨\n\nイベント期間⏰\n9月20日10:30～9月27日5:00\n\nイベントに参加して、星4セット『春の花便り』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+    "summaryJa": "・追加: ゲーム内イベント『のんびり休日』が開催される\n・期間: 9月20日10:30～9月27日5:00\n・入手: イベントに参加することで星4セット『春の花便り』を入手できる",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "00e0fb259397946086f7bf6f",

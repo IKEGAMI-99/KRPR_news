@@ -5945,6 +5945,16 @@
       "summaryFormatVersion": 2,
       "updatedAtEpoch": 1788951373,
       "managedBySol": true
+    },
+    "https://x.com/kirapara_JP/status/2101219747719209031": {
+      "contentHash": "9fef998a3462f55229f3e4ae",
+      "titleJa": "明日よりゲーム内イベント『のんびり休日』を開催✨ イベント期間⏰ 9月20日10:30～9月27日5:00 イベントに参加して、星4セット『春の花便り』をゲットしよう",
+      "bodyJa": "明日よりゲーム内イベント『のんびり休日』を開催✨\n\nイベント期間⏰\n9月20日10:30～9月27日5:00\n\nイベントに参加して、星4セット『春の花便り』をゲットしよう！\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・追加: ゲーム内イベント『のんびり休日』が開催される\n・期間: 9月20日10:30～9月27日5:00\n・入手: イベントに参加することで星4セット『春の花便り』を入手できる",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789812907
     }
   },
   "failures": {}
