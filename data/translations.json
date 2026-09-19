@@ -2924,14 +2924,14 @@
       "updatedAtEpoch": 1788495446
     },
     "https://x.com/LifeMakeover510/status/1959556289320591828": {
-      "contentHash": "8a1465a423142e54018d700e",
-      "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日登場... 新SSRアライ「Shawn - Dance of Prayer」登場",
-      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日登場...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
+      "contentHash": "30efdee04443e45c8e191fbc",
+      "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... 新SSRアライ「Shawn - Dance of Prayer」登場",
+      "bodyJa": "Life Makeover 新バージョン「Time of Hunt」近日公開...\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」\n\n[Time of Hunt]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。#LifeMakeover",
       "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: [Time of Hunt]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
       "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
-      "updatedAtEpoch": 1789777349
+      "updatedAtEpoch": 1789805919
     },
     "https://x.com/LifeMakeover510/status/1959480792347713715": {
       "contentHash": "90e9cbfef286dc7682a4a40c",
@@ -5904,6 +5904,26 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789802265
+    },
+    "https://www.bilibili.com/video/BV1vfb36YEbD": {
+      "contentHash": "2a60148cfb599a2b064add09",
+      "titleJa": "VME応援計画 | 「7城」オフライン応援記念",
+      "bodyJa": "#トップクラスの卵生# 全新4.4バージョン・神迹初誕 9月1日〜9月21日限定ログイン！\n\n✨星光が夢に冠を飾る。\n✨記憶に永遠を刻む。\n💘あなたに感謝します。共に\n💗この初秋の美しい思い出を残しましょう。",
+      "summaryJa": "・イベント: VME応援計画「7城」オフライン応援記念\n・期間: 9月1日〜9月21日\n・内容: 全新4.4バージョン「神迹初誕」の限定ログインイベント",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789805805
+    },
+    "https://www.bilibili.com/video/BV1hPbg6HEKb": {
+      "contentHash": "91d6bc3841e9c753cfcf6459",
+      "titleJa": "復刻イベント「追光」開催｜烬土生花、まもなくスタート",
+      "bodyJa": "烬土生花｜神火永焚、聖骨緑芽。9月9日10:00から9月29日23:59まで期間限定で開催！\n\n荒涼とした洪流から、炎の神が誕生した。\n彼女は純粋な力、無限の灼熱であり、境界を持たない。\n万年不明の沈黙の中で、石膏の聖像が凝結した。\n彼女は完璧な造形、永遠に変わらぬ美しさであり、心に新芽が芽吹いた。\n\n出会うまで、炎は初めて輪郭を持ち、彫像は初めて温度を持った。\n契約の終わりに触れ合い、指先に燃え上がる「後世」への渇望。\n創造の初め、もう終わりなき死寂はない。",
+      "summaryJa": "・復刻イベント「追光」が開催される\n・期間は9月9日10:00から9月29日23:59まで\n・イベントテーマは「烬土生花」",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789805873
     }
   },
   "failures": {}
