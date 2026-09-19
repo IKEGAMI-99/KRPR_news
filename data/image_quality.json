@@ -1469,18 +1469,6 @@
     "height": 360,
     "checkedAt": 1789715670
   },
-  "https://i1.ytimg.com/vi/D9YOo1VRhKA/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
-  "https://i4.ytimg.com/vi/krJ51wlDaQc/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
   "https://i3.ytimg.com/vi/ByS5nU2O8cI/hqdefault.jpg": {
     "ok": true,
     "width": 480,
@@ -1493,19 +1481,7 @@
     "height": 360,
     "checkedAt": 1789715670
   },
-  "https://i4.ytimg.com/vi/sKpt3Ht0C2A/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
   "https://i4.ytimg.com/vi/OdFjnWg1Bkg/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
-  "https://i2.ytimg.com/vi/i8MTxwk8v9c/hqdefault.jpg": {
     "ok": true,
     "width": 480,
     "height": 360,
@@ -1535,113 +1511,11 @@
     "height": 360,
     "checkedAt": 1789715670
   },
-  "https://i4.ytimg.com/vi/sCO_d0qYYbA/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
-  "https://i4.ytimg.com/vi/OtzktQHaJkA/hqdefault.jpg": {
-    "ok": true,
-    "width": 480,
-    "height": 360,
-    "checkedAt": 1789715670
-  },
   "https://i4.ytimg.com/vi/SgCg5mnvwT0/hqdefault.jpg": {
     "ok": true,
     "width": 480,
     "height": 360,
     "checkedAt": 1789715670
-  },
-  "https://www.youtube.com/embed/IKHhRj_v4mw": {
-    "ok": false,
-    "width": 0,
-    "height": 0,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/images/notifs-track-this.jpg": {
-    "ok": true,
-    "width": 900,
-    "height": 295,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1687424977/life-makeover-ios-android-ocean-update-cover_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab.jpg": {
-    "ok": true,
-    "width": 1010,
-    "height": 505,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1678465382/life-makeover-keyart_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1691144933/pocketgamer-top-re_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1789726450
-  },
-  "https://www.droidgamers.com/wp-content/uploads/2017/04/droid-gamers.png": {
-    "ok": false,
-    "width": 350,
-    "height": 110,
-    "checkedAt": 1789726450
-  },
-  "https://www.droidgamers.com/wp-content/uploads/2023/11/final-fantasy-ix.jpg": {
-    "ok": true,
-    "width": 1280,
-    "height": 720,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1683719376/life-makeover-launch-keyart-upscaled_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 461,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/ra-97246-1710943183/lifemakeover-sanriocollab_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1789726450
-  },
-  "https://media.pocketgamer.com/artwork/na-34037-1682679349/lifemakeover-launch-date-keyart_jpg_820.jpg": {
-    "ok": true,
-    "width": 820,
-    "height": 410,
-    "checkedAt": 1789726450
-  },
-  "https://www.droidgamers.com/wp-content/uploads/2024/03/Life-Makeover-x-Sanrio-characters.jpg": {
-    "ok": true,
-    "width": 1280,
-    "height": 720,
-    "checkedAt": 1789726450
-  },
-  "https://kotaku.com/app/uploads/2026/01/unnamed.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1789726450
-  },
-  "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif": {
-    "ok": true,
-    "width": 800,
-    "height": 450,
-    "checkedAt": 1789726450
-  },
-  "https://matomo.gamespress.com/matomo.php?idsite=1&rec=1": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789737218
   },
   "https://pbs.twimg.com/media/HRC56yub0AAlIZX?format=jpg&name=orig": {
     "ok": true,
@@ -1791,30 +1665,6 @@
     "ok": true,
     "width": 486,
     "height": 648,
-    "checkedAt": 1789769585
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/fdd37459fb6d3c6cbaaf4e979248fa90676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789769585
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/7e691d1bb2a8042483ad524cc9cabe08676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789769585
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/0002bf11d0064b266e098ae12d4e1615676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
-    "checkedAt": 1789769585
-  },
-  "https://i0.hdslb.com/bfs/new_dyn/f228558ff59341a55c36d8aed3e92b23676200579.jpg@264w_264h_1e_1c": {
-    "ok": false,
-    "width": 264,
-    "height": 264,
     "checkedAt": 1789769585
   },
   "https://i0.hdslb.com/bfs/new_dyn/325f407fa14568db57cf56f25453aea6676200579.png@264w_264h_1e_1c": {
@@ -1973,12 +1823,6 @@
     "height": 264,
     "checkedAt": 1789769585
   },
-  "https://kotaku.com/app/uploads/2026/09/Fortunesweavegun.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1789769585
-  },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEIQABiPQAAiwBAlayokqBmqEqiEmMAYsCQ9l~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=p3y7A%2FGfT4hAvnMawnyG%2F4DS6yI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 486,
@@ -2043,12 +1887,6 @@
     "ok": true,
     "width": 480,
     "height": 360,
-    "checkedAt": 1789773230
-  },
-  "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0RCAk8fFC5qFBAxI3fCVOlDgEOCQzAlDxoNQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=kJ6fdKImJhLgIqTHaF%2BSS27RbPk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
-    "ok": true,
-    "width": 486,
-    "height": 648,
     "checkedAt": 1789773230
   },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okqAQeCRUC3ISAFVuBwQIahAAoCIgdfFZbTDEq~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=eZX0JB9nHSF4cNbBFO74JSaaTUg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
@@ -2223,12 +2061,6 @@
     "ok": true,
     "width": 2130,
     "height": 3840,
-    "checkedAt": 1789773230
-  },
-  "https://www.droidgamers.com/wp-content/uploads/2026/09/Disney-Epic-Mickey-Rebrushed-448x316.jpg": {
-    "ok": false,
-    "width": 448,
-    "height": 316,
     "checkedAt": 1789773230
   },
   "https://pbs.twimg.com/media/G0nW1h6bMAAr_eG?format=jpg&name=orig": {
@@ -2543,12 +2375,6 @@
     "height": 2160,
     "checkedAt": 1789777043
   },
-  "https://kotaku.com/app/uploads/2026/09/cameostarwars.jpg": {
-    "ok": true,
-    "width": 1920,
-    "height": 1080,
-    "checkedAt": 1789777043
-  },
   "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=hpaabo2sPAumO3xu%2B2KgSqlCRuA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
     "ok": true,
     "width": 1500,
@@ -2565,24 +2391,6 @@
     "ok": true,
     "width": 1080,
     "height": 1440,
-    "checkedAt": 1789777043
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=4c1a7a4e-bd38-492c-94f8-44e92b025708&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789777042047&request_path=%2Fmoment%2F828260941740116010": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789777043
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=0a97d05d-a4ea-4445-8925-bfda788a3100&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789777042277&request_path=%2Fmoment%2F821067872284446124": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
-    "checkedAt": 1789777043
-  },
-  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=d4b13db2-480c-4a85-bb13-1d6351de3b5d&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789777042262&request_path=%2Fmoment%2F827191805966550915": {
-    "ok": false,
-    "width": 1,
-    "height": 1,
     "checkedAt": 1789777043
   },
   "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QKviKAWgOc83LeCdeWCmGfsuroM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
@@ -2608,5 +2416,77 @@
     "width": 1440,
     "height": 1920,
     "checkedAt": 1789777043
+  },
+  "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogEVDEgpIKqAXGCfQC1AqQFAwm00BBfotmAdP3~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=f4YFZVj1RAoN5B0xK%2F1VAkQQ%2B9s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1789780357
+  },
+  "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oALUmBTIIAIc9rAB6AgiGiBAmECKwAiI1aBBKf~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=nyZQ%2FTF4uH1Svy1dUpaa404wCaI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1789780357
+  },
+  "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QdzLTkFJsx1Qcn4wym7se1cWIyo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8": {
+    "ok": true,
+    "width": 486,
+    "height": 648,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1945757610428559360/img/Psi2ISvomOJ7rJ8r.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1952924515518038016/img/D1mcFt-b8ZvljmY-.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/media/Gx0R_QQbsAE8AvH?format=jpg&name=orig": {
+    "ok": true,
+    "width": 1920,
+    "height": 1080,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1937758501822173184/img/pyf9PhvRKmmFblFx.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1953414158558629888/img/GU3pOD1ifgrAnSZP.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789780357
+  },
+  "https://pbs.twimg.com/amplify_video_thumb/1930531398995320832/img/prjme-zDdb0tbbXT.jpg": {
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "checkedAt": 1789780357
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=f6db3f17-95b4-44fb-a41d-99dccda19b15&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789780356081&request_path=%2Fmoment%2F827191805966550915": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789780357
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=d3fd4b41-a64a-4cd3-a885-f28bdac5413f&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789780356056&request_path=%2Fmoment%2F828260941740116010": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789780357
+  },
+  "https://tap-client-logs-bj.cn-beijing.dualstack.log.aliyuncs.com/logstores/web_apm/track_ua.gif?t_log_id=dd4be56c-f87b-4247-b4a6-0220fd439c01&APIVersion=0.6.0&XUA=V%3D1%26PN%3DWeb%26LANG%3Dzh_CN%26VN_CODE%3D100000000%26LOC%3DCN%26PLT%3DAndroid%26DS%3DAndroid%26UID%3D15c5ceed-8775-4826-a70f-204a04505034%26OS%3DAndroid%26OSV%3D16&UID=15c5ceed-8775-4826-a70f-204a04505034&browser_name=Chrome&action=startup&ts=1789780356041&request_path=%2Fmoment%2F821067872284446124": {
+    "ok": false,
+    "width": 1,
+    "height": 1,
+    "checkedAt": 1789780357
   }
 }
