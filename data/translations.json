@@ -5938,6 +5938,16 @@
       "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
       "summaryFormatVersion": 4,
       "updatedAtEpoch": 1789799513
+    },
+    "https://x.com/kirapara_JP/status/2101204645112840325": {
+      "contentHash": "85fcf137740cc85f5599b083",
+      "titleJa": "【復刻】SSR絆💞スミ『冬の休息』 復刻限定ガチャイベント『浄化の舞』に再登場予定✨ #キラパラ #着せ替えゲーム",
+      "bodyJa": "【復刻】SSR絆💞スミ『冬の休息』\n\n復刻限定ガチャイベント『浄化の舞』に再登場予定✨\n\n#キラパラ \n#着せ替えゲーム",
+      "summaryJa": "・復刻限定ガチャイベント『浄化の舞』にて、SSR絆💞スミ『冬の休息』が再登場予定\n・イベント名: 浄化の舞\n・対象ゲーム: キラパラ",
+      "model": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+      "modelRevision": "gemma-4-e4b-it-litertlm-summary-facts-region-titles-strict-ja-v2",
+      "summaryFormatVersion": 4,
+      "updatedAtEpoch": 1789802265
     }
   },
   "failures": {
