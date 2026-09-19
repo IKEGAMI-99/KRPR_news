@@ -831,34 +831,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "0ee0a72f30ec6af3cae80d04",
-    "region": "JAPAN",
-    "platform": "公式X",
-    "title": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
-    "body": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
-    "sourceUrl": "https://x.com/kirapara_JP/status/2100147680458793368",
-    "publishedLabel": "2日前",
-    "publishedAtEpoch": 1789549200,
-    "imageUrl": "https://pbs.twimg.com/media/HRmn0AbaMAAeMoC?format=jpg&name=orig",
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/kirapara_JP/status/2100147680458793368"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://pbs.twimg.com/media/HRmn0AbaMAAeMoC?format=jpg&name=orig"
-    ],
-    "titleJa": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
-    "bodyJa": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
-    "summaryJa": "・追加: 星5セット「花間の茶会」が登場\n・追加: 星5セット「夢灯りの歌」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "8bf3b4b66a050c9638d4dc88",
     "region": "KOREA",
     "platform": "公式X",
@@ -882,6 +854,34 @@
     "titleJa": "【イベント】『猫星探検』で天体に隠された宝物を釣り上げ、4★限定セットを入手しよう。🎁メイン報酬：4★セット「猫座」",
     "bodyJa": "【イベント】『猫星探検』\n\nクリップで天体に隠された宝物を釣り上げ、4★限定セットを入手してください。\n\n🎁メイン報酬：\n4★セット「猫座」\n\n🕙 9/17 10:30 〜 9/24 5:00\n\n※詳細はゲーム内をご確認ください。\n\n▶ ゲームダウンロード：\n\n#Stylight #Stylight降臨 #Stylightアップデート",
     "summaryJa": "・イベント名：『猫星探検』が開催される\n・内容：クリップで天体に隠された宝物を釣り上げ、4★限定セットを入手できる\n・メイン報酬：4★セット「猫座」\n・期間：9/17 10:30 〜 9/24 5:00",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "0ee0a72f30ec6af3cae80d04",
+    "region": "JAPAN",
+    "platform": "公式X",
+    "title": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
+    "body": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
+    "sourceUrl": "https://x.com/kirapara_JP/status/2100147680458793368",
+    "publishedLabel": "2日前",
+    "publishedAtEpoch": 1789549200,
+    "imageUrl": "https://pbs.twimg.com/media/HRmn0AbaMAAeMoC?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/kirapara_JP/status/2100147680458793368"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRmn0AbaMAAeMoC?format=jpg&name=orig"
+    ],
+    "titleJa": "明日登場するセットコーデをお届け✨ 星5セット・花間の茶会 ——花咲く季節、お茶のひととき",
+    "bodyJa": "明日登場するセットコーデをお届け✨\n\n星5セット・花間の茶会\n——花咲く季節、お茶のひととき。旅人さん、私のお茶会に来ませんか？\n\n星5セット・夢灯りの歌\n——終わらぬ茶会で、幾年も朝な夕なにあなたを待ち続ける。\n\n#キラパラ\n#着せ替えゲーム",
+    "summaryJa": "・追加: 星5セット「花間の茶会」が登場\n・追加: 星5セット「夢灯りの歌」が登場\n・ハッシュタグ: #キラパラ #着せ替えゲーム",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -1091,8 +1091,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7685974332350303509",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1789530350,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEIQABiPQAAiwBAlayokqBmqEqiEmMAYsCQ9l~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=p3y7A%2FGfT4hAvnMawnyG%2F4DS6yI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEIQABiPQAAiwBAlayokqBmqEqiEmMAYsCQ9l~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=HDQQy%2Ffiis6ImQV3DGNBzF%2F1x70%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEIQABiPQAAiwBAlayokqBmqEqiEmMAYsCQ9l~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=HDQQy%2Ffiis6ImQV3DGNBzF%2F1x70%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEIQABiPQAAiwBAlayokqBmqEqiEmMAYsCQ9l~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=p3y7A%2FGfT4hAvnMawnyG%2F4DS6yI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -1119,8 +1120,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7685973946428181781",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1789530261,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYM5vAIqalDnEYxlAhAaiQCIAABiPqpq7QQoE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=jI4rV4cYobl9%2BcNZBlMTR208enc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYM5vAIqalDnEYxlAhAaiQCIAABiPqpq7QQoE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=LXG46kD5U6GYyD3%2F5RUJrAhQ%2FMA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYM5vAIqalDnEYxlAhAaiQCIAABiPqpq7QQoE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=LXG46kD5U6GYyD3%2F5RUJrAhQ%2FMA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYM5vAIqalDnEYxlAhAaiQCIAABiPqpq7QQoE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=jI4rV4cYobl9%2BcNZBlMTR208enc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -1147,8 +1149,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7685973576624688404",
     "publishedLabel": "2日前",
     "publishedAtEpoch": 1789530174,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAIAUVsEBFCAeAr2KWQAFLIDBIGqvVATEeeFES~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=grEFxnYHHQBk%2FQ%2B0mMiV0n8j%2FBw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAIAUVsEBFCAeAr2KWQAFLIDBIGqvVATEeeFES~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=I0JhkgqQM46skgbR1hamPWMkDN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAIAUVsEBFCAeAr2KWQAFLIDBIGqvVATEeeFES~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=I0JhkgqQM46skgbR1hamPWMkDN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAIAUVsEBFCAeAr2KWQAFLIDBIGqvVATEeeFES~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=grEFxnYHHQBk%2FQ%2B0mMiV0n8j%2FBw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -1371,10 +1374,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1248206833692180488",
     "publishedLabel": "3日前",
     "publishedAtEpoch": 1789459200,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg@420w_560h_1e_1c",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg@420w_560h_1e_1c",
       "https://i0.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg",
+      "https://i0.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg@420w_560h_1e_1c",
       "https://i1.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg@420w_560h_1e_1c",
       "https://i1.hdslb.com/bfs/new_dyn/0bd7a0dcaea96b70ac2c77f838192c79676200579.jpg"
     ],
@@ -1495,6 +1498,34 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
+    "id": "10e1745b9bf8a34838fc97f3",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Snow City Tales Pack ⏰Sep. 16, 09:00 - Sep. 29, 23:59 UTC [Pack Details] During the event, you can purchase the Snow Cit",
+    "body": "Snow City Tales Pack\n\n⏰Sep. 16, 09:00 - Sep. 29, 23:59 UTC\n\n[Pack Details]\nDuring the event, you can purchase the Snow City Tales Pack at a 54% discount. The pack contains Dynamic Camera Pose [Snow Dance Dream], Scene [Snowy Courtyard], and more.\n\n#LifeMakeover #DawnofMiracles",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2099418860743217610",
+    "publishedLabel": "4日前",
+    "publishedAtEpoch": 1789375436,
+    "imageUrl": "https://pbs.twimg.com/media/HSKiLGMaUAANvHw?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2099418860743217610"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HSKiLGMaUAANvHw?format=jpg&name=orig"
+    ],
+    "titleJa": "Snow City Tales Pack ⏰9月16日 09:00 - 9月29日 23:59 UTC [パック詳細] イベント期間中、Snow City Tales Packを購入できます",
+    "bodyJa": "Snow City Tales Pack\n\n⏰9月16日 09:00 - 9月29日 23:59 UTC\n\n[パック詳細]\nイベント期間中、Snow City Tales Packを54%割引で購入できます。このパックには、Dynamic Camera Pose [Snow Dance Dream]、Scene [Snowy Courtyard]などが含まれています。\n\n#LifeMakeover #DawnofMiracles",
+    "summaryJa": "・追加: Snow City Tales Packが期間限定で登場\n・期間: 9月16日 09:00 - 9月29日 23:59 UTC\n・内容: Dynamic Camera Pose [Snow Dance Dream]、Scene [Snowy Courtyard]などが含まれる\n・特典: イベント期間中、パックを54%割引で購入可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
     "id": "f3d951b46a7782beb40b6272",
     "region": "JAPAN",
     "platform": "公式TikTok",
@@ -1503,8 +1534,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7685277532077313301",
     "publishedLabel": "4日前",
     "publishedAtEpoch": 1789368114,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=xZP0JlxSXWVVh1jUYKiB1C6RbyI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QdzLTkFJsx1Qcn4wym7se1cWIyo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QdzLTkFJsx1Qcn4wym7se1cWIyo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=xZP0JlxSXWVVh1jUYKiB1C6RbyI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqBAbqInTrDFCelgrQu5fEDFCAVCApmvl5jAE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789941600&x-signature=SXE%2BoRGYQMiy0zNdZwj5BDKP5B8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
@@ -1969,6 +2001,34 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
+    "id": "ba449b27696a5bb0e5d704a3",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New Mind Travel Chapter - Moon Stealer Opens on Sep. 13. Growth is a solitary journey—climbing countless mountains and c",
+    "body": "New Mind Travel Chapter - Moon Stealer Opens on Sep. 13.\n\nGrowth is a solitary journey—climbing countless mountains and crossing vast rivers all on your own.\nIt's refusing to let the day end, yet finding the moonlight almost too bright.\n\n#LifeMakeover #DawnofMiracles",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2099098265224708592",
+    "publishedLabel": "5日前",
+    "publishedAtEpoch": 1789299000,
+    "imageUrl": "https://pbs.twimg.com/media/HRwjeLgbIAAwPLf?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2099098265224708592"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwjeLgbIAAwPLf?format=jpg&name=orig"
+    ],
+    "titleJa": "新「マインドトラベル」章 - 月を盗む者が9月13日に登場",
+    "bodyJa": "新「マインドトラベル」章 - 月を盗む者が9月13日に登場。\n\n成長とは孤独な旅路である。数えきれない山を登り、広大な川を渡る。すべては自分自身で。\n一日の終わりを拒みながらも、月明かりがあまりにも眩しすぎると感じる。\n\n#LifeMakeover #DawnofMiracles",
+    "summaryJa": "・追加: 新「マインドトラベル」章 - 月を盗む者が9月13日に登場\n・期間: 9月13日より開始",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
     "id": "836e45d805184e91072f9f0e",
     "region": "GLOBAL",
     "platform": "公式YouTube",
@@ -2020,6 +2080,62 @@
     "titleJa": "『きらめきパラダイス』星5セットコーデ動画『夢灯りの歌』の実録動画を公開✨",
     "bodyJa": "『きらめきパラダイス』のイベント『花園の祝宴』に登場する新星5セット「夢灯りの歌」の動画を公開✨\n\nーーーーーーーーーーーーーー\n\n次世代ガールズドリームRPG『きらめきパラダイス』好評配信中✨\n自由につくれる夢の世界へようこそ💖\n\nーーーーーーーーーーーーーー\n\n▼ダウンロードはこちらから\n\n▼関連サイト\n【公式X】\n\n【公式Instagram】\n\n【公式サイト】\n\n【公式TikTok】\n\n#ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
     "summaryJa": "・追加: キラパラのイベント「花園の祝宴」に登場する新星5セット「夢灯りの歌」の動画が公開されました\n・関連情報: 公式X、公式Instagram、公式サイト、公式TikTokへのリンクが掲載されています\n・ハッシュタグ: #ゲーム #女性向け #着せ替え #ファッション #メイク #キラパラ",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "a14e9e294cca057afb851c56",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Floral Perch Pack ⏰Sep. 14, 09:00 - Sep. 27, 23:59 UTC The pack contains 5-Star limited Handheld [Wandering Plum], 5-Sta",
+    "body": "Floral Perch Pack\n\n⏰Sep. 14, 09:00 - Sep. 27, 23:59 UTC\n\nThe pack contains 5-Star limited Handheld [Wandering Plum], 5-Star Makeup [Pad Rescue], Furniture [Violet Corridor], Luster Invitation x3, Energy x300, and Trend Color Chart x45. This pack can only be purchased once.",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2099090718107037786",
+    "publishedLabel": "5日前",
+    "publishedAtEpoch": 1789297201,
+    "imageUrl": "https://pbs.twimg.com/media/HRwjQahb0AEuvIV?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2099090718107037786"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwjQahb0AEuvIV?format=jpg&name=orig"
+    ],
+    "titleJa": "フローラル・パーチパック ⏰9月14日 09:00 - 9月27日 23:59 UTC",
+    "bodyJa": "フローラル・パーチパック\n\n⏰9月14日 09:00 - 9月27日 23:59 UTC\n\nこのパックには、★5限定ハンドヘルド[Wandering Plum]、★5メイク[Pad Rescue]、家具[Violet Corridor]、Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれています。このパックは1回のみ購入可能です。",
+    "summaryJa": "・追加: ★5限定ハンドヘルド[Wandering Plum]、★5メイク[Pad Rescue]、家具[Violet Corridor]を含むフローラル・パーチパックが登場\n・期間: 9月14日 09:00 - 9月27日 23:59 UTC\n・内容: Luster Invitation x3、Energy x300、Trend Color Chart x45が含まれる\n・購入条件: このパックは1回のみ購入可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "e86a2951188d60d13eed7a5c",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Popping Gifts ⏰Sep. 14, 09:00 - Sep. 21, 05:00 UTC [Reward Claim] Sep. 14, 09:00 - Sep. 22, 05:00 UTC Accumulate Popping",
+    "body": "Popping Gifts\n\n⏰Sep. 14, 09:00 - Sep. 21, 05:00 UTC\n\n[Reward Claim]\nSep. 14, 09:00 - Sep. 22, 05:00 UTC\n\nAccumulate Popping Points to earn the exclusive 4-Star Set [Woven Nocturne], Photo Frame [Citrus Pink], Trend Color Chart x13, Luster Invitation, and various material rewards",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2099083164832727414",
+    "publishedLabel": "5日前",
+    "publishedAtEpoch": 1789295400,
+    "imageUrl": "https://pbs.twimg.com/media/HRwjXBmbsAASYYu?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2099083164832727414"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwjXBmbsAASYYu?format=jpg&name=orig"
+    ],
+    "titleJa": "Popping Gifts ⏰9月14日 09:00 - 9月21日 05:00 UTC [報酬受け取り] 9月14日 09:00 - 9月22日 05:00 UTC Poppingポイントを貯める",
+    "bodyJa": "Popping Gifts\n\n⏰9月14日 09:00 - 9月21日 05:00 UTC\n\n[報酬受け取り]\n9月14日 09:00 - 9月22日 05:00 UTC\n\nPoppingポイントを貯めて、限定の★4セット「Woven Nocturne」、フォトフレーム「Citrus Pink」、トレンドカラーチャート×13、Luster Invitation、および各種素材報酬を獲得できます。",
+    "summaryJa": "・イベント名: Popping Gifts\n・期間: 9月14日 09:00 - 9月21日 05:00 UTC\n・報酬受け取り期間: 9月14日 09:00 - 9月22日 05:00 UTC\n・報酬: 限定★4セット「Woven Nocturne」、フォトフレーム「Citrus Pink」、トレンドカラーチャート×13、Luster Invitation、各種素材報酬",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -2103,6 +2219,34 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
+    "id": "bdad471ccb92525eac518632",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "Astro Story ⏰Sep. 13, 09:00 - Sep. 17, 05:00 UTC [Reward Claim] Sep. 13, 09:00 - Sep. 17, 05:00 UTC [Event Rewards] Earn",
+    "body": "Astro Story\n\n⏰Sep. 13, 09:00 - Sep. 17, 05:00 UTC\n\n[Reward Claim]\nSep. 13, 09:00 - Sep. 17, 05:00 UTC\n\n[Event Rewards]\nEarn Zodiac Points to obtain the 5-Star Accessory [Azure Realm], Diamond x30, Trend Color Chart x9, and more!\n\n#LifeMakeover #DawnofMiracles #GraceofPlume",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2098728328236851296",
+    "publishedLabel": "6日前",
+    "publishedAtEpoch": 1789210800,
+    "imageUrl": "https://pbs.twimg.com/media/HRwiELLbgAEw52-?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2098728328236851296"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwiELLbgAEw52-?format=jpg&name=orig"
+    ],
+    "titleJa": "アストロストーリー開催！報酬請求とイベント報酬の獲得",
+    "bodyJa": "アストロストーリー\n\n⏰9月13日 09:00 - 9月17日 05:00 UTC\n\n[報酬請求]\n9月13日 09:00 - 9月17日 05:00 UTC\n\n[イベント報酬]\n星座ポイントを獲得して、★5アクセサリー「Azure Realm」、ダイヤ×30、トレンドカラーチャート×9などを獲得しましょう！\n\n#LifeMakeover #DawnofMiracles #GraceofPlume",
+    "summaryJa": "・イベント名: アストロストーリー\n・期間: 9月13日 09:00 - 9月17日 05:00 UTC\n・報酬請求期間: 9月13日 09:00 - 9月17日 05:00 UTC\n・報酬: 星座ポイントで★5アクセサリー「Azure Realm」、ダイヤ×30、トレンドカラーチャート×9などを獲得可能",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
     "id": "51a594983bd546a27a8d6b55",
     "region": "KOREA",
     "platform": "公式X",
@@ -2128,7 +2272,7 @@
     "summaryJa": "・イベント名: 『심야 밀회』が開催\n・内容: 絵のマスをめくって絵を完成させ、4★限定セットを入手できる\n・メイン報酬: 4★セット「벽라춘 밀회」\n・期間: 9/13 10:30 〜 9/20 5:00",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "韓国公式原文の固有名詞『심야 밀회』『벽라춘 밀회』は現行用語集に公式日本語対応がなく、ハッシュタグは現行翻訳エンジンの保護対象。既存翻訳が『深夜の密会』『碧羅春密会』および日本語・英字タグへ創作・改変していたため、固有名詞とタグを原文表記へ戻した。",
     "solReviewed": true,
     "solLocked": true
@@ -2183,6 +2327,28 @@
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "15fb35188bbc4170b6b1e317",
+    "region": "GLOBAL",
+    "platform": "公式X",
+    "title": "New and Limited Pet Fashion Packs ⏰Sep. 12, 09:00 - Sep. 23, 23:59 UTC Packs Available: 1. Fairy's Bloom Kitten Fashion",
+    "body": "New and Limited Pet Fashion Packs\n\n⏰Sep. 12, 09:00 - Sep. 23, 23:59 UTC\n\nPacks Available:\n1. Fairy's Bloom Kitten Fashion Pack\n2. Star Sleep Pact Puppy Fashion Pack\n3. Starry Dreamer Bunny Fashion Pack\n4. Love Magic Litchi Meow Fashion Pack\n5. Diurnal Dream Fox Fashion Pack",
+    "sourceUrl": "https://x.com/LifeMakeover510/status/2098365941927035184",
+    "publishedLabel": "2026-09-11",
+    "publishedAtEpoch": 1789124400,
+    "imageUrl": "https://pbs.twimg.com/media/HRwh68WaAAAsCLQ?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/LifeMakeover510/status/2098365941927035184"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwh68WaAAAsCLQ?format=jpg&name=orig"
+    ]
   },
   {
     "id": "f619f6a331334f637b1f35ed",
@@ -2343,7 +2509,7 @@
     "solLocked": true,
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy"
+    "aiSummaryFormat": "facts-v2"
   },
   {
     "id": "f484e55b8df9d9feb669dd1e",
@@ -2354,8 +2520,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7683793156084600085",
     "publishedLabel": "2026-09-10",
     "publishedAtEpoch": 1789022506,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYAABCSqQEhAAVIIEpifCFUoCDtEClE5WCwxeg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=ijPOxiLVZw%2F3cyZE4yaQeoZW2aw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYAABCSqQEhAAVIIEpifCFUoCDtEClE5WCwxeg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=%2BVY8MdJLfe%2B%2BxzsmKM2jsMRILsI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYAABCSqQEhAAVIIEpifCFUoCDtEClE5WCwxeg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=%2BVY8MdJLfe%2B%2BxzsmKM2jsMRILsI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYAABCSqQEhAAVIIEpifCFUoCDtEClE5WCwxeg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=ijPOxiLVZw%2F3cyZE4yaQeoZW2aw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -2382,8 +2549,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7683792992850709780",
     "publishedLabel": "2026-09-10",
     "publishedAtEpoch": 1789022468,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAp7IbQVACnlrCDLBAgFeoPREfUkq5ECoADhiA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=c5NAeXEA3WQDbP0S3XUBMNBsNow%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAp7IbQVACnlrCDLBAgFeoPREfUkq5ECoADhiA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=rgdTuCbAf4l1XEsKhzB087bg7Sw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAp7IbQVACnlrCDLBAgFeoPREfUkq5ECoADhiA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=rgdTuCbAf4l1XEsKhzB087bg7Sw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAp7IbQVACnlrCDLBAgFeoPREfUkq5ECoADhiA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=c5NAeXEA3WQDbP0S3XUBMNBsNow%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -2397,6 +2565,62 @@
     "titleJa": "Life Makeover 新しいLightchase | SSRアライ [Roy - Ocean's Oath]「君はいつも自由だ。僕が君を愛しているからといって、君が僕を愛さなくてもいい」",
     "bodyJa": "Life Makeover 新しいLightchase | SSRアライ [Roy - Ocean's Oath]「君はいつも自由だ。僕が君を愛しているからといって、君が僕を愛さなくてもいい」 新バージョン -...",
     "summaryJa": "・追加: 新しいLightchaseとしてSSRアライ [Roy - Ocean's Oath]が登場",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "d10b69f2494b1bea7670554d",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "🎉 스타일라잇 1주년 축하 댓글 이벤트 어느덧 스타일라잇과 함께한 시간이 1년이 되었습니다. 지난 365일 동안 보내주신 사랑과 응원, 그리고 함께 만들어 온...",
+    "body": "🎉 스타일라잇 1주년 축하 댓글 이벤트\n\n어느덧 스타일라잇과 함께한 시간이 1년이 되었습니다. \n지난 365일 동안 보내주신 사랑과 응원, \n그리고 함께 만들어 온 소중한 추억에 진심으로 감사드립니다. 💖\n\n스타일라잇의 첫 번째 생일을 맞아 \n파트너 여러분의 축하 메시지를 남겨 주시면 더욱 뜻깊을 것 같아요. \n\n여러분의 따뜻한 축하와 응원이\n스타일라잇의 새로운 여정을 더욱 빛나게 만들어 줍니다. 🌟\n\n💌 참여 방법\n카페 이벤트 게시글 댓글에 스타일라잇 1주년 축하 메시지를 남겨 주세요.\n여러분의 따뜻한 축하와 응원, 기대되는 점을 자유롭게 적어 주시면 됩니다.\n\n🗓️ 이벤트 기간 \n9월 10일 ~ 9월 27일\n\n🎁 이벤트 보상 \n네이버페이 상품권 2만 원권: 100명\n\n🏆 당첨자 발표 \n이벤트 종료 후 3주 이내\n\n📛 유의사항\n- 이벤트 게시글 댓글로만 참여가 인정됩니다.\n- 이벤트 댓글을 삭제하거나 참여 방법을 지키지 않은 경우 당첨 대상에서 제외될 수 있습니다.\n- 이벤트와 무관하거나 운영 정책을 위반한 댓글은 사전 안내 없이 삭제될 수 있습니다.\n- 당첨자 발표 및 보상 지급 일정은 내부 사정에 따라 변경될 수 있으며, 변경 시 별도 안내해 드립니다.\n\n스타일라잇의 첫 번째 생일을 함께 축하해 주세요! \n앞으로도 여러분과 함께 더욱 반짝이는 이야기를 만들어 가겠습니다. 🎂✨\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2097870172316999874",
+    "publishedLabel": "2026-09-10",
+    "publishedAtEpoch": 1789006200,
+    "imageUrl": "https://pbs.twimg.com/media/HRwpNUbbQAA6B2q?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2097870172316999874"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwpNUbbQAA6B2q?format=jpg&name=orig"
+    ],
+    "titleJa": "🎉 Stylight 1周年お祝いコメントイベント",
+    "bodyJa": "🎉 Stylight 1周年お祝いコメントイベント\n\nStylightと一緒になった時間が、ついに1年になりました。\nこの365日間、送ってくださった愛と応援、そして共に創り上げてきた大切な思い出に心から感謝申し上げます。💖\n\nStylightの初めての誕生日を迎え、パートナーの皆様からお祝いのメッセージをいただけると、より一層意味深いものになると思います。\n\n皆様の温かいお祝いと応援が、Stylightの新たな旅路をさらに輝かせてくれます。🌟\n\n💌 参加方法\nカフェのイベント投稿に、Stylight 1周年のお祝いメッセージを残してください。\n皆様の温かいお祝いと応援、期待していることを自由に書いてください。\n\n🗓️ イベント期間\n9月10日〜9月27日\n\n🎁 イベント報酬\nNaver Pay商品券 20,000ウォン券：100名\n\n🏆 当選者発表\nイベント終了後3週間以内\n\n📛 注意事項\n- イベント投稿のコメントでのみ参加が認められます。\n- イベントコメントを削除したり、参加方法を守らなかった場合は当選対象から除外されることがあります。\n- イベントと無関係なコメントや運営ポリシーに違反したコメントは、事前通知なく削除されることがあります。\n- 当選者発表および報酬の支払いスケジュールは、社内事情により変更される場合があり、変更した場合は別途お知らせいたします。\n\nStylightの初めての誕生日を一緒にお祝いしましょう！\n今後も皆様と共に、さらに輝く物語を創り上げていきます。🎂✨\n\n#Stylight #Stylight1周年 #Stylightイベント",
+    "summaryJa": "・追加: Stylight 1周年お祝いコメントイベントが開催\n・期間: 9月10日〜9月27日\n・参加方法: カフェのイベント投稿に1周年のお祝いメッセージをコメント\n・報酬: Naver Pay商品券 20,000ウォン券を100名にプレゼント",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "8a7c06b310355745c2e8d753",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "🎉 스타일라잇 1주년 이벤트 페이지 오픈 스타일라잇과 함께 걸어온 발자취를 돌아보고, 우리만의 소중한 추억을 다시 만나 보세요",
+    "body": "🎉 스타일라잇 1주년 이벤트 페이지 오픈\n\n스타일라잇과 함께 걸어온 발자취를 돌아보고, \n우리만의 소중한 추억을 다시 만나 보세요! ✨\n\n🕙 이용 기간 \n9월 10일 10:30 ~ 9월 26일 05:00\n\n📌 개인 데이터 리포트\n\n이벤트 기간 동안 게임 메인 화면 왼쪽 상단의 \n‘1주년’ 아이콘을 통해 나만의 활동 기록을 확인할 수 있습니다.\n\n※ 메인 스토리 4-8 클리어 후 이용 가능합니다. \n※ 데이터는 2026년 9월 3일까지 집계된 기록을 기준으로 합니다. \n※ 9월 4일 이후 가입한 파트너님은 개인 리포트가 제공되지 않습니다. \n\n📖 스타일라잇 1주년 기록\n\n1년 동안 스타일라잇 세계에서 펼쳐진 주요 사건과 \n잊지 못할 순간들을 한눈에 만나보세요.\n\n👉 1주년 기록 바로가기 \n\n\n지나온 발자취를 함께 돌아보고, \n앞으로도 더 많은 빛나는 추억을 만들어 가요! 💖\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇이벤트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2097868914621317509",
+    "publishedLabel": "2026-09-10",
+    "publishedAtEpoch": 1789005900,
+    "imageUrl": "https://pbs.twimg.com/media/HRwmu3GbsAASMG3?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2097868914621317509"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRwmu3GbsAASMG3?format=jpg&name=orig"
+    ],
+    "titleJa": "🎉 Stylight 1周年イベントページオープン Stylightと共に歩んできた軌跡を振り返り、私たちだけの大切な思い出をもう一度見つけましょう",
+    "bodyJa": "🎉 Stylight 1周年イベントページオープン\n\nStylightと共に歩んできた軌跡を振り返り、\n私たちだけの大切な思い出をもう一度見つけましょう！✨\n\n🕙 利用期間\n9月10日 10:30 〜 9月26日 05:00\n\n📌 個人データレポート\n\nイベント期間中、ゲームのメイン画面左上の\n「1周年」アイコンから、あなた自身の活動記録を確認できます。\n\n※ メインストーリー4-8クリア後に利用可能です。\n※ データは2026年9月3日までに集計された記録を基準とします。\n※ 9月4日以降に登録されたパートナー様には個人レポートは提供されません。\n\n📖 Stylight 1周年記録\n\n1年間でStylightの世界で繰り広げられた主要な出来事や\n忘れられない瞬間を一度に確認できます。\n\n👉 1周年記録はこちら\n\n過ぎ去った軌跡を共に振り返り、\nこれからもさらに輝く思い出をたくさん作っていきましょう！💖\n\n#Stylight #Stylight1周年 #Stylightイベント",
+    "summaryJa": "・追加: Stylight 1周年イベントページがオープン\n・期間: 9月10日 10:30 〜 9月26日 05:00\n・機能: メインストーリー4-8クリア後、「1周年」アイコンから個人データレポートを確認可能\n・データ基準: 2026年9月3日までの記録を基準とする\n・対象外: 9月4日以降に登録したパートナー様は個人レポートの対象外",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -2469,9 +2693,14 @@
         "platform": "公式YouTube",
         "label": "YouTube",
         "url": "https://www.youtube.com/watch?v=LYcQDHb_FZQ"
+      },
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2097867660138574309"
       }
     ],
-    "sourceCount": 1,
+    "sourceCount": 2,
     "imageUrls": [
       "https://i1.ytimg.com/vi/LYcQDHb_FZQ/hqdefault.jpg"
     ],
@@ -2511,6 +2740,65 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
+    "id": "018deebc87f8e18b7a14248c",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "9월 10일(목) 신규 업데이트 '심연의 꽃' 릴리스",
+    "body": "9월 10일(목) 신규 업데이트 '심연의 꽃' 릴리스!\n\n차가운 돌에 잠들어 있던 생명이 깨어나고,\n깊은 대지의 불꽃이 새로운 세계를 빚어냅니다.\n\n갈라진 틈 사이로 피어난 푸른 잎,\n굳어진 용암 위에 펼쳐진 새로운 땅.\n\n서로 다른 두 존재가 마주한 순간,\n재생과 창조의 이야기가 시작됩니다.\n\n새롭게 펼쳐지는 『심연의 꽃』의 세계와\n당신만의 특별한 이야기를 만나보세요. ✨\n\n▶ 게임 다운로드\n\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #심연의꽃",
+    "sourceUrl": "https://x.com/stylight_kr/status/2097860106247655502",
+    "publishedLabel": "2026-09-10",
+    "publishedAtEpoch": 1789003800,
+    "imageUrl": "https://pbs.twimg.com/media/HRvhIDhbcAAMbp4?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2097860106247655502"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRvhIDhbcAAMbp4?format=jpg&name=orig"
+    ],
+    "titleJa": "9月10日(木) 新規アップデート「深淵の花」リリース",
+    "bodyJa": "9月10日(木) 新規アップデート「深淵の花」がリリースされます！\n\n冷たい石に眠っていた生命が目覚め、\n深い大地の炎が新しい世界を創り出します。\n\n割れた隙間から咲いた青い葉、\n固まった溶岩の上に広がる新しい大地。\n\n異なる二つの存在が出会った瞬間、\n再生と創造の物語が始まります。\n\n新しく広がる『深淵の花』の世界と\nあなただけの特別な物語に出会ってみてください。✨\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
+    "summaryJa": "・追加: 新規アップデート「深淵の花」がリリース\n・期間: 9月10日(木)より開始",
+    "aiProcessed": true,
+    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
+    "id": "bacf270780ef12cbe501cf6a",
+    "region": "KOREA",
+    "platform": "公式X",
+    "title": "신규 상시 빛 추적 『개화』 내일 OPEN 내일 업데이트와 함께 신규 6★·5★ 세트와 SSR 인연이 상시 빛 추적 『개화』에 등장합니다. ✨ 새로운 빛이 피어나는 ...",
+    "body": "신규 상시 빛 추적 『개화』 내일 OPEN\n\n내일 업데이트와 함께\n신규 6★·5★ 세트와 SSR 인연이 상시 빛 추적 『개화』에 등장합니다. ✨\n\n새로운 빛이 피어나는 순간,\n상시 빛 추적 『개화』를 만나보세요!\n\n🎁 1주년 감사 선물\n1주년을 맞아 감사의 마음을 담아\n우편함에서 플라워 초대장 10개를 받아보실 수 있습니다.\n\n🕙 수령 기간\n9월 10일 10:30 ~ 9월 12일 23:59\n\n지난 1년 동안 스타일라잇과 함께해 주신\n모든 스타일 파트너 여러분께 진심으로 감사드립니다.\n\n내일, 새로운 빛과 함께\n스타일라잇의 1주년을 더욱 특별하게 즐겨보세요. 💐\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇업데이트",
+    "sourceUrl": "https://x.com/stylight_kr/status/2097622288862412824",
+    "publishedLabel": "2026-09-09",
+    "publishedAtEpoch": 1788947100,
+    "imageUrl": "https://pbs.twimg.com/media/HRve7DvaIAAisOT?format=jpg&name=orig",
+    "sources": [
+      {
+        "platform": "公式X",
+        "label": "X",
+        "url": "https://x.com/stylight_kr/status/2097622288862412824"
+      }
+    ],
+    "sourceCount": 1,
+    "imageUrls": [
+      "https://pbs.twimg.com/media/HRve7DvaIAAisOT?format=jpg&name=orig"
+    ],
+    "titleJa": "新規常時光追『개화』明日オープン 明日アップデートと同時に新規6★・5★セットとSSR縁が常時光追『개화』に登場します。✨新しい光が咲き誇る...",
+    "bodyJa": "新規常時光追『개화』明日オープン\n\n明日アップデートと同時に\n新規6★・5★セットとSSR縁が常時光追『개화』に登場します。✨\n\n新しい光が咲き誇る瞬間、\n常時光追『개화』をぜひお試しください！\n\n🎁 1周年感謝プレゼント\n1周年を記念して感謝の気持ちを込めて\nメールボックスからフラワー招待状10個を受け取ることができます。\n\n🕙 受領期間\n9月10日 10:30 〜 9月12日 23:59\n\nこの1年間、Stylightとご一緒してくださった\nすべてのスタイルパートナーの皆様に心より感謝申し上げます。\n\n明日、新しい光と共に\nStylightの1周年をより特別なものに楽しんでください。💐\n\n#스타일라잇 #스타일라잇1주년 #스타일라잇업데이트",
+    "summaryJa": "・追加: 新規常時光追『개화』が明日オープン\n・追加: 新規6★・5★セットとSSR縁が常時光追『개화』に登場\n・プレゼント: 1周年感謝としてフラワー招待状10個をメールボックスで配布\n・期間: フラワー招待状の受領期間は9月10日 10:30 〜 9月12日 23:59",
+    "solEditReason": "韓国公式原文の固有名詞『개화』は現行用語集に公式日本語対応がなく、ハッシュタグは翻訳エンジンの保護対象のため、創作訳せず原文表記へ戻した。",
+    "solReviewed": true,
+    "solLocked": true,
+    "aiProcessed": true,
+    "aiModel": "GPT-5.6 Sol",
+    "aiSummaryFormat": "facts-v2"
+  },
+  {
     "id": "9bff3713e5b532754afc136c",
     "region": "GLOBAL",
     "platform": "公式TikTok",
@@ -2519,8 +2807,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7683465757015035156",
     "publishedLabel": "2026-09-09",
     "publishedAtEpoch": 1788946277,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okqAQeCRUC3ISAFVuBwQIahAAoCIgdfFZbTDEq~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=eZX0JB9nHSF4cNbBFO74JSaaTUg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okqAQeCRUC3ISAFVuBwQIahAAoCIgdfFZbTDEq~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=Z8%2F2S8bUbvtY9WjxlnrwqvhDkwc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okqAQeCRUC3ISAFVuBwQIahAAoCIgdfFZbTDEq~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=Z8%2F2S8bUbvtY9WjxlnrwqvhDkwc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/okqAQeCRUC3ISAFVuBwQIahAAoCIgdfFZbTDEq~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=eZX0JB9nHSF4cNbBFO74JSaaTUg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -2547,8 +2836,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7683463152083963156",
     "publishedLabel": "2026-09-09",
     "publishedAtEpoch": 1788945671,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/3bedf650f2ee42d6a116debe447051d2~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=%2BVyiKdE23Mbz55ZQfjZeI0ye%2Be8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/3bedf650f2ee42d6a116debe447051d2~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=bkrW83jhwkeJAf4rXOo2V66tGFw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
     "imageUrls": [
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/3bedf650f2ee42d6a116debe447051d2~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=bkrW83jhwkeJAf4rXOo2V66tGFw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/3bedf650f2ee42d6a116debe447051d2~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=%2BVyiKdE23Mbz55ZQfjZeI0ye%2Be8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
     ],
     "sources": [
@@ -2631,8 +2921,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7683455459075853589",
     "publishedLabel": "2026-09-09",
     "publishedAtEpoch": 1788943880,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0RCAk8fFC5qFBAxI3fCVOlDgEOCQzAlDxoNQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=kJ6fdKImJhLgIqTHaF%2BSS27RbPk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0RCAk8fFC5qFBAxI3fCVOlDgEOCQzAlDxoNQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=czRopK0EcKqf6pPFjm6IZgrqpqA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0RCAk8fFC5qFBAxI3fCVOlDgEOCQzAlDxoNQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=czRopK0EcKqf6pPFjm6IZgrqpqA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
       "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0RCAk8fFC5qFBAxI3fCVOlDgEOCQzAlDxoNQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=kJ6fdKImJhLgIqTHaF%2BSS27RbPk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
@@ -2811,10 +3102,10 @@
     "sourceUrl": "https://www.bilibili.com/opus/1245553832409169927",
     "publishedLabel": "2026-09-08",
     "publishedAtEpoch": 1788841500,
-    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg",
+    "imageUrl": "https://i0.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg@720w_406h_1e_1c",
     "imageUrls": [
-      "https://i0.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg",
       "https://i0.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg@720w_406h_1e_1c",
+      "https://i0.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg",
       "https://i1.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg@720w_406h_1e_1c",
       "https://i1.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg",
       "https://i2.hdslb.com/bfs/new_dyn/df4e60ddb1a8ee74db3deae33dbb8e9d676200579.jpg@720w_406h_1e_1c",
@@ -3013,7 +3304,7 @@
     "summaryJa": "・告知: 復刻追光イベント「烬土生花」がまもなく開催\n・期間: 9月9日10:00〜9月29日23:59\n・テーマ文: 「神火永焚，圣骨绿芽」",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "中国公式Bilibiliの固有名詞は「烬土生花」、テーマ文は「神火永焚，圣骨绿芽」。既存翻訳が未登録固有名詞を「燼土生花」「神火永焚、聖骨緑芽」と日本語字形へ創作置換していたため、原語保持へ修正。",
     "solReviewed": true,
     "solLocked": true
@@ -3105,7 +3396,7 @@
     "summaryJa": "・追加: 「长夏弥咏」外観パックが近日登場\n・期間: 9月8日10:00〜9月21日23:59\n・価格: 通常価格の46%（54%OFF）\n・内容: 撮影関連アイテム、チャット吹き出し、BGM、トレンドカラーカード×26、遇之钥×40\n・購入上限: 永久1回",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "中国公式原文の固有名詞「长夏弥咏」に公式日本語名の根拠がないため創作訳「夏至の歌」を原語保持へ修正。原文の「即将上架」は販売開始ではなく近日登場を意味するためsummaryも修正し、4.6折は通常価格の46%（54%OFF）として重複表記を整理。",
     "solReviewed": true,
     "solLocked": true
@@ -3293,7 +3584,7 @@
     "summaryJa": "・内容: 白露の節気に合わせた季節の挨拶\n・メッセージ: 秋が深まる中で、自分だけの芳香を見つけられるよう願う\n・ゲームタイトル: 以闪亮之名",
     "aiProcessed": true,
     "aiModel": "GPT-5.6 Sol",
-    "aiSummaryFormat": "legacy",
+    "aiSummaryFormat": "facts-v2",
     "solEditReason": "原文は白露の節気に合わせた季節投稿で、イベント開催の記述はない。既存summaryJaが『イベント名』『イベント告知』と誤認して原文にないイベント情報を追加していたため修正。",
     "solReviewed": true,
     "solLocked": true
@@ -3522,34 +3813,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "59f1a37d6e563b153a8b0cf6",
-    "region": "GLOBAL",
-    "platform": "公式YouTube",
-    "title": "Life Makeover New 4.3 Version | Dawn of Miracles Trailer",
-    "body": "New 4.3 Version | Dawn of Miracles PV: Major Announcement for the VME Rising Star\nNew Version - Dawn of Miracles available from Sep. 9 to Sep. 29!\n\n🎬 [Dawn of Miracles] Debut PV premiere!\n✨ [VME's Rising Star] Celebrating an epic debut!\n🎵 [Lead Single] A dedicated debut track!\n🌟 [Years in the Making] A flawless idol from day one!\n💖 [Destined Arrival] Our lucky egg is born for a dazzling journey!\n\nThe long wait in the shadows could never cool her burning passion.\nThis early autumn, welcome to her era.\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-    "sourceUrl": "https://www.youtube.com/watch?v=RGFsF0fXaiw",
-    "publishedLabel": "2026-09-06",
-    "publishedAtEpoch": 1788658238,
-    "imageUrl": "https://i3.ytimg.com/vi/RGFsF0fXaiw/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=RGFsF0fXaiw"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i3.ytimg.com/vi/RGFsF0fXaiw/hqdefault.jpg"
-    ],
-    "titleJa": "Life Makeover 新バージョン4.3「奇跡の夜明け」トレーラー公開",
-    "bodyJa": "新バージョン4.3「奇跡の夜明け」PV：VMEライジングスターに関する重要なお知らせ\n新バージョン「奇跡の夜明け」は9月9日から9月29日まで利用可能です！\n\n🎬 [奇跡の夜明け] デビューPV初公開！\n✨ [VMEライジングスター] 壮大なデビューを祝う！\n🎵 [リードシングル] 専用のデビュー曲！\n🌟 [長年の努力] 初日から完璧なアイドル！\n💖 [運命の到来] 輝かしい旅路のためのラッキーエッグが誕生！\n\n影での長い待ち時間は、彼女の燃える情熱を冷ますことはできませんでした。この初秋、彼女の時代へようこそ。\n\n#LifeMakeover #DawnofMiracles #GraceofPlume #ZeroGSweet",
-    "summaryJa": "・追加: 新バージョン4.3「奇跡の夜明け」が公開\n・期間: 9月9日〜9月29日\n・内容: 「奇跡の夜明け」デビューPV、VMEライジングスターの紹介、リードシングル、ラッキーエッグの登場",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "f06319c8ae3892b248ae377e",
     "region": "CHINA",
     "platform": "公式Bilibili · 記事",
@@ -3603,62 +3866,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "a2a3b4d6cc29f13540f362b5",
-    "region": "KOREA",
-    "platform": "公式YouTube",
-    "title": "5★ 『창세의 불꽃』 인게임 영상",
-    "body": "태초의 대지 깊은 곳에서, \n꺼지지 않는 불꽃이 깨어납니다.\n\n흑요석의 뼈 사이로 용암이 흐르고, \n호박빛 심장이 뜨거운 생명을 뛰게 합니다.\n\n모든 것을 태우는 불길은 \n무너진 자리 위에 새로운 세계를 빚어냅니다.\n\n종말의 불꽃이 지나간 곳, \n창조의 여왕이 다시 일어섭니다.\n\n9월 10일(목), 5★ 코스튬 『창세의 불꽃』 한정 출시!\n\n▶ 게임 다운로드 \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #심연의꽃",
-    "sourceUrl": "https://www.youtube.com/watch?v=A8d-jgyNM3s",
-    "publishedLabel": "2026-09-05",
-    "publishedAtEpoch": 1788578402,
-    "imageUrl": "https://i2.ytimg.com/vi/A8d-jgyNM3s/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=A8d-jgyNM3s"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i2.ytimg.com/vi/A8d-jgyNM3s/hqdefault.jpg"
-    ],
-    "titleJa": "5★『創世の炎』ゲーム内映像公開",
-    "bodyJa": "太古の大地の奥深くで、\n消えることのない炎が目覚めます。\n\n黒曜石の骨の間を溶岩が流れ、\n琥珀色の心が熱い生命を鼓動させます。\n\n全てを焼き尽くす炎は、\n崩壊した跡の上に新しい世界を形作ります。\n\n終焉の炎が過ぎ去った場所で、\n創造の女王が再び立ち上がります。\n\n9月10日（木）、5★コスチューム『創世の炎』が期間限定で登場！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
-    "summaryJa": "・追加: 5★コスチューム『創世の炎』が期間限定で登場\n・期間: 9月10日（木）から\n・入手: ゲーム内での期間限定販売",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "94ee907c5b653e9c304aedba",
-    "region": "KOREA",
-    "platform": "公式YouTube",
-    "title": "5★ 『기원의 꽃』 인게임 영상",
-    "body": "차가운 석고상에 시간이 남긴 균열이 피어납니다. \n갈라진 틈 사이로 연둣빛 새싹이 돋아나고, \n멈춰 있던 존재가 다시 숨을 되찾습니다.\n\n풍화된 날개와 바랜 금박은 지나온 세월을 품은 채, \n닫혀 있던 꽃덩굴을 스스로 펼쳐 새로운 생명을 맞이합니다.\n\n완벽한 모습으로 돌아가는 것이 아니라, \n상처와 결손을 품은 채 피어나는 새로운 아름다움.\n\n9월 10일(목), 5★ 코스튬 『기원의 꽃』 한정 출시!\n\n▶ 게임 다운로드 \n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #심연의꽃",
-    "sourceUrl": "https://www.youtube.com/watch?v=deHV9otZ5co",
-    "publishedLabel": "2026-09-05",
-    "publishedAtEpoch": 1788577505,
-    "imageUrl": "https://i1.ytimg.com/vi/deHV9otZ5co/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/watch?v=deHV9otZ5co"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i1.ytimg.com/vi/deHV9otZ5co/hqdefault.jpg"
-    ],
-    "titleJa": "5★『起源の花』ゲーム内映像公開",
-    "bodyJa": "冷たい石膏像に時が刻んだ亀裂が花開きます。\n割れた隙間から若葉が芽吹き、\n止まっていた存在が再び息を吹き返します。\n\n風化した翼と色褪せた金箔は、過ぎ去った年月を抱きしめ、\n閉ざされていた花蔓を自ら広げ、新たな生命を迎えます。\n\n完璧な姿に戻るのではなく、\n傷や欠損を抱えたまま咲き誇る新たな美しさ。\n\n9月10日（木）、5★コスチューム『起源の花』が期間限定で登場します！\n\n▶ ゲームダウンロード\n\n#Stylight #Stylight降臨 #Stylightアップデート #深淵の花",
-    "summaryJa": "・追加: 5★コスチューム『起源の花』が期間限定で登場\n・期間: 9月10日（木）より登場",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "dd7f0138caf648443dde300a",
     "region": "GLOBAL",
     "platform": "公式TikTok",
@@ -3667,9 +3874,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7681602059304471829",
     "publishedLabel": "2026-09-04",
     "publishedAtEpoch": 1788512351,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=RrPmrw4YvWRK3BK%2Bhe9kAjDb3Hk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=7QXZoeIHtoxYjW%2BgEGJe8k8Rv3M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=RrPmrw4YvWRK3BK%2Bhe9kAjDb3Hk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/dbc96d15d49547c6890fd02404b231fb~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=7QXZoeIHtoxYjW%2BgEGJe8k8Rv3M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
     ],
     "sources": [
       {
@@ -3695,10 +3902,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7681197788734246164",
     "publishedLabel": "2026-09-03",
     "publishedAtEpoch": 1788418225,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=frYw5z3Y672kJAkIiTfogxI4guc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=bCwi1%2BC5Ur%2FDGznre%2FyEd2xHXU4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=frYw5z3Y672kJAkIiTfogxI4guc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789941600&x-signature=8cbiB8hMfovg81WERbt8nx2kP8U%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oEAPp2raAYAGXiEBBzE2AQFC0IVqisRAYZlki~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=bCwi1%2BC5Ur%2FDGznre%2FyEd2xHXU4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -3716,95 +3922,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "7b7394138a0b3f33942cd410",
-    "region": "CHINA",
-    "platform": "公式サイト",
-    "title": "《以闪亮之名》全新4.4神迹初诞版本今日更新",
-    "body": "《以闪亮之名》全新4.4神迹初诞版本今日更新！过往蛰伏，难凉热忱！\n-->\n《以闪亮之名》\n属于你的高光秀场\n《以闪亮之名》全新4.4神迹初诞版本今日更新！过往蛰伏，难凉热忱！\n首页\n>\n新闻\n>\n正文\n分享到：\n-->\n2026-09-02 15:10:51\n今日（9月1日），《以闪亮之名》全新4.4神迹初诞版本正式重磅更新，从即日起至9月21日限时登陆！作为一款由UE引擎倾力打造、备受玩家喜爱的时尚生活游戏，《以闪亮之名》凭借极致细腻的光影渲染、超写实材质质感与持续突破的美术技术，不断拓宽时尚穿搭与沉浸式生活体验的美学边界。此次全新版本中，《以闪亮之名》带来颠覆级双限定套装！价值2亿法贝热彩蛋艺术复刻的六星神装圣翎祈世震撼登场，首创游戏史上最大包裹式羽翼、多重形态特效与珠宝级材质质感，演绎神圣鎏金的破壳神迹；首款全磁悬浮技术五星时装零重力甜同步上线，打破物理规则，融合机甲科技与甜品萌兔反差美学，解锁独一无二的星际甜酷风格。\n除此之外，全新版本还带来免费六星时装返场、全新 SSR 羁绊、边缘光谱主题家园家具、全新染色功能，还有多重限时福利活动与海量免费套装，玩法、颜值、福利全面焕新，一场兼具艺术质感与诚意的全新版本正式开启！过往蛰伏，难凉热忱，这个初秋，欢迎来到她的时代！\n全新4.4版本神迹初诞 | 六星套装圣翎祈世\n她曾站在空荡的排练室里，\n将同一首歌唱了一遍又一遍。\n光很亮，可只照向旁人。\n角落里的她握着旧麦克风，\n像握着一颗尚未孵化的梦。\n直到那天，被梦想指引的幸运终于降临。\n彩蛋开启，旋律倾泻而出。\n是她自己的声音。\n她的努力，值得被看见。\n【双形态连衣裙】连衣裙采用了双形态设计，一形态为常规腹部版中长裙，可以与腹腔镂空的短裙二形态自由切换，适配多种穿搭场景。\n【价值2亿华丽巨蛋演绎双形态座驾】座驾一形态，灵感取自法贝热彩蛋，整体呈现展开姿态，蛋壳如初绽花瓣环绕角色，营造华贵氛围；二形态蛋壳下移，角色成为画面里绝对的视觉中心，更凸显人物造型。坐凳的金属扶手以天使翅膀为设计元素，实现了神圣感与实用性有机结合。\n【有史以来最大翅膀】背饰首次采用包裹羽翼造型，双形态设计将会契合更多搭配思路。一形态巨幅羽翼自由舒展，游戏内有史以来最大翅膀与人物共画时，形成显著视觉量级对比，将羽翼元素的浪漫美感尽数呈现。羽翼末端如飘带垂落，呈现飘逸的视觉效果。二形态为包裹形态，轻盈羽翼向中心聚拢，将角色温柔环抱于羽翼之间，将神圣的视觉浪漫转化为可穿着的时尚艺术。\n【双形态特姿】双形态特姿将呈现新坐姿与新飞姿，自由切换让整体造型能够演绎多样的艺术表达。\n【双形态面饰】在设计面饰时，我们同时兼顾了合伙人神秘感叙事与妆容展示的需求，面饰中的流苏可垂落可隐藏，适配更多搭配。\n【kokoshnik帽型融入设计】帽子在设计时参考了俄罗斯传统头饰kokoshnik，同时使用金属莨苕纹融合法贝热彩蛋造型，重新演绎俄罗斯传统头饰kokoshnik的弧形结构。\n【版本主题曲】「神迹初诞」版本主题曲《The Light Within》特邀俄罗斯歌手ZINA BLESS（Zina Kuprianovich）倾情演唱，将在9月1日，跟随游戏更新上线游戏看板音乐以及各大音乐平台。\n【价值2亿华丽巨蛋的艺术延展】\n时装灵感源自俄罗斯法贝热彩蛋，法贝热彩蛋在俄国文化中象征力量与希望，开合之间蕴藏惊喜。历史上，法贝热彩蛋曾以2亿价格在拍卖行成交，足见其在珠宝艺术领取的珍贵价值。\n我们尝试将法贝热彩蛋的珠宝设计工艺融入时装设计，为整套时装赋予彩蛋的核心意象，同时用珐琅、钻石、玛瑙与金属共同构筑华丽的时装肌理，让华贵氛围转化为可以被穿戴的美学呈现。\n重工的欧泊、钻石与玛瑙簇拥裙身，烘托出独属于19世纪末20世纪初的俄式华贵氛围。裙形内部由金属裙撑塑造蛋壳形状，与蛋形座驾相呼应，有效提升了造型的整体效果。\n【珠宝光泽的绝美呈现】\n为了展示法贝热彩蛋中珠宝工艺的精致感，设计团队在材质与结构上做了多重设计。\n连衣裙一形态，胸口与腹部以珐琅工艺打造装饰结构，欧泊的变彩效应在光线流转间被激活，钻石与玛瑙以克制的姿态点缀其间，珐琅色彩层层叠加，呈现细腻的色调层次。\n内部金属裙撑塑造成蛋壳造型，与座驾蛋壳造型形成结构呼应，蝴蝶结采用金属珐琅材质，保持硬度与光泽感的同时，也为整体增添柔和的曲线。\n连衣裙",
-    "sourceUrl": "https://cms.zulong.com:443/jeecms/yslzmxw/4482.jhtml",
-    "publishedLabel": "2026-09-02",
-    "publishedAtEpoch": 1788361851,
-    "imageUrl": "https://cms.zulong.com/jeecms/r/cms/www/default/img/yslzm/yslzm_content/news_bg.jpg",
-    "sources": [
-      {
-        "platform": "公式サイト",
-        "label": "公式サイト",
-        "url": "https://cms.zulong.com:443/jeecms/yslzmxw/4482.jhtml"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://cms.zulong.com/jeecms/r/cms/www/default/img/yslzm/yslzm_content/news_bg.jpg",
-      "https://cms.zulong.com/jeecms/r/cms/www/default/img/yslzm/yslzm_content/news_banner.jpg",
-      "https://mystyle.archosaur.com/img/icon.png",
-      "https://cms.zulong.com:443/jeecms/u/cms/www/202609/04150458h5bz.jpg",
-      "https://cms.zulong.com:443/jeecms/u/cms/www/202609/04150644vxhi.jpg",
-      "https://cms.zulong.com:443/jeecms/u/cms/www/202609/04150933x9sg.jpg"
-    ],
-    "titleJa": "『以闪亮之名』新4.4神迹初诞バージョン本日更新",
-    "bodyJa": "『以闪亮之名』が新4.4神迹初诞バージョンで本日更新されました！\n\n本バージョンでは、2億法ベール彩蛋の芸術を復刻した★6神装「圣翎祈世」が初登場します。これはゲーム史上最大級の包み込み型羽翼、多重形態エフェクト、ジュエリー級の質感を持つ装飾品で、神聖な黄金の破殻の奇跡を表現しています。\n\nまた、初の全磁気浮上技術を用いた★5時装「零重力甜」も登場。物理法則を破り、メカニカルな技術とスイーツのような萌え兔の対比美学を融合させた、ユニークな星間スイートクールスタイルを解禁できます。\n\nその他、無料の★6時装返却、新しいSSR絆、エッジスペクトルテーマの家具、新しい着色機能、そして多数の期間限定特典イベントや大量の無料セットが追加されました。プレイ、ビジュアル、特典が全面的に刷新された、芸術性と誠意に満ちた新バージョンが正式に始まります！\n\n【★6セット「圣翎祈世」】\nこのセットは、法ベール彩蛋からインスピレーションを得ており、彩蛋が持つ「力と希望」の象徴性を表現しています。装飾にはエナメル、ダイヤモンド、瑪瑙、金属が用いられ、華麗なテクスチャを構築しています。\n\n【双形態ドレス】\nドレスは二つの形態で構成されています。通常は腹部が露出したミディ丈のスカートですが、腹部が空洞になったショートスカートの二形態と自由に入れ替えることができ、様々な着こなしに対応します。\n\n【2億法ベール彩蛋を表現した二形態の乗り物】\n乗り物の形態1は法ベール彩蛋から着想を得ており、全体が展開した姿で、殻が初咲きの花びらのようにキャラクターを囲み、豪華な雰囲気を醸し出します。形態2では殻が下がり、キャラクターが画面の絶対的な視覚的中心となり、人物の造形をより際立たせます。座席の金属製アームレストは天使の翼をデザイン要素としており、神聖さと実用性を融合させています。\n\n【史上最大級の翼】\n背飾は初めて包み込み型の羽翼を採用し、二形態で異なる着こなしを可能にします。形態1では巨大な羽翼が自由に広がり、ゲーム内で史上最大級の翼とキャラクターが並ぶことで、羽翼のロマンチックな美しさが最大限に表現されます。羽翼の端はリボンが垂れ下がるような視覚効果を生み出します。形態2では包み込み型となり、軽やかな羽翼が中心に集まり、キャラクターを優しく包み込むことで、神聖な視覚的ロマンスを着用可能なファッションアートへと昇華させます。\n\n【二形態の特技】\n二形態の特技では、新しい座り方と飛び方を表現し、自由な切り替えで多様な芸術的表現を可能にします。\n\n【二形態の面飾】\n面飾のデザインでは、プレイヤーの神秘的な物語性とメイクアップの展示という二つのニーズを両立させました。面飾のフリンジは垂らすことも隠すこともでき、より多くの着こなしに対応します。\n\n【ココシュニク帽の融合デザイン】\n帽子はロシアの伝統的な頭飾りであるココシュニクを参考にしつつ、金属のアカンサス模様と法ベール彩蛋の造型を融合させ、ココシュニクの弧形構造を再解釈しています。\n\n【バージョンテーマ曲】\n「神迹初诞」バージョンのテーマ曲『The Light Within』は、ロシア歌手ZINA BLESS（Zina Kuprianovich）が歌唱を担当し、9月1日のゲーム更新に合わせてゲーム内看板音楽および各種音楽プラットフォームで公開されます。\n\n【2億法ベール彩蛋の芸術的展開】\n時装のインスピレーションはロシアの法ベール彩蛋に由来します。法ベール彩蛋はロシア文化において力と希望の象徴であり、開閉の間に驚きを秘めています。歴史的に、法ベール彩蛋は2億の価格でオークションで取引されており、そのジュエリーアートとしての貴重な価値が伺えます。\n\n我々は法ベール彩蛋のジュエリーデザイン技術を時装デザインに取り入れ、セット全体に彩蛋の核となるイメージを付与しました。さらに、エナメル、ダイヤモンド、瑪瑙、金属を組み合わせて華麗な時装のテクスチャを構築し、豪華な雰囲気を着用可能な美学へと変換しています。\n\n重厚なオパール、ダイヤモンド、瑪瑙がスカートを彩り、19世紀末から20世紀初頭のロシアの豪華な雰囲気を醸し出しています。スカート内部は金属製の芯で殻の形状を形成し、卵型の乗り物と呼応して全体の造形効果を高めています。\n\n【ジュエリーの輝きの絶美な表現】\n法ベール彩蛋のジュエリー技術の精緻さを表現するため、デザインチームは素材と構造の両面で多重な設計を行いました。\nドレスの形態1では、胸元と腹部にエナメル技法による装飾構造を施し、光の動きに合わせてオパールの変色効果を活性化させています。ダイヤモンドと瑪瑙が控えめに点在し、エナメルの色彩が層をなして繊細な色調の階層を表現しています。\n内部の金属製芯は殻の形状を成形し、乗り物の殻の形状と構造的な呼応を生み出しています。リボンは金属エナメル素材を採用し、硬さと光沢感を保ちつつ、全体に柔らかな曲線美を加えています。",
-    "summaryJa": "・追加: 新4.4神迹初诞バージョンが本日更新\n・追加: 2億法ベール彩蛋を復刻した★6神装「圣翎祈世」が登場\n・追加: 全磁気浮上技術を用いた★5時装「零重力甜」が初登場\n・追加: 無料★6時装の返却、新しいSSR絆、エッジスペクトルテーマの家具、新しい着色機能が追加\n・期間: 9月1日から9月21日まで期間限定でログイン可能",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "1f06fc8509ac091179e8eff4",
-    "region": "GLOBAL",
-    "platform": "公式YouTube",
-    "title": "SR Ally [Gerald - Our Way Home] - Evolve",
-    "body": "SR Ally [Gerald - Our Way Home] - Evolve\n\n\"We were once inseparable. You knew every part of me as intimately as your own.\"\n\n#PrismaticFantasy | Event available from Sep. 2, 09:00 to Sep. 22, 23:59!\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
-    "sourceUrl": "https://www.youtube.com/shorts/4bauEIHWvPo",
-    "publishedLabel": "2026-09-02",
-    "publishedAtEpoch": 1788351321,
-    "imageUrl": "https://i1.ytimg.com/vi/4bauEIHWvPo/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/4bauEIHWvPo"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i1.ytimg.com/vi/4bauEIHWvPo/hqdefault.jpg"
-    ],
-    "titleJa": "SRアライ [ジェラルド - Our Way Home] - 進化",
-    "bodyJa": "「かつて私たちは、離れられないほど親密でした。あなたは私を、あなた自身と同じくらい深く知っていた。」\n\n#PrismaticFantasy | イベント期間は9月2日09:00から9月22日23:59まで！\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
-    "summaryJa": "・追加: SRアライ [ジェラルド - Our Way Home] - 進化が登場\n・期間: 9月2日09:00から9月22日23:59まで",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "fa8265506a39a6d8ce795dda",
-    "region": "GLOBAL",
-    "platform": "公式YouTube",
-    "title": "SR Ally [Gerald - Our Way Home] - Default",
-    "body": "SR Ally [Gerald - Our Way Home] - Default\n\n\"We were once inseparable. You knew every part of me as intimately as your own.\"\n\n#PrismaticFantasy | Event available from Sep. 2, 09:00 to Sep. 22, 23:59!\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
-    "sourceUrl": "https://www.youtube.com/shorts/_Ys5GvAvE-Y",
-    "publishedLabel": "2026-09-02",
-    "publishedAtEpoch": 1788350432,
-    "imageUrl": "https://i4.ytimg.com/vi/_Ys5GvAvE-Y/hqdefault.jpg",
-    "sources": [
-      {
-        "platform": "公式YouTube",
-        "label": "YouTube",
-        "url": "https://www.youtube.com/shorts/_Ys5GvAvE-Y"
-      }
-    ],
-    "sourceCount": 1,
-    "imageUrls": [
-      "https://i4.ytimg.com/vi/_Ys5GvAvE-Y/hqdefault.jpg"
-    ],
-    "titleJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト",
-    "bodyJa": "SRアライ [ジェラルド - Our Way Home] - デフォルト\n\n「かつて私たちは、切り離せないほど親密だった。あなたは私を、あなた自身のものと同じくらい深く知っていた。」\n\n#PrismaticFantasy | イベント期間は9月2日09:00から9月22日23:59まで！\n#LifeMakeoverWorld #VitrumTalk #MistyMaple",
-    "summaryJa": "・追加: SRアライ [ジェラルド - Our Way Home] - デフォルトが登場\n・期間: 9月2日09:00から9月22日23:59まで",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "0846a637496dbe2f3447cefc",
     "region": "GLOBAL",
     "platform": "公式TikTok",
@@ -3813,9 +3930,9 @@
     "sourceUrl": "https://www.tiktok.com/@lifemakeoverofficial/video/7680854149625285909",
     "publishedLabel": "2026-09-02",
     "publishedAtEpoch": 1788338215,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=wwKF5mxMVm7EyodZZdmAK5YDwbU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=rRI3Ff2KfN83eaj%2BzS%2B1KkjyCug%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=wwKF5mxMVm7EyodZZdmAK5YDwbU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oU88EFCqBgAIaCVhAii7vAUAXtcBli0fepN38C~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=rRI3Ff2KfN83eaj%2BzS%2B1KkjyCug%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -3897,10 +4014,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7680144964717743380",
     "publishedLabel": "2026-08-31",
     "publishedAtEpoch": 1788173095,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocVwHA5BKIhAwU2f2CEAFgB1AnMiigGqBwD2WS~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=uJay2WZ%2B9%2F4Uu7PUymWRPtJYa%2Bg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocVwHA5BKIhAwU2f2CEAFgB1AnMiigGqBwD2WS~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=uoFDWx10UsjtNGl1xJ4LRICNoe0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocVwHA5BKIhAwU2f2CEAFgB1AnMiigGqBwD2WS~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=uJay2WZ%2B9%2F4Uu7PUymWRPtJYa%2Bg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocVwHA5BKIhAwU2f2CEAFgB1AnMiigGqBwD2WS~tplv-tiktokx-origin.image?dr=9636&x-expires=1789941600&x-signature=s3r1RRWMk6td5dzEBZ%2Fkw78XQSY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocVwHA5BKIhAwU2f2CEAFgB1AnMiigGqBwD2WS~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=uoFDWx10UsjtNGl1xJ4LRICNoe0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -3926,9 +4042,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7680142873425136917",
     "publishedLabel": "2026-08-31",
     "publishedAtEpoch": 1788172608,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUwVVVtnqEQACABeWClFJCkEIFDAldA5Xgf4R0~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=UeBLfUdYaC4UFzwTr5%2B1Z7Ejvdo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUwVVVtnqEQACABeWClFJCkEIFDAldA5Xgf4R0~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=SB9ypDWj195eQxquGQ2%2F5u9OcA8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUwVVVtnqEQACABeWClFJCkEIFDAldA5Xgf4R0~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=UeBLfUdYaC4UFzwTr5%2B1Z7Ejvdo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUwVVVtnqEQACABeWClFJCkEIFDAldA5Xgf4R0~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=SB9ypDWj195eQxquGQ2%2F5u9OcA8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4099,9 +4215,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674936529696918805",
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786960412,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=KqriKmao3Rl7deM%2BiKD0%2BhWmO14%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=I%2FeAAjvONGleAQIY6kPVsVyhz%2BQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1789945200&x-signature=KqriKmao3Rl7deM%2BiKD0%2BhWmO14%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-photomode-sg/f798adfc1f504011bad7f6642a67c475~tplv-photomode-image.jpeg?dr=9616&x-expires=1789948800&x-signature=I%2FeAAjvONGleAQIY6kPVsVyhz%2BQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
     ],
     "sources": [
       {
@@ -4127,9 +4243,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674925307157138709",
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786957799,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=4zuPYTGiQFAl9p8roxuN3Oi6YWM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=%2BCnkaZV9NkbV6SuMepC6HtSv4nw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=4zuPYTGiQFAl9p8roxuN3Oi6YWM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oQzADloivPBzEPzC9aAAQ73Mz8ACiIqLIaYvA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=%2BCnkaZV9NkbV6SuMepC6HtSv4nw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4155,9 +4271,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674843162795396373",
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786938673,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=YlBXN4ilYkkoPHNSjFc9IiG5kso%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=7g7KkmdHlxC5WQilhOClLKZUc%2Fs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=YlBXN4ilYkkoPHNSjFc9IiG5kso%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ooAABCQqQEGAAVhIUMCfCFhgCDbbhoEfSE1hsg~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=7g7KkmdHlxC5WQilhOClLKZUc%2Fs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4183,9 +4299,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674841080222878997",
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786938188,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=1i1ZuTdEv%2BS0SjKmUlCzORePD8c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=O2aFgTPsdix%2BVgjFpDITZs12oU4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=1i1ZuTdEv%2BS0SjKmUlCzORePD8c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/owAAaG1bAgKmiMgBiUACoEIBCwnIQAwBskfbxx~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=O2aFgTPsdix%2BVgjFpDITZs12oU4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4211,9 +4327,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7674837363520015637",
     "publishedLabel": "2026-08-17",
     "publishedAtEpoch": 1786937323,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=fEaENrriNGQop6o4JQ%2BqdxYjJ2g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=wNDiaKpwTJA2MMEUAO9w4gMKLjY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=fEaENrriNGQop6o4JQ%2BqdxYjJ2g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oUqE8NggfAIyD9EnADVq13CWfEBQFCAcCnAQ2q~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=wNDiaKpwTJA2MMEUAO9w4gMKLjY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4379,9 +4495,9 @@
     "sourceUrl": "https://www.tiktok.com/@kiramekiparadise_jp/video/7668217389774900496",
     "publishedLabel": "2026-07-30",
     "publishedAtEpoch": 1785395990,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=s%2FSaECce%2BRS%2FSRNzPwvB3%2BDc3b4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=o%2FgdaOkrgPBE66xjFgpQ%2F5Br87E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=s%2FSaECce%2BRS%2FSRNzPwvB3%2BDc3b4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIxsIpiqwDAzeRACAvFvBVqADCAg3C2aQkfFVE~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=o%2FgdaOkrgPBE66xjFgpQ%2F5Br87E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4499,11 +4615,11 @@
       "https://img2-tc.tapimg.com/video/cover/FikQ0ZvApp5WjZl4Ml7_VoLUzW7C_20251026000353.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lgPStcrVlWGJURj3mSF3l-haymFF_20260720132955.png/_tap_ugc.jpg",
       "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/Fm38EIEGvI4DK0ANpmDhxInyQJDi_20260712181930.png/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
       "https://img-tc.tapimg.com/video-picture/tid-6a49fd23878f47d09fa8af94/first.jpg/_tap_ugc_m.jpg",
       "https://img-tc.tapimg.com/video-picture/tid-6a7ac824f524264b3e64db98/first.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FqkEoCu2Rh4RclsDKzwmjm-ar-BD_20260318104326.jpeg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FthHcvTKp7m2gBSKYRLGfg2hD8Q5_20260628113646.jpg/_tap_ugc_m.jpg",
       "https://img-tc.tapimg.com/market/images/0c715be83f8f724efb7bedd33934122a.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lgPStcrVlWGJURj3mSF3l-haymFF_20260720132955.png"
@@ -4539,7 +4655,7 @@
       "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/video/cover/FikQ0ZvApp5WjZl4Ml7_VoLUzW7C_20251026000353.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/li2v6SupIGM90YsZmxdseNmxPqac_20260712222323.jpg/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/video-picture/tid-6a9c0efef524264b3e67e1eb/first.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lmLneEC1aOi0N0ctHo6_K7RP03FD_20260827133743.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fg406acKmw39UKNAeE30cGpo_Cko_20260117141225.png/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FiC_xudWmBZgwj7dfElmqkJS3I6U_20260717144245.jpg/_tap_banner.jpg",
       "https://img2-tc.tapimg.com/moment/etag/Fq0BgIwNwdqABT7qZhd-0OIArwuB_20260704085627.png/_tap_ugc_m.jpg",
@@ -4578,14 +4694,14 @@
       "https://img2-tc.tapimg.com/video/cover/lhwitKx2tv1juAzHDC-uNPaF2YJt_20260828152628.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/loQL42cR3elvMkD9rJfyvwkvjtij_20260901104208.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FvfwBGmW-gRY-Jl60Co-uNGiVoq7_20260630170905.jpg/_tap_ugc.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/llRWZdqJOmmPFKM-XdoXZVHmvphQ_20260831102836.png/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lv8qUnZf-5Ik3tWw7TvwpCCrTuAc_20260828185029.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/ltLYe5kXojAosvy_LuanJq2ARa-7_20260901104311.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/lreu0sNTeBo7Miwe2rtQQUxE16Yi_20260828183904.jpg/_tap_ugc_m.jpg",
-      "https://img-tc.tapimg.com/video-picture/tid-6a9c0efef524264b3e67e1eb/first.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/lvdcAzKcI3WAxv9zYfRRSoTNb_Xa_20260608191200.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/llRWZdqJOmmPFKM-XdoXZVHmvphQ_20260831102836.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/ltLYe5kXojAosvy_LuanJq2ARa-7_20260901104311.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/lkLqeW7VQDpQLqhjk5TrxmmlE80f_20260630005146.jpg/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/ljn8zB6l-OYKRYDHyYdTds4ltsLZ_20260907110134.jpg/_tap_ugc_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FtahnP2nmyWsqJOXEPLtJ3Eu30Up_20260828170354.jpg/_tap_ugc_m.jpg",
-      "https://img2-tc.tapimg.com/moment/etag/FjKct8ZlgLvtB37EY3bxezu3j5pj_20260430130200.png/_tap_ugc_m.jpg",
+      "https://img2-tc.tapimg.com/moment/etag/FmKQYgTt7saUpZTwQabJAHcFE1DU_20260630112056.png/_tap_ugc_m.jpg",
       "https://img-tc.tapimg.com/market/images/0c715be83f8f724efb7bedd33934122a.jpg/_tap_banner_m.jpg",
       "https://img2-tc.tapimg.com/moment/etag/FvfwBGmW-gRY-Jl60Co-uNGiVoq7_20260630170905.jpg"
     ],
@@ -4613,9 +4729,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7598162863231995143",
     "publishedLabel": "2026-01-22",
     "publishedAtEpoch": 1769085150,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=t7YASgygCci1T9t6gKGKKspPr0w%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=9jpVKvzmnsC9JOy1P3AaJKRiUBQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=t7YASgygCci1T9t6gKGKKspPr0w%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEvbVCpXcyGiFYHkJBDLgACUhBfA2oAoIAeEh~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=9jpVKvzmnsC9JOy1P3AaJKRiUBQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4641,9 +4757,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7598162590203792647",
     "publishedLabel": "2026-01-22",
     "publishedAtEpoch": 1769085086,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=CENKk4ygCIfzNRbGEG%2BflJuYWUo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=4LmQ6yLzh%2BoNVAQJAR0hdBTEjow%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=CENKk4ygCIfzNRbGEG%2BflJuYWUo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/o0GvIuABvBGnA8lqAyiaHS6AiAX1AGalIuYEY~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=4LmQ6yLzh%2BoNVAQJAR0hdBTEjow%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4669,9 +4785,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7598162253593988370",
     "publishedLabel": "2026-01-22",
     "publishedAtEpoch": 1769085008,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=f9V1nFt44fifiM8gXAA1Lbopqxg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QKviKAWgOc83LeCdeWCmGfsuroM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=f9V1nFt44fifiM8gXAA1Lbopqxg%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIOVrcEBEAexnyUACNgJGVgEDfArFBAVcCAphI~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=QKviKAWgOc83LeCdeWCmGfsuroM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4697,9 +4813,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7597722361009392914",
     "publishedLabel": "2026-01-21",
     "publishedAtEpoch": 1768982587,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=iEJLUQQjqxfO74cLSSCGGANN2xM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=Z55Utcr65%2B7JXCinbxHeo8nF33s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=iEJLUQQjqxfO74cLSSCGGANN2xM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/osPeGJeGQIabW3lJgDOKDwnhhJeA8IfALAAHQA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=Z55Utcr65%2B7JXCinbxHeo8nF33s%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4725,9 +4841,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7595843282261822741",
     "publishedLabel": "2026-01-16",
     "publishedAtEpoch": 1768545080,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=peIzYmGkHyKY5kKvM2ak55rc1O0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=pUrwQiJX%2Fy7K%2BW2HFvAKMKDq0n8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=peIzYmGkHyKY5kKvM2ak55rc1O0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIAJAflqDBBpFABCwpE0d8E3aCUIeTZgoBVDNA~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=pUrwQiJX%2Fy7K%2BW2HFvAKMKDq0n8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4753,9 +4869,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7595833771115433236",
     "publishedLabel": "2026-01-16",
     "publishedAtEpoch": 1768542866,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=Nvdm%2BiEKKv3sdzSftXYBVRWtnmM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=1jFuXQpWEBis17ZNbqQabnXY7pI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=Nvdm%2BiEKKv3sdzSftXYBVRWtnmM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oA0AKjpacBVEOAiK8AkIhjmAAtBVwqfBlk0Bio~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=1jFuXQpWEBis17ZNbqQabnXY7pI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4781,9 +4897,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7593244379804994836",
     "publishedLabel": "2026-01-09",
     "publishedAtEpoch": 1767939976,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=r%2FEAMffIddR%2FBuuQ4MTk3n1to40%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=hpaabo2sPAumO3xu%2B2KgSqlCRuA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=r%2FEAMffIddR%2FBuuQ4MTk3n1to40%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oYEAgpoCaCJANgVzr4IABFEB9nDRJYALef9i2U~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=hpaabo2sPAumO3xu%2B2KgSqlCRuA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4809,9 +4925,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7592929622124268820",
     "publishedLabel": "2026-01-08",
     "publishedAtEpoch": 1767866691,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=TbtLmqPWpIG%2BqYOqajmtzCSarPQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=L%2B6u4OuLIvZJCJCDojzs0tzCmho%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=TbtLmqPWpIG%2BqYOqajmtzCSarPQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oIgCFEiDgcACVD1FfApVBAAwIifDOXQd4u6CzU~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=L%2B6u4OuLIvZJCJCDojzs0tzCmho%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4837,9 +4953,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7591710171974372616",
     "publishedLabel": "2026-01-05",
     "publishedAtEpoch": 1767582765,
-    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=nIciGPjfgYcWSrsj8txG6%2BZULrA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=hw8aXc7lEAOjqKK8fUt3XTK7LV8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=nIciGPjfgYcWSrsj8txG6%2BZULrA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oE5oADwEQAFyBFZfCgebOppBLBVMWAb3EIFCAk~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=hw8aXc7lEAOjqKK8fUt3XTK7LV8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -4865,9 +4981,9 @@
     "sourceUrl": "https://www.tiktok.com/@stylightofficial/video/7589944269771754770",
     "publishedLabel": "2025-12-31",
     "publishedAtEpoch": 1767171609,
-    "imageUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=qr20TXOJKXRk0XiNdx%2FHM817GLk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=YXhISUtfQy9Q9T71cDn%2F%2FCu9OXs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
     "imageUrls": [
-      "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1789945200&x-signature=qr20TXOJKXRk0XiNdx%2FHM817GLk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+      "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ocCVUIoQDi5XOCyEgEfeAjAAYFGNApBCVnGV9p~tplv-tiktokx-origin.image?dr=9636&x-expires=1789948800&x-signature=YXhISUtfQy9Q9T71cDn%2F%2FCu9OXs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
     ],
     "sources": [
       {
@@ -5565,34 +5681,6 @@
     "aiSummaryFormat": "facts-v2"
   },
   {
-    "id": "8e31d11fee705d7aaeafc0e5",
-    "region": "KOREA",
-    "platform": "公式X",
-    "title": "\"마녀의 꽃\" 팬아트 창작대회 OPEN",
-    "body": "<스타일라잇> \"마녀의 꽃\" 팬아트 창작대회 OPEN!\n\n✨따뜻한 연말을 위해 준비한 아크네 목도리, 케이크 기프티콘 그리고 행운상 경품! 이번에도 많은 참여 부탁드려요~\n\n[참여 안내]\n- 참여 기간: ~ 10/28까지(화)\n- 참여 대상: 전체 유저\n- 참여 방법: 마법 테마에 어울리는 스타일라잇 팬아트를 제작하여, SNS에 업로드 & 제출\n\n- 자세한 내용은 공식 카페에서 확인하세요!\nLINK: \n\n#스타일라잇 #스타일라잇창작대회 #스타일라잇마법카니발",
-    "sourceUrl": "https://x.com/stylight_kr/status/1976973067823046959",
-    "publishedLabel": "2025-10-11",
-    "publishedAtEpoch": 1760182084,
-    "imageUrl": "https://pbs.twimg.com/media/G2-b7HAbwAIciLn?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/G2-b7HAbwAIciLn?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/stylight_kr/status/1976973067823046959"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "「魔女の花」ファンアート制作コンテスト開催！",
-    "bodyJa": "Stylightにて「魔女の花」ファンアート制作コンテストが開催されます！\n\n✨温かい年末を祝して、アークネマフラー、ケーキギフト券、そしてラッキー賞の景品をご用意しました！皆様のたくさんのご参加をお待ちしております~\n\n[参加案内]\n- 参加期間: 10月28日（火）まで\n- 参加対象: 全ユーザー\n- 参加方法: 魔法をテーマにしたStylightのファンアートを制作し、SNSにアップロード＆提出\n\n- 詳細については公式カフェをご確認ください！\nLINK: \n\n#Stylight #Stylight創作コンテスト #Stylight魔法カーニバル",
-    "summaryJa": "・開催: 「魔女の花」ファンアート制作コンテストが開催\n・期間: 10月28日（火）まで\n・参加対象: 全ユーザー\n・参加方法: 魔法をテーマにしたStylightのファンアートを制作し、SNSにアップロード＆提出\n・特典: アークネマフラー、ケーキギフト券、ラッキー賞の景品あり",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
     "id": "51984f9b7b744f8135476842",
     "region": "GLOBAL",
     "platform": "公式X",
@@ -5617,34 +5705,6 @@
     "titleJa": "SSR [Ashley - Tale of Tails] プレビュー\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催",
     "bodyJa": "SSR [Ashley - Tale of Tails] プレビュー\n\n#PrincessAllAboard 新バージョン - Wonder Lullabyが10月8日から10月28日まで開催されます！\n\n「運命は残酷なのかもしれない。少なくとも、私たちは本当にお別れを告げるこの機会を与えられているのだから、そうではないだろうか？」\n\n#LifeMakeover",
     "summaryJa": "・追加: SSR [Ashley - Tale of Tails] プレビュー\n・イベント: #PrincessAllAboard 新バージョン - Wonder Lullabyが開催\n・期間: 10月8日〜10月28日",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
-  },
-  {
-    "id": "833466d1076764eddce17cd7",
-    "region": "KOREA",
-    "platform": "公式X",
-    "title": "스타일 파트너 여러분 안녕하세요. 달빛이 쏟아지고, 따뜻한 불빛이 모여 하나 되는 특별한 순간",
-    "body": "스타일 파트너 여러분 안녕하세요.\n\n달빛이 쏟아지고, 따뜻한 불빛이 모여 하나 되는 특별한 순간!\n\n다가오는 추석을 맞아 스타일 파트너 여러분께 선물을 준비했습니다.\n\n추석 선물 수령기간 내에 게임에 접속하시면 메일함에서\n다이아 200개, 트렌드 컬러 카드 77개, 골드 30,000 선물을 받아보실 수 있습니다.\n\n선물 수령 기간: 10/6(월) 0:00 ~10/8(수) 23:59 까지\n\n▶ 게임 다운로드 \n- \n\n풍성한 한가위 보내시고, 오늘도 스타일라잇과 함께 빛나는 하루 되세요.\n\n#스타일라잇 #스타일라잇강림 #스타일라잇업데이트 #lifemakeover",
-    "sourceUrl": "https://x.com/stylight_kr/status/1974791689064640722",
-    "publishedLabel": "2025-10-05",
-    "publishedAtEpoch": 1759662003,
-    "imageUrl": "https://pbs.twimg.com/media/G2GPAEXbAAAcTnR?format=jpg&name=orig",
-    "imageUrls": [
-      "https://pbs.twimg.com/media/G2GPAEXbAAAcTnR?format=jpg&name=orig"
-    ],
-    "sources": [
-      {
-        "platform": "公式X",
-        "label": "X",
-        "url": "https://x.com/stylight_kr/status/1974791689064640722"
-      }
-    ],
-    "sourceCount": 1,
-    "titleJa": "Stylightのパートナーの皆様へ。月明かりが降り注ぎ、温かい光が集まる特別な瞬間",
-    "bodyJa": "Stylightのパートナーの皆様、こんにちは。\n\n月明かりが降り注ぎ、温かい光が集まる特別な瞬間です！\n\n近づく秋夕（チュソク）を迎え、パートナーの皆様へプレゼントをご用意しました。\n\n秋夕プレゼントの受取期間内にゲームにアクセスすると、メールボックスにてダイヤ200個、トレンドカラーカード77個、ゴールド30,000個のプレゼントを受け取ることができます。\n\nプレゼント受取期間: 10/6(月) 0:00 〜 10/8(水) 23:59 まで\n\n▶ ゲームダウンロード \n- \n\n豊かな秋夕をお過ごしいただき、今日もStylightと共に輝く一日をお過ごしください。\n\n#Stylight #Stylight降臨 #Stylightアップデート #lifemakeover",
-    "summaryJa": "・追加: 秋夕プレゼントが配布される\n・期間: 10/6(月) 0:00 〜 10/8(水) 23:59\n・入手: 秋夕プレゼント受取期間内にゲームにアクセスし、メールボックスで受け取る\n・報酬: ダイヤ200個、トレンドカラーカード77個、ゴールド30,000個",
     "aiProcessed": true,
     "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
     "aiSummaryFormat": "facts-v2"
@@ -5885,7 +5945,7 @@
     "id": "f351e5c2b0580081296de369",
     "region": "GLOBAL",
     "platform": "公式X",
-    "title": "Life Makeover New Version [Time of Hunt] Coming Soon...  Life Makeover New SSR Ally | Shawn - Dance of Pr...",
+    "title": "Life Makeover New Version [Time of Hunt] Coming Soon... Life Makeover New SSR Ally | Shawn - Dance of Pr...",
     "body": "Life Makeover New Version [Time of Hunt] Coming Soon...\n\n\nLife Makeover New SSR Ally | Shawn - Dance of Prayer\n\n[Time of Hunt]\nAug. 27, 09:00 - Sep. 16, 23:59 UTC\nDevouring evernight, tale-telling moonlight.\n#LifeMakeover",
     "sourceUrl": "https://x.com/LifeMakeover510/status/1959556289320591828",
     "publishedLabel": "2025-08-24",
@@ -5902,19 +5962,13 @@
         "url": "https://x.com/LifeMakeover510/status/1959556289320591828"
       }
     ],
-    "sourceCount": 1,
-    "titleJa": "Life Makeover 新バージョン「Time of Hunt」近日公開... 新SSRアライ「Shawn - Dance of Prayer」登場",
-    "bodyJa": "Life Makeover 新バージョン「Time of Hunt」が近日公開されます。\n\nLife Makeover 新SSRアライ「Shawn - Dance of Prayer」が登場します。\n\n【Time of Hunt】\n期間: 8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
-    "summaryJa": "・追加: 新SSRアライ「Shawn - Dance of Prayer」が登場\n・イベント名: Time of Hunt\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
+    "sourceCount": 1
   },
   {
     "id": "f845cae7a9ddb37b25057728",
     "region": "GLOBAL",
     "platform": "公式X",
-    "title": "Life Makeover New Version [Time of Hunt] Coming Soon...  Life Makeover New Version | 6-Star Set [Invincib...",
+    "title": "Life Makeover New Version [Time of Hunt] Coming Soon... Life Makeover New Version | 6-Star Set [Invincib...",
     "body": "Life Makeover New Version [Time of Hunt] Coming Soon...\n\n\nLife Makeover New Version | 6-Star Set [Invincible Moon]\n\n[Time of Hunt]\nAug. 27, 09:00 - Sep. 16, 23:59 UTC\nDevouring evernight, tale-telling moonlight.\n#LifeMakeover",
     "sourceUrl": "https://x.com/LifeMakeover510/status/1959480792347713715",
     "publishedLabel": "2025-08-24",
@@ -5933,13 +5987,7 @@
         "url": "https://x.com/LifeMakeover510/status/1959480792347713715"
       }
     ],
-    "sourceCount": 1,
-    "titleJa": "Life Makeover 新バージョン [狩りの時間] 開催間近... Life Makeover 新バージョン | ★6セット [Invincible Moon]",
-    "bodyJa": "Life Makeover 新バージョン [狩りの時間] 開催間近...\n\nLife Makeover 新バージョン | ★6セット [Invincible Moon]\n\n[狩りの時間]\n8月27日 09:00 - 9月16日 23:59 UTC\n永遠の夜を喰らい、物語を語る月光。\n#LifeMakeover",
-    "summaryJa": "・追加: ★6セット「Invincible Moon」が登場\n・イベント名: [狩りの時間]\n・期間: 8月27日 09:00 - 9月16日 23:59 UTC",
-    "aiProcessed": true,
-    "aiModel": "litert-community/gemma-4-E4B-it-litert-lm:LiteRT-LM",
-    "aiSummaryFormat": "facts-v2"
+    "sourceCount": 1
   },
   {
     "id": "a95f77a8c27cd334ecde6963",
@@ -6064,10 +6112,10 @@
       "https://kotaku.com/app/uploads/2024/10/9e237efb29857f2246e0428f3be9d316.jpg",
       "https://kotaku.com/app/uploads/2026/02/image-5-1.jpg",
       "https://kotaku.com/app/uploads/2024/10/aa12f78a5e2c084dd4c7aee5c7b09c58.gif",
+      "https://kotaku.com/app/uploads/2026/09/wolverinps5slop.jpg",
+      "https://kotaku.com/app/uploads/2026/09/fortunes-banana.jpg",
+      "https://kotaku.com/app/uploads/2026/09/cameostarwars.jpg",
       "https://kotaku.com/app/uploads/2026/09/Fortunesweavegun.jpg",
-      "https://kotaku.com/app/uploads/2026/09/VS-YouTube-ThisLGG6OLEDGlassBelongstoMeItsnotspyingonmeanymore-YouTube-303.jpg",
-      "https://kotaku.com/app/uploads/2026/09/2332.jpg",
-      "https://kotaku.com/app/uploads/2026/09/alan-ritchson.jpg",
       "https://kotaku.com/app/uploads/2026/09/REview.jpg",
       "https://kotaku.com/app/uploads/2026/09/CTRL_R_Launch_4K_Public_01.jpg",
       "https://kotaku.com/app/uploads/2026/09/dawnwalker-xanthe-review.jpg",
